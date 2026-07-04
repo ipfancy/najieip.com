@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AipNajie Patent Firm — Professional IP agency. Patent prosecution, trademark registration, OA responses, annuity management & global IP strategy. 15 years of experience, 2,000+ cases under AI-driven digital management.">
+<title>AipNajie Patent Firm — Professional IP Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+:root {
+  --primary: #1F4E79;
+  --primary-light: #2E75B6;
+  --accent: #C0A060;
+  --accent-light: #D4B87A;
+  --dark: #1a1a2e;
+  --text: #333;
+  --text-light: #666;
+  --bg-light: #F8F9FA;
+  --white: #fff;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-hover: 0 8px 40px rgba(0,0,0,0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ─── Nav ─── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 16px 48px;
+  display: flex; justify-content: space-between; align-items: center;
+  transition: all 0.3s ease;
+}
+nav.scrolled {
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.08);
+  padding: 10px 48px;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 20px; font-weight: 700; color: var(--white);
+  text-decoration: none; letter-spacing: 1px;
+}
+nav.scrolled .nav-logo { color: var(--primary); }
+.nav-logo svg { width: 32px; height: 32px; }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a {
+  text-decoration: none; color: rgba(255,255,255,0.9);
+  font-size: 15px; font-weight: 500; transition: color 0.2s;
+  position: relative;
+}
+nav.scrolled .nav-links a { color: var(--text); }
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0;
+  width: 0; height: 2px; background: var(--accent);
+  transition: width 0.3s;
+}
+.nav-links a:hover::after { width: 100%; }
+.nav-links a:hover { color: var(--accent); }
+
+/* ─── Hero ─── */
+.hero {
+  position: relative; height: 100vh; min-height: 600px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background: url('https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;
+  transform: scale(1.05);
+  transition: transform 8s ease;
+}
+.hero:hover .hero-bg { transform: scale(1.0); }
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(31,78,121,0.92) 0%, rgba(31,78,121,0.7) 50%, rgba(26,26,46,0.85) 100%);
+}
+.hero-content {
+  position: relative; z-index: 2;
+  text-align: center; max-width: 800px; padding: 0 24px;
+}
+.hero-badge {
+  display: inline-block;
+  background: rgba(192,160,96,0.2);
+  border: 1px solid rgba(192,160,96,0.4);
+  color: var(--accent-light); padding: 6px 20px; border-radius: 20px;
+  font-size: 14px; margin-bottom: 24px; letter-spacing: 2px;
+}
+.hero h1 {
+  font-size: 56px; font-weight: 900; color: var(--white);
+  letter-spacing: 2px; margin-bottom: 16px; line-height: 1.2;
+}
+.hero h1 span { color: var(--accent); }
+.hero p {
+  font-size: 18px; color: rgba(255,255,255,0.8);
+  max-width: 600px; margin: 0 auto 36px; line-height: 1.8;
+}
+.hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 32px; border-radius: 8px; font-size: 16px;
+  font-weight: 600; text-decoration: none; transition: all 0.3s;
+  cursor: pointer; border: none; font-family: inherit;
+}
+.btn-primary {
+  background: var(--accent); color: var(--white);
+}
+.btn-primary:hover { background: var(--accent-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(192,160,96,0.4); }
+.btn-outline {
+  background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.4);
+}
+.btn-outline:hover { border-color: var(--white); transform: translateY(-2px); }
+.scroll-indicator {
+  position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+  color: rgba(255,255,255,0.5); font-size: 13px;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+
+/* ─── Stats ─── */
+.stats {
+  background: var(--bg-light); padding: 60px 48px;
+  display: flex; justify-content: center; gap: 80px; flex-wrap: wrap;
+}
+.stat-item { text-align: center; }
+.stat-number {
+  font-size: 42px; font-weight: 900; color: var(--primary);
+  line-height: 1;
+}
+.stat-label { font-size: 14px; color: var(--text-light); margin-top: 8px; }
+
+/* ─── Sections ─── */
+.section { padding: 80px 48px; max-width: 1200px; margin: 0 auto; }
+.section-title {
+  text-align: center; margin-bottom: 60px;
+}
+.section-title h2 {
+  font-size: 36px; font-weight: 700; color: var(--primary); margin-bottom: 12px;
+}
+.section-title p { color: var(--text-light); font-size: 16px; max-width: 600px; margin: 0 auto; }
+.section-title::after {
+  content: ''; display: block; width: 60px; height: 3px;
+  background: var(--accent); margin: 20px auto 0; border-radius: 2px;
+}
+
+/* ─── Services ─── */
+.services-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.service-card {
+  background: var(--white); border-radius: var(--radius);
+  padding: 36px 28px; box-shadow: var(--shadow);
+  transition: all 0.3s; text-align: center;
+  border: 1px solid transparent;
+}
+.service-card:hover {
+  transform: translateY(-8px); box-shadow: var(--shadow-hover);
+  border-color: var(--accent);
+}
+.service-card .icon {
+  width: 64px; height: 64px; margin: 0 auto 20px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  border-radius: 16px; display: flex; align-items: center; justify-content: center;
+}
+.service-card .icon svg { width: 32px; height: 32px; color: var(--white); }
+.service-card h3 { font-size: 20px; color: var(--primary); margin-bottom: 12px; }
+.service-card p { font-size: 14px; color: var(--text-light); line-height: 1.8; }
+
+/* ─── Why Us ─── */
+.why-section { background: var(--bg-light); }
+.why-section .section { padding-top: 80px; padding-bottom: 80px; }
+.why-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+}
+.why-card {
+  display: flex; gap: 20px; align-items: flex-start;
+  background: var(--white); padding: 28px; border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.why-card .icon { flex-shrink: 0; }
+.why-card .icon svg { width: 28px; height: 28px; color: var(--accent); }
+.why-card h4 { font-size: 17px; color: var(--primary); margin-bottom: 6px; }
+.why-card p { font-size: 14px; color: var(--text-light); line-height: 1.7; }
+
+/* ─── Process ─── */
+.process-steps { display: flex; justify-content: center; gap: 0; position: relative; }
+.process-step {
+  flex: 1; text-align: center; padding: 0 20px;
+  position: relative;
+}
+.process-step:not(:last-child)::after {
+  content: ''; position: absolute; top: 28px; right: -0;
+  width: 100%; height: 2px;
+  background: linear-gradient(to right, var(--accent), var(--bg-light));
+  z-index: 0;
+}
+.step-number {
+  width: 56px; height: 56px; margin: 0 auto 16px;
+  background: var(--primary); color: var(--white); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; font-weight: 700; position: relative; z-index: 1;
+}
+.process-step h4 { font-size: 16px; color: var(--primary); margin-bottom: 6px; }
+.process-step p { font-size: 13px; color: var(--text-light); }
+
+/* ─── CTA ─── */
+.cta-section {
+  position: relative; padding: 100px 48px; text-align: center;
+  overflow: hidden;
+}
+.cta-bg {
+  position: absolute; inset: 0;
+  background: url('https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;
+  filter: brightness(0.3);
+}
+.cta-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+  opacity: 0.9;
+}
+.cta-content { position: relative; z-index: 2; max-width: 600px; margin: 0 auto; }
+.cta-content h2 { font-size: 36px; font-weight: 700; color: var(--white); margin-bottom: 16px; }
+.cta-content p { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 32px; }
+
+/* ─── Footer ─── */
+footer {
+  background: var(--dark); color: rgba(255,255,255,0.6);
+  padding: 48px; text-align: center;
+}
+footer .brand { font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+footer .name { color: var(--accent); margin-bottom: 4px; }
+footer .contact { font-size: 14px; margin-bottom: 16px; }
+footer .copyright { font-size: 13px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px; }
+
+/* ─── Back to top ─── */
+.back-top {
+  position: fixed; bottom: 32px; right: 32px;
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--primary); color: var(--white);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; border: none; z-index: 99;
+  opacity: 0; visibility: hidden; transition: all 0.3s;
+  box-shadow: 0 4px 16px rgba(31,78,121,0.3);
+}
+.back-top.visible { opacity: 1; visibility: visible; }
+.back-top:hover { transform: translateY(-4px); }
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  nav { padding: 12px 20px; }
+  .nav-links { display: none; }
+  .hero h1 { font-size: 36px; }
+  .hero p { font-size: 16px; }
+  .stats { gap: 40px; padding: 40px 20px; }
+  .stat-number { font-size: 32px; }
+  .section { padding: 60px 20px; }
+  .section-title h2 { font-size: 28px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .process-steps { flex-direction: column; gap: 24px; }
+  .process-step:not(:last-child)::after { display: none; }
+  .cta-section { padding: 60px 20px; }
+  .cta-content h2 { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <i data-lucide="scale" style="color: var(--accent);"></i>
+    爱普纳杰
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#process">Our Process</a></li>
+    <li><a href="/blog/">📝 Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  <li style="margin-left:16px;">
+      <a href="/" style="font-size:13px;opacity:0.7;">中文</a>
+      <a href="/en/" style="font-size:13px;opacity:0.7;">EN</a>
+      <a href="/fr/" style="font-size:13px;opacity:0.7;">FR</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✦ Professional IP Agency</div>
+    <h1>爱普纳杰<br><span>Protecting Innovation Value</span></h1>
+    <p>From patent filing to annuity management, from OA responses to global strategy —<br>protecting every piece of your intellectual achievement with professional depth and reliable processes.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">
+        <i data-lucide="mail"></i> Consult Now
+      </a>
+      <a href="#services" class="btn btn-outline">
+        <i data-lucide="arrow-down"></i> Our Services
+      </a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll Down</span>
+    <i data-lucide="chevron-down" style="width:20px;height:20px;"></i>
+  </div>
+</section>
+
+<!-- Stats -->
+<div class="stats">
+  <div class="stat-item"><div class="stat-number">2,000+</div><div class="stat-label">Annuity Cases</div></div>
+  <div class="stat-item"><div class="stat-number">15+</div><div class="stat-label">Years of Experience</div></div>
+  <div class="stat-item"><div class="stat-number">20+</div><div class="stat-label">Countries/Regions</div></div>
+  <div class="stat-item"><div class="stat-number">100%</div><div class="stat-label">Digital Workflow</div></div>
+</div>
+
+<!-- Services -->
+<section class="section" id="services">
+  <div class="section-title">
+    <h2>Services</h2>
+    <p>Full patent lifecycle — every step from filing to maintenance</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="icon"><i data-lucide="file-text"></i></div>
+      <h3>Patent Filing</h3>
+      <p>发明、实用新型、外观设计Patent FilingDrafting与提交，涵盖机械、电学、化学、生物医药等全技术领域。</p>
+    </div>
+    <div class="service-card">
+      <div class="icon"><i data-lucide="message-square"></i></div>
+      <h3>OA Responses</h3>
+      <p>Office action responses with an offensive strategy — prioritizing technical feature distinctions over narrowing claim scope.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon"><i data-lucide="globe"></i></div>
+      <h3>Global IP</h3>
+      <p>PCT international applications, Paris Convention route, 71-country partner network, multilingual support, full-process visibility.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon"><i data-lucide="search"></i></div>
+      <h3>Patent Search & Analysis</h3>
+      <p>Patentability search, FTO analysis, invalidity search, competitor patent monitoring.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon"><i data-lucide="clock"></i></div>
+      <h3>Annuity Management</h3>
+      <p>Automated annuity monitoring for 2,000+ cases, daily cross-checking with CNIPA payment data, 7-day/30-day tiered alerts.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon"><i data-lucide="award"></i></div>
+      <h3>Trademark Registration</h3>
+      <p>Trademark availability search, filing strategy, Nice classification planning, opposition/review/renewal full-process representation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Us -->
+<div class="why-section" id="why">
+  <div class="section">
+    <div class="section-title">
+      <h2>为什么选择爱普纳杰</h2>
+      <p>Reliable Process + Deep Expertise = Trustworthy IP Services</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="icon"><i data-lucide="shield-check"></i></div>
+        <div>
+          <h4>Reliable Process Management</h4>
+          <p>System-driven, not intuition-driven. Every operation follows strict rules — naming conventions, three-step safety protocol, idempotent processing — ensuring zero omissions.</p>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="icon"><i data-lucide="trending-up"></i></div>
+        <div>
+          <h4>Offensive Strategy</h4>
+          <p>OA Responses不轻易缩小范围。优先通过技术特征区别论证创造性，最大限度保护客户合法权益。</p>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="icon"><i data-lucide="users"></i></div>
+        <div>
+          <h4>Tri-Entity Synergy</h4>
+          <p>AipNajie (Patents) + Mili Law (Litigation) + Najie (Annuity Management) — one-stop IP legal services.</p>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="icon"><i data-lucide="bot"></i></div>
+        <div>
+          <h4>AI-Driven Efficiency</h4>
+          <p>Self-developed digital agent system, fully automated annuity monitoring for 2,000 cases, daily 9:00 AM push reports to mobile.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Process -->
+<section class="section" id="process">
+  <div class="section-title">
+    <h2>Our Process</h2>
+    <p>Transparent, Efficient, Traceable</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-number">01</div>
+      <h4>Requirements</h4>
+      <p>Understand your tech<br>and protection needs</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">02</div>
+      <h4>Search & Assess</h4>
+      <p>Preliminary patentability<br>judgment and analysis</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">03</div>
+      <h4>Drafting</h4>
+      <p>High-quality application<br>drafting and review</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">04</div>
+      <h4>Filing & Tracking</h4>
+      <p>Real-time progress<br>always accessible</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">05</div>
+      <h4>Maintenance</h4>
+      <p>Automated annuity alerts<br>timely deadline warnings</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section" id="contact">
+  <div class="cta-bg"></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <h2>Let Professionals Handle Professional Work</h2>
+    <p>Your IP deserves reliable protection. Contact us now for a tailored IP solution.</p>
+    <a href="mailto:ziganghe@outlook.com" class="btn btn-primary">
+      <i data-lucide="mail"></i> ziganghe@outlook.com
+    </a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="brand">AipNajie Patent Firm</div>
+  <div class="name">He Zigang | IP Attorney</div>
+  <div class="contact">
+    爱普纳杰 · 觅理 · 纳杰<br>
+    Patent Agency · Litigation · Annuity Management · Global IP
+  </div>
+  <div class="copyright">
+    &copy; 2026 AipNajie Patent Firm &mdash; Protecting Innovation Value
+  </div>
+
+<p style="margin-top: 12px; font-size: 14px;"><a href="/mili/" style="color: var(--accent-light); text-decoration: none;">→ Mili Law Firm · IP Litigation</a></p>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="回到顶部">
+  <i data-lucide="arrow-up"></i>
+</button>
+
+<script>
+lucide.createIcons();
+
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  const backTop = document.getElementById('backTop');
+  if (window.scrollY > 100) {
+    nav.classList.add('scrolled');
+    backTop.classList.add('visible');
+  } else {
+    nav.classList.remove('scrolled');
+    backTop.classList.remove('visible');
+  }
+});
+
+// Smooth reveal animation (IntersectionObserver)
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.service-card, .why-card, .process-step').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(30px)';
+  el.style.transition = 'all 0.6s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>

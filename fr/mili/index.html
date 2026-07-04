@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mili Cabinet d'Avocats — Protection Juridique PI。提供Contentieux de Contrefaçon、Litiges de Marques、Concurrence Déloyale、Contrats PI等法律服务。85% de Résultats Favorables，5位资深Associés，Double Compétence Tech + Droit团队。">
+<title>Mili Cabinet d'Avocats — Protection Juridique PI</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+:root {
+  --primary: #8B1A1A;
+  --primary-dark: #5C1010;
+  --accent: #C0A060;
+  --accent-light: #D4B87A;
+  --dark: #1a1a2e;
+  --text: #333;
+  --text-light: #666;
+  --bg-light: #F8F9FA;
+  --white: #fff;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Noto Sans SC', system-ui, sans-serif; color: var(--text); line-height: 1.7; overflow-x: hidden; }
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 16px 48px; display: flex; justify-content: space-between; align-items: center;
+  transition: all 0.3s ease;
+}
+nav.scrolled { background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); box-shadow: 0 1px 12px rgba(0,0,0,0.08); padding: 10px 48px; }
+.nav-logo { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 700; color: var(--white); text-decoration: none; letter-spacing: 1px; }
+nav.scrolled .nav-logo { color: var(--primary); }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { text-decoration: none; color: rgba(255,255,255,0.9); font-size: 15px; font-weight: 500; transition: color 0.2s; position: relative; }
+nav.scrolled .nav-links a { color: var(--text); }
+.nav-links a::after { content: ""; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.3s; }
+.nav-links a:hover::after { width: 100%; }
+
+.hero { position: relative; height: 100vh; min-height: 600px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: url("https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=1920") center/cover no-repeat; transform: scale(1.05); transition: transform 8s ease; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(139,26,26,0.92) 0%, rgba(139,26,26,0.7) 50%, rgba(26,26,46,0.85) 100%); }
+.hero-content { position: relative; z-index: 2; text-align: center; max-width: 800px; padding: 0 24px; }
+.hero-badge { display: inline-block; background: rgba(192,160,96,0.2); border: 1px solid rgba(192,160,96,0.4); color: var(--accent-light); padding: 6px 20px; border-radius: 20px; font-size: 14px; margin-bottom: 24px; letter-spacing: 2px; }
+.hero h1 { font-size: 56px; font-weight: 900; color: var(--white); letter-spacing: 2px; margin-bottom: 16px; line-height: 1.2; }
+.hero h1 span { color: var(--accent); }
+.hero p { font-size: 18px; color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto 36px; line-height: 1.8; }
+.hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; transition: all 0.3s; font-family: inherit; }
+.btn-primary { background: var(--accent); color: var(--white); }
+.btn-primary:hover { background: var(--accent-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(192,160,96,0.4); }
+.btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.4); }
+.btn-outline:hover { border-color: var(--white); transform: translateY(-2px); }
+
+.section { padding: 80px 48px; max-width: 1200px; margin: 0 auto; }
+.section-title { text-align: center; margin-bottom: 60px; }
+.section-title h2 { font-size: 36px; font-weight: 700; color: var(--primary); margin-bottom: 12px; }
+.section-title p { color: var(--text-light); font-size: 16px; max-width: 600px; margin: 0 auto; }
+.section-title::after { content: ""; display: block; width: 60px; height: 3px; background: var(--accent); margin: 20px auto 0; border-radius: 2px; }
+
+.partners { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+.partner-card { text-align: center; padding: 32px 24px; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); min-width: 160px; }
+.partner-card .avatar { width: 80px; height: 80px; margin: 0 auto 16px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.partner-card .avatar svg { width: 36px; height: 36px; color: var(--white); }
+.partner-card h3 { font-size: 18px; color: var(--primary); margin-bottom: 4px; }
+.partner-card p { font-size: 13px; color: var(--text-light); }
+
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.service-card { background: var(--white); border-radius: var(--radius); padding: 36px 28px; box-shadow: var(--shadow); transition: all 0.3s; text-align: center; border: 1px solid transparent; }
+.service-card:hover { transform: translateY(-8px); box-shadow: 0 8px 40px rgba(0,0,0,0.15); border-color: var(--accent); }
+.service-card .icon { width: 64px; height: 64px; margin: 0 auto 20px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+.service-card .icon svg { width: 32px; height: 32px; color: var(--white); }
+.service-card h3 { font-size: 20px; color: var(--primary); margin-bottom: 12px; }
+.service-card p { font-size: 14px; color: var(--text-light); line-height: 1.8; }
+
+.stats { background: var(--bg-light); padding: 60px 48px; display: flex; justify-content: center; gap: 80px; flex-wrap: wrap; }
+.stat-item { text-align: center; }
+.stat-number { font-size: 42px; font-weight: 900; color: var(--primary); line-height: 1; }
+.stat-label { font-size: 14px; color: var(--text-light); margin-top: 8px; }
+
+.why-section { background: var(--bg-light); }
+.why-section .section { padding-top: 80px; padding-bottom: 80px; }
+.why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.why-card { display: flex; gap: 20px; align-items: flex-start; background: var(--white); padding: 28px; border-radius: var(--radius); box-shadow: var(--shadow); }
+.why-card .icon { flex-shrink: 0; }
+.why-card .icon svg { width: 28px; height: 28px; color: var(--accent); }
+.why-card h4 { font-size: 17px; color: var(--primary); margin-bottom: 6px; }
+.why-card p { font-size: 14px; color: var(--text-light); line-height: 1.7; }
+
+.cta-section { position: relative; padding: 100px 48px; text-align: center; overflow: hidden; }
+.cta-bg { position: absolute; inset: 0; background: url("https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1920") center/cover no-repeat; filter: brightness(0.3); }
+.cta-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%); opacity: 0.9; }
+.cta-content { position: relative; z-index: 2; max-width: 600px; margin: 0 auto; }
+.cta-content h2 { font-size: 36px; font-weight: 700; color: var(--white); margin-bottom: 16px; }
+.cta-content p { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 32px; }
+
+footer { background: var(--dark); color: rgba(255,255,255,0.6); padding: 48px; text-align: center; }
+footer .brand { font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+footer .name { color: var(--accent); margin-bottom: 4px; }
+footer .contact { font-size: 14px; margin-bottom: 16px; }
+footer .copyright { font-size: 13px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px; }
+
+.back-top { position: fixed; bottom: 32px; right: 32px; width: 48px; height: 48px; border-radius: 50%; background: var(--primary); color: var(--white); display: flex; align-items: center; justify-content: center; cursor: pointer; border: none; z-index: 99; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.back-top.visible { opacity: 1; visibility: visible; }
+
+@media (max-width: 768px) {
+  nav { padding: 12px 20px; }
+  .nav-links { display: none; }
+  .hero h1 { font-size: 36px; }
+  .section { padding: 60px 20px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .partners { gap: 24px; }
+  .stats { gap: 32px; padding: 40px 20px; }
+  .cta-section { padding: 60px 20px; }
+}
+</style>
+</head>
+<body>
+<nav id="navbar">
+  <a href="../" class="nav-logo"><i data-lucide="scale" style="color:var(--accent);"></i> 觅理</a>
+  <ul class="nav-links">
+    <li><a href="/">← AipNajie</a></li>
+    <li><a href="#services">Domaines d'activité</a></li>
+    <li><a href="#partners">Associés</a></li>
+    <li><a href="#why">Avantages</a></li>
+    <li><a href="#contact">联系我们</a></li>
+  </ul>
+  
+</nav>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">↯ Cabinet d'Avocats PI</div>
+    <h1>Mili Cabinet d'Avocats<br><span>Fondé sur le Droit, Convaincant par la Raison</span></h1>
+    <p>Contentieux PI et protection juridique — contrefaçon de brevets, litiges de marques,<br>concurrence déloyale, contrats technologiques. Gagner le respect par l'expertise.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary"><i data-lucide="mail"></i> Réserver Consultation</a>
+      <a href="#services" class="btn btn-outline"><i data-lucide="arrow-down"></i> Domaines d'activité</a>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span>↓</span></div>
+</section>
+<div class="stats">
+  <div class="stat-item"><div class="stat-number">500+</div><div class="stat-label">Affaires PI</div></div>
+  <div class="stat-item"><div class="stat-number">85%</div><div class="stat-label">Taux de succès/accord favorable</div></div>
+  <div class="stat-item"><div class="stat-number">5</div><div class="stat-label">资深Associés</div></div>
+  <div class="stat-item"><div class="stat-number">20+</div><div class="stat-label">Ans de pratique</div></div>
+</div>
+<section class="section" id="services">
+  <div class="section-title"><h2>Domaines d'activité</h2><p>Protection Juridique PI Complète</p></div>
+  <div class="services-grid">
+    <div class="service-card"><div class="icon"><i data-lucide="search"></i></div><h3>Contentieux de Contrefaçon</h3><p>Contentieux pour invention/modèle d'utilité/dessin, comparaison technique, détermination de contrefaçon, dommages-intérêts.</p></div>
+    <div class="service-card"><div class="icon"><i data-lucide="file-text"></i></div><h3>Litiges de Marques</h3><p>Contrefaçon de marque, opposition, invalidation, déchéance pour non-usage, reconnaissance et protection de marques notoires.</p></div>
+    <div class="service-card"><div class="icon"><i data-lucide="scale"></i></div><h3>Concurrence Déloyale</h3><p>Secrets d'affaires, imitation trompeuse, publicité mensongère, dénigrement commercial et autres contentieux de concurrence déloyale.</p></div>
+    <div class="service-card"><div class="icon"><i data-lucide="file-signature"></i></div><h3>Avis Juridiques</h3><p>Analyse FTO, évaluation des risques de contrefaçon, révision de contrats technologiques, due diligence PI.</p></div>
+    <div class="service-card"><div class="icon"><i data-lucide="globe"></i></div><h3>Contentieux PI International</h3><p>Litiges PI transfrontaliers, protection lors de salons internationaux, reconnaissance et exécution de jugements étrangers en Chine.</p></div>
+    <div class="service-card"><div class="icon"><i data-lucide="handshake"></i></div><h3>Contrats PI</h3><p>Contrats de transfert/licence de technologie, accords de confidentialité, clauses de non-concurrence, contrats de développement conjoint.</p></div>
+  </div>
+</section>
+<section class="section" id="partners">
+  <div class="section-title"><h2>Associés团队</h2><p>Équipe Senior de Services Juridiques PI</p></div>
+  <div class="partners">
+    <div class="partner-card"><div class="avatar"><i data-lucide="user"></i></div><h3>何自刚</h3><p>创始Associés<br>专利诉讼/IP战略</p></div>
+    <div class="partner-card"><div class="avatar"><i data-lucide="user"></i></div><h3>梁雨</h3><p>Associés<br>商标/不正当竞争</p></div>
+    <div class="partner-card"><div class="avatar"><i data-lucide="user"></i></div><h3>王勇攀</h3><p>Associés<br>专利无效/行政诉讼</p></div>
+    <div class="partner-card"><div class="avatar"><i data-lucide="user"></i></div><h3>马长春</h3><p>Associés<br>技术合同/商业秘密</p></div>
+    <div class="partner-card"><div class="avatar"><i data-lucide="user"></i></div><h3>崔岩</h3><p>Associés<br>涉外诉讼/国际仲裁</p></div>
+  </div>
+</section>
+<div class="why-section" id="why">
+  <div class="section">
+    <div class="section-title"><h2>Pourquoi Choisir Mili</h2><p>Expertise · Concentration · Dévouement</p></div>
+    <div class="why-grid">
+      <div class="why-card"><div class="icon"><i data-lucide="brain"></i></div><div><h4>Double Compétence Tech + Droit</h4><p>Expert en compréhension et analyse de solutions techniques, transformant des problèmes techniques complexes en arguments juridiques clairs.</p></div></div>
+      <div class="why-card"><div class="icon"><i data-lucide="bar-chart-3"></i></div><div><h4>85% de Résultats Favorables</h4><p>Basé sur les données — 85% des affaires aboutissent à des victoires ou des accords favorables.</p></div></div>
+      <div class="why-card"><div class="icon"><i data-lucide="link"></i></div><div><h4>Synergie Tri-Entités</h4><p>Mili (Contentieux) + AipNajie (Agence Brevets) + Najie (Gestion Annuités), intégration transparente.</p></div></div>
+      <div class="why-card"><div class="icon"><i data-lucide="zap"></i></div><div><h4>Gestion Numérique des Dossiers</h4><p>Système de suivi indépendant pour chaque affaire, notifications automatiques aux étapes clés, les clients restent informés en permanence.</p></div></div>
+    </div>
+  </div>
+</div>
+<div class="cta-section" id="contact">
+  <div class="cta-bg"></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <h2>Votre PI Mérite la Meilleure Protection Juridique</h2>
+    <p>无论是Contentieux de Contrefaçon、商标争议还是合同纠纷，我们都在这里为您提供专业支持。</p>
+    <a href="mailto:ziganghe@outlook.com" class="btn btn-primary"><i data-lucide="mail"></i> ziganghe@outlook.com</a>
+  </div>
+</div>
+<footer>
+  <div class="brand">Mili Cabinet d'Avocats</div>
+  <div class="name">何自刚 · 梁雨 · 王勇攀 · 马长春 · 崔岩 | Associés</div>
+  <div class="contact">AipNajie · Mili · Najie<br>专利代理 · 诉讼 · 年费管理 · 涉外知产</div>
+  <div class="copyright">&copy; 2026 Mili Cabinet d'Avocats &mdash; Fondé sur le Droit, Convaincant par la Raison</div>
+</footer>
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="回到顶部"><i data-lucide="arrow-up"></i></button>
+<script>
+lucide.createIcons();
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 100);
+  document.getElementById('backTop').classList.toggle('visible', window.scrollY > 100);
+});
+const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; }}), {threshold:0.1});
+document.querySelectorAll('.service-card,.why-card,.partner-card').forEach(el => { el.style.opacity='0'; el.style.transform='translateY(30px)'; el.style.transition='all 0.6s ease'; obs.observe(el); });
+</script>
+</body>
+</html>
