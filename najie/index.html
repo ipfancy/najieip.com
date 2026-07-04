@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="纳杰知识产权 — 年费管理专家。2000+案件自动化年费监控系统，每日交叉比对国知局数据，7天/30天分级预警。">
+<title>纳杰知识产权 — 年费管理与知产运营</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root { --primary: #0F766E; --primary-light: #14B8A6; --accent: #C0A060; --accent-light: #D4B87A; --dark: #1a1a2e; --text: #333; --text-light: #666; --bg-light: #F8F9FA; --white: #fff; --radius: 12px; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Noto Sans SC', system-ui, sans-serif; color: var(--text); line-height:1.7; overflow-x:hidden; }
+nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:16px 48px; display:flex; justify-content:space-between; align-items:center; transition:all 0.3s; }
+nav.scrolled { background:rgba(255,255,255,0.92); backdrop-filter:blur(20px); padding:10px 48px; box-shadow:0 1px 12px rgba(0,0,0,0.08); }
+.nav-logo { display:flex; align-items:center; gap:12px; font-size:20px; font-weight:700; color:var(--white); text-decoration:none; }
+nav.scrolled .nav-logo { color:var(--primary); }
+.nav-links { display:flex; gap:32px; list-style:none; }
+.nav-links a { text-decoration:none; color:rgba(255,255,255,0.9); font-size:15px; font-weight:500; transition:color 0.2s; }
+nav.scrolled .nav-links a { color:var(--text); }
+.nav-links a:hover { color:var(--accent); }
+.hero { position:relative; height:100vh; min-height:600px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.hero-bg { position:absolute; inset:0; background:url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat; transform:scale(1.05); transition:transform 8s; }
+.hero:hover .hero-bg { transform:scale(1.0); }
+.hero-overlay { position:absolute; inset:0; background:linear-gradient(135deg, rgba(15,118,110,0.92) 0%, rgba(15,118,110,0.7) 50%, rgba(26,26,46,0.85) 100%); }
+.hero-content { position:relative; z-index:2; text-align:center; max-width:800px; padding:0 24px; }
+.hero-badge { display:inline-block; background:rgba(192,160,96,0.2); border:1px solid rgba(192,160,96,0.4); color:var(--accent-light); padding:6px 20px; border-radius:20px; font-size:14px; margin-bottom:24px; letter-spacing:2px; }
+.hero h1 { font-size:56px; font-weight:900; color:var(--white); letter-spacing:2px; margin-bottom:16px; line-height:1.2; }
+.hero h1 span { color:var(--accent); }
+.hero p { font-size:18px; color:rgba(255,255,255,0.8); max-width:600px; margin:0 auto 36px; line-height:1.8; }
+.btn { display:inline-flex; align-items:center; gap:8px; padding:14px 32px; border-radius:8px; font-size:16px; font-weight:600; text-decoration:none; transition:all 0.3s; font-family:inherit; }
+.btn-primary { background:var(--accent); color:var(--white); }
+.btn-primary:hover { background:var(--accent-light); transform:translateY(-2px); }
+.section { padding:80px 48px; max-width:1200px; margin:0 auto; }
+.section-title { text-align:center; margin-bottom:60px; }
+.section-title h2 { font-size:36px; font-weight:700; color:var(--primary); margin-bottom:12px; }
+.section-title p { color:var(--text-light); font-size:16px; max-width:600px; margin:0 auto; }
+.section-title::after { content:''; display:block; width:60px; height:3px; background:var(--accent); margin:20px auto 0; border-radius:2px; }
+.stats { background:var(--bg-light); padding:60px 48px; display:flex; justify-content:center; gap:80px; flex-wrap:wrap; }
+.stat-item { text-align:center; }
+.stat-number { font-size:42px; font-weight:900; color:var(--primary); }
+.stat-label { font-size:14px; color:var(--text-light); margin-top:8px; }
+.services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.service-card { background:var(--white); border-radius:var(--radius); padding:36px 28px; box-shadow:0 4px 24px rgba(0,0,0,0.08); transition:all 0.3s; text-align:center; border:1px solid transparent; }
+.service-card:hover { transform:translateY(-8px); box-shadow:0 8px 40px rgba(0,0,0,0.15); border-color:var(--accent); }
+.service-card h3 { font-size:20px; color:var(--primary); margin:16px 0 12px; }
+.service-card p { font-size:14px; color:var(--text-light); }
+.service-card .icon { font-size:36px; }
+.three-entity { background:var(--bg-light); text-align:center; padding:48px; }
+.three-entity .entities { display:flex; justify-content:center; gap:32px; flex-wrap:wrap; margin-top:24px; }
+.three-entity .entity-card { background:var(--white); padding:24px 32px; border-radius:var(--radius); box-shadow:0 2px 12px rgba(0,0,0,0.06); min-width:160px; }
+.three-entity .entity-card h4 { color:var(--primary); margin-bottom:4px; }
+.three-entity .entity-card a { color:var(--primary-light); text-decoration:none; font-size:13px; }
+.three-entity .entity-card a:hover { color:var(--accent); }
+.cta-section { position:relative; padding:100px 48px; text-align:center; overflow:hidden; }
+.cta-bg { position:absolute; inset:0; background:var(--primary); opacity:0.95; }
+.cta-content { position:relative; z-index:2; max-width:600px; margin:0 auto; }
+.cta-content h2 { font-size:36px; font-weight:700; color:var(--white); margin-bottom:16px; }
+.cta-content p { font-size:16px; color:rgba(255,255,255,0.8); margin-bottom:32px; }
+footer { background:var(--dark); color:rgba(255,255,255,0.6); padding:48px; text-align:center; font-size:14px; }
+footer a { color:var(--accent); text-decoration:none; }
+@media (max-width:768px) { nav { padding:12px 20px; } .hero h1 { font-size:36px; } .services-grid { grid-template-columns:1fr; } .section { padding:60px 20px; } .stats { gap:40px; } }
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="/" class="nav-logo">纳杰知识产权</a>
+  <ul class="nav-links">
+    <li><a href="/">← 爱普纳杰</a></li>
+    <li><a href="/mili/">觅理律所</a></li>
+    <li><a href="/blog/">博客</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">⏱ 知识产权年费管理专家</div>
+    <h1>纳杰<br><span>让每一笔费用都不遗漏</span></h1>
+    <p>2000+案件自动化年费监控系统<br>每日交叉比对国知局缴费数据，7天/30天分级预警</p>
+    <a href="mailto:ziganghe@outlook.com" class="btn btn-primary">📧 立即咨询</a>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat-item"><div class="stat-number">2,000+</div><div class="stat-label">年费监控案件</div></div>
+  <div class="stat-item"><div class="stat-number">0%</div><div class="stat-label">漏缴率</div></div>
+  <div class="stat-item"><div class="stat-number">7/30</div><div class="stat-label">天分级预警</div></div>
+  <div class="stat-item"><div class="stat-number">每日</div><div class="stat-label">9:00 自动推送</div></div>
+</div>
+
+<section class="section">
+  <div class="section-title">
+    <h2>核心服务</h2>
+    <p>专注知识产权费用管理与运营</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="icon">📊</div>
+      <h3>年费监控</h3>
+      <p>专利年费自动监控系统，每日交叉比对 CNIPA 缴费数据。7天/30天分级预警推送，确保零遗漏。</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">💰</div>
+      <h3>费用代缴</h3>
+      <p>专利年费、商标续展费、办登费一站式代缴。批量缴费自动核销，回执自动归档。</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">📋</div>
+      <h3>费用台账</h3>
+      <p>客户专属费用台账，历史缴费记录一键导出。支持按案件/按年份/按费用类型多维查询。</p>
+    </div>
+  </div>
+</section>
+
+<div class="three-entity">
+  <h2 style="color:var(--primary);">纳杰觅理 · 三主体协同</h2>
+  <p style="color:var(--text-light);">一站式知识产权法律服务</p>
+  <div class="entities">
+    <div class="entity-card">
+      <h4>📝 爱普纳杰</h4>
+      <p style="font-size:13px;color:var(--text-light);">专利代理</p>
+      <a href="/">najieip.com</a>
+    </div>
+    <div class="entity-card">
+      <h4>⚖️ 觅理律所</h4>
+      <p style="font-size:13px;color:var(--text-light);">知识产权诉讼</p>
+      <a href="/mili/">najieip.com/mili</a>
+    </div>
+    <div class="entity-card" style="border:2px solid var(--accent);">
+      <h4>⏱ 纳杰</h4>
+      <p style="font-size:13px;color:var(--text-light);">年费管理</p>
+      <strong style="color:var(--primary);">bjnajie.com → 已迁移至此</strong>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="cta-bg"></div>
+  <div class="cta-content">
+    <h2>年费管理，交给系统而不是记忆</h2>
+    <p>2000+案件零漏缴。每日自动推送，绝限前7天强化提醒。</p>
+    <a href="mailto:ziganghe@outlook.com" class="btn btn-primary">📧 立即咨询</a>
+  </div>
+</div>
+
+<footer>
+  <div style="font-size:18px;font-weight:700;color:var(--white);margin-bottom:8px;">纳杰知识产权</div>
+  年费管理 · 费用代缴 · 台账服务<br>
+  <span style="color:var(--accent);">原 bjnajie.com 已迁至此处</span>
+  <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;margin-top:20px;font-size:13px;">
+    &copy; 2026 纳杰知识产权 — 爱普纳杰 · 觅理 · 纳杰
+  </div>
+</footer>
+
+<script>
+document.getElementById('navbar').addEventListener('mouseover', function(){});
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>100);
+});
+</script>
+</body>
+</html>
