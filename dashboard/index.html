@@ -318,6 +318,18 @@ function render3DGlobe(id, data) {
     amt: d.total_amt
   }));
 
+  // Build fly line data: China (home) → each country
+  const chinaCoord = [104.2, 35.9];
+  const maxAmt = Math.max(...data.map(d=>d.total_amt||0), 1);
+  const flyData = data
+    .filter(d => d.code !== 'CN')
+    .map(d => ({
+      coords: [chinaCoord, [d.lng, d.lat]],
+      count: d.count,
+      amt: d.total_amt,
+      lineStyle: { width: 0.6 + (d.count / maxCount) * 2.5, opacity: 0.3 + (d.count / maxCount) * 0.5 }
+    }));
+
   c.setOption({
     backgroundColor: 'transparent',
     globe: {
@@ -403,6 +415,25 @@ function render3DGlobe(id, data) {
         symbolSize: 2.5,
         itemStyle: { color: '#4ade80', opacity: 0.6 },
         data: scatterData
+      },
+      {
+        type: 'lines3D',
+        coordinateSystem: 'globe',
+        polyline: false,
+        effect: {
+          show: true,
+          period: 4,
+          trailWidth: 2,
+          trailLength: 0.3,
+          trailColor: '#4ade80',
+          trailOpacity: 0.8
+        },
+        lineStyle: {
+          color: '#4a9eff',
+          opacity: 0.25,
+          width: 0.8
+        },
+        data: flyData
       }
     ]
   });
