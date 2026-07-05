@@ -3,23 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>纳杰 · 运营仪表盘</title>
+<title>纳杰 · 运营仪表盘 3D</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5/map/js/world.js"></script>
 <style>
 :root {
-  --bg: #0b1120;
-  --card: #151f32;
-  --card-hover: #1a2840;
+  --bg: #070d1a;
+  --card: #121b2e;
+  --card-hover: #172240;
   --accent: #2e75b6;
   --accent-light: #4a9eff;
   --gold: #C0A060;
-  --gold-light: #D4B87A;
-  --text: #e8edf5;
-  --text-dim: #7a8aa0;
-  --border: #1e3050;
+  --text: #e2e8f0;
+  --text-dim: #6a7a90;
+  --border: #1a2a45;
   --radius: 14px;
-  --shadow: 0 4px 30px rgba(0,0,0,0.4);
+  --shadow: 0 4px 30px rgba(0,0,0,0.5);
   --font: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -28,36 +28,58 @@ body {
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
-  padding: 16px;
-  background-image:
-    radial-gradient(ellipse at 20% 50%, rgba(46,117,182,0.06) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 20%, rgba(192,160,96,0.04) 0%, transparent 50%);
+  overflow-x: hidden;
 }
-
-/* Header */
-.header {
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 20px 24px 12px; margin-bottom: 8px;
+/* 3D Globe Section */
+.globe-section {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  background: radial-gradient(ellipse at center, rgba(10,20,50,0.8) 0%, var(--bg) 100%);
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(74,158,255,0.08);
 }
-.header h1 {
-  font-size: 24px; font-weight: 700;
+#globeChart { width: 100%; height: 100%; }
+.globe-overlay {
+  position: absolute;
+  top: 20px; left: 30px; z-index: 10;
+  pointer-events: none;
+}
+.globe-overlay h1 {
+  font-size: 28px; font-weight: 700;
   background: linear-gradient(135deg, var(--accent-light), var(--gold));
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 40px rgba(74,158,255,0.3);
 }
-.header .subtitle {
+.globe-overlay .subtitle {
   font-size: 12px; color: var(--text-dim); margin-top: 4px;
+  letter-spacing: 4px;
   -webkit-text-fill-color: var(--text-dim);
 }
-.header .meta { font-size: 11px; color: var(--text-dim); text-align: right; }
-.header .meta span { margin-left: 12px; }
-.status-dot {
-  display: inline-block; width: 6px; height: 6px; border-radius: 50%;
-  margin-right: 4px;
+.globe-stats {
+  position: absolute;
+  bottom: 16px; right: 24px; z-index: 10;
+  display: flex; gap: 24px;
+  pointer-events: none;
 }
+.globe-stat { text-align: right; }
+.globe-stat .val { font-size: 22px; font-weight: 700; }
+.globe-stat .lbl { font-size: 10px; color: var(--text-dim); letter-spacing: 1px; }
+.globe-stat .val.blue { color: var(--accent-light); }
+.globe-stat .val.gold { color: var(--gold); }
+.globe-stat .val.green { color: #4ade80; }
+
+/* Content */
+.content { padding: 14px 16px; max-width: 1400px; margin: 0 auto; }
+
+.header-meta {
+  display: flex; justify-content: flex-end; align-items: center;
+  font-size: 11px; color: var(--text-dim); margin-bottom: 12px; gap: 16px;
+}
+.status-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 4px; }
 .status-dot.online { background: #4ade80; box-shadow: 0 0 8px rgba(74,222,128,0.5); }
 
-/* Summary cards */
 .cards {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 10px; margin-bottom: 14px;
@@ -75,15 +97,15 @@ body {
 .card:hover { background: var(--card-hover); transform: translateY(-2px); border-color: rgba(74,158,255,0.3); }
 .card:hover::before { opacity: 1; }
 .card .label { font-size: 11px; color: var(--text-dim); margin-bottom: 3px; letter-spacing: 1px; }
-.card .value { font-size: 30px; font-weight: 800; line-height: 1.1; }
+.card .value { font-size: 28px; font-weight: 800; line-height: 1.1; }
 .card .sub { font-size: 11px; color: var(--text-dim); margin-top: 3px; }
 .card .value.blue { color: var(--accent-light); }
 .card .value.gold { color: var(--gold); }
 .card .value.green { color: #4ade80; }
 .card .value.purple { color: #a78bfa; }
 .card .value.pink { color: #f472b6; }
+.card .value.cyan { color: #22d3ee; }
 
-/* Charts grid */
 .charts {
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 10px; margin-bottom: 14px;
@@ -98,162 +120,106 @@ body {
 }
 .chart-box .chart { width: 100%; height: 260px; }
 .chart-box.full { grid-column: 1 / -1; }
-.chart-box.full .chart { height: 320px; }
-.chart-box.half .chart { height: 200px; }
+.chart-box.full .chart { height: 300px; }
+.chart-box.tall .chart { height: 340px; }
 
-/* Project list */
-.project-list { margin-top: 6px; }
-.project-item {
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 8px 12px; border-radius: 8px;
-  border-left: 3px solid var(--accent); margin-bottom: 4px;
-  background: rgba(46,117,182,0.06);
-  font-size: 12px; transition: all 0.2s;
-}
-.project-item:hover { background: rgba(46,117,182,0.12); }
-.project-item .name { font-weight: 500; color: var(--text); }
-.project-item .brief { color: var(--text-dim); font-size: 11px; }
-
-/* Footer */
 .footer {
   text-align: center; padding: 20px; font-size: 11px; color: var(--text-dim);
   letter-spacing: 1px;
 }
 .footer a { color: var(--accent-light); text-decoration: none; }
-
-/* Loading pulse */
 .loading-pulse { animation: pulse 1.5s ease-in-out infinite; }
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+@keyframes fadeIn { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+.chart-box { animation: fadeIn 0.6s ease-out; }
 
 @media (max-width: 768px) {
   .charts { grid-template-columns: 1fr; }
   .cards { grid-template-columns: 1fr 1fr; }
-  .header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .globe-section { height: 320px; }
+  .globe-overlay h1 { font-size: 20px; }
+  .globe-stats { display: none; }
 }
 </style>
 </head>
 <body>
 
-<div class="header">
-  <div>
-    <h1>纳杰 · 运营仪表盘</h1>
-    <div class="subtitle">愛普納傑 · 觅理 · 纳杰 · 何自刚</div>
+<!-- 3D Globe Hero -->
+<div class="globe-section">
+  <div class="globe-overlay">
+    <h1>纳杰 · 全球年费</h1>
+    <div class="subtitle">愛普納傑 · 觅理 · 纳杰</div>
   </div>
-  <div class="meta">
+  <div class="globe-stats">
+    <div class="globe-stat"><div class="val blue" id="globeFees">—</div><div class="lbl">年费记录</div></div>
+    <div class="globe-stat"><div class="val gold" id="globeCountries">—</div><div class="lbl">国家/地区</div></div>
+    <div class="globe-stat"><div class="val green" id="globeAssociates">—</div><div class="lbl">合作所</div></div>
+  </div>
+  <div id="globeChart"></div>
+</div>
+
+<!-- Content -->
+<div class="content">
+  <div class="header-meta">
     年费库 · 销售系统 · 项目管理
-    <span id="updateTime"><span class="loading-pulse">加载中...</span></span>
+    <span id="updateTime"><span class="status-dot online"></span><span class="loading-pulse">加载中...</span></span>
   </div>
-</div>
 
-<!-- Summary Cards -->
-<div class="cards" id="summaryCards">
-  <div class="card"><div class="label">📋 年费记录</div><div class="value blue" id="totalFees">—</div><div class="sub" id="feeSub">全球专利年费</div></div>
-  <div class="card"><div class="label">🏢 合作所</div><div class="value gold" id="totalAssociates">—</div><div class="sub" id="assocSub">覆盖全球</div></div>
-  <div class="card"><div class="label">🌍 覆盖国家</div><div class="value green" id="totalCountries">—</div><div class="sub" id="countrySub">71 个国家</div></div>
-  <div class="card"><div class="label">💰 年费总额</div><div class="value pink" id="totalAmount">—</div><div class="sub" id="amountSub">多币种合计</div></div>
-</div>
+  <!-- Summary Cards -->
+  <div class="cards" id="summaryCards">
+    <div class="card"><div class="label">📋 年费记录</div><div class="value blue" id="totalFees">—</div><div class="sub">全球专利年费</div></div>
+    <div class="card"><div class="label">🏢 合作所</div><div class="value gold" id="totalAssociates">—</div><div class="sub">覆盖全球</div></div>
+    <div class="card"><div class="label">🌍 覆盖国家</div><div class="value green" id="totalCountries">—</div><div class="sub">71 个国家和地区</div></div>
+    <div class="card"><div class="label">💰 年费总额</div><div class="value pink" id="totalAmount">—</div><div class="sub">首5货币合计</div></div>
+    <div class="card"><div class="label">👥 客户</div><div class="value purple" id="totalClients">—</div><div class="sub">策略 / 训练</div></div>
+  </div>
 
-<!-- Cards Row 2: Lifecycle + Quick stats -->
-<div class="cards" style="grid-template-columns:repeat(3,1fr);">
-  <div class="card"><div class="label">🌱 早期专利（1-5年）</div><div class="value blue" id="youngCount">—</div><div class="sub" id="youngAmt">年费集中度</div></div>
-  <div class="card"><div class="label">🌿 中期专利（6-15年）</div><div class="value gold" id="midCount">—</div><div class="sub" id="midAmt">稳定期</div></div>
-  <div class="card"><div class="label">🏛 成熟专利（16-20年）</div><div class="value purple" id="matureCount">—</div><div class="sub" id="matureAmt">高价值维护</div></div>
-</div>
+  <!-- Lifecycle -->
+  <div class="cards" style="grid-template-columns:repeat(3,1fr);">
+    <div class="card"><div class="label">🌱 早期（1-5年）</div><div class="value blue" id="youngCount">—</div><div class="sub" id="youngAmt">成长专利</div></div>
+    <div class="card"><div class="label">🌿 中期（6-15年）</div><div class="value gold" id="midCount">—</div><div class="sub" id="midAmt">核心专利群</div></div>
+    <div class="card"><div class="label">🏛 成熟（16-20年）</div><div class="value purple" id="matureCount">—</div><div class="sub" id="matureAmt">高价值维护</div></div>
+  </div>
 
-<!-- Row 1: World Map -->
-<div class="charts">
-  <div class="chart-box full">
-    <h3>🌏 全球年费热力图 — 国家颜色越亮，年费越密集</h3>
-    <div class="chart" id="chartWorld"></div>
+  <!-- Charts -->
+  <div class="charts">
+    <div class="chart-box"><h3>🥧 年费按类型</h3><div class="chart" id="chartType"></div></div>
+    <div class="chart-box"><h3>📊 销售漏斗</h3><div class="chart" id="chartFunnel"></div></div>
   </div>
-</div>
+  <div class="charts">
+    <div class="chart-box"><h3>📅 年费年份分布</h3><div class="chart" id="chartYear"></div></div>
+    <div class="chart-box"><h3>🏆 金额 Top 10 国家</h3><div class="chart" id="chartCountryAmt"></div></div>
+  </div>
+  <div class="charts">
+    <div class="chart-box"><h3>💱 货币分布 Top 10</h3><div class="chart" id="chartCurrency"></div></div>
+    <div class="chart-box"><h3>🏢 合作所类型</h3><div class="chart" id="chartAssocType"></div></div>
+  </div>
+  <div class="charts">
+    <div class="chart-box"><h3>💰 收款端</h3><div class="chart" id="chartReceivable"></div></div>
+    <div class="chart-box"><h3>📋 活跃项目</h3><div class="chart" id="chartProjects"></div></div>
+  </div>
 
-<!-- Row 2: Type pie + Sales Funnel -->
-<div class="charts">
-  <div class="chart-box">
-    <h3>🥧 年费按类型分布</h3>
-    <div class="chart" id="chartType"></div>
+  <div class="footer">
+    纳杰运营体系 · <a href="https://najieip.com" target="_blank">najieip.com</a> · 数据每日更新
   </div>
-  <div class="chart-box">
-    <h3>📊 销售漏斗 — 报价 → 签约 → 收款</h3>
-    <div class="chart" id="chartFunnel"></div>
-  </div>
-</div>
-
-<!-- Row 3: Year heatmap + Country Top 10 -->
-<div class="charts">
-  <div class="chart-box">
-    <h3>📅 年费按年份热力</h3>
-    <div class="chart" id="chartYear"></div>
-  </div>
-  <div class="chart-box">
-    <h3>🏆 年费金额 Top 10 国家</h3>
-    <div class="chart" id="chartCountryAmt"></div>
-  </div>
-</div>
-
-<!-- Row 4: Currency + Associates -->
-<div class="charts">
-  <div class="chart-box">
-    <h3>💱 货币分布</h3>
-    <div class="chart" id="chartCurrency"></div>
-  </div>
-  <div class="chart-box">
-    <h3>🏢 合作所类型</h3>
-    <div class="chart" id="chartAssocType"></div>
-  </div>
-</div>
-
-<!-- Row 5: Receivable + Projects -->
-<div class="charts">
-  <div class="chart-box">
-    <h3>💰 收款端概览</h3>
-    <div class="chart" id="chartReceivable"></div>
-  </div>
-  <div class="chart-box">
-    <h3>📋 活跃项目</h3>
-    <div class="project-list" id="projectList"></div>
-  </div>
-</div>
-
-<div class="footer">
-  纳杰运营体系 · <a href="https://najieip.com" target="_blank">najieip.com</a>
-  · 数据每日更新
-  <span id="footerTime"></span>
 </div>
 
 <script>
-// ── 类型映射 ──
-const typeNames = {
-  renewal: '续展', maintenance: '维持', filing: '申请',
-  examination: '审查', grant: '授权', search: '检索',
-  issue: '颁证', designation: '指定', appeal: '上诉',
-  opposition: '异议', filing_extra: '附加申请',
-  renewal_surcharge: '续展附加', maintenance_surcharge: '维持附加',
-  other: '其他'
-};
-const firmTypeNames = {
-  full_service: '综合所', patent_only: '专利所', trademark_only: '商标所',
-  litigation: '诉讼所', ip_only: 'IP所', general: '一般所'
-};
-const ECHART_COLORS = ['#4a9eff','#C0A060','#4ade80','#a78bfa','#f472b6','#fb923c','#22d3ee','#e879f9','#facc15','#34d399','#f87171','#818cf8'];
+const ECHART_COLORS = ['#4a9eff','#C0A060','#4ade80','#a78bfa','#f472b6','#fb923c','#22d3ee','#e879f9','#facc15','#34d399'];
+const typeNames = {renewal:'续展',maintenance:'维持',filing:'申请',examination:'审查',grant:'授权',search:'检索',issue:'颁证',designation:'指定',appeal:'上诉',opposition:'异议',filing_extra:'附加申请',renewal_surcharge:'续展附加',maintenance_surcharge:'维持附加',other:'其他'};
+const firmTypeNames = {full_service:'综合所',patent_only:'专利所',trademark_only:'商标所',litigation:'诉讼所',ip_only:'IP所',general:'一般所'};
 
-// ── 格式化 ──
-function fmt(n) { if (n === undefined || n === null) return '—'; return Number(n).toLocaleString(); }
+function fmt(n) { return (n===undefined||n===null)?'—':Number(n).toLocaleString(); }
 function fmtMoney(n) {
-  if (n === undefined || n === null) return '—';
-  if (n >= 1000000) return (n/1000000).toFixed(1) + 'M';
-  if (n >= 1000) return (n/1000).toFixed(1) + 'k';
+  if (n===undefined||n===null) return '—';
+  if (n>=1000000) return (n/1000000).toFixed(1)+'M';
+  if (n>=1000) return (n/1000).toFixed(1)+'k';
   return fmt(n);
 }
 
-// ── 加载数据 ──
 async function loadData() {
   try {
-    const res = await fetch('./data.json?' + Date.now());
+    const res = await fetch('./data.json?'+Date.now());
     const d = await res.json();
     render(d);
   } catch(e) {
@@ -263,171 +229,209 @@ async function loadData() {
 }
 
 function render(d) {
-  // 更新时间
   const ts = new Date(d.generated_at);
   const timeStr = `${ts.toLocaleDateString('zh-CN')} ${ts.toLocaleTimeString('zh-CN')}`;
   document.getElementById('updateTime').innerHTML = `<span class="status-dot online"></span> ${timeStr}`;
-  document.getElementById('footerTime').textContent = `· 最后更新 ${timeStr}`;
 
-  // ── 摘要卡片 ──
-  document.getElementById('totalFees').textContent = d.fees.total_fees.toLocaleString();
-  document.getElementById('feeSub').textContent = `${d.fees.by_type.length} 种类型`;
-  document.getElementById('totalAssociates').textContent = d.associates.total_associates.toLocaleString();
-  document.getElementById('assocSub').textContent = `覆盖 ${d.countries.total_countries} 国`;
+  // Globe stats
+  document.getElementById('globeFees').textContent = fmt(d.fees.total_fees);
+  document.getElementById('globeCountries').textContent = d.countries.total_countries;
+  document.getElementById('globeAssociates').textContent = fmt(d.associates.total_associates);
+
+  // Summary cards
+  document.getElementById('totalFees').textContent = fmt(d.fees.total_fees);
+  document.getElementById('totalAssociates').textContent = fmt(d.associates.total_associates);
   document.getElementById('totalCountries').textContent = d.countries.total_countries;
-  document.getElementById('countrySub').textContent = '71 个国家/地区';
-
-  // 年费总额（取 top 5 货币粗略估算）
-  const topCurrencies = d.fees.by_currency.slice(0,5);
-  const majorAmt = topCurrencies.reduce((s, c) => s + c.total, 0);
+  
+  const topCurrencies = (d.fees.by_currency||[]).slice(0,5);
+  const majorAmt = topCurrencies.reduce((s,c)=>s+(c.total||0),0);
   document.getElementById('totalAmount').textContent = fmtMoney(majorAmt);
-  document.getElementById('amountSub').textContent = topCurrencies.map(c => c.currency).slice(0,3).join(' · ');
+  document.getElementById('totalClients').textContent = fmt(d.sales.clients);
 
-  // ── 生命周期卡片 ──
-  const y = d.fees.upcoming;
-  if (y) {
-    document.getElementById('youngCount').textContent = y.young.count;
-    document.getElementById('youngAmt').textContent = fmtMoney(y.young.total);
-    document.getElementById('midCount').textContent = y.mid.count;
-    document.getElementById('midAmt').textContent = fmtMoney(y.mid.total);
-    document.getElementById('matureCount').textContent = y.mature.count;
-    document.getElementById('matureAmt').textContent = fmtMoney(y.mature.total);
+  // Lifecycle
+  const y = d.fees.upcoming || {};
+  if (y.young) {
+    document.getElementById('youngCount').textContent = fmt(y.young.count);
+    document.getElementById('youngAmt').textContent = fmtMoney(y.young.total)+' · 成长';
+    document.getElementById('midCount').textContent = fmt(y.mid.count);
+    document.getElementById('midAmt').textContent = fmtMoney(y.mid.total)+' · 稳定';
+    document.getElementById('matureCount').textContent = fmt(y.mature.count);
+    document.getElementById('matureAmt').textContent = fmtMoney(y.mature.total)+' · 高价值';
   }
 
-  // ── 1. 世界热力图 ──
-  const mapData = d.fees.by_country
-    .filter(c => c.iso3 && c.iso3 !== 'EUR')
-    .map(c => ({ name: c.iso3, value: c.count }));
-  renderWorldMap('chartWorld', mapData);
+  // ── 0. 3D Globe ──
+  const globeData = d.fees.globe || [];
+  if (globeData.length > 0) {
+    render3DGlobe('globeChart', globeData);
+  }
 
-  // ── 2. 年费类型（饼图）──
-  const typeData = d.fees.by_type.map(t => ({
-    name: typeNames[t.fee_type] || t.fee_type,
-    value: t.c
-  }));
-  renderPie('chartType', typeData, '年费类型');
-
-  // ── 3. 销售漏斗 ──
+  // ── Charts ──
+  const typeData = d.fees.by_type.map(t=>({name:typeNames[t.fee_type]||t.fee_type, value:t.c}));
+  renderPie('chartType', typeData);
+  
   const rc = d.sales.receivable || {};
   const funnelData = [
-    { name: '🏷 报价', value: rc.quotes || 0 },
-    { name: '📄 合同', value: rc.contracts || 0 },
-    { name: '🧾 发票', value: rc.invoices || 0 },
-    { name: '💰 收款', value: rc.payments || 0 },
-    { name: '✅ 结算', value: rc.settlements || 0 },
-  ].filter(d => d.value > 0);
+    {name:'🏷 报价',value:rc.quotes||0},{name:'📄 合同',value:rc.contracts||0},
+    {name:'🧾 发票',value:rc.invoices||0},{name:'💰 收款',value:rc.payments||0},
+    {name:'✅ 结算',value:rc.settlements||0},
+  ].filter(d=>d.value>0);
   renderFunnel('chartFunnel', funnelData);
 
-  // ── 4. 年份热力条 ──
-  const yData = d.fees.by_year || [];
-  renderYearHeat('chartYear', yData.map(y => String(y.year)), yData.map(y => y.count), yData.map(y => y.total_amt || 0));
+  const yData = d.fees.by_year||[];
+  renderYearChart('chartYear', yData.map(y=>String(y.year)), yData.map(y=>y.count), yData.map(y=>y.total_amt||0));
 
-  // ── 5. 年费金额 Top 10 国家 ──
-  const countrySorted = [...d.fees.by_country].sort((a,b) => (b.total_amt||0) - (a.total_amt||0)).slice(0, 10);
-  renderBar('chartCountryAmt', countrySorted.map(c => c.name_zh || c.code), countrySorted.map(c => c.total_amt || 0), '#4ade80');
+  const countrySorted = [...(d.fees.by_country||[])].sort((a,b)=>(b.total_amt||0)-(a.total_amt||0)).slice(0,10);
+  renderBar('chartCountryAmt', countrySorted.map(c=>c.name_zh||c.code), countrySorted.map(c=>c.total_amt||0), '#4ade80');
 
-  // ── 6. 货币分布 ──
-  const currData = d.fees.by_currency.slice(0, 10);
-  renderBar('chartCurrency', currData.map(c => c.currency), currData.map(c => c.total), '#C0A060');
+  const currData = (d.fees.by_currency||[]).slice(0,10);
+  renderBar('chartCurrency', currData.map(c=>c.currency), currData.map(c=>c.total||0), '#C0A060');
 
-  // ── 7. 合作所类型 ──
-  const atData = d.associates.by_type.filter(t => t.firm_type).map(t => ({
-    name: firmTypeNames[t.firm_type] || t.firm_type,
-    value: t.cnt
-  }));
-  renderPie('chartAssocType', atData.length ? atData : [{name:'专利所', value: d.associates.total_associates}], '合作所类型');
+  const atData = d.associates.by_type.filter(t=>t.firm_type).map(t=>({name:firmTypeNames[t.firm_type]||t.firm_type, value:t.cnt}));
+  renderPie('chartAssocType', atData.length ? atData : [{name:'专利所',value:d.associates.total_associates}]);
 
-  // ── 8. 收款端概览 ──
-  renderBar('chartReceivable',
-    ['报价','发票','收款','结算','合同','佣金'],
-    [rc.quotes||0, rc.invoices||0, rc.payments||0, rc.settlements||0, rc.contracts||0, rc.commissions||0],
-    '#4a9eff');
+  renderBar('chartReceivable', ['报价','发票','收款','结算','合同','佣金'],
+    [rc.quotes||0,rc.invoices||0,rc.payments||0,rc.settlements||0,rc.contracts||0,rc.commissions||0], '#4a9eff');
 
-  // ── 9. 项目列表 ──
-  const pl = document.getElementById('projectList');
-  if (!d.projects || !d.projects.projects || d.projects.projects.length === 0) {
-    pl.innerHTML = '<div style="color:var(--text-dim);font-size:13px;text-align:center;padding:30px">暂无活跃项目</div>';
-  } else {
-    pl.innerHTML = d.projects.projects.map(p =>
-      `<div class="project-item">
-        <span class="name">${p.name}</span>
-        <span class="brief">${p.brief || '进行中'}</span>
-      </div>`
-    ).join('');
-  }
+  renderProjectList('chartProjects', d.projects);
 }
 
-// ── 世界地图 ──
-function renderWorldMap(id, data) {
+// ═══════ 3D GLOBE ═══════
+function render3DGlobe(id, data) {
   const dom = document.getElementById(id);
+  if (!dom) return;
   const c = echarts.init(dom);
+
+  // Build scatter3D data: [lng, lat, value]
+  const scatterData = data.map(d => ({
+    name: d.name_zh || d.code,
+    value: [d.lng, d.lat, 0],
+    count: d.count,
+    amt: d.total_amt
+  }));
+
+  // Build bar3D data: [lng, lat, height]
+  const maxCount = Math.max(...data.map(d=>d.count), 1);
+  const barData = data.map(d => ({
+    name: d.name_zh || d.code,
+    value: [d.lng, d.lat, (d.count / maxCount) * 15],
+    count: d.count,
+    amt: d.total_amt
+  }));
+
   c.setOption({
-    tooltip: { trigger: 'item', formatter: p => {
-      const iso3 = p.name;
-      const item = data.find(d => d.name === iso3);
-      return `${p.name}: ${item ? item.value : 0} 条年费记录`;
-    }},
-    visualMap: {
-      min: 0, max: Math.max(...data.map(d => d.value)) + 5,
-      text: ['高', '低'], textStyle: { color: '#7a8aa0', fontSize: 10 },
-      inRange: {
-        color: ['rgba(46,117,182,0.15)', 'rgba(46,117,182,0.4)', '#2e75b6', '#4a9eff', '#C0A060']
+    backgroundColor: 'transparent',
+    globe: {
+      baseTexture: null,
+      heightTexture: null,
+      shading: 'realistic',
+      realisticMaterial: {
+        roughness: '0.8',
+        metalness: 0.1,
+        color: '#0a1a3a'
       },
-      calculable: false, left: 20, bottom: 20
-    },
-    series: [{
-      type: 'map', map: 'world',
-      roam: true, selectedMode: false,
-      label: { show: false },
-      itemStyle: {
-        borderColor: 'rgba(255,255,255,0.08)',
-        borderWidth: 0.5,
-        areaColor: 'rgba(26,40,64,0.6)',
+      environment: {
+        color: 'transparent'
       },
-      emphasis: {
-        itemStyle: { areaColor: '#4a9eff', borderColor: '#C0A060', borderWidth: 1.5 },
-        label: { show: true, color: '#fff', fontSize: 11 }
+      atmosphere: {
+        show: true,
+        color: '#2e75b6',
+        intensity: 0.4
       },
-      data: data,
-      nameMap: {
-        'FRA': '法国', 'DEU': '德国', 'GBR': '英国', 'USA': '美国', 'CHN': '中国',
-        'JPN': '日本', 'CAN': '加拿大', 'AUS': '澳大利亚', 'BRA': '巴西', 'IND': '印度',
-        'RUS': '俄罗斯', 'KOR': '韩国', 'MEX': '墨西哥', 'ITA': '意大利', 'ESP': '西班牙',
-        'NLD': '荷兰', 'CHE': '瑞士', 'SWE': '瑞典', 'NOR': '挪威', 'DNK': '丹麦',
-        'FIN': '芬兰', 'POL': '波兰', 'TUR': '土耳其', 'THA': '泰国', 'SGP': '新加坡',
-        'MYS': '马来西亚', 'IDN': '印度尼西亚', 'VNM': '越南', 'PHL': '菲律宾',
-        'ARE': '阿联酋', 'SAU': '沙特阿拉伯', 'ZAF': '南非', 'UKR': '乌克兰',
-        'EST': '爱沙尼亚', 'LVA': '拉脱维亚', 'LTU': '立陶宛', 'TWN': '台湾',
-        'HKG': '香港', 'MAC': '澳门',
+      light: {
+        ambient: { intensity: 0.6, color: '#4a9eff' },
+        main: { intensity: 0.8, color: '#ffffff', shadow: false, alpha: 30, beta: 30 },
+        ambientCubemap: {
+          texture: 'https://cdn.jsdelivr.net/npm/three-globe@2.24.6/example/img/night-sky.png',
+          exposure: 0.3,
+          diffuseIntensity: 0.5,
+          specularIntensity: 0.5
+        }
+      },
+      viewControl: {
+        autoRotate: true,
+        autoRotateSpeed: 0.8,
+        distance: 200,
+        minDistance: 120,
+        maxDistance: 350,
+        alpha: 25,
+        beta: 0
+      },
+      postEffect: {
+        enable: true,
+        bloom: { enable: true, bloomIntensity: 0.3 },
+        depthOfField: { enable: false }
       }
-    }]
+    },
+    series: [
+      {
+        type: 'bar3D',
+        coordinateSystem: 'globe',
+        shading: 'lambert',
+        barSize: 0.8,
+        minHeight: 0.2,
+        silent: false,
+        itemStyle: {
+          color: {
+            type: 'linear', x: 0, y: 0, x2: 0, y2: 1,
+            colorStops: [
+              { offset: 0, color: '#4a9eff' },
+              { offset: 1, color: '#C0A060' }
+            ]
+          },
+          opacity: 0.85,
+          borderWidth: 0
+        },
+        emphasis: {
+          itemStyle: { color: '#4ade80', opacity: 1 }
+        },
+        label: {
+          show: true,
+          formatter: p => p.data.count + '条',
+          position: 'top',
+          color: '#fff',
+          fontSize: 10,
+          backgroundColor: 'rgba(0,0,0,0.5)',
+          padding: [2, 6],
+          borderRadius: 4
+        },
+        data: barData
+      },
+      {
+        type: 'scatter3D',
+        coordinateSystem: 'globe',
+        symbol: 'circle',
+        symbolSize: 2.5,
+        itemStyle: { color: '#4ade80', opacity: 0.6 },
+        data: scatterData
+      }
+    ]
   });
-  window.addEventListener('resize', () => c.resize());
+
+  window.addEventListener('resize', ()=>{
+    try { c.resize(); } catch(e) {}
+  });
 }
 
-// ── 饼图 ──
-function renderPie(id, data, title) {
+// ═══════ CHART HELPERS ═══════
+function renderPie(id, data) {
   const dom = document.getElementById(id);
   if (!dom) return;
   const c = echarts.init(dom);
   c.setOption({
     tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
     series: [{
-      type: 'pie', radius: ['38%', '68%'],
-      center: ['50%', '55%'],
+      type: 'pie', radius: ['35%', '65%'], center: ['50%', '55%'],
       avoidLabelOverlap: true,
-      itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: '#151f32' },
-      label: { show: true, formatter: '{b}', color: '#7a8aa0', fontSize: 10 },
-      emphasis: { label: { show: true, fontSize: 13, fontWeight: 'bold' },  itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.3)' } },
-      data: data,
-      color: ECHART_COLORS
+      itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: '#121b2e' },
+      label: { show: true, formatter: '{b}', color: '#6a7a90', fontSize: 10 },
+      emphasis: { label: { show: true, fontSize: 13, fontWeight: 'bold' } },
+      data: data, color: ECHART_COLORS
     }],
     backgroundColor: 'transparent'
   });
-  window.addEventListener('resize', () => c.resize());
+  window.addEventListener('resize', ()=>{ try{c.resize()}catch(e){} });
 }
 
-// ── 柱状图 ──
 function renderBar(id, labels, values, color) {
   const dom = document.getElementById(id);
   if (!dom) return;
@@ -436,37 +440,33 @@ function renderBar(id, labels, values, color) {
     tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
     grid: { left: 60, right: 16, top: 8, bottom: 32 },
     xAxis: { type: 'category', data: labels,
-      axisLabel: { color: '#7a8aa0', fontSize: 10, rotate: labels.length > 6 ? 40 : 0 },
-      axisLine: { lineStyle: { color: '#1e3050' } },
+      axisLabel: { color: '#6a7a90', fontSize: 10, rotate: labels.length>6?40:0 },
+      axisLine: { lineStyle: { color: '#1a2a45' } },
       axisTick: { show: false }
     },
     yAxis: { type: 'value',
-      splitLine: { lineStyle: { color: '#1e3050', type: 'dashed' } },
-      axisLabel: { color: '#7a8aa0', fontSize: 10 }
+      splitLine: { lineStyle: { color: '#1a2a45', type: 'dashed' } },
+      axisLabel: { color: '#6a7a90', fontSize: 10 }
     },
     series: [{
       type: 'bar', data: values,
       itemStyle: {
         color: { type: 'linear', x: 0, y: 0, x2: 0, y2: 1,
-          colorStops: [
-            { offset: 0, color: color || '#4a9eff' },
-            { offset: 1, color: (color || '#4a9eff') + '66' }
-          ]
+          colorStops: [{offset:0,color:color||'#4a9eff'},{offset:1,color:(color||'#4a9eff')+'66'}]
         },
         borderRadius: [4,4,0,0]
       },
       barMaxWidth: 36,
-      emphasis: { itemStyle: { color: color || '#4a9eff' } }
+      emphasis: { itemStyle: { color: color||'#4a9eff' } }
     }],
     backgroundColor: 'transparent'
   });
-  window.addEventListener('resize', () => c.resize());
+  window.addEventListener('resize', ()=>{ try{c.resize()}catch(e){} });
 }
 
-// ── 销售漏斗 ──
 function renderFunnel(id, data) {
   const dom = document.getElementById(id);
-  if (!dom || data.length === 0) {
+  if (!dom || data.length===0) {
     if (dom) dom.innerHTML = '<div style="color:var(--text-dim);font-size:13px;text-align:center;padding:40px">暂无销售数据</div>';
     return;
   }
@@ -477,89 +477,63 @@ function renderFunnel(id, data) {
       type: 'funnel', left: '10%', right: '10%', top: 20, bottom: 10,
       minSize: '20%', maxSize: '100%',
       sort: 'descending', gap: 4,
-      label: {
-        show: true, position: 'inside',
-        formatter: p => `${p.name}\n${p.value}`,
-        color: '#fff', fontSize: 12, fontWeight: 500
-      },
+      label: { show: true, position: 'inside', formatter: p=>`${p.name}\n${p.value}`, color: '#fff', fontSize: 12 },
       labelLine: { show: false },
-      itemStyle: {
-        borderColor: '#151f32', borderWidth: 2,
-        color: (params) => ECHART_COLORS[params.dataIndex % ECHART_COLORS.length]
+      itemStyle: { borderColor: '#121b2e', borderWidth: 2,
+        color: p=>ECHART_COLORS[p.dataIndex%ECHART_COLORS.length]
       },
-      emphasis: { label: { fontSize: 14 } },
       data: data
     }]
   });
-  window.addEventListener('resize', () => c.resize());
+  window.addEventListener('resize', ()=>{ try{c.resize()}catch(e){} });
 }
 
-// ── 年份热力条（柱状+折线组合） ──
-function renderYearHeat(id, labels, counts, amounts) {
+function renderYearChart(id, labels, counts, amounts) {
   const dom = document.getElementById(id);
   if (!dom) return;
   const c = echarts.init(dom);
   c.setOption({
-    tooltip: {
-      trigger: 'axis',
-      formatter: p => {
-        let s = `<b>第 ${p[0].axisValue} 年</b><br/>`;
-        p.forEach(item => s += `${item.marker} ${item.seriesName}: ${item.value}<br/>`);
-        return s;
-      }
-    },
-    legend: {
-      data: ['年费数', '金额'],
-      textStyle: { color: '#7a8aa0', fontSize: 10 },
-      icon: 'roundRect', itemWidth: 12, itemHeight: 6, right: 0, top: 0
-    },
+    tooltip: { trigger: 'axis', formatter: p=>`<b>第 ${p[0].axisValue} 年</b><br/>${p.map(i=>i.marker+' '+i.seriesName+': '+i.value).join('<br/>')}` },
+    legend: { data: ['年费数','金额'], textStyle: { color: '#6a7a90', fontSize: 10 }, icon: 'roundRect', itemWidth: 12, itemHeight: 6, right: 0, top: 0 },
     grid: { left: 40, right: 40, top: 24, bottom: 28 },
-    xAxis: {
-      type: 'category', data: labels,
-      axisLabel: { color: '#7a8aa0', fontSize: 9, interval: 2 },
-      axisLine: { lineStyle: { color: '#1e3050' } },
-      axisTick: { show: false }
-    },
+    xAxis: { type: 'category', data: labels, axisLabel: { color: '#6a7a90', fontSize: 9, interval: 2 }, axisLine: { lineStyle: { color: '#1a2a45' } }, axisTick: { show: false } },
     yAxis: [
-      { type: 'value', name: '条数', nameTextStyle: { color: '#7a8aa0', fontSize: 10 },
-        splitLine: { lineStyle: { color: '#1e3050', type: 'dashed' } },
-        axisLabel: { color: '#7a8aa0', fontSize: 9 } },
-      { type: 'value', name: '金额', nameTextStyle: { color: '#7a8aa0', fontSize: 10 },
-        splitLine: { show: false },
-        axisLabel: { color: '#7a8aa0', fontSize: 9, formatter: v => fmtMoney(v) } }
+      { type: 'value', name: '条数', nameTextStyle: { color: '#6a7a90', fontSize: 10 }, splitLine: { lineStyle: { color: '#1a2a45', type: 'dashed' } }, axisLabel: { color: '#6a7a90', fontSize: 9 } },
+      { type: 'value', name: '金额', nameTextStyle: { color: '#6a7a90', fontSize: 10 }, splitLine: { show: false }, axisLabel: { color: '#6a7a90', fontSize: 9, formatter: v=>fmtMoney(v) } }
     ],
     series: [
-      { name: '年费数', type: 'bar', data: counts,
-        itemStyle: {
-          color: { type: 'linear', x: 0, y: 1, x2: 0, y2: 0,
-            colorStops: [
-              { offset: 0, color: 'rgba(74,158,255,0.3)' },
-              { offset: 1, color: '#4a9eff' }
-            ]
-          },
-          borderRadius: [3,3,0,0]
-        },
-        barMaxWidth: 14
-      },
-      { name: '金额', type: 'line', yAxisIndex: 1,
-        data: amounts,
-        smooth: true,
-        lineStyle: { color: '#C0A060', width: 2 },
-        itemStyle: { color: '#C0A060' },
-        symbol: 'circle', symbolSize: 5,
-        areaStyle: {
-          color: { type: 'linear', x: 0, y: 0, x2: 0, y2: 1,
-            colorStops: [
-              { offset: 0, color: 'rgba(192,160,96,0.25)' },
-              { offset: 1, color: 'rgba(192,160,96,0)' }
-            ]
-          }
-        }
+      { name: '年费数', type: 'bar', data: counts, itemStyle: { color: { type: 'linear', x: 0, y: 1, x2: 0, y2: 0, colorStops: [{offset:0,color:'rgba(74,158,255,0.3)'},{offset:1,color:'#4a9eff'}] }, borderRadius: [3,3,0,0] }, barMaxWidth: 14 },
+      { name: '金额', type: 'line', yAxisIndex: 1, data: amounts, smooth: true, lineStyle: { color: '#C0A060', width: 2 }, itemStyle: { color: '#C0A060' }, symbol: 'circle', symbolSize: 5,
+        areaStyle: { color: { type: 'linear', x: 0, y: 0, x2: 0, y2: 1, colorStops: [{offset:0,color:'rgba(192,160,96,0.25)'},{offset:1,color:'rgba(192,160,96,0)'}] } }
       }
     ],
     backgroundColor: 'transparent'
   });
-  window.addEventListener('resize', () => c.resize());
+  window.addEventListener('resize', ()=>{ try{c.resize()}catch(e){} });
+}
+
+function renderProjectList(id, projects) {
+  const dom = document.getElementById(id);
+  if (!dom) return;
+  const p = projects && projects.projects ? projects.projects : [];
+  if (p.length === 0) {
+    dom.innerHTML = '<div style="color:var(--text-dim);font-size:13px;text-align:center;padding:40px">暂无活跃项目</div>';
+    return;
+  }
+  const c = echarts.init(dom);
+  c.setOption({
+    tooltip: { trigger: 'item' },
+    series: [{
+      type: 'pie', radius: ['45%', '70%'],
+      label: {
+        show: true, formatter: p=>`${p.name}`,
+        color: '#6a7a90', fontSize: 10
+      },
+      emphasis: { label: { fontSize: 12, fontWeight: 'bold' } },
+      data: p.map((x,i)=>({name:x.name, value: 1, itemStyle: {color: ECHART_COLORS[i%ECHART_COLORS.length]}})),
+    }]
+  });
+  window.addEventListener('resize', ()=>{ try{c.resize()}catch(e){} });
 }
 
 loadData();
