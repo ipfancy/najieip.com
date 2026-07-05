@@ -7,10 +7,45 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Call WeChat API
+      - name: Publish to WeChat
         env:
           APPID: ${{ secrets.WECHAT_APPID }}
           SECRET: ${{ secrets.WECHAT_SECRET }}
+          TITLE: ${{ github.event.client_payload.title }}
+          BODY: ${{ github.event.client_payload.body }}
         run: |
-          echo "starting..."
-          curl -s "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${SECRET}"
+          # Get token
+          TOKEN=$(curl -s "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${SECRET}" | python3 -c "import sys,json; print(json.load(sys.stdin).get('access_token',''))")
+          if [ -z "$TOKEN" ] || [ "$TOKEN" = "None" ]; then
+            echo "ERROR: Failed to get token"
+            exit 1
+          fi
+          echo "Got token: ${#TOKEN} chars"
+
+          # Create draft - write article as file first
+          echo "${BODY}" > /tmp/article.md
+
+          # Use Python to create draft
+          python3 << 'INNER'
+import json, os, urllib.request
+t = os.environ.get('TOKEN', '')
+title = os.environ.get('TITLE', '')
+with open('/tmp/article.md') as f:
+    body = f.read()
+
+# Create draft
+draft = {'articles': [{'title': title, 'author': '何自刚', 'content': body, 'need_open_comment': 0, 'only_fans_can_comment': 0}]}
+url = f'https://api.weixin.qq.com/cgi-bin/draft/add?access_token={t}'
+data = json.dumps(draft, ensure_ascii=False).encode('utf-8')
+req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
+resp = json.loads(urllib.request.urlopen(req).read())
+mid = resp.get('media_id', '')
+print(f'DRAFT_RESULT={json.dumps(resp)}')
+
+if mid:
+    # Submit draft
+    pub_url = f'https://api.weixin.qq.com/cgi-bin/draft/submit?access_token={t}'
+    pub_req = urllib.request.Request(pub_url, data=json.dumps({'media_id': mid}).encode('utf-8'), headers={'Content-Type': 'application/json'})
+    pub_resp = json.loads(urllib.request.urlopen(pub_req).read())
+    print(f'PUBLISH_RESULT={json.dumps(pub_resp)}')
+INNER
