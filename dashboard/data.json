@@ -1,0 +1,420 @@
+{
+  "generated_at": "2026-07-05T01:57:36.951126+00:00",
+  "fees": {
+    "total_fees": 958,
+    "by_type": [
+      {
+        "fee_type": "renewal",
+        "c": 958,
+        "total_amt": 10892247.0
+      }
+    ],
+    "by_country": [
+      {
+        "name_zh": "EE",
+        "name_en": "EE",
+        "count": 20
+      },
+      {
+        "name_zh": "墨西哥 (Mexico)",
+        "name_en": "墨西哥 (Mexico)",
+        "count": 20
+      },
+      {
+        "name_zh": "NO",
+        "name_en": "NO",
+        "count": 20
+      },
+      {
+        "name_zh": "UA",
+        "name_en": "UA",
+        "count": 20
+      },
+      {
+        "name_zh": "法国 (France)",
+        "name_en": "法国 (France)",
+        "count": 19
+      },
+      {
+        "name_zh": "马来西亚 (Malaysia)",
+        "name_en": "马来西亚 (Malaysia)",
+        "count": 19
+      },
+      {
+        "name_zh": "TR",
+        "name_en": "TR",
+        "count": 19
+      },
+      {
+        "name_zh": "台湾 (Taiwan)",
+        "name_en": "台湾 (Taiwan)",
+        "count": 19
+      },
+      {
+        "name_zh": "BE",
+        "name_en": "BE",
+        "count": 18
+      },
+      {
+        "name_zh": "巴西 (Brazil)",
+        "name_en": "巴西 (Brazil)",
+        "count": 18
+      },
+      {
+        "name_zh": "加拿大 (Canada)",
+        "name_en": "加拿大 (Canada)",
+        "count": 18
+      },
+      {
+        "name_zh": "德国 (Germany)",
+        "name_en": "德国 (Germany)",
+        "count": 18
+      },
+      {
+        "name_zh": "欧洲专利局 (EPO)",
+        "name_en": "欧洲专利局 (EPO)",
+        "count": 18
+      },
+      {
+        "name_zh": "ES",
+        "name_en": "ES",
+        "count": 18
+      },
+      {
+        "name_zh": "印度 (India)",
+        "name_en": "印度 (India)",
+        "count": 18
+      }
+    ],
+    "by_year": [
+      {
+        "year": 1,
+        "count": 15
+      },
+      {
+        "year": 2,
+        "count": 18
+      },
+      {
+        "year": 3,
+        "count": 41
+      },
+      {
+        "year": 4,
+        "count": 47
+      },
+      {
+        "year": 5,
+        "count": 51
+      },
+      {
+        "year": 6,
+        "count": 52
+      },
+      {
+        "year": 7,
+        "count": 53
+      },
+      {
+        "year": 8,
+        "count": 53
+      },
+      {
+        "year": 9,
+        "count": 52
+      },
+      {
+        "year": 10,
+        "count": 52
+      },
+      {
+        "year": 11,
+        "count": 53
+      },
+      {
+        "year": 12,
+        "count": 53
+      },
+      {
+        "year": 13,
+        "count": 52
+      },
+      {
+        "year": 14,
+        "count": 52
+      },
+      {
+        "year": 15,
+        "count": 53
+      },
+      {
+        "year": 16,
+        "count": 52
+      },
+      {
+        "year": 17,
+        "count": 52
+      },
+      {
+        "year": 18,
+        "count": 52
+      },
+      {
+        "year": 19,
+        "count": 53
+      },
+      {
+        "year": 20,
+        "count": 52
+      }
+    ],
+    "by_currency": [
+      {
+        "currency": "哈萨克斯坦坚戈",
+        "cnt": 40,
+        "total": 4201091.0
+      },
+      {
+        "currency": "匈牙利福林",
+        "cnt": 20,
+        "total": 2555300.0
+      },
+      {
+        "currency": "塞尔维亚第纳尔",
+        "cnt": 18,
+        "total": 995610.0
+      },
+      {
+        "currency": "冰岛克朗",
+        "cnt": 20,
+        "total": 674800.0
+      },
+      {
+        "currency": "吉尔吉斯斯坦索姆",
+        "cnt": 18,
+        "total": 663000.0
+      },
+      {
+        "currency": "俄罗斯卢布",
+        "cnt": 36,
+        "total": 315450.0
+      },
+      {
+        "currency": "古巴比索",
+        "cnt": 18,
+        "total": 288000.0
+      },
+      {
+        "currency": "新台币",
+        "cnt": 19,
+        "total": 220000.0
+      },
+      {
+        "currency": "泰铢",
+        "cnt": 16,
+        "total": 152000.0
+      },
+      {
+        "currency": "欧元",
+        "cnt": 323,
+        "total": 141003.0
+      },
+      {
+        "currency": "土耳其里拉",
+        "cnt": 19,
+        "total": 89902.0
+      },
+      {
+        "currency": "格里夫纳",
+        "cnt": 20,
+        "total": 79800.0
+      },
+      {
+        "currency": "印度卢比",
+        "cnt": 18,
+        "total": 76800.0
+      },
+      {
+        "currency": "瑞典克朗",
+        "cnt": 18,
+        "total": 72600.0
+      },
+      {
+        "currency": "挪威克朗",
+        "cnt": 20,
+        "total": 68000.0
+      },
+      {
+        "currency": "丹麦克朗",
+        "cnt": 20,
+        "total": 52715.0
+      },
+      {
+        "currency": "克罗地亚库纳",
+        "cnt": 18,
+        "total": 39280.0
+      },
+      {
+        "currency": "墨西哥比索",
+        "cnt": 20,
+        "total": 27983.0
+      },
+      {
+        "currency": "土库曼斯坦马纳特",
+        "cnt": 20,
+        "total": 26713.0
+      },
+      {
+        "currency": "巴西里亚尔",
+        "cnt": 18,
+        "total": 26250.0
+      },
+      {
+        "currency": "林吉特",
+        "cnt": 19,
+        "total": 24150.0
+      },
+      {
+        "currency": "美元",
+        "cnt": 42,
+        "total": 21078.0
+      },
+      {
+        "currency": "新谢克尔",
+        "cnt": 5,
+        "total": 15714.0
+      },
+      {
+        "currency": "澳门元",
+        "cnt": 17,
+        "total": 13000.0
+      },
+      {
+        "currency": "保加利亚列弗",
+        "cnt": 20,
+        "total": 12650.0
+      },
+      {
+        "currency": "新加坡元",
+        "cnt": 16,
+        "total": 9865.0
+      },
+      {
+        "currency": "瑞士法郎",
+        "cnt": 17,
+        "total": 7060.0
+      },
+      {
+        "currency": "白俄罗斯卢布",
+        "cnt": 18,
+        "total": 5957.0
+      },
+      {
+        "currency": "加拿大元",
+        "cnt": 18,
+        "total": 5037.0
+      },
+      {
+        "currency": "英镑",
+        "cnt": 16,
+        "total": 4640.0
+      },
+      {
+        "currency": "新西兰元",
+        "cnt": 16,
+        "total": 3200.0
+      },
+      {
+        "currency": "南非兰特",
+        "cnt": 17,
+        "total": 2392.0
+      },
+      {
+        "currency": "阿塞拜疆马纳特",
+        "cnt": 18,
+        "total": 1208.0
+      }
+    ]
+  },
+  "associates": {
+    "total_associates": 862,
+    "by_country": [
+      {
+        "name_zh": "日本 (Japan)",
+        "cnt": 181
+      },
+      {
+        "name_zh": "德国 (Germany)",
+        "cnt": 161
+      },
+      {
+        "name_zh": "美国 (United States)",
+        "cnt": 146
+      },
+      {
+        "name_zh": "中国",
+        "cnt": 111
+      },
+      {
+        "name_zh": "印度 (India)",
+        "cnt": 38
+      },
+      {
+        "name_zh": "泰国 (Thailand)",
+        "cnt": 17
+      },
+      {
+        "name_zh": "英国 (United Kingdom)",
+        "cnt": 13
+      },
+      {
+        "name_zh": "俄罗斯 (Russia)",
+        "cnt": 13
+      },
+      {
+        "name_zh": "香港 (Hong Kong)",
+        "cnt": 11
+      },
+      {
+        "name_zh": "巴西 (Brazil)",
+        "cnt": 9
+      }
+    ],
+    "by_type": [
+      {
+        "firm_type": "patent_only",
+        "cnt": 862
+      }
+    ],
+    "by_rating": []
+  },
+  "countries": {
+    "total_countries": 71
+  },
+  "sales": {
+    "clients": 1,
+    "strategies": 1,
+    "trainings": 1,
+    "articles": 19,
+    "receivable": {
+      "quotes": 1,
+      "invoices": 1,
+      "payments": 1,
+      "settlements": 1,
+      "contracts": 1,
+      "commissions": 1
+    }
+  },
+  "git": {
+    "last_deploy": null
+  },
+  "projects": {
+    "projects": [
+      {
+        "name": "najieip-relaunch",
+        "has_progress": true,
+        "brief": "- [2026-07-05] DNS 已配通：najieip.com → ipfancy.github.io ✅"
+      }
+    ]
+  }
+}
