@@ -1,22 +1,16 @@
-name: WeChat Token Relay
-on:
-  repository_dispatch:
-    types: [wechat-get-token]
+name: WeChat Relay
+on: [repository_dispatch]
 jobs:
-  relay:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Get Token
+      - run: echo "Event type: ${{ github.event.action }}"
+      - name: Publish Article
+        if: github.event.action == 'publish'
         env:
           APPID: ${{ secrets.WECHAT_APPID }}
           SECRET: ${{ secrets.WECHAT_SECRET }}
         run: |
+          echo "Getting WeChat token..."
           RESP=$(curl -s "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${SECRET}")
-          TOKEN=$(echo "$RESP" | python3 -c "import sys,json; print(json.load(sys.stdin).get('access_token','no_token'))")
-          echo "$TOKEN" > .wechat-token.txt
-          git config user.name "relay-bot"
-          git config user.email "bot@najieip.com"
-          git add .wechat-token.txt
-          git commit -m "update token [skip ci]" || true
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/ipfancy/najieip.com.git
+          echo "Response: $RESP"
