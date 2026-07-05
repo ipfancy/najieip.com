@@ -1,77 +1,22 @@
-name: WeChat Relay
+name: WeChat Token Relay
 on:
   repository_dispatch:
-    types: [wechat-publish]
+    types: [wechat-get-token]
 jobs:
-  publish:
+  relay:
     runs-on: ubuntu-latest
     steps:
-      - name: Publish to WeChat
-        id: publish
+      - uses: actions/checkout@v4
+      - name: Get Token
         env:
           APPID: ${{ secrets.WECHAT_APPID }}
           SECRET: ${{ secrets.WECHAT_SECRET }}
-          ARTICLE: ${{ github.event.client_payload.article }}
-          TITLE: ${{ github.event.client_payload.title }}
         run: |
-          # Get access token
-          echo "Getting token..."
-          TOKEN=$(curl -s "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${SECRET}" | python3 -c "import sys,json; print(json.load(sys.stdin).get('access_token',''))")
-          echo "Token length: ${#TOKEN}"
-          
-          # Create draft - write article to file first to avoid shell escaping
-          python3 -c "
-import json, os, urllib.request
-t = os.environ['TOKEN']
-article = os.environ.get('ARTICLE', '')
-title = os.environ.get('TITLE', '')
-body = {'articles': [{'title': title, 'author': '何自刚', 'content': article, 'need_open_comment': 0, 'only_fans_can_comment': 0}]}
-url = 'https://api.weixin.qq.com/cgi-bin/draft/add?access_token=' + t
-data = json.dumps(body, ensure_ascii=False).encode('utf-8')
-req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
-resp = json.loads(urllib.request.urlopen(req).read())
-mid = resp.get('media_id', '')
-print(f'MEDIA_ID={mid}')
-" 2>&1
-          
-          MEDIA_ID=$(python3 -c "
-import json, os, urllib.request
-t = os.environ['TOKEN']
-article = os.environ.get('ARTICLE', '')
-title = os.environ.get('TITLE', '')
-body = {'articles': [{'title': title, 'author': '何自刚', 'content': article, 'need_open_comment': 0, 'only_fans_can_comment': 0}]}
-url = 'https://api.weixin.qq.com/cgi-bin/draft/add?access_token=' + t
-data = json.dumps(body, ensure_ascii=False).encode('utf-8')
-req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
-resp = json.loads(urllib.request.urlopen(req).read())
-print(resp.get('media_id', json.dumps(resp)))
-")
-          echo "Media ID: ${MEDIA_ID}"
-          
-          # Submit/publish draft
-          python3 -c "
-import json, os, urllib.request
-t = os.environ['TOKEN']
-mid = os.environ.get('MEDIA_ID', '')
-url = 'https://api.weixin.qq.com/cgi-bin/draft/submit?access_token=' + t
-body = {'media_id': mid}
-data = json.dumps(body).encode('utf-8')
-req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
-resp = json.loads(urllib.request.urlopen(req).read())
-pid = resp.get('publish_id', resp.get('errcode', json.dumps(resp)))
-print(f'PUBLISH_ID={pid}')
-" 2>&1
-          
-          PUBLISH_ID=$(python3 -c "
-import json, os, urllib.request
-t = os.environ['TOKEN']
-mid = os.environ.get('MEDIA_ID', '')
-url = 'https://api.weixin.qq.com/cgi-bin/draft/submit?access_token=' + t
-body = {'media_id': mid}
-data = json.dumps(body).encode('utf-8')
-req = urllib.request.Request(url, data=data, headers={'Content-Type': 'application/json'})
-resp = json.loads(urllib.request.urlopen(req).read())
-print(resp.get('publish_id', json.dumps(resp)))
-")
-          echo "Publish ID: ${PUBLISH_ID}"
-          echo "publish_id=$PUBLISH_ID" >> $GITHUB_OUTPUT
+          RESP=$(curl -s "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${SECRET}")
+          TOKEN=$(echo "$RESP" | python3 -c "import sys,json; print(json.load(sys.stdin).get('access_token','no_token'))")
+          echo "$TOKEN" > .wechat-token.txt
+          git config user.name "relay-bot"
+          git config user.email "bot@najieip.com"
+          git add .wechat-token.txt
+          git commit -m "update token [skip ci]" || true
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/ipfancy/najieip.com.git
