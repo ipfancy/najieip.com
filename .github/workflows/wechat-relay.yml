@@ -1,0 +1,23 @@
+name: WeChat API Relay
+on:
+  repository_dispatch:
+    types: [wechat-publish]
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    outputs:
+      token: ${{ steps.token.outputs.TOKEN }}
+    steps:
+      - name: Get Access Token
+        id: token
+        env:
+          APPID: ${{ secrets.WECHAT_APPID }}
+          SECRET: ${{ secrets.WECHAT_SECRET }}
+          DISPATCH_PATH: ${{ github.event.client_payload.path }}
+        run: |
+          if [ "$DISPATCH_PATH" = "token" ]; then
+            RESP=$(curl -s "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${SECRET}")
+            TOKEN=$(echo "$RESP" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('access_token',''))")
+            echo "TOKEN=$TOKEN" >> $GITHUB_OUTPUT
+            echo "token=$TOKEN" >> $GITHUB_OUTPUT
+          fi
