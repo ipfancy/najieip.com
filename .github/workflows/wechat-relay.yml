@@ -1,93 +1,45 @@
-name: WeChat API Relay
+name: WeChat Relay
 on:
   repository_dispatch:
     types: [wechat-publish]
 jobs:
-  relay:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Process Request
+      - uses: actions/checkout@v4
+      - name: Publish
         env:
           APPID: ${{ secrets.WECHAT_APPID }}
           SECRET: ${{ secrets.WECHAT_SECRET }}
-          DISPATCH_PATH: ${{ github.event.client_payload.path }}
-          ARTICLE_PATH: ${{ github.event.client_payload.article_path }}
+          ARTICLE: ${{ github.event.client_payload.article }}
+          TITLE: ${{ github.event.client_payload.title }}
         run: |
-          # Step 1: Get access token
-          RESP=$(curl -s "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${SECRET}")
-          TOKEN=$(echo "$RESP" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('access_token',''))")
-          echo "Got token: ${TOKEN:0:10}..."
+          TOKEN=$(curl -s "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${SECRET}" | python3 -c "import sys,json; print(json.load(sys.stdin).get('access_token',''))")
+          echo "TOKEN_OK=${#TOKEN}"
           
-          if [ "$DISPATCH_PATH" = "publish" ] && [ -n "$ARTICLE_PATH" ] && [ -f "$ARTICLE_PATH" ]; then
-            # Read article and publish
-            python3 -c "
-import json, sys, os, urllib.request, re
-from pathlib import Path
-
-TOKEN = os.environ.get('TOKEN', '')
-ARTICLE_PATH = os.environ.get('ARTICLE_PATH', '')
-
-# Read and parse article
-with open(ARTICLE_PATH) as f:
-    content = f.read()
-
-# Extract title (first # heading)
-lines = content.split('\n')
-title = ''
-digest = ''
-for line in lines:
-    if line.startswith('# ') and not title:
-        title = line.strip('# ').strip()
-    if line.startswith('> ') and not digest:
-        digest = line.strip('> ').strip()[:120]
-
-body = content
-
-# Create draft
-draft_data = {
-    'articles': [{
-        'title': title,
-        'author': '何自刚',
-        'digest': digest or title,
-        'content': body,
-        'need_open_comment': 0,
-        'only_fans_can_comment': 0,
-    }]
-}
-
-url = f'https://api.weixin.qq.com/cgi-bin/draft/add?access_token={TOKEN}'
-req = urllib.request.Request(url, data=json.dumps(draft_data, ensure_ascii=False).encode('utf-8'),
-                             headers={'Content-Type': 'application/json'})
+          # Create draft
+          DRAFT=$(python3 -c "
+import json, urllib.request, os, sys
+t = os.environ['TOKEN']
+article = os.environ.get('ARTICLE', '')
+title = os.environ.get('TITLE', '')
+body = {'articles': [{'title': title, 'author': '何自刚', 'digest': title[:120], 'content': article, 'need_open_comment': 0, 'only_fans_can_comment': 0}]}
+url = f'https://api.weixin.qq.com/cgi-bin/draft/add?access_token={t}'
+req = urllib.request.Request(url, data=json.dumps(body, ensure_ascii=False).encode('utf-8'), headers={'Content-Type': 'application/json'})
 resp = json.loads(urllib.request.urlopen(req).read())
-draft_id = resp.get('media_id', '')
-print(f'Draft created: {draft_id}')
-
-if draft_id:
-    # Publish draft
-    pub_url = f'https://api.weixin.qq.com/cgi-bin/draft/submit?access_token={TOKEN}'
-    pub_req = urllib.request.Request(pub_url, 
-        data=json.dumps({'media_id': draft_id}).encode('utf-8'),
-        headers={'Content-Type': 'application/json'})
-    pub_resp = json.loads(urllib.request.urlopen(pub_req).read())
-    print(f'Published: {pub_resp}')
-" 2>&1
-          fi
+print(resp.get('media_id', json.dumps(resp)))
+")
+          echo "DRAFT_ID=$DRAFT"
           
-          echo "TOKEN_RESPONSE=$TOKEN"
-          
-          # Save token to a file for the workflow to output
-          echo "TOKEN=$TOKEN" >> $GITHUB_ENV
-
-      - name: Save Result
-        run: |
-          echo "${{ env.TOKEN }}" > .wechat-token.txt
-          git config user.name "wechat-relay"
-          git config user.email "relay@najieip.com"
-          git add .wechat-token.txt
-          git commit -m "chore: update wechat token [skip ci]" || true
-          git push
+          # Submit/publish
+          PUB=$(python3 -c "
+import json, urllib.request, os
+t = os.environ['TOKEN']
+did = '$DRAFT'
+url = f'https://api.weixin.qq.com/cgi-bin/draft/submit?access_token={t}'
+req = urllib.request.Request(url, data=json.dumps({'media_id': did}).encode('utf-8'), headers={'Content-Type': 'application/json'})
+resp = json.loads(urllib.request.urlopen(req).read())
+print(json.dumps(resp))
+")
+          echo "PUBLISH=$PUB"
+          echo "publish_id=$(echo $PUB | python3 -c 'import sys,json; print(json.load(sys.stdin).get('publish_id',''))')" >> $GITHUB_OUTPUT
