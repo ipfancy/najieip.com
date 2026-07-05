@@ -1,16 +1,16 @@
 name: WeChat Relay
-on: [repository_dispatch]
+on:
+  repository_dispatch:
+    types: [publish]
+
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Event type: ${{ github.event.action }}"
-      - name: Publish Article
-        if: github.event.action == 'publish'
+      - name: Call WeChat API
         env:
           APPID: ${{ secrets.WECHAT_APPID }}
           SECRET: ${{ secrets.WECHAT_SECRET }}
         run: |
-          echo "Getting WeChat token..."
-          RESP=$(curl -s "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${SECRET}")
-          echo "Response: $RESP"
+          echo "starting..."
+          curl -s "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${SECRET}"
