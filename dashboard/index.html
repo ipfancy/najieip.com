@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>纳杰 · 运营仪表盘</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --card: #1a2332;
+  --card-hover: #1f2b3d;
+  --accent: #2e75b6;
+  --accent-light: #4a9eff;
+  --gold: #C0A060;
+  --text: #e2e8f0;
+  --text-dim: #8896a6;
+  --border: #2a3a4e;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.3);
+  --font: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 20px;
+}
+.header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 24px; margin-bottom: 20px;
+}
+.header h1 {
+  font-size: 22px; font-weight: 600;
+  background: linear-gradient(135deg, var(--accent-light), var(--gold));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.header .meta { font-size: 12px; color: var(--text-dim); }
+.header .meta span { margin-left: 16px; }
+
+/* Summary cards */
+.cards {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px; margin-bottom: 20px;
+}
+.card {
+  background: var(--card); border-radius: var(--radius); padding: 20px;
+  border: 1px solid var(--border); transition: all 0.2s;
+}
+.card:hover { background: var(--card-hover); transform: translateY(-1px); }
+.card .label { font-size: 12px; color: var(--text-dim); margin-bottom: 4px; }
+.card .value { font-size: 28px; font-weight: 700; }
+.card .sub { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
+.card .value.gold { color: var(--gold); }
+.card .value.blue { color: var(--accent-light); }
+.card .value.green { color: #4ade80; }
+.card .value.purple { color: #a78bfa; }
+
+/* Charts grid */
+.charts {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 12px; margin-bottom: 20px;
+}
+.chart-box {
+  background: var(--card); border-radius: var(--radius); padding: 16px;
+  border: 1px solid var(--border);
+}
+.chart-box h3 {
+  font-size: 13px; font-weight: 500; color: var(--text-dim);
+  margin-bottom: 8px;
+}
+.chart-box .chart { width: 100%; height: 280px; }
+.chart-box.full { grid-column: 1 / -1; }
+.chart-box.full .chart { height: 200px; }
+
+/* Project list */
+.project-list { margin-top: 8px; }
+.project-item {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8px 12px; border-radius: 8px;
+  border-left: 3px solid var(--accent); margin-bottom: 4px;
+  background: rgba(46, 117, 182, 0.08);
+  font-size: 13px;
+}
+.project-item .name { font-weight: 500; }
+.project-item .brief { color: var(--text-dim); font-size: 12px; }
+
+@media (max-width: 768px) {
+  .charts { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>纳杰 · 运营仪表盘</h1>
+    <div style="font-size:12px;color:var(--text-dim);margin-top:4px">
+      愛普納傑 · 觅理 · 纳杰 · 何自刚
+    </div>
+  </div>
+  <div class="meta">
+    数据来源: 涉外年费库 · 销售系统
+    <span id="updateTime">加载中...</span>
+  </div>
+</div>
+
+<!-- Summary Cards -->
+<div class="cards" id="summaryCards">
+  <div class="card"><div class="label">📋 年费记录</div><div class="value blue" id="totalFees">—</div><div class="sub">全球专利年费</div></div>
+  <div class="card"><div class="label">🏢 合作所</div><div class="value gold" id="totalAssociates">—</div><div class="sub">覆盖国家</div></div>
+  <div class="card"><div class="label">🌍 覆盖国家</div><div class="value green" id="totalCountries">—</div><div class="sub">涉外网络</div></div>
+  <div class="card"><div class="label">👥 客户</div><div class="value purple" id="totalClients">—</div><div class="sub">策略 / 训练</div></div>
+</div>
+
+<!-- Charts Row 1 -->
+<div class="charts">
+  <div class="chart-box">
+    <h3>年费按类型分布</h3>
+    <div class="chart" id="chartType"></div>
+  </div>
+  <div class="chart-box">
+    <h3>年费按国家 Top 10</h3>
+    <div class="chart" id="chartCountry"></div>
+  </div>
+</div>
+
+<!-- Charts Row 2 -->
+<div class="charts">
+  <div class="chart-box">
+    <h3>年费按年份分布</h3>
+    <div class="chart" id="chartYear"></div>
+  </div>
+  <div class="chart-box">
+    <h3>合作所类型分布</h3>
+    <div class="chart" id="chartAssocType"></div>
+  </div>
+</div>
+
+<!-- Bottom: Receivable + Projects -->
+<div class="charts">
+  <div class="chart-box">
+    <h3>收款端概览</h3>
+    <div class="chart" id="chartReceivable"></div>
+  </div>
+  <div class="chart-box">
+    <h3>活跃项目</h3>
+    <div class="project-list" id="projectList"></div>
+  </div>
+</div>
+
+<script>
+// ── 类型映射 ──
+const typeNames = {
+  renewal: '续展', maintenance: '维持', filing: '申请',
+  examination: '审查', grant: '授权', search: '检索',
+  issue: '颁证', designation: '指定', appeal: '上诉',
+  opposition: '异议', filing_extra: '附加申请',
+  renewal_surcharge: '续展附加', maintenance_surcharge: '维持附加',
+  other: '其他'
+};
+
+const firmTypeNames = {
+  full_service: '综合所', patent_only: '专利所', trademark_only: '商标所',
+  litigation: '诉讼所', ip_only: 'IP所', general: '一般所'
+};
+
+// ── 加载数据 ──
+async function loadData() {
+  try {
+    const res = await fetch('./data.json?' + Date.now());
+    const d = await res.json();
+    render(d);
+  } catch(e) {
+    document.getElementById('updateTime').textContent = '⚠️ 数据加载失败';
+    console.error(e);
+  }
+}
+
+function render(d) {
+  // 更新时间
+  const ts = new Date(d.generated_at);
+  document.getElementById('updateTime').textContent =
+    `更新于 ${ts.toLocaleDateString('zh-CN')} ${ts.toLocaleTimeString('zh-CN')}`;
+
+  // 摘要卡片
+  document.getElementById('totalFees').textContent = d.fees.total_fees.toLocaleString();
+  document.getElementById('totalAssociates').textContent = d.associates.total_associates.toLocaleString();
+  document.getElementById('totalCountries').textContent = d.countries.total_countries;
+  document.getElementById('totalClients').textContent = d.sales.clients;
+  document.querySelector('.card .sub').textContent = `覆盖 ${d.countries.total_countries} 个国家`;
+
+  // 按类型 (饼图)
+  const typeData = d.fees.by_type.map(t => ({
+    name: typeNames[t.fee_type] || t.fee_type,
+    value: t.c
+  }));
+  renderPie('chartType', typeData, '年费类型');
+
+  // 按国家 Top 10 (柱状图)
+  const cData = d.fees.by_country.slice(0, 10);
+  renderBar('chartCountry', cData.map(c => c.name_zh), cData.map(c => c.count), '#4a9eff');
+
+  // 按年份 (折线图)
+  const yData = d.fees.by_year;
+  renderLine('chartYear', yData.map(y => String(y.year)), yData.map(y => y.count));
+
+  // 合作所类型
+  const atData = d.associates.by_type.filter(t => t.firm_type).map(t => ({
+    name: firmTypeNames[t.firm_type] || t.firm_type,
+    value: t.cnt
+  }));
+  renderPie('chartAssocType', atData, '合作所类型');
+
+  // 收款端
+  const rc = d.sales.receivable;
+  renderBar('chartReceivable',
+    ['报价', '发票', '收款', '结算', '合同', '佣金'],
+    [rc.quotes, rc.invoices, rc.payments, rc.settlements, rc.contracts, rc.commissions],
+    '#4ade80');
+
+  // 项目列表
+  const pl = document.getElementById('projectList');
+  if (d.projects.projects.length === 0) {
+    pl.innerHTML = '<div style="color:var(--text-dim);font-size:13px;text-align:center;padding:20px">暂无活跃项目</div>';
+  } else {
+    pl.innerHTML = d.projects.projects.map(p =>
+      `<div class="project-item">
+        <span class="name">${p.name}</span>
+        <span class="brief">${p.brief || '进行中'}</span>
+      </div>`
+    ).join('');
+  }
+}
+
+// ── 图表渲染函数 ──
+function renderPie(id, data, title) {
+  const dom = document.getElementById(id);
+  const c = echarts.init(dom);
+  c.setOption({
+    tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
+    series: [{
+      type: 'pie', radius: ['35%', '65%'],
+      avoidLabelOverlap: true,
+      itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: '#1a2332' },
+      label: { show: true, formatter: '{b}', color: '#8896a6', fontSize: 11 },
+      emphasis: { label: { show: true, fontSize: 14, fontWeight: 'bold' } },
+      data: data,
+      color: ['#4a9eff','#C0A060','#4ade80','#a78bfa','#f472b6','#fb923c','#22d3ee','#e879f9','#facc15','#34d399']
+    }],
+    backgroundColor: 'transparent'
+  });
+  window.addEventListener('resize', () => c.resize());
+}
+
+function renderBar(id, labels, values, color) {
+  const dom = document.getElementById(id);
+  const c = echarts.init(dom);
+  c.setOption({
+    tooltip: { trigger: 'axis' },
+    grid: { left: 50, right: 16, top: 8, bottom: 28 },
+    xAxis: { type: 'category', data: labels, axisLabel: { color: '#8896a6', fontSize: 11, rotate: labels.length > 8 ? 35 : 0 }, axisLine: { lineStyle: { color: '#2a3a4e' } } },
+    yAxis: { type: 'value', splitLine: { lineStyle: { color: '#2a3a4e', type: 'dashed' } }, axisLabel: { color: '#8896a6' } },
+    series: [{ type: 'bar', data: values, itemStyle: { color: color || '#4a9eff', borderRadius: [4,4,0,0] }, barMaxWidth: 40 }],
+    backgroundColor: 'transparent'
+  });
+  window.addEventListener('resize', () => c.resize());
+}
+
+function renderLine(id, labels, values) {
+  const dom = document.getElementById(id);
+  const c = echarts.init(dom);
+  c.setOption({
+    tooltip: { trigger: 'axis' },
+    grid: { left: 50, right: 16, top: 8, bottom: 28 },
+    xAxis: { type: 'category', data: labels, axisLabel: { color: '#8896a6', fontSize: 11 }, axisLine: { lineStyle: { color: '#2a3a4e' } } },
+    yAxis: { type: 'value', splitLine: { lineStyle: { color: '#2a3a4e', type: 'dashed' } }, axisLabel: { color: '#8896a6' } },
+    series: [{
+      type: 'line', data: values, smooth: true,
+      lineStyle: { color: '#4a9eff', width: 2 },
+      areaStyle: { color: { type: 'linear', x: 0, y: 0, x2: 0, y2: 1, colorStops: [{ offset: 0, color: 'rgba(74,158,255,0.3)' }, { offset: 1, color: 'rgba(74,158,255,0)' }] } },
+      itemStyle: { color: '#4a9eff' },
+      symbol: 'circle', symbolSize: 6
+    }],
+    backgroundColor: 'transparent'
+  });
+  window.addEventListener('resize', () => c.resize());
+}
+
+loadData();
+</script>
+</body>
+</html>
