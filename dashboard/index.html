@@ -5,19 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>纳杰 · 运营仪表盘</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/map/js/world.js"></script>
 <style>
 :root {
-  --bg: #0f1419;
-  --card: #1a2332;
-  --card-hover: #1f2b3d;
+  --bg: #0b1120;
+  --card: #151f32;
+  --card-hover: #1a2840;
   --accent: #2e75b6;
   --accent-light: #4a9eff;
   --gold: #C0A060;
-  --text: #e2e8f0;
-  --text-dim: #8896a6;
-  --border: #2a3a4e;
-  --radius: 12px;
-  --shadow: 0 4px 24px rgba(0,0,0,0.3);
+  --gold-light: #D4B87A;
+  --text: #e8edf5;
+  --text-dim: #7a8aa0;
+  --border: #1e3050;
+  --radius: 14px;
+  --shadow: 0 4px 30px rgba(0,0,0,0.4);
   --font: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -26,70 +28,110 @@ body {
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
-  padding: 20px;
+  padding: 16px;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(46,117,182,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(192,160,96,0.04) 0%, transparent 50%);
 }
+
+/* Header */
 .header {
   display: flex; justify-content: space-between; align-items: center;
-  padding: 16px 24px; margin-bottom: 20px;
+  padding: 20px 24px 12px; margin-bottom: 8px;
 }
 .header h1 {
-  font-size: 22px; font-weight: 600;
+  font-size: 24px; font-weight: 700;
   background: linear-gradient(135deg, var(--accent-light), var(--gold));
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
 }
-.header .meta { font-size: 12px; color: var(--text-dim); }
-.header .meta span { margin-left: 16px; }
+.header .subtitle {
+  font-size: 12px; color: var(--text-dim); margin-top: 4px;
+  -webkit-text-fill-color: var(--text-dim);
+}
+.header .meta { font-size: 11px; color: var(--text-dim); text-align: right; }
+.header .meta span { margin-left: 12px; }
+.status-dot {
+  display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  margin-right: 4px;
+}
+.status-dot.online { background: #4ade80; box-shadow: 0 0 8px rgba(74,222,128,0.5); }
 
 /* Summary cards */
 .cards {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 12px; margin-bottom: 20px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px; margin-bottom: 14px;
 }
 .card {
-  background: var(--card); border-radius: var(--radius); padding: 20px;
-  border: 1px solid var(--border); transition: all 0.2s;
+  background: var(--card); border-radius: var(--radius); padding: 18px 20px;
+  border: 1px solid var(--border); transition: all 0.25s;
+  position: relative; overflow: hidden;
 }
-.card:hover { background: var(--card-hover); transform: translateY(-1px); }
-.card .label { font-size: 12px; color: var(--text-dim); margin-bottom: 4px; }
-.card .value { font-size: 28px; font-weight: 700; }
-.card .sub { font-size: 12px; color: var(--text-dim); margin-top: 4px; }
-.card .value.gold { color: var(--gold); }
+.card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+  opacity: 0; transition: opacity 0.3s;
+}
+.card:hover { background: var(--card-hover); transform: translateY(-2px); border-color: rgba(74,158,255,0.3); }
+.card:hover::before { opacity: 1; }
+.card .label { font-size: 11px; color: var(--text-dim); margin-bottom: 3px; letter-spacing: 1px; }
+.card .value { font-size: 30px; font-weight: 800; line-height: 1.1; }
+.card .sub { font-size: 11px; color: var(--text-dim); margin-top: 3px; }
 .card .value.blue { color: var(--accent-light); }
+.card .value.gold { color: var(--gold); }
 .card .value.green { color: #4ade80; }
 .card .value.purple { color: #a78bfa; }
+.card .value.pink { color: #f472b6; }
 
 /* Charts grid */
 .charts {
   display: grid; grid-template-columns: 1fr 1fr;
-  gap: 12px; margin-bottom: 20px;
+  gap: 10px; margin-bottom: 14px;
 }
 .chart-box {
   background: var(--card); border-radius: var(--radius); padding: 16px;
   border: 1px solid var(--border);
 }
 .chart-box h3 {
-  font-size: 13px; font-weight: 500; color: var(--text-dim);
-  margin-bottom: 8px;
+  font-size: 12px; font-weight: 500; color: var(--text-dim);
+  margin-bottom: 6px; letter-spacing: 1px;
 }
-.chart-box .chart { width: 100%; height: 280px; }
+.chart-box .chart { width: 100%; height: 260px; }
 .chart-box.full { grid-column: 1 / -1; }
-.chart-box.full .chart { height: 200px; }
+.chart-box.full .chart { height: 320px; }
+.chart-box.half .chart { height: 200px; }
 
 /* Project list */
-.project-list { margin-top: 8px; }
+.project-list { margin-top: 6px; }
 .project-item {
   display: flex; justify-content: space-between; align-items: center;
   padding: 8px 12px; border-radius: 8px;
   border-left: 3px solid var(--accent); margin-bottom: 4px;
-  background: rgba(46, 117, 182, 0.08);
-  font-size: 13px;
+  background: rgba(46,117,182,0.06);
+  font-size: 12px; transition: all 0.2s;
 }
-.project-item .name { font-weight: 500; }
-.project-item .brief { color: var(--text-dim); font-size: 12px; }
+.project-item:hover { background: rgba(46,117,182,0.12); }
+.project-item .name { font-weight: 500; color: var(--text); }
+.project-item .brief { color: var(--text-dim); font-size: 11px; }
+
+/* Footer */
+.footer {
+  text-align: center; padding: 20px; font-size: 11px; color: var(--text-dim);
+  letter-spacing: 1px;
+}
+.footer a { color: var(--accent-light); text-decoration: none; }
+
+/* Loading pulse */
+.loading-pulse { animation: pulse 1.5s ease-in-out infinite; }
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
 
 @media (max-width: 768px) {
   .charts { grid-template-columns: 1fr; }
   .cards { grid-template-columns: 1fr 1fr; }
+  .header { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
 </style>
 </head>
@@ -98,58 +140,89 @@ body {
 <div class="header">
   <div>
     <h1>纳杰 · 运营仪表盘</h1>
-    <div style="font-size:12px;color:var(--text-dim);margin-top:4px">
-      愛普納傑 · 觅理 · 纳杰 · 何自刚
-    </div>
+    <div class="subtitle">愛普納傑 · 觅理 · 纳杰 · 何自刚</div>
   </div>
   <div class="meta">
-    数据来源: 涉外年费库 · 销售系统
-    <span id="updateTime">加载中...</span>
+    年费库 · 销售系统 · 项目管理
+    <span id="updateTime"><span class="loading-pulse">加载中...</span></span>
   </div>
 </div>
 
 <!-- Summary Cards -->
 <div class="cards" id="summaryCards">
-  <div class="card"><div class="label">📋 年费记录</div><div class="value blue" id="totalFees">—</div><div class="sub">全球专利年费</div></div>
-  <div class="card"><div class="label">🏢 合作所</div><div class="value gold" id="totalAssociates">—</div><div class="sub">覆盖国家</div></div>
-  <div class="card"><div class="label">🌍 覆盖国家</div><div class="value green" id="totalCountries">—</div><div class="sub">涉外网络</div></div>
-  <div class="card"><div class="label">👥 客户</div><div class="value purple" id="totalClients">—</div><div class="sub">策略 / 训练</div></div>
+  <div class="card"><div class="label">📋 年费记录</div><div class="value blue" id="totalFees">—</div><div class="sub" id="feeSub">全球专利年费</div></div>
+  <div class="card"><div class="label">🏢 合作所</div><div class="value gold" id="totalAssociates">—</div><div class="sub" id="assocSub">覆盖全球</div></div>
+  <div class="card"><div class="label">🌍 覆盖国家</div><div class="value green" id="totalCountries">—</div><div class="sub" id="countrySub">71 个国家</div></div>
+  <div class="card"><div class="label">💰 年费总额</div><div class="value pink" id="totalAmount">—</div><div class="sub" id="amountSub">多币种合计</div></div>
 </div>
 
-<!-- Charts Row 1 -->
+<!-- Cards Row 2: Lifecycle + Quick stats -->
+<div class="cards" style="grid-template-columns:repeat(3,1fr);">
+  <div class="card"><div class="label">🌱 早期专利（1-5年）</div><div class="value blue" id="youngCount">—</div><div class="sub" id="youngAmt">年费集中度</div></div>
+  <div class="card"><div class="label">🌿 中期专利（6-15年）</div><div class="value gold" id="midCount">—</div><div class="sub" id="midAmt">稳定期</div></div>
+  <div class="card"><div class="label">🏛 成熟专利（16-20年）</div><div class="value purple" id="matureCount">—</div><div class="sub" id="matureAmt">高价值维护</div></div>
+</div>
+
+<!-- Row 1: World Map -->
+<div class="charts">
+  <div class="chart-box full">
+    <h3>🌏 全球年费热力图 — 国家颜色越亮，年费越密集</h3>
+    <div class="chart" id="chartWorld"></div>
+  </div>
+</div>
+
+<!-- Row 2: Type pie + Sales Funnel -->
 <div class="charts">
   <div class="chart-box">
-    <h3>年费按类型分布</h3>
+    <h3>🥧 年费按类型分布</h3>
     <div class="chart" id="chartType"></div>
   </div>
   <div class="chart-box">
-    <h3>年费按国家 Top 10</h3>
-    <div class="chart" id="chartCountry"></div>
+    <h3>📊 销售漏斗 — 报价 → 签约 → 收款</h3>
+    <div class="chart" id="chartFunnel"></div>
   </div>
 </div>
 
-<!-- Charts Row 2 -->
+<!-- Row 3: Year heatmap + Country Top 10 -->
 <div class="charts">
   <div class="chart-box">
-    <h3>年费按年份分布</h3>
+    <h3>📅 年费按年份热力</h3>
     <div class="chart" id="chartYear"></div>
   </div>
   <div class="chart-box">
-    <h3>合作所类型分布</h3>
+    <h3>🏆 年费金额 Top 10 国家</h3>
+    <div class="chart" id="chartCountryAmt"></div>
+  </div>
+</div>
+
+<!-- Row 4: Currency + Associates -->
+<div class="charts">
+  <div class="chart-box">
+    <h3>💱 货币分布</h3>
+    <div class="chart" id="chartCurrency"></div>
+  </div>
+  <div class="chart-box">
+    <h3>🏢 合作所类型</h3>
     <div class="chart" id="chartAssocType"></div>
   </div>
 </div>
 
-<!-- Bottom: Receivable + Projects -->
+<!-- Row 5: Receivable + Projects -->
 <div class="charts">
   <div class="chart-box">
-    <h3>收款端概览</h3>
+    <h3>💰 收款端概览</h3>
     <div class="chart" id="chartReceivable"></div>
   </div>
   <div class="chart-box">
-    <h3>活跃项目</h3>
+    <h3>📋 活跃项目</h3>
     <div class="project-list" id="projectList"></div>
   </div>
+</div>
+
+<div class="footer">
+  纳杰运营体系 · <a href="https://najieip.com" target="_blank">najieip.com</a>
+  · 数据每日更新
+  <span id="footerTime"></span>
 </div>
 
 <script>
@@ -162,11 +235,20 @@ const typeNames = {
   renewal_surcharge: '续展附加', maintenance_surcharge: '维持附加',
   other: '其他'
 };
-
 const firmTypeNames = {
   full_service: '综合所', patent_only: '专利所', trademark_only: '商标所',
   litigation: '诉讼所', ip_only: 'IP所', general: '一般所'
 };
+const ECHART_COLORS = ['#4a9eff','#C0A060','#4ade80','#a78bfa','#f472b6','#fb923c','#22d3ee','#e879f9','#facc15','#34d399','#f87171','#818cf8'];
+
+// ── 格式化 ──
+function fmt(n) { if (n === undefined || n === null) return '—'; return Number(n).toLocaleString(); }
+function fmtMoney(n) {
+  if (n === undefined || n === null) return '—';
+  if (n >= 1000000) return (n/1000000).toFixed(1) + 'M';
+  if (n >= 1000) return (n/1000).toFixed(1) + 'k';
+  return fmt(n);
+}
 
 // ── 加载数据 ──
 async function loadData() {
@@ -175,7 +257,7 @@ async function loadData() {
     const d = await res.json();
     render(d);
   } catch(e) {
-    document.getElementById('updateTime').textContent = '⚠️ 数据加载失败';
+    document.getElementById('updateTime').innerHTML = '⚠️ 数据加载失败';
     console.error(e);
   }
 }
@@ -183,49 +265,88 @@ async function loadData() {
 function render(d) {
   // 更新时间
   const ts = new Date(d.generated_at);
-  document.getElementById('updateTime').textContent =
-    `更新于 ${ts.toLocaleDateString('zh-CN')} ${ts.toLocaleTimeString('zh-CN')}`;
+  const timeStr = `${ts.toLocaleDateString('zh-CN')} ${ts.toLocaleTimeString('zh-CN')}`;
+  document.getElementById('updateTime').innerHTML = `<span class="status-dot online"></span> ${timeStr}`;
+  document.getElementById('footerTime').textContent = `· 最后更新 ${timeStr}`;
 
-  // 摘要卡片
+  // ── 摘要卡片 ──
   document.getElementById('totalFees').textContent = d.fees.total_fees.toLocaleString();
+  document.getElementById('feeSub').textContent = `${d.fees.by_type.length} 种类型`;
   document.getElementById('totalAssociates').textContent = d.associates.total_associates.toLocaleString();
+  document.getElementById('assocSub').textContent = `覆盖 ${d.countries.total_countries} 国`;
   document.getElementById('totalCountries').textContent = d.countries.total_countries;
-  document.getElementById('totalClients').textContent = d.sales.clients;
-  document.querySelector('.card .sub').textContent = `覆盖 ${d.countries.total_countries} 个国家`;
+  document.getElementById('countrySub').textContent = '71 个国家/地区';
 
-  // 按类型 (饼图)
+  // 年费总额（取 top 5 货币粗略估算）
+  const topCurrencies = d.fees.by_currency.slice(0,5);
+  const majorAmt = topCurrencies.reduce((s, c) => s + c.total, 0);
+  document.getElementById('totalAmount').textContent = fmtMoney(majorAmt);
+  document.getElementById('amountSub').textContent = topCurrencies.map(c => c.currency).slice(0,3).join(' · ');
+
+  // ── 生命周期卡片 ──
+  const y = d.fees.upcoming;
+  if (y) {
+    document.getElementById('youngCount').textContent = y.young.count;
+    document.getElementById('youngAmt').textContent = fmtMoney(y.young.total);
+    document.getElementById('midCount').textContent = y.mid.count;
+    document.getElementById('midAmt').textContent = fmtMoney(y.mid.total);
+    document.getElementById('matureCount').textContent = y.mature.count;
+    document.getElementById('matureAmt').textContent = fmtMoney(y.mature.total);
+  }
+
+  // ── 1. 世界热力图 ──
+  const mapData = d.fees.by_country
+    .filter(c => c.iso3 && c.iso3 !== 'EUR')
+    .map(c => ({ name: c.iso3, value: c.count }));
+  renderWorldMap('chartWorld', mapData);
+
+  // ── 2. 年费类型（饼图）──
   const typeData = d.fees.by_type.map(t => ({
     name: typeNames[t.fee_type] || t.fee_type,
     value: t.c
   }));
   renderPie('chartType', typeData, '年费类型');
 
-  // 按国家 Top 10 (柱状图)
-  const cData = d.fees.by_country.slice(0, 10);
-  renderBar('chartCountry', cData.map(c => c.name_zh), cData.map(c => c.count), '#4a9eff');
+  // ── 3. 销售漏斗 ──
+  const rc = d.sales.receivable || {};
+  const funnelData = [
+    { name: '🏷 报价', value: rc.quotes || 0 },
+    { name: '📄 合同', value: rc.contracts || 0 },
+    { name: '🧾 发票', value: rc.invoices || 0 },
+    { name: '💰 收款', value: rc.payments || 0 },
+    { name: '✅ 结算', value: rc.settlements || 0 },
+  ].filter(d => d.value > 0);
+  renderFunnel('chartFunnel', funnelData);
 
-  // 按年份 (折线图)
-  const yData = d.fees.by_year;
-  renderLine('chartYear', yData.map(y => String(y.year)), yData.map(y => y.count));
+  // ── 4. 年份热力条 ──
+  const yData = d.fees.by_year || [];
+  renderYearHeat('chartYear', yData.map(y => String(y.year)), yData.map(y => y.count), yData.map(y => y.total_amt || 0));
 
-  // 合作所类型
+  // ── 5. 年费金额 Top 10 国家 ──
+  const countrySorted = [...d.fees.by_country].sort((a,b) => (b.total_amt||0) - (a.total_amt||0)).slice(0, 10);
+  renderBar('chartCountryAmt', countrySorted.map(c => c.name_zh || c.code), countrySorted.map(c => c.total_amt || 0), '#4ade80');
+
+  // ── 6. 货币分布 ──
+  const currData = d.fees.by_currency.slice(0, 10);
+  renderBar('chartCurrency', currData.map(c => c.currency), currData.map(c => c.total), '#C0A060');
+
+  // ── 7. 合作所类型 ──
   const atData = d.associates.by_type.filter(t => t.firm_type).map(t => ({
     name: firmTypeNames[t.firm_type] || t.firm_type,
     value: t.cnt
   }));
-  renderPie('chartAssocType', atData, '合作所类型');
+  renderPie('chartAssocType', atData.length ? atData : [{name:'专利所', value: d.associates.total_associates}], '合作所类型');
 
-  // 收款端
-  const rc = d.sales.receivable;
+  // ── 8. 收款端概览 ──
   renderBar('chartReceivable',
-    ['报价', '发票', '收款', '结算', '合同', '佣金'],
-    [rc.quotes, rc.invoices, rc.payments, rc.settlements, rc.contracts, rc.commissions],
-    '#4ade80');
+    ['报价','发票','收款','结算','合同','佣金'],
+    [rc.quotes||0, rc.invoices||0, rc.payments||0, rc.settlements||0, rc.contracts||0, rc.commissions||0],
+    '#4a9eff');
 
-  // 项目列表
+  // ── 9. 项目列表 ──
   const pl = document.getElementById('projectList');
-  if (d.projects.projects.length === 0) {
-    pl.innerHTML = '<div style="color:var(--text-dim);font-size:13px;text-align:center;padding:20px">暂无活跃项目</div>';
+  if (!d.projects || !d.projects.projects || d.projects.projects.length === 0) {
+    pl.innerHTML = '<div style="color:var(--text-dim);font-size:13px;text-align:center;padding:30px">暂无活跃项目</div>';
   } else {
     pl.innerHTML = d.projects.projects.map(p =>
       `<div class="project-item">
@@ -236,55 +357,206 @@ function render(d) {
   }
 }
 
-// ── 图表渲染函数 ──
+// ── 世界地图 ──
+function renderWorldMap(id, data) {
+  const dom = document.getElementById(id);
+  const c = echarts.init(dom);
+  c.setOption({
+    tooltip: { trigger: 'item', formatter: p => {
+      const iso3 = p.name;
+      const item = data.find(d => d.name === iso3);
+      return `${p.name}: ${item ? item.value : 0} 条年费记录`;
+    }},
+    visualMap: {
+      min: 0, max: Math.max(...data.map(d => d.value)) + 5,
+      text: ['高', '低'], textStyle: { color: '#7a8aa0', fontSize: 10 },
+      inRange: {
+        color: ['rgba(46,117,182,0.15)', 'rgba(46,117,182,0.4)', '#2e75b6', '#4a9eff', '#C0A060']
+      },
+      calculable: false, left: 20, bottom: 20
+    },
+    series: [{
+      type: 'map', map: 'world',
+      roam: true, selectedMode: false,
+      label: { show: false },
+      itemStyle: {
+        borderColor: 'rgba(255,255,255,0.08)',
+        borderWidth: 0.5,
+        areaColor: 'rgba(26,40,64,0.6)',
+      },
+      emphasis: {
+        itemStyle: { areaColor: '#4a9eff', borderColor: '#C0A060', borderWidth: 1.5 },
+        label: { show: true, color: '#fff', fontSize: 11 }
+      },
+      data: data,
+      nameMap: {
+        'FRA': '法国', 'DEU': '德国', 'GBR': '英国', 'USA': '美国', 'CHN': '中国',
+        'JPN': '日本', 'CAN': '加拿大', 'AUS': '澳大利亚', 'BRA': '巴西', 'IND': '印度',
+        'RUS': '俄罗斯', 'KOR': '韩国', 'MEX': '墨西哥', 'ITA': '意大利', 'ESP': '西班牙',
+        'NLD': '荷兰', 'CHE': '瑞士', 'SWE': '瑞典', 'NOR': '挪威', 'DNK': '丹麦',
+        'FIN': '芬兰', 'POL': '波兰', 'TUR': '土耳其', 'THA': '泰国', 'SGP': '新加坡',
+        'MYS': '马来西亚', 'IDN': '印度尼西亚', 'VNM': '越南', 'PHL': '菲律宾',
+        'ARE': '阿联酋', 'SAU': '沙特阿拉伯', 'ZAF': '南非', 'UKR': '乌克兰',
+        'EST': '爱沙尼亚', 'LVA': '拉脱维亚', 'LTU': '立陶宛', 'TWN': '台湾',
+        'HKG': '香港', 'MAC': '澳门',
+      }
+    }]
+  });
+  window.addEventListener('resize', () => c.resize());
+}
+
+// ── 饼图 ──
 function renderPie(id, data, title) {
   const dom = document.getElementById(id);
+  if (!dom) return;
   const c = echarts.init(dom);
   c.setOption({
     tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
     series: [{
-      type: 'pie', radius: ['35%', '65%'],
+      type: 'pie', radius: ['38%', '68%'],
+      center: ['50%', '55%'],
       avoidLabelOverlap: true,
-      itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: '#1a2332' },
-      label: { show: true, formatter: '{b}', color: '#8896a6', fontSize: 11 },
-      emphasis: { label: { show: true, fontSize: 14, fontWeight: 'bold' } },
+      itemStyle: { borderRadius: 4, borderWidth: 2, borderColor: '#151f32' },
+      label: { show: true, formatter: '{b}', color: '#7a8aa0', fontSize: 10 },
+      emphasis: { label: { show: true, fontSize: 13, fontWeight: 'bold' },  itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0,0,0,0.3)' } },
       data: data,
-      color: ['#4a9eff','#C0A060','#4ade80','#a78bfa','#f472b6','#fb923c','#22d3ee','#e879f9','#facc15','#34d399']
+      color: ECHART_COLORS
     }],
     backgroundColor: 'transparent'
   });
   window.addEventListener('resize', () => c.resize());
 }
 
+// ── 柱状图 ──
 function renderBar(id, labels, values, color) {
   const dom = document.getElementById(id);
+  if (!dom) return;
   const c = echarts.init(dom);
   c.setOption({
-    tooltip: { trigger: 'axis' },
-    grid: { left: 50, right: 16, top: 8, bottom: 28 },
-    xAxis: { type: 'category', data: labels, axisLabel: { color: '#8896a6', fontSize: 11, rotate: labels.length > 8 ? 35 : 0 }, axisLine: { lineStyle: { color: '#2a3a4e' } } },
-    yAxis: { type: 'value', splitLine: { lineStyle: { color: '#2a3a4e', type: 'dashed' } }, axisLabel: { color: '#8896a6' } },
-    series: [{ type: 'bar', data: values, itemStyle: { color: color || '#4a9eff', borderRadius: [4,4,0,0] }, barMaxWidth: 40 }],
+    tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+    grid: { left: 60, right: 16, top: 8, bottom: 32 },
+    xAxis: { type: 'category', data: labels,
+      axisLabel: { color: '#7a8aa0', fontSize: 10, rotate: labels.length > 6 ? 40 : 0 },
+      axisLine: { lineStyle: { color: '#1e3050' } },
+      axisTick: { show: false }
+    },
+    yAxis: { type: 'value',
+      splitLine: { lineStyle: { color: '#1e3050', type: 'dashed' } },
+      axisLabel: { color: '#7a8aa0', fontSize: 10 }
+    },
+    series: [{
+      type: 'bar', data: values,
+      itemStyle: {
+        color: { type: 'linear', x: 0, y: 0, x2: 0, y2: 1,
+          colorStops: [
+            { offset: 0, color: color || '#4a9eff' },
+            { offset: 1, color: (color || '#4a9eff') + '66' }
+          ]
+        },
+        borderRadius: [4,4,0,0]
+      },
+      barMaxWidth: 36,
+      emphasis: { itemStyle: { color: color || '#4a9eff' } }
+    }],
     backgroundColor: 'transparent'
   });
   window.addEventListener('resize', () => c.resize());
 }
 
-function renderLine(id, labels, values) {
+// ── 销售漏斗 ──
+function renderFunnel(id, data) {
   const dom = document.getElementById(id);
+  if (!dom || data.length === 0) {
+    if (dom) dom.innerHTML = '<div style="color:var(--text-dim);font-size:13px;text-align:center;padding:40px">暂无销售数据</div>';
+    return;
+  }
   const c = echarts.init(dom);
   c.setOption({
-    tooltip: { trigger: 'axis' },
-    grid: { left: 50, right: 16, top: 8, bottom: 28 },
-    xAxis: { type: 'category', data: labels, axisLabel: { color: '#8896a6', fontSize: 11 }, axisLine: { lineStyle: { color: '#2a3a4e' } } },
-    yAxis: { type: 'value', splitLine: { lineStyle: { color: '#2a3a4e', type: 'dashed' } }, axisLabel: { color: '#8896a6' } },
+    tooltip: { trigger: 'item', formatter: '{b}: {c}' },
     series: [{
-      type: 'line', data: values, smooth: true,
-      lineStyle: { color: '#4a9eff', width: 2 },
-      areaStyle: { color: { type: 'linear', x: 0, y: 0, x2: 0, y2: 1, colorStops: [{ offset: 0, color: 'rgba(74,158,255,0.3)' }, { offset: 1, color: 'rgba(74,158,255,0)' }] } },
-      itemStyle: { color: '#4a9eff' },
-      symbol: 'circle', symbolSize: 6
-    }],
+      type: 'funnel', left: '10%', right: '10%', top: 20, bottom: 10,
+      minSize: '20%', maxSize: '100%',
+      sort: 'descending', gap: 4,
+      label: {
+        show: true, position: 'inside',
+        formatter: p => `${p.name}\n${p.value}`,
+        color: '#fff', fontSize: 12, fontWeight: 500
+      },
+      labelLine: { show: false },
+      itemStyle: {
+        borderColor: '#151f32', borderWidth: 2,
+        color: (params) => ECHART_COLORS[params.dataIndex % ECHART_COLORS.length]
+      },
+      emphasis: { label: { fontSize: 14 } },
+      data: data
+    }]
+  });
+  window.addEventListener('resize', () => c.resize());
+}
+
+// ── 年份热力条（柱状+折线组合） ──
+function renderYearHeat(id, labels, counts, amounts) {
+  const dom = document.getElementById(id);
+  if (!dom) return;
+  const c = echarts.init(dom);
+  c.setOption({
+    tooltip: {
+      trigger: 'axis',
+      formatter: p => {
+        let s = `<b>第 ${p[0].axisValue} 年</b><br/>`;
+        p.forEach(item => s += `${item.marker} ${item.seriesName}: ${item.value}<br/>`);
+        return s;
+      }
+    },
+    legend: {
+      data: ['年费数', '金额'],
+      textStyle: { color: '#7a8aa0', fontSize: 10 },
+      icon: 'roundRect', itemWidth: 12, itemHeight: 6, right: 0, top: 0
+    },
+    grid: { left: 40, right: 40, top: 24, bottom: 28 },
+    xAxis: {
+      type: 'category', data: labels,
+      axisLabel: { color: '#7a8aa0', fontSize: 9, interval: 2 },
+      axisLine: { lineStyle: { color: '#1e3050' } },
+      axisTick: { show: false }
+    },
+    yAxis: [
+      { type: 'value', name: '条数', nameTextStyle: { color: '#7a8aa0', fontSize: 10 },
+        splitLine: { lineStyle: { color: '#1e3050', type: 'dashed' } },
+        axisLabel: { color: '#7a8aa0', fontSize: 9 } },
+      { type: 'value', name: '金额', nameTextStyle: { color: '#7a8aa0', fontSize: 10 },
+        splitLine: { show: false },
+        axisLabel: { color: '#7a8aa0', fontSize: 9, formatter: v => fmtMoney(v) } }
+    ],
+    series: [
+      { name: '年费数', type: 'bar', data: counts,
+        itemStyle: {
+          color: { type: 'linear', x: 0, y: 1, x2: 0, y2: 0,
+            colorStops: [
+              { offset: 0, color: 'rgba(74,158,255,0.3)' },
+              { offset: 1, color: '#4a9eff' }
+            ]
+          },
+          borderRadius: [3,3,0,0]
+        },
+        barMaxWidth: 14
+      },
+      { name: '金额', type: 'line', yAxisIndex: 1,
+        data: amounts,
+        smooth: true,
+        lineStyle: { color: '#C0A060', width: 2 },
+        itemStyle: { color: '#C0A060' },
+        symbol: 'circle', symbolSize: 5,
+        areaStyle: {
+          color: { type: 'linear', x: 0, y: 0, x2: 0, y2: 1,
+            colorStops: [
+              { offset: 0, color: 'rgba(192,160,96,0.25)' },
+              { offset: 1, color: 'rgba(192,160,96,0)' }
+            ]
+          }
+        }
+      }
+    ],
     backgroundColor: 'transparent'
   });
   window.addEventListener('resize', () => c.resize());
