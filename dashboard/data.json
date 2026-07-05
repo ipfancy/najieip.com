@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T01:57:36.951126+00:00",
+  "generated_at": "2026-07-05T02:37:09.712141+00:00",
   "fees": {
     "total_fees": 958,
     "by_type": [
@@ -11,161 +11,330 @@
     ],
     "by_country": [
       {
+        "code": "EE",
+        "iso3": "EST",
         "name_zh": "EE",
         "name_en": "EE",
-        "count": 20
+        "count": 20,
+        "total_amt": 5399.0
       },
       {
+        "code": "MX",
+        "iso3": "MEX",
         "name_zh": "墨西哥 (Mexico)",
         "name_en": "墨西哥 (Mexico)",
-        "count": 20
+        "count": 20,
+        "total_amt": 27983.0
       },
       {
+        "code": "NO",
+        "iso3": "NOR",
         "name_zh": "NO",
         "name_en": "NO",
-        "count": 20
+        "count": 20,
+        "total_amt": 68000.0
       },
       {
+        "code": "UA",
+        "iso3": "UKR",
         "name_zh": "UA",
         "name_en": "UA",
-        "count": 20
+        "count": 20,
+        "total_amt": 79800.0
       },
       {
+        "code": "FR",
+        "iso3": "FRA",
         "name_zh": "法国 (France)",
         "name_en": "法国 (France)",
-        "count": 19
+        "count": 19,
+        "total_amt": 5910.0
       },
       {
+        "code": "MY",
+        "iso3": "MYS",
         "name_zh": "马来西亚 (Malaysia)",
         "name_en": "马来西亚 (Malaysia)",
-        "count": 19
+        "count": 19,
+        "total_amt": 24150.0
       },
       {
+        "code": "TR",
+        "iso3": "TUR",
         "name_zh": "TR",
         "name_en": "TR",
-        "count": 19
+        "count": 19,
+        "total_amt": 89902.0
       },
       {
+        "code": "TW",
+        "iso3": "TWN",
         "name_zh": "台湾 (Taiwan)",
         "name_en": "台湾 (Taiwan)",
-        "count": 19
+        "count": 19,
+        "total_amt": 220000.0
       },
       {
+        "code": "BE",
+        "iso3": "BEL",
         "name_zh": "BE",
         "name_en": "BE",
-        "count": 18
+        "count": 18,
+        "total_amt": 4775.0
       },
       {
+        "code": "BR",
+        "iso3": "BRA",
         "name_zh": "巴西 (Brazil)",
         "name_en": "巴西 (Brazil)",
-        "count": 18
+        "count": 18,
+        "total_amt": 26250.0
       },
       {
+        "code": "CA",
+        "iso3": "CAN",
         "name_zh": "加拿大 (Canada)",
         "name_en": "加拿大 (Canada)",
-        "count": 18
+        "count": 18,
+        "total_amt": 5037.0
       },
       {
+        "code": "DE",
+        "iso3": "DEU",
         "name_zh": "德国 (Germany)",
         "name_en": "德国 (Germany)",
-        "count": 18
+        "count": 18,
+        "total_amt": 14160.0
       },
       {
+        "code": "EP",
+        "iso3": "EUR",
         "name_zh": "欧洲专利局 (EPO)",
         "name_en": "欧洲专利局 (EPO)",
-        "count": 18
+        "count": 18,
+        "total_amt": 27135.0
       },
       {
+        "code": "ES",
+        "iso3": "ESP",
         "name_zh": "ES",
         "name_en": "ES",
-        "count": 18
+        "count": 18,
+        "total_amt": 5102.0
       },
       {
+        "code": "IN",
+        "iso3": "IND",
         "name_zh": "印度 (India)",
         "name_en": "印度 (India)",
-        "count": 18
+        "count": 18,
+        "total_amt": 76800.0
+      },
+      {
+        "code": "RU",
+        "iso3": "RUS",
+        "name_zh": "俄罗斯 (Russia)",
+        "name_en": "俄罗斯 (Russia)",
+        "count": 18,
+        "total_amt": 140200.0
+      },
+      {
+        "code": "SE",
+        "iso3": "SWE",
+        "name_zh": "SE",
+        "name_en": "SE",
+        "count": 18,
+        "total_amt": 72600.0
+      },
+      {
+        "code": "SK",
+        "iso3": "SVK",
+        "name_zh": "SK",
+        "name_en": "SK",
+        "count": 18,
+        "total_amt": 5157.0
+      },
+      {
+        "code": "CH",
+        "iso3": "CHE",
+        "name_zh": "瑞士 (Switzerland)",
+        "name_en": "瑞士 (Switzerland)",
+        "count": 17,
+        "total_amt": 7060.0
+      },
+      {
+        "code": "NL",
+        "iso3": "NLD",
+        "name_zh": "NL",
+        "name_en": "NL",
+        "count": 17,
+        "total_amt": 11040.0
+      },
+      {
+        "code": "ZA",
+        "iso3": "ZAF",
+        "name_zh": "ZA",
+        "name_en": "ZA",
+        "count": 17,
+        "total_amt": 2392.0
+      },
+      {
+        "code": "GB",
+        "iso3": "GBR",
+        "name_zh": "英国 (United Kingdom)",
+        "name_en": "英国 (United Kingdom)",
+        "count": 16,
+        "total_amt": 4640.0
+      },
+      {
+        "code": "IT",
+        "iso3": "ITA",
+        "name_zh": "IT",
+        "name_en": "IT",
+        "count": 16,
+        "total_amt": 6620.0
+      },
+      {
+        "code": "NZ",
+        "iso3": "NZL",
+        "name_zh": "NZ",
+        "name_en": "NZ",
+        "count": 16,
+        "total_amt": 3200.0
+      },
+      {
+        "code": "SG",
+        "iso3": "SGP",
+        "name_zh": "新加坡 (Singapore)",
+        "name_en": "新加坡 (Singapore)",
+        "count": 16,
+        "total_amt": 9865.0
+      },
+      {
+        "code": "TH",
+        "iso3": "THA",
+        "name_zh": "泰国 (Thailand)",
+        "name_en": "泰国 (Thailand)",
+        "count": 16,
+        "total_amt": 152000.0
+      },
+      {
+        "code": "IL",
+        "iso3": "ISR",
+        "name_zh": "IL",
+        "name_en": "IL",
+        "count": 5,
+        "total_amt": 15714.0
+      },
+      {
+        "code": "US",
+        "iso3": "USA",
+        "name_zh": "美国 (United States)",
+        "name_en": "美国 (United States)",
+        "count": 3,
+        "total_amt": 13460.0
       }
     ],
     "by_year": [
       {
         "year": 1,
-        "count": 15
+        "count": 15,
+        "total_amt": 87364.0
       },
       {
         "year": 2,
-        "count": 18
+        "count": 18,
+        "total_amt": 90673.0
       },
       {
         "year": 3,
-        "count": 41
+        "count": 41,
+        "total_amt": 126122.0
       },
       {
         "year": 4,
-        "count": 47
+        "count": 47,
+        "total_amt": 231241.0
       },
       {
         "year": 5,
-        "count": 51
+        "count": 51,
+        "total_amt": 264502.0
       },
       {
         "year": 6,
-        "count": 52
+        "count": 52,
+        "total_amt": 343895.0
       },
       {
         "year": 7,
-        "count": 53
+        "count": 53,
+        "total_amt": 364972.0
       },
       {
         "year": 8,
-        "count": 53
+        "count": 53,
+        "total_amt": 434718.0
       },
       {
         "year": 9,
-        "count": 52
+        "count": 52,
+        "total_amt": 451801.0
       },
       {
         "year": 10,
-        "count": 52
+        "count": 52,
+        "total_amt": 471363.0
       },
       {
         "year": 11,
-        "count": 53
+        "count": 53,
+        "total_amt": 558371.0
       },
       {
         "year": 12,
-        "count": 53
+        "count": 53,
+        "total_amt": 579513.0
       },
       {
         "year": 13,
-        "count": 52
+        "count": 52,
+        "total_amt": 719777.0
       },
       {
         "year": 14,
-        "count": 52
+        "count": 52,
+        "total_amt": 738439.0
       },
       {
         "year": 15,
-        "count": 53
+        "count": 53,
+        "total_amt": 770854.0
       },
       {
         "year": 16,
-        "count": 52
+        "count": 52,
+        "total_amt": 851278.0
       },
       {
         "year": 17,
-        "count": 52
+        "count": 52,
+        "total_amt": 879500.0
       },
       {
         "year": 18,
-        "count": 52
+        "count": 52,
+        "total_amt": 901983.0
       },
       {
         "year": 19,
-        "count": 53
+        "count": 53,
+        "total_amt": 1003813.0
       },
       {
         "year": 20,
-        "count": 52
+        "count": 52,
+        "total_amt": 1022068.0
       }
     ],
     "by_currency": [
@@ -334,49 +503,73 @@
         "cnt": 18,
         "total": 1208.0
       }
-    ]
+    ],
+    "upcoming": {
+      "young": {
+        "count": 172,
+        "total": 799902.0
+      },
+      "mid": {
+        "count": 525,
+        "total": 5433702.0
+      },
+      "mature": {
+        "count": 261,
+        "total": 4658642.0
+      }
+    }
   },
   "associates": {
     "total_associates": 862,
     "by_country": [
       {
         "name_zh": "日本 (Japan)",
+        "code": "JP",
         "cnt": 181
       },
       {
         "name_zh": "德国 (Germany)",
+        "code": "DE",
         "cnt": 161
       },
       {
         "name_zh": "美国 (United States)",
+        "code": "US",
         "cnt": 146
       },
       {
         "name_zh": "中国",
+        "code": "CN",
         "cnt": 111
       },
       {
         "name_zh": "印度 (India)",
+        "code": "IN",
         "cnt": 38
       },
       {
         "name_zh": "泰国 (Thailand)",
+        "code": "TH",
         "cnt": 17
       },
       {
         "name_zh": "英国 (United Kingdom)",
+        "code": "GB",
         "cnt": 13
       },
       {
         "name_zh": "俄罗斯 (Russia)",
+        "code": "RU",
         "cnt": 13
       },
       {
         "name_zh": "香港 (Hong Kong)",
+        "code": "HK",
         "cnt": 11
       },
       {
         "name_zh": "巴西 (Brazil)",
+        "code": "BR",
         "cnt": 9
       }
     ],
@@ -385,8 +578,7 @@
         "firm_type": "patent_only",
         "cnt": 862
       }
-    ],
-    "by_rating": []
+    ]
   },
   "countries": {
     "total_countries": 71
