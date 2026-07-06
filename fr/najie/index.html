@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="纳杰知识产权 — 年费管理专家。2000+案件自动化年费监控系统，每日交叉比对国知局数据，7天/30天分级预警。">
-<title>纳杰知识产权 — 年费管理与知产运营</title>
+<meta name="description" content="Najie PI — Experts en Gestion d'Annuités. 2 000+ dossiers sous surveillance automatisée, vérification croisée quotidienne CNIPA, alertes à 7/30 jours.">
+<title>Najie PI — Gestion d'Annuités & Opérations PI</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
 :root { --primary: #0F766E; --primary-light: #14B8A6; --accent: #C0A060; --accent-light: #D4B87A; --dark: #1a1a2e; --text: #333; --text-light: #666; --bg-light: #F8F9FA; --white: #fff; --radius: 12px; }
@@ -41,8 +41,8 @@ nav.scrolled .nav-links a { color:var(--text); }
 .stat-number { font-size:42px; font-weight:900; color:var(--primary); }
 .stat-label { font-size:14px; color:var(--text-light); margin-top:8px; }
 .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-.service-card { background:var(--white); border-radius:var(--radius); padding:36px 28px; box-shadow:0 4px 24px rgba(0,0,0,0.08); transition:all 0.3s; text-align:center; border:1px solid transparent; }
-.service-card:hover { transform:translateY(-8px); box-shadow:0 8px 40px rgba(0,0,0,0.15); border-color:var(--accent); }
+.service-card { background:var(--white); border-radius:var(--radius); padding:36px 28px; box-shadow:0 2px 16px rgba(0,0,0,0.06); transition:all 0.3s; text-align:center; border:1px solid transparent; }
+.service-card:hover { transform:translateY(-8px); box-shadow:0 12px 40px rgba(0,0,0,0.12); border-color:var(--accent); }
 .service-card h3 { font-size:20px; color:var(--primary); margin:16px 0 12px; }
 .service-card p { font-size:14px; color:var(--text-light); }
 .service-card .icon { font-size:36px; }
@@ -59,131 +59,86 @@ nav.scrolled .nav-links a { color:var(--text); }
 .cta-content p { font-size:16px; color:rgba(255,255,255,0.8); margin-bottom:32px; }
 
 /* Lang Bar */
-.lang-bar {
-  position: relative; z-index: 101;
-  background: var(--dark);
-  padding: 6px 48px;
-  display: flex; justify-content: flex-end; align-items: center; gap: 6px;
-  font-size: 12px;
-}
-.lang-bar a {
-  color: rgba(255,255,255,0.5); text-decoration: none;
-  padding: 4px 12px; border-radius: 14px;
-  transition: all 0.25s; font-weight: 500; letter-spacing: 0.3px;
-}
+.lang-bar { position: relative; z-index: 101; background: var(--dark); padding: 6px 48px; display: flex; justify-content: flex-end; align-items: center; gap: 6px; font-size: 12px; }
+.lang-bar a { color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 12px; border-radius: 14px; transition: all 0.25s; font-weight: 500; letter-spacing: 0.3px; }
 .lang-bar a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
-.lang-bar a.active {
-  color: var(--accent); background: rgba(192,160,96,0.15);
-  font-weight: 700; box-shadow: 0 0 8px rgba(192,160,96,0.15);
-}
+.lang-bar a.active { color: var(--accent); background: rgba(192,160,96,0.15); font-weight: 700; box-shadow: 0 0 8px rgba(192,160,96,0.15); }
 .lang-bar .sep { color: rgba(255,255,255,0.15); margin: 0 1px; user-select: none; }
 
 footer { background:var(--dark); color:rgba(255,255,255,0.6); padding:48px; text-align:center; font-size:14px; }
 footer a { color:var(--accent); text-decoration:none; }
 @media (max-width:768px) { nav { padding:12px 20px; } .hero h1 { font-size:36px; } .services-grid { grid-template-columns:1fr; } .section { padding:60px 20px; } .stats { gap:40px; } }
 </style>
-<!-- NaJie Analytics -->
 <script>!function(){var i=new Image;i.src='https://39a84854032e5a.lhr.life/pixel.gif?url='+encodeURIComponent(window.location.pathname)+'&ref='+encodeURIComponent(document.referrer)}();</script>
 </head>
 <body>
 
 <div class="lang-bar">
-  <a href="/najie/" class="active">中文</a>
-  <span class="sep">|</span>
-  <a href="/en/najie/">English</a>
-  <span class="sep">|</span>
-  <a href="/fr/najie/">Français</a>
+  <a href="/najie/">中文</a><span class="sep">|</span>
+  <a href="/en/najie/">English</a><span class="sep">|</span>
+  <a href="/fr/najie/" class="active">Français</a>
 </div>
 
 <nav id="navbar">
-  <a href="/" class="nav-logo">纳杰知识产权</a>
+  <a href="/fr/" class="nav-logo">Najie PI</a>
   <ul class="nav-links">
-    <li><a href="/najie/blog/">📝 博客</a></li>
-    <li><a href="/">← 爱普纳杰</a></li>
-    <li><a href="/mili/">觅理律所</a></li>
-    <li><a href="/blog/">博客</a></li>
+    <li><a href="/fr/najie/blog/">📝 Blog</a></li>
+    <li><a href="/fr/">← AipNajie</a></li>
+    <li><a href="/fr/mili/">Mili Cabinet</a></li>
   </ul>
 </nav>
 
 <section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
+  <div class="hero-bg"></div><div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-badge">⏱ 知识产权年费管理专家</div>
-    <h1>纳杰<br><span>让每一笔费用都不遗漏</span></h1>
-    <p>2000+案件自动化年费监控系统<br>每日交叉比对国知局缴费数据，7天/30天分级预警</p>
-    <a href="mailto:ziganghe@outlook.com" class="btn btn-primary">📧 立即咨询</a>
+    <div class="hero-badge">⏱ Experts en Annuités</div>
+    <h1>Najie<br><span>Zéro Paiement Manqué</span></h1>
+    <p>2 000+ dossiers sous surveillance automatisée<br>Vérification croisée quotidienne CNIPA, alertes à 7/30 jours</p>
+    <a href="mailto:ziganghe@outlook.com" class="btn btn-primary">📧 Nous Consulter</a>
   </div>
 </section>
 
 <div class="stats">
-  <div class="stat-item"><div class="stat-number">2,000+</div><div class="stat-label">年费监控案件</div></div>
-  <div class="stat-item"><div class="stat-number">0%</div><div class="stat-label">漏缴率</div></div>
-  <div class="stat-item"><div class="stat-number">7/30</div><div class="stat-label">天分级预警</div></div>
-  <div class="stat-item"><div class="stat-number">每日</div><div class="stat-label">9:00 自动推送</div></div>
+  <div class="stat-item"><div class="stat-number">2 000+</div><div class="stat-label">Dossiers Surveillés</div></div>
+  <div class="stat-item"><div class="stat-number">0%</div><div class="stat-label">Taux d'Oubli</div></div>
+  <div class="stat-item"><div class="stat-number">7/30</div><div class="stat-label">Jours Alertes</div></div>
+  <div class="stat-item"><div class="stat-number">Quotidien</div><div class="stat-label">Push 9h00</div></div>
 </div>
 
 <section class="section">
-  <div class="section-title">
-    <h2>核心服务</h2>
-    <p>专注知识产权费用管理与运营</p>
-  </div>
+  <div class="section-title"><h2>Services Principaux</h2><p>Gestion des Frais PI & Opérations</p></div>
   <div class="services-grid">
-    <div class="service-card">
-      <div class="icon">📊</div>
-      <h3>年费监控</h3>
-      <p>专利年费自动监控系统，每日交叉比对 CNIPA 缴费数据。7天/30天分级预警推送，确保零遗漏。</p>
-    </div>
-    <div class="service-card">
-      <div class="icon">💰</div>
-      <h3>费用代缴</h3>
-      <p>专利年费、商标续展费、办登费一站式代缴。批量缴费自动核销，回执自动归档。</p>
-    </div>
-    <div class="service-card">
-      <div class="icon">📋</div>
-      <h3>费用台账</h3>
-      <p>客户专属费用台账，历史缴费记录一键导出。支持按案件/按年份/按费用类型多维查询。</p>
-    </div>
+    <div class="service-card"><div class="icon">📊</div><h3>Surveillance Annuités</h3><p>Surveillance automatisée des annuités, vérification croisée quotidienne CNIPA, alertes à 7/30 jours — zéro omission garantie.</p></div>
+    <div class="service-card"><div class="icon">💰</div><h3>Paiement des Frais</h3><p>Paiement intégré pour annuités, renouvellements de marques, frais d'enregistrement. Paiement par lot avec rapprochement automatique.</p></div>
+    <div class="service-card"><div class="icon">📋</div><h3>Grand Livre</h3><p>Grand livre client dédié, export en un clic de l'historique des paiements. Requête multi-dimensionnelle par dossier/année/type de frais.</p></div>
   </div>
 </section>
 
 <div class="three-entity">
-  <h2 style="color:var(--primary);">纳杰觅理 · 三主体协同</h2>
-  <p style="color:var(--text-light);">一站式知识产权法律服务</p>
+  <h2 style="color:var(--primary);">Najie-Mili · Synergie Tri-Entités</h2>
+  <p style="color:var(--text-light);">Services Juridiques PI Intégrés</p>
   <div class="entities">
-    <div class="entity-card">
-      <h4>📝 爱普纳杰</h4>
-      <p style="font-size:13px;color:var(--text-light);">专利代理</p>
-      <a href="/">najieip.com</a>
-    </div>
-    <div class="entity-card">
-      <h4>⚖️ 觅理律所</h4>
-      <p style="font-size:13px;color:var(--text-light);">知识产权诉讼</p>
-      <a href="/mili/">najieip.com/mili</a>
-    </div>
-    <div class="entity-card" style="border:2px solid var(--accent);">
-      <h4>⏱ 纳杰</h4>
-      <p style="font-size:13px;color:var(--text-light);">年费管理</p>
-      <strong style="color:var(--primary);">bjnajie.com → 已迁移至此</strong>
-    </div>
+    <div class="entity-card"><h4>📝 AipNajie</h4><p style="font-size:13px;color:var(--text-light);">Agence Brevets</p><a href="/fr/">najieip.com</a></div>
+    <div class="entity-card"><h4>⚖️ Mili Cabinet</h4><p style="font-size:13px;color:var(--text-light);">Contentieux PI</p><a href="/fr/mili/">najieip.com/mili</a></div>
+    <div class="entity-card" style="border:2px solid var(--accent);"><h4>⏱ Najie</h4><p style="font-size:13px;color:var(--text-light);">Gestion Annuités</p><strong style="color:var(--primary);">bjnajie.com → Migré Ici</strong></div>
   </div>
 </div>
 
 <div class="cta-section">
   <div class="cta-bg"></div>
   <div class="cta-content">
-    <h2>年费管理，交给系统而不是记忆</h2>
-    <p>2000+案件零漏缴。每日自动推送，绝限前7天强化提醒。</p>
-    <a href="mailto:ziganghe@outlook.com" class="btn btn-primary">📧 立即咨询</a>
+    <h2>Gestion des Annuités — Faites Confiance au Système</h2>
+    <p>2 000+ dossiers, zéro paiement manqué. Alertes quotidiennes automatisées, rappels intensifiés à 7 jours.</p>
+    <a href="mailto:ziganghe@outlook.com" class="btn btn-primary">📧 Nous Consulter</a>
   </div>
 </div>
 
 <footer>
-  <div style="font-size:18px;font-weight:700;color:var(--white);margin-bottom:8px;">纳杰知识产权</div>
-  年费管理 · 费用代缴 · 台账服务<br>
-  <span style="color:var(--accent);">原 bjnajie.com 已迁至此处</span>
+  <div style="font-size:18px;font-weight:700;color:var(--white);margin-bottom:8px;">Najie PI</div>
+  Gestion d'Annuités · Paiement des Frais · Grand Livre<br>
+  <span style="color:var(--accent);">Anciennement bjnajie.com — migré ici</span>
   <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;margin-top:20px;font-size:13px;">
-    &copy; 2026 纳杰知识产权 — 爱普纳杰 · 觅理 · 纳杰
+    &copy; 2026 Najie PI — AipNajie · Mili · Najie
   </div>
 </footer>
 

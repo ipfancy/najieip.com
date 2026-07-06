@@ -19,8 +19,8 @@
   --bg-light: #F8F9FA;
   --white: #fff;
   --radius: 12px;
-  --shadow: 0 4px 24px rgba(0,0,0,0.08);
-  --shadow-hover: 0 8px 40px rgba(0,0,0,0.15);
+  --shadow: 0 2px 16px rgba(0,0,0,0.06);
+  --shadow-hover: 0 12px 40px rgba(0,0,0,0.12);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -101,6 +101,7 @@ nav.scrolled .nav-links a { color: var(--text); }
 .hero h1 {
   font-size: 56px; font-weight: 900; color: var(--white);
   letter-spacing: 2px; margin-bottom: 16px; line-height: 1.2;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
 .hero h1 span { color: var(--accent); }
 .hero p {
@@ -112,7 +113,7 @@ nav.scrolled .nav-links a { color: var(--text); }
   display: inline-flex; align-items: center; gap: 8px;
   padding: 14px 32px; border-radius: 8px; font-size: 16px;
   font-weight: 600; text-decoration: none; transition: all 0.3s;
-  cursor: pointer; border: none; font-family: inherit;
+  cursor: pointer; border: none; font-family: inherit; letter-spacing: 0.5px;
 }
 .btn-primary {
   background: var(--accent); color: var(--white);
@@ -169,6 +170,7 @@ nav.scrolled .nav-links a { color: var(--text); }
 .service-card:hover {
   transform: translateY(-8px); box-shadow: var(--shadow-hover);
   border-color: var(--accent);
+  background: linear-gradient(180deg, #fff 0%, #fdfbf7 100%);
 }
 .service-card .icon {
   width: 64px; height: 64px; margin: 0 auto 20px;
@@ -235,6 +237,26 @@ nav.scrolled .nav-links a { color: var(--text); }
 .cta-content h2 { font-size: 36px; font-weight: 700; color: var(--white); margin-bottom: 16px; }
 .cta-content p { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 32px; }
 
+/* ─── Lang Bar ─── */
+.lang-bar {
+  position: relative; z-index: 101;
+  background: var(--dark);
+  padding: 6px 48px;
+  display: flex; justify-content: flex-end; align-items: center; gap: 6px;
+  font-size: 12px;
+}
+.lang-bar a {
+  color: rgba(255,255,255,0.5); text-decoration: none;
+  padding: 4px 12px; border-radius: 14px;
+  transition: all 0.25s; font-weight: 500; letter-spacing: 0.3px;
+}
+.lang-bar a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
+.lang-bar a.active {
+  color: var(--accent); background: rgba(192,160,96,0.15);
+  font-weight: 700; box-shadow: 0 0 8px rgba(192,160,96,0.15);
+}
+.lang-bar .sep { color: rgba(255,255,255,0.15); margin: 0 1px; user-select: none; }
+
 /* ─── Footer ─── */
 footer {
   background: var(--dark); color: rgba(255,255,255,0.6);
@@ -280,6 +302,15 @@ footer .copyright { font-size: 13px; border-top: 1px solid rgba(255,255,255,0.1)
 <script>!function(){var i=new Image;i.src='https://39a84854032e5a.lhr.life/pixel.gif?url='+encodeURIComponent(window.location.pathname)+'&ref='+encodeURIComponent(document.referrer)}();</script>
 </head>
 <body>
+
+<!-- Lang Bar -->
+<div class="lang-bar">
+  <a href="/" class="active">中文</a>
+  <span class="sep">|</span>
+  <a href="/en/">English</a>
+  <span class="sep">|</span>
+  <a href="/fr/">Français</a>
+</div>
 
 <!-- Nav -->
 <nav id="navbar">

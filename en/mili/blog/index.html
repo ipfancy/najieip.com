@@ -3,50 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Mili Law Firm Blog — Insights on IP litigation, patent infringement, trademark disputes, and unfair competition.">
+<meta name="description" content="Mili Law Firm Blog — IP litigation insights, patent infringement case analysis, trademark dispute strategies, cutting-edge IP law developments.">
 <title>Blog — Mili Law Firm</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
-:root { --primary: #8B1A1A; --accent: #C0A060; --text: #333; --text-light: #666; --bg: #F8F9FA; --white: #fff; }
+:root { --primary: #8B1A1A; --primary-dark: #5C1010; --accent: #C0A060; --dark: #1a1a2e; --text: #333; --text-light: #666; --bg: #F8F9FA; --white: #fff; --radius: 12px; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: 'Noto Sans SC', sans-serif; color: var(--text); line-height:1.8; background: var(--bg); }
+.lang-bar { background: var(--dark); padding: 6px 48px; display: flex; justify-content: flex-end; align-items: center; gap: 6px; font-size: 12px; }
+.lang-bar a { color: rgba(255,255,255,0.5); text-decoration: none; padding: 3px 10px; border-radius: 4px; transition: all 0.2s; font-weight: 500; }
+.lang-bar a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
+.lang-bar a.active { color: var(--accent); background: rgba(192,160,96,0.15); font-weight: 700; }
+.lang-bar .sep { color: rgba(255,255,255,0.2); margin: 0 2px; }
 header { background: var(--primary); padding: 20px 48px; text-align:center; }
 header a { color: var(--white); text-decoration:none; font-size:20px; font-weight:700; }
 header a:hover { color: var(--accent); }
 header p { color: rgba(255,255,255,0.7); font-size:14px; margin-top:4px; }
 .container { max-width: 800px; margin: 0 auto; padding: 48px 24px; }
-.article-card { background: var(--white); border-radius:12px; padding:32px; margin-bottom:24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: all 0.3s; }
-.article-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+.article-card { background: var(--white); border-radius: var(--radius); padding:32px; margin-bottom:24px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); transition: all 0.3s; border: 1px solid transparent; }
+.article-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.12); border-color: var(--accent); }
 .article-card h2 { font-size:22px; color: var(--primary); margin-bottom:8px; }
 .article-card h2 a { color: inherit; text-decoration:none; }
 .article-card h2 a:hover { color: var(--accent); }
 .article-card .meta { font-size:13px; color: var(--text-light); margin-bottom:12px; }
 .article-card p { font-size:15px; color: var(--text-light); }
-.empty-state { text-align:center; padding:60px 24px; color: var(--text-light); }
-.empty-state svg { width:64px; height:64px; color: var(--primary); opacity:0.3; margin-bottom:16px; }
-footer { background:#1a1a2e; color:rgba(255,255,255,0.6); padding:32px; text-align:center; font-size:13px; }
+footer { background: var(--dark); color:rgba(255,255,255,0.6); padding:32px; text-align:center; font-size:13px; }
 footer a { color: var(--accent); text-decoration:none; }
 </style>
 <script>!function(){var i=new Image;i.src='https://39a84854032e5a.lhr.life/pixel.gif?url='+encodeURIComponent(window.location.pathname)+'&ref='+encodeURIComponent(document.referrer)}();</script>
 </head>
 <body>
-<header>
-  <a href="/en/mili/">Mili Law Firm</a>
-  <p>IP Legal Protection · Blog</p>
-</header>
-<div class="container">
-  <div class="article-card">
-    <h2><a href="/en/blog/5-free-patent-search-tools.html">5 Free Patent Search Tools 90% of Inventors Don't Know About</a></h2>
-    <div class="meta">July 4, 2026 · Patent Search · Mili Picks</div>
-    <p>No commercial databases needed — these 5 tools cover Chinese and global patents. CNIPA Gazette, PSS, SooPAT, Google Patents, and Baiteng — search on your own.</p>
-  </div>
-  <div class="empty-state">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-    <p>More IP litigation and legal practice articles coming soon.</p>
-  </div>
+<div class="lang-bar">
+  <a href="/mili/blog/">中文</a><span class="sep">|</span>
+  <a href="/en/mili/blog/" class="active">English</a><span class="sep">|</span>
+  <a href="/fr/mili/blog/">Français</a>
 </div>
-<footer>
-  &copy; 2026 <a href="/en/mili/">Mili Law Firm</a> · <a href="/en/">AipNajie Patent Firm</a> · <a href="/en/najie/">NaJie IP</a>
-</footer>
+<header><a href="/en/mili/">Mili Law Firm</a><p>IP Litigation Experts · Blog</p></header>
+<div class="container">
+  <div class="article-card"><h2><a href="#">Technical Feature Comparison in Patent Infringement Litigation</a></h2><div class="meta">July 5, 2026 · Patent Litigation · Practical Guide</div><p>The core of patent infringement litigation is technical feature comparison. How to construct clear claim charts? How to effectively use the doctrine of equivalents? Insights from years of practice.</p></div>
+  <div class="article-card"><h2><a href="#">Trademark Non-Use Cancellation: Offensive and Defensive Strategies</a></h2><div class="meta">July 2, 2026 · Trademark Law · Case Analysis</div><p>The non-use cancellation system is a powerful weapon against idle trademarks but is often abused. From evidence chains to use recognition standards — key strategies analyzed.</p></div>
+  <div class="article-card"><h2><a href="#">IP Ownership Issues in Technology Contract Disputes</a></h2><div class="meta">June 25, 2026 · Contract Law · IP Practice</div><p>Disputes over IP ownership in joint development and commissioned development are frequent. How to mitigate risks at the contract drafting stage? Latest judicial rules examined.</p></div>
+</div>
+<footer>&copy; 2026 <a href="/en/mili/">Mili Law Firm</a> · <a href="/en/">AipNajie</a> · <a href="/en/najie/">Najie</a></footer>
 </body>
 </html>
