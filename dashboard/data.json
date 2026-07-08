@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T00:00:49.620798+00:00",
+  "generated_at": "2026-07-08T00:00:06.012442+00:00",
   "fees": {
     "total_fees": 958,
     "by_type": [
@@ -841,7 +841,7 @@
     "clients": 1,
     "strategies": 1,
     "trainings": 1,
-    "articles": 34,
+    "articles": 35,
     "receivable": {
       "quotes": 1,
       "invoices": 1,
