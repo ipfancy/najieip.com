@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="用 archify 取代 draw.io 画架构图——一个能让 AI 自动生成技术架构图的 Claude Skill。不用拖组件、不用对齐线，一句话出图。">
+<title>告别 draw.io：用 archify 让 AI 画架构图 — 爱普纳杰专利所</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root { --primary: #1F4E79; --accent: #C0A060; --text: #333; --text-light: #666; --bg: #F8F9FA; --white: #fff; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Noto Sans SC', sans-serif; color: var(--text); line-height:1.9; }
+header { background: var(--primary); padding: 20px 48px; text-align:center; }
+header a { color: var(--white); text-decoration:none; font-size:20px; font-weight:700; }
+header a:hover { color: var(--accent); }
+.container { max-width: 740px; margin: 0 auto; padding: 48px 24px; }
+article h1 { font-size:32px; color: var(--primary); margin-bottom:8px; line-height:1.3; }
+article .meta { font-size:14px; color: var(--text-light); margin-bottom:32px; }
+article h2 { font-size:22px; color: var(--primary); margin: 40px 0 12px; padding-bottom:6px; border-bottom:2px solid var(--accent); }
+article p { margin-bottom:16px; font-size:16px; }
+article ul, article ol { margin: 12px 0 12px 24px; }
+article li { margin-bottom:6px; }
+article strong { color: var(--primary); }
+article a { color: var(--primary); text-decoration:underline; }
+article blockquote { background: #fefce8; border-left:4px solid var(--accent); padding:12px 20px; margin:20px 0; font-style:italic; }
+article code { background: #f1f5f9; padding: 2px 8px; border-radius: 4px; font-size: 14px; font-family: 'Courier New', monospace; }
+article pre { background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; overflow-x: auto; margin: 16px 0; font-size: 14px; }
+.cta { background: linear-gradient(135deg, var(--primary), #2E75B6); color: var(--white); padding:32px; border-radius:12px; margin-top:40px; text-align:center; }
+.cta h3 { font-size:20px; margin-bottom:8px; }
+.cta p { margin-bottom:12px; opacity:.9; font-size:15px; }
+.cta a { display:inline-block; background: var(--accent); color: var(--white); padding:12px 36px; border-radius:8px; text-decoration:none; font-weight:600; font-size:15px; transition:.2s; }
+.cta a:hover { background: #b89040; }
+.back-link { text-align:center; margin-top:32px; }
+.back-link a { color: var(--primary); text-decoration:none; font-weight:500; }
+footer { background:#1a1a2e; color:#ccc; text-align:center; padding:32px 24px; font-size:13px; margin-top:64px; }
+footer a { color: var(--accent); text-decoration:none; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/">&#9878; 爱普纳杰专利所</a>
+</header>
+
+<div class="container">
+<article>
+
+<h1>告别 draw.io：用 archify 让 AI 画架构图</h1>
+
+<p class="meta">2026年7月8日 · 爱普纳杰专利所</p>
+
+<p>如果你也和我一样，在 <strong>draw.io</strong> 里浪费过无数个下午，我真心建议你试试这个 Skill。</p>
+
+<p>不用看那个复杂的 README，直接复制项目链接扔给你的 Agent：</p>
+
+<pre><code>帮我安装一下这个 Skill，
+https://github.com/tt-a1i/archify</code></pre>
+
+<p>剩下的事，让它自己去搞定吧。</p>
+
+<h2>draw.io 的「时间黑洞」</h2>
+
+<p>画架构图这件事，本质上是<strong>把脑子里的东西搬到纸上</strong>。但 draw.io 让这一步变成了体力活：</p>
+
+<ul>
+  <li>拖组件、调大小、对齐线条——10 分钟过去了，图还没成型</li>
+  <li>改一个节点位置，所有连线跟着乱——再花 5 分钟重新整理</li>
+  <li>导出 PNG 发现字体不对，重来一遍</li>
+  <li>下次需要改图，打开文件——「我上次是怎么排的来着？」</li>
+</ul>
+
+<p>你不是在画架构图。你是在<strong>和绘图工具搏斗</strong>。</p>
+
+<h2>archify 做对了什么</h2>
+
+<p>archify 是一个 Claude Skill，专门生成技术架构图。核心理念很简单：</p>
+
+<blockquote>用自然语言描述你的系统结构，AI 自动生成带图标的架构图。</blockquote>
+
+<p>比如你只需要说：</p>
+
+<pre><code>画一个三层架构图：
+- 用户层：微信小程序、Web 管理后台
+- 业务层：CNPTES 案件管理、通知书处理、财务核销
+- 数据层：MySQL、Redis 缓存</code></pre>
+
+<p>AI 会自动生成一张<strong>带图标的、分层清晰的架构图</strong>——不用拖一个组件，不用调整一条连线。</p>
+
+<h2>为什么值得试</h2>
+
+<ul>
+  <li><strong>一句话出图</strong>：描述系统，图就出来了，不需要拖拽</li>
+  <li><strong>改图也是改文字</strong>：修改描述，图自动更新，不用手动调整</li>
+  <li><strong>图标自动匹配</strong>：数据库认 MySQL 图标，服务器认 AWS 图标，不用手动挑选</li>
+  <li><strong>导出干净</strong>：PNG/SVG 直接可用，放进 PPT 或文档不需要二次处理</li>
+</ul>
+
+<h2>谁适合用</h2>
+
+<table>
+  <tr><th>场景</th><th>之前</th><th>之后</th></tr>
+  <tr><td>给客户讲系统方案</td><td>draw.io 画半天</td><td>描述三句话，图出来</td></tr>
+  <tr><td>写专利申请附图</td><td>Visio 手动画系统框图</td><td>描述拓扑，自动生成</td></tr>
+  <tr><td>内部技术文档</td><td>截图+箭头拼凑</td><td>一段描述一张图</td></tr>
+  <tr><td>PPT 里的架构页</td><td>反复导出+调格式</td><td>SVG 直接嵌入</td></tr>
+</table>
+
+<h2>一句话</h2>
+
+<blockquote>技术人的生产力，从来不是靠卷出来的，是靠工具解放出来的。</blockquote>
+
+<p>archify 就是那种「早用早解脱」的工具。如果你每周至少画一张架构图，装上这个 Skill，把<strong>拖组件的时间还给思考架构的时间</strong>。</p>
+
+<div class="cta">
+  <h3>想试试？</h3>
+  <p>复制项目链接给你的 Agent，让它帮你装好。5 分钟之后，你就可以用自然语言画架构图了。</p>
+  <a href="https://github.com/tt-a1i/archify" target="_blank">&#8599; archify on GitHub</a>
+</div>
+
+</article>
+
+<div class="back-link">
+  <a href="/blog/">&#8592; 返回博客首页</a>
+</div>
+</div>
+
+<footer>
+  <p>&copy; 2026 <a href="/">爱普纳杰专利所</a> &middot; <a href="/mili/">觅理律所</a></p>
+  <p>守护创新价值</p>
+</footer>
+
+</body>
+</html>
