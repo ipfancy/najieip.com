@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="收件箱入库失败从红色报错到自动自愈——管线层的异常队列设计实操。failed_queue表、重试逻辑、升级机制，一个实际的知产代理系统改进案例。">
+<title>管线层实操：收件箱从报错到自愈 — 爱普纳杰专利所</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root { --primary: #1F4E79; --accent: #C0A060; --text: #333; --text-light: #666; --bg: #F8F9FA; --white: #fff; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Noto Sans SC', sans-serif; color: var(--text); line-height:1.9; }
+header { background: var(--primary); padding: 20px 48px; text-align:center; }
+header a { color: var(--white); text-decoration:none; font-size:20px; font-weight:700; }
+header a:hover { color: var(--accent); }
+.container { max-width: 740px; margin: 0 auto; padding: 48px 24px; }
+article h1 { font-size:32px; color: var(--primary); margin-bottom:8px; line-height:1.3; }
+article .meta { font-size:14px; color: var(--text-light); margin-bottom:32px; }
+article h2 { font-size:22px; color: var(--primary); margin: 40px 0 12px; padding-bottom:6px; border-bottom:2px solid var(--accent); }
+article p { margin-bottom:16px; font-size:16px; }
+article ul, article ol { margin: 12px 0 12px 24px; }
+article li { margin-bottom:6px; }
+article strong { color: var(--primary); }
+article blockquote { background: #fefce8; border-left:4px solid var(--accent); padding:14px 22px; margin:24px 0; }
+article code { background: #f1f5f9; padding: 2px 8px; border-radius:4px; font-size:14px; font-family:monospace; }
+article pre { background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; overflow-x: auto; margin: 16px 0; font-size: 13px; line-height:1.6; }
+article table { width:100%; border-collapse:collapse; margin:20px 0; }
+article th, article td { border:1px solid #e5e7eb; padding:10px 14px; text-align:left; font-size:14px; }
+article th { background:#f0f4ff; font-weight:600; color:var(--primary); }
+.before-after { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:24px 0; }
+.before, .after { padding:20px; border-radius:12px; }
+.before { background:#fef2f2; border:2px solid #fca5a5; }
+.after { background:#f0fdf4; border:2px solid #86efac; }
+.before h4 { color:#dc2626; }
+.after h4 { color:#16a34a; }
+.cta { background: linear-gradient(135deg, var(--primary), #2E75B6); color: var(--white); padding:32px; border-radius:12px; margin-top:40px; text-align:center; }
+.cta h3 { font-size:20px; margin-bottom:8px; }
+.cta a { display:inline-block; background: var(--accent); color: var(--white); padding:12px 36px; border-radius:8px; text-decoration:none; font-weight:600; font-size:15px; }
+.cta a:hover { background: #b89040; }
+.series-note { font-size:13px; color:var(--text-light); margin-top:40px; padding:16px; background:var(--bg); border-radius:8px; text-align:center; }
+.back-link { text-align:center; margin-top:32px; }
+.back-link a { color: var(--primary); text-decoration:none; font-weight:500; }
+footer { background:#1a1a2e; color:#ccc; text-align:center; padding:32px 24px; font-size:13px; margin-top:64px; }
+footer a { color: var(--accent); text-decoration:none; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/">&#9878; 爱普纳杰专利所</a>
+</header>
+
+<div class="container">
+<article>
+
+<h1>管线层实操：收件箱从报错到自愈</h1>
+<p class="meta">2026年7月12日 · 系统架构系列第二篇 · 爱普纳杰专利所</p>
+
+<blockquote>
+上篇讲了管线-Agent-数据库三层架构。这篇落地：管线层最典型的场景——收件箱入库异常——怎么从红色报错变成自动自愈。
+</blockquote>
+
+<h2>改前 vs 改后</h2>
+
+<div class="before-after">
+<div class="before">
+<h4>❌ 改前</h4>
+<p style="font-size:14px;color:#991b1b;">
+打开 CNPTES → 收件箱 → 红色报错<br>
+「Expecting value: line 1 column 1」<br>
+不知道哪个文件失败、为什么失败<br>
+只能点「手动提取入库」→ 又失败<br>
+<strong>循环：报错 → 无处理 → 堆积</strong>
+</p>
+</div>
+<div class="after">
+<h4>✅ 改后</h4>
+<p style="font-size:14px;color:#166534;">
+打开 CNPTES → 收件箱 → 「3条待处理」<br>
+点击查看：2条已自动重试成功，1条待确认<br>
+每条有 error_type + 原始文件路径<br>
+异常文件自动写入 failed_queue<br>
+<strong>循环：报错 → 自动重试 → 自愈或升级</strong>
+</p>
+</div>
+</div>
+
+<h2>核心设计：一张表 + 三段逻辑</h2>
+
+<h3>failed_queue 表</h3>
+
+<pre><code>CREATE TABLE failed_queue (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    source VARCHAR(64)     — 'inbox' / 'ocr'
+    original_file VARCHAR(512)  — 原始文件路径
+    error_type VARCHAR(128) — 'json_parse' / 'ocr_fail' / 'encoding'
+    error_detail TEXT       — 完整报错信息
+    retry_count INT DEFAULT 0  — 已重试 ≤ 3
+    max_retries INT DEFAULT 3
+    status ENUM('pending','retrying','resolved','escalated')
+    created_at DATETIME
+);</code></pre>
+
+<p>设计要点：<strong>不改造原有入库逻辑，只在失败路径上加一行 INSERT。</strong></p>
+
+<h3>三段处理逻辑</h3>
+
+<table>
+<tr><th>阶段</th><th>动作</th><th>触发</th></tr>
+<tr>
+  <td>① 捕获</td>
+  <td>入库失败时，不报错退出，而是 <code>INSERT INTO failed_queue</code></td>
+  <td>每次入库异常</td>
+</tr>
+<tr>
+  <td>② 重试</td>
+  <td>Cron 每 30 分钟扫描 <code>pending</code> 记录，retry_count+1，重新执行入库</td>
+  <td>定时任务</td>
+</tr>
+<tr>
+  <td>③ 升级</td>
+  <td>retry_count ≥ 3 次仍失败 → status='escalated' → 通知管网的人</td>
+  <td>3 次重试后</td>
+</tr>
+</table>
+
+<h2>为什么是 3 次，不是无限重试</h2>
+
+<p>三个原因：</p>
+
+<ol>
+  <li><strong>可重试的错误会在前 2 次解决</strong>——JSON 解析失败通常因为文件正在写入、OCR 服务暂时不可用这类瞬时问题</li>
+  <li><strong>3 次还失败，说明不是瞬时问题</strong>——可能是文件本身损坏、编码格式不支持、系统 Bug</li>
+  <li><strong>避免死循环消耗资源</strong>——无限重试会把 CPU 和磁盘 IO 耗在无法修复的文件上</li>
+</ol>
+
+<blockquote>
+管线层的核心原则：<strong>能自动处理的决不升级，该升级的决不拖延。</strong>
+</blockquote>
+
+<h2>实际效果</h2>
+
+<table>
+<tr><th>指标</th><th>改前</th><th>改后</th></tr>
+<tr><td>异常发现</td><td>人工打开收件箱才能看到</td><td>Cron 主动扫描，异常即时入库</td></tr>
+<tr><td>处理方式</td><td>手动「提取入库」反复尝试</td><td>系统自动重试，你只处理 escalated</td></tr>
+<tr><td>追溯能力</td><td>无记录，靠记忆</td><td>每条的 error_type + error_detail + 原始文件路径</td></tr>
+<tr><td>人工介入</td><td>每一条都要看</td><td>只看 escalated（约 10-20% 的异常）</td></tr>
+</table>
+
+<h2>和三层架构的关系</h2>
+
+<p>这是管线层的典型实现——</p>
+
+<ul>
+  <li><strong>管线负责发现</strong>：Cron 定时扫描，捕获异常并写入队列</li>
+  <li><strong>Agent 负责判断</strong>：escalated 后由 Agent 判断是文件问题还是系统 Bug，通知对应的人</li>
+  <li><strong>数据库负责关联</strong>：failed_queue 和 agent_audit_log 双表联动，异常有来源、处理有记录</li>
+</ul>
+
+<div class="cta">
+  <h3>下期预告</h3>
+  <p>Agent 层实操：核销匹配怎么从 0 做到自动匹配率 80%</p>
+  <a href="/blog/">&#8599; 系列第一弹：三层架构设计原则</a>
+</div>
+
+<div class="series-note">
+  📐 本文是「管线-Agent-数据库」系列第二篇。<br>
+  第一篇：<a href="/blog/cnptes-three-layer-architecture.html">三层架构设计原则</a>｜第三篇：Agent层实操（即将发布）
+</div>
+
+</article>
+
+<div class="back-link">
+  <a href="/blog/">&#8592; 返回博客首页</a>
+</div>
+</div>
+
+<footer>
+  <p>&copy; 2026 <a href="/">爱普纳杰专利所</a> &middot; <a href="/mili/">觅理律所</a></p>
+  <p>守护创新价值</p>
+</footer>
+
+</body>
+</html>
