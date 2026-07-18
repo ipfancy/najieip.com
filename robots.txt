@@ -1,3 +1,38 @@
 User-agent: *
 Allow: /
 Sitemap: https://najieip.com/sitemap.xml
+
+# ── AI / LLM 爬虫 ──
+# 允许所有 AI 搜索引擎爬取核心内容（GEO 优化）
+
+User-agent: ByteSpider
+Allow: /
+# 豆包 / 抖音 AI 搜索引擎
+
+User-agent: GPTBot
+Allow: /
+# ChatGPT / OpenAI 搜索引擎
+
+User-agent: Claude-Web
+Allow: /
+# Claude / Anthropic AI 搜索引擎
+
+User-agent: Google-Extended
+Allow: /
+# Google AI 概览（SGE）
+
+User-agent: BaiduSpider
+Allow: /
+# 百度搜索 + 文心一言
+
+User-agent: PerplexityBot
+Allow: /
+# Perplexity AI 搜索引擎
+
+User-agent: Applebot
+Allow: /
+# Apple Intelligence / Siri
+
+User-agent: cohere-ai
+Allow: /
+# Cohere AI 搜索引擎
