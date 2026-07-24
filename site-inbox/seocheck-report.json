@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-24T19:37:58",
+  "checked_at": "2026-07-24T22:06:10",
   "pages": [
     {
       "url": "https://najieip.com/",
@@ -61,27 +61,19 @@
     }
   ],
   "sitemap": {
-    "url_count": 31,
-    "with_lastmod": 31,
+    "url_count": 25,
+    "with_lastmod": 25,
     "without_lastmod": 0,
-    "sitemap_last_modified": "Thu, 23 Jul 2026 23:04:53 GMT",
-    "blog_count": 18
+    "sitemap_last_modified": "Fri, 24 Jul 2026 11:43:15 GMT",
+    "blog_count": 15
   },
   "jsonld": {
     "https://najieip.com/": true,
-    "https://najieip.com/blog/": false,
-    "https://najieip.com/mili/": false,
-    "https://najieip.com/najie/": false,
-    "https://najieip.com/en/": false,
-    "https://najieip.com/fr/": false
+    "https://najieip.com/blog/": true,
+    "https://najieip.com/mili/": true,
+    "https://najieip.com/najie/": true,
+    "https://najieip.com/en/": true,
+    "https://najieip.com/fr/": true
   },
-  "lighthouse": {
-    "https://najieip.com/": {
-      "performance": 65,
-      "seo": 91
-    },
-    "https://najieip.com/blog/": {
-      "error": "Runtime error encountered: EAGAIN: resource temporarily unavailable, write\nError: EAGAIN: resource temporarily unavailable, write\n"
-    }
-  }
+  "lighthouse": null
 }
