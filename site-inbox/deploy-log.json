@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-07-25T18:07:00+08:00",
+  "commit": "041c7c2",
+  "action": "multilingual-sync",
+  "files": [
+    "en/blog/ai-generated-content-copyright-en.html",
+    "fr/blog/ai-generated-content-copyright-fr.html",
+    "en/blog/index.html",
+    "fr/blog/index.html",
+    "blog/ai-generated-content-copyright.html (lang-bar added)"
+  ],
+  "verification": {
+    "en_article": "200 OK",
+    "fr_article": "200 OK",
+    "en_index": "200 OK",
+    "fr_index": "200 OK",
+    "zh_article": "200 OK"
+  },
+  "status": "success"
+}

@@ -3,93 +3,213 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="觅理律所博客 — 知识产权专业内容。">
-<title>博客 — 觅理律所</title>
+<meta name="description" content="觅理律师事务所 — 综合法律博客。覆盖知识产权、行政法、民商事诉讼、刑法与刑事诉讼法、海商法、反垄断与反不正当竞争、国际法与跨境争议、民法典等全法律领域。">
+<title>博客 — 觅理律师事务所</title>
+<meta property="og:title" content="博客 — 觅理律师事务所">
+<meta property="og:description" content="觅理律师事务所 — 综合法律博客。覆盖知识产权、行政法、民商事诉讼、刑法与刑事诉讼法、海商法、反垄断与反不正当竞争、国际法、民法典等全法律领域。">
+<meta property="og:image" content="https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<meta property="og:url" content="https://najieip.com/mili/blog/">
+<meta property="og:type" content="blog">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="博客 — 觅理律师事务所">
+<link rel="canonical" href="https://najieip.com/mili/blog/">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
-:root { --primary: #8B1A1A; --accent: #C0A060; --text: #333; --text-light: #666; --bg: #F8F9FA; --white: #fff; }
+:root { --primary: #4A2C6E; --primary-light: #7C4DBB; --accent: #C0A060; --text: #333; --text-light: #666; --bg: #F8F9FA; --white: #fff; --card-bg: #fff; --tag-ip: #7C4DBB; --tag-admin: #2E75B6; --tag-litigation: #C0392B; --tag-criminal: #8E44AD; --tag-maritime: #1ABC9C; --tag-antitrust: #E67E22; --tag-intl: #2980B9; --tag-civil: #16A085; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: 'Noto Sans SC', sans-serif; color: var(--text); line-height:1.8; background: var(--bg); }
 header { background: var(--primary); padding: 20px 48px; text-align:center; }
 header a { color: var(--white); text-decoration:none; font-size:20px; font-weight:700; }
 header a:hover { color: var(--accent); }
 header p { color: rgba(255,255,255,0.7); font-size:14px; margin-top:4px; }
-.container { max-width: 800px; margin: 0 auto; padding: 48px 24px; }
-.article-card { background: var(--white); border-radius:12px; padding:32px; margin-bottom:24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: all 0.3s; }
+.subhead { background: var(--primary-light); padding: 8px 48px; text-align:center; color: rgba(255,255,255,0.85); font-size:13px; letter-spacing:1px; }
+.subhead span { display:inline-block; margin:0 8px; }
+.container { max-width: 850px; margin: 0 auto; padding: 48px 24px; }
+
+/* Practice area grid */
+.area-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-bottom: 48px; }
+.area-card { background: var(--white); border-radius: 10px; padding: 20px; text-align:center; border: 1px solid #e5e7eb; transition: all 0.3s; }
+.area-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-color: var(--accent); }
+.area-card .icon { font-size:28px; margin-bottom:8px; }
+.area-card h3 { font-size:14px; color: var(--primary); margin-bottom:4px; }
+.area-card .status { font-size:11px; padding:2px 8px; border-radius:8px; display:inline-block; margin-top:4px; }
+.status-active { background: #d4edda; color: #155724; }
+.status-coming { background: #fff3cd; color: #856404; }
+
+.article-card { background: var(--card-bg); border-radius:12px; padding:32px; margin-bottom:24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: all 0.3s; }
 .article-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
-.article-card h2 { font-size:22px; color: var(--primary); margin-bottom:8px; }
+.article-card h2 { font-size:20px; color: var(--primary); margin-bottom:8px; }
 .article-card h2 a { color: inherit; text-decoration:none; }
 .article-card h2 a:hover { color: var(--accent); }
 .article-card .meta { font-size:13px; color: var(--text-light); margin-bottom:12px; }
+.article-card .tag { display:inline-block; padding:1px 10px; border-radius:10px; font-size:11px; margin-right:4px; color: var(--white); }
+.tag-ip { background: var(--tag-ip); }
+.tag-admin { background: var(--tag-admin); }
+.tag-litigation { background: var(--tag-litigation); }
+.tag-criminal { background: var(--tag-criminal); }
+.tag-maritime { background: var(--tag-maritime); }
+.tag-antitrust { background: var(--tag-antitrust); }
+.tag-intl { background: var(--tag-intl); }
+.tag-civil { background: var(--tag-civil); }
 .article-card p { font-size:15px; color: var(--text-light); }
-footer { background:#1a1a2e; color:rgba(255,255,255,0.6); padding:32px; text-align:center; font-size:13px; margin-top:40px; }
+.cta-banner { background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: var(--white); padding:40px; border-radius:16px; margin-top:28px; text-align:center; }
+.cta-banner h3 { font-size:20px; margin-bottom:12px; }
+.cta-banner p { font-size:15px; color: rgba(255,255,255,0.8); margin-bottom:8px; }
+.cta-banner .contact { display:inline-block; background:var(--accent); color:var(--white); padding:10px 24px; border-radius:8px; text-decoration:none; font-weight:600; margin-top:8px; }
+.cta-banner .contact:hover { background:#D4B87A; }
+footer { background:#1a1a2e; color:rgba(255,255,255,0.6); padding:32px; text-align:center; font-size:13px; margin-top:48px; }
 footer a { color: var(--accent); text-decoration:none; }
+.section-title { font-size:22px; color: var(--primary); margin-bottom:16px; padding-bottom:8px; border-bottom:2px solid var(--accent); }
 </style>
 <script>!function(){var i=new Image;i.src='https://39a84854032e5a.lhr.life/pixel.gif?url='+encodeURIComponent(window.location.pathname)+'&ref='+encodeURIComponent(document.referrer)}();</script>
 </head>
 <body>
 <header>
-  <a href="/">爱普纳杰专利所</a>
-  <p>知识产权法律保护 · 博客</p>
+  <a href="/mili/">觅理律师事务所</a>
+  <p>综合 · 专业 · 可信赖</p>
 </header>
+<div class="subhead">
+  <span>⚖️ 知识产权</span> <span>·</span>
+  <span>📋 行政法</span> <span>·</span>
+  <span>⚡ 民商事诉讼</span> <span>·</span>
+  <span>🔒 刑法与刑诉</span> <span>·</span>
+  <span>⚓ 海商法</span> <span>·</span>
+  <span>🏛️ 反垄断</span> <span>·</span>
+  <span>🌐 国际法</span> <span>·</span>
+  <span>📖 民法典</span>
+</div>
+
 <div class="container">
+
+  <h2 class="section-title">📌 法律领域</h2>
+  <p style="color:var(--text-light); margin-bottom:20px; font-size:14px;">觅理律师事务所覆盖以下全部法律领域，带 ✓ 标记的已有相关文章，其余领域内容持续扩充中。</p>
+
+  <div class="area-grid">
+    <div class="area-card">
+      <div class="icon">⚖️</div>
+      <h3>知识产权法</h3>
+      <span class="status status-active">✓ 有内容</span>
+    </div>
+    <div class="area-card">
+      <div class="icon">📋</div>
+      <h3>行政法</h3>
+      <span class="status status-coming">扩充中</span>
+    </div>
+    <div class="area-card">
+      <div class="icon">⚡</div>
+      <h3>民事诉讼法</h3>
+      <span class="status status-coming">扩充中</span>
+    </div>
+    <div class="area-card">
+      <div class="icon">🔒</div>
+      <h3>刑法 · 刑事诉讼法</h3>
+      <span class="status status-coming">扩充中</span>
+    </div>
+    <div class="area-card">
+      <div class="icon">⚓</div>
+      <h3>海商法</h3>
+      <span class="status status-coming">扩充中</span>
+    </div>
+    <div class="area-card">
+      <div class="icon">🏛️</div>
+      <h3>垄断与反垄断</h3>
+      <span class="status status-coming">扩充中</span>
+    </div>
+    <div class="area-card">
+      <div class="icon">🔄</div>
+      <h3>反不正当竞争 · 竞争法</h3>
+      <span class="status status-coming">扩充中</span>
+    </div>
+    <div class="area-card">
+      <div class="icon">🌐</div>
+      <h3>国际法 · 跨境争议</h3>
+      <span class="status status-coming">扩充中</span>
+    </div>
+    <div class="area-card">
+      <div class="icon">📖</div>
+      <h3>民法典</h3>
+      <span class="status status-coming">扩充中</span>
+    </div>
+    <div class="area-card">
+      <div class="icon">🤝</div>
+      <h3>商事仲裁 · 调解</h3>
+      <span class="status status-coming">扩充中</span>
+    </div>
+  </div>
+
+  <h2 class="section-title">📄 最新文章</h2>
+
   <div class="article-card">
-    <h2><a href="/blog/weituo-chuangzuo-banquan-xieyi-bi-keng.html">你花5万做VI，商标却被驳回？著作权法大修，“付了钱≠拥有”的坑90%企业还在踩</a></h2>
-    <div class="meta">2026-07-23 · 觅理律所推荐</div>
-    <p>委托创作合同中的著作权归属条款是90%企业忽略的法律陷阱。付了钱≠拥有版权——VI设计、宣传片、软件开发中的版权避坑指南。</p>
+    <h2><a href="./weituo-chuangzuo-banquan-xieyi-bi-keng.html">你花5万做VI，商标却被驳回？著作权法大修，"付了钱≠拥有"的坑90%企业还在踩</a></h2>
+    <div class="meta"><span class="tag tag-ip">知识产权</span><span class="tag tag-civil">民法典</span> 2026-07-23 · 觅理律师事务所</div>
+    <p>委托创作合同中的著作权归属条款是90%企业忽略的法律陷阱。VI设计、宣传片制作、软件开发——IP天然触及合同法与民法典的交叉地带。</p>
   </div>
 
   <div class="article-card">
-    <h2><a href="/blog/copyright-law-feedback-guide.html">8月12日截止：著作权法实施条例征求意见，企业还能说“不”</a></h2>
-    <div class="meta">2026-07-22 · 觅理律所推荐</div>
-    <p>著作权法实施条例修订草案征求意见期8月12日截止。对企业影响最大的条款解读，及如何有效提交反馈意见。</p>
+    <h2><a href="./copyright-law-feedback-guide.html">8月12日截止：著作权法实施条例征求意见，企业还能说"不"</a></h2>
+    <div class="meta"><span class="tag tag-ip">知识产权</span><span class="tag tag-admin">行政法</span> 2026-07-21 · 觅理律师事务所</div>
+    <p>行政法规立法征求意见窗口——IP行政法交叉地带，企业参与立法博弈的实操指南。行政法程序与企业权益保护的经典场景。</p>
   </div>
 
   <div class="article-card">
-    <h2><a href="/blog/mili-join-founding-partner.html">觅理加盟——创始合伙人亲述：为什么知产律师需要一个“家”</a></h2>
-    <div class="meta">2026-07-19 · 觅理律所推荐</div>
-    <p>觅理律所创始合伙人亲述加盟体验——为什么知识产权律师需要一个能打官司、有案源、拥有数字化能力的平台。</p>
+    <h2><a href="./ai-generated-content-copyright.html">AI生成内容的版权归谁？2026年最新法律解读与合规建议</a></h2>
+    <div class="meta"><span class="tag tag-ip">知识产权</span><span class="tag tag-intl">国际法</span> 2026-07-12 · 觅理律师事务所</div>
+    <p>AI生成物是否构成作品？训练数据的版权边界在哪？跨境AI服务的法律适用——IP与国际法的交汇前沿。</p>
   </div>
 
   <div class="article-card">
-    <h2><a href="/blog/enterprise-ip-compliance-system.html">企业知识产权合规体系建设——从风险排查到管理落地</a></h2>
-    <div class="meta">2026-07-10 · 觅理律所推荐</div>
-    <p>从专利商标风险排查到贯标落地，合规不是成本而是竞争力。纳杰知识产权为企业打造全流程IP管理体系。</p>
+    <h2><a href="./mili-join-founding-partner.html">觅理加盟——创始合伙人亲述：为什么知产律师需要一个"家"</a></h2>
+    <div class="meta"><span class="tag tag-ip">知识产权</span> 2026-07-11 · 觅理律师事务所</div>
+    <p>从独立执业到平台化运营——觅理以IP为起点，构建综合法律服务能力的初心与实践。</p>
   </div>
 
   <div class="article-card">
-    <h2><a href="/blog/trademark-law-2026-revision.html">商标法2026年大修：企业必须关注的八大变化</a></h2>
-    <div class="meta">2026-07-09 · 觅理律所推荐</div>
-    <p>2026年商标法修订草案八大核心变化及企业应对策略，2027年施行。</p>
+    <h2><a href="./enterprise-ip-compliance-system.html">企业知识产权合规体系建设——从风险排查到管理落地</a></h2>
+    <div class="meta"><span class="tag tag-ip">知识产权</span><span class="tag tag-admin">行政法</span> 2026-07-10 · 觅理律师事务所</div>
+    <p>合规不是成本，而是竞争力。IP合规与行政监管、反不正当竞争法的交叉——企业合规体系的全景视角。</p>
   </div>
 
   <div class="article-card">
-    <h2><a href="/blog/ai-generated-content-copyright.html">AI生成内容的版权归谁？2026年最新法律解读与合规建议</a></h2>
-    <div class="meta">2026-07-08 · 觅理律所推荐</div>
-    <p>AIGC版权归属、北京互联网法院标杆案例、企业AI合规五步清单。</p>
+    <h2><a href="./trademark-law-2026-revision.html">商标法2026年大修：企业必须关注的八大变化（2027年施行）</a></h2>
+    <div class="meta"><span class="tag tag-ip">知识产权</span><span class="tag tag-litigation">民事诉讼</span> 2026-07-09 · 觅理律师事务所</div>
+    <p>商标法修订涉及恶意注册、惩罚性赔偿、程序简化等——每一项背后都可能触发行政诉讼或民事诉讼程序。</p>
   </div>
 
   <div class="article-card">
-    <h2><a href="/blog/trademark-squatting-guide.html">商标被抢注怎么办？企业维权全流程指南（2026版）</a></h2>
-    <div class="meta">2026-07-08 · 觅理律所推荐</div>
-    <p>异议→无效宣告→撤三→侵权诉讼，四条维权路径全解析。</p>
+    <h2><a href="./trademark-squatting-guide.html">商标被抢注怎么办？企业维权全流程指南（2026版）</a></h2>
+    <div class="meta"><span class="tag tag-ip">知识产权</span><span class="tag tag-litigation">民事诉讼</span><span class="tag tag-admin">行政法</span> 2026-07-08 · 觅理律师事务所</div>
+    <p>从行政异议到法院诉讼——商标抢注维权的完整路径，体现IP案件中行政程序与诉讼程序的衔接。</p>
   </div>
 
   <div class="article-card">
-    <h2><a href="/blog/najie-apnajie-mili-collaboration.html">两所一主体：纳杰、爱普纳杰与觅理的协同服务模式</a></h2>
-    <div class="meta">2026-07-04 · 觅理律所推荐</div>
-    <p>当客户需要一个专利代理人、一个商标律师、一个诉讼出庭律师时，三家机构怎么无缝协作。</p>
+    <h2><a href="./trademark-squatting-guide-en.html">Trademark Squatting in China: A Complete Guide to Fighting Back (2026)</a></h2>
+    <div class="meta"><span class="tag tag-ip">Intellectual Property</span><span class="tag tag-intl">International Law</span> 2026-07-08 · Mili Law Firm</div>
+    <p>A comprehensive guide for foreign enterprises dealing with trademark squatting in China — IP meets international trade law.</p>
   </div>
 
   <div class="article-card">
-    <h2><a href="/blog/5-free-patent-search-tools.html">5个免费专利检索工具，90%的发明人不知道</a></h2>
-    <div class="meta">2026-07-04 · 觅理律所推荐</div>
-    <p>不用买商业数据库，不用找代理所付费检索——这5个工具覆盖中国+全球专利。</p>
+    <h2><a href="./ai-generated-content-copyright-en.html">Who Owns AI-Generated Content? China's 2026 Legal Framework Explained</a></h2>
+    <div class="meta"><span class="tag tag-ip">Intellectual Property</span><span class="tag tag-intl">International Law</span> 2026-07-25 · Mili Law Firm</div>
+    <p>China's evolving stance on AI-generated works — copyrightability, training data liability, and cross-border enforcement.</p>
+  </div>
+
+  <div class="article-card">
+    <h2><a href="./najie-apnajie-mili-collaboration.html">三所联合｜纳杰 × 爱普纳杰 × 觅理：让法律服务随时可见</a></h2>
+    <div class="meta"><span class="tag tag-ip">知识产权</span><span class="tag tag-litigation">民事诉讼</span> 2026-07-04 · 觅理律师事务所</div>
+    <p>当客户需要一个专利代理人、一个商标律师、一个诉讼出庭律师时，三家机构如何无缝协作——IP与诉讼的协同服务模式。</p>
+  </div>
+
+  <div class="cta-banner">
+    <h3>📢 法律领域持续扩充中</h3>
+    <p>觅理律师事务所正在覆盖 <strong>行政法 · 刑法与刑诉 · 海商法 · 反垄断与竞争法 · 国际法 · 民法典 · 商事仲裁</strong> 等领域。</p>
+    <p>您关注的领域尚未覆盖？我们欢迎您的建议。</p>
+    <a class="contact" href="/mili/">联系觅理 →</a>
   </div>
 
 </div>
+
 <footer>
-  &copy; 2026 觅理律所 · <a href="/">爱普纳杰专利所</a> · <a href="/najie/">纳杰知识产权</a>
+  &copy; 2026 觅理律师事务所 · <a href="/mili/">觅理律师事务所</a> · <a href="/najie/">纳杰知识产权</a> · <a href="/">爱普纳杰专利所</a>
 </footer>
 </body>
 </html>

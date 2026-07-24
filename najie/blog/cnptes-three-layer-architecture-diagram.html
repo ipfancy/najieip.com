@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CNPTES 管线-Agent-数据库 三层架构</title>
+<style>
+:root {
+  --bg: #f8fafc; --text: #1a1a2e; --text-secondary: #475569;
+  --card-bg: #ffffff; --card-border: #e2e8f0;
+  --layer-pipeline: #1F4E79; --layer-agent: #2E75B6; --layer-data: #10b981;
+  --node-pipeline: #1F4E79; --node-agent: #3b82f6; --node-data: #10b981;
+  --node-cache: #ef4444; --node-input: #8b5cf6; --node-output: #f59e0b;
+  --edge: #94a3b8; --shadow: 0 2px 12px rgba(0,0,0,0.06);
+  --tag-bg: #f1f5f9; --tag-text: #64748b;
+}
+[data-theme="dark"] {
+  --bg: #0f172a; --text: #e2e8f0; --text-secondary: #94a3b8;
+  --card-bg: #1e293b; --card-border: #334155;
+  --layer-pipeline: #3b82f6; --layer-agent: #6366f1; --layer-data: #10b981;
+  --node-pipeline: #3b82f6; --node-agent: #818cf8; --node-data: #34d399;
+  --node-cache: #f87171; --node-input: #a78bfa; --node-output: #fbbf24;
+  --edge: #475569; --shadow: 0 2px 12px rgba(0,0,0,0.3);
+  --tag-bg: #1e293b; --tag-text: #94a3b8;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, 'Noto Sans SC', sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
+.toolbar { display:flex; justify-content:space-between; align-items:center; padding:14px 32px; background:var(--card-bg); border-bottom:1px solid var(--card-border); position:sticky; top:0; z-index:10; }
+.toolbar h1 { font-size:16px; font-weight:600; }
+.toolbar .actions { display:flex; gap:8px; }
+.toolbar button { padding:7px 16px; border:1px solid var(--card-border); border-radius:8px; background:var(--bg); color:var(--text); cursor:pointer; font-size:13px; font-weight:500; transition:.15s; }
+.toolbar button:hover { border-color:var(--node-agent); color:var(--node-agent); }
+.container { max-width:960px; margin:0 auto; padding:40px 24px; }
+
+/* 图例 */
+.legend { display:flex; gap:24px; flex-wrap:wrap; margin-bottom:32px; font-size:13px; }
+.legend-item { display:flex; align-items:center; gap:6px; }
+.legend-dot { width:10px; height:10px; border-radius:3px; }
+.legend-dot.pl { background:var(--node-pipeline); }
+.legend-dot.ag { background:var(--node-agent); }
+.legend-dot.db { background:var(--node-data); }
+.legend-dot.ca { background:var(--node-cache); }
+
+/* 层 */
+.layers { display:flex; flex-direction:column; gap:20px; }
+.layer { border-radius:16px; overflow:hidden; box-shadow:var(--shadow); }
+.layer-header { padding:14px 24px; display:flex; justify-content:space-between; align-items:center; }
+.layer-header h2 { font-size:15px; font-weight:600; color:#fff; }
+.layer-header .tags { display:flex; gap:8px; }
+.layer-header .tag { padding:3px 10px; border-radius:20px; font-size:11px; font-weight:500; background:rgba(255,255,255,0.2); color:#fff; }
+.layer-body { background:var(--card-bg); padding:24px; display:flex; flex-wrap:wrap; gap:16px; }
+.layer.pl { border:2px solid var(--node-pipeline); }
+.layer.pl .layer-header { background:var(--layer-pipeline); }
+.layer.ag { border:2px solid var(--node-agent); }
+.layer.ag .layer-header { background:var(--layer-agent); }
+.layer.db { border:2px solid var(--node-data); }
+.layer.db .layer-header { background:var(--layer-data); }
+
+/* 节点 */
+.node { padding:12px 18px; border-radius:10px; font-size:13px; font-weight:500; text-align:center; min-width:120px; flex:1; max-width:200px; background:var(--bg); border:2px solid var(--card-border); transition:.2s; }
+.node:hover { transform:translateY(-2px); box-shadow:0 4px 16px rgba(0,0,0,0.1); }
+.node .icon { font-size:18px; margin-bottom:4px; }
+.node .label { font-size:13px; font-weight:600; }
+.node .sublabel { font-size:11px; color:var(--text-secondary); margin-top:2px; }
+.node.pl { border-color:var(--node-pipeline); }
+.node.ag { border-color:var(--node-agent); }
+.node.db { border-color:var(--node-data); }
+.node.ca { border-color:var(--node-cache); }
+.node.in { border-color:var(--node-input); }
+.node.out { border-color:var(--node-output); }
+
+/* 箭头 */
+.arrows { display:flex; justify-content:center; align-items:center; padding:4px 0; }
+.arrow-down { width:2px; height:28px; background:var(--edge); position:relative; }
+.arrow-down::after { content:''; position:absolute; bottom:-6px; left:-5px; border-left:6px solid transparent; border-right:6px solid transparent; border-top:8px solid var(--edge); }
+.arrow-label { font-size:11px; color:var(--text-secondary); margin:0 12px; }
+
+/* 底部总结 */
+.summary { margin-top:40px; background:var(--card-bg); border-radius:16px; padding:28px; box-shadow:var(--shadow); }
+.summary h3 { font-size:14px; font-weight:600; margin-bottom:12px; color:var(--node-agent); }
+.summary .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; font-size:13px; }
+.summary .grid dt { color:var(--text-secondary); margin-bottom:2px; }
+.summary .grid dd { font-weight:500; }
+
+/* 规律五 */
+.insight { margin-top:24px; background:linear-gradient(135deg, var(--node-pipeline), var(--layer-agent)); color:#fff; border-radius:12px; padding:24px; }
+.insight h3 { font-size:15px; margin-bottom:8px; }
+.insight p { font-size:13px; opacity:0.9; line-height:1.8; }
+
+footer { text-align:center; padding:32px; font-size:12px; color:var(--text-secondary); }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <h1>CNPTES 三层架构 · 稳定性分层</h1>
+  <div class="actions">
+    <button onclick="document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark'">🌓 切换主题</button>
+    <button onclick="window.print()">📥 导出</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- 图例 -->
+  <div class="legend">
+    <div class="legend-item"><span class="legend-dot pl"></span>管线层（高稳定）</div>
+    <div class="legend-item"><span class="legend-dot ag"></span>Agent层（中稳定）</div>
+    <div class="legend-item"><span class="legend-dot db"></span>数据库层（低稳定）</div>
+    <div class="legend-item"><span class="legend-dot ca"></span>缓存/消息</div>
+  </div>
+
+  <!-- 三层架构 -->
+  <div class="layers">
+
+    <!-- 规律一：管线层 -->
+    <div class="layer pl">
+      <div class="layer-header">
+        <h2>📡 管线层 · 负责"发现"</h2>
+        <div class="tags">
+          <span class="tag">稳定性：高</span>
+          <span class="tag">变化：低频</span>
+          <span class="tag">确定性规则</span>
+        </div>
+      </div>
+      <div class="layer-body">
+        <div class="node pl">
+          <div class="icon">📨</div>
+          <div class="label">收件箱入库</div>
+          <div class="sublabel">文件分类 · 定时导入</div>
+        </div>
+        <div class="node pl">
+          <div class="icon">🔍</div>
+          <div class="label">OCR 提取</div>
+          <div class="sublabel">发票识别 · 通知书解析</div>
+        </div>
+        <div class="node pl">
+          <div class="icon">⏰</div>
+          <div class="label">绝限提醒</div>
+          <div class="sublabel">7天预警 · 30天监控</div>
+        </div>
+        <div class="node pl">
+          <div class="icon">📊</div>
+          <div class="label">合规扫描</div>
+          <div class="sublabel">每日巡检 · 合伙人/年检</div>
+        </div>
+        <div class="node pl">
+          <div class="icon">🔄</div>
+          <div class="label">异常队列</div>
+          <div class="sublabel">failed_queue · 自动重试</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrows">
+      <div class="arrow-down"></div>
+      <span class="arrow-label">管线传递结构化数据</span>
+      <div class="arrow-down"></div>
+    </div>
+
+    <!-- 规律二：Agent层 -->
+    <div class="layer ag">
+      <div class="layer-header">
+        <h2>🧠 Agent层 · 负责"判断"</h2>
+        <div class="tags">
+          <span class="tag">稳定性：中</span>
+          <span class="tag">变化：中频</span>
+          <span class="tag">模糊匹配·异常处理</span>
+        </div>
+      </div>
+      <div class="layer-body">
+        <div class="node ag">
+          <div class="icon">📋</div>
+          <div class="label">专利 Agent</div>
+          <div class="sublabel">OA答复 · 驳回分析</div>
+        </div>
+        <div class="node ag">
+          <div class="icon">🏷️</div>
+          <div class="label">商标 Agent</div>
+          <div class="sublabel">检索 · 复审策略</div>
+        </div>
+        <div class="node ag">
+          <div class="icon">💰</div>
+          <div class="label">财务 Agent</div>
+          <div class="sublabel">核销匹配 · 到款判向</div>
+        </div>
+        <div class="node ag">
+          <div class="icon">📝</div>
+          <div class="label">合同 Agent</div>
+          <div class="sublabel">归档 · 续约预警</div>
+        </div>
+        <div class="node ag">
+          <div class="icon">🌐</div>
+          <div class="label">外宣 Agent</div>
+          <div class="sublabel">内容发布 · 多平台</div>
+        </div>
+        <div class="node ag">
+          <div class="icon">⚖️</div>
+          <div class="label">合规 Agent</div>
+          <div class="sublabel">风险扫描 · 整改跟踪</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrows">
+      <div class="arrow-down"></div>
+      <span class="arrow-label">Agent 读写共享数据</span>
+      <div class="arrow-down"></div>
+    </div>
+
+    <!-- 规律三：数据库层 -->
+    <div class="layer db">
+      <div class="layer-header">
+        <h2>🗄️ 数据库层 · 负责"关联"</h2>
+        <div class="tags">
+          <span class="tag">稳定性：低</span>
+          <span class="tag">变化：高频</span>
+          <span class="tag">每日增长</span>
+        </div>
+      </div>
+      <div class="layer-body">
+        <div class="node db">
+          <div class="icon">📁</div>
+          <div class="label">case</div>
+          <div class="sublabel">案件主表</div>
+        </div>
+        <div class="node db">
+          <div class="icon">🧾</div>
+          <div class="label">invoice</div>
+          <div class="sublabel">发票·流水</div>
+        </div>
+        <div class="node db">
+          <div class="icon">📮</div>
+          <div class="label">notice</div>
+          <div class="sublabel">通知书</div>
+        </div>
+        <div class="node db">
+          <div class="icon">📋</div>
+          <div class="label">contract</div>
+          <div class="sublabel">合同表</div>
+        </div>
+        <div class="node ca">
+          <div class="icon">⚡</div>
+          <div class="label">Redis</div>
+          <div class="sublabel">缓存加速</div>
+        </div>
+        <div class="node ca">
+          <div class="icon">📝</div>
+          <div class="label">agent_audit_log</div>
+          <div class="sublabel">统一审计日志</div>
+        </div>
+        <div class="node out">
+          <div class="icon">🔄</div>
+          <div class="label">failed_queue</div>
+          <div class="sublabel">异常重试队列</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 规律四：稳定性分层 -->
+  <div class="summary">
+    <h3>📐 规律四：按"稳定性"划分边界</h3>
+    <dl class="grid">
+      <div>
+        <dt>管线层（确定性规则）</dt>
+        <dd>文件分类 dzfp_→发票 · 绝限计算 · 合规巡检 · Cron 定时</dd>
+      </div>
+      <div>
+        <dt>Agent层（不确定性判断）</dt>
+        <dd>OCR判向 · 核销匹配 · 异常升级 · 内容审核 · 策略建议</dd>
+      </div>
+      <div>
+        <dt>数据库层（共享记忆）</dt>
+        <dd>case/notice/invoice/contract · agent_audit_log · failed_queue</dd>
+      </div>
+    </dl>
+  </div>
+
+  <!-- 规律五 -->
+  <div class="insight">
+    <h3>⚡ 规律五：技术替代工作，留下责任和创造力</h3>
+    <p>
+      管线替代"发现"——不用人盯收件箱看新发票<br>
+      Agent替代"核对"——不用人逐张发票判归属<br>
+      数据库替代"记忆"——不用人翻文件夹找历史记录<br>
+      <strong>留给人的是"责任"</strong>——到款未匹配，标记待跟进，你决定催款还是查银行<br>
+      <strong>留给人的是"创造力"</strong>——从数据中发现客户增长趋势、业务洞察
+    </p>
+  </div>
+
+</div>
+
+<footer>CNPTES-V1 · 管线-Agent-数据库 三层架构 · 爱普纳杰专利所</footer>
+
+</body>
+</html>
