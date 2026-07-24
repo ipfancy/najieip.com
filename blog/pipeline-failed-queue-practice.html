@@ -10,6 +10,9 @@
 :root { --primary: #1F4E79; --accent: #C0A060; --text: #333; --text-light: #666; --bg: #F8F9FA; --white: #fff; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: 'Noto Sans SC', sans-serif; color: var(--text); line-height:1.9; }
+.breadcrumb { background: #f0f4ff; padding: 8px 48px; font-size: 13px; }
+.breadcrumb a { color: #1F4E79; text-decoration: none; }
+.breadcrumb span { color: #666; }
 header { background: var(--primary); padding: 20px 48px; text-align:center; }
 header a { color: var(--white); text-decoration:none; font-size:20px; font-weight:700; }
 header a:hover { color: var(--accent); }
@@ -40,11 +43,33 @@ article th { background:#f0f4ff; font-weight:600; color:var(--primary); }
 .series-note { font-size:13px; color:var(--text-light); margin-top:40px; padding:16px; background:var(--bg); border-radius:8px; text-align:center; }
 .back-link { text-align:center; margin-top:32px; }
 .back-link a { color: var(--primary); text-decoration:none; font-weight:500; }
+.related-articles { max-width: 740px; margin: 40px auto 0; padding: 20px 24px 0; border-top: 2px solid #eee; }
+.related-articles h3 { color: #1F4E79; margin-bottom: 12px; font-size: 18px; }
+.related-card { background: #F8F9FA; padding: 10px 14px; margin-bottom: 6px; border-radius: 6px; }
+.related-card a { color: #1F4E79; text-decoration: none; font-size: 14px; }
+.related-card a:hover { color: #C0A060; }
 footer { background:#1a1a2e; color:#ccc; text-align:center; padding:32px 24px; font-size:13px; margin-top:64px; }
 footer a { color: var(--accent); text-decoration:none; }
 </style>
+
+<meta property="og:title" content="管线层实操：收件箱从报错到自愈">
+<meta property="og:description" content="收件箱入库失败从红色报错到自动自愈——管线层的异常队列设计实操。failed_queue表、重试逻辑、升级机制，一个实际的知产代理系统改进案例。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://najieip.com/blog/pipeline-failed-queue-practice.html">
+<meta property="og:site_name" content="爱普纳杰专利所">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="管线层实操：收件箱从报错到自愈">
+<meta name="twitter:description" content="收件箱入库失败从红色报错到自动自愈——管线层的异常队列设计实操。failed_queue表、重试逻辑、升级机制，一个实际的知产代理系统改进案例。">
+<link rel="canonical" href="https://najieip.com/blog/pipeline-failed-queue-practice.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"管线层实操：收件箱从报错到自愈","description":"收件箱入库失败从红色报错到自动自愈——管线层的异常队列设计实操。failed_queue表、重试逻辑、升级机制，一个实际的知产代理系统改进案例。","author":{"@type":"Person","name":"何自刚"},"publisher":{"@type":"Organization","name":"爱普纳杰专利所"},"url":"https://najieip.com/blog/pipeline-failed-queue-practice.html"}
+</script>
+<script type="application/ld+json">
+{{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"首页","item":"https://najieip.com/"}},{{"@type":"ListItem","position":2,"name":"博客","item":"https://najieip.com/blog/"}},{{"@type":"ListItem","position":3,"name":"{t[:50]}"}}]}}
+</script>
 </head>
 <body>
+<div class="breadcrumb"><a href="/">首页</a> / <a href="/blog/">博客</a> / <span>管线层实操：收件箱从报错到自愈</span></div>
 
 <header>
   <a href="/">&#9878; 爱普纳杰专利所</a>
