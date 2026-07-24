@@ -1,0 +1,17 @@
+{
+  "total": 31,
+  "ok": 25,
+  "redirect": 0,
+  "broken": 6,
+  "errors": 0,
+  "broken_urls": [
+    "https://najieip.com/apnajie/blog/",
+    "https://najieip.com/apnajie/",
+    "https://najieip.com/en/apnajie/",
+    "https://najieip.com/en/apnajie/blog/",
+    "https://najieip.com/fr/apnajie/",
+    "https://najieip.com/fr/apnajie/blog/"
+  ],
+  "error_urls": [],
+  "checked_at": "2026-07-24T19:33:41"
+}

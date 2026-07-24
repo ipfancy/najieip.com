@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-07-24T19:37:58",
+  "pages": [
+    {
+      "url": "https://najieip.com/",
+      "status": 200,
+      "size_kb": "?",
+      "ok": true
+    },
+    {
+      "url": "https://najieip.com/blog/",
+      "status": 200,
+      "size_kb": "?",
+      "ok": true
+    },
+    {
+      "url": "https://najieip.com/mili/",
+      "status": 200,
+      "size_kb": "?",
+      "ok": true
+    },
+    {
+      "url": "https://najieip.com/najie/",
+      "status": 200,
+      "size_kb": "?",
+      "ok": true
+    },
+    {
+      "url": "https://najieip.com/en/",
+      "status": 200,
+      "size_kb": "?",
+      "ok": true
+    },
+    {
+      "url": "https://najieip.com/fr/",
+      "status": 200,
+      "size_kb": "?",
+      "ok": true
+    }
+  ],
+  "files": [
+    {
+      "url": "https://najieip.com/sitemap.xml",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://najieip.com/robots.txt",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://najieip.com/llms.txt",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://najieip.com/CNAME",
+      "status": 404,
+      "ok": false
+    }
+  ],
+  "sitemap": {
+    "url_count": 31,
+    "with_lastmod": 31,
+    "without_lastmod": 0,
+    "sitemap_last_modified": "Thu, 23 Jul 2026 23:04:53 GMT",
+    "blog_count": 18
+  },
+  "jsonld": {
+    "https://najieip.com/": true,
+    "https://najieip.com/blog/": false,
+    "https://najieip.com/mili/": false,
+    "https://najieip.com/najie/": false,
+    "https://najieip.com/en/": false,
+    "https://najieip.com/fr/": false
+  },
+  "lighthouse": {
+    "https://najieip.com/": {
+      "performance": 65,
+      "seo": 91
+    },
+    "https://najieip.com/blog/": {
+      "error": "Runtime error encountered: EAGAIN: resource temporarily unavailable, write\nError: EAGAIN: resource temporarily unavailable, write\n"
+    }
+  }
+}
