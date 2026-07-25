@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3周2400星！公众号排版Skill爆了，但光排版不够 — 纳杰觅理</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<nav><a href="/">← 首页</a></nav>
+<article>
+<h1>3周2400星！公众号排版Skill爆了，但光排版不够</h1>
+<br>
+<p>&gt; 一款面向公众号的AI排版工具在GitHub上3周狂揽2500+星。我们看了，发现他们只做了最后一步。</p>
+<br>
+<h2>发生了什么</h2>
+<br>
+<p>7月1日，中文开发者甲木与摸鱼小李在GitHub上发布了一个叫 **gzh-design-skill** 的开源项目。到7月22日，这个项目已经收获了2505个Star和281个Fork。</p>
+<br>
+<p>它做的事情很简单：把Markdown文稿一键转成可以直接粘贴进微信公众号编辑器的HTML。6套主题、双关卡校验——解决的是公众号创作者最痛的一个点：**编辑器排版难用**。</p>
+<br>
+<p>这个项目采用AGPL-3.0许可证，可以安装在Claude Code、Codex、Cursor等AI编程工具上。2500星是什么概念？很多做了两三年的正经开源项目都到不了这个数。</p>
+<br>
+<p>为什么火？三个原因：**痛点真实**（公众号编辑器是出了名的格式杀手）、**时机精准**（AI Coding Skill生态刚起步，先行者红利）、**门槛极低**（一个文件一条命令，不需要学任何东西）。</p>
+<br>
+<h2>我们也有这个能力</h2>
+<br>
+<p>坦白说，纳杰觅理的管线里早就有这个功能。</p>
+<br>
+<p>`wechat-publish` 脚本的 `parse_article` 模块，做的就是同一件事——把Markdown文章转成公众号可直接发布的HTML。从「著作权法大修」到「携程51亿反垄断」，每篇文章都是这个脚本发的。</p>
+<br>
+<p>但区别不在功能，在格局。</p>
+<br>
+<h2>他们做了一个很好的锤子，我们建了一条流水线</h2>
+<br>
+<p>| | gzh-design-skill | 纳杰数字员工 |</p>
+<p>|------|:--:|:--:|</p>
+<p>| Markdown→HTML排版 | ✅ 6主题+双校验 | ✅ 单主题，持续优化 |</p>
+<p>| 选题方向 | ❌ | ✅ MarketExpansion Agent |</p>
+<p>| 行业调研 | ❌ | ✅ Researcher Agent |</p>
+<p>| 文章撰写 | ❌ | ✅ Writer Agent |</p>
+<p>| 封面生成 | ❌ | ✅ Visual Agent |</p>
+<p>| 质量审核 | ❌ | ✅ QualityGate 六维评分 |</p>
+<p>| 全渠道分发 | ❌ | ✅ Outreach 10渠道 |</p>
+<p>| SEO/GEO优化 | ❌ | ✅ Promotion + SiteOps |</p>
+<p>| 7×24全自动 | ❌ 手动触发 | ✅ Cron凌晨管线 |</p>
+<br>
+<p>gzh-design-skill是一个优秀的工具——但它只解决了一个问题："排版"。</p>
+<br>
+<p>我们的数字员工系统解决的是整条流水线：**今天凌晨选题 → 调研 → 写稿 → 配图 → 审核 → 全平台发布 → SEO优化 → AI收录追踪**。人还没起床，文章已经发好了。</p>
+<br>
+<h2>我们该学什么</h2>
+<br>
+<h3>1. 开源是最好的品牌</h3>
+<br>
+<p>2500星不只是GitHub数据——是2500个公众号创作者知道了这个工具。如果我们把`wechat-publish`独立出来开源，署上"纳杰觅理 / 爱普纳杰·觅理·纳杰"，每多一个Star就是一次免费的品牌曝光。</p>
+<br>
+<h3>2. 主题即品牌</h3>
+<br>
+<p>gzh-design-skill的6套主题是一个很好的产品思路。我们可以做三套品牌主题：</p>
+<br>
+<ul>
+<li>**觅理红**（#8B1A1A）——法律分析类文章</li>
+<li>**爱普纳杰蓝**（#1F4E79）——专利实务类文章</li>
+<li>**纳杰绿**（#0F766E）——年费管理/数字员工类文章</li>
+</ul>
+<br>
+<p>读者看到配色就知道文章归属——视觉即品牌。</p>
+<br>
+<h3>3. 从"工具"到"平台"是最大的护城河</h3>
+<br>
+<p>gzh-design-skill好复制。任何有开发能力的团队，一周就能做出功能等价的替代品。</p>
+<br>
+<p>但一条全自动内容管线——8个Agent、30个Cron、凌晨2点跑到早上6点、覆盖从选题到GEO追踪的全流程——这是时间积累出来的壁垒。不是代码壁垒，是系统壁垒。</p>
+<br>
+<p>---</p>
+<br>
+<p>对AI+法律的内容自动化感兴趣？</p>
+<br>
+<p>座机：010-65150974 | 手机：15321374076</p>
+<p>邮箱：noticetoyou@najieip.com</p>
+<br>
+<p>何自刚 | 知识产权律师</p>
+<p>爱普纳杰 · 觅理 · 纳杰</p>
+<br>
+</article>
+<footer>
+<p>© 2026 纳杰觅理 · 愛普納傑专利所 & 觅理律所</p>
+<p><a href="https://github.com/ziganghe/articles">Open Source</a></p>
+</footer>
+</body>
+</html>
