@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="爱普纳杰专利代理事务所 — 北京专业专利代理机构。机械、电子、软件、AI领域专利撰写、OA答复、复审无效、PCT国际申请。20年+代理人经验。">
+<title>爱普纳杰 — 专业专利代理事务所</title>
+<meta property="og:title" content="爱普纳杰 — 专业专利代理事务所">
+<meta property="og:description" content="爱普纳杰专利代理事务所 — 北京专业专利代理。发明/实用新型/外观设计/PCT国际申请/复审无效。">
+<meta property="og:url" content="https://najieip.com/aipunajie/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://najieip.com/aipunajie/">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+:root {
+  --primary: #1a5276;
+  --primary-dark: #0e3a55;
+  --primary-light: #2980b9;
+  --accent: #C0A060;
+  --accent-light: #D4B87A;
+  --dark: #1a1a2e;
+  --text: #333;
+  --text-light: #666;
+  --bg-light: #F8F9FA;
+  --white: #fff;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Noto Sans SC', system-ui, sans-serif; color: var(--text); line-height: 1.7; overflow-x: hidden; }
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 16px 48px; display: flex; justify-content: space-between; align-items: center;
+  transition: all 0.3s ease;
+}
+nav.scrolled { background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); box-shadow: 0 1px 12px rgba(0,0,0,0.08); padding: 10px 48px; }
+.nav-logo { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 700; color: var(--white); text-decoration: none; letter-spacing: 1px; }
+nav.scrolled .nav-logo { color: var(--primary); }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { text-decoration: none; color: rgba(255,255,255,0.9); font-size: 15px; font-weight: 500; transition: color 0.2s; position: relative; }
+nav.scrolled .nav-links a { color: var(--text); }
+.nav-links a::after { content: ""; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.3s; }
+.nav-links a:hover::after { width: 100%; }
+
+.hero { position: relative; height: 100vh; min-height: 600px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: url("https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1920") center/cover no-repeat; transform: scale(1.05); }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(26,82,118,0.92) 0%, rgba(26,82,118,0.7) 50%, rgba(26,26,46,0.85) 100%); }
+.hero-content { position: relative; z-index: 2; text-align: center; max-width: 800px; padding: 0 24px; }
+.hero-badge { display: inline-block; background: rgba(192,160,96,0.2); border: 1px solid rgba(192,160,96,0.4); color: var(--accent-light); padding: 6px 20px; border-radius: 20px; font-size: 14px; margin-bottom: 24px; letter-spacing: 2px; }
+.hero h1 { font-size: 56px; font-weight: 900; color: var(--white); letter-spacing: 2px; margin-bottom: 16px; line-height: 1.2; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+.hero h1 span { color: var(--accent); }
+.hero p { font-size: 18px; color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto 36px; line-height: 1.8; }
+.hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; transition: all 0.3s; font-family: inherit; }
+.btn-primary { background: var(--accent); color: var(--white); }
+.btn-primary:hover { background: var(--accent-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(192,160,96,0.4); }
+.btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.4); }
+.btn-outline:hover { border-color: var(--white); transform: translateY(-2px); }
+
+.section { padding: 80px 48px; max-width: 1200px; margin: 0 auto; }
+.section-title { text-align: center; margin-bottom: 60px; }
+.section-title h2 { font-size: 36px; font-weight: 700; color: var(--primary); margin-bottom: 12px; }
+.section-title p { color: var(--text-light); font-size: 16px; max-width: 600px; margin: 0 auto; }
+.section-title::after { content: ""; display: block; width: 60px; height: 3px; background: var(--accent); margin: 20px auto 0; border-radius: 2px; }
+
+.tech-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 60px; }
+.tech-card { text-align: center; padding: 24px 16px; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); transition: all 0.3s; }
+.tech-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(26,82,118,0.15); }
+.tech-card .icon { width: 48px; height: 48px; margin: 0 auto 12px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+.tech-card .icon svg { width: 24px; height: 24px; color: var(--white); }
+.tech-card h4 { font-size: 16px; color: var(--primary); margin-bottom: 4px; }
+
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.service-card { background: var(--white); border-radius: var(--radius); padding: 36px 28px; box-shadow: var(--shadow); transition: all 0.3s; text-align: center; border: 1px solid transparent; }
+.service-card:hover { transform: translateY(-8px); box-shadow: 0 8px 40px rgba(0,0,0,0.15); border-color: var(--accent); }
+.service-card .icon { width: 64px; height: 64px; margin: 0 auto 20px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+.service-card .icon svg { width: 32px; height: 32px; color: var(--white); }
+.service-card h3 { font-size: 20px; color: var(--primary); margin-bottom: 12px; }
+.service-card p { font-size: 14px; color: var(--text-light); line-height: 1.8; }
+
+.stats { background: var(--bg-light); padding: 60px 48px; display: flex; justify-content: center; gap: 80px; flex-wrap: wrap; }
+.stat-item { text-align: center; }
+.stat-number { font-size: 42px; font-weight: 900; color: var(--primary); line-height: 1; }
+.stat-label { font-size: 14px; color: var(--text-light); margin-top: 8px; }
+
+.why-section { background: var(--bg-light); }
+.why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 48px 80px; }
+.why-card { display: flex; gap: 20px; align-items: flex-start; background: var(--white); padding: 28px; border-radius: var(--radius); box-shadow: var(--shadow); }
+.why-card .icon svg { width: 28px; height: 28px; color: var(--accent); }
+.why-card h4 { font-size: 17px; color: var(--primary); margin-bottom: 6px; }
+.why-card p { font-size: 14px; color: var(--text-light); line-height: 1.7; }
+
+.cta-section { position: relative; padding: 100px 48px; text-align: center; overflow: hidden; }
+.cta-bg { position: absolute; inset: 0; background: url("https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1920") center/cover no-repeat; filter: brightness(0.3); }
+.cta-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%); opacity: 0.9; }
+.cta-content { position: relative; z-index: 2; max-width: 600px; margin: 0 auto; }
+.cta-content h2 { font-size: 36px; font-weight: 700; color: var(--white); margin-bottom: 16px; }
+.cta-content p { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 32px; }
+
+.lang-bar {
+  position: relative; z-index: 101;
+  background: var(--dark); padding: 6px 48px;
+  display: flex; justify-content: flex-end; align-items: center; gap: 6px; font-size: 12px;
+}
+.lang-bar a { color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 12px; border-radius: 14px; transition: all 0.25s; font-weight: 500; }
+.lang-bar a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
+.lang-bar a.active { color: var(--accent); background: rgba(192,160,96,0.15); font-weight: 700; }
+.lang-bar .sep { color: rgba(255,255,255,0.15); margin: 0 1px; user-select: none; }
+
+footer { background: var(--dark); color: rgba(255,255,255,0.6); padding: 48px; text-align: center; }
+footer .brand { font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+footer .contact { font-size: 14px; margin-bottom: 16px; }
+footer .copyright { font-size: 13px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px; }
+
+.back-top { position: fixed; bottom: 32px; right: 32px; width: 48px; height: 48px; border-radius: 50%; background: var(--primary); color: var(--white); display: flex; align-items: center; justify-content: center; cursor: pointer; border: none; z-index: 99; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.back-top.visible { opacity: 1; visibility: visible; }
+
+@media (max-width: 768px) {
+  nav { padding: 12px 20px; } .nav-links { display: none; }
+  .hero h1 { font-size: 36px; } .section { padding: 60px 20px; }
+  .services-grid, .tech-grid, .why-grid { grid-template-columns: 1fr; }
+  .stats { gap: 32px; padding: 40px 20px; } .cta-section { padding: 60px 20px; }
+}
+</style>
+<script>!function(){var i=new Image;i.src='https://39a84854032e5a.lhr.life/pixel.gif?url='+encodeURIComponent(window.location.pathname)+'&ref='+encodeURIComponent(document.referrer)}();</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"爱普纳杰专利代理事务所","alternateName":"Aipunajie Patent Agency","description":"北京专业专利代理机构。发明/实用新型/外观设计/PCT国际申请/复审无效。","url":"https://najieip.com/aipunajie/","areaServed":["CN"],"knowsLanguage":["zh","en"],"foundingDate":"2015"}
+</script>
+</head>
+<body>
+<div class="lang-bar">
+  <a href="/aipunajie/" class="active">中文</a> <span class="sep">|</span>
+  <a href="/en/aipunajie/">English</a> <span class="sep">|</span>
+  <a href="/fr/aipunajie/">Français</a>
+</div>
+<nav id="navbar">
+  <a href="../" class="nav-logo"><i data-lucide="file-text" style="color:var(--accent);"></i> 爱普纳杰</a>
+  <ul class="nav-links">
+    <li><a href="/">← 纳杰觅理</a></li>
+    <li><a href="#tech">技术领域</a></li>
+    <li><a href="#services">专利服务</a></li>
+    <li><a href="#why">专业优势</a></li>
+    <li><a href="#contact">联系我们</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">⚙ 北京专业专利代理机构</div>
+    <h1>爱普纳杰<br><span>技术为本，专利为盾</span></h1>
+    <p>机械结构 · 电子通信 · 软件算法 · 人工智能<br>四大技术领域深度覆盖，从技术交底到授权决定</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary"><i data-lucide="mail"></i> 委托咨询</a>
+      <a href="#services" class="btn btn-outline"><i data-lucide="arrow-down"></i> 专利服务</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat-item"><div class="stat-number">2,000+</div><div class="stat-label">累计代理专利申请</div></div>
+  <div class="stat-item"><div class="stat-number">90%+</div><div class="stat-label">发明专利授权率</div></div>
+  <div class="stat-item"><div class="stat-number">20年</div><div class="stat-label">代理经验</div></div>
+  <div class="stat-item"><div class="stat-number">4</div><div class="stat-label">技术领域团队</div></div>
+</div>
+
+<section class="section" id="tech">
+  <div class="section-title"><h2>技术领域</h2><p>深耕四大领域，准确理解技术方案</p></div>
+  <div class="tech-grid">
+    <div class="tech-card"><div class="icon"><i data-lucide="cog"></i></div><h4>机械结构</h4><p>精密制造/自动化</p></div>
+    <div class="tech-card"><div class="icon"><i data-lucide="cpu"></i></div><h4>电子通信</h4><p>电路/通信协议/半导体</p></div>
+    <div class="tech-card"><div class="icon"><i data-lucide="code-2"></i></div><h4>软件算法</h4><p>系统架构/数据处理</p></div>
+    <div class="tech-card"><div class="icon"><i data-lucide="brain"></i></div><h4>人工智能</h4><p>机器学习/模型专利</p></div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="section-title"><h2>专利服务</h2><p>从交底到授权，全流程专业代理</p></div>
+  <div class="services-grid">
+    <div class="service-card"><div class="icon"><i data-lucide="edit-3"></i></div><h3>专利撰写</h3><p>发明/实用新型/外观设计申请文件撰写，权利要求层次布局，技术特征精准提炼。</p></div>
+    <div class="service-card"><div class="icon"><i data-lucide="message-square"></i></div><h3>OA答复</h3><p>审查意见通知书的专业分析与争辩，创造性/新颖性/公开不充分的差异化应答策略。</p></div>
+    <div class="service-card"><div class="icon"><i data-lucide="globe"></i></div><h3>PCT国际申请</h3><p>PCT国际阶段申请、国际检索报告分析、国家阶段进入策略、优先权管理。</p></div>
+    <div class="service-card"><div class="icon"><i data-lucide="rotate-ccw"></i></div><h3>复审与无效</h3><p>驳回决定复审请求、无效宣告请求与答辩、口审代理。</p></div>
+    <div class="service-card"><div class="icon"><i data-lucide="search"></i></div><h3>专利检索</h3><p>查新检索、FTO自由实施分析、专利稳定性分析、竞争对手专利监控。</p></div>
+    <div class="service-card"><div class="icon"><i data-lucide="shield"></i></div><h3>专利布局</h3><p>核心技术专利组合规划、外围专利/防御专利策略、海外市场专利地图。</p></div>
+  </div>
+</section>
+
+<div class="why-section" id="why">
+  <div class="section-title" style="padding-top:80px;"><h2>选择爱普纳杰的理由</h2><p>专业 · 精准 · 高效</p></div>
+  <div class="why-grid">
+    <div class="why-card"><div class="icon"><i data-lucide="brain"></i></div><div><h4>技术理解力</h4><p>代理人对机械、电子、软件、AI领域有深度技术素养，不是"翻译员"而是技术方案的共同打磨者。</p></div></div>
+    <div class="why-card"><div class="icon"><i data-lucide="bar-chart-3"></i></div><div><h4>90%+发明授权率</h4><p>以数据说话——发明专利申请授权率持续高于行业平均水平。</p></div></div>
+    <div class="why-card"><div class="icon"><i data-lucide="link"></i></div><div><h4>三主体无缝协同</h4><p>爱普纳杰（专利代理）+ 觅理（专利诉讼）+ 纳杰（年费/涉外），从申请到维权全链条。</p></div></div>
+    <div class="why-card"><div class="icon"><i data-lucide="clock"></i></div><div><h4>交底→提交≤5工作日</h4><p>标准化撰写流程，技术交底后5个工作日内完成申请文件初稿。</p></div></div>
+  </div>
+</div>
+
+<div class="cta-section" id="contact">
+  <div class="cta-bg"></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <h2>让专业人士保护您的技术创新</h2>
+    <p>无论是突破性发明的首次申请，还是海外专利布局的策略规划，我们都在这里。</p>
+    <a href="mailto:hezigang@najieip.com" class="btn btn-primary"><i data-lucide="mail"></i> 联系何自刚代理人</a>
+    <p style="margin-top:16px;font-size:14px;">电话: 010-65150974 | 13911268604</p>
+  </div>
+</div>
+
+<footer>
+  <div class="brand">爱普纳杰专利代理事务所</div>
+  <div class="contact">北京爱普纳杰专利代理事务所（普通合伙）<br>纳杰 · 爱普纳杰 · 觅理 &mdash; 知识产权全链条服务</div>
+  <div class="copyright">&copy; 2026 爱普纳杰专利代理事务所 &mdash; 技术为本，专利为盾</div>
+</footer>
+
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i data-lucide="arrow-up"></i></button>
+<script>
+lucide.createIcons();
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 100);
+  document.getElementById('backTop').classList.toggle('visible', window.scrollY > 100);
+});
+const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; }}), {threshold:0.1});
+document.querySelectorAll('.service-card,.why-card,.tech-card').forEach(el => { el.style.opacity='0'; el.style.transform='translateY(30px)'; el.style.transition='all 0.6s ease'; obs.observe(el); });
+</script>
+</body>
+</html>
