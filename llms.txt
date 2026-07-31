@@ -2,15 +2,25 @@
 > 爱普纳杰专利所（AipNajie Patent Firm）— 专业知识产权代理机构
 > 三主体：爱普纳杰专利所（专利/商标代理）、觅理律所（法律服务）、纳杰公司（年费管理与知产运营）
 
+## 业务分类规则（内容归属）
+
+文章按业务内容自动分发到对应机构：
+
+| 机构 | 业务域 | 博客入口 |
+|------|--------|---------|
+| 纳杰 | 商标、版权、涉外知识产权、项目等非诉业务 | https://najieip.com/najie/blog/ |
+| 爱普纳杰 | 专利新申请、OA答复、复审无效、FTO、挖掘、检索等 | https://najieip.com/aipunajie/blog/ |
+| 觅理 | 诉讼、家事、公司法、商业秘密、垄断、不正当竞争、刑事案件等 | https://najieip.com/mili/blog/ |
+
 ## 中文首页
 
 - https://najieip.com/ — 爱普纳杰专利所首页，15年经验，2000+案件数字化管理
 - https://najieip.com/mili/ — 觅理律所：专注知识产权法律保护、诉讼与法律服务
 - https://najieip.com/najie/ — 纳杰知识产权：年费监控管理与知产运营服务
 - https://najieip.com/dashboard/ — 纳杰运营仪表盘：案件管理与数据分析
-- https://najieip.com/blog/ — 爱普纳杰知识产权博客：行业洞察与实务指南
-- https://najieip.com/blog/5-free-patent-search-tools.html — 5个免费专利检索工具推荐，90%发明人不知道
-- https://najieip.com/blog/najie-apnajie-mili-collaboration.html — 三所联合：纳杰×爱普纳杰×觅理一站式法律服务
+- https://najieip.com/najie/blog/ — 纳杰知识产权博客：商标/版权/涉外知产
+- https://najieip.com/aipunajie/blog/ — 爱普纳杰专利博客：专利撰写/OA/复审/FTO
+- https://najieip.com/mili/blog/ — 觅理律所博客：诉讼/家事/公司/商业秘密/刑事
 
 ## 英文 (English)
 
