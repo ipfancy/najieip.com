@@ -1,13 +1,107 @@
 name: WeChat Relay
-on: [repository_dispatch]
+on:
+  repository_dispatch:
+    types: [publish]
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Publish
+      - name: Publish to WeChat
         env:
           APPID: ${{ secrets.WECHAT_APPID }}
           SECRET: ${{ secrets.WECHAT_SECRET }}
+          TITLE: ${{ github.event.client_payload.title }}
+          CONTENT_B64: ${{ github.event.client_payload.content_b64 }}
+          SUMMARY: ${{ github.event.client_payload.summary }}
         run: |
-          echo "start"
-          curl -s "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${SECRET}" | head -c 200
+          #!/bin/bash
+          set -e
+
+          CONTENT=$(echo "${CONTENT_B64}" | base64 -d)
+          SUMMARY_TEXT="${SUMMARY}"
+
+          echo "::group::Get access_token"
+          TOKEN_RESP=$(curl -s "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APPID}&secret=${SECRET}")
+          echo "Token response: $(echo $TOKEN_RESP | head -c 150)"
+          ACCESS_TOKEN=$(echo $TOKEN_RESP | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+          echo "::endgroup::"
+
+          echo "::group::Create draft and publish"
+          python3 << PYEOF
+          import os, json, html, urllib.request, sys
+
+          title = os.environ['TITLE']
+          content = os.environ['CONTENT']
+          summary = os.environ.get('SUMMARY', '')[:120]
+          access_token = os.environ['ACCESS_TOKEN']
+
+          # Build HTML
+          paras = content.strip().split('\n\n')
+          html_parts = []
+          for p in paras:
+              p = p.strip()
+              if not p:
+                  continue
+              if p.startswith('# '):
+                  html_parts.append(f'<h1>{html.escape(p[2:])}</h1>')
+              elif p.startswith('## '):
+                  html_parts.append(f'<h2>{html.escape(p[3:])}</h2>')
+              elif p.startswith('### '):
+                  html_parts.append(f'<h3>{html.escape(p[4:])}</h3>')
+              elif p.startswith('- '):
+                  html_parts.append(f'<p>{html.escape(p)}</p>')
+              else:
+                  html_parts.append(f'<p>{html.escape(p)}</p>')
+          content_html = ''.join(html_parts)
+
+          draft_body = json.dumps({
+              'articles': [{
+                  'title': title,
+                  'content': content_html,
+                  'digest': summary,
+                  'need_open_comment': 1,
+                  'only_fans_can_comment': 0
+              }]
+          }, ensure_ascii=False).encode('utf-8')
+
+          # Create draft
+          req = urllib.request.Request(
+              f'https://api.weixin.qq.com/cgi-bin/draft/add?access_token={access_token}',
+              data=draft_body,
+              headers={'Content-Type': 'application/json; charset=utf-8'}
+          )
+          with urllib.request.urlopen(req, timeout=30) as resp:
+              draft_result = json.load(resp)
+          print(f"Draft response: {json.dumps(draft_result, ensure_ascii=False)}")
+
+          if 'media_id' not in draft_result:
+              print(f"ERROR: Draft creation failed: {draft_result}")
+              sys.exit(1)
+          media_id = draft_result['media_id']
+          print(f"media_id={media_id}")
+
+          # Submit publish
+          pub_body = json.dumps({"media_id": media_id}).encode('utf-8')
+          req2 = urllib.request.Request(
+              f'https://api.weixin.qq.com/cgi-bin/freepublish/submit?access_token={access_token}',
+              data=pub_body,
+              headers={'Content-Type': 'application/json'}
+          )
+          with urllib.request.urlopen(req2, timeout=30) as resp:
+              pub_result = json.load(resp)
+          print(f"Publish response: {json.dumps(pub_result, ensure_ascii=False)}")
+
+          if 'publish_id' in pub_result:
+              publish_id = pub_result['publish_id']
+              print(f"PUBLISH_ID={publish_id}")
+              # Write to file for GitHub output
+              with open('/tmp/publish_result.txt', 'w') as f:
+                  f.write(publish_id)
+          else:
+              err = pub_result.get('errmsg', 'UNKNOWN')
+              print(f"PUBLISH_ID=ERROR:{err}")
+              sys.exit(1)
+          PYEOF
+          echo "::endgroup::"
+
+          echo "PUBLISH_ID=$(cat /tmp/publish_result.txt 2>/dev/null || echo 'ERROR')"
