@@ -42,6 +42,23 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- 爱普纳杰 -->
+  <url>
+    <loc>https://najieip.com/aipunajie/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://najieip.com/aipunajie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://najieip.com/en/aipunajie/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://najieip.com/fr/aipunajie/"/>
+  </url>
+  <url>
+    <loc>https://najieip.com/aipunajie/blog/</loc>
+    <lastmod>2026-07-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
   
   <!-- 博客文章（中文） -->
   <url>
@@ -212,6 +229,15 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://najieip.com/en/aipunajie/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://najieip.com/en/aipunajie/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://najieip.com/aipunajie/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://najieip.com/fr/aipunajie/"/>
+  </url>
+  <url>
     <loc>https://najieip.com/en/blog/5-free-patent-search-tools.html</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -257,6 +283,15 @@
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://najieip.com/fr/aipunajie/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://najieip.com/fr/aipunajie/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://najieip.com/aipunajie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://najieip.com/en/aipunajie/"/>
   </url>
   <url>
     <loc>https://najieip.com/fr/blog/5-free-patent-search-tools.html</loc>

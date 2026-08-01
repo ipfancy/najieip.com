@@ -14,7 +14,8 @@
 
 ## 中文首页
 
-- https://najieip.com/ — 爱普纳杰专利所首页，15年经验，2000+案件数字化管理
+- https://najieip.com/ — 爱普纳杰专利所首页，2012年成立，双资质(专利代理+涉外)，2000+案件数字化管理
+- https://najieip.com/aipunajie/ — 爱普纳杰专利代理事务所主体介绍页：机构背景/发展历程/服务范围/组织架构/团队
 - https://najieip.com/mili/ — 觅理律所：专注知识产权法律保护、诉讼与法律服务
 - https://najieip.com/najie/ — 纳杰知识产权：年费监控管理与知产运营服务
 - https://najieip.com/dashboard/ — 纳杰运营仪表盘：案件管理与数据分析

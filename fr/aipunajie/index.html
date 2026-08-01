@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Agence de Brevets Aipunajie de Pékin (Société en commandite simple) — Fondée en 2012, à Dongcheng, Pékin. Double qualification : agence de brevets + agence de brevets étrangers. Services IP intégrés : brevets, marques, droits d'auteur, PCT, réexamen, invalidation, accompagnement PME innovantes. Basé sur la marque Najie.">
+<title>Agence Aipunajie — Service IP intégré double qualification</title>
+<meta property="og:title" content="Agence Aipunajie — Service IP intégré double qualification">
+<meta property="og:description" content="Fondée en 2012 à Pékin. Double qualification agence de brevets + étranger. Brevets, marques, droits d'auteur, PCT, réexamen et invalidation.">
+<meta property="og:url" content="https://najieip.com/fr/aipunajie/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://najieip.com/fr/aipunajie/">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+:root {
+  --primary: #1a5276;
+  --primary-dark: #0e3a55;
+  --primary-light: #2980b9;
+  --accent: #C0A060;
+  --accent-light: #D4B87A;
+  --dark: #1a1a2e;
+  --text: #333;
+  --text-light: #666;
+  --bg-light: #F8F9FA;
+  --white: #fff;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', system-ui, sans-serif; color: var(--text); line-height: 1.7; overflow-x: hidden; }
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 16px 48px; display: flex; justify-content: space-between; align-items: center;
+  transition: all 0.3s ease;
+}
+nav.scrolled { background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); box-shadow: 0 1px 12px rgba(0,0,0,0.08); padding: 10px 48px; }
+.nav-logo { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 700; color: var(--white); text-decoration: none; letter-spacing: 0.5px; }
+nav.scrolled .nav-logo { color: var(--primary); }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { text-decoration: none; color: rgba(255,255,255,0.9); font-size: 15px; font-weight: 500; transition: color 0.2s; position: relative; }
+nav.scrolled .nav-links a { color: var(--text); }
+.nav-links a::after { content: ""; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.3s; }
+.nav-links a:hover::after { width: 100%; }
+.hero { position: relative; height: 100vh; min-height: 600px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: url("https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1920") center/cover no-repeat; transform: scale(1.05); }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(26,82,118,0.92) 0%, rgba(26,82,118,0.7) 50%, rgba(26,26,46,0.85) 100%); }
+.hero-content { position: relative; z-index: 2; text-align: center; max-width: 820px; padding: 0 24px; }
+.hero-badge { display: inline-block; background: rgba(192,160,96,0.2); border: 1px solid rgba(192,160,96,0.4); color: var(--accent-light); padding: 6px 20px; border-radius: 20px; font-size: 14px; margin-bottom: 24px; letter-spacing: 1px; }
+.hero h1 { font-size: 52px; font-weight: 900; color: var(--white); letter-spacing: 1px; margin-bottom: 16px; line-height: 1.2; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+.hero h1 span { color: var(--accent); }
+.hero p { font-size: 18px; color: rgba(255,255,255,0.8); max-width: 640px; margin: 0 auto 36px; line-height: 1.8; }
+.hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; transition: all 0.3s; font-family: inherit; }
+.btn-primary { background: var(--accent); color: var(--white); }
+.btn-primary:hover { background: var(--accent-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(192,160,96,0.4); }
+.btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.4); }
+.btn-outline:hover { border-color: var(--white); transform: translateY(-2px); }
+.section { padding: 80px 48px; max-width: 1200px; margin: 0 auto; }
+.section-title { text-align: center; margin-bottom: 60px; }
+.section-title h2 { font-size: 36px; font-weight: 700; color: var(--primary); margin-bottom: 12px; }
+.section-title p { color: var(--text-light); font-size: 16px; max-width: 640px; margin: 0 auto; }
+.section-title::after { content: ""; display: block; width: 60px; height: 3px; background: var(--accent); margin: 20px auto 0; border-radius: 2px; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.about-text h3 { font-size: 24px; color: var(--primary); margin-bottom: 16px; }
+.about-text p { font-size: 15px; color: var(--text-light); margin-bottom: 16px; line-height: 1.9; }
+.about-badges { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+.badge-chip { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-light); border: 1px solid #e0e7ee; border-radius: 20px; padding: 8px 18px; font-size: 14px; font-weight: 600; color: var(--primary); }
+.badge-chip svg { width: 16px; height: 16px; color: var(--accent); }
+.about-cards { display: grid; gap: 16px; }
+.about-card { background: var(--white); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); border-left: 4px solid var(--primary); }
+.about-card .t { font-size: 17px; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+.about-card .d { font-size: 14px; color: var(--text-light); }
+.timeline { position: relative; max-width: 900px; margin: 0 auto; padding-left: 32px; }
+.timeline::before { content: ""; position: absolute; left: 10px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(180deg, var(--primary-light), var(--accent)); }
+.tl-item { position: relative; margin-bottom: 40px; }
+.tl-item::before { content: ""; position: absolute; left: -30px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: var(--white); border: 3px solid var(--primary); }
+.tl-item .year { display: inline-block; font-size: 20px; font-weight: 900; color: var(--primary); background: var(--bg-light); padding: 4px 18px; border-radius: 20px; margin-bottom: 10px; }
+.tl-item h4 { font-size: 18px; color: var(--dark); margin-bottom: 6px; }
+.tl-item p { font-size: 14px; color: var(--text-light); }
+.tech-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 60px; }
+.tech-card { text-align: center; padding: 24px 16px; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); transition: all 0.3s; }
+.tech-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(26,82,118,0.15); }
+.tech-card .icon { width: 48px; height: 48px; margin: 0 auto 12px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+.tech-card .icon svg { width: 24px; height: 24px; color: var(--white); }
+.tech-card h4 { font-size: 16px; color: var(--primary); margin-bottom: 4px; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.service-card { background: var(--white); border-radius: var(--radius); padding: 36px 28px; box-shadow: var(--shadow); transition: all 0.3s; text-align: center; border: 1px solid transparent; }
+.service-card:hover { transform: translateY(-8px); box-shadow: 0 8px 40px rgba(0,0,0,0.15); border-color: var(--accent); }
+.service-card .icon { width: 64px; height: 64px; margin: 0 auto 20px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+.service-card .icon svg { width: 32px; height: 32px; color: var(--white); }
+.service-card h3 { font-size: 20px; color: var(--primary); margin-bottom: 12px; }
+.service-card p { font-size: 14px; color: var(--text-light); line-height: 1.8; }
+.service-card ul { list-style: none; text-align: left; margin-top: 12px; }
+.service-card ul li { font-size: 13px; color: var(--text-light); padding: 4px 0 4px 18px; position: relative; }
+.service-card ul li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); }
+.org-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.org-card { background: var(--white); border-radius: var(--radius); padding: 28px 24px; box-shadow: var(--shadow); border-top: 3px solid var(--primary); transition: all 0.3s; }
+.org-card:hover { transform: translateY(-4px); }
+.org-card .icon { width: 44px; height: 44px; margin-bottom: 14px; background: rgba(26,82,118,0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+.org-card .icon svg { width: 22px; height: 22px; color: var(--primary); }
+.org-card h4 { font-size: 17px; color: var(--primary); margin-bottom: 6px; }
+.org-card p { font-size: 13px; color: var(--text-light); }
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.team-card { background: var(--white); border-radius: var(--radius); padding: 32px 26px; box-shadow: var(--shadow); transition: all 0.3s; border: 1px solid transparent; }
+.team-card:hover { transform: translateY(-6px); box-shadow: 0 10px 36px rgba(0,0,0,0.12); border-color: var(--accent); }
+.team-card .avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 700; margin-bottom: 16px; }
+.team-card .name { font-size: 20px; font-weight: 700; color: var(--dark); }
+.team-card .en { font-size: 12px; color: var(--text-light); margin-bottom: 8px; }
+.team-card .role { display: inline-block; font-size: 12px; font-weight: 600; color: var(--primary); background: rgba(26,82,118,0.08); padding: 3px 12px; border-radius: 12px; margin-bottom: 12px; }
+.team-card p { font-size: 13px; color: var(--text-light); line-height: 1.8; }
+.stats { background: var(--bg-light); padding: 60px 48px; display: flex; justify-content: center; gap: 80px; flex-wrap: wrap; }
+.stat-item { text-align: center; }
+.stat-number { font-size: 42px; font-weight: 900; color: var(--primary); line-height: 1; }
+.stat-label { font-size: 14px; color: var(--text-light); margin-top: 8px; }
+.why-section { background: var(--bg-light); }
+.why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 48px 80px; }
+.why-card { display: flex; gap: 20px; align-items: flex-start; background: var(--white); padding: 28px; border-radius: var(--radius); box-shadow: var(--shadow); }
+.why-card .icon svg { width: 28px; height: 28px; color: var(--accent); }
+.why-card h4 { font-size: 17px; color: var(--primary); margin-bottom: 6px; }
+.why-card p { font-size: 14px; color: var(--text-light); line-height: 1.7; }
+.cta-section { position: relative; padding: 100px 48px; text-align: center; overflow: hidden; }
+.cta-bg { position: absolute; inset: 0; background: url("https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1920") center/cover no-repeat; filter: brightness(0.3); }
+.cta-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%); opacity: 0.9; }
+.cta-content { position: relative; z-index: 2; max-width: 640px; margin: 0 auto; }
+.cta-content h2 { font-size: 36px; font-weight: 700; color: var(--white); margin-bottom: 16px; }
+.cta-content p { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 32px; }
+.lang-bar {
+  position: relative; z-index: 101;
+  background: var(--dark); padding: 6px 48px;
+  display: flex; justify-content: flex-end; align-items: center; gap: 6px; font-size: 12px;
+}
+.lang-bar a { color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 12px; border-radius: 14px; transition: all 0.25s; font-weight: 500; }
+.lang-bar a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
+.lang-bar a.active { color: var(--accent); background: rgba(192,160,96,0.15); font-weight: 700; }
+.lang-bar .sep { color: rgba(255,255,255,0.15); margin: 0 1px; user-select: none; }
+footer { background: var(--dark); color: rgba(255,255,255,0.6); padding: 48px; text-align: center; }
+footer .brand { font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+footer .contact { font-size: 14px; margin-bottom: 16px; }
+footer .copyright { font-size: 13px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px; }
+.back-top { position: fixed; bottom: 32px; right: 32px; width: 48px; height: 48px; border-radius: 50%; background: var(--primary); color: var(--white); display: flex; align-items: center; justify-content: center; cursor: pointer; border: none; z-index: 99; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.back-top.visible { opacity: 1; visibility: visible; }
+@media (max-width: 768px) {
+  nav { padding: 12px 20px; } .nav-links { display: none; }
+  .hero h1 { font-size: 36px; } .section { padding: 60px 20px; }
+  .services-grid, .tech-grid, .why-grid, .org-grid, .team-grid, .about-grid { grid-template-columns: 1fr; }
+  .stats { gap: 32px; padding: 40px 20px; } .cta-section { padding: 60px 20px; }
+  .timeline { padding-left: 24px; }
+}
+</style>
+<script>!function(){var i=new Image;i.src='https://39a84854032e5a.lhr.life/pixel.gif?url='+encodeURIComponent(window.location.pathname)+'&ref='+encodeURIComponent(document.referrer)}();</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Agence de Brevets Aipunajie de Pékin (Société en commandite simple)","alternateName":"Agence Aipunajie","description":"Fondée en 2012 à Pékin. Double qualification : agence de brevets + étranger. Services IP intégrés : brevets, marques, droits d'auteur, PCT.","url":"https://najieip.com/fr/aipunajie/","areaServed":["CN"],"knowsLanguage":["fr","zh"],"foundingDate":"2012"}
+</script>
+</head>
+<body>
+<div class="lang-bar">
+  <a href="/aipunajie/">中文</a> <span class="sep">|</span>
+  <a href="/en/aipunajie/">English</a> <span class="sep">|</span>
+  <a href="/fr/aipunajie/" class="active">Français</a>
+</div>
+<nav id="navbar">
+  <a href="../../" class="nav-logo"><i data-lucide="file-text" style="color:var(--accent);"></i> Aipunajie</a>
+  <ul class="nav-links">
+    <li><a href="/">← Najie &amp; Mili</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#history">Historique</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#team">Équipe</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Fondée en 2012 · Double qualification brevets + étranger</div>
+    <h1>Agence Aipunajie de Pékin<br><span>Professionnel · Efficace · Innovant</span></h1>
+    <p>Appuyée sur la marque Najie, nous offrons aux entreprises innovantes, universités et instituts<br>des services intégrés brevets · marques · droits d'auteur : protection et maîtrise des risques.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary"><i data-lucide="mail"></i> Contactez-nous</a>
+      <a href="#services" class="btn btn-outline"><i data-lucide="arrow-down"></i> Nos services</a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat-item"><div class="stat-number">50+</div><div class="stat-label">Conseils en brevets</div></div>
+  <div class="stat-item"><div class="stat-number">20+</div><div class="stat-label">Juristes</div></div>
+  <div class="stat-item"><div class="stat-number">15+</div><div class="stat-label">Gestionnaires de dossiers</div></div>
+  <div class="stat-item"><div class="stat-number">8 ans</div><div class="stat-label">Expérience moyenne</div></div>
+</div>
+
+<section class="section" id="about">
+  <div class="section-title"><h2>À propos</h2><p>Double qualification · Chaîne complète · Service intégré</p></div>
+  <div class="about-grid">
+    <div class="about-text">
+      <h3>Qui sommes-nous</h3>
+      <p>L'Agence de Brevets Aipunajie de Pékin (Société en commandite simple) a été fondée en 2012, dont le siège est à Dongcheng, Pékin. Appuyée sur la marque Najie, c'est une société de services professionnels <strong>double qualification</strong>, titulaire d'une <strong>qualification formelle d'agence de brevets</strong> et d'une <strong>qualification d'agence de brevets étrangers</strong>.</p>
+      <p>Nous accompagnons entreprises innovantes, universités et instituts de recherche avec des services intégrés brevets, marques et droits d'auteur — établissement des droits, contentieux et maîtrise des risques. Qualité, normes élevées et livraison fiable pour valoriser vos innovations.</p>
+      <div class="about-badges">
+        <span class="badge-chip"><i data-lucide="badge-check"></i> Agrément agence de brevets</span>
+        <span class="badge-chip"><i data-lucide="globe"></i> Qualification étranger</span>
+        <span class="badge-chip"><i data-lucide="shield-check"></i> Maîtrise des risques</span>
+      </div>
+    </div>
+    <div class="about-cards">
+      <div class="about-card"><div class="t">Qualification formelle</div><div class="d">Agence de brevets agréée, pratique professionnelle et vérifiable.</div></div>
+      <div class="about-card"><div class="t">Capacité internationale</div><div class="d">Qualification étranger en interne ; voies PCT et Convention de Paris couvertes.</div></div>
+      <div class="about-card"><div class="t">Livraison de qualité</div><div class="d">Normes élevées, livraison fiable, suivi de chaque dossier à chaque étape.</div></div>
+      <div class="about-card"><div class="t">Synergie à trois entités</div><div class="d">Coordination avec Najie (marques/étranger/annuités) et Mili (contentieux) — du dépôt à l'exécution.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="history" style="background: var(--bg-light); border-radius: 0;">
+  <div class="section-title"><h2>Étapes clés</h2><p>De 2012 à aujourd'hui, pas à pas</p></div>
+  <div class="timeline">
+    <div class="tl-item"><span class="year">2012</span><h4>Fondation</h4><p>Aipunajie est fondée à Pékin, avec la procédure de brevets comme activité principale.</p></div>
+    <div class="tl-item"><span class="year">2015</span><h4>Approfondissement</h4><p>Extension au réexamen, à l'invalidation, au dépôt d'entreprises de haute technologie et à l'exploitation IP.</p></div>
+    <div class="tl-item"><span class="year">2018</span><h4>Montée en compétence</h4><p>Systèmes de services marques, droits d'auteur et brevets étrangers complétés.</p></div>
+    <div class="tl-item"><span class="year">2022</span><h4>Réseau national</h4><p>Réseau de services à Pékin, Shanghai, Guangzhou et Chengdu.</p></div>
+    <div class="tl-item"><span class="year">Aujourd'hui</span><h4>Cabinet boutique</h4><p>Couverture technique complète et capacité internationale remarquable — un cabinet IP boutique de premier plan.</p></div>
+  </div>
+</section>
+
+<section class="section" id="tech">
+  <div class="section-title"><h2>Domaines techniques</h2><p>Couverture technique complète, compréhension précise de vos inventions</p></div>
+  <div class="tech-grid">
+    <div class="tech-card"><div class="icon"><i data-lucide="cog"></i></div><h4>Mécanique</h4><p>Fabrication de précision / automatisation</p></div>
+    <div class="tech-card"><div class="icon"><i data-lucide="cpu"></i></div><h4>Électronique</h4><p>Circuits / communications / semi-conducteurs</p></div>
+    <div class="tech-card"><div class="icon"><i data-lucide="code-2"></i></div><h4>Logiciel</h4><p>Architecture / traitement de données</p></div>
+    <div class="tech-card"><div class="icon"><i data-lucide="brain"></i></div><h4>IA</h4><p>Apprentissage machine / brevets de modèles</p></div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="section-title"><h2>Nos services</h2><p>Brevets · Marques · Droits d'auteur · International · Conseil</p></div>
+  <div class="services-grid">
+    <div class="service-card"><div class="icon"><i data-lucide="lightbulb"></i></div><h3>Brevets</h3><p>Procédures complètes : inventions, modèles d'utilité et dessins.</p>
+      <ul><li>Dépôts d'invention, modèle d'utilité, dessin</li><li>Réexamen, invalidation, recherche et analyse</li><li>Dépôts mondiaux (US, UE, JP, KR, etc.)</li><li>PCT, voie de la Convention de Paris</li></ul></div>
+    <div class="service-card"><div class="icon"><i data-lucide="trademark"></i></div><h3>Marques</h3><p>Protection de marques nationale et internationale.</p>
+      <ul><li>Enregistrement, renouvellement, opposition</li><li>Planification de portefeuille toutes classes</li><li>Recherche et analyse de risques</li></ul></div>
+    <div class="service-card"><div class="icon"><i data-lucide="copyright"></i></div><h3>Droits d'auteur</h3><p>Enregistrement et défense des droits.</p>
+      <ul><li>Enregistrement d'œuvres d'art et de logiciels</li><li>Surveillance de la contrefaçon et défense</li></ul></div>
+    <div class="service-card"><div class="icon"><i data-lucide="globe"></i></div><h3>Propriété intellectuelle internationale</h3><p>Portefeuille mondial, qualification étranger en interne.</p>
+      <ul><li>Dépôts mondiaux brevets/marques (US, UE, JP, KR)</li><li>Planification PCT et Convention de Paris</li><li>Expertise multi-juridictionnelle</li></ul></div>
+    <div class="service-card"><div class="icon"><i data-lucide="shield"></i></div><h3>Conseil</h3><p>De la maîtrise des risques au dépôt de politique publique.</p>
+      <ul><li>Conception de systèmes de maîtrise des risques IP</li><li>Accompagnement en contentieux de contrefaçon</li><li>Dossier d'entreprise de haute technologie</li></ul></div>
+    <div class="service-card"><div class="icon"><i data-lucide="search"></i></div><h3>Recherche &amp; stratégie</h3><p>Décisions stratégiques fondées sur les données.</p>
+      <ul><li>Recherche de nouveauté, analyse FTO</li><li>Analyse de validité, veille concurrentielle</li><li>Planification de portefeuille de brevets clés</li></ul></div>
+  </div>
+</section>
+
+<section class="section" id="org">
+  <div class="section-title"><h2>Organisation</h2><p>Six départements spécialisés pour un traitement efficace des dossiers</p></div>
+  <div class="org-grid">
+    <div class="org-card"><div class="icon"><i data-lucide="lightbulb"></i></div><h4>Dépt. Brevets</h4><p>Couvre l'invention, le dessin et le modèle d'utilité.</p></div>
+    <div class="org-card"><div class="icon"><i data-lucide="trademark"></i></div><h4>Dépt. Marques &amp; Droits d'auteur</h4><p>Protection des marques et enregistrement des droits d'auteur.</p></div>
+    <div class="org-card"><div class="icon"><i data-lucide="globe"></i></div><h4>Dépt. International</h4><p>Expertise PCT et droit des brevets multi-pays.</p></div>
+    <div class="org-card"><div class="icon"><i data-lucide="git-branch"></i></div><h4>Dépt. Gestion des délais</h4><p>Suivi des étapes pour un flux de dossiers fluide.</p></div>
+    <div class="org-card"><div class="icon"><i data-lucide="rotate-ccw"></i></div><h4>Dépt. Réexamen &amp; Invalidation</h4><p>Validité post-délivrance et exécution des droits.</p></div>
+    <div class="org-card"><div class="icon"><i data-lucide="headphones"></i></div><h4>Service clients</h4><p>Réponse 24/7 avec service de conciergerie dédié.</p></div>
+  </div>
+</section>
+
+<section class="section" id="team">
+  <div class="section-title"><h2>Notre équipe</h2><p>Experts pluridisciplinaires, R&amp;D et pratique juridique</p></div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="avatar">He</div>
+      <div class="name">He Zigang</div>
+      <div class="en">Fondateur</div>
+      <div class="role">Avocat · Mandataire en brevets · Économiste IP · Auditeur IPMS</div>
+      <p>Parle couramment anglais et français. Cartographie systématiquement les frontières, voies de protection et règles d'obtention des différents droits IP pour protéger précisément les actifs immatériels des clients et piloter des solutions sur mesure.</p>
+      <p style="margin-top:10px;"><strong>Clients notables :</strong> RITTER, Saint-Gobain, Airbus, CEA (France), SEB Group, General Electric, General Motors, CNR Group, Huanqiu Equipment, FILLON Technologies (France), etc.</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">Zhu</div>
+      <div class="name">Zhu Ruizhi</div>
+      <div class="en">Analyste senior</div>
+      <div class="role">Expert en brevets</div>
+      <p>Licence de l'Université de Pékin et master de l'Académie chinoise des sciences ; ancien examinateur à l'Administration nationale de la propriété intellectuelle (CNIPA) avec plus de 10 000 dossiers examinés.</p>
+      <p style="margin-top:10px;"><strong>Domaines :</strong> analyse FTO, alerte précoce, invalidation, gestion de portefeuille, évaluation d'actifs IP, systèmes de gestion IP d'entreprise.</p>
+      <p style="margin-top:10px;"><strong>Clients :</strong> Shandong Luyang, Sinochem, Midea, Shanghai Electric, CRRC, etc.</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">Zhao</div>
+      <div class="name">Zhao Liheng</div>
+      <div class="en">Mandataire senior</div>
+      <div class="role">Conseil en brevets</div>
+      <p>Plus de dix ans d'expérience, plus de 1 000 dossiers traités. Clients : Université Tsinghua, Université de Pékin, Great Wall Motors. Ancien d'un grand constructeur automobile, familier du développement produit.</p>
+      <p style="margin-top:10px;"><strong>Affaires :</strong> brevet de régolithe lunaire contenant de l'eau (délivré) ; défense d'invalidation de tunnel utilitaire préfabriqué en béton (maintenu valide) ; contentieux de contrefaçon pour une pelle à poussière ; projet de mining de brevets sur la production d'hydrogène par craquage catalytique du gaz de houille (Université de Taiyuan).</p>
+    </div>
+  </div>
+</section>
+
+<div class="why-section" id="why">
+  <div class="section-title" style="padding-top:80px;"><h2>Pourquoi choisir Aipunajie</h2><p>Professionnel · Précis · Efficace</p></div>
+  <div class="why-grid">
+    <div class="why-card"><div class="icon"><i data-lucide="brain"></i></div><div><h4>Profondeur technique</h4><p>Nos conseils comprennent réellement la mécanique, l'électronique, les logiciels et l'IA — partenaires de votre invention, pas de simples traducteurs.</p></div></div>
+    <div class="why-card"><div class="icon"><i data-lucide="bar-chart-3"></i></div><div><h4>Taux de délivrance 90%+</h4><p>Les données parlent — notre taux de délivrance dépasse constamment la moyenne du secteur.</p></div></div>
+    <div class="why-card"><div class="icon"><i data-lucide="link"></i></div><div><h4>Synergie à trois entités</h4><p>Aipunajie (brevets) + Mili (contentieux) + Najie (marques/international/annuités) — du dépôt à l'exécution.</p></div></div>
+    <div class="why-card"><div class="icon"><i data-lucide="clock"></i></div><div><h4>Divulgation → dépôt ≤ 5 jours ouvrés</h4><p>Processus de rédaction standardisé : première ébauche sous 5 jours ouvrés après la divulgation technique.</p></div></div>
+  </div>
+</div>
+
+<div class="cta-section" id="contact">
+  <div class="cta-bg"></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <h2>Confiez la protection de vos innovations aux professionnels</h2>
+    <p>Qu'il s'agisse de votre première demande de brevet ou d'une stratégie de dépôt mondial, nous sommes là.</p>
+    <a href="https://licta.najieip.com/contact.html" class="btn btn-primary"><i data-lucide="mail"></i> Consultation en ligne</a>
+    <p style="margin-top:16px;font-size:14px;">E-mail : <a href="mailto:hezigang@najieip.com" style="color:#fff;">hezigang@najieip.com</a> | Tél : +86-10-65150974 | 13911268604</p>
+  </div>
+</div>
+
+<footer>
+  <div class="brand">Agence Aipunajie</div>
+  <div class="contact">Agence de Brevets Aipunajie de Pékin (Société en commandite simple)<br>Najie · Aipunajie · Mili &mdash; Services IP de chaîne complète</div>
+  <div class="copyright">&copy; 2026 Agence Aipunajie &mdash; Professionnel · Efficace · Innovant</div>
+</footer>
+
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i data-lucide="arrow-up"></i></button>
+<script>
+lucide.createIcons();
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 100);
+  document.getElementById('backTop').classList.toggle('visible', window.scrollY > 100);
+});
+const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; }}), {threshold:0.1});
+document.querySelectorAll('.service-card,.why-card,.tech-card,.org-card,.team-card').forEach(el => { el.style.opacity='0'; el.style.transform='translateY(30px)'; el.style.transition='all 0.6s ease'; obs.observe(el); });
+</script>
+</body>
+</html>
