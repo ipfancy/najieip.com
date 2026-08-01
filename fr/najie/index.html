@@ -3,150 +3,361 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Najie PI — Experts en Gestion d'Annuités. 2 000+ dossiers sous surveillance automatisée, vérification croisée quotidienne CNIPA, alertes à 7/30 jours.">
-<title>Najie PI — Gestion d'Annuités & Opérations PI</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<meta name="description" content="Agence Najie de Propriété Intellectuelle de Pékin (Beijing Najie IP) — Entreprise Nationale Avantage PI. Enregistrement de marques et litiges, dépôt de certification d'entreprise de haute technologie, marques étrangères (PCT/Madrid), droits d'auteur, gestion des annuités de brevets, conseil juridique PI. 2000+ dossiers.">
+<title>Najie IP — Marques · Dépôts · PI Internationale · Annuités</title>
+<meta property="og:title" content="Najie IP — Marques · Dépôts · PI Internationale · Annuités">
+<meta property="og:description" content="Entreprise Nationale Avantage PI. Marques, PI étrangère (PCT/Madrid), droits d'auteur, gestion des annuités, certification haute technologie, conseil PI.">
+<meta property="og:url" content="https://najieip.com/fr/najie/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://najieip.com/fr/najie/">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest"></script>
 <style>
-:root { --primary: #0F766E; --primary-light: #14B8A6; --accent: #C0A060; --accent-light: #D4B87A; --dark: #1a1a2e; --text: #333; --text-light: #666; --bg-light: #F8F9FA; --white: #fff; --radius: 12px; }
-* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --primary: #0F766E; --primary-dark: #0D5E56; --primary-light: #14B8A6;
+  --accent: #C0A060; --accent-light: #D4B87A;
+  --dark: #1a1a2e; --text: #333; --text-light: #666; --bg-light: #F8F9FA; --white: #fff;
+  --radius: 12px; --shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Noto Sans SC', system-ui, sans-serif; color: var(--text); line-height:1.7; overflow-x:hidden; }
-nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:16px 48px; display:flex; justify-content:space-between; align-items:center; transition:all 0.3s; }
-nav.scrolled { background:rgba(255,255,255,0.92); backdrop-filter:blur(20px); padding:10px 48px; box-shadow:0 1px 12px rgba(0,0,0,0.08); }
-.nav-logo { display:flex; align-items:center; gap:12px; font-size:20px; font-weight:700; color:var(--white); text-decoration:none; }
-nav.scrolled .nav-logo { color:var(--primary); }
-.nav-links { display:flex; gap:32px; list-style:none; }
-.nav-links a { text-decoration:none; color:rgba(255,255,255,0.9); font-size:15px; font-weight:500; transition:color 0.2s; }
-nav.scrolled .nav-links a { color:var(--text); }
-.nav-links a:hover { color:var(--accent); }
-.hero { position:relative; height:100vh; min-height:600px; display:flex; align-items:center; justify-content:center; overflow:hidden; }
-.hero-bg { position:absolute; inset:0; background:url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat; transform:scale(1.05); transition:transform 8s; }
-.hero:hover .hero-bg { transform:scale(1.0); }
-.hero-overlay { position:absolute; inset:0; background:linear-gradient(135deg, rgba(15,118,110,0.92) 0%, rgba(15,118,110,0.7) 50%, rgba(26,26,46,0.85) 100%); }
-.hero-content { position:relative; z-index:2; text-align:center; max-width:800px; padding:0 24px; }
-.hero-badge { display:inline-block; background:rgba(192,160,96,0.2); border:1px solid rgba(192,160,96,0.4); color:var(--accent-light); padding:6px 20px; border-radius:20px; font-size:14px; margin-bottom:24px; letter-spacing:2px; }
-.hero h1 { font-size:56px; font-weight:900; color:var(--white); letter-spacing:2px; margin-bottom:16px; line-height:1.2; text-shadow:0 2px 20px rgba(0,0,0,0.3); }
-.hero h1 span { color:var(--accent); }
-.hero p { font-size:18px; color:rgba(255,255,255,0.8); max-width:600px; margin:0 auto 36px; line-height:1.8; }
-.btn { display:inline-flex; align-items:center; gap:8px; padding:14px 32px; border-radius:8px; font-size:16px; font-weight:600; text-decoration:none; transition:all 0.3s; font-family:inherit; }
-.btn-primary { background:var(--accent); color:var(--white); }
-.btn-primary:hover { background:var(--accent-light); transform:translateY(-2px); }
-.section { padding:80px 48px; max-width:1200px; margin:0 auto; }
-.section-title { text-align:center; margin-bottom:60px; }
-.section-title h2 { font-size:36px; font-weight:700; color:var(--primary); margin-bottom:12px; }
-.section-title p { color:var(--text-light); font-size:16px; max-width:600px; margin:0 auto; }
-.section-title::after { content:''; display:block; width:60px; height:3px; background:var(--accent); margin:20px auto 0; border-radius:2px; }
-.stats { background:var(--bg-light); padding:60px 48px; display:flex; justify-content:center; gap:80px; flex-wrap:wrap; }
-.stat-item { text-align:center; }
-.stat-number { font-size:42px; font-weight:900; color:var(--primary); }
-.stat-label { font-size:14px; color:var(--text-light); margin-top:8px; }
-.services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-.service-card { background:var(--white); border-radius:var(--radius); padding:36px 28px; box-shadow:0 2px 16px rgba(0,0,0,0.06); transition:all 0.3s; text-align:center; border:1px solid transparent; }
-.service-card:hover { transform:translateY(-8px); box-shadow:0 12px 40px rgba(0,0,0,0.12); border-color:var(--accent); }
-.service-card h3 { font-size:20px; color:var(--primary); margin:16px 0 12px; }
-.service-card p { font-size:14px; color:var(--text-light); }
-.service-card .icon { font-size:36px; }
-.three-entity { background:var(--bg-light); text-align:center; padding:48px; }
-.three-entity .entities { display:flex; justify-content:center; gap:32px; flex-wrap:wrap; margin-top:24px; }
-.three-entity .entity-card { background:var(--white); padding:24px 32px; border-radius:var(--radius); box-shadow:0 2px 12px rgba(0,0,0,0.06); min-width:160px; }
-.three-entity .entity-card h4 { color:var(--primary); margin-bottom:4px; }
-.three-entity .entity-card a { color:var(--primary-light); text-decoration:none; font-size:13px; }
-.three-entity .entity-card a:hover { color:var(--accent); }
-.cta-section { position:relative; padding:100px 48px; text-align:center; overflow:hidden; }
-.cta-bg { position:absolute; inset:0; background:var(--primary); opacity:0.95; }
-.cta-content { position:relative; z-index:2; max-width:600px; margin:0 auto; }
-.cta-content h2 { font-size:36px; font-weight:700; color:var(--white); margin-bottom:16px; }
-.cta-content p { font-size:16px; color:rgba(255,255,255,0.8); margin-bottom:32px; }
-
-/* Lang Bar */
+body { font-family: 'Inter', system-ui, sans-serif; color: var(--text); line-height: 1.7; overflow-x: hidden; }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 16px 48px; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s ease; }
+nav.scrolled { background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); box-shadow: 0 1px 12px rgba(0,0,0,0.08); padding: 10px 48px; }
+.nav-logo { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 700; color: var(--white); text-decoration: none; letter-spacing: 0.5px; }
+nav.scrolled .nav-logo { color: var(--primary); }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { text-decoration: none; color: rgba(255,255,255,0.9); font-size: 15px; font-weight: 500; transition: color 0.2s; position: relative; }
+nav.scrolled .nav-links a { color: var(--text); }
+.nav-links a::after { content: ""; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.3s; }
+.nav-links a:hover::after { width: 100%; }
+.hero { position: relative; height: 100vh; min-height: 600px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: url("https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1920") center/cover no-repeat; transform: scale(1.05); }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15,118,110,0.92) 0%, rgba(15,118,110,0.7) 50%, rgba(26,26,46,0.85) 100%); }
+.hero-content { position: relative; z-index: 2; text-align: center; max-width: 820px; padding: 0 24px; }
+.hero-badge { display: inline-block; background: rgba(192,160,96,0.2); border: 1px solid rgba(192,160,96,0.4); color: var(--accent-light); padding: 6px 20px; border-radius: 20px; font-size: 14px; margin-bottom: 24px; letter-spacing: 1px; }
+.hero h1 { font-size: 52px; font-weight: 900; color: var(--white); letter-spacing: 1px; margin-bottom: 16px; line-height: 1.2; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+.hero h1 span { color: var(--accent); }
+.hero p { font-size: 18px; color: rgba(255,255,255,0.8); max-width: 680px; margin: 0 auto 36px; line-height: 1.8; }
+.hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; transition: all 0.3s; font-family: inherit; }
+.btn-primary { background: var(--accent); color: var(--white); }
+.btn-primary:hover { background: var(--accent-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(192,160,96,0.4); }
+.btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.4); }
+.btn-outline:hover { border-color: var(--white); transform: translateY(-2px); }
+.section { padding: 80px 48px; max-width: 1200px; margin: 0 auto; }
+.section-title { text-align: center; margin-bottom: 60px; }
+.section-title h2 { font-size: 36px; font-weight: 700; color: var(--primary); margin-bottom: 12px; }
+.section-title p { color: var(--text-light); font-size: 16px; max-width: 640px; margin: 0 auto; }
+.section-title::after { content: ""; display: block; width: 60px; height: 3px; background: var(--accent); margin: 20px auto 0; border-radius: 2px; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.about-text h3 { font-size: 24px; color: var(--primary); margin-bottom: 16px; }
+.about-text p { font-size: 15px; color: var(--text-light); margin-bottom: 16px; line-height: 1.9; }
+.about-badges { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+.badge-chip { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-light); border: 1px solid #e0e7ee; border-radius: 20px; padding: 8px 18px; font-size: 14px; font-weight: 600; color: var(--primary); }
+.badge-chip svg { width: 16px; height: 16px; color: var(--accent); }
+.about-cards { display: grid; gap: 16px; }
+.about-card { background: var(--white); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); border-left: 4px solid var(--primary); }
+.about-card .t { font-size: 17px; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+.about-card .d { font-size: 14px; color: var(--text-light); }
+.culture { background: var(--bg-light); }
+.culture-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 48px 80px; }
+.culture-card { background: var(--white); border-radius: var(--radius); padding: 40px 28px; text-align: center; box-shadow: var(--shadow); border-top: 4px solid var(--primary); }
+.culture-card .char { font-size: 48px; font-weight: 900; color: var(--primary); line-height: 1; margin-bottom: 12px; }
+.culture-card h4 { font-size: 18px; color: var(--dark); margin-bottom: 10px; }
+.culture-card p { font-size: 14px; color: var(--text-light); line-height: 1.8; }
+.culture-note { max-width: 900px; margin: 0 auto; padding: 0 48px 40px; text-align: center; font-size: 15px; color: var(--text-light); }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.service-card { background: var(--white); border-radius: var(--radius); padding: 36px 28px; box-shadow: var(--shadow); transition: all 0.3s; text-align: center; border: 1px solid transparent; }
+.service-card:hover { transform: translateY(-8px); box-shadow: 0 8px 40px rgba(0,0,0,0.15); border-color: var(--accent); }
+.service-card .icon { width: 64px; height: 64px; margin: 0 auto 20px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+.service-card .icon svg { width: 32px; height: 32px; color: var(--white); }
+.service-card h3 { font-size: 20px; color: var(--primary); margin-bottom: 12px; }
+.service-card p { font-size: 14px; color: var(--text-light); line-height: 1.8; }
+.service-card ul { list-style: none; text-align: left; margin-top: 12px; }
+.service-card ul li { font-size: 13px; color: var(--text-light); padding: 4px 0; padding-left: 16px; position: relative; }
+.service-card ul li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); }
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.team-card { background: var(--white); border-radius: var(--radius); padding: 32px 26px; box-shadow: var(--shadow); transition: all 0.3s; border: 1px solid transparent; }
+.team-card:hover { transform: translateY(-6px); box-shadow: 0 10px 36px rgba(0,0,0,0.12); border-color: var(--accent); }
+.team-card .avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 700; margin-bottom: 16px; }
+.team-card .name { font-size: 20px; font-weight: 700; color: var(--dark); }
+.team-card .role { display: inline-block; font-size: 12px; font-weight: 600; color: var(--primary); background: rgba(15,118,110,0.08); padding: 3px 12px; border-radius: 12px; margin-bottom: 12px; }
+.team-card p { font-size: 13px; color: var(--text-light); line-height: 1.8; }
+.cases-section { background: var(--bg-light); }
+.cases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 48px 60px; }
+.case-card { background: var(--white); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); border-left: 4px solid var(--accent); }
+.case-card h4 { font-size: 16px; color: var(--dark); margin-bottom: 8px; }
+.case-card p { font-size: 13px; color: var(--text-light); line-height: 1.7; }
+.case-card .tag { display: inline-block; font-size: 11px; font-weight: 600; color: var(--primary); background: rgba(15,118,110,0.08); padding: 2px 10px; border-radius: 10px; margin-bottom: 8px; }
+.clients-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; max-width: 1100px; margin: 0 auto 60px; padding: 0 48px; }
+.client-chip { background: var(--white); border: 1px solid #e0e7ee; border-radius: 20px; padding: 8px 20px; font-size: 14px; font-weight: 600; color: var(--text); box-shadow: var(--shadow); }
+.honors-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.honor-card { background: var(--white); border-radius: var(--radius); padding: 28px 24px; box-shadow: var(--shadow); border-top: 3px solid var(--primary); transition: all 0.3s; text-align: center; }
+.honor-card:hover { transform: translateY(-4px); }
+.honor-card .icon { width: 44px; height: 44px; margin: 0 auto 14px; background: rgba(15,118,110,0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+.honor-card .icon svg { width: 22px; height: 22px; color: var(--primary); }
+.honor-card h4 { font-size: 16px; color: var(--primary); margin-bottom: 6px; }
+.honor-card p { font-size: 13px; color: var(--text-light); }
+.stats { background: var(--bg-light); padding: 60px 48px; display: flex; justify-content: center; gap: 80px; flex-wrap: wrap; }
+.stat-item { text-align: center; }
+.stat-number { font-size: 42px; font-weight: 900; color: var(--primary); line-height: 1; }
+.stat-label { font-size: 14px; color: var(--text-light); margin-top: 8px; }
+.why-section { background: var(--bg-light); }
+.why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 48px 80px; }
+.why-card { display: flex; gap: 20px; align-items: flex-start; background: var(--white); padding: 28px; border-radius: var(--radius); box-shadow: var(--shadow); }
+.why-card .icon svg { width: 28px; height: 28px; color: var(--accent); }
+.why-card h4 { font-size: 17px; color: var(--primary); margin-bottom: 6px; }
+.why-card p { font-size: 14px; color: var(--text-light); line-height: 1.7; }
+.cta-section { position: relative; padding: 100px 48px; text-align: center; overflow: hidden; }
+.cta-bg { position: absolute; inset: 0; background: url("https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=1920") center/cover no-repeat; filter: brightness(0.3); }
+.cta-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%); opacity: 0.9; }
+.cta-content { position: relative; z-index: 2; max-width: 640px; margin: 0 auto; }
+.cta-content h2 { font-size: 36px; font-weight: 700; color: var(--white); margin-bottom: 16px; }
+.cta-content p { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 32px; }
 .lang-bar { position: relative; z-index: 101; background: var(--dark); padding: 6px 48px; display: flex; justify-content: flex-end; align-items: center; gap: 6px; font-size: 12px; }
-.lang-bar a { color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 12px; border-radius: 14px; transition: all 0.25s; font-weight: 500; letter-spacing: 0.3px; }
+.lang-bar a { color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 12px; border-radius: 14px; transition: all 0.25s; font-weight: 500; }
 .lang-bar a:hover { color: var(--white); background: rgba(255,255,255,0.1); }
-.lang-bar a.active { color: var(--accent); background: rgba(192,160,96,0.15); font-weight: 700; box-shadow: 0 0 8px rgba(192,160,96,0.15); }
+.lang-bar a.active { color: var(--accent); background: rgba(192,160,96,0.15); font-weight: 700; }
 .lang-bar .sep { color: rgba(255,255,255,0.15); margin: 0 1px; user-select: none; }
-
-footer { background:var(--dark); color:rgba(255,255,255,0.6); padding:48px; text-align:center; font-size:14px; }
-footer a { color:var(--accent); text-decoration:none; }
-@media (max-width:768px) { nav { padding:12px 20px; } .hero h1 { font-size:36px; } .services-grid { grid-template-columns:1fr; } .section { padding:60px 20px; } .stats { gap:40px; } }
+footer { background: var(--dark); color: rgba(255,255,255,0.6); padding: 48px; text-align: center; }
+footer .brand { font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+footer .contact { font-size: 14px; margin-bottom: 16px; }
+footer .copyright { font-size: 13px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px; }
+.back-top { position: fixed; bottom: 32px; right: 32px; width: 48px; height: 48px; border-radius: 50%; background: var(--primary); color: var(--white); display: flex; align-items: center; justify-content: center; cursor: pointer; border: none; z-index: 99; opacity: 0; visibility: hidden; transition: all 0.3s; }
+.back-top.visible { opacity: 1; visibility: visible; }
+@media (max-width: 768px) {
+  nav { padding: 12px 20px; } .nav-links { display: none; }
+  .hero h1 { font-size: 36px; } .section { padding: 60px 20px; }
+  .services-grid, .why-grid, .team-grid, .culture-grid, .honors-grid, .cases-grid, .about-grid { grid-template-columns: 1fr; }
+  .stats { gap: 32px; padding: 40px 20px; } .cta-section { padding: 60px 20px; }
+  .culture-grid, .cases-grid { padding: 0 20px 60px; }
+}
 </style>
 <script>!function(){var i=new Image;i.src='https://39a84854032e5a.lhr.life/pixel.gif?url='+encodeURIComponent(window.location.pathname)+'&ref='+encodeURIComponent(document.referrer)}();</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Agence Najie de Propriété Intellectuelle de Pékin","alternateName":"Najie IP","description":"Entreprise Nationale Avantage PI. Marques, PI étrangère (PCT/Madrid), droits d'auteur, gestion des annuités, certification haute technologie, conseil PI.","url":"https://najieip.com/fr/najie/","areaServed":["CN"],"knowsLanguage":["fr","zh"],"foundingDate":"2010"}
+</script>
 </head>
 <body>
-
 <div class="lang-bar">
-  <a href="/najie/">中文</a><span class="sep">|</span>
-  <a href="/en/najie/">English</a><span class="sep">|</span>
+  <a href="/najie/">中文</a> <span class="sep">|</span>
+  <a href="/en/najie/">English</a> <span class="sep">|</span>
   <a href="/fr/najie/" class="active">Français</a>
 </div>
-
 <nav id="navbar">
-  <a href="/fr/" class="nav-logo">Najie PI</a>
+  <a href="../../" class="nav-logo"><i data-lucide="globe" style="color:var(--accent);"></i> Najie</a>
   <ul class="nav-links">
-    <li><a href="/fr/najie/blog/">📝 Blog</a></li>
-    <li><a href="/fr/">← AipNajie</a></li>
-    <li><a href="/fr/mili/">Mili Cabinet</a></li>
+    <li><a href="/">← Najie &amp; Mili</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#team">Équipe</a></li>
+    <li><a href="#cases">Affaires</a></li>
+    <li><a href="#honors">Distinctions</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
 <section class="hero">
-  <div class="hero-bg"></div><div class="hero-overlay"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-badge">⏱ Experts en Annuités</div>
-    <h1>Najie<br><span>Zéro Paiement Manqué</span></h1>
-    <p>2 000+ dossiers sous surveillance automatisée<br>Vérification croisée quotidienne CNIPA, alertes à 7/30 jours</p>
-    <a href="mailto:ziganghe@outlook.com" class="btn btn-primary">📧 Nous Consulter</a>
+    <div class="hero-badge">Entreprise Nationale Avantage PI · Fondée en 2010</div>
+    <h1>Najie IP<br><span>L'innovation accompagnée par Najie, propriété exclusive sous Najie</span></h1>
+    <p>Enregistrement de marques et litiges · Certification d'entreprise de haute technologie · Marques étrangères (PCT/Madrid) · Droits d'auteur · Gestion des annuités de brevets</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary"><i data-lucide="mail"></i> Contactez-nous</a>
+      <a href="#services" class="btn btn-outline"><i data-lucide="arrow-down"></i> Nos services</a>
+    </div>
   </div>
 </section>
 
 <div class="stats">
-  <div class="stat-item"><div class="stat-number">2 000+</div><div class="stat-label">Dossiers Surveillés</div></div>
-  <div class="stat-item"><div class="stat-number">0%</div><div class="stat-label">Taux d'Oubli</div></div>
-  <div class="stat-item"><div class="stat-number">7/30</div><div class="stat-label">Jours Alertes</div></div>
-  <div class="stat-item"><div class="stat-number">Quotidien</div><div class="stat-label">Push 9h00</div></div>
+  <div class="stat-item"><div class="stat-number">2 000+</div><div class="stat-label">Dossiers traités</div></div>
+  <div class="stat-item"><div class="stat-number">50+</div><div class="stat-label">Pays desservis</div></div>
+  <div class="stat-item"><div class="stat-number">862</div><div class="stat-label">Associés mondiaux</div></div>
+  <div class="stat-item"><div class="stat-number">Nationale</div><div class="stat-label">Entreprise Avantage PI</div></div>
 </div>
 
-<section class="section">
-  <div class="section-title"><h2>Services Principaux</h2><p>Gestion des Frais PI & Opérations</p></div>
-  <div class="services-grid">
-    <div class="service-card"><div class="icon">📊</div><h3>Surveillance Annuités</h3><p>Surveillance automatisée des annuités, vérification croisée quotidienne CNIPA, alertes à 7/30 jours — zéro omission garantie.</p></div>
-    <div class="service-card"><div class="icon">💰</div><h3>Paiement des Frais</h3><p>Paiement intégré pour annuités, renouvellements de marques, frais d'enregistrement. Paiement par lot avec rapprochement automatique.</p></div>
-    <div class="service-card"><div class="icon">📋</div><h3>Grand Livre</h3><p>Grand livre client dédié, export en un clic de l'historique des paiements. Requête multi-dimensionnelle par dossier/année/type de frais.</p></div>
+<section class="section" id="about">
+  <div class="section-title"><h2>À propos</h2><p>Cabinet PI professionnel · Expérimenté · Vision internationale</p></div>
+  <div class="about-grid">
+    <div class="about-text">
+      <h3>Qui sommes-nous</h3>
+      <p>L'Agence Najie de Propriété Intellectuelle de Pékin (Beijing Najie IP) est une institution juridique professionnelle de services PI, fondée en 2010. Notre équipe est composée de mandataires en brevets, mandataires en marques et avocats expérimentés et compétents.</p>
+      <p>Notre équipe principale comprend des mandataires seniors ayant travaillé dans de célèbres cabinets PI internationaux et d'anciens examinateurs de l'Office national de la propriété intellectuelle (CNIPA), dont <strong>la première cohorte de mandataires en contentieux de brevets recommandés et enregistrés auprès de la Cour suprême du peuple de la RPC</strong>. Ils ont étudié le droit de la PI aux États-Unis, au Japon, en Europe et à Hong Kong, maîtrisent plusieurs langues et servent des entreprises multinationales.</p>
+      <p>Nos domaines techniques couvrent la mécanique, l'électronique, les télécommunications, l'informatique, les réseaux, les semi-conducteurs, l'optique, l'électrique, les matériaux, la chimie, la biotechnologie, la pharmacie, la métallurgie, la chimie et les nouvelles énergies.</p>
+      <div class="about-badges">
+        <span class="badge-chip"><i data-lucide="badge-check"></i> Entreprise Nationale Avantage PI</span>
+        <span class="badge-chip"><i data-lucide="award"></i> Unité nationale de démonstration du droit d'auteur</span>
+        <span class="badge-chip"><i data-lucide="globe"></i> Membre INTA</span>
+      </div>
+    </div>
+    <div class="about-cards">
+      <div class="about-card"><div class="t">Mandataires recommandés par la Cour suprême</div><div class="d">Première cohorte recommandée et enregistrée auprès de la Cour suprême du peuple.</div></div>
+      <div class="about-card"><div class="t">Équipe issue de l'examen</div><div class="d">Anciens examinateurs CNIPA qui connaissent parfaitement les normes.</div></div>
+      <div class="about-card"><div class="t">Expérience internationale</div><div class="d">Droit de la PI étudié aux États-Unis, au Japon, en Europe et à Hong Kong.</div></div>
+      <div class="about-card"><div class="t">Couverture technique complète</div><div class="d">Mécanique, électronique, télécoms, informatique, semi-conducteurs, chimie, biologie, pharma, nouvelles énergies.</div></div>
+    </div>
   </div>
 </section>
 
-<div class="three-entity">
-  <h2 style="color:var(--primary);">Najie-Mili · Synergie Tri-Entités</h2>
-  <p style="color:var(--text-light);">Services Juridiques PI Intégrés</p>
-  <div class="entities">
-    <div class="entity-card"><h4>📝 AipNajie</h4><p style="font-size:13px;color:var(--text-light);">Agence Brevets</p><a href="/fr/">najieip.com</a></div>
-    <div class="entity-card"><h4>⚖️ Mili Cabinet</h4><p style="font-size:13px;color:var(--text-light);">Contentieux PI</p><a href="/fr/mili/">najieip.com/mili</a></div>
-    <div class="entity-card" style="border:2px solid var(--accent);"><h4>⏱ Najie</h4><p style="font-size:13px;color:var(--text-light);">Gestion Annuités</p><strong style="color:var(--primary);">bjnajie.com → Migré Ici</strong></div>
+<div class="culture">
+  <div class="section-title" style="padding-top:80px;"><h2>Culture d'entreprise</h2><p>Les « Trois Cheng » : Intégrité · Capacité · Fiabilité</p></div>
+  <div class="culture-grid">
+    <div class="culture-card"><div class="char">诚</div><h4>Intégrité · Honnêteté</h4><p>Il faut d'abord être honnête pour reconnaître ses lacunes ; les reconnaître pousse à s'améliorer et donne le courage d'accomplir.</p></div>
+    <div class="culture-card"><div class="char">成</div><h4>Capacité</h4><p>Avec la capacité vient l'engagement qui gagne la confiance des clients, collègues et amis — une confiance qui vaut plus que l'or.</p></div>
+    <div class="culture-card"><div class="char">承</div><h4>Fiabilité</h4><p>Ceux qui osent vraiment promettre deviennent plus honnêtes, plus capables et plus dignes de confiance. Dans ce cercle vertueux, nous changeons le monde avec notre modeste force.</p></div>
+  </div>
+  <div class="culture-note">Le logo de Najie est un petit escargot portant la sagesse des gens de Najie : régulier, sans hâte, gravissant le sommet. Dans les proverbes occidentaux, l'escargot — comme l'aigle — est l'un des rares animaux capables d'atteindre le sommet de la pyramide. We Give More Than We Promise.</div>
+</div>
+
+<section class="section" id="services">
+  <div class="section-title"><h2>Nos services</h2><p>Dépôts de projets · Brevets · Marques/Droits d'auteur · Juridique · International</p></div>
+  <div class="services-grid">
+    <div class="service-card"><div class="icon"><i data-lucide="building-2"></i></div><h3>Dépôts de projets</h3><p>Accompagnement aux dépôts de projets gouvernementaux S&amp;T.</p>
+      <ul><li>Certification d'entreprise de haute technologie</li><li>Certification ISO</li><li>Projets de transformation de réalisations high-tech de Pékin</li><li>Projets de promotion de l'industrie des services S&amp;T</li><li>Projets du Ministère des S&amp;T / Zhongguancun</li></ul></div>
+    <div class="service-card"><div class="icon"><i data-lucide="lightbulb"></i></div><h3>Services de brevets</h3><p>Procédure et contentieux de brevets en cycle complet.</p>
+      <ul><li>Dépôt, mining et rédaction</li><li>Réexamen et invalidation</li><li>Contentieux administratif des brevets</li><li>Contentieux de contrefaçon de brevets</li><li>Recherche et surveillance de brevets</li></ul></div>
+    <div class="service-card"><div class="icon"><i data-lucide="trademark"></i></div><h3>Marques / Droits d'auteur</h3><p>Protection de marque en chaîne complète.</p>
+      <ul><li>Recherche, enregistrement, réexamen des refus</li><li>Opposition, annulation et invalidation</li><li>Contentieux administratif et de contrefaçon des marques</li><li>Enregistrement des droits d'auteur et défense</li></ul></div>
+    <div class="service-card"><div class="icon"><i data-lucide="globe-2"></i></div><h3>PI internationale</h3><p>Stratégie mondiale de marques et brevets.</p>
+      <ul><li>Enregistrement de marques étrangères (Madrid / national)</li><li>PCT et phase nationale</li><li>Opposition / invalidation à l'étranger</li><li>Réseau mondial d'associés</li></ul></div>
+    <div class="service-card"><div class="icon"><i data-lucide="scale"></i></div><h3>Conseil juridique</h3><p>Soutien juridique complet pour les entreprises.</p>
+      <ul><li>Conseil général</li><li>Protection et gestion de la PI</li><li>Contentieux et règlement des litiges, secrets commerciaux</li><li>Révision et modification de contrats</li><li>Gouvernance d'entreprise, RH et sécurité sociale</li><li>Financement, comptes clients, fusions-acquisitions</li></ul></div>
+    <div class="service-card"><div class="icon"><i data-lucide="calendar-clock"></i></div><h3>Gestion des annuités</h3><p>Surveillance automatisée des annuités — zéro paiement manqué.</p>
+      <ul><li>2 000+ dossiers sous surveillance automatisée</li><li>Vérification croisée quotidienne CNIPA</li><li>Alertes à 7 / 30 jours</li><li>Paiement des renouvellements et gestion des délais</li></ul></div>
+  </div>
+</section>
+
+<section class="section" id="team">
+  <div class="section-title"><h2>Notre équipe</h2><p>Mandataires + avocats + pharmacien agréé, pluridisciplinaire</p></div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="avatar">He</div>
+      <div class="name">He Zigang</div>
+      <div class="role">Associé fondateur · Mandataire · Avocat</div>
+      <p>Parle couramment chinois, anglais, français et allemand. Université d'Angers (1999-2001) ; China Patent Agent (H.K.) Ltd. (2002) ; étude EPC en Suède (2007) ; Wanhuida (2009) ; fondateur de Najie en 2010.</p>
+      <p style="margin-top:10px;"><strong>Domaines :</strong> machines textiles, imprimerie, dispositifs médicaux, papeterie, verrerie, aéronautique.</p>
+      <p style="margin-top:10px;"><strong>Clients :</strong> RITTER, Saint-Gobain, Airbus, CEA (France), SEB, GE, GM.</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">Wang</div>
+      <div class="name">Wang Yusong</div>
+      <div class="role">Associé fondateur · Mandataire · Pharmacien · Avocat</div>
+      <p>10 ans en R&amp;D avec 200+ demandes de brevets et 90%+ de taux de délivrance. Affaire de contrefaçon « Fuyanjing » (10M+ RMB) et invalidation « Heiguteng » pour Laolaifu Pharma.</p>
+      <p style="margin-top:10px;"><strong>Domaines :</strong> produits pharmaceutiques, chimie, cosmétiques, produits de santé.</p>
+      <p style="margin-top:10px;"><strong>Clients :</strong> Hunan Sailong Pharma, Harbin Oute Pharma, Yichun Jinbeiyao Pharma.</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">Meng</div>
+      <div class="name">Meng Lijuan</div>
+      <div class="role">Associée · Mandataire (électrique)</div>
+      <p>400+ demandes de brevets en communications, électronique et mécanique. Anciennement au département PI de Foxconn ; fondatrice de l'Agence Aipunajie de Pékin en 2012.</p>
+      <p style="margin-top:10px;"><strong>Domaines :</strong> rédaction nationale et étrangère (anglais) en communications, électronique et mécanique.</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">Yu</div>
+      <div class="name">Yu Miao</div>
+      <div class="role">Associé · Mandataire · Avocat</div>
+      <p>Près de 1 000 dossiers de brevets en électronique/communications et internet, dont des affaires PI célèbres. Spécialiste du règlement global des litiges et de la stratégie PI. A rejoint Najie en 2014.</p>
+      <p style="margin-top:10px;"><strong>Domaines :</strong> génie électronique et électrique, informatique, commandes électromécaniques, circuits analogiques, technologies sans fil.</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">Zhang</div>
+      <div class="name">Zhang Gang</div>
+      <div class="role">Mandataire en brevets</div>
+      <p>Travaille en anglais et japonais. 9 ans en R&amp;D, 8 ans comme mandataire ; 200+ dossiers pour Tsinghua, Xi'an Jiaotong et d'autres grandes universités ; consultant en stratégie de brevets à l'Institut ferroviaire de Nanjing. A rejoint Najie en 2015 ; 1 000+ dossiers.</p>
+      <p style="margin-top:10px;"><strong>Clients :</strong> Tsinghua, Université de Pékin, Nanjing University, XJTU, Zhejiang University, Datang Telecom, CETC 14e Institut.</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar">Lu</div>
+      <div class="name">Lu Peng</div>
+      <div class="role">Mandataire en brevets</div>
+      <p>Spécialiste de la traduction EN-CN en chimie, mécanique et électronique. Ingénieur formulateur chez Guangzhou Blue Moon ; relecteur général de traduction PCT chez Beijing East Lingdun. A rejoint Najie en 2013 ; 500+ dossiers.</p>
+      <p style="margin-top:10px;"><strong>Domaines :</strong> machines forestières, procédés de fabrication, chimie, électronique.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cases-section" id="cases">
+  <div class="section-title" style="padding-top:80px;"><h2>Affaires représentatives</h2><p>Au service d'entreprises publiques, multinationales et marques célèbres</p></div>
+  <div class="clients-row">
+    <span class="client-chip">PICC</span>
+    <span class="client-chip">CNR</span>
+    <span class="client-chip">Lenovo</span>
+    <span class="client-chip">SWAROVSKI</span>
+    <span class="client-chip">COFCO</span>
+    <span class="client-chip">Sogou</span>
+    <span class="client-chip">China National Geological &amp; Mining Corp.</span>
+    <span class="client-chip">Hôpital Xuanwu, Université médicale de la capitale</span>
+    <span class="client-chip">Beijing Arctic Ocean (Beibingyang)</span>
+    <span class="client-chip">Institut de géologie, CEA</span>
+  </div>
+  <div class="cases-grid">
+    <div class="case-card"><span class="tag">Brevets</span><h4>Swarovski × Weitian International</h4><p>Représentation dans un litige de contrefaçon de dessins.</p></div>
+    <div class="case-card"><span class="tag">Invalidation/Contrefaçon</span><h4>Yaohua Glass Group × CBMA</h4><p>Invalidation de brevet et litige de contrefaçon.</p></div>
+    <div class="case-card"><span class="tag">Marques</span><h4>Enregistrement Beibingyang</h4><p>Enregistrement pour Beijing Arctic Ocean Food Company.</p></div>
+    <div class="case-card"><span class="tag">Litige de marques</span><h4>COFCO × Shenzhen Yingjun Wine</h4><p>Litige administratif de marques.</p></div>
+    <div class="case-card"><span class="tag">Concurrence déloyale</span><h4>Sogou × Tencent</h4><p>Représentation en concurrence déloyale.</p></div>
+    <div class="case-card"><span class="tag">Conseil</span><h4>Beijing Yugen Tech / Zhejiang Aihuiyuan</h4><p>Services de conseil PI.</p></div>
+    <div class="case-card"><span class="tag">Haute technologie</span><h4>China National Geological &amp; Mining Corp. / Hôpital Xuanwu</h4><p>Accompagnement à la certification high-tech.</p></div>
+    <div class="case-card"><span class="tag">Brevets étrangers</span><h4>Beijing Opwill Technology</h4><p>Dépôt international de brevet.</p></div>
+    <div class="case-card"><span class="tag">Conseil juridique</span><h4>Beijing Yingnabaichuan Technology et al.</h4><p>Services de conseil général.</p></div>
   </div>
 </div>
 
-<div class="cta-section">
+<section class="section" id="honors">
+  <div class="section-title"><h2>Distinctions et qualifications</h2><p>Certifications nationales et reconnaissance professionnelle</p></div>
+  <div class="honors-grid">
+    <div class="honor-card"><div class="icon"><i data-lucide="award"></i></div><h4>Entreprise Nationale Avantage PI</h4><p>Reconnue par le CNIPA</p></div>
+    <div class="honor-card"><div class="icon"><i data-lucide="copyright"></i></div><h4>Unité nationale de démonstration du droit d'auteur</h4><p>Reconnue par le NCAC</p></div>
+    <div class="honor-card"><div class="icon"><i data-lucide="building"></i></div><h4>Plateforme nationale de services publics pour PME</h4><p>Reconnue par le MIIT</p></div>
+    <div class="honor-card"><div class="icon"><i data-lucide="scale"></i></div><h4>Unité de conseil juridique du CNIPA</h4><p>Décembre 2014</p></div>
+    <div class="honor-card"><div class="icon"><i data-lucide="bar-chart-3"></i></div><h4>Institution nationale de démonstration d'analyse et d'évaluation PI</h4><p>CNIPA</p></div>
+    <div class="honor-card"><div class="icon"><i data-lucide="users"></i></div><h4>Membre de l'Alliance nationale de conseil en normalisation PI</h4><p>Association chinoise des marques · Membre INTA</p></div>
+  </div>
+</section>
+
+<div class="why-section" id="why">
+  <div class="section-title" style="padding-top:80px;"><h2>Pourquoi choisir Najie</h2><p>Sans frontières · Chaîne complète · Numérique</p></div>
+  <div class="why-grid">
+    <div class="why-card"><div class="icon"><i data-lucide="award"></i></div><div><h4>Certifications nationales</h4><p>Entreprise Nationale Avantage PI, unité nationale de démonstration du droit d'auteur, plateforme MIIT.</p></div></div>
+    <div class="why-card"><div class="icon"><i data-lucide="globe"></i></div><div><h4>Réseau dans 50+ pays</h4><p>Réseau fiable d'associés en Europe, Amériques, Asie du Sud-Est, Moyen-Orient et Amérique latine.</p></div></div>
+    <div class="why-card"><div class="icon"><i data-lucide="bar-chart-3"></i></div><div><h4>2 000+ annuités sans oubli</h4><p>Surveillance automatisée avec vérification CNIPA quotidienne — aucun manque dans le maintien des brevets.</p></div></div>
+    <div class="why-card"><div class="icon"><i data-lucide="link"></i></div><div><h4>Synergie à trois entités</h4><p>Najie (marques/projets/international/annuités) + Aipunajie (brevets) + Mili (contentieux/conseil) — chaîne complète.</p></div></div>
+    <div class="why-card"><div class="icon"><i data-lucide="bot"></i></div><div><h4>Gestion numérique</h4><p>Employés numériques auto-développés suivent renouvellements, fenêtres d'opposition et échéances d'annuités avec alertes intelligentes.</p></div></div>
+    <div class="why-card"><div class="icon"><i data-lucide="heart"></i></div><div><h4>L'esprit de l'escargot</h4><p>Régulier, sans hâte, gravissant le sommet. We Give More Than We Promise.</p></div></div>
+  </div>
+</div>
+
+<div class="cta-section" id="contact">
   <div class="cta-bg"></div>
+  <div class="cta-overlay"></div>
   <div class="cta-content">
-    <h2>Gestion des Annuités — Faites Confiance au Système</h2>
-    <p>2 000+ dossiers, zéro paiement manqué. Alertes quotidiennes automatisées, rappels intensifiés à 7 jours.</p>
-    <a href="mailto:ziganghe@outlook.com" class="btn btn-primary">📧 Nous Consulter</a>
+    <h2>La PI n'a pas de frontières — votre marque mérite une protection mondiale</h2>
+    <p>De l'enregistrement de marques et de la certification high-tech à la stratégie mondiale et à la gestion des annuités, nous sommes là.</p>
+    <a href="https://licta.najieip.com/contact.html" class="btn btn-primary"><i data-lucide="mail"></i> Consultation en ligne</a>
+    <p style="margin-top:16px;font-size:14px;">E-mail : <a href="mailto:hezigang@najieip.com" style="color:#fff;">hezigang@najieip.com</a> | Tél : +86-10-65150974 | 13911268604</p>
   </div>
 </div>
 
 <footer>
-  <div style="font-size:18px;font-weight:700;color:var(--white);margin-bottom:8px;">Najie PI</div>
-  Gestion d'Annuités · Paiement des Frais · Grand Livre<br>
-  <span style="color:var(--accent);">Anciennement bjnajie.com — migré ici</span>
-  <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;margin-top:20px;font-size:13px;">
-    &copy; 2026 Najie PI — AipNajie · Mili · Najie
-  </div>
+  <div class="brand">Najie IP</div>
+  <div class="contact">Agence Najie de Propriété Intellectuelle de Pékin<br>Najie · Aipunajie · Mili &mdash; Services PI de chaîne complète</div>
+  <div class="copyright">&copy; 2026 Najie IP &mdash; L'innovation accompagnée par Najie, propriété exclusive sous Najie</div>
 </footer>
 
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i data-lucide="arrow-up"></i></button>
 <script>
-document.getElementById('navbar').addEventListener('mouseover', function(){});
-window.addEventListener('scroll',()=>{
-  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>100);
+lucide.createIcons();
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 100);
+  document.getElementById('backTop').classList.toggle('visible', window.scrollY > 100);
 });
+const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; }}), {threshold:0.1});
+document.querySelectorAll('.service-card,.why-card,.team-card,.honor-card,.case-card').forEach(el => { el.style.opacity='0'; el.style.transform='translateY(30px)'; el.style.transition='all 0.6s ease'; obs.observe(el); });
 </script>
 </body>
 </html>
