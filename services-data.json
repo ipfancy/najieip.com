@@ -1,0 +1,197 @@
+{
+  "zh": {
+    "rate_note": "诚实说明：我们不承诺\"包授权\"。授权由审查员依法定标准决定，承诺包授权的机构往往通过大幅缩小保护范围换取授权——授权的专利保护不了技术，等于白授权。我们的做法：先免费查新评估，如实告知把握几成、值不值得申请，再决定是否委托。",
+    "sections": [
+      {
+        "tag": "一",
+        "title": "申请前评估",
+        "items": [
+          "技术交底书指导（提供模板）",
+          "查新检索 · 新颖性/创造性评估",
+          "申请策略建议（是否申请/何时申请）",
+          "优先审查、PCT 衔接规划"
+        ]
+      },
+      {
+        "tag": "二",
+        "title": "申请文件撰写",
+        "items": [
+          "权利要求书撰写（独权定边界·从权设壁垒）",
+          "说明书撰写（清楚完整·支持权利要求）",
+          "说明书附图绘制",
+          "摘要撰写"
+        ]
+      },
+      {
+        "tag": "三",
+        "title": "提交与流程管理",
+        "items": [
+          "电子申请提交（专利业务办理系统）",
+          "请求书等文件准备",
+          "官费代缴 · 费减办理（最高减 85%）",
+          "全流程节点监控（受理/公布/实审/授权）"
+        ]
+      },
+      {
+        "tag": "四",
+        "title": "实质审查应对",
+        "items": [
+          "审查意见通知书逐条分析",
+          "答复策略制定（争辩 or 修改）",
+          "审查意见答复撰写",
+          "必要时与审查员电话沟通"
+        ]
+      },
+      {
+        "tag": "五",
+        "title": "授权后服务",
+        "items": [
+          "授权办登 · 领取证书",
+          "年费自动化管理（每日国知局交叉比对）",
+          "7天/30天分级预警，防专利\"静默死亡\"",
+          "专利维持与布局建议"
+        ]
+      },
+      {
+        "tag": "六",
+        "title": "增值服务",
+        "items": [
+          "优先审查快车道申请",
+          "PCT 国际申请衔接（海外布局）",
+          "专利组合布局规划",
+          "高新技术企业认定配套"
+        ]
+      }
+    ]
+  },
+  "en": {
+    "rate_note": "Honest note: We do not promise \"guaranteed grant.\" Grant decisions are made by examiners under statutory standards. Firms that guarantee grants usually do so by drastically narrowing the scope of protection — a granted patent that doesn't protect your technology is worthless. Our approach: free prior-art search and patentability assessment first, and we will tell you honestly your chances and whether the application is worth filing, before you decide to instruct us.",
+    "sections": [
+      {
+        "tag": "1",
+        "title": "Pre-Filing Evaluation",
+        "items": [
+          "Technical disclosure guidance (template provided)",
+          "Prior-art search · novelty/inventiveness assessment",
+          "Filing strategy advice (whether/when to file)",
+          "Accelerated examination & PCT route planning"
+        ]
+      },
+      {
+        "tag": "2",
+        "title": "Application Drafting",
+        "items": [
+          "Claims drafting (independent claims define scope, dependent claims build defenses)",
+          "Specification drafting (clear & complete, supporting the claims)",
+          "Drawing preparation",
+          "Abstract drafting"
+        ]
+      },
+      {
+        "tag": "3",
+        "title": "Filing & Docketing",
+        "items": [
+          "E-filing via the CNIPA filing system",
+          "Request and related documents",
+          "Official fee payment · fee reduction (up to 85%)",
+          "Full docketing (filing/publication/exam/grant milestones)"
+        ]
+      },
+      {
+        "tag": "4",
+        "title": "Substantive Examination Response",
+        "items": [
+          "Office action analysis, point by point",
+          "Response strategy (argue or amend)",
+          "Office action response drafting",
+          "Examiner interviews when necessary"
+        ]
+      },
+      {
+        "tag": "5",
+        "title": "Post-Grant Service",
+        "items": [
+          "Grant formalities · certificate collection",
+          "Automated annuity management (daily CNIPA cross-check)",
+          "7-day / 30-day tiered alerts — no \"silent death\" of patents",
+          "Maintenance & portfolio advice"
+        ]
+      },
+      {
+        "tag": "6",
+        "title": "Value-Added Services",
+        "items": [
+          "Accelerated examination (priority review) filing",
+          "PCT international route (global filing)",
+          "Patent portfolio strategy",
+          "High-tech enterprise certification support"
+        ]
+      }
+    ]
+  },
+  "fr": {
+    "rate_note": "Note honnête : Nous ne promettons pas une « délivrance garantie ». La délivrance est décidée par les examinateurs selon les normes légales. Les cabinets qui garantissent la délivrance le font généralement en réduisant drastiquement l'étendue de la protection — un brevet délivré qui ne protège pas votre technologie ne vaut rien. Notre approche : recherche d'antériorités et évaluation de brevetabilité gratuites d'abord, et nous vous dirons honnêtement vos chances et si la demande vaut la peine d'être déposée, avant que vous décidiez de nous confier le dossier.",
+    "sections": [
+      {
+        "tag": "1",
+        "title": "Évaluation préalable",
+        "items": [
+          "Accompagnement à la divulgation technique (modèle fourni)",
+          "Recherche d'antériorités · évaluation de nouveauté/activité inventive",
+          "Conseil de stratégie de dépôt (déposer ou non, quand)",
+          "Examen accéléré et planification de la voie PCT"
+        ]
+      },
+      {
+        "tag": "2",
+        "title": "Rédaction de la demande",
+        "items": [
+          "Rédaction des revendications (revendication principale définit la portée, revendications dépendantes construisent les défenses)",
+          "Rédaction de la description (claire et complète, soutenant les revendications)",
+          "Préparation des dessins",
+          "Rédaction de l'abrégé"
+        ]
+      },
+      {
+        "tag": "3",
+        "title": "Dépôt et gestion des délais",
+        "items": [
+          "Dépôt électronique via le système CNIPA",
+          "Requête et documents connexes",
+          "Paiement des taxes officielles · réduction des taxes (jusqu'à 85 %)",
+          "Suivi complet des étapes (dépôt/publication/examen/délivrance)"
+        ]
+      },
+      {
+        "tag": "4",
+        "title": "Réponse à l'examen au fond",
+        "items": [
+          "Analyse des notifications d'examen, point par point",
+          "Stratégie de réponse (argumenter ou modifier)",
+          "Rédaction des réponses aux notifications d'examen",
+          "Entretiens avec l'examinateur si nécessaire"
+        ]
+      },
+      {
+        "tag": "5",
+        "title": "Service post-délivrance",
+        "items": [
+          "Formalités de délivrance · obtention du certificat",
+          "Gestion automatisée des annuités (vérification croisée quotidienne CNIPA)",
+          "Alertes à 7 / 30 jours — pas de « mort silencieuse » des brevets",
+          "Conseil de maintien et de portefeuille"
+        ]
+      },
+      {
+        "tag": "6",
+        "title": "Services à valeur ajoutée",
+        "items": [
+          "Dépôt d'examen accéléré (examen prioritaire)",
+          "Voie internationale PCT (dépôt mondial)",
+          "Stratégie de portefeuille de brevets",
+          "Accompagnement à la certification d'entreprise de haute technologie"
+        ]
+      }
+    ]
+  }
+}

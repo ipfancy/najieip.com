@@ -132,69 +132,10 @@ footer a { color: var(--accent-light); text-decoration: none; }
     <strong>Note honnête :</strong> Nous ne promettons pas une « délivrance garantie ». La délivrance est décidée par les examinateurs selon les normes légales. Les cabinets qui garantissent la délivrance le font généralement en réduisant drastiquement l'étendue de la protection — un brevet délivré qui ne protège pas votre technologie ne vaut rien. Notre approche : <strong>recherche d'antériorités et évaluation de brevetabilité gratuites d'abord</strong>, et nous vous dirons honnêtement vos chances et si la demande vaut la peine d'être déposée, avant que vous décidiez de nous confier le dossier.
   </div>
 
-  <h2 id="services">2. Ce que nous faisons — 6 étapes, 24 prestations</h2>
+    <h2 id="services">2. Ce que nous faisons — 6 étapes, 24 prestations</h2>
+  <div id="serviceGroups"><!-- rendu depuis services-data.json --></div>
 
-  <div class="service-group">
-    <div class="group-title"><span class="tag">1</span>Évaluation préalable</div>
-    <div class="service-list">
-      <div class="item">Accompagnement à la divulgation technique (modèle fourni)</div>
-      <div class="item">Recherche d'antériorités · évaluation de nouveauté/activité inventive</div>
-      <div class="item">Conseil de stratégie de dépôt (déposer ou non, quand)</div>
-      <div class="item">Examen accéléré et planification de la voie PCT</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">2</span>Rédaction de la demande</div>
-    <div class="service-list">
-      <div class="item">Rédaction des revendications (revendication principale définit la portée, revendications dépendantes construisent les défenses)</div>
-      <div class="item">Rédaction de la description (claire et complète, soutenant les revendications)</div>
-      <div class="item">Préparation des dessins</div>
-      <div class="item">Rédaction de l'abrégé</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">3</span>Dépôt et gestion des délais</div>
-    <div class="service-list">
-      <div class="item">Dépôt électronique via le système CNIPA</div>
-      <div class="item">Requête et documents connexes</div>
-      <div class="item">Paiement des taxes officielles · réduction des taxes (jusqu'à 85 %)</div>
-      <div class="item">Suivi complet des étapes (dépôt/publication/examen/délivrance)</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">4</span>Réponse à l'examen au fond</div>
-    <div class="service-list">
-      <div class="item">Analyse des notifications d'examen, point par point</div>
-      <div class="item">Stratégie de réponse (argumenter ou modifier)</div>
-      <div class="item">Rédaction des réponses aux notifications d'examen</div>
-      <div class="item">Entretiens avec l'examinateur si nécessaire</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">5</span>Service post-délivrance</div>
-    <div class="service-list">
-      <div class="item">Formalités de délivrance · obtention du certificat</div>
-      <div class="item">Gestion automatisée des annuités (vérification croisée quotidienne CNIPA)</div>
-      <div class="item">Alertes à 7 / 30 jours — pas de « mort silencieuse » des brevets</div>
-      <div class="item">Conseil de maintien et de portefeuille</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">6</span>Services à valeur ajoutée</div>
-    <div class="service-list">
-      <div class="item">Dépôt d'examen accéléré (examen prioritaire)</div>
-      <div class="item">Voie internationale PCT (dépôt mondial)</div>
-      <div class="item">Stratégie de portefeuille de brevets</div>
-      <div class="item">Accompagnement à la certification d'entreprise de haute technologie</div>
-    </div>
-  </div>
-
-  <h2>Pourquoi nous choisir</h2>
+<h2>Pourquoi nous choisir</h2>
   <div class="feature-grid">
     <div class="feature"><span class="icon"><i data-lucide="check-circle"></i></span>Première ébauche sous 5 jours ouvrés après divulgation</div>
     <div class="feature"><span class="icon"><i data-lucide="check-circle"></i></span>Conseils seniors — pas de dossiers d'apprentissage</div>
@@ -225,6 +166,28 @@ lucide.createIcons();
 window.addEventListener('scroll', () => {
   document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 80);
 });
+// Contenu des services rendu depuis services-data.json (ajouter un service = éditer le JSON)
+(async () => {
+  const container = document.getElementById('serviceGroups');
+  try {
+    const resp = await fetch('/services-data.json');
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data = await resp.json();
+    const fr = data.fr;
+    const html = fr.sections.map(g => `
+      <div class="service-group">
+        <div class="group-title"><span class="tag">${g.tag}</span>${g.title}</div>
+        <div class="service-list">
+          ${g.items.map(i => `<div class="item">${i}</div>`).join('')}
+        </div>
+      </div>
+    `).join('');
+    container.innerHTML = html;
+  } catch (e) {
+    container.innerHTML = '<div class="note">Échec du chargement des services. Veuillez actualiser ou contacter : <a href="mailto:hezigang@najieip.com">hezigang@najieip.com</a> / +86-10-65150974</div>';
+    console.error('services-data.json chargement échoué:', e);
+  }
+})();
 </script>
 </body>
 </html>

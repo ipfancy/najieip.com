@@ -137,66 +137,7 @@ footer a { color: var(--accent-light); text-decoration: none; }
   </div>
 
   <h2 id="services">二、发明专利申请服务内容（6 大环节）</h2>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">一</span>申请前评估</div>
-    <div class="service-list">
-      <div class="item">技术交底书指导（提供模板）</div>
-      <div class="item">查新检索 · 新颖性/创造性评估</div>
-      <div class="item">申请策略建议（是否申请/何时申请）</div>
-      <div class="item">优先审查、PCT 衔接规划</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">二</span>申请文件撰写</div>
-    <div class="service-list">
-      <div class="item">权利要求书撰写（独权定边界·从权设壁垒）</div>
-      <div class="item">说明书撰写（清楚完整·支持权利要求）</div>
-      <div class="item">说明书附图绘制</div>
-      <div class="item">摘要撰写</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">三</span>提交与流程管理</div>
-    <div class="service-list">
-      <div class="item">电子申请提交（专利业务办理系统）</div>
-      <div class="item">请求书等文件准备</div>
-      <div class="item">官费代缴 · 费减办理（最高减 85%）</div>
-      <div class="item">全流程节点监控（受理/公布/实审/授权）</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">四</span>实质审查应对</div>
-    <div class="service-list">
-      <div class="item">审查意见通知书逐条分析</div>
-      <div class="item">答复策略制定（争辩 or 修改）</div>
-      <div class="item">审查意见答复撰写</div>
-      <div class="item">必要时与审查员电话沟通</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">五</span>授权后服务</div>
-    <div class="service-list">
-      <div class="item">授权办登 · 领取证书</div>
-      <div class="item">年费自动化管理（每日国知局交叉比对）</div>
-      <div class="item">7天/30天分级预警，防专利"静默死亡"</div>
-      <div class="item">专利维持与布局建议</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">六</span>增值服务</div>
-    <div class="service-list">
-      <div class="item">优先审查快车道申请</div>
-      <div class="item">PCT 国际申请衔接（海外布局）</div>
-      <div class="item">专利组合布局规划</div>
-      <div class="item">高新技术企业认定配套</div>
-    </div>
-  </div>
+  <div id="serviceGroups"><!-- 由 services-data.json 渲染 --></div>
 
   <h2>服务特点</h2>
   <div class="feature-grid">
@@ -229,6 +170,28 @@ lucide.createIcons();
 window.addEventListener('scroll', () => {
   document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 80);
 });
+// 服务内容由 services-data.json 渲染（数据驱动，未来加服务只改 JSON）
+(async () => {
+  const container = document.getElementById('serviceGroups');
+  try {
+    const resp = await fetch('/services-data.json');
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data = await resp.json();
+    const zh = data.zh;
+    const html = zh.sections.map(g => `
+      <div class="service-group">
+        <div class="group-title"><span class="tag">${g.tag}</span>${g.title}</div>
+        <div class="service-list">
+          ${g.items.map(i => `<div class="item">${i}</div>`).join('')}
+        </div>
+      </div>
+    `).join('');
+    container.innerHTML = html;
+  } catch (e) {
+    container.innerHTML = '<div class="note">服务内容加载失败，请刷新页面或直接联系：<a href="mailto:hezigang@najieip.com">hezigang@najieip.com</a> / 010-65150974</div>';
+    console.error('services-data.json 加载失败:', e);
+  }
+})();
 </script>
 </body>
 </html>

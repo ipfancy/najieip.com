@@ -132,69 +132,10 @@ footer a { color: var(--accent-light); text-decoration: none; }
     <strong>Honest note:</strong> We do not promise "guaranteed grant." Grant decisions are made by examiners under statutory standards. Firms that guarantee grants usually do so by drastically narrowing the scope of protection — a granted patent that doesn't protect your technology is worthless. Our approach: <strong>free prior-art search and patentability assessment first</strong>, and we will tell you honestly your chances and whether the application is worth filing, before you decide to instruct us.
   </div>
 
-  <h2 id="services">2. What We Do — 6 Stages, 24 Items</h2>
+    <h2 id="services">2. What We Do — 6 Stages, 24 Items</h2>
+  <div id="serviceGroups"><!-- rendered from services-data.json --></div>
 
-  <div class="service-group">
-    <div class="group-title"><span class="tag">1</span>Pre-Filing Evaluation</div>
-    <div class="service-list">
-      <div class="item">Technical disclosure guidance (template provided)</div>
-      <div class="item">Prior-art search · novelty/inventiveness assessment</div>
-      <div class="item">Filing strategy advice (whether/when to file)</div>
-      <div class="item">Accelerated examination &amp; PCT route planning</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">2</span>Application Drafting</div>
-    <div class="service-list">
-      <div class="item">Claims drafting (independent claims define scope, dependent claims build defenses)</div>
-      <div class="item">Specification drafting (clear &amp; complete, supporting the claims)</div>
-      <div class="item">Drawing preparation</div>
-      <div class="item">Abstract drafting</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">3</span>Filing &amp; Docketing</div>
-    <div class="service-list">
-      <div class="item">E-filing via the CNIPA filing system</div>
-      <div class="item">Request and related documents</div>
-      <div class="item">Official fee payment · fee reduction (up to 85%)</div>
-      <div class="item">Full docketing (filing/publication/exam/grant milestones)</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">4</span>Substantive Examination Response</div>
-    <div class="service-list">
-      <div class="item">Office action analysis, point by point</div>
-      <div class="item">Response strategy (argue or amend)</div>
-      <div class="item">Office action response drafting</div>
-      <div class="item">Examiner interviews when necessary</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">5</span>Post-Grant Service</div>
-    <div class="service-list">
-      <div class="item">Grant formalities · certificate collection</div>
-      <div class="item">Automated annuity management (daily CNIPA cross-check)</div>
-      <div class="item">7-day / 30-day tiered alerts — no "silent death" of patents</div>
-      <div class="item">Maintenance &amp; portfolio advice</div>
-    </div>
-  </div>
-
-  <div class="service-group">
-    <div class="group-title"><span class="tag">6</span>Value-Added Services</div>
-    <div class="service-list">
-      <div class="item">Accelerated examination (priority review) filing</div>
-      <div class="item">PCT international route (global filing)</div>
-      <div class="item">Patent portfolio strategy</div>
-      <div class="item">High-tech enterprise certification support</div>
-    </div>
-  </div>
-
-  <h2>Why Choose Us</h2>
+<h2>Why Choose Us</h2>
   <div class="feature-grid">
     <div class="feature"><span class="icon"><i data-lucide="check-circle"></i></span>First draft within 5 working days of disclosure</div>
     <div class="feature"><span class="icon"><i data-lucide="check-circle"></i></span>Senior attorneys — not novice training cases</div>
@@ -225,6 +166,28 @@ lucide.createIcons();
 window.addEventListener('scroll', () => {
   document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 80);
 });
+// Service content rendered from services-data.json (data-driven — add services by editing JSON only)
+(async () => {
+  const container = document.getElementById('serviceGroups');
+  try {
+    const resp = await fetch('/services-data.json');
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data = await resp.json();
+    const en = data.en;
+    const html = en.sections.map(g => `
+      <div class="service-group">
+        <div class="group-title"><span class="tag">${g.tag}</span>${g.title}</div>
+        <div class="service-list">
+          ${g.items.map(i => `<div class="item">${i}</div>`).join('')}
+        </div>
+      </div>
+    `).join('');
+    container.innerHTML = html;
+  } catch (e) {
+    container.innerHTML = '<div class="note">Failed to load service details. Please refresh or contact: <a href="mailto:hezigang@najieip.com">hezigang@najieip.com</a> / +86-10-65150974</div>';
+    console.error('services-data.json load failed:', e);
+  }
+})();
 </script>
 </body>
 </html>
