@@ -244,6 +244,12 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://najieip.com/fr/aipunajie/"/>
   </url>
   <url>
+    <loc>https://najieip.com/en/aipunajie/services.html</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://najieip.com/en/blog/5-free-patent-search-tools.html</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -298,6 +304,12 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://najieip.com/fr/aipunajie/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://najieip.com/aipunajie/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://najieip.com/en/aipunajie/"/>
+  </url>
+  <url>
+    <loc>https://najieip.com/fr/aipunajie/services.html</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://najieip.com/fr/blog/5-free-patent-search-tools.html</loc>
