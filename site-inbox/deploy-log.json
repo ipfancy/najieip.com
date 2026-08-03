@@ -1,28 +1,25 @@
 {
-  "timestamp": "2026-07-25T22:00:00+08:00",
-  "commit": "7676472",
-  "action": "daily-sync-20260725",
-  "description": "SiteOps每日运营 — site-inbox清空 + 3篇新文章同步 + 品牌博客更新",
+  "timestamp": "2026-08-03T22:15:00+08:00",
+  "commit": "e35f24b",
+  "action": "daily-sync-20260803",
+  "description": "SiteOps每日运营 — 同步觅理昌平分所成立公告（mili+主博客双挂）+ sitemap收录 + 修复nav死链 + 补OG/JSON-LD",
   "articles_synced": [
-    {"slug": "xiecheng-antitrust", "title": "携程被罚51.79亿！反垄断重拳再出击", "brand": "mili", "type": "反垄断"},
-    {"slug": "gzh-design-skill", "title": "3周2400星！公众号排版Skill爆了", "brand": "najie", "type": "AI工具"},
-    {"slug": "wipo-ai-ip-dialogue", "title": "WIPO知识产权与前沿技术对话会", "brand": "main", "type": "国际IP"}
+    {"slug": "mili-changping-branch-20260731", "title": "觅理律所昌平分所正式成立！", "brand": "mili+main", "type": "律所动态", "article_id": "ART-2026-0032"}
   ],
   "site_inbox": {
-    "processed": 2,
+    "processed": 1,
     "remaining": 0,
-    "files": ["gzh-design-skill-20260725.html", "xiecheng-antitrust-20260725.html"]
+    "files": ["mili-changping-branch-20260731.html → archive/"]
   },
-  "blog_indexes_updated": ["blog/index.html", "mili/blog/index.html", "najie/blog/index.html"],
-  "mili_area_update": "垄断与反垄断: 扩充中 → ✓ 有内容",
+  "blog_indexes_updated": ["blog/index.html", "mili/blog/index.html"],
+  "sitemap_updated": ["/mili/blog/mili-changping-branch-20260731.html", "/blog/mili-changping-branch-20260731.html"],
+  "fixes": ["nav死链修复: /mili-law-firm.html(404) → /mili/", "文章补 OG/Twitter/JSON-LD/canonical (主博客副本 canonical 指向 mili 原版防重复内容)"],
   "verification": {
-    "xiecheng_antitrust": "200 OK",
-    "gzh_design_skill": "200 OK",
-    "wipo_ai_ip": "200 OK",
-    "blog_index": "200 OK",
-    "mili_blog": "200 OK",
-    "najie_blog": "200 OK",
-    "all_core_pages": "6/6 200 OK"
-  },
-  "seo_notes": "sitemap.xml lastmod 2026-07-24 (滞后1天), 首页缺少JSON-LD (已知)"
+    "mili_article": "200 OK",
+    "main_blog_article": "200 OK",
+    "sitemap_contains_new_url": "2/2 OK",
+    "mili_index_card": "OK",
+    "main_blog_index_card": "OK",
+    "core_pages": "6/6 200 OK"
+  }
 }
