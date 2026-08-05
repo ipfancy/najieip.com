@@ -344,4 +344,35 @@
     <priority>0.5</priority>
   </url>
   
+
+  <url>
+    <loc>https://najieip.com/blog/shierwu-ipr-checklist-2026.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://najieip.com/blog/shierwu-ip-exports-455yi-2026.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://najieip.com/blog/xishuo-xiuxian-003.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://najieip.com/najie/blog/shierwu-ipr-checklist-2026.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://najieip.com/najie/blog/shierwu-ip-exports-455yi-2026.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
