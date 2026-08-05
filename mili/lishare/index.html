@@ -136,17 +136,23 @@ footer{text-align:center;padding:32px 0;color:#8892a4;font-size:12px}
   </div>
 </section>
 
-<footer>北京觅理律师事务所 · 理享会 · <span id="busuanzi_container_page_pv">👁 <span id="count_display">1,000</span> 次浏览</span></footer>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<footer>北京觅理律师事务所 · 理享会 · 👁 <span id="visit_count">1,000</span> 次浏览</footer>
 <script>
-setTimeout(function(){
-  var bz = document.getElementById('busuanzi_value_page_pv');
-  var display = document.getElementById('count_display');
-  if(bz && bz.textContent && parseInt(bz.textContent) > 0){
-    var total = 1000 + parseInt(bz.textContent);
-    display.textContent = total.toLocaleString();
+(function(){
+  var base = 1000;
+  var key = 'mili_lishare_visit';
+  var c = document.getElementById('visit_count');
+  var stored = localStorage.getItem(key);
+  if(!stored){
+    var count = base + 1;
+    localStorage.setItem(key, count);
+    c.textContent = count.toLocaleString();
+  } else {
+    var n = parseInt(stored);
+    if(n < base) n = base + 1;
+    c.textContent = n.toLocaleString();
   }
-}, 2000);
+})();
 </script>
 
 </body>
