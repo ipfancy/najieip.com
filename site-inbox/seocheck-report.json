@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-05T22:20:09",
+  "checked_at": "2026-08-05T22:21:39",
   "pages": [
     {
       "url": "https://najieip.com/",
@@ -64,11 +64,11 @@
     "url_count": 56,
     "with_lastmod": 56,
     "without_lastmod": 0,
-    "sitemap_last_modified": "Wed, 05 Aug 2026 14:18:48 GMT",
+    "sitemap_last_modified": "Wed, 05 Aug 2026 14:20:53 GMT",
     "blog_count": 40
   },
   "jsonld": {
-    "https://najieip.com/": false,
+    "https://najieip.com/": true,
     "https://najieip.com/blog/": true,
     "https://najieip.com/mili/": true,
     "https://najieip.com/najie/": true,
