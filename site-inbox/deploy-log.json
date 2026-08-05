@@ -1,25 +1,26 @@
 {
-  "timestamp": "2026-08-03T22:15:00+08:00",
-  "commit": "e35f24b",
-  "action": "daily-sync-20260803",
-  "description": "SiteOps每日运营 — 同步觅理昌平分所成立公告（mili+主博客双挂）+ sitemap收录 + 修复nav死链 + 补OG/JSON-LD",
+  "timestamp": "2026-08-05T22:15:00+08:00",
+  "commit": "a4b96af",
+  "action": "daily-sync-20260805",
+  "description": "SiteOps每日运营 — 发布3篇新文章（主博客）+ 2篇同步纳杰品牌博客 + sitemap收录 + OG/JSON-LD/canonical补充",
   "articles_synced": [
-    {"slug": "mili-changping-branch-20260731", "title": "觅理律所昌平分所正式成立！", "brand": "mili+main", "type": "律所动态", "article_id": "ART-2026-0032"}
+    {"slug": "shierwu-ipr-checklist-2026", "title": "9条行动清单：十五五规划发布，企业IP部门未来五年的预算和编制都在这里", "brand": "main+najie", "type": "政策解读", "article_id": "ART-2026-0033"},
+    {"slug": "shierwu-ip-exports-455yi-2026", "title": "455亿！知识产权出口暴增65%，十五五规划要你从拿证转向赚钱", "brand": "main+najie", "type": "政策解读", "article_id": "ART-2026-0034"},
+    {"slug": "xishuo-xiuxian-003", "title": "IP修仙录·第三回 天道驳文如惊雷", "brand": "main", "type": "专利实务", "article_id": "ART-2026-0035"}
   ],
   "site_inbox": {
-    "processed": 1,
+    "processed": 3,
     "remaining": 0,
-    "files": ["mili-changping-branch-20260731.html → archive/"]
+    "files": ["20260803-xishuo-xiuxian-003.html → archive/", "20260804-fifteen-five-ip-plan.html → archive/", "20260805-fifteen-five-ipr-checklist.html → archive/"]
   },
-  "blog_indexes_updated": ["blog/index.html", "mili/blog/index.html"],
-  "sitemap_updated": ["/mili/blog/mili-changping-branch-20260731.html", "/blog/mili-changping-branch-20260731.html"],
-  "fixes": ["nav死链修复: /mili-law-firm.html(404) → /mili/", "文章补 OG/Twitter/JSON-LD/canonical (主博客副本 canonical 指向 mili 原版防重复内容)"],
+  "blog_indexes_updated": ["blog/index.html", "najie/blog/index.html"],
+  "sitemap_updated": ["/blog/shierwu-ipr-checklist-2026.html", "/blog/shierwu-ip-exports-455yi-2026.html", "/blog/xishuo-xiuxian-003.html", "/najie/blog/shierwu-ipr-checklist-2026.html", "/najie/blog/shierwu-ip-exports-455yi-2026.html"],
+  "fixes": ["3篇新文章补 OG/Twitter/JSON-LD/canonical (主博客版本)", "纳杰品牌博客副本保持原样(与现有副本模式一致)"],
   "verification": {
-    "mili_article": "200 OK",
-    "main_blog_article": "200 OK",
-    "sitemap_contains_new_url": "2/2 OK",
-    "mili_index_card": "OK",
-    "main_blog_index_card": "OK",
+    "main_articles": "3/3 200 OK",
+    "najie_articles": "2/2 200 OK",
+    "blog_indexes": "2/2 200 OK",
+    "sitemap": "200 OK + XML合法",
     "core_pages": "6/6 200 OK"
   }
 }
