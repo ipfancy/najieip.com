@@ -140,17 +140,19 @@ footer{text-align:center;padding:32px 0;color:#8892a4;font-size:12px}
 <script>
 (function(){
   var base = 1000;
-  var key = 'mili_lishare_visit';
+  var key = 'mili_lishare_total';
+  var sess = 'mili_lishare_seen';
   var c = document.getElementById('visit_count');
-  var stored = localStorage.getItem(key);
-  if(!stored){
-    var count = base + 1;
-    localStorage.setItem(key, count);
-    c.textContent = count.toLocaleString();
+  
+  // 每次新会话+1（同一会话内刷新不重复计数）
+  if(!sessionStorage.getItem(sess)){
+    var total = parseInt(localStorage.getItem(key) || base);
+    total += 1;
+    localStorage.setItem(key, total);
+    sessionStorage.setItem(sess, '1');
+    c.textContent = total.toLocaleString();
   } else {
-    var n = parseInt(stored);
-    if(n < base) n = base + 1;
-    c.textContent = n.toLocaleString();
+    c.textContent = (parseInt(localStorage.getItem(key)) || base).toLocaleString();
   }
 })();
 </script>
