@@ -19,10 +19,12 @@
     "sitemap：/blog/ 与 /mili/blog/ lastmod 更新至2026-08-06"
   ],
   "verification": {
-    "main_article": "PENDING",
-    "mili_article": "PENDING",
-    "blog_indexes": "2/2 200 OK (预检)",
-    "sitemap": "XML合法",
-    "core_pages": "6/6 200 OK"
+    "main_article": "200 OK (blog/zte-samsung-sep-valuation.html, 精修版, SEO head 8标签)",
+    "mili_article": "200 OK (mili/blog/zte-samsung-sep-valuation.html, 精修版, SEO head 8标签, markdown残留0)",
+    "redirect_page": "200 OK (articles/2026-08-06-中兴三星SEP中英法院估值差.html → mili)",
+    "blog_indexes": "2/2 200 OK (blog/index.html + mili/blog/index.html 均含新卡片)",
+    "sitemap": "200 OK + XML合法",
+    "core_pages": "6/6 200 OK",
+    "note": "Pages首次构建deploy job超时失败(14:19-14:28Z, GitHub端deployment_in_progress挂起) → rerun-failed-jobs成功(attempt 2, 14:30Z后)"
   }
 }
