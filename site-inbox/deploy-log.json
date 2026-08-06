@@ -4,7 +4,7 @@
   "action": "daily-sync-20260806",
   "description": "SiteOps每日运营 — 同步ART-2026-0036（中兴三星SEP中英法院估值差）到主博客+觅理品牌博客 + 索引/sitemap/articles.json更新",
   "articles_synced": [
-    {"slug": "zhongxing-samsung-sep-2026", "title": "3.92 vs 7.31亿美元：同一场官司，中英法院判出两倍差价", "brand": "main+mili", "type": "涉外诉讼/SEP", "article_id": "ART-2026-0036"}
+    {"slug": "zte-samsung-sep-valuation", "title": "3.92 vs 7.31亿美元：同一场官司，中英法院判出两倍差价", "brand": "main+mili", "type": "涉外诉讼/SEP", "article_id": "ART-2026-0036"}
   ],
   "site_inbox": {
     "processed": 0,
@@ -12,7 +12,7 @@
     "note": "ART-2026-0036 初稿HTML已由05:07任务落入 articles/，本次接管精修并正式上线"
   },
   "blog_indexes_updated": ["blog/index.html", "mili/blog/index.html"],
-  "sitemap_updated": ["/blog/zhongxing-samsung-sep-2026.html", "/mili/blog/zhongxing-samsung-sep-2026.html"],
+  "sitemap_updated": ["/blog/zte-samsung-sep-valuation.html", "/mili/blog/zte-samsung-sep-valuation.html"],
   "fixes": [
     "初稿修复：markdown加粗标记→strong、markdown表格→HTML表格、补全OG/Twitter/JSON-LD/canonical/description/keywords",
     "articles.json：SEP文章条目从 /articles/ 原始版改指向 /mili/blog/ 精修版，site标签 najie→mili（觅理=涉外诉讼品牌归属）",
