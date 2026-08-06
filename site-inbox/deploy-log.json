@@ -1,26 +1,28 @@
 {
-  "timestamp": "2026-08-05T22:15:00+08:00",
-  "commit": "a4b96af",
-  "action": "daily-sync-20260805",
-  "description": "SiteOps每日运营 — 发布3篇新文章（主博客）+ 2篇同步纳杰品牌博客 + sitemap收录 + OG/JSON-LD/canonical补充",
+  "timestamp": "2026-08-06T22:00:00+08:00",
+  "commit": "PENDING",
+  "action": "daily-sync-20260806",
+  "description": "SiteOps每日运营 — 同步ART-2026-0036（中兴三星SEP中英法院估值差）到主博客+觅理品牌博客 + 索引/sitemap/articles.json更新",
   "articles_synced": [
-    {"slug": "shierwu-ipr-checklist-2026", "title": "9条行动清单：十五五规划发布，企业IP部门未来五年的预算和编制都在这里", "brand": "main+najie", "type": "政策解读", "article_id": "ART-2026-0033"},
-    {"slug": "shierwu-ip-exports-455yi-2026", "title": "455亿！知识产权出口暴增65%，十五五规划要你从拿证转向赚钱", "brand": "main+najie", "type": "政策解读", "article_id": "ART-2026-0034"},
-    {"slug": "xishuo-xiuxian-003", "title": "IP修仙录·第三回 天道驳文如惊雷", "brand": "main", "type": "专利实务", "article_id": "ART-2026-0035"}
+    {"slug": "zhongxing-samsung-sep-2026", "title": "3.92 vs 7.31亿美元：同一场官司，中英法院判出两倍差价", "brand": "main+mili", "type": "涉外诉讼/SEP", "article_id": "ART-2026-0036"}
   ],
   "site_inbox": {
-    "processed": 3,
+    "processed": 0,
     "remaining": 0,
-    "files": ["20260803-xishuo-xiuxian-003.html → archive/", "20260804-fifteen-five-ip-plan.html → archive/", "20260805-fifteen-five-ipr-checklist.html → archive/"]
+    "note": "ART-2026-0036 初稿HTML已由05:07任务落入 articles/，本次接管精修并正式上线"
   },
-  "blog_indexes_updated": ["blog/index.html", "najie/blog/index.html"],
-  "sitemap_updated": ["/blog/shierwu-ipr-checklist-2026.html", "/blog/shierwu-ip-exports-455yi-2026.html", "/blog/xishuo-xiuxian-003.html", "/najie/blog/shierwu-ipr-checklist-2026.html", "/najie/blog/shierwu-ip-exports-455yi-2026.html"],
-  "fixes": ["3篇新文章补 OG/Twitter/JSON-LD/canonical (主博客版本)", "纳杰品牌博客副本保持原样(与现有副本模式一致)"],
+  "blog_indexes_updated": ["blog/index.html", "mili/blog/index.html"],
+  "sitemap_updated": ["/blog/zhongxing-samsung-sep-2026.html", "/mili/blog/zhongxing-samsung-sep-2026.html"],
+  "fixes": [
+    "初稿修复：markdown加粗标记→strong、markdown表格→HTML表格、补全OG/Twitter/JSON-LD/canonical/description/keywords",
+    "articles.json：SEP文章条目从 /articles/ 原始版改指向 /mili/blog/ 精修版，site标签 najie→mili（觅理=涉外诉讼品牌归属）",
+    "sitemap：/blog/ 与 /mili/blog/ lastmod 更新至2026-08-06"
+  ],
   "verification": {
-    "main_articles": "3/3 200 OK",
-    "najie_articles": "2/2 200 OK",
-    "blog_indexes": "2/2 200 OK",
-    "sitemap": "200 OK + XML合法",
+    "main_article": "PENDING",
+    "mili_article": "PENDING",
+    "blog_indexes": "2/2 200 OK (预检)",
+    "sitemap": "XML合法",
     "core_pages": "6/6 200 OK"
   }
 }
