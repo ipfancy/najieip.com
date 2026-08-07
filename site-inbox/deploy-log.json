@@ -1,30 +1,30 @@
 {
-  "timestamp": "2026-08-06T22:00:00+08:00",
-  "commit": "PENDING",
-  "action": "daily-sync-20260806",
-  "description": "SiteOps每日运营 — 同步ART-2026-0036（中兴三星SEP中英法院估值差）到主博客+觅理品牌博客 + 索引/sitemap/articles.json更新",
-  "articles_synced": [
-    {"slug": "zte-samsung-sep-valuation", "title": "3.92 vs 7.31亿美元：同一场官司，中英法院判出两倍差价", "brand": "main+mili", "type": "涉外诉讼/SEP", "article_id": "ART-2026-0036"}
-  ],
-  "site_inbox": {
-    "processed": 0,
-    "remaining": 0,
-    "note": "ART-2026-0036 初稿HTML已由05:07任务落入 articles/，本次接管精修并正式上线"
+  "timestamp": "2026-08-08T02:30:00+08:00",
+  "commit": "19e9e8e",
+  "action": "weekly-geo-multilingual-20260808",
+  "description": "SiteOps每周任务 — GEO追踪(3篇×3查询×秘塔) + 多语言同步(ART-2026-0036 EN/FR)",
+  "geo_checks": {
+    "articles_checked": ["ART-2026-0036", "ART-2026-0034", "ART-2026-0022"],
+    "platforms": {
+      "metaso": "9/9 查询成功 (每篇3查询)",
+      "kimi": "blocked_login — 需微信/手机号登录",
+      "deepseek": "blocked_login — 需手机号登录",
+      "doubao": "blocked_login — 需登录才能生成回复"
+    },
+    "result": "9条记录全部 found=0 / citation_level=none，najieip.com与品牌均未被引用",
+    "notes": "共享浏览器(localhost:9222)被其他Agent占用导航失败 → 改用独立Playwright headless Chrome完成搜索"
   },
-  "blog_indexes_updated": ["blog/index.html", "mili/blog/index.html"],
-  "sitemap_updated": ["/blog/zte-samsung-sep-valuation.html", "/mili/blog/zte-samsung-sep-valuation.html"],
-  "fixes": [
-    "初稿修复：markdown加粗标记→strong、markdown表格→HTML表格、补全OG/Twitter/JSON-LD/canonical/description/keywords",
-    "articles.json：SEP文章条目从 /articles/ 原始版改指向 /mili/blog/ 精修版，site标签 najie→mili（觅理=涉外诉讼品牌归属）",
-    "sitemap：/blog/ 与 /mili/blog/ lastmod 更新至2026-08-06"
-  ],
-  "verification": {
-    "main_article": "200 OK (blog/zte-samsung-sep-valuation.html, 精修版, SEO head 8标签)",
-    "mili_article": "200 OK (mili/blog/zte-samsung-sep-valuation.html, 精修版, SEO head 8标签, markdown残留0)",
-    "redirect_page": "200 OK (articles/2026-08-06-中兴三星SEP中英法院估值差.html → mili)",
-    "blog_indexes": "2/2 200 OK (blog/index.html + mili/blog/index.html 均含新卡片)",
-    "sitemap": "200 OK + XML合法",
-    "core_pages": "6/6 200 OK",
-    "note": "Pages首次构建deploy job超时失败(14:19-14:28Z, GitHub端deployment_in_progress挂起) → rerun-failed-jobs成功(attempt 2, 14:30Z后)"
+  "multilingual_sync": {
+    "article": "ART-2026-0036 (ZTE-Samsung SEP 中英法院估值差)",
+    "selection_reason": "全部citation_rate=0无EN版 → 按skill首次运行指引选最国际化的法律文章(涉外SEP诉讼)",
+    "files": [
+      {"file": "en/blog/zte-samsung-sep-valuation-en.html", "status": "200 OK, 12 SEO标签, markdown残留0"},
+      {"file": "fr/blog/zte-samsung-sep-valuation-fr.html", "status": "200 OK, 12 SEO标签, markdown残留0"},
+      {"file": "blog/zte-samsung-sep-valuation.html", "status": "已加语言切换栏 中文/EN/FR"}
+    ],
+    "indexes_updated": ["en/blog/index.html", "fr/blog/index.html"],
+    "sitemap_updated": ["/en/blog/zte-samsung-sep-valuation-en.html", "/fr/blog/zte-samsung-sep-valuation-fr.html"],
+    "sitemap_urls": 61,
+    "verification": "EN/FR文章+索引全部 200 OK，内容grep确认新版本已上线"
   }
 }
