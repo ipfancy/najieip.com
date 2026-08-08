@@ -1,33 +1,42 @@
 {
-  "timestamp": "2026-08-08T03:10:00+08:00",
-  "commit": "b2aacb5",
-  "action": "deploy-20260807-overseas-series",
-  "description": "SiteOps部署 — Outreach待确认项3: 2篇2026-08-07出海系列文章上线najie博客",
-  "source_files": [
-    "~/wiki/digital-employees/articles/20260807-overseas-ip-selfcheck_cms.html",
-    "~/wiki/digital-employees/articles/20260807-overseas-trademark-madrid_cms.html"
-  ],
+  "timestamp": "2026-08-08T22:10:00+08:00",
+  "commit": "7ee4d93",
+  "action": "deploy-avanci-0037-and-najie-0808",
+  "description": "SiteOps每日运营 — 部署ART-2026-0037(Avanci 5G SEP) + 补录2篇08-08 najie文章",
   "deployments": [
     {
-      "file": "najie/blog/overseas-trademark-madrid-2026.html",
-      "url": "https://najieip.com/najie/blog/overseas-trademark-madrid-2026.html",
-      "status": "200 OK, 标题/h1/正文13关键词命中, markdown残留0"
+      "file": "blog/20260807-avanci-uk-chinese-automakers-sep.html",
+      "url": "https://najieip.com/blog/20260807-avanci-uk-chinese-automakers-sep.html",
+      "status": "200 OK, og/ld+json 4处, markdown残留0"
     },
     {
-      "file": "najie/blog/overseas-ip-selfcheck-2026.html",
-      "url": "https://najieip.com/najie/blog/overseas-ip-selfcheck-2026.html",
-      "status": "200 OK (已有页面, 本次补录索引+sitemap)"
+      "file": "mili/blog/20260807-avanci-uk-chinese-automakers-sep.html",
+      "url": "https://najieip.com/mili/blog/20260807-avanci-uk-chinese-automakers-sep.html",
+      "status": "200 OK, og/ld+json 4处, markdown残留0, canonical指向mili路径"
+    },
+    {
+      "file": "najie/blog/trademark-law-countdown-20260808.html",
+      "url": "https://najieip.com/najie/blog/trademark-law-countdown-20260808.html",
+      "status": "200 OK, og/ld+json 4处, markdown残留0"
+    },
+    {
+      "file": "najie/blog/20260804-ic-layout-design-regulations.html",
+      "url": "https://najieip.com/najie/blog/20260804-ic-layout-design-regulations.html",
+      "status": "200 OK, og/ld+json 4处, markdown残留0"
     }
   ],
   "fixes": [
-    "articles/20260807-overseas-ip-selfcheck.html: 清理markdown残留 ** (12处→0)",
-    "articles/20260807-overseas-trademark-madrid.html: 清理markdown残留 ** (16处→0)"
+    "articles/20260807-avanci-uk-chinese-automakers-sep.html: 清理markdown残留 ** (18处→0) + 补SEO头(og/canonical/JSON-LD/Breadcrumb)",
+    "articles/trademark-law-countdown-20260808.html: 清理markdown残留 ** (18处→0) + 补SEO头",
+    "articles/20260804-ic-layout-design-regulations.html: 清理markdown残留 ** (9处→0) + 补SEO头"
   ],
   "indexes_synced": {
-    "najie/blog/index.html": "顶部新增2篇卡片 (2026-08-07 · 纳杰知识产权推荐)",
-    "sitemap.xml": "+2 URL (overseas-ip-selfcheck-2026, overseas-trademark-madrid-2026), 共63条",
-    "articles.json": "2条URL从 /articles/ 修正为 /najie/blog/ 正式路径"
+    "blog/index.html": "顶部新增1篇卡片 (2026-08-07 Avanci 5G)",
+    "mili/blog/index.html": "顶部新增1篇卡片 (2026-08-07 Avanci 5G)",
+    "najie/blog/index.html": "顶部新增2篇卡片 (2026-08-08 商标法/芯片IP)",
+    "sitemap.xml": "+5 URL (avanci主博客/avanci mili/商标法/芯片IP + 修正), 共67条",
+    "articles.json": "3条URL从 /articles/ 修正为正式路径 (/mili/blog/, /najie/blog/)"
   },
-  "verification": "8个URL全部 200 OK; 新页面标题/正文/索引卡片/sitemap条目/articles.json路径 逐项grep确认",
-  "notes": "发现21:29/21:33两次commit只放了articles/归档未完成blog部署 — 本次补齐blog页+索引+sitemap。mili博客空窗教训的同类场景。"
+  "verification": "6个核心页面全部200; 4篇新文章URL全部200; 各页og/ld+json=4处, markdown残留=0; najie-seocheck全通过(67 URLs, JSON-LD全存在)",
+  "notes": "发现03:10部署仅覆盖overseas系列 — avanci(0037)与08-08两篇najie文章仍停留在articles/旧路径未部署。本次一并补齐。品牌归属: 0037为SEP诉讼/国际法→主博客+mili; 商标法/芯片IP→najie。"
 }
