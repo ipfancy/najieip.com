@@ -1,85 +1,32 @@
 {
-  "timestamp": "2026-08-08T22:10:00+08:00",
-  "commit": "7ee4d93",
-  "action": "deploy-avanci-0037-and-najie-0808",
-  "description": "SiteOps每日运营 — 部署ART-2026-0037(Avanci 5G SEP) + 补录2篇08-08 najie文章",
+  "timestamp": "2026-08-10T22:00:00+08:00",
+  "commit": "cd8e269",
+  "action": "deploy-trademark-compliance-0043",
+  "description": "SiteOps每日运营 — 部署ART-2026-0043(商标法第56条自查清单) 主博客+najie品牌博客",
   "deployments": [
     {
-      "file": "blog/20260807-avanci-uk-chinese-automakers-sep.html",
-      "url": "https://najieip.com/blog/20260807-avanci-uk-chinese-automakers-sep.html",
-      "status": "200 OK, og/ld+json 4处, markdown残留0"
+      "file": "blog/trademark-compliance-selfcheck-20260810.html",
+      "url": "https://najieip.com/blog/trademark-compliance-selfcheck-20260810.html",
+      "status": 200,
+      "note": "清理markdown残留(**) + 补SEO头(og/canonical/JSON-LD/Breadcrumb) + 表格转HTML table"
     },
     {
-      "file": "mili/blog/20260807-avanci-uk-chinese-automakers-sep.html",
-      "url": "https://najieip.com/mili/blog/20260807-avanci-uk-chinese-automakers-sep.html",
-      "status": "200 OK, og/ld+json 4处, markdown残留0, canonical指向mili路径"
-    },
-    {
-      "file": "najie/blog/trademark-law-countdown-20260808.html",
-      "url": "https://najieip.com/najie/blog/trademark-law-countdown-20260808.html",
-      "status": "200 OK, og/ld+json 4处, markdown残留0"
-    },
-    {
-      "file": "najie/blog/20260804-ic-layout-design-regulations.html",
-      "url": "https://najieip.com/najie/blog/20260804-ic-layout-design-regulations.html",
-      "status": "200 OK, og/ld+json 4处, markdown残留0"
-    },
-    {
-      "time": "2026-08-09 22:20",
-      "deployed": [
-        {
-          "file": "blog/20260809-ai-vs-employee.html",
-          "url": "https://najieip.com/blog/20260809-ai-vs-employee.html",
-          "status": "200 OK, og/ld+json 5处, markdown残留0",
-          "article": "ART-2026-0041"
-        },
-        {
-          "file": "najie/blog/20260809-ai-vs-employee.html",
-          "url": "https://najieip.com/najie/blog/20260809-ai-vs-employee.html",
-          "status": "200 OK, og/ld+json 5处, markdown残留0",
-          "article": "ART-2026-0041"
-        },
-        {
-          "file": "blog/ai-agent-liability-chain-20260809.html",
-          "url": "https://najieip.com/blog/ai-agent-liability-chain-20260809.html",
-          "status": "200 OK, og/ld+json 5处, markdown残留0",
-          "article": "ART-2026-0042"
-        },
-        {
-          "file": "mili/blog/ai-agent-liability-chain-20260809.html",
-          "url": "https://najieip.com/mili/blog/ai-agent-liability-chain-20260809.html",
-          "status": "200 OK, og/ld+json 5处, markdown残留0, 表格1个",
-          "article": "ART-2026-0042"
-        }
-      ],
-      "fixes": [
-        "articles/20260809-ai-vs-employee-综合对比.html: 清理markdown残留 ** (77处→0) + 补SEO头(og/canonical/JSON-LD/Breadcrumb) + blockquote转义",
-        "site-inbox/ai-agent-liability-chain-20260809.html: 清理markdown残留(10处→0) + 补SEO头 + markdown表格转HTML table",
-        "content.db: 新增 ART-2026-0042 (责任链文章入库)"
-      ],
-      "indexes_synced": {
-        "blog/index.html": "顶部新增2篇卡片 (2026-08-09 AI员工成本 + AI责任链)",
-        "najie/blog/index.html": "顶部新增1篇卡片 (2026-08-09 AI员工成本)",
-        "mili/blog/index.html": "顶部新增1篇卡片 (2026-08-09 AI责任链)",
-        "sitemap.xml": "+4 URL, 共71条",
-        "articles.json": "2条URL从 /articles/ 修正为正式路径"
-      },
-      "verification": "8个URL全部200; og/ld+json=5处, markdown残留=0; 三个博客索引均含新卡片",
-      "notes": "ART-2026-0041(微信2650829990)此前仅在旧路径articles/在线，本次补齐正式路径; ART-2026-0042为site-inbox新产出首次部署。品牌归属: AI员工成本→主博客+najie; AI责任链(法律)→主博客+mili。"
+      "file": "najie/blog/trademark-compliance-selfcheck-20260810.html",
+      "url": "https://najieip.com/najie/blog/trademark-compliance-selfcheck-20260810.html",
+      "status": 200,
+      "note": "品牌归属: 商标法/合规→纳杰(参照8/8先例)"
     }
   ],
   "fixes": [
-    "articles/20260807-avanci-uk-chinese-automakers-sep.html: 清理markdown残留 ** (18处→0) + 补SEO头(og/canonical/JSON-LD/Breadcrumb)",
-    "articles/trademark-law-countdown-20260808.html: 清理markdown残留 ** (18处→0) + 补SEO头",
-    "articles/20260804-ic-layout-design-regulations.html: 清理markdown残留 ** (9处→0) + 补SEO头"
+    "articles.json: /articles/trademark-compliance-selfcheck 旧路径修正为正式路径 + 去重1条重复",
+    "content.db: 新增ART-2026-0043 + GEO追踪占位记录"
   ],
   "indexes_synced": {
-    "blog/index.html": "顶部新增1篇卡片 (2026-08-07 Avanci 5G)",
-    "mili/blog/index.html": "顶部新增1篇卡片 (2026-08-07 Avanci 5G)",
-    "najie/blog/index.html": "顶部新增2篇卡片 (2026-08-08 商标法/芯片IP)",
-    "sitemap.xml": "+5 URL (avanci主博客/avanci mili/商标法/芯片IP + 修正), 共67条",
-    "articles.json": "3条URL从 /articles/ 修正为正式路径 (/mili/blog/, /najie/blog/)"
+    "blog/index.html": "顶部新增1篇卡片 (2026-08-10 商标法56条)",
+    "najie/blog/index.html": "顶部新增1篇卡片 (2026-08-10 商标法56条)",
+    "sitemap.xml": "+2 URL, 共73条",
+    "articles.json": "2条URL从 /articles/ 修正为正式路径 + 去重"
   },
-  "verification": "6个核心页面全部200; 4篇新文章URL全部200; 各页og/ld+json=4处, markdown残留=0; najie-seocheck全通过(67 URLs, JSON-LD全存在)",
-  "notes": "发现03:10部署仅覆盖overseas系列 — avanci(0037)与08-08两篇najie文章仍停留在articles/旧路径未部署。本次一并补齐。品牌归属: 0037为SEP诉讼/国际法→主博客+mili; 商标法/芯片IP→najie。"
+  "verification": "5个URL全部200; og/ld=4处, markdown残留=0; 两索引均含新卡片; najie-seocheck全通过(73 URLs, JSON-LD全存在)",
+  "notes": "发现上游08-10 05:03 commit a752777 仅把文章放到废弃旧路径articles/，本次补齐正式路径。git rebase合入远端并发(mili遗嘱白皮书卡片)无冲突。"
 }
