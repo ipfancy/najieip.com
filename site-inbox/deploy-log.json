@@ -1,32 +1,30 @@
 {
-  "timestamp": "2026-08-10T22:00:00+08:00",
-  "commit": "cd8e269",
-  "action": "deploy-trademark-compliance-0043",
-  "description": "SiteOps每日运营 — 部署ART-2026-0043(商标法第56条自查清单) 主博客+najie品牌博客",
-  "deployments": [
+  "deploys": [
     {
-      "file": "blog/trademark-compliance-selfcheck-20260810.html",
-      "url": "https://najieip.com/blog/trademark-compliance-selfcheck-20260810.html",
-      "status": 200,
-      "note": "清理markdown残留(**) + 补SEO头(og/canonical/JSON-LD/Breadcrumb) + 表格转HTML table"
-    },
-    {
-      "file": "najie/blog/trademark-compliance-selfcheck-20260810.html",
-      "url": "https://najieip.com/najie/blog/trademark-compliance-selfcheck-20260810.html",
-      "status": 200,
-      "note": "品牌归属: 商标法/合规→纳杰(参照8/8先例)"
+      "date": "2026-08-12",
+      "time": "22:25",
+      "commit": "6445845",
+      "trigger": "SiteOps 每日运营 cron",
+      "changes": [
+        "补齐 3 篇缺失精修版: blog/发完文章别手贱-冷启动期教训-20260812.html (ART-2026-0324)",
+        "blog/20260812-trade-secret-pitfalls.html",
+        "blog/20260811-overseas-ip-dispute-report.html (中文版缺失，EN/FR 早已在)"
+      ],
+      "brand_sync": [
+        "mili/blog/: 商业秘密 + 海外知产纠纷 (觅理法律类)",
+        "blog/index.html: 3 张新卡片置顶",
+        "mili/blog/index.html: 2 张新卡片置顶"
+      ],
+      "seo": [
+        "sitemap.xml: 新增 3 个 URL + 修正 trade-secret 从 /articles/ 到 /blog/",
+        "articles.json: 3 条 URL 从 /articles/ 修正到 /blog/ 精修版"
+      ],
+      "verification": {
+        "method": "python socket+TLS (本机 curl/DNS 故障，socket 直连正常)",
+        "blog_articles": "200 x4",
+        "mili_blog": "200 x2",
+        "index_cards_online": "confirmed"
+      }
     }
-  ],
-  "fixes": [
-    "articles.json: /articles/trademark-compliance-selfcheck 旧路径修正为正式路径 + 去重1条重复",
-    "content.db: 新增ART-2026-0043 + GEO追踪占位记录"
-  ],
-  "indexes_synced": {
-    "blog/index.html": "顶部新增1篇卡片 (2026-08-10 商标法56条)",
-    "najie/blog/index.html": "顶部新增1篇卡片 (2026-08-10 商标法56条)",
-    "sitemap.xml": "+2 URL, 共73条",
-    "articles.json": "2条URL从 /articles/ 修正为正式路径 + 去重"
-  },
-  "verification": "5个URL全部200; og/ld=4处, markdown残留=0; 两索引均含新卡片; najie-seocheck全通过(73 URLs, JSON-LD全存在)",
-  "notes": "发现上游08-10 05:03 commit a752777 仅把文章放到废弃旧路径articles/，本次补齐正式路径。git rebase合入远端并发(mili遗嘱白皮书卡片)无冲突。"
+  ]
 }
