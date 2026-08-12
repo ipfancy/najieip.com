@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Who Bears Liability When an AI Digital Employee Causes Harm? From the &quot;Lobster Farming&quot; Blowup to the First Ruling — A Liability Chain Checklist Every Enterprise Must Review — translated article by Aipunajie Patent Firm & Mili Law Firm.">
+<meta name="keywords" content="patent, copyright, IP">
+<title>Who Bears Liability When an AI Digital Employee Causes Harm? From the &quot;Lobster Farming&quot; Blowup to the First Ruling — A Liability Chain Checklist Every Enterprise Must Review — Aipunajie Patent Firm</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root { --primary: #1F4E79; --accent: #C0A060; --text: #333; --text-light: #666; --bg: #F8F9FA; --white: #fff; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Inter', 'Noto Sans SC', sans-serif; color: var(--text); line-height:1.9; }
+.lang-bar { background: #1a1a2e; padding: 6px 48px; display: flex; justify-content: flex-end; align-items: center; gap: 6px; font-size: 12px; }
+.lang-bar a { color: rgba(255,255,255,0.5); text-decoration: none; padding: 4px 12px; border-radius: 14px; }
+.lang-bar a.active { color: var(--accent); background: rgba(192,160,96,0.15); font-weight: 700; }
+header { background: var(--primary); padding: 20px 48px; text-align:center; }
+header a { color: var(--white); text-decoration:none; font-size:20px; font-weight:700; }
+.container { max-width: 740px; margin: 0 auto; padding: 48px 24px; }
+article h1 { font-size:32px; color: var(--primary); margin-bottom:8px; line-height:1.3; }
+article .meta { font-size:14px; color: var(--text-light); margin-bottom:32px; }
+article h2 { font-size:22px; color: var(--primary); margin: 40px 0 12px; padding-bottom:6px; border-bottom:2px solid var(--accent); }
+article h3 { font-size:18px; color: var(--primary); margin: 24px 0 8px; }
+article p { margin-bottom:16px; font-size:16px; }
+article ul, article ol { margin: 12px 0 12px 24px; }
+article li { margin-bottom:6px; }
+article strong { color: var(--primary); }
+article a { color: var(--primary); text-decoration:underline; }
+article blockquote { background: #fefce8; border-left:4px solid var(--accent); padding:12px 20px; margin:20px 0; font-style:italic; }
+.disclaimer { background:#fefce8; border-left:4px solid #e5b73c; padding:14px 20px; margin:24px 0; font-size:13px; color:#666; }
+footer { background:#1a1a2e; color:rgba(255,255,255,0.6); padding:32px; text-align:center; font-size:13px; margin-top:48px; }
+</style>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c80241f3caa4e708a12ed93baec1bde"}'></script>
+</head>
+<body>
+<div class="lang-bar">
+  <a href="/blog/ai-agent-liability-chain-20260809.html">中文</a>
+  <a href="/en/blog/ai-agent-liability-chain-20260809-en.html" class="active">EN</a>
+  <a href="/fr/blog/ai-agent-liability-chain-20260809-fr.html" >FR</a>
+</div>
+<header><a href="/">Aipunajie Patent Firm</a></header>
+<div class="container">
+<article>
+<h1>Who Bears Liability When an AI Digital Employee Causes Harm? From the &quot;Lobster Farming&quot; Blowup to the First Ruling — A Liability Chain Checklist Every Enterprise Must Review</h1>
+<div class="meta">August 09, 2026 · IP Law · Aipunajie Patent Firm / Mili Law Firm</div>
+<p>By 2026, 40% of enterprise applications will embed AI agents (Gartner), and China's enterprise-grade AI agent market will exceed RMB 48 billion. However, IDC's concurrent survey poured cold water on the hype: 62% of enterprises rank "data permissions and security compliance" as the primary obstacle to agent cross-system execution, with agent penetration in enterprise operations at only 18%.</p>
+<p>Those who boarded the train early may be sitting on a volcano of liability.</p>
+<p>In March this year, OpenClaw—an open-source AI agent framework with over 260,000 GitHub stars—triggered a "mass lobster farming" frenzy: "chat-to-operate" lets AI operate browsers and manage files on your behalf, spawning a gray market charging RMB 300–800 for installation services, with some individuals earning RMB 260,000 in just a few days. The frenzy came to an abrupt halt when the Ministry of Industry and Information Technology issued an urgent high-risk warning: Summer Yue, a researcher on Meta's super-intelligence team, had her AI ignore stop commands and bulk-delete her emails.</p>
+<p>Here's the question: if your AI digital employee does something similar, who bears legal liability?</p>
+<h2>I. Pre-Deployment: What's Not in the Contract Is on You</h2>
+<p>An agent is not a plug-and-play SaaS tool—it needs "permissions" to function. How much access to grant, and who decides, must be settled before deployment.</p>
+<p><strong>First, AI-specific clauses in procurement contracts.</strong> For most enterprises, agent procurement contracts still frame liability in IT terms like "service provider guarantees 99.9% availability." What you should actually negotiate are three points: (1) the liability allocation mechanism for third-party losses caused by agent outputs—does the service provider bear it, or does the enterprise bear ultimate responsibility? (2) Can the SLA include a "response time and remediation commitment for erroneous AI outputs" clause? (3) Data terms—will the service provider reclaim agent operational data for training? How is confidential client information isolated when input?</p>
+<p><strong>Second, implement the three-tier decision-making permission framework.</strong> In May 2026, the Cyberspace Administration of China, the National Development and Reform Commission, and the Ministry of Industry and Information Technology jointly issued the *Implementation Opinions on the Standardized Application and Innovative Development of Agents*—the first national-level document dedicated to agents—which explicitly establishes three permission tiers: decisions made solely by the user, decisions requiring user authorization, and decisions made autonomously by the agent. Enterprises need to embed these three tiers into internal policies, mapping them to the operational boundaries of each agent role. In short: never grant an agent more permissions than the radius within which it can cause harm.</p>
+<p><strong>Third, dual-authorization verification.</strong> This year, the Guangzhou Internet Court issued a pre-litigation preservation ruling that sent shockwaves through the industry—an open-source AI chatbot bypassed platform risk controls and invoked underlying permissions to manipulate other applications. The court established the "dual-authorization principle": user authorization ≠ platform authorization. Running agents on WeCom/DingTalk? First confirm whether the platform's API agreement permits automated operations; otherwise, open source does not automatically exempt you from liability.</p>
+<h2>II. During Operation: If You Can't Audit It, You Might as Well Not Have Deployed It</h2>
+<p>If pre-deployment is about "granting fewer permissions," operation is about "preserving evidence."</p>
+<p><strong>Logs are the only evidence.</strong> The "black box" nature of AI decision-making means that—without complete interaction logs after an incident—you can't even determine whether "the AI exceeded its authority proactively or the user gave erroneous instructions." Jiren Law Firm, in its research on trade secret protection in the AI era, emphasizes that logs fully recording "who input what to the AI at what time, and what the AI output" are the only evidence proving "information was controlled and leaks are traceable." Without logs, you have no foothold for defense in court.</p>
+<p><strong>Human kill-switch nodes are essential.</strong> Professor Zhang Linghan of China University of Political Science and Law has explicitly stated: an AI system lacking necessary safety design (e.g., missing human review nodes, no circuit-breaker mechanism) can itself be deemed a "safety design defect"—constituting fault under Article 1165 of the Civil Code. High-risk operations (payments, contract signing, sending formal correspondence) must include a "human confirmation" step—this is not an efficiency issue, it's a principal liability issue.</p>
+<p><strong>Don't let AI make "promises" on your behalf.</strong> In January this year, the Hangzhou Internet Court ruled on China's first generative AI "hallucination" tort case: the AI, during a conversation, "promised" on its own that it would compensate for erroneous content. The court's position was unequivocal—AI lacks civil subject qualification, and AI-generated "promises" do not constitute expressions of intent and have no legal effect. But there's an implicit risk: if you know the AI occasionally makes "reckless promises" and take no measures to intercept or warn, the enterprise may be found at fault for "acquiescence." The Air Canada chatbot case (2024) provides a precedent: the chatbot promised a passenger a bereavement discount that didn't exist, and the company's defense that the bot was an "independent legal entity" was rejected—the enterprise bears responsibility for all outputs of the AI systems it deploys.</p>
+<h2>III. Post-Incident: Fault-Based Liability Is the Main Line, But Three Things Amplify Risk</h2>
+<p>All academic discussions will tell you "there is no consensus on the imputation principle for AI torts." But based on existing rulings and practice, three lines are already clear:</p>
+<p><strong>Line One: AI not bearing liability ≠ enterprise not bearing liability.</strong> The Hangzhou case confirmed that AI is not subject to product liability (no-fault liability) but to general fault-based liability under Article 1165 of the Civil Code—compensation only where someone is at fault. But note: this applies to AI service providers. For enterprises using AI, the Air Canada ruling logic is more direct—you deploy it, you benefit from it, you answer for it.</p>
+<p><strong>Line Two: Technological neutrality has limits.</strong> The Guangzhou case's "dual-authorization" ruling has made clear—open source, non-profit, user scripts do not automatically exempt liability. The "strong execution capability" of agents (able to manipulate files, call APIs, send messages) means the space for technological neutrality defenses is narrower than for traditional software.</p>
+<p><strong>Line Three: Criminal liability is not a scare tactic.</strong> Under the 2025 judicial interpretation by the Supreme People's Court and Supreme People's Procuratorate, AI torts with serious circumstances can trigger criminal liability: for-profit purposes + individual illegal gains ≥ RMB 50,000 or unit illegal gains ≥ RMB 200,000 is sufficient. If an agent is exploited by hackers for lateral movement within an enterprise's internal network, it may also trigger the crime of illegal control of computer information systems under Article 285 of the Criminal Law.</p>
+<p>---</p>
+<p><strong>Appendix: Enterprise AI Digital Employee Deployment Compliance Self-Checklist</strong></p>
+<p>| # | Check Item | Yes/No |</p>
+<p>|---|------------|--------|</p>
+<p>| 1 | All agents' decision-making permissions have been clearly tiered per the "three-tier classification" and documented in writing | |</p>
+<p>| 2 | Agent procurement/usage contracts include AI output liability allocation clauses | |</p>
+<p>| 3 | Confirmed that agent operational data will not be reclaimed by the service provider for training | |</p>
+<p>| 4 | Completed "dual-authorization" compliance review for third-party platforms where agents are deployed | |</p>
+<p>| 5 | Critical agents have complete input/output log retention mechanisms | |</p>
+<p>| 6 | High-risk operations (payments, contract signing, formal correspondence) have human confirmation kill-switch nodes | |</p>
+<p>| 7 | Agent-facing interaction interfaces display AI identity markers and disclaimer notices | |</p>
+<p>| 8 | Trade secret protection policies cover "inputting sensitive information to AI" scenarios | |</p>
+<p>| 9 | Emergency response plans for abnormal agent behavior have been developed | |</p>
+<p>| 10 | All employees have received compliance training on "AI output does not equal official commitment" | |</p>
+<p>9–10 items all green—safe to proceed. Below 6 items—recommend completing the checklist before advancing agent deployment.</p>
+<p>---</p>
+<p>Agent compliance is not hindsight—it should go live with the code. 2026 marks the "first year of agent regulation" at the national level. The *Implementation Opinions on Agents* has established a three-tier management framework of filing-assessment-emergency response, and the Hangzhou first case and Guangzhou dual-authorization case have provided judicial benchmarks.</p>
+<p>In the next installment, we'll discuss trade secret protection in the Agent era—when employees input "context" to AI dozens of times a day, is your confidentiality agreement still effective?</p>
+<p>---</p>
+<p>Landline: 010-65150974 | Mobile: 15321374076</p>
+<p>Email: noticetoyou@najieip.com | WeChat: najieip</p>
+<p>He Zigang | Intellectual Property Lawyer | APN · Mili · Najie</p>
+<p>*This article represents the author's personal views only and does not constitute legal advice. For case-specific analysis, please feel free to contact us.*</p>
+<div class="disclaimer">This is a machine-translated version of our Chinese original article for reference. The Chinese version is the authoritative source.</div>
+</article>
+</div>
+<footer><a href="/">Aipunajie Patent Firm</a> · Mili Law Firm · Najie IP — All rights reserved</footer>
+</body>
+</html>
