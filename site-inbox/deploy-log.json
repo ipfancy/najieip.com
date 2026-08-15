@@ -41,6 +41,28 @@
       ],
       "verified": "all 200; seocheck 通过",
       "note": "push 时 pre-push 钩子拦截(articles 跳转页 size 缩>40%)，--no-verify 绕过(符合主体归属铁律)；GitHub 临时 Internal Server Error 重试后成功"
+    },
+    {
+      "date": "2026-08-15",
+      "time": "22:28",
+      "commit": "65a9269",
+      "trigger": "SiteOps 每日运营 cron",
+      "changes": [
+        "ART-2026-0326 SEP行政裁决战术: 旧/articles/裸HTML → blog/20260815-sep-administrative-ruling-tactics.html 精修版(OG+JSON-LD+canonical+table)",
+        "ART-2026-0327 惩罚性赔偿新规: 旧/articles/裸HTML → mili/blog/20260815-punitive-damages-guide.html 精修版(OG+JSON-LD+canonical+blockquote)",
+        "旧/articles/两个文件改为跳转stub(meta refresh → 新位置)",
+        "blog/index.html + mili/blog/index.html 顶部插入新卡片",
+        "sitemap.xml 新增2个URL(lastmod 2026-08-15)"
+      ],
+      "verification": {
+        "blog_0326": 200,
+        "mili_0327": 200,
+        "articles_stub": 200,
+        "schema_org": 2,
+        "og_tags": 6,
+        "canonical": 1,
+        "md_bold_leftover": 0
+      }
     }
   ]
 }
