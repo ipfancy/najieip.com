@@ -103,6 +103,12 @@
   </url>
   <!-- ========== 文章 ========== -->
   <url>
+    <loc>https://najieip.com/blog/20260815-sep-administrative-ruling-tactics.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://najieip.com/blog/dilibiaozhi-shenbao-yunyong-2026.html</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -417,6 +423,12 @@
   <url>
     <loc>https://najieip.com/mili/blog/20260811-overseas-ip-dispute-report.html</loc>
     <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://najieip.com/mili/blog/20260815-punitive-damages-guide.html</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
