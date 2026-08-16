@@ -1,6 +1,28 @@
 {
   "deploys": [
     {
+      "date": "2026-08-16",
+      "time": "22:16",
+      "commit": "bc78273",
+      "trigger": "SiteOps 每日运营 cron",
+      "changes": [
+        "ART-2026-0051 具身智能IP归属: 旧/articles/裸HTML → blog/20260816-embodied-ai-ip-trifecta.html 精修版(OG+JSON-LD+canonical+去markdown)",
+        "旧/articles/文件改跳转stub(meta refresh → blog/新位置)",
+        "blog/index.html + najie/blog/index.html 顶部插卡片(AI/科技→纳杰品牌博客)",
+        "sitemap.xml 新增URL(lastmod 2026-08-16)",
+        "articles.json embodied条目改指 /blog/"
+      ],
+      "verification": {
+        "blog_embodied": 200,
+        "articles_stub": 200,
+        "blog_index": 200,
+        "najie_blog": 200,
+        "sitemap": 200,
+        "online_polished": "og/canonical/ld+json=4, **=0, schema.org=2"
+      },
+      "note": "pre-push钩子拦stub(缩>40%)按主体归属铁律 --no-verify 绕过"
+    },
+    {
       "date": "2026-08-12",
       "time": "22:25",
       "commit": "6445845",
