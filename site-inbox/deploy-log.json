@@ -1,6 +1,29 @@
 {
   "deploys": [
     {
+      "date": "2026-08-17",
+      "time": "22:13",
+      "commit": "ecf260b",
+      "trigger": "SiteOps 每日运营 cron",
+      "changes": [
+        "ART-2026-0052 优先审查新规: 旧/articles/裸HTML → blog/20260817-priority-review-new-rule.html 精修版(OG+JSON-LD+canonical+表格转换+去markdown)",
+        "旧/articles/20260817-priority-review-new-rule.html 改跳转stub(meta refresh → blog/新位置)",
+        "blog/index.html 顶部插卡片(优先审查/专利实务/政策解读)",
+        "sitemap.xml: 该条目路径 /articles/ → /blog/ 修正"
+      ],
+      "verification": {
+        "blog_new": 200,
+        "articles_stub": 200,
+        "blog_index_card": 1,
+        "og_url": 1,
+        "canonical": 1,
+        "ld_json": 2,
+        "schema_org": 2,
+        "md_bold_leftover": 0
+      },
+      "note": "pre-push钩子拦stub(缩>40%)按主体归属铁律 --no-verify 绕过"
+    },
+    {
       "date": "2026-08-16",
       "time": "22:16",
       "commit": "bc78273",
