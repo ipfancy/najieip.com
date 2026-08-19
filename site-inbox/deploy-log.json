@@ -134,6 +134,26 @@
         "canonical": 1,
         "md_bold_leftover": 0
       }
+    },
+    {
+      "date": "2026-08-19",
+      "time": "22:18",
+      "action": "siteops-daily",
+      "items": [
+        "blog/0054 算法歧视精修版上线(JSON-LD/OG/breadcrumb/表格/引用块)",
+        "主索引 blog/index.html +0054 卡片",
+        "najie/blog/index.html +0054/0052/刑事合规/AI版权 4卡片",
+        "articles.json 0054 路径 /articles/→/blog/ (rebase合并保留远端2篇)",
+        "sitemap.xml +blog/0054 条目"
+      ],
+      "verified": [
+        "/blog/0054=200(编码URL)",
+        "/blog/ 200",
+        "/najie/blog/ 200",
+        "sitemap 200",
+        "articles.json 200"
+      ],
+      "notes": "rebased 合并远端 2 篇新文章(qiye-xingshi-hegui-buqisu/ai-shengcheng-neirong-banquan-guishu); articles.json 引号转义修复"
     }
   ]
 }
