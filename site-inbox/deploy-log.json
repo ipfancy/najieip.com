@@ -154,6 +154,19 @@
         "articles.json 200"
       ],
       "notes": "rebased 合并远端 2 篇新文章(qiye-xingshi-hegui-buqisu/ai-shengcheng-neirong-banquan-guishu); articles.json 引号转义修复"
+    },
+    {
+      "date": "2026-08-20",
+      "commit": "48a9010",
+      "type": "content-sync + deadlink-fix",
+      "items": [
+        "ART-2026-0055 出海保险 → blog/ + najie/blog/ (精修版)",
+        "ART-2026-0328 恒大案 → blog/ + mili/blog/ (精修版)",
+        "ART-2026-0329 著作权司法解释 → blog/ + mili/blog/ (精修版)",
+        "修复 najie/blog 8 个死链 (qiye-xingshi/ai-shengcheng/算法歧视/加急/布图/具身智能/版权专委会/uspto-tbmp)",
+        "sitemap +7 URL (203 total) / articles.json 3条路径更新 / articles/ 旧三篇→跳转stub"
+      ],
+      "verify": "16/16 URL 200, SEO标签5, markdown残留0, schema.org正常"
     }
   ]
 }
