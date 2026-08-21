@@ -167,6 +167,26 @@
         "sitemap +7 URL (203 total) / articles.json 3条路径更新 / articles/ 旧三篇→跳转stub"
       ],
       "verify": "16/16 URL 200, SEO标签5, markdown残留0, schema.org正常"
+    },
+    {
+      "date": "2026-08-21",
+      "time": "22:17",
+      "type": "content-sync",
+      "article": "光伏侵权=出局！5步合规守住央国企招标资格",
+      "slug": "20260821-pv-ip-compliance-checklist",
+      "action": "精修上线 aipunajie/blog + blog 双版本；索引/sitemap/articles.json 更新；articles旧路径跳转stub",
+      "brand": "aipunajie",
+      "urls": [
+        "https://najieip.com/aipunajie/blog/20260821-pv-ip-compliance-checklist.html",
+        "https://najieip.com/blog/20260821-pv-ip-compliance-checklist.html"
+      ],
+      "verified": {
+        "aipunajie": 200,
+        "blog": 200,
+        "index_main": 200,
+        "index_aipunajie": 200
+      },
+      "note": "并发修复：89ad675已移至aipunajie，本任务误归najie已回滚；aipunajie版原缺canonical/og且JSON-LD损坏、残留**，已升级精修"
     }
   ]
 }
