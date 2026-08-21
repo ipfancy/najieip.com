@@ -1,9 +1,22 @@
 {
   "total": 4,
-  "good": 4,
-  "bad": 0,
-  "checked_at": "2026-07-24T19:43:25",
+  "good": 2,
+  "bad": 2,
+  "checked_at": "2026-08-21T22:18:07",
   "results": [
+    {
+      "url": "https://najieip.com/mili/",
+      "og:title": "觅理律所 — 专注知识产权法律保护",
+      "og:description": "觅理律所 — 专注知识产权法律保护。提供专利侵权诉讼、商标争议解决、反不正当竞争、知识产权合同等法律服务。85%有利结果率，5位资深合伙人，技术+法律双背景团队。",
+      "og:image": "https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "觅理律所 — 专注知识产权法律保护",
+      "canonical": "https://najieip.com/mili/",
+      "has_jsonld": true,
+      "title": "觅理律所 — 专注知识产权法律保护",
+      "issues": []
+    },
     {
       "url": "https://najieip.com/blog/",
       "og:title": "博客 — 爱普纳杰专利所",
@@ -19,42 +32,33 @@
     },
     {
       "url": "https://najieip.com/",
-      "og:title": "爱普纳杰专利所 — 知识产权专业代理机构",
-      "og:description": "爱普纳杰专利所 — 专业知识产权代理机构。提供专利申请、商标注册、OA答复、年费管理及涉外专利布局服务。15年行业经验，2000+案件数字化管理，AI驱动全流程管控。",
-      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:title": "纳杰知识产权 — 专利·商标·诉讼 全链条IP服务",
+      "og:description": "北京纳杰×爱普纳杰×觅理律所。2000+案件经验，20年代理人。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
       "og:url": "https://najieip.com/",
       "twitter:card": "summary_large_image",
-      "twitter:title": "爱普纳杰专利所 — 知识产权专业代理机构",
+      "twitter:title": null,
       "canonical": "https://najieip.com/",
       "has_jsonld": true,
-      "title": "爱普纳杰专利所 — 知识产权专业代理机构",
-      "issues": []
-    },
-    {
-      "url": "https://najieip.com/mili/",
-      "og:title": "觅理律所 — 专注知识产权法律保护",
-      "og:description": "觅理律所 — 专注知识产权法律保护。提供专利侵权诉讼、商标争议解决、反不正当竞争、知识产权合同等法律服务。85%有利结果率，5位资深合伙人，技术+法律双背景团队。",
-      "og:image": "https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      "og:url": "https://najieip.com/mili/",
-      "twitter:card": "summary_large_image",
-      "twitter:title": "觅理律所 — 专注知识产权法律保护",
-      "canonical": "https://najieip.com/mili/",
-      "has_jsonld": true,
-      "title": "觅理律所 — 专注知识产权法律保护",
-      "issues": []
+      "title": "纳杰知识产权 — 专利·商标·诉讼 全链条IP服务",
+      "issues": [
+        "缺少 twitter:title"
+      ]
     },
     {
       "url": "https://najieip.com/najie/",
-      "og:title": "纳杰知识产权 — 年费管理与知产运营",
-      "og:description": "纳杰知识产权 — 年费管理专家。2000+案件自动化年费监控系统，每日交叉比对国知局数据，7天/30天分级预警。",
+      "og:title": "纳杰知识产权 — 商标·项目申报·涉外IP·年费管理",
+      "og:description": "国家级知识产权优势企业。商标授权确权、涉外商标(PCT/马德里)、著作权登记、专利年费管理、高企认定申报、知识产权法律顾问。纳杰为创新护航，创新因纳杰独享。",
       "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
       "og:url": "https://najieip.com/najie/",
       "twitter:card": "summary_large_image",
-      "twitter:title": "纳杰知识产权 — 年费管理与知产运营",
+      "twitter:title": null,
       "canonical": "https://najieip.com/najie/",
       "has_jsonld": true,
-      "title": "纳杰知识产权 — 年费管理与知产运营",
-      "issues": []
+      "title": "纳杰知识产权 — 商标·项目申报·涉外IP·年费管理",
+      "issues": [
+        "缺少 twitter:title"
+      ]
     }
   ]
 }
