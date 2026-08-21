@@ -249,6 +249,41 @@ img.pixel { display: none; }
   </div>
 </div>
 
+<!-- 微信二维码 + 在线留言表单 -->
+<div style="max-width:900px;margin:0 auto;padding:40px 20px;display:flex;flex-wrap:wrap;gap:32px;justify-content:center;">
+  <div style="flex:1;min-width:280px;max-width:360px;text-align:center;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);padding:24px;">
+    <h3 style="margin:0 0 12px;color:var(--primary);">微信咨询</h3>
+    <p style="font-size:14px;color:var(--text-light);margin:0 0 16px;">扫码添加何自刚律师微信，一对一沟通</p>
+    <img src="/assets/wechat-qr-hezigang.jpg" alt="何自刚律师微信二维码" style="width:240px;height:auto;border-radius:8px;" loading="lazy">
+    <p style="font-size:12px;color:var(--text-light);margin-top:12px;">长按识别二维码 · 或搜索手机号添加</p>
+  </div>
+  <div style="flex:1;min-width:280px;max-width:460px;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);padding:24px;">
+    <h3 style="margin:0 0 12px;color:var(--primary);">在线留言</h3>
+    <p style="font-size:14px;color:var(--text-light);margin:0 0 16px;">留下您的需求，我们将在24小时内回复</p>
+    <form id="leadForm" style="display:flex;flex-direction:column;gap:12px;">
+      <input type="text" id="leadName" placeholder="您的姓名" required style="padding:10px 14px;border:1px solid #ddd;border-radius:8px;font-size:14px;">
+      <input type="tel" id="leadPhone" placeholder="联系电话" required style="padding:10px 14px;border:1px solid #ddd;border-radius:8px;font-size:14px;">
+      <input type="email" id="leadEmail" placeholder="电子邮箱（选填）" style="padding:10px 14px;border:1px solid #ddd;border-radius:8px;font-size:14px;">
+      <textarea id="leadMsg" placeholder="咨询内容，如：发明专利申请 / 商标注册 / 专利侵权诉讼…" rows="4" required style="padding:10px 14px;border:1px solid #ddd;border-radius:8px;font-size:14px;resize:vertical;"></textarea>
+      <button type="submit" style="padding:12px;background:var(--primary,#1a5276);color:#fff;border:none;border-radius:8px;font-size:15px;cursor:pointer;">提交留言</button>
+    </form>
+    <p id="leadResult" style="font-size:13px;color:#16a34a;margin:10px 0 0;display:none;">✓ 已为您生成咨询邮件，请在弹出的邮件中点击发送（或直接拨打 13911268604）</p>
+  </div>
+</div>
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('leadName').value.trim();
+  const phone = document.getElementById('leadPhone').value.trim();
+  const email = document.getElementById('leadEmail').value.trim();
+  const msg = document.getElementById('leadMsg').value.trim();
+  const subject = encodeURIComponent('网站留言咨询 - ' + name);
+  const body = encodeURIComponent('姓名：' + name + '\n电话：' + phone + '\n邮箱：' + (email || '未填') + '\n\n咨询内容：\n' + msg + '\n\n——来自 najieip.com 网站留言');
+  window.location.href = 'mailto:hezigang@najieip.com?subject=' + subject + '&body=' + body;
+  document.getElementById('leadResult').style.display = 'block';
+});
+</script>
+
 <footer>
   <div class="brands">北京纳杰知识产权代理有限公司 &nbsp;|&nbsp; 北京爱普纳杰专利代理事务所 &nbsp;|&nbsp; 北京觅理律师事务所</div>
   <p>📍 北京市东城区宝钢大厦1502室 &nbsp;|&nbsp; 📞 <a href="tel:+861065150974" style="color:inherit;text-decoration:underline;">010-65150974</a> / <a href="tel:+8613911268604" style="color:inherit;text-decoration:underline;">13911268604</a> &nbsp;|&nbsp; ✉️ <a href="mailto:info@najieip.com" style="color:inherit;text-decoration:underline;">info@najieip.com</a></p>
