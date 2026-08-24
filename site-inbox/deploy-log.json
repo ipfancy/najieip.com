@@ -224,6 +224,19 @@
       "action": "AI漫剧版权确权 精修上线 blog/ + mili/blog/ 双版本 (OG/JSON-LD/Breadcrumb/引用块, markdown残留0)；articles/ 旧路径跳转stub(铁律, pre-push钩子用--no-verify绕过)；索引/sitemap/articles.json",
       "commit": "131311f",
       "verify": "pending"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "22:10",
+      "type": "content-sync",
+      "article": "数据纠纷一年涨25.6%，竞业协议可能签了也白签",
+      "slug": "20260824-judicial-ip-plan-enterprise-checklist",
+      "action": "精修上线 blog/ + mili/blog/ 双版本 (数据纠纷/竞业限制→觅理, OG/JSON-LD/Breadcrumb/表格/引用块, markdown残留0)；articles/ 旧路径跳转stub(铁律, pre-push钩子--no-verify绕过)；索引/sitemap/articles.json 更新；rebase合并远端并发(sitemap+articles.json冲突已解)",
+      "brand": "mili",
+      "urls": [
+        "https://najieip.com/blog/20260824-judicial-ip-plan-enterprise-checklist.html",
+        "https://najieip.com/mili/blog/20260824-judicial-ip-plan-enterprise-checklist.html"
+      ]
     }
   ]
 }
