@@ -1,729 +1,142 @@
 [
   {
-    "url": "/articles/20260824-judicial-ip-plan-enterprise-checklist.html",
-    "title": "数据纠纷一年涨25.6%，竞业协议可能签了也白签",
+    "url": "/najie/blog/uspto-tbmp-2026-update.html",
+    "title": "USPTO商标程序手册（TBMP）2026更新",
+    "description": "我们经常遇到这样的场景：中国企业委托代理美国商标异议程序，却因为不熟悉TTAB电子提交系统而延误期限；或者在美国商标撤销案件中引用 TTAB 先例时，发现无法确认裁决原文——因为部分历史案件缺少可查询的案件编号。",
     "date": "2026-08-24",
     "site": "najie"
   },
   {
-    "url": "/blog/20260823-ai-manju-copyright-checklist.html",
+    "url": "/aipunajie/blog/20260824-patent-agent-3-step-rescue.html",
+    "title": "专利被转走？3步自救",
+    "description": "很多人一头雾水：我从没委托过这家机构，专利怎么",
+    "date": "2026-08-24",
+    "site": "aipunajie"
+  },
+  {
+    "url": "/aipunajie/blog/20260824-annual-fee-6month-lapse.html",
+    "title": "年费逾期超6月作废",
+    "description": "最近我们处理的一批年费核查里，一家企业名下20件外观设计专利年费逾期，最久的逾期超过600天。按法律规定，这些专利若无恢复程序，权利大概率已经终止。20件专利，申请的时候是真金白银，现在只剩一张纸——不对，连权利都没了。",
+    "date": "2026-08-24",
+    "site": "aipunajie"
+  },
+  {
+    "url": "/mili/blog/20260823-ai-manju-copyright-checklist.html",
     "title": "花18万做的AI漫剧，版权竟不是你的",
+    "description": "2026年AI漫剧市场规模冲到400亿、同比暴涨138%，但完成完整版权确权的项目仅17.2%——83%的团队在裸奔做爆款。MCN花18万定制30集古风AI漫剧，上线前才发现合同只写了&#x27;非专有播放权&#x27;。四步确权闭环：合同锁权、全程留痕、存证+登记、出海先登记。附2026年4月备案新规与AI标识办法两条硬约束。",
     "date": "2026-08-23",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260823-ai-manju-copyright-checklist.html",
-    "title": "花18万做的AI漫剧，版权竟不是你的",
-    "date": "2026-08-23",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/shangbiao-xuzhan-banli-2026.html",
-    "title": "商标续展办理：有效期、宽展期、续展费用与常见误区",
-    "date": "2026-08-22",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/qiye-falv-tijian-2026.html",
-    "title": "企业法律体检：中小企业法律风险排查与合规体检全指南",
-    "date": "2026-08-22",
-    "site": "najie"
+    "site": "mili"
   },
   {
     "url": "/mili/blog/20260822-us-tro-72hour-checklist.html",
     "title": "货款被美国法院冻结，72小时做对这5件事",
+    "description": "2026年25天210件TRO案、1674家中国店铺被冻结。第七巡回法院Yinnv Liu案后管辖抗辩窗口打开，《海牙送达公约》禁止电邮送达。72小时五件事清单：停售/留证据/找律师，和解30%-60% vs 应诉 vs 弃店对比表。",
     "date": "2026-08-22",
     "site": "mili"
   },
   {
-    "url": "/mili/blog/20260821-beijing-shebao-2026.html",
-    "title": "北京社保基数涨了：下限7270元，企业多掏多少？",
-    "date": "2026-08-22",
-    "site": "mili"
-  },
-  {
-    "url": "/mili/blog/20260821-beijing-shebao-tax.html",
-    "title": "社保基数涨了，企业反而能少缴税？7月补差这笔账怎么算",
-    "date": "2026-08-22",
-    "site": "mili"
-  },
-  {
-    "url": "/articles/20260821-beijing-shebao-tax.html",
-    "title": "社保基数涨了，企业反而能少缴税？7月补差这笔账怎么算",
-    "date": "2026-08-22",
+    "url": "/najie/blog/qiye-xingshi-hegui-buqisu-2026.html",
+    "title": "企业刑事合规不起诉",
+    "description": "刑事合规不起诉是什么？涉案企业如何通过合规整改争取不起诉？本文梳理合规不起诉制度依据、适用条件、操作流程与事前合规建设要点，附常见误区与律师建议。",
+    "date": "2026-08-21",
     "site": "najie"
   },
   {
-    "url": "/articles/20260821-beijing-shebao-2026.html",
-    "title": "北京社保基数涨了：下限7270元，企业多掏多少？",
-    "date": "2026-08-22",
+    "url": "/najie/blog/hezigang-banquan-zhuanweihui-2026.html",
+    "title": "纳杰知识产权何自刚入选首都知识产权服务业协会版权专业委员会",
+    "description": "北京纳杰知识产权代理有限公司何自刚先生正式入选首都知识产权服务业协会版权专业委员会，成为委员会中为数不多的代理机构代表之一。",
+    "date": "2026-08-21",
     "site": "najie"
   },
   {
-    "url": "/articles/20260822-us-tro-72hour-checklist.html",
-    "title": "货款被美国法院冻结，72小时做对这5件事",
-    "date": "2026-08-22",
+    "url": "/najie/blog/ai-shengcheng-neirong-banquan-guishu-2026.html",
+    "title": "AI生成内容的版权归属",
+    "description": "AI生成的图片、文字、代码版权归谁？本文梳理AI生成内容版权归属的判定规则、标志性司法判例与三类企业场景，附提示词留痕、合同约定与开源合规的企业合规清单。",
+    "date": "2026-08-21",
     "site": "najie"
   },
   {
     "url": "/aipunajie/blog/20260821-pv-ip-compliance-checklist.html",
     "title": "光伏侵权=出局！5步合规守住央国企招标资格",
+    "description": "2026年国知局与工信部将专利侵权记录与光伏制造行业规范条件名单直接挂钩——有侵权裁定的企业被动态清退。光伏企业从被诉再应诉变成合规才有投标资格。5步落地清单：合规体检、专利卡位、风险监测、纠纷工具箱、出海排雷。",
     "date": "2026-08-21",
-    "site": "najie",
-    "path": "/aipunajie/blog/20260821-pv-ip-compliance-checklist.html"
+    "site": "aipunajie"
   },
   {
-    "url": "/articles/20260821-pv-ip-compliance-checklist.html",
-    "title": "光伏侵权=出局！5步合规守住央国企招标资格",
+    "url": "/mili/blog/20260821-beijing-shebao-tax.html",
+    "title": "社保基数涨了，企业反而能少缴税？7月补差这笔账怎么算",
+    "description": "社保基数上调，多缴的社保费是企业所得税与个税的税前扣除项——100人企业一年约省8600元企业所得税。7月补差明细（单位28.83元/人/月）、滞纳金年化18.25%、未申报按110%核定、金税四期三条比对线、三数对齐自查清单。",
     "date": "2026-08-21",
-    "site": "najie"
+    "site": "mili"
+  },
+  {
+    "url": "/mili/blog/20260821-beijing-shebao-2026.html",
+    "title": "北京社保基数涨了：下限7270元，企业多掏多少？",
+    "description": "2026年7月起北京社保缴费基数调整：上限36348元/月、下限7270元/月。三档算账（单位月缴1941.09~9704.92元）、工伤保险行业差别费率（0.4% vs 1.9%差1308.6元/年）、公积金同步调、员工到手变化、企业申报五步实操清单。",
+    "date": "2026-08-21",
+    "site": "mili"
   },
   {
     "url": "/najie/blog/20260820-overseas-ip-insurance-checklist.html",
     "title": "出海被诉律师费百万？这4种保险保费最高补80%",
+    "description": "四部门联合发文首次把「知识产权海外侵权保险」写进国家政策，浙江落地全国首个省级统保方案。海外侵权责任险/被侵权损失险/布局费用损失险四类险种拆解：保什么、不保什么、怎么买、怎么赔，附三步动作清单。",
     "date": "2026-08-20",
     "site": "najie"
   },
   {
     "url": "/mili/blog/20260820-hengda-criminal-redlines.html",
     "title": "恒大案一审宣判：无期 + 罚金158亿，这6条刑事红线企业必须懂",
+    "description": "恒大集团罚金88.2亿、恒大地产70亿，许家印无期徒刑、没收个人全部财产，56名涉案人员获刑。判决书里藏着6条刑事红线：单位犯罪双线追责、实际控制人责任、财务造假入刑、融资合法边界、行贿代价、退赔优先于罚金。",
     "date": "2026-08-20",
     "site": "mili"
   },
   {
     "url": "/mili/blog/20260820-copyright-judicial-interpretation.html",
     "title": "9月1日起，网上转载必须付费！著作权司法解释5个重磅变化",
+    "description": "最高法修改《著作权民事纠纷司法解释》（法释〔2026〕18号）9月1日施行：网络转载不再适用法定许可、确认不侵权之诉入列、公共场所艺术作品复刻受限、赔偿引入权利使用费与过错程度、鉴定机构证明入列。",
     "date": "2026-08-20",
     "site": "mili"
   },
   {
-    "url": "/articles/20260820-著作权司法解释修改解读.html",
-    "title": "9月1日起，网上转载必须付费！著作权司法解释5个重磅变化",
-    "date": "2026-08-20",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260820-恒大案刑事合规红线解读.html",
-    "title": "恒大案一审宣判：无期 + 罚金158亿，这6条刑事红线企业必须懂",
-    "date": "2026-08-20",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260820-overseas-ip-insurance-checklist.html",
-    "title": "出海被诉律师费百万？这4种保险保费最高补80%",
-    "date": "2026-08-20",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/qiye-xingshi-hegui-buqisu-2026.html",
-    "title": "企业刑事合规不起诉——从\"涉案企业合规改革\"到\"合规不起诉\"的操作路径",
-    "date": "2026-08-19",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/ai-shengcheng-neirong-banquan-guishu-2026.html",
-    "title": "AI生成内容的版权归属——谁拥有AI作品？企业如何避免\"裸奔\"",
-    "date": "2026-08-19",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/AI专利算法歧视红线-避坑清单-20260819.html",
+    "url": "/najie/blog/AI专利算法歧视红线-避坑清单-20260819.html",
     "title": "AI专利踩中\"算法歧视\"直接驳回！5类特征+3招自救",
+    "description": "局令84号施行后，算法歧视首次成为AI专利驳回理由。指南第6.1.1节新红线+【例2】无人驾驶伦理题：招聘/信贷/推荐/调度5类高危场景自查，说明书补伦理合规3个自救动作，8月28日国知局公益讲座预约。",
     "date": "2026-08-19",
     "site": "najie"
   },
   {
-    "url": "/articles/AI专利算法歧视红线-避坑清单-20260819.html",
-    "title": "AI专利踩中\"算法歧视\"直接驳回！5类特征+3招自救",
-    "date": "2026-08-19",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260818-layout-design-regulation-checklist.html",
+    "url": "/najie/blog/20260818-layout-design-regulation-checklist.html",
     "title": "沉睡25年的权利醒了：芯片企业60天倒排清单",
+    "description": "修订后的《集成电路布图设计保护条例》10月15日施行——25年来首次系统性大修：客体变宽、惩罚性赔偿、独创性声明、任意人撤销。芯片企业60天倒排清单：9/3提意见、盘点老版图、算保护期、写独创性声明、存量自查、合同权属、内部留痕。",
     "date": "2026-08-18",
     "site": "najie"
   },
   {
-    "url": "/articles/20260817-priority-review-new-rule.html",
-    "title": "9月1日新规生效，你的专利\"加急\"资格可能没了",
+    "url": "/najie/blog/20260817-trademark-nonuse-cancellation-rescue.html",
+    "title": "撤三危机，15天自救",
+    "description": "最近我们接到一起委托：一家餐饮服务企业的注册商标，突然收到国家知识产权局的《撤销注册商标决定书》——理由是",
     "date": "2026-08-17",
     "site": "najie"
   },
   {
-    "url": "/blog/20260816-embodied-ai-ip-trifecta.html",
+    "url": "/najie/blog/20260817-priority-review-new-rule.html",
+    "title": "9月1日新规生效，你的专利\"加急\"资格可能没了",
+    "description": "85号令《专利优先审查管理办法》9月1日施行：优审从",
+    "date": "2026-08-17",
+    "site": "najie"
+  },
+  {
+    "url": "/mili/blog/20260817-trade-name-collision-3-remedies.html",
+    "title": "字号撞车，3条维权路",
+    "description": "最近我们代理的一起不正当竞争纠纷进入再审审查阶段，起因说来简单：两家公司字号相近——一家叫",
+    "date": "2026-08-17",
+    "site": "mili"
+  },
+  {
+    "url": "/najie/blog/20260816-embodied-ai-ip-trifecta.html",
     "title": "政策首次点名\"IP归属\"，具身智能企业先补三件事",
+    "description": "工信部256号文首次把",
     "date": "2026-08-16",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260816-embodied-ai-ip-trifecta.html",
-    "title": "政策首次点名\"IP归属\"，具身智能企业先补三件事",
-    "date": "2026-08-16",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260815-sep-administrative-ruling-tactics.html",
-    "title": "谈8年没谈拢的专利许可，立案9个月就签了：被90%企业低估的行政裁决",
-    "date": "2026-08-15",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260815-知产惩罚性赔偿新规解读.html",
-    "title": "故意侵权最高赔5倍！这份刚生效的司法解释，藏着3个杀手锏",
-    "date": "2026-08-15",
-    "site": "najie"
-  },
-  {
-    "url": "/mili/blog/geely-wm-trade-secret-20260814.html",
-    "title": "6.4亿代价账单：威马挖角30人，输掉的远不止钱",
-    "date": "2026-08-14",
-    "site": "mili"
-  },
-  {
-    "url": "/mili/blog/franchise-supreme-court-7cases-20260814.html",
-    "title": "最高法刚刚发布：7个特许经营案例，加盟创业者必须知道的风险",
-    "date": "2026-08-14",
-    "site": "mili"
-  },
-  {
-    "url": "/articles/20260813-franchise-supreme-court-7cases.html",
-    "title": "最高法刚刚发布：7个特许经营案例，加盟创业者必须知道的风险",
-    "date": "2026-08-14",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260814-geely-wm-trade-secret-bill.html",
-    "title": "6.4亿代价账单：威马挖角30人，输掉的远不止钱",
-    "date": "2026-08-14",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/20260813-luckin-thailand-trademark-checklist.html",
-    "title": "瑞幸胜诉9500万泰铢，出海商标这6件事现在就该做",
-    "date": "2026-08-13",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/结构性卡位-AI时代法律人唯一的护城河-20260807.html",
-    "title": "结构性卡位：AI时代法律人唯一的护城河",
-    "date": "2026-08-13",
-    "site": "mili"
-  },
-  {
-    "url": "/articles/结构性卡位-AI时代法律人唯一的护城河-20260807.html",
-    "title": "结构性卡位：AI时代法律人唯一的护城河",
-    "date": "2026-08-13",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260813-luckin-thailand-trademark-checklist.html",
-    "title": "瑞幸胜诉9500万泰铢，出海商标这6件事现在就该做",
-    "date": "2026-08-13",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/20260812-trade-secret-pitfalls.html",
-    "title": "施行两个半月，商业秘密新规这5个坑，90%的企业正在踩",
-    "date": "2026-08-12",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/mili-changping-branch-20260731.html",
-    "title": "觅理律所昌平分所正式成立！",
-    "date": "2026-08-12",
-    "site": "najie"
-  },
-  {
-    "title": "AI员工 vs 人类员工：一场算不清账的战争？ (EN)",
-    "url": "/en/blog/20260809-ai-vs-employee-综合对比-en.html",
-    "date": "2026-08-12",
-    "category": "translated"
-  },
-  {
-    "title": "AI员工 vs 人类员工：一场算不清账的战争？ (FR)",
-    "url": "/fr/blog/20260809-ai-vs-employee-综合对比-fr.html",
-    "date": "2026-08-12",
-    "category": "translated"
-  },
-  {
-    "title": "倒计时145天：新商标法生效前，企业必须完成的6件事 (EN)",
-    "url": "/en/blog/trademark-law-countdown-20260808-en.html",
-    "date": "2026-08-12",
-    "category": "translated"
-  },
-  {
-    "title": "倒计时145天：新商标法生效前，企业必须完成的6件事 (FR)",
-    "url": "/fr/blog/trademark-law-countdown-20260808-fr.html",
-    "date": "2026-08-12",
-    "category": "translated"
-  },
-  {
-    "title": "觅理律所昌平分所正式成立！ (EN)",
-    "url": "/en/blog/mili-changping-branch-20260731-en.html",
-    "date": "2026-08-12",
-    "category": "translated"
-  },
-  {
-    "title": "觅理律所昌平分所正式成立！ (FR)",
-    "url": "/fr/blog/mili-changping-branch-20260731-fr.html",
-    "date": "2026-08-12",
-    "category": "translated"
-  },
-  {
-    "url": "/blog/发完文章别手贱-冷启动期教训-20260812.html",
-    "title": "发完文章别手贱！40分钟冷启动期，我们拿限流换来的教训",
-    "date": "2026-08-12",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/发完文章别手贱-冷启动期教训-20260812.html",
-    "title": "发完文章别手贱！40分钟冷启动期，我们拿限流换来的教训",
-    "date": "2026-08-12",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260812-trade-secret-pitfalls.html",
-    "title": "施行两个半月，商业秘密新规这5个坑，90%的企业正在踩",
-    "date": "2026-08-12",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260811-AI版权中美路径企业出海实操.html",
-    "title": "中美AI版权\"冰火两重天\"：你的AI生成内容，出海怎么办？",
-    "date": "2026-08-11",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260810-xishuo-patent-invalid-huashan.html",
-    "title": "专利无效攻防：一场没有硝烟的「华山论剑」",
-    "date": "2026-08-11",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/trademark-compliance-selfcheck-20260810.html",
-    "title": "你的商标这样做，可能被撤销——新商标法第56条自查清单",
-    "date": "2026-08-11",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/20260811-overseas-ip-dispute-report.html",
-    "title": "海外知产纠纷一年2053起：2025年中国企业出海的法律成绩单，藏着三个残酷真相",
-    "date": "2026-08-11",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/20260811-ai-copyright-cn-us-overseas.html",
-    "title": "中美AI版权\"冰火两重天\"：你的AI生成内容，出海怎么办？",
-    "date": "2026-08-11",
-    "site": "mili"
-  },
-  {
-    "url": "/mili/blog/20260811-ai-copyright-cn-us-overseas.html",
-    "title": "中美AI版权\"冰火两重天\"：你的AI生成内容，出海怎么办？",
-    "date": "2026-08-11",
-    "site": "mili"
-  },
-  {
-    "title": "中美AI版权\"冰火两重天\"：你的AI生成内容，出海怎么办？ (EN)",
-    "url": "/en/blog/20260811-AI版权中美路径企业出海实操-en.html",
-    "date": "2026-08-11",
-    "category": "translated"
-  },
-  {
-    "title": "中美AI版权\"冰火两重天\"：你的AI生成内容，出海怎么办？ (FR)",
-    "url": "/fr/blog/20260811-AI版权中美路径企业出海实操-fr.html",
-    "date": "2026-08-11",
-    "category": "translated"
-  },
-  {
-    "title": "专利无效攻防：一场没有硝烟的「华山论剑」 (EN)",
-    "url": "/en/blog/20260810-xishuo-patent-invalid-huashan-en.html",
-    "date": "2026-08-11",
-    "category": "translated"
-  },
-  {
-    "title": "专利无效攻防：一场没有硝烟的「华山论剑」 (FR)",
-    "url": "/fr/blog/20260810-xishuo-patent-invalid-huashan-fr.html",
-    "date": "2026-08-11",
-    "category": "translated"
-  },
-  {
-    "title": "你的商标这样做，可能被撤销——新商标法第56条自查清单 (EN)",
-    "url": "/en/blog/trademark-compliance-selfcheck-20260810-en.html",
-    "date": "2026-08-11",
-    "category": "translated"
-  },
-  {
-    "title": "你的商标这样做，可能被撤销——新商标法第56条自查清单 (FR)",
-    "url": "/fr/blog/trademark-compliance-selfcheck-20260810-fr.html",
-    "date": "2026-08-11",
-    "category": "translated"
-  },
-  {
-    "title": "海外知产纠纷一年2053起：2025年中国企业出海的法律成绩单 (EN)",
-    "url": "/en/blog/20260811-overseas-ip-dispute-report-en.html",
-    "date": "2026-08-11",
-    "category": "translated"
-  },
-  {
-    "title": "海外知产纠纷一年2053起：2025年中国企业出海的法律成绩单 (FR)",
-    "url": "/fr/blog/20260811-overseas-ip-dispute-report-fr.html",
-    "date": "2026-08-11",
-    "category": "translated"
-  },
-  {
-    "url": "/articles/20260811-overseas-ip-dispute-report.html",
-    "title": "海外知产纠纷一年2053起：2025年中国企业出海的法律成绩单，藏着三个残酷真相",
-    "date": "2026-08-11",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/trademark-compliance-selfcheck-20260810.html",
-    "title": "你的商标这样做，可能被撤销——新商标法第56条自查清单",
-    "date": "2026-08-10",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/20260810-xishuo-patent-invalid-huashan.html",
-    "title": "专利无效攻防：一场没有硝烟的「华山论剑」",
-    "date": "2026-08-10",
-    "site": "apnajie"
-  },
-  {
-    "url": "/blog/zhihu-hotlist-20260810.html",
-    "title": "知乎热榜法律视角 | 今日热榜的6条法律议题",
-    "date": "2026-08-10",
-    "site": "mili"
-  },
-  {
-    "url": "/mili/blog/ai-agent-liability-chain-20260809.html",
-    "title": "AI数字员工闯祸谁赔？从\"养龙虾\"暴雷到首案裁判，企业必看的责任链清单",
-    "date": "2026-08-09",
-    "site": "mili"
-  },
-  {
-    "url": "/najie/blog/trademark-law-countdown-20260808.html",
-    "title": "倒计时145天：新商标法生效前，企业必须完成的6件事",
-    "date": "2026-08-09",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/20260809-ai-vs-employee.html",
-    "title": "AI员工 vs 人类员工：一场算不清账的战争？——经济学/管理学/税收财务/心理学/哲学五维对比，给创业者和传统老板的最终答案",
-    "date": "2026-08-09",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/2026-08-06-中兴三星SEP中英法院估值差.html",
-    "title": "3.92 vs 7.31亿美元：同一场官司，中英法院判出两倍差价",
-    "date": "2026-08-09",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260804-fifteen-five-ip-plan.html",
-    "title": "455亿！知识产权出口暴增65%，十五五规划要你从\"拿证\"转向\"赚钱\"",
-    "date": "2026-08-09",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260809-ai-vs-employee-综合对比.html",
-    "title": "AI员工 vs 人类员工：一场算不清账的战争？——经济学/管理学/税收财务/心理学/哲学五维对比，给创业者和传统老板的最终答案",
-    "date": "2026-08-09",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/ai-agent-liability-chain-20260809.html",
-    "title": "AI数字员工闯祸谁赔？从\"养龙虾\"暴雷到首案裁判，企业必看的责任链清单",
-    "date": "2026-08-09",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/trademark-law-countdown-20260808.html",
-    "title": "倒计时145天：新商标法生效前，企业必须完成的6件事",
-    "date": "2026-08-09",
-    "site": "najie"
-  },
-  {
-    "title": " (EN)",
-    "url": "/en/blog/ai-agent-liability-chain-20260809-en.html",
-    "date": "2026-08-09",
-    "category": "translated"
-  },
-  {
-    "title": " (FR)",
-    "url": "/fr/blog/ai-agent-liability-chain-20260809-fr.html",
-    "date": "2026-08-09",
-    "category": "translated"
-  },
-  {
-    "url": "/en/blog/zte-samsung-sep-valuation-en.html",
-    "title": "$392M vs $731M: The Same SEP Case, Two Courts, Double the Damages",
-    "date": "2026-08-08",
-    "site": "mili"
-  },
-  {
-    "url": "/fr/blog/zte-samsung-sep-valuation-fr.html",
-    "title": "392 M$ contre 731 M$ : la même affaire SEP, deux tribunaux, le double des dommages",
-    "date": "2026-08-08",
-    "site": "mili"
-  },
-  {
-    "url": "/najie/blog/20260804-ic-layout-design-regulations.html",
-    "title": "\"半导体\"从法条消失，10月15日起芯片IP新规生效",
-    "date": "2026-08-08",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260804-ic-layout-design-regulations.html",
-    "title": "“半导体”从法条消失，10月15日起芯片IP新规生效",
-    "date": "2026-08-08",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260807-avanci-uk-chinese-automakers-sep.html",
-    "title": "一辆车32美元，特斯拉打了三年官司——中国车企的5G专利攻守棋局",
-    "date": "2026-08-08",
-    "site": "najie"
-  },
-  {
-    "url": "/mili/blog/20260807-avanci-uk-chinese-automakers-sep.html",
-    "title": "一辆车32美元，特斯拉打了三年官司——中国车企的5G专利攻守棋局",
-    "date": "2026-08-07",
-    "site": "mili"
-  },
-  {
-    "url": "/najie/blog/overseas-ip-selfcheck-2026.html",
-    "title": "7月两份文件把出海IP变成必修课：10项自查清单",
-    "date": "2026-08-07",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/overseas-trademark-madrid-2026.html",
-    "title": "出海商标：马德里省一半钱，却埋着一个5年雷",
-    "date": "2026-08-07",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260807-overseas-trademark-madrid.html",
-    "title": "出海商标：马德里省一半钱，却埋着一个5年雷",
-    "date": "2026-08-07",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260807-overseas-ip-selfcheck.html",
-    "title": "7月两份文件把出海IP变成必修课：10项自查清单",
-    "date": "2026-08-07",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/hezigang-banquan-zhuanweihui-2026.html",
-    "title": "纳杰知识产权何自刚入选首都知识产权服务业协会版权专业委员会",
-    "date": "2026-08-07",
-    "site": "najie"
-  },
-  {
-    "url": "/mili/blog/zte-samsung-sep-valuation.html",
-    "title": "3.92 vs 7.31亿美元：同一场官司，中英法院判出两倍差价",
-    "date": "2026-08-06",
-    "site": "mili"
-  },
-  {
-    "url": "/articles/20260805-fifteen-five-ipr-checklist.html",
-    "title": "9条行动清单：十五五规划发布，企业IP部门未来五年的预算和编制都在这里",
-    "date": "2026-08-06",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260803-xishuo-xiuxian-003.html",
-    "title": "IP修仙录·第三回 天道驳文如惊雷",
-    "date": "2026-08-05",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/patent-early-warning-system-20260802.html",
-    "title": "专利预警系统：企业IP部门的下一个标配",
-    "date": "2026-08-02",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/wipo-ai-ip-dialogue.html",
-    "title": "WIPO知识产权与前沿技术对话会：AI如何重塑全球IP治理",
-    "date": "2026-07-31",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/overseas-trademark-strategy.html",
-    "title": "企业海外商标布局策略",
-    "date": "2026-07-31",
-    "site": "najie"
-  },
-  {
-    "url": "/aipunajie/blog/catl-patent-moat-profit-2026.html",
-    "title": "中国8家整车厂赚不过1家电池厂，宁德时代凭什么？",
-    "date": "2026-07-31",
-    "site": "aipunajie"
-  },
-  {
-    "url": "/mili/blog/uspto-tbmp-2026-update.html",
-    "title": "USPTO商标程序手册（TBMP）2026更新",
-    "date": "2026-07-31",
-    "site": "mili"
-  },
-  {
-    "url": "/mili/blog/uspto-tbmp-2026-ttab-center-estta-update.html",
-    "title": "USPTO更新TBMP 2026年6月版：TTAB Center全面取代ESTTA",
-    "date": "2026-07-31",
-    "site": "mili"
-  },
-  {
-    "url": "/mili/blog/uspto-foreign-representation-rule-2026.html",
-    "title": "美国专利新规7月20日生效：没有美国代理人，你的美国专利可能失效",
-    "date": "2026-07-31",
-    "site": "mili"
-  },
-  {
-    "url": "/mili/blog/ai-training-copyright-fair-use-2026.html",
-    "title": "AI公司买旧书训练模型",
-    "date": "2026-07-31",
-    "site": "mili"
-  },
-  {
-    "url": "/najie/blog/wipo-free-databases.html",
-    "title": "WIPO平台四大免费数据库，90%的知产人没用全",
-    "date": "2026-07-29",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/pipeline-failed-queue-practice.html",
-    "title": "管线层实操：收件箱从报错到自愈",
-    "date": "2026-07-29",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/najie-apnajie-mili-collaboration.html",
-    "title": "三所联合｜纳杰 × 爱普纳杰 × 觅理：让法律服务随时可见",
-    "date": "2026-07-29",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/gzh-design-skill.html",
-    "title": "3周2400星！公众号排版Skill爆了，但光排版不够",
-    "date": "2026-07-29",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/enterprise-ip-compliance-system.html",
-    "title": "企业知识产权合规体系建设",
-    "date": "2026-07-29",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/cnptes-three-layer-architecture.html",
-    "title": "管线",
-    "date": "2026-07-29",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/cnptes-three-layer-architecture-diagram.html",
-    "title": "CNPTES 管线",
-    "date": "2026-07-29",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/archify-replace-drawio.html",
-    "title": "告别 draw.io：用 archify 让 AI 画架构图",
-    "date": "2026-07-29",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/ai-ip-pitfall-guide.html",
-    "title": "AI工具IP合规避坑指南",
-    "date": "2026-07-29",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/ai-ip-compliance-redline.html",
-    "title": "AI工具落地IP实务的合规红线",
-    "date": "2026-07-29",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/5-free-patent-search-tools.html",
-    "title": "5个免费专利检索工具，90%的发明人不知道",
-    "date": "2026-07-29",
-    "site": "najie"
-  },
-  {
-    "url": "/mili/blog/xiecheng-antitrust.html",
-    "title": "携程被罚51.79亿！反垄断重拳再出击",
-    "date": "2026-07-29",
-    "site": "mili"
-  },
-  {
-    "url": "/mili/blog/weituo-chuangzuo-banquan-xieyi-bi-keng.html",
-    "title": "你花5万做VI，商标却被驳回？著作权法大修，“付了钱≠拥有”的坑90%企业还在踩",
-    "date": "2026-07-29",
-    "site": "mili"
-  },
-  {
-    "url": "/articles/十五五IP规划企业应对三方向-20260729.html",
-    "title": "十五五IP规划过审了，你的企业IP策略该调哪三个方向",
-    "date": "2026-07-29",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/ai-ip-compliance-redline-20260726.html",
-    "title": "AI工具落地IP实务的合规红线",
-    "date": "2026-07-28",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/wipo-free-databases-20260726.html",
-    "title": "WIPO平台四大免费数据库，90%的知产人没用全",
-    "date": "2026-07-26",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/ai-ip-pitfall-guide-20260726.html",
-    "title": "AI工具IP合规避坑指南",
-    "date": "2026-07-26",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/gzh-design-skill-20260725.html",
-    "title": "3周2400星！公众号排版Skill爆了，但光排版不够",
-    "date": "2026-07-25",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/xiecheng-antitrust-20260725.html",
-    "title": "携程被罚51.79亿！反垄断重拳再出击",
-    "date": "2026-07-25",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/wipo-ai-ip-dialogue-20260725.html",
-    "title": "WIPO知识产权与前沿技术对话会：AI如何重塑全球IP治理",
-    "date": "2026-07-25",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/20260723-weituo-chuangzuo-banquan-xieyi-bi-keng.html",
-    "title": "你花5万做VI，商标却被驳回？著作权法大修，\"付了钱≠拥有\"的坑90%企业还在踩",
-    "date": "2026-07-23",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/copyright-law-feedback-guide-20260722.html",
-    "title": "8月12日截止：著作权法实施条例征求意见，企业还能说\"不\"",
-    "date": "2026-07-22",
-    "site": "najie"
-  },
-  {
-    "url": "/articles/觅理加盟-创始合伙人亲述-20260719.html",
-    "title": "觅理加盟-创始合伙人亲述-20260719",
-    "date": "2026-07-19",
     "site": "najie"
   }
 ]
