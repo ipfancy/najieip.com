@@ -237,6 +237,20 @@
         "https://najieip.com/blog/20260824-judicial-ip-plan-enterprise-checklist.html",
         "https://najieip.com/mili/blog/20260824-judicial-ip-plan-enterprise-checklist.html"
       ]
+    },
+    {
+      "date": "2026-08-25",
+      "time": "14:05",
+      "type": "content-sync",
+      "article": "专利优先审查9月1日收紧！最后一周，这5件事抓紧办",
+      "slug": "20260825-priority-review-countdown-checklist",
+      "action": "精修上线 blog/ + najie/blog/ 双版本 (专利优先审查→纳杰, OG/JSON-LD/Breadcrumb/相关阅读, markdown残留0)；articles/ 旧路径转为跳转stub(铁律)；双索引卡片置顶 + najie Blog JSON-LD blogPost首位 + sitemap 3URL + articles.json",
+      "urls": [
+        "https://najieip.com/blog/20260825-priority-review-countdown-checklist.html",
+        "https://najieip.com/najie/blog/20260825-priority-review-countdown-checklist.html",
+        "https://najieip.com/articles/20260825-priority-review-countdown-checklist.html"
+      ],
+      "verified": false
     }
   ]
 }
