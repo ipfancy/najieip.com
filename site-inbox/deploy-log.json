@@ -250,7 +250,8 @@
         "https://najieip.com/najie/blog/20260825-priority-review-countdown-checklist.html",
         "https://najieip.com/articles/20260825-priority-review-countdown-checklist.html"
       ],
-      "verified": false
+      "verified": true,
+      "verify_note": "blog/najie/articles 三URL 200; 精修版 OG/JSON-LD=4, markdown残留0; articles跳转stub生效; 双索引卡片置顶"
     }
   ]
 }
