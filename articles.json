@@ -1,14 +1,22 @@
 [
   {
+    "url": "/aipunajie/blog/patent-agency-license-redline-20260825.html",
+    "title": "专利代理执业资质红线：安徽11起处罚罚没3200万",
+    "description": "2026年8月安徽省市场监督管理局集中公开11起专利代理行业行政处罚，累计罚没款逾3200万元，单案最高罚没1708万元。无证执业、挂靠资质、出租出借许可证——这些曾被默许的做法如今一一撞上法律红线。专利代理行业正从宽进转向严管。",
+    "date": "2026-08-25",
+    "site": "aipunajie"
+  },
+  {
+    "url": "/aipunajie/blog/20260825-patent-agent-qualification-redline.html",
+    "title": "专利代理执业资质红线",
+    "description": "",
+    "date": "2026-08-25",
+    "site": "aipunajie"
+  },
+  {
     "url": "/najie/blog/uspto-tbmp-2026-update.html",
     "title": "USPTO商标程序手册（TBMP）2026更新",
     "description": "我们经常遇到这样的场景：中国企业委托代理美国商标异议程序，却因为不熟悉TTAB电子提交系统而延误期限；或者在美国商标撤销案件中引用 TTAB 先例时，发现无法确认裁决原文——因为部分历史案件缺少可查询的案件编号。",
-    "date": "2026-08-24",
-    "site": "najie"
-  },
-  {
-    "url": "/blog/20260824-judicial-ip-plan-enterprise-checklist.html",
-    "title": "数据纠纷一年涨25.6%，竞业协议可能签了也白签",
     "date": "2026-08-24",
     "site": "najie"
   },
@@ -25,6 +33,13 @@
     "description": "最近我们处理的一批年费核查里，一家企业名下20件外观设计专利年费逾期，最久的逾期超过600天。按法律规定，这些专利若无恢复程序，权利大概率已经终止。20件专利，申请的时候是真金白银，现在只剩一张纸——不对，连权利都没了。",
     "date": "2026-08-24",
     "site": "aipunajie"
+  },
+  {
+    "url": "/mili/blog/20260824-judicial-ip-plan-enterprise-checklist.html",
+    "title": "数据纠纷一年涨25.6%，竞业协议可能签了也白签",
+    "description": "最高法印发《人民法院知识产权司法保护实施方案（2026—2030年）》（法发〔2026〕4号）：2025年全国法院新收知产案件55.26万件、涉数据权属和交易纠纷908件暴涨25.6%。两张自查表——数据资产三类定性（公共/企业/个人信息，附数据堂案全国首例数据知产登记证、反法数据专款、数据资产质押融资案例）+ 竞业协议五问自评（是否接触商业秘密、范围地域期限适配、2年红线、北京约30%补偿口径、",
+    "date": "2026-08-24",
+    "site": "mili"
   },
   {
     "url": "/mili/blog/20260823-ai-manju-copyright-checklist.html",
@@ -122,27 +137,6 @@
     "title": "撤三危机，15天自救",
     "description": "最近我们接到一起委托：一家餐饮服务企业的注册商标，突然收到国家知识产权局的《撤销注册商标决定书》——理由是",
     "date": "2026-08-17",
-    "site": "najie"
-  },
-  {
-    "url": "/najie/blog/20260817-priority-review-new-rule.html",
-    "title": "9月1日新规生效，你的专利\"加急\"资格可能没了",
-    "description": "85号令《专利优先审查管理办法》9月1日施行：优审从",
-    "date": "2026-08-17",
-    "site": "najie"
-  },
-  {
-    "url": "/mili/blog/20260817-trade-name-collision-3-remedies.html",
-    "title": "字号撞车，3条维权路",
-    "description": "最近我们代理的一起不正当竞争纠纷进入再审审查阶段，起因说来简单：两家公司字号相近——一家叫",
-    "date": "2026-08-17",
-    "site": "mili"
-  },
-  {
-    "url": "/najie/blog/20260816-embodied-ai-ip-trifecta.html",
-    "title": "政策首次点名\"IP归属\"，具身智能企业先补三件事",
-    "description": "工信部256号文首次把",
-    "date": "2026-08-16",
     "site": "najie"
   }
 ]
