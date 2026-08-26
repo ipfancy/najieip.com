@@ -252,6 +252,22 @@
       ],
       "verified": true,
       "verify_note": "blog/najie/articles 三URL 200; 精修版 OG/JSON-LD=4, markdown残留0; articles跳转stub生效; 双索引卡片置顶"
+    },
+    {
+      "date": "2026-08-26",
+      "time": "22:16",
+      "type": "content-sync",
+      "article": "商标刑事红线/版权登记卡通形象/生态环境终身追责 (3篇)",
+      "slug": "20260826-trademark-criminal-abuse + copyright-ip-assets-20260825 + eco-accountability-20260825",
+      "action": "精修上线 blog/ + mili/blog/ 双版本 (商标争议/著作权/行政法→觅理, OG/JSON-LD/Breadcrumb/相关阅读, **残留0)；articles/ 旧路径转跳转stub(铁律)；blog+mili 索引卡片置顶；sitemap +9；articles.json +3(mili)；content.db 注册 ART-2026-0065/66/67；curl 全部200已验证"
+    },
+    {
+      "date": "2026-08-26",
+      "time": "22:16",
+      "type": "brand-sync",
+      "article": "执行异议之诉 + 专利优先审查最后6天清单 (远端2篇补品牌版)",
+      "slug": "zhixing-yiyi-zhi-su-2026 + zhuanli-youxian-shencha-zuihou-qingdan-2026",
+      "action": "并发任务8cc50f6仅部署blog/，补品牌版本: 执行异议之诉→mili/blog (觅理律所), 优审最后清单→najie/blog (纳杰知识产权)；og:site_name/publisher/canonical/breadcrumb/header 全部替换；双索引卡片置顶；sitemap +2；articles.json +2；curl 200已验证"
     }
   ]
 }
