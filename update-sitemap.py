@@ -22,6 +22,7 @@ najieip.com sitemap.xml 自动生成器（标准版）
 """
 
 import os
+import re
 from datetime import datetime
 from urllib.parse import quote
 
@@ -57,6 +58,33 @@ def priority_of(path: str) -> str:
     return "0.7"       # 文章页
 
 
+def should_skip(fp: str, rel: str) -> bool:
+    """跳转页或 canonical 指向其他 URL 的镜像副本，不进 sitemap。"""
+    try:
+        with open(fp, encoding="utf-8", errors="ignore") as f:
+            head = f.read()
+    except OSError:
+        return False
+    # meta-refresh 跳转页
+    if re.search(r'<meta[^>]+http-equiv=["\']refresh["\']', head, re.I):
+        return True
+    # canonical 指向其他 URL 的镜像副本（自身 URL = DOMAIN + 编码后的 rel 路径）
+    m = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]*href=["\']([^"\']+)["\']', head, re.I)
+    if m:
+        target = m.group(1).strip().rstrip("/")
+        # 归一化成绝对 URL
+        if target.startswith("http://") or target.startswith("https://"):
+            tgt_url = target
+        elif target.startswith("/"):
+            tgt_url = DOMAIN + target
+        else:
+            tgt_url = DOMAIN + "/" + target
+        self_url = (DOMAIN + url_path_of(rel)).rstrip("/")
+        if tgt_url != self_url:
+            return True
+    return False
+
+
 def main():
     entries = []
     for dirpath, dirnames, filenames in os.walk(ROOT):
@@ -69,6 +97,8 @@ def main():
                 continue
             fp = os.path.join(dirpath, fn)
             rel = os.path.relpath(fp, ROOT)
+            if should_skip(fp, rel):
+                continue
             path = url_path_of(rel)
             mtime = datetime.fromtimestamp(os.path.getmtime(fp)).strftime("%Y-%m-%d")
             prio = priority_of(path)
