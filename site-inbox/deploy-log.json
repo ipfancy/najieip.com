@@ -1,6 +1,19 @@
 {
   "deploys": [
     {
+      "date": "2026-08-28T22:00",
+      "commit": "b3f4898",
+      "articles": [
+        "/mili/blog/20260911-mili-insurance-consultation.html",
+        "/blog/overseas-ip-insurance-toolkit-20260828.html",
+        "/najie/blog/overseas-ip-insurance-toolkit-20260828.html"
+      ],
+      "actions": "品牌博客部署(精修版) + articles/旧路径改跳转页 + 三索引更新 + sitemap +3 + articles.json清理旧路径",
+      "status": "verified",
+      "http_status": "200 all",
+      "seocheck": "pass (242 URLs, JSON-LD ok)"
+    },
+    {
       "date": "2026-08-18",
       "time": "22:24",
       "commit": "faf207d + 3837ada(空提交触发重部署)",
