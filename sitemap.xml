@@ -1326,7 +1326,19 @@
   </url>
   <url>
     <loc>https://najieip.com/blog/20260824-judicial-ip-plan-enterprise-checklist.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://najieip.com/en/blog/20260824-judicial-ip-plan-enterprise-checklist-en.html</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://najieip.com/fr/blog/20260824-judicial-ip-plan-enterprise-checklist-fr.html</loc>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
