@@ -342,6 +342,20 @@
       "status": "deployed",
       "verified": "all 200",
       "note": "SiteOps GEO第35周 多语言同步"
+    },
+    {
+      "date": "2026-08-29",
+      "time": "22:20",
+      "type": "redirect-fix",
+      "slugs": [
+        "articles/patent-award-high-value-cultivation-20260829.html -> /blog/zhongguo-zhuanli-jiang-shenbao-2026.html",
+        "articles/十五五IP规划企业应对三方向-20260729.html -> /blog/shierwu-ip-plan-2026.html",
+        "articles/20260723-weituo-chuangzuo-banquan-xieyi-bi-keng.html -> /mili/blog/weituo-chuangzuo-banquan-xieyi-bi-keng.html",
+        "articles/copyright-law-feedback-guide-20260722.html -> /mili/blog/copyright-law-feedback-guide.html",
+        "articles/觅理加盟-创始合伙人亲述-20260719.html -> /mili/blog/mili-join-founding-partner.html"
+      ],
+      "status": "deployed",
+      "note": "修复5个旧/articles/路径404: 补跳转页 + articles.json URL指向新路径"
     }
   ]
 }
