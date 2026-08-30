@@ -371,7 +371,7 @@
         "articles.json",
         "sitemap.xml"
       ],
-      "verified": "pending"
+      "verified": "true"
     }
   ]
 }
