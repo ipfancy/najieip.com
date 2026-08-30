@@ -356,6 +356,22 @@
       ],
       "status": "deployed",
       "note": "修复5个旧/articles/路径404: 补跳转页 + articles.json URL指向新路径"
+    },
+    {
+      "date": "2026-08-30",
+      "time": "22:09",
+      "type": "siteops-fix",
+      "desc": "补同步 ART-2026-0072 TRO文章(8天冻结281件围剿)到主博客+mili博客, articles/旧路径改跳转页, 更新双索引+sitemap+articles.json",
+      "files": [
+        "blog/tro-72h-self-rescue-guide-20260830.html",
+        "mili/blog/tro-72h-self-rescue-guide-20260830.html",
+        "articles/tro-72h-self-rescue-guide-20260830.html(跳转)",
+        "blog/index.html",
+        "mili/blog/index.html",
+        "articles.json",
+        "sitemap.xml"
+      ],
+      "verified": "pending"
     }
   ]
 }
