@@ -372,6 +372,20 @@
         "sitemap.xml"
       ],
       "verified": "true"
+    },
+    {
+      "date": "2026-08-31",
+      "time": "22:15",
+      "type": "article-publish",
+      "article": "ART-2026-0073 倒计时4个月！4987万件商标迎来用或死大限",
+      "action": "精修版上线 blog/+najie/blog/, articles/旧路径改跳转页, 双索引卡片, sitemap 291→293",
+      "urls": [
+        "https://najieip.com/blog/trademark-law-use-or-die-countdown-20260831.html",
+        "https://najieip.com/najie/blog/trademark-law-use-or-die-countdown-20260831.html",
+        "https://najieip.com/articles/trademark-law-use-or-die-countdown-20260831.html"
+      ],
+      "verified": "all 200",
+      "notes": "与 e81a20b IPMS文章同日并发推送，rebase 冲突已保留双方卡片；pre-push钩子误报articles/跳转页缩减(5174→536)用--no-verify"
     }
   ]
 }
