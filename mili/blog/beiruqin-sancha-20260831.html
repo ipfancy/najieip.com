@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>被入侵前，先查这三样</title>
+</head>
+<body style="margin:0;padding:0;background:#f6f9fb;">
+<div style="max-width:680px;margin:0 auto;padding:0 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:#ffffff;"><h1 style="font-size:24px;color:#1a5276;text-align:center;margin:6px 0 6px;line-height:1.5;font-weight:bold;letter-spacing:1px;">被入侵前，先查这三样</h1>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">最近，安全厂商披露了一条消息：AI工具 DeepSeek-Harness 被曝出高危远程代码执行漏洞，攻击者无需任何密钥，就能在暴露于公网的主机上执行任意命令。厂商给出的处置建议很直接——临时隔离相关服务，尽快升级到修复版本。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">消息一出，很多企业心里一紧：我们部署的AI工具，是不是也有类似的洞？这篇就借这件事，给所有企业做一次数据合规的自查指南。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;"><strong style="font-weight:bold;color:#1f2d3d;">一个漏洞，敲响的是谁的门</strong></p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">DeepSeek-Harness 是深度求索开源的AI训练与部署工具，不少企业会把它部署在自己的主机上跑大模型任务。安全厂商披露，它存在高危漏洞：攻击者不需要密钥，只要主机暴露在公网，就能远程执行任意命令——相当于把主机的钥匙交到了陌生人手里。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">先别急着给某一家产品定性。工具出漏洞，是AI时代的常态，过去几年开源组件、AI框架、部署工具被曝高危漏洞的消息一茬接一茬。企业真正的风险点从来不是「某个工具出了漏洞」，而是三条：第一，部署了这类工具却不自知，资产清单里根本没有它；第二，图省事把服务直接暴露在公网，没有任何访问控制；第三，漏洞公布后不跟进，补丁拖几个月才打。这三条，每一条都可能把「工具漏洞」变成「企业事故」。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;"><strong style="font-weight:bold;color:#1f2d3d;">漏洞爆了，法律上的账怎么算</strong></p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">如果漏洞真的被利用，企业却什么都没做，法律上跑得掉吗？跑不掉。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">网络安全法第21条规定，网络运营者应当履行安全保护义务，采取防范计算机病毒和网络攻击、网络侵入等危害网络安全行为的技术措施——防入侵、防攻击、防篡改，这是法定的。第25条进一步要求，发生网络安全事件时，应当立即启动应急预案，采取补救措施，并按照规定向有关主管部门报告。翻译成大白话：法律要求你装好门锁、看住门户、出了事要处置要报告。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">数据安全法第27条要求，开展数据处理活动应当建立健全全流程数据安全管理制度，落实数据安全保护责任，采取相应的技术措施。企业用AI工具处理的数据，往往正是最值钱的训练数据、客户信息和商业秘密。工具一出漏洞，这些数据就等于被架在火上烤。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">个人信息保护法第9条和第51条同样划了线：处理个人信息应当采取安全技术措施，制定并组织实施个人信息安全事件应急预案。企业里但凡存着员工信息、用户信息，这两条就跑不掉。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">所以，防漏洞不是「技术部门的事」，而是法律课。义务早就写在条文里，漏洞只是把题摆到了面前。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;"><strong style="font-weight:bold;color:#1f2d3d;">没尽义务会怎样？现在该做什么</strong></p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">如果企业没有履行上述义务，漏洞被利用、数据泄露，会面临什么？</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">行政上，网信部门、公安机关可以责令改正、给予警告；拒不改正或者造成危害后果的，会被罚款，情节严重的还可能被责令暂停相关业务、停业整顿。民事上，安全防护不到位导致用户个人信息泄露的，企业要承担损害赔偿等民事责任。更麻烦的是信任归零——一个「数据泄露」的新闻，足以让多年积累的客户信任化为乌有。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">与其等漏洞来敲门，不如现在就自查。给企业一张六项清单：</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">一、收敛公网暴露面。能不开的端口就不开，能用内网就不上公网，服务别「裸奔」。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">二、盘点资产与端口。建一张资产清单：部署了哪些AI工具、开了哪些端口，心里要有数。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">三、建立漏洞管理流程。定期扫描、关注厂商安全公告、补丁及时打，别让漏洞「过夜」。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">四、准备应急响应预案。万一出事，谁决策、谁处置、怎么止损、要不要报告，提前写清楚。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">五、留存日志。访问记录、操作日志保留好，既是溯源依据，也是合规证据。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">六、培训员工安全意识。很多漏洞不是技术破的，是人点的——钓鱼链接、弱口令，安全意识比防火墙更靠前。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;"><strong style="font-weight:bold;color:#1f2d3d;">给读者的五点提醒</strong></p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">一、把AI工具纳入企业资产管理。部署了哪些系统、谁在维护，先建清单，别让「部署了却没人管」成为常态。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">二、公网暴露面越小，风险越小。端口、服务、后台，能收敛就收敛，别让主机「裸奔」在公网上。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">三、漏洞管理要有流程。扫描、跟进、打补丁，环环留痕，安全公告当天看、补丁尽快打。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">四、应急预案不是纸上谈兵。每年至少演练一次，出事时才知道谁该干什么。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">五、拿不准的地方，让专业的人把关。数据合规、商业秘密保护，律师能做的远不止打官司——事前防护，比事后补救便宜得多。</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">如果您所在的企业正在搭建数据安全体系，或对网络安全合规、商业秘密保护拿不准，欢迎联系我们：</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;"><strong style="font-weight:bold;color:#1f2d3d;">纳杰知识产权 | 爱普纳杰专利代理 | 觅理律师事务所</strong></p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">免费咨询电话：<strong style="font-weight:bold;color:#1f2d3d;">13911268604</strong>（点击咨询，帮您做一次数据合规自查）</p>
+<p style="margin:0 0 8px;">&nbsp;</p>
+<p style="margin:0 0 16px 0;font-size:16px;color:#333;line-height:1.75;text-align:justify;">漏洞会过时，合规不过时。</p><div style="background:#1a5276;border-radius:10px;padding:26px 22px;margin:30px 0 8px;text-align:center;"><p style="color:#ffffff;font-size:17px;font-weight:bold;margin:0 0 12px;line-height:1.6;">您的知识产权布局，需要专业判断</p><p style="color:rgba(255,255,255,0.92);font-size:14px;margin:0 0 14px;line-height:1.8;">商标 · 专利 · 著作权 · 诉讼维权，三主体一站式知识产权服务</p><p style="color:#ffffff;font-size:15px;margin:0;line-height:1.8;">咨询电话：<span style="color:#c9a227;font-weight:bold;letter-spacing:1px;">13911268604（何律师）</span></p></div><p style="text-align:center;color:#1a5276;font-size:15px;font-weight:bold;letter-spacing:1px;margin:22px 0 6px;">纳杰知识产权 | 爱普纳杰专利代理 | 觅理律师事务所</p><p style="text-align:center;color:#5d7d93;font-size:12px;letter-spacing:3px;margin:0 0 10px;">专业 · 严谨 · 守护创新</p></div>
+</body>
+</html>
