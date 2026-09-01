@@ -386,6 +386,24 @@
       ],
       "verified": "all 200",
       "notes": "与 e81a20b IPMS文章同日并发推送，rebase 冲突已保留双方卡片；pre-push钩子误报articles/跳转页缩减(5174→536)用--no-verify"
+    },
+    {
+      "date": "2026-09-01",
+      "time": "22:05",
+      "type": "siteops-daily-check",
+      "desc": "日常巡检: 6核心页面200, 3篇新文章(ART-0072/0073/0074)全部已部署且索引齐全, sitemap 296 URL lastmod 2026-09-01, seocheck全通过",
+      "verified": [
+        "https://najieip.com",
+        "https://najieip.com/mili/",
+        "https://najieip.com/najie/",
+        "https://najieip.com/blog/"
+      ],
+      "articles_confirmed": [
+        "ART-2026-0072 blog/+mili/blog/",
+        "ART-2026-0073 blog/+najie/blog/",
+        "ART-2026-0074 najie/blog/"
+      ],
+      "action": "归档3个site-inbox源文件到archive/"
     }
   ]
 }
