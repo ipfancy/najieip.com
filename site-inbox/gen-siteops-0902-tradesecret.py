@@ -1,0 +1,148 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""SiteOps 2026-09-02: ART-2026-0075 泄密案精修版生成
+修复: 原始版只在旧路径 articles/ (有 ** 残留、无 JSON-LD/OG)
+→ 生成 blog/ + mili/blog/ 精修版, articles/ 改跳转页
+品牌归属: 商业秘密+知识产权诉讼 → 觅理 (mili/blog), 同时进主博客 blog/
+"""
+import re, os
+
+ROOT = os.path.expanduser("~/wiki/najieip-verify")
+
+TITLE = "AI公司最值钱的东西不是代码！首例大模型泄密案罚35万"
+DESC = "2026年5月28日杭州首例AI垂类大模型商业秘密案：14年资深算法专家用配偶公司带走提示词模板、审查规则、标注规范，被市监局罚款35万。总局令126号下，AI企业的商业秘密不止代码——数据、算法、提示词、标注规范都能保。附可保护清单+行政/民事/刑事三轨维权路径+三件今天就做的事。"
+KEYWORDS = "商业秘密,AI大模型,提示词泄密,总局令126号,商业秘密保护规定,员工离职,知识产权诉讼,三轨维权"
+DATE = "2026-09-02"
+
+# 正文段落 (从原始HTML转换: ** → <strong>, 列表规范化)
+body = [
+    ("p", "一位在杭州某AI企业干了14年的资深算法专家，全权牵头研发垂直领域的AI智能审查模型。还没离职，他就用配偶的身份注册了一家公司，随后把老东家的AI模型专属提示词模板、审查规则、标注规范，发给了自己新公司的研发人员。"),
+    ("p", "2026年5月28日，杭州市监局作出处罚决定：责令停止泄密行为，罚款<strong>35万元</strong>。"),
+    ("p", "这是全国首例AI垂类大模型商业秘密案。官方点名它\"突破了AI行业的'代码情结'\"——过去AI企业维权，眼睛只盯着源代码；而这一次，被保护的既不是代码，也不是什么神秘参数，而是提示词、规则、标注规范这些\"自然语言\"的东西。"),
+    ("p", "它给所有AI创业者提了个醒：你最值钱的资产，可能不在专利证书上，也不在代码库里，而在一个离职员工的脑子里。"),
+    ("h2", "一、先破一个误区：AI的\"商业秘密\"远不止代码"),
+    ("p", "很多AI公司有个执念——认为只有源代码、模型参数才算知识产权，代码被抄了才叫侵权，别的都\"无所谓\"。孙某案把这个执念打碎了。"),
+    ("p", "今年6月1日施行的《商业秘密保护规定》（总局令第126号）第五条，白纸黑字把技术信息写成了四样：<strong>数据、算法、计算机程序、代码</strong>。"),
+    ("p", "注意，\"数据\"和\"算法\"是独立列出来的，不是代码的附庸。这意味着："),
+    ("ul", [
+        "提示词模板、审查规则、标注规范——能保（孙某案）",
+        "训练代码、标注数据库——能保（最高法知产法庭首例算法秘密案）",
+        "公知信息\"整理、改进、加工后形成的新信息\"——也能保（新规第六条）",
+        "阶段性成果、失败的实验数据——同样能保（新规第七条）",
+    ]),
+    ("p", "换句话说，你花几个月调出来的提示词、整理好的标注体系、清洗训练数据的规则，哪怕全是用公开数据加工出来的，只要形成了别人拿不到的组合，就是你的商业秘密。"),
+    ("p", "一张可保护清单先记下来：<strong>提示词工程、Agent技能包、非标运营规则、训练代码、标注数据库、数据组合、失败实验</strong>——七样东西，样样能独立立案。"),
+    ("h2", "二、光能保不够，要\"保得住\""),
+    ("p", "商业秘密不是\"你说是秘密就是秘密\"，法律要过三关：<strong>非公知性、价值性、保密性</strong>。前两关AI公司通常没问题，真正翻车的是第三关——保密措施。"),
+    ("p", "重庆那个案例很典型：制片助理窃取短剧《又是一年除夕夜》的剧本，提供给另一家公司拍摄上线，损失34.2万元。权利公司赢在哪？它用飞书系统限制了剧本的接触范围，并记录了每一次访问和下载——这就是法律认可的\"合理保密措施\"。"),
+    ("p", "反过来说，很多AI公司嘴上说保密，实际呢：训练数据随便放共享盘、提示词模板没有访问权限、员工离职不签离任审计、远程协作走个人微信。真到了举证环节，这些全都不算数。"),
+    ("p", "新规第九条甚至专门点了两个场景：<strong>远程办公、跨境协作</strong>。监管者显然知道AI团队就是分布式开发的——但越分布式，越要有技术保密措施。"),
+    ("h2", "三、被侵犯了，手里有三张牌：行、民、刑"),
+    ("p", "商业秘密被侵犯，不是\"要么报警、要么告状\"的二选一，而是三轨并行："),
+    ("ul", [
+        "<strong>行政牌</strong>：向市场监管部门举报，最快30天左右就能制止侵权。孙某案罚35万，走的就是这条通道。",
+        "<strong>民事牌</strong>：索赔。案例一里，权利人通过十轮谈判，在处罚之外还达成了含赔偿金额、专利权归属的和解协议；更关键的是举证倒置——你证明\"接触＋实质相同\"就够了，举证责任翻转到对方。",
+        "<strong>刑事牌</strong>：损失或违法所得30万就能入罪，二年内再犯降到10万，最高刑十年。案例二里那个提供图纸的原技术员，已经被刑事处罚了。",
+    ]),
+    ("p", "我们觅理在办这类案子时，从来不是只走一条通道，而是三轨一起评估——行政快、民事赔得高、刑事威慑足，各有各的用。"),
+    ("p", "淄博那个案子最值得老板记住：离职员工把核心技术图纸以子女名义抢注专利，研发投入才17万的技术，一夜之间从\"秘密\"变\"公开\"。商业秘密一旦灭失，是不可逆的终局性损害。"),
+    ("h2", "结尾：三件事，今天就可以做"),
+    ("p", "我做了20年知识产权，最大的体会是：商业秘密的护城河，不是签一份保密协议就挖好了，而在于\"你能不能证明自己一直在管\"。"),
+    ("p", "给AI公司的三件事："),
+    ("ol", [
+        "<strong>立即清点</strong>：把提示词、规则、标注规范、训练数据，当成和代码同级的资产登记造册。",
+        "<strong>立即上措施</strong>：飞书或钉钉设权限、留访问记录，远程办公和跨境协作场景单独出保密细则。",
+        "<strong>立即补协议</strong>：保密协议要覆盖\"自然语言类集成方案\"，离职时做离任审计，别让\"配偶开公司\"这招钻了空子。",
+    ]),
+    ("p", "下一篇，聊聊离职员工的竞业限制怎么签才真管用。欢迎在评论区留言，或者关注公众号「纳杰觅理」，每天一条能直接落地的知产干货。"),
+]
+
+def render_body():
+    out = []
+    out.append("<blockquote><p>本文作者何自刚，执业20年知识产权律师，以\"一人公司（OPC）+ AI数字员工\"运营爱普纳杰专利所、觅理律所、纳杰公司三个主体。今天拆解首例AI大模型商业秘密案：什么能保、怎么保得住、被侵犯了走哪条路。</p></blockquote>")
+    for item in body:
+        tag = item[0]
+        content = item[1]
+        if tag in ("p", "h2"):
+            out.append(f"<{tag}>{content}</{tag}>")
+        elif tag in ("ul", "ol"):
+            lis = "".join(f"<li>{li}</li>" for li in content)
+            out.append(f"<{tag}>\n{lis}\n</{tag}>")
+    out.append("<blockquote><strong>\"商业秘密保护的本质不在技术高度，而在管理密度——没有留痕的保密，等同于没有保密。AI公司最值钱的资产在离职员工的脑子里，能证明你'一直在管'的，只有权限日志、访问记录和离任审计。\"</strong> —— 何自刚 | 知识产权律师 | 爱普纳杰·觅理·纳杰</blockquote>")
+    out.append("<p>何自刚 | 知识产权律师 | 爱普纳杰 · 觅理 · 纳杰</p>")
+    out.append("<p>座机：010-65150974 | 手机：15321374076 / 13911268604</p>")
+    out.append("<p><em>本文仅代表作者个人观点，不构成法律意见。如需具体案件分析，欢迎联系我们。</em></p>")
+    return "\n".join(out)
+
+def gen_article(url_abs, site_name, publisher, breadcrumb_blog_url):
+    """url_abs: 本页绝对URL (og:url/canonical), site_name: og:site_name, publisher: JSON-LD org"""
+    article_json = (
+        '{"@context": "https://schema.org", "@type": "Article", "headline": "%s", '
+        '"description": "%s", "author": {"@type": "Person", "name": "何自刚"}, '
+        '"publisher": {"@type": "Organization", "name": "%s"}, '
+        '"datePublished": "%s", "dateModified": "%s", '
+        '"mainEntityOfPage": "%s", "url": "%s"}'
+    ) % (TITLE, DESC, publisher, DATE, DATE, url_abs, url_abs)
+    breadcrumb_json = (
+        '{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": ['
+        '{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://najieip.com/"}, '
+        '{"@type": "ListItem", "position": 2, "name": "博客", "item": "%s"}, '
+        '{"@type": "ListItem", "position": 3, "name": "%s"}]}'
+    ) % (breadcrumb_blog_url, TITLE)
+    html = f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{TITLE} — 纳杰觅理</title>
+<link rel="stylesheet" href="/style.css">
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "c80241f3caa4e708a12ed93baec1bde"}}'></script>
+<meta name="description" content="{DESC}">
+<meta name="keywords" content="{KEYWORDS}">
+<meta property="og:title" content="{TITLE}">
+<meta property="og:description" content="杭州首例AI垂类大模型商业秘密案罚35万：提示词、审查规则、标注规范被离职专家带走。总局令126号下AI商业秘密什么能保、怎么保得住、行民刑三轨怎么走。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{url_abs}">
+<meta property="og:site_name" content="{site_name}">
+<meta property="og:image" content="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{TITLE}">
+<meta name="twitter:description" content="杭州首例AI垂类大模型商业秘密案罚35万：提示词、审查规则、标注规范被离职专家带走。总局令126号下AI商业秘密什么能保、怎么保得住、行民刑三轨怎么走。">
+<link rel="canonical" href="{url_abs}">
+<script type="application/ld+json">
+{article_json}
+</script>
+<script type="application/ld+json">
+{breadcrumb_json}
+</script>
+</head>
+<body>
+<nav><a href="/">← 首页</a></nav>
+<article>
+<h1>{TITLE}</h1>
+{render_body()}
+</article>
+<footer>
+<p>© 2026 纳杰觅理 · 愛普納傑专利所 &amp; 觅理律所</p>
+<p><a href="https://github.com/ipfancy/najieip.com">Open Source</a></p>
+</footer>
+</body>
+</html>
+"""
+    return html
+
+def main():
+    # 主博客版
+    blog_url = "https://najieip.com/blog/20260902-ai-trade-secret-hidden-moat.html"
+    blog_html = gen_article(blog_url, "爱普纳杰专利所", "爱普纳杰专利所", "https://najieip.com/blog/")
+    with open(os.path.join(ROOT, "blog/20260902-ai-trade-secret-hidden-moat.html"), "w", encoding="utf-8") as f:
+        f.write(blog_html)
+    # 觅理版
+    mili_url = "https://najieip.com/mili/blog/20260902-ai-trade-secret-hidden-moat.html"
+    mili_html = gen_article(mili_url, "觅理律师事务所", "觅理律师事务所", "https://najieip.com/mili/blog/")
+    with open(os.path.join(ROOT, "mili/blog/20260902-ai-trade-secret-hidden-moat.html"), "w", encoding="utf-8") as f:
+        f.write(mili_html)
+    print("generated OK")
+
+if __name__ == "__main__":
+    main()
