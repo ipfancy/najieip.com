@@ -411,6 +411,13 @@
    "url": "https://najieip.com/blog/20260902-ai-trade-secret-hidden-moat.html",
    "status": "deployed",
    "note": "ART-0075泄密案精修归位 blog+mili/blog(JSON-LD/OG补全), articles旧路径改跳转, 索引+sitemap+articles.json更新, 5 URL 200验证"
+  },
+  {
+   "date": "2026-09-03",
+   "time": "22:00",
+   "url": "https://najieip.com/blog/20260903-ip-data-five-intel-libraries.html",
+   "status": "deployed",
+   "note": "ART-0076知产数据一本账精修归位 blog+najie/blog(补JSON-LD/OG/canonical), articles旧路径改跳转, 主blog+najie索引+sitemap+articles.json更新"
   }
  ]
 }

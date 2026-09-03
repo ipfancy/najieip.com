@@ -3,6 +3,18 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- ========== 首页 ========== -->
   <url>
+    <loc>https://najieip.com/blog/20260903-ip-data-five-intel-libraries.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://najieip.com/najie/blog/20260903-ip-data-five-intel-libraries.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://najieip.com/</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
