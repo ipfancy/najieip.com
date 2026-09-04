@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>页面不存在 — 纳杰知识产权</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: linear-gradient(135deg, #0e3b5c 0%, #0a2a42 60%, #061624 100%);
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    color: #e8f4fd;
+  }
+  .card { text-align: center; padding: 40px; max-width: 640px; }
+  .code { font-size: 72px; font-weight: 700; color: #00bfa5; line-height: 1.2; }
+  .msg { font-size: 22px; margin: 12px 0 8px; }
+  .sub { font-size: 14px; color: #8fb8d8; margin-bottom: 28px; line-height: 1.8; }
+  .links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .links a {
+    display: inline-block; padding: 10px 22px; border-radius: 6px;
+    text-decoration: none; font-size: 15px; background: rgba(255,255,255,0.1);
+    color: #e8f4fd; border: 1px solid rgba(255,255,255,0.2);
+    transition: background .2s;
+  }
+  .links a:hover { background: rgba(0,191,165,0.3); }
+  .note { margin-top: 24px; font-size: 12px; color: #5b7d99; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="code">404</div>
+  <div class="msg">您访问的页面不存在或已被移动</div>
+  <div class="sub" id="hint">正在为您跳转到正确页面…</div>
+  <div class="links">
+    <a href="/">首页</a>
+    <a href="/najie/">纳杰 · 商标软著</a>
+    <a href="/aipunajie/">爱普纳杰 · 专利申请</a>
+    <a href="/mili/">觅理 · 法律诉讼</a>
+  </div>
+  <div class="note">纳杰知识产权 · 商标软著找纳杰 · 专利申请找爱普纳杰 · 法律诉讼找觅理</div>
+</div>
+<script>
+  // 智能纠错：常见拼写错误 → 正确路径
+  (function() {
+    var path = window.location.pathname;
+    var fix = null;
+    // aipuna → aipunajie (缺 jie)
+    if (/^\/aipuna(?:\/|$)/.test(path) && !/^\/aipunajie/.test(path)) {
+      fix = '/aipunajie/' + path.replace(/^\/aipuna\//, '');
+    }
+    // aipuna-jie → aipunajie (连字符变体)
+    else if (/^\/aipuna-jie(?:\/|$)/.test(path)) {
+      fix = '/aipunajie/' + path.replace(/^\/aipuna-jie\//, '');
+    }
+    if (fix) {
+      document.getElementById('hint').textContent = '您可能想访问：爱普纳杰品牌页（正确路径 /aipunajie/），正在跳转…';
+      setTimeout(function(){ window.location.replace(fix); }, 800);
+    } else {
+      document.getElementById('hint').textContent = '您可以点击下方入口前往对应机构页面，或返回首页浏览。';
+    }
+  })();
+</script>
+</body>
+</html>
