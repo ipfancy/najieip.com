@@ -425,6 +425,13 @@
    "url": "https://najieip.com/blog/20260904-patent-malicious-litigation-defense.html",
    "status": "deployed",
    "note": "ART-0077专利碰瓷精修归位 blog+mili/blog(JSON-LD/OG/canonical补全), articles旧路径改跳转, 主blog+mili索引(+JSON-LD回填)+sitemap+articles.json更新"
+  },
+  {
+   "date": "2026-09-05",
+   "time": "22:10",
+   "url": "https://najieip.com/blog/20260905-ai-training-data-compliance.html",
+   "status": "deployed",
+   "note": "ART-0078开源数据别乱用精修归位 blog+mili/blog(JSON-LD/OG/canonical补全,**转strong), articles旧路径改跳转, 主blog+mili索引+sitemap+articles.json更新"
   }
  ]
 }
