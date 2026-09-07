@@ -432,6 +432,20 @@
    "url": "https://najieip.com/blog/20260905-ai-training-data-compliance.html",
    "status": "deployed",
    "note": "ART-0078开源数据别乱用精修归位 blog+mili/blog(JSON-LD/OG/canonical补全,**转strong), articles旧路径改跳转, 主blog+mili索引+sitemap+articles.json更新"
+  },
+  {
+   "file": "/articles/20260907-ai-judicial-opinion.html",
+   "title": "最高法AI司法意见落地",
+   "deployed_at": "2026-09-07T20:07:39",
+   "status": "pushed",
+   "note": "新增推广文章(2026新规)"
+  },
+  {
+   "file": "/articles/20260907-trademark-law-2026.html",
+   "title": "商标不是注册完就安全",
+   "deployed_at": "2026-09-07T20:07:39",
+   "status": "pushed",
+   "note": "新增推广文章(2026新规)"
   }
  ]
 }
