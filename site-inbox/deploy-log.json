@@ -432,13 +432,6 @@
    "url": "https://najieip.com/blog/20260905-ai-training-data-compliance.html",
    "status": "deployed",
    "note": "ART-0078开源数据别乱用精修归位 blog+mili/blog(JSON-LD/OG/canonical补全,**转strong), articles旧路径改跳转, 主blog+mili索引+sitemap+articles.json更新"
-  },
-  {
-   "date": "2026-09-06",
-   "time": "19:34",
-   "url": "https://najieip.com/mili/blog/gufen-jiagou-sheji-2026.html",
-   "status": "deployed",
-   "note": "门丞巡检: 9/5发布股权架构设计+行政复议60天属觅理线(公司法/行政诉讼)但滞留顶层blog, 24h+未归位, 补录复制至mili/blog(og:site_name/canonical/og:url/JSON-LD publisher觅理化), mili索引顶部+2卡片, sitemap+articles.json同步"
   }
  ]
 }
