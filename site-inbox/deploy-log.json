@@ -446,6 +446,13 @@
    "deployed_at": "2026-09-07T20:07:39",
    "status": "pushed",
    "note": "新增推广文章(2026新规)"
+  },
+  {
+   "date": "2026-09-07",
+   "time": "22:10",
+   "url": "https://najieip.com/blog/20260907-ai-model-asset-three-track-decision.html",
+   "status": "deployed",
+   "note": "ART-0079 AI模型被抄三条路精修归位 blog+mili/blog(JSON-LD/OG/canonical补全,**转strong), articles旧路径改跳转, 主blog+mili索引+sitemap+articles.json更新; 同时修复64e0dc4误删: 恢复mili/blog/gufen-jiagou+xingzheng-fuyi两篇(44fa2d7归位被回滚致线上404)+mili索引卡片+JSON-LD blogPost+sitemap+articles.json"
   }
  ]
 }
