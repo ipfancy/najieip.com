@@ -453,6 +453,13 @@
    "url": "https://najieip.com/blog/20260907-ai-model-asset-three-track-decision.html",
    "status": "deployed",
    "note": "ART-0079 AI模型被抄三条路精修归位 blog+mili/blog(JSON-LD/OG/canonical补全,**转strong), articles旧路径改跳转, 主blog+mili索引+sitemap+articles.json更新; 同时修复64e0dc4误删: 恢复mili/blog/gufen-jiagou+xingzheng-fuyi两篇(44fa2d7归位被回滚致线上404)+mili索引卡片+JSON-LD blogPost+sitemap+articles.json"
+  },
+  {
+   "date": "2026-09-08",
+   "time": "22:30",
+   "url": "https://najieip.com/blog/20260908-ai-content-liability-24-rules.html",
+   "status": "deployed",
+   "note": "ART-0080 AI生成内容被告最高法24条 精修归位 blog+mili/blog(OG/canonical/JSON-LD补全,**转strong,去公众号CTA+发布器尾部签名块); 同步版权十五五规划v2(版权质押冲120亿) blog+mili/blog; 两篇articles/旧路径改跳转页; 主blog+mili索引卡片+JSON-LD blogPost+sitemap(+4)+articles.json(+4)更新"
   }
  ]
 }
