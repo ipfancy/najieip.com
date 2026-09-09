@@ -460,6 +460,20 @@
    "url": "https://najieip.com/blog/20260908-ai-content-liability-24-rules.html",
    "status": "deployed",
    "note": "ART-0080 AI生成内容被告最高法24条 精修归位 blog+mili/blog(OG/canonical/JSON-LD补全,**转strong,去公众号CTA+发布器尾部签名块); 同步版权十五五规划v2(版权质押冲120亿) blog+mili/blog; 两篇articles/旧路径改跳转页; 主blog+mili索引卡片+JSON-LD blogPost+sitemap(+4)+articles.json(+4)更新"
+  },
+  {
+   "date": "2026-09-09",
+   "time": "19:00",
+   "commit": "51b3a9f",
+   "trigger": "如己应急代跑(门丞调度缺口+本批未进MacBook发布队列; 何律指示立即处理)",
+   "changes": [
+    "TASK-MKT-FILING/AUCL/AI1197 三篇觅理blog上线: mili/blog/20260909-jicheng-jiufen-li-an.html(继承立案)/20260909-aucl-livestream-ads.html(反法红线)/20260909-civilcode1197-ai-redflag.html(红旗AI)",
+    "mili/blog/index.html 顶部插入三篇卡片+JSON-LD BlogPosting(民商事诉讼/反不正当竞争/AI合规 tags)",
+    "sitemap.xml +3 urls (mili/blog)",
+    "articles.json +3 条 site=mili",
+    "生成脚本 site-inbox/gen-0909-mili.py (复刻 gen-0908-siteops.py 模式; 只新增不删除)",
+    "内容链路: 扬声初稿→如己quality-gate→何律终审放行, 复检通过后发布"
+   ]
   }
  ]
 }
