@@ -501,6 +501,20 @@
     "顺带修复 blog/index.html L438 重复标签（PPH三通道卡片残留重复文本，HEAD 既有缺陷）",
     "生成脚本 site-inbox/gen-0910-unfair-competition.py + sync-0910-unfair.py（复刻 gen-0909 模式）"
    ]
+  },
+  {
+   "date": "2026-09-10",
+   "time": "11:15",
+   "commit": "f66f923",
+   "trigger": "如己代跑(同9/9应急模式；何律指示'直接发')",
+   "changes": [
+    "TASK-MKT-PATENT1318 上线: mili/blog/20260909-patent-claim-construction-1318.html（发明目的解释边界·最高法1318号·专利侵权判定实务系列首篇）",
+    "TASK-MKT-OPC 上线: mili/blog/20260909-opc-one-person-company-legal.html（OPC一人公司第五关·《中国企业家》调研×法律风险）",
+    "mili/blog/index.html 顶部插入两篇卡片 + JSON-LD BlogPosting（专利/侵权判定/权利要求；OPC/创业合规/一人公司）",
+    "sitemap.xml +2 urls；articles.json +2（site=mili）",
+    "数字口径统一为34万→270万（1318）；OPC代理关系改中立表述+内测三限定（截止2026-10-10）",
+    "生成脚本 site-inbox/gen-0910-mili.py"
+   ]
   }
  ]
 }
