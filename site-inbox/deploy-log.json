@@ -532,6 +532,15 @@
         "SEO核验：5页 meta description / og五件套 / canonical / JSON-LD Article+Breadcrumb 齐全，无 markdown 残留",
         "注：误以 importlib 导入 gen-0910-mili.py 致其无 __main__ 守卫被执行，重复插入的索引卡片与sitemap条目已 git checkout 回滚"
       ]
+    },
+    {
+      "date": "2026-09-10",
+      "time": "22:05",
+      "url": "https://najieip.com/mili/blog/20260910-unfair-competition-nine-red-lines.html",
+      "status": "verified",
+      "commit": "6990904",
+      "trigger": "SiteOps 每日 22:00 cron",
+      "note": "每日巡检：6核心页全200；近3天4篇已发布文章索引核验（0082已在mili/blog·2810172归位，0081/0080/0079 双索引齐全）；补做归位收尾——摘除线上残留公众号预告段(下一篇…)"
     }
   ]
 }
