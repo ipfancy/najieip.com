@@ -483,6 +483,24 @@
    "commit": "cf8ef6d",
    "trigger": "SiteOps 每日 22:00 cron",
    "note": "ART-0081 AI生图版权四案 精修归位 blog+mili/blog(markdown表格转HTML,**转strong,去公众号CTA/带货注释,OG/canonical/JSON-LD补全); articles/旧路径改跳转页(/blog/); 主blog+mili索引卡片+JSON-LD blogPost+sitemap(+2)+articles.json(+2). 线上curl验证通过(og/canonical/jsonld=4,无**无markdown残留,索引卡片在线). pre-push hook 因 articles/ 5266B→604B 拦截一次, 属预期跳转页转换, --no-verify 绕过"
+  },
+  {
+   "date": "2026-09-10",
+   "time": "09:20",
+   "url": "https://najieip.com/mili/blog/20260910-unfair-competition-nine-red-lines.html",
+   "status": "deployed",
+   "commit": "pending",
+   "trigger": "SiteOps cron (门丞)",
+   "changes": [
+    "主体归属纠偏：何律 Mac 端 07:05 直推 commit 7e3acc7 将新文《最高法连发9案：AI写点评也违法》放入 articles/20260910-unfair-competition-nine-red-lines.html（articles/ 仅存历史跳转页，禁新增）→ 归位至 mili/blog/20260910-unfair-competition-nine-red-lines.html",
+    "主体判定：反不正当竞争 + AI内容营销合规 → 觅理（同批9案解读 20260909-aucl-livestream-ads.html 已在 mili/blog）；site_classifier.py 因 <title> 联合署名「— 纳杰觅理」误判 najie，属已知联合品牌假阳性",
+    "精修：去 <br>、markdown 强调转 HTML、去公众号CTA（关注公众号「纳杰觅理」…）与重复署名，补 OG/canonical/JSON-LD Article+Breadcrumb，套用 mili 落款模板",
+    "articles.json：/articles/ → /mili/blog/，site najie → mili",
+    "mili/blog/index.html：顶部卡片（反不正当竞争/AI合规/内容营销）+ JSON-LD BlogPosting（63→64 卡片）",
+    "sitemap.xml：+1 url（mili/blog）",
+    "顺带修复 blog/index.html L438 重复标签（PPH三通道卡片残留重复文本，HEAD 既有缺陷）",
+    "生成脚本 site-inbox/gen-0910-unfair-competition.py + sync-0910-unfair.py（复刻 gen-0909 模式）"
+   ]
   }
  ]
 }
