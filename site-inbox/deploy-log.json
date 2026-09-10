@@ -489,7 +489,7 @@
    "time": "09:20",
    "url": "https://najieip.com/mili/blog/20260910-unfair-competition-nine-red-lines.html",
    "status": "deployed",
-   "commit": "pending",
+   "commit": "2810172",
    "trigger": "SiteOps cron (门丞)",
    "changes": [
     "主体归属纠偏：何律 Mac 端 07:05 直推 commit 7e3acc7 将新文《最高法连发9案：AI写点评也违法》放入 articles/20260910-unfair-competition-nine-red-lines.html（articles/ 仅存历史跳转页，禁新增）→ 归位至 mili/blog/20260910-unfair-competition-nine-red-lines.html",
