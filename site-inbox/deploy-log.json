@@ -514,14 +514,15 @@
         "sitemap.xml +2 urls；articles.json +2（site=mili）",
         "数字口径统一为34万→270万（1318）；OPC代理关系改中立表述+内测三限定（截止2026-10-10）",
         "生成脚本 site-inbox/gen-0910-mili.py"
-      ]
+      ],
+      "url": "https://najieip.com/mili/blog/20260909-patent-claim-construction-1318.html + 20260909-opc-one-person-company-legal.html"
     },
     {
       "date": "2026-09-10",
       "time": "12:50",
       "url": "https://najieip.com/mili/blog/",
       "status": "verified",
-      "commit": "pending(本次提交)",
+      "commit": "9d79ee0 + f184e6a",
       "trigger": "门丞(siteops) · 扬声派单 TASK-SITE-PUBLISH-5ART-20260910",
       "changes": [
         "接单核验：TASK-SITE-PUBLISH-5ART-20260910 所列5篇觅理blog文章，经查已由如己代跑于9/9(commit 51b3a9f 三篇)与9/10(commit f66f923 两篇)上线，全部 najieip.com/mili/blog 返回200",
