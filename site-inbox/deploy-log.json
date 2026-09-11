@@ -629,6 +629,48 @@
         "najie-seocheck 全通过（sitemap 308 条，lastmod 308/308）；najie-ogcheck 4/4 页 0 issues",
         "处置本机分支落后：reset --hard origin/main 丢弃重复 commit（6c25ae3/4497341）+ 删除失效脚本 gen-0911-trademark-najie.py"
       ]
+    },
+    {
+      "date": "2026-09-12",
+      "time": "07:4x",
+      "agent": "SiteOps",
+      "task": "第37周 多语言同步（GEO 周追踪配套）",
+      "commit": "1ad48e0",
+      "pushed": true,
+      "files_added": [
+        "en/blog/20260904-patent-malicious-litigation-defense-en.html",
+        "fr/blog/20260904-patent-malicious-litigation-defense-fr.html"
+      ],
+      "files_modified": [
+        "en/blog/index.html",
+        "fr/blog/index.html",
+        "sitemap.xml",
+        "mili/blog/20260904-patent-malicious-litigation-defense.html",
+        "blog/20260904-patent-malicious-litigation-defense.html",
+        "articles/20260904-patent-malicious-litigation-defense.html"
+      ],
+      "sitemap_urls": 406,
+      "verification": {
+        "method": "curl -sI -L",
+        "results": {
+          "https://najieip.com/en/blog/20260904-patent-malicious-litigation-defense-en.html": 200,
+          "https://najieip.com/fr/blog/20260904-patent-malicious-litigation-defense-fr.html": 200,
+          "https://najieip.com/mili/blog/20260904-patent-malicious-litigation-defense.html": 200,
+          "https://najieip.com/en/blog/": 200,
+          "https://najieip.com/fr/blog/": 200
+        },
+        "og_canonical_jsonld": "pass (og:url + canonical + application/ld+json present)",
+        "schema_org_intact": "pass (count=1, masked 'https://***'=0)",
+        "markdown_bold_leak": "0",
+        "index_cards_live": true,
+        "hreflang_zh_page": [
+          "zh-CN",
+          "en",
+          "fr",
+          "x-default"
+        ]
+      },
+      "notes": "ART-2026-0077『专利碰瓷7招反制』EN/FR 版上线（本周 GEO 内容吸收度最高样本国际化）；DeepSeek 翻译，法律术语定向校准；中英法三语 hreflang 互链已加"
     }
   ]
 }
