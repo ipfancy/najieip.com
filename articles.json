@@ -159,7 +159,7 @@
   "url": "/mili/blog/gufen-jiagou-sheji-2026.html",
   "title": "股权架构设计踩坑：67%·51%·34% 三个比例，决定公司谁说了算",
   "date": "2026-09-05",
-  "site": "najie"
+  "site": "mili"
  },
  {
   "url": "/blog/xingzheng-fuyi-2026.html",
@@ -171,7 +171,7 @@
   "url": "/mili/blog/xingzheng-fuyi-2026.html",
   "title": "收到行政处罚别慌，60天行政复议期错过就晚了",
   "date": "2026-09-05",
-  "site": "najie"
+  "site": "mili"
  },
  {
   "url": "/blog/20260904-patent-malicious-litigation-defense.html",
@@ -210,16 +210,16 @@
   "site": "najie"
  },
  {
-  "url": "/blog/pct-guojijieduan-feiyong-2026.html",
+  "url": "/najie/blog/pct-guojijieduan-feiyong-2026.html",
   "title": "PCT申请费用新规：XML电子提交每件省2530元",
   "date": "2026-09-02",
   "site": "najie"
  },
  {
-  "url": "/blog/shangye-mimi-baohu-2026.html",
+  "url": "/mili/blog/shangye-mimi-baohu-2026.html",
   "title": "商业秘密被离职员工带走？做对这5件事才能维权",
   "date": "2026-09-02",
-  "site": "najie"
+  "site": "mili"
  },
  {
   "url": "/blog/20260902-ai-trade-secret-hidden-moat.html",
@@ -294,7 +294,7 @@
   "site": "mili"
  },
  {
-  "url": "/blog/zhongguo-zhuanli-jiang-shenbao-2026.html",
+  "url": "/najie/blog/zhongguo-zhuanli-jiang-shenbao-2026.html",
   "title": "优秀奖砍了72项！冲中国专利奖，这6步现在就要做",
   "date": "2026-08-29",
   "site": "najie"
@@ -321,7 +321,8 @@
  {
   "date": "2026-08-29",
   "title": "律师法修改通过：9月1日施行，这5条和你直接相关",
-  "url": "/blog/lawyer-law-amendment-2026.html"
+  "url": "/najie/blog/lawyer-law-amendment-2026.html",
+  "site": "najie"
  },
  {
   "url": "/mili/blog/20260911-mili-insurance-consultation.html",
@@ -795,7 +796,7 @@
   "site": "najie"
  },
  {
-  "url": "/blog/shierwu-ip-plan-2026.html",
+  "url": "/najie/blog/shierwu-ip-exports-455yi-2026.html",
   "title": "十五五IP规划过审了，你的企业IP策略该调哪三个方向",
   "date": "2026-07-29",
   "site": "najie"
@@ -846,7 +847,7 @@
   "url": "/mili/blog/weituo-chuangzuo-banquan-xieyi-bi-keng.html",
   "title": "你花5万做VI，商标却被驳回？著作权法大修，\"付了钱≠拥有\"的坑90%企业还在踩",
   "date": "2026-07-23",
-  "site": "najie"
+  "site": "mili"
  },
  {
   "url": "/articles/20260723-weituo-chuangzuo-banquan-xieyi-bi-keng.html",
@@ -858,7 +859,7 @@
   "url": "/mili/blog/copyright-law-feedback-guide.html",
   "title": "8月12日截止：著作权法实施条例征求意见，企业还能说\"不\"",
   "date": "2026-07-22",
-  "site": "najie"
+  "site": "mili"
  },
  {
   "url": "/articles/copyright-law-feedback-guide-20260722.html",
@@ -870,7 +871,7 @@
   "url": "/mili/blog/mili-join-founding-partner.html",
   "title": "觅理加盟-创始合伙人亲述-20260719",
   "date": "2026-07-19",
-  "site": "najie"
+  "site": "mili"
  },
  {
   "url": "/articles/觅理加盟-创始合伙人亲述-20260719.html",
@@ -889,5 +890,107 @@
   "title": "\"联营整合、共同定价\"，怎么就成了垄断协议？——四家检测公司的教训",
   "date": "2026-09-11",
   "site": "mili"
+ },
+ {
+  "url": "/najie/blog/20260810-xishuo-patent-invalid-huashan.html",
+  "title": "专利无效攻防：一场没有硝烟的「华山论剑」",
+  "date": "2026-08-10",
+  "site": "najie"
+ },
+ {
+  "url": "/najie/blog/20260815-sep-administrative-ruling-tactics.html",
+  "title": "谈8年没谈拢的专利许可，立案9个月就签了：被90%企业低估的行政裁决",
+  "date": "2026-08-15",
+  "site": "najie"
+ },
+ {
+  "url": "/najie/blog/jichengdianlu-butusheji-zhengqiu-yijian-2026.html",
+  "title": "集成电路布图设计保护条例配套规章征求意见——半导体企业合规新起点",
+  "date": "2026-08-05",
+  "site": "najie"
+ },
+ {
+  "url": "/najie/blog/pph-santongdao-2026.html",
+  "title": "PPH三通道齐开——2026全球专利加速元年",
+  "date": "2026-08-05",
+  "site": "najie"
+ },
+ {
+  "url": "/najie/blog/qiye-falvguwen-fuwu-quanjiexi.html",
+  "title": "企业常年法律顾问服务全解析：该不该请、怎么请、花多少钱",
+  "date": "2026-08-12",
+  "site": "najie"
+ },
+ {
+  "url": "/najie/blog/xishuo-xiuxian-003.html",
+  "title": "IP修仙录·第三回 天道驳文如惊雷",
+  "date": "2026-08-05",
+  "site": "najie"
+ },
+ {
+  "url": "/najie/blog/zhihu-hotlist-20260810.html",
+  "title": "知乎热榜法律视角",
+  "date": "2026-08-10",
+  "site": "najie"
+ },
+ {
+  "url": "/najie/blog/zhuanli-youxian-shencha-xingui-2026.html",
+  "title": "专利优先审查新规：9月1日施行，企业IPR 31天应对指南",
+  "date": "2026-08-05",
+  "site": "najie"
+ },
+ {
+  "url": "/najie/blog/zhuzuoquanfa-shishi-tiaoli-xiuding-2026.html",
+  "title": "著作权法实施条例修订：企业著作权合规五大要点",
+  "date": "2026-08-05",
+  "site": "najie"
+ },
+ {
+  "url": "/najie/blog/发完文章别手贱-冷启动期教训-20260812.html",
+  "title": "发完文章别手贱！40分钟冷启动期，我们拿限流换来的教训",
+  "date": "2026-08-12",
+  "site": "najie"
+ },
+ {
+  "url": "/najie/blog/shangbiao-xuzhan-banli-2026.html",
+  "title": "商标续展办理：有效期、宽展期、续展费用与常见误区",
+  "date": "2026-09-10",
+  "site": "najie"
+ },
+ {
+  "url": "/najie/blog/overseas-trademark-protection-ruixing.html",
+  "title": "瑞幸泰国逆胜：中国品牌出海商标维权五步可复制路径",
+  "date": "2026-08-05",
+  "site": "najie"
+ },
+ {
+  "url": "/aipunajie/blog/ai-pinkong-shoumenren.html",
+  "title": "AI品控守门人：填补知产服务最后一关",
+  "date": "2026-08-11",
+  "site": "aipunajie"
+ },
+ {
+  "url": "/aipunajie/blog/dilibiaozhi-shenbao-yunyong-2026.html",
+  "title": "从\"地方特色\"到\"品牌资产\"：2026地理标志申报·运用·品牌化全解析",
+  "date": "2026-08-15",
+  "site": "aipunajie"
+ },
+ {
+  "url": "/aipunajie/blog/qiye-falv-tijian-2026.html",
+  "title": "企业法律体检：中小企业法律风险排查与合规体检全指南",
+  "date": "2026-09-10",
+  "site": "aipunajie"
+ },
+ {
+  "url": "/aipunajie/blog/shuju-zhishichanquan-dengji-2026.html",
+  "title": "数据知识产权登记落地：从\"政策概念\"到\"企业资产\"",
+  "date": "2026-08-15",
+  "site": "aipunajie"
+ },
+ {
+  "url": "/aipunajie/blog/ai-zhuanli-shenqing-zhinan-2026.html",
+  "title": "AI发明专利申请指引发布：企业专利策略进入规则执行期",
+  "date": "2026-08-12",
+  "site": "aipunajie"
  }
 ]
