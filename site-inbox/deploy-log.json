@@ -559,6 +559,19 @@
     "线上核验(curl)：文章 200/9386B 无 markdown 残留无公众号CTA、canonical 指向 /najie/blog/；articles/ 旧路径 200 且 meta refresh 指向新址；/najie/blog/ 索引含新卡+JSON-LD；sitemap.xml 含新 URL",
     "推送：f128cb8..d55681f → origin/main（一次成功）"
    ]
+  },
+  {
+   "date": "2026-09-11",
+   "time": "09:25",
+   "url": "https://najieip.com/mili/blog/20260910-human-ai-collaboration-ip.html",
+   "status": "verified",
+   "commit": "c06c71b",
+   "trigger": "如己代跑（TASK-MKT-HUMANAI：扬声整改稿→如己复检通过→代跑上线）",
+   "changes": [
+    "mili/blog 新增 1 篇：AI 是同事，不是作者（人机协作与知识产权）",
+    "mili/blog/index.html 卡片+JSON-LD、sitemap.xml、articles.json 同步",
+    "curl 测线 HTTP 200，索引含本篇"
+   ]
   }
  ]
 }
