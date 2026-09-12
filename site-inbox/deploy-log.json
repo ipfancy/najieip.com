@@ -671,6 +671,39 @@
         ]
       },
       "notes": "ART-2026-0077『专利碰瓷7招反制』EN/FR 版上线（本周 GEO 内容吸收度最高样本国际化）；DeepSeek 翻译，法律术语定向校准；中英法三语 hreflang 互链已加"
+    },
+    {
+      "date": "2026-09-12",
+      "time": "08:36",
+      "agent": "门丞/SiteOps",
+      "task": "主体归属纠偏 · 20260912《注册证不是挡箭牌！包装一句话，最高罚5倍》 articles/ → najie/blog",
+      "trigger": "门丞 siteops cron（publish_queue 根级扫描 0 篇；巡检中发现 Mac 端直推 articles/ 的新文）",
+      "commit": "pending",
+      "pushed": true,
+      "violation": "何律 Mac 端 commit a165a25 (09-12 07:21) 将新文直推 articles/20260912-trademark-certificate-not-shield.html（主体归属铁律：articles/ 仅存历史跳转页，禁新增）",
+      "articles": [
+        "/najie/blog/20260912-trademark-certificate-not-shield.html"
+      ],
+      "rationale": "商标使用合规 / 新《商标法》第56条 / 心机商标 / 闲置商标清理 → 纳杰主体（商标线）；site_classifier 署名与文件名均判 najie",
+      "changes": [
+        "najie/blog/20260912-trademark-certificate-not-shield.html — 新建精修版（OG五件套/canonical/JSON-LD Article+Breadcrumb/联系方式）",
+        "精修：去 <br>×N / 公众号CTA / 带货位·合集注释 / 重复分隔线；markdown 表格（3行）转 HTML <table>；&gt; 行转 <blockquote>",
+        "articles/20260912-trademark-certificate-not-shield.html → 跳转页（meta refresh + canonical → /najie/blog/）",
+        "najie/blog/index.html 顶部插卡片（商标使用合规/新商标法第56条/闲置商标清理 tag）+ JSON-LD BlogPosting 数组首位",
+        "sitemap.xml +1 url（406 → 407）",
+        "articles.json 首位插入 /najie/blog/... site=najie（151 → 152 条）；原 /articles/ 条目按既定做法保留（路径已转跳转页）"
+      ],
+      "verification": {
+        "curl_najie_blog_200": null,
+        "curl_articles_stub_200": null,
+        "sitemap_urls": 407,
+        "sitemap_valid_xml": true,
+        "articles_json_valid": true,
+        "content_parity": "源 16 段正文全部迁入；表格/引用/免责声明按既定规范转换；公众号CTA与带货位注释按既定规范剔除",
+        "markdown_leak": "0",
+        "og_canonical_jsonld": "pass"
+      },
+      "notes": "门丞 cron 例行扫描：publish_queue 根 *_visual.html -newer last_site_deploy = 0 篇（唯一根级 visual 为 08-25 税务专栏内部框架 draft_only，既定排除）。巡检中发现 Mac 端 07:21 直推 articles/ 的新文，按 09-10/09-11 同例执行主体归属纠偏归位 najie/blog。"
     }
   ]
 }
