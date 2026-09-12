@@ -746,6 +746,30 @@
     "sitemap_urls": 413
    },
    "systemic_note": "同类违规当日 2 起，均源自 Mac 端直推脚本写入遗留目录（articles/ 与 blog/ 根）。建议修复 Mac 端发布脚本的落盘目录为 najie/blog、aipunajie/blog、mili/blog，否则每篇新文都需人工纠偏。"
+  },
+  {
+   "date": "2026-09-12",
+   "time": "23:40",
+   "commit": "pending",
+   "trigger": "门丞 SiteOps cron 例行巡检（发布队列空 → 转主体归属专项）",
+   "changes": [
+    "发布队列无新稿（最新 visual.html 2026-08-25，早于 last_site_deploy 2026-09-12 10:35）",
+    "专项排查发现 2026-09-07 20:07 Mac 端直推 articles/ 的两篇推广文章未走精修归位流程（铁律：articles/ 禁新增文章）",
+    "articles/20260907-ai-judicial-opinion.html -> mili/blog/20260907-ai-judicial-opinion.html（涉AI纠纷/AI侵权/责任边界 → 觅理；系 20260908《AI生成内容被告》文中预告的“24条逐条拆解”续篇）",
+    "articles/20260907-trademark-law-2026.html -> najie/blog/20260907-trademark-law-2026.html（商标法2026/第56条/商标合规 → 纳杰）",
+    "两文 head 补齐站点标准：description/keywords/OG(含 og:site_name 主体)/Twitter/canonical/JSON-LD Article+BreadcrumbList/Cloudflare beacon",
+    "旧 articles/ 路径改跳转页（meta refresh + canonical + noindex, follow），保留已收录 URL",
+    "articles.json url 两条改主体路径；sitemap.xml +2 主体 URL（只增不删）",
+    "mili/blog/index.html、najie/blog/index.html 顶部 article-card + JSON-LD blogPost 首位插入",
+    "en/blog、fr/blog 两篇翻译页中文回链改指 mili/blog",
+    "未办事项（专项批次）：articles/ 仍存 20 篇完整文章未归位（其中 10 篇主体目录已有同名件可直接转跳转，10 篇需按标题重新归类）"
+   ],
+   "verification": {
+    "queue_empty": true,
+    "git_fetch_synced": true,
+    "articles_full_remaining": 20
+   },
+   "systemic_note": "同类违规累计 4 起（0907×2 + 0912×2），根因同前：Mac 端发布脚本落盘目录写死为 articles/ 与 blog/ 根。建议尽快把脚本落盘目录改为 najie/blog、aipunajie/blog、mili/blog；另建议一次性清理 articles/ 遗留 20 篇完整页。"
   }
  ]
 }
