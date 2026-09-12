@@ -117,7 +117,7 @@ for j in JOBS:
 for j in JOBS:
     stub = (
         '<!DOCTYPE html>\n<html lang="zh-CN">\n<head>\n<meta charset="UTF-8">\n'
-        '<meta http-equiv="refresh" content="0; url=%s">\n'
+        '<meta http-equiv="refresh" content="0; url=/%s">\n'
         '<link rel="canonical" href="%s">\n'
         '<meta name="robots" content="noindex, follow">\n'
         '<title>%s</title>\n</head>\n<body>\n'
