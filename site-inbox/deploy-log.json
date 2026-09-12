@@ -678,7 +678,7 @@
       "agent": "门丞/SiteOps",
       "task": "主体归属纠偏 · 20260912《注册证不是挡箭牌！包装一句话，最高罚5倍》 articles/ → najie/blog",
       "trigger": "门丞 siteops cron（publish_queue 根级扫描 0 篇；巡检中发现 Mac 端直推 articles/ 的新文）",
-      "commit": "pending",
+      "commit": "ca92f76",
       "pushed": true,
       "violation": "何律 Mac 端 commit a165a25 (09-12 07:21) 将新文直推 articles/20260912-trademark-certificate-not-shield.html（主体归属铁律：articles/ 仅存历史跳转页，禁新增）",
       "articles": [
@@ -694,14 +694,19 @@
         "articles.json 首位插入 /najie/blog/... site=najie（151 → 152 条）；原 /articles/ 条目按既定做法保留（路径已转跳转页）"
       ],
       "verification": {
-        "curl_najie_blog_200": null,
-        "curl_articles_stub_200": null,
+        "curl_najie_blog_200": true,
+        "curl_articles_stub_200": true,
         "sitemap_urls": 407,
         "sitemap_valid_xml": true,
         "articles_json_valid": true,
         "content_parity": "源 16 段正文全部迁入；表格/引用/免责声明按既定规范转换；公众号CTA与带货位注释按既定规范剔除",
         "markdown_leak": "0",
-        "og_canonical_jsonld": "pass"
+        "og_canonical_jsonld": "pass",
+        "live_canonical": "https://najieip.com/najie/blog/20260912-trademark-certificate-not-shield.html",
+        "live_table_blockquote_contact": "pass (table=1, blockquote=1, tel=1)",
+        "live_najie_blog_index_card": true,
+        "live_articles_stub_redirect": true,
+        "method": "curl -s / -o /dev/null -w %{http_code} + 内容 grep 核验（GitHub Pages 部署后 90s）"
       },
       "notes": "门丞 cron 例行扫描：publish_queue 根 *_visual.html -newer last_site_deploy = 0 篇（唯一根级 visual 为 08-25 税务专栏内部框架 draft_only，既定排除）。巡检中发现 Mac 端 07:21 直推 articles/ 的新文，按 09-10/09-11 同例执行主体归属纠偏归位 najie/blog。"
     }
