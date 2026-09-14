@@ -1,6 +1,32 @@
 {
  "deploys": [
   {
+   "date": "2026-09-14",
+   "time": "11:35",
+   "commit": "b23a9d8",
+   "trigger": "门丞 SiteOps cron (0914 11:33 巡检轮次)",
+   "changes": [
+    "检测：publish_queue 内 20260914_101800_商标被驳回的6个原因 / 20260914_101900_专利选错白等2年 两篇 _visual.html 因 11:10 视觉模板重渲染而新于 last_site_deploy(10:39) 标记，触达扫描",
+    "核验：两篇正文已于 fe30896(10:36) 落位 najie/blog 与 aipunajie/blog，线上 curl 均 200，正文逐句比对一致（仅包装层页脚排版差异，正文零变化）→ 判定无新稿，不重复部署、不重复推送",
+    "修正：aipunajie/blog/20260914-patent-invention-vs-utility-model.html 的 byline 由模板默认「纳杰知识产权 · 原创」改为「爱普纳杰专利代理 · 原创」(og:site_name/JSON-LD publisher=北京爱普纳杰专利代理事务所 已正确，仅 byline 漏改，属主体归属铁律项)",
+    "标记：touch _published/last_site_deploy (11:33:41)"
+   ],
+   "verification": {
+    "najie_article_http": 200,
+    "aipunajie_article_http": 200,
+    "najie_index_card": true,
+    "aipunajie_index_card": true,
+    "sitemap_0914_entries": 2,
+    "articles_json_0914_entries": 2,
+    "publisher_najie": "北京纳杰知识产权代理有限公司",
+    "publisher_aipunajie": "北京爱普纳杰专利代理事务所",
+    "byline_najie": "纳杰知识产权 · 原创",
+    "byline_aipunajie": "爱普纳杰专利代理 · 原创",
+    "git_fork_check": "fetch 后 origin/main...HEAD = 0/0，无分叉"
+   },
+   "note": "本轮无新增文章；articles/ 目录零改动（主体归属铁律）。"
+  },
+  {
    "date": "2026-08-29",
    "time": "11:00",
    "commit": "pending",
