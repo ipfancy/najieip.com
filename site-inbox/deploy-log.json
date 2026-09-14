@@ -799,6 +799,40 @@
     },
     "md_artifacts_remaining": 0
    }
+  },
+  {
+   "date": "2026-09-14",
+   "time": "10:40",
+   "commit": "pending",
+   "trigger": "门丞 SiteOps cron：publish_queue 检出 2 篇新稿（20260914_101800 / 20260914_101900）",
+   "changes": [
+    "publish_queue/20260914_101800_商标被驳回的6个原因_visual.html -> najie/blog/20260914-trademark-rejection-six-reasons.html（商标授权确权 → 纳杰）",
+    "publish_queue/20260914_101900_专利选错白等2年_visual.html -> aipunajie/blog/20260914-patent-invention-vs-utility-model.html（专利新申请/布局选型 → 爱普纳杰）",
+    "两文补站点标准 head：description/keywords/OG（og:site_name、og:image 已 curl 验证 200）/Twitter Card/canonical/JSON-LD Article+BreadcrumbList/Cloudflare beacon",
+    "正文微信排版残留清理：去内联 style、去 33/27 处 &nbsp; 空行占位段、纯加粗段落 → <h2>（9/5 处）、--- → <hr>；文字内容零改动（第一稿为准）",
+    "两页采用自包含 <style>（不依赖根 /style.css — 该文件线上 404，见 deviations）",
+    "articles.json +2 条（site=najie / site=aipunajie）",
+    "sitemap.xml +2 条主体目录 URL（lastmod 2026-09-14，只增不删，XML 校验通过）",
+    "najie/blog/index.html 与 aipunajie/blog/index.html 顶部各 +1 article-card，JSON-LD blogPost 首位各插 1 条（JSON-LD 全量校验通过）",
+    "articles/ 零写入（铁律：仅存历史跳转页，不新增）；mili/blog 本轮无新增"
+   ],
+   "deviations": [
+    "主体归属人工裁定，未采纳 site_classifier.py 结果：该脚本对两文均返回 mili。原因：正文兜底规则 LITIGATION_COMPOUND 命中「维权」「专利侵权诉讼」等词且优先级高于标题强信号，把非诉文章误判为觅理。本次按三主体铁律人工判定（商标驳回→纳杰、专利选型→爱普纳杰）。建议后续给分类器加「标题强信号优先于正文兜底」的层级修正。",
+    "根 /style.css 线上 404（curl 验证）：全站 najie/blog 下 41 个已发布页引用 href=\"/style.css\"，均取不到样式表。本轮两篇新页改用自包含内联 <style> 规避；该缺陷未在本轮修复（影响面涉及 41 页历史稿件外观，需单独评审），仅记录待办。",
+    "发布队列两文的对应 .md 与 _visual.html 未写入 _published/：本 cron 章程以 last_site_deploy 时间戳为增量判据，不做 _published 归档（与 site_publish.py 的三层去重链路并行，互不冲突）。"
+   ],
+   "verification": {
+    "git_fetch_synced": true,
+    "og_image_curl": {
+     "5669602": 200,
+     "3183150": 200
+    },
+    "style_css_404": true,
+    "queue_files": [
+     "20260914_101800_商标被驳回的6个原因_visual.html",
+     "20260914_101900_专利选错白等2年_visual.html"
+    ]
+   }
   }
  ]
 }
