@@ -871,6 +871,36 @@
     "articles_json_total": 158,
     "sitemap_url_total": 419
    }
+  },
+  {
+   "date": "2026-09-14",
+   "time": "21:05",
+   "commit": "pending（本轮零发布，日志随本轮巡检提交）",
+   "trigger": "门丞 SiteOps cron：publish_queue 零新稿（增量判据 last_site_deploy=11:33 未超前）→ 转线下核验",
+   "changes": [
+    "零发布：本轮无新 *_visual.html（find -maxdepth 1 -newer _published/last_site_deploy → 0 条），未复制文件、未改主体目录、未触碰 last_site_deploy",
+    "存量核验：今日 10:40 轮上站的 2 篇仍在线且已入列表（najie/blog/20260914-trademark-rejection-six-reasons.html、aipunajie/blog/20260914-patent-invention-vs-utility-model.html）",
+    "articles/ 零写入（铁律：仅存历史跳转页，不新增）；mili/blog 本轮无新增（无觅理归属稿）"
+   ],
+   "deviations": [
+    "队列 pending 状态：队列根 3 枚 *_visual.html（2 篇待审稿 + 1 篇 draft_only 税务专栏选题框架），均为公众号侧事前确认待何律回「发布」状态，与官网管道互不冲突（官网侧早在 10:40 已归位上站）。"
+   ],
+   "verification": {
+    "git_fetch_synced": true,
+    "git_worktree_clean": true,
+    "queue_new_files": 0,
+    "live_curl": {
+     "https://najieip.com/najie/blog/20260914-trademark-rejection-six-reasons.html": 200,
+     "https://najieip.com/aipunajie/blog/20260914-patent-invention-vs-utility-model.html": 200,
+     "https://najieip.com/najie/blog/": 200,
+     "https://najieip.com/aipunajie/blog/": 200
+    },
+    "blog_index_card_present": {
+     "najie": true,
+     "aipunajie": true
+    },
+    "articles_dir_writes": 0
+   }
   }
  ]
 }
