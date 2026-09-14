@@ -770,6 +770,35 @@
     "articles_full_remaining": 20
    },
    "systemic_note": "同类违规累计 4 起（0907×2 + 0912×2），根因同前：Mac 端发布脚本落盘目录写死为 articles/ 与 blog/ 根。建议尽快把脚本落盘目录改为 najie/blog、aipunajie/blog、mili/blog；另建议一次性清理 articles/ 遗留 20 篇完整页。"
+  },
+  {
+   "date": "2026-09-14",
+   "time": "09:00",
+   "commit": "pending",
+   "trigger": "门丞 SiteOps cron：发布队列零新稿 → 落实 0913 分叉修复遗留的 2 篇待归位真稿（HANDOFF-20260913-sysop.md 第二节）",
+   "changes": [
+    "site-inbox/20260912-ai-digital-employee-deployment.html -> najie/blog/20260912-ai-digital-employee-deployment.html（AI 系统/数字员工/专业服务 → 纳杰）",
+    "site-inbox/20260913-trademark-report-defense-rights.html -> najie/blog/20260913-trademark-report-defense-rights.html（商标程序权利/第70条 → 纳杰）",
+    "两文补站点标准 head：description/keywords/OG（含 og:site_name=纳杰知识产权、og:image 已 curl 验证 200）/Twitter Card/canonical/JSON-LD Article+BreadcrumbList/Cloudflare beacon",
+    "正文 markdown 残留清理：**加粗**→<strong>、&gt; 引用→<blockquote>、---→<hr>、转义注释→真实注释、去散落 <br>；文字内容零改动（第一稿为准）",
+    "articles.json +2 条（品牌路径 /najie/blog/*，site=najie）",
+    "sitemap.xml +2 条 najie/blog URL（lastmod 2026-09-14，只增不删，XML 校验通过）",
+    "najie/blog/index.html 顶部 article-card ×2 + JSON-LD blogPost 首位插入（JSON-LD 全量校验通过）",
+    "articles/ 零写入（铁律：仅存历史跳转页，不新增）"
+   ],
+   "deviations": [
+    "HANDOFF 第二节第 2 项建议为两文在 /articles/{slug}.html 留跳转页——本轮未执行：①门丞 cron 章程明令 git add 只加主体目录、articles/ 禁新增；②两条 /articles/ URL 自创建起从未进过 origin/main，线上一直 404，无已收录权重；③全仓 + 发布队列（含 _wechat_drafts/、multi-platform/）grep 未发现任何指向这两条 /articles/ URL 的内外链。如后续发现公众号「阅读原文」曾指向该路径，再按 batch2 套路补跳转页。"
+   ],
+   "verification": {
+    "queue_empty": true,
+    "git_fetch_synced": true,
+    "og_image_curl": {
+     "3943716": 200,
+     "5669602": 200,
+     "48148(旧默认,弃用)": 404
+    },
+    "md_artifacts_remaining": 0
+   }
   }
  ]
 }
