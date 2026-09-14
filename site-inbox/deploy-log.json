@@ -934,6 +934,40 @@
     },
     "articles_dir_writes": 0
    }
+  },
+  {
+   "date": "2026-09-14",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "daily-2200",
+   "commit": "f5b5d97",
+   "action": "主 blog/index.html 补 5 张缺失文章卡片（0912-0914）",
+   "cards_added": [
+    "/najie/blog/20260914-trademark-rejection-six-reasons.html",
+    "/aipunajie/blog/20260914-patent-invention-vs-utility-model.html",
+    "/najie/blog/20260913-trademark-report-defense-rights.html",
+    "/najie/blog/20260912-trademark-certificate-not-shield.html",
+    "/najie/blog/20260912-ai-digital-employee-deployment.html"
+   ],
+   "verification": {
+    "core_pages_http": {
+     "najieip.com": 200,
+     "/mili/": 200,
+     "/najie/": 200,
+     "/blog/": 200,
+     "/sitemap.xml": 200,
+     "/llms.txt": 200
+    },
+    "articles_http_200": "5/5",
+    "live_index_cards": "5/5 出现于 https://najieip.com/blog/",
+    "seocheck": "全部通过（sitemap 419 URL 全带 lastmod / 核心页 JSON-LD 齐备）",
+    "commit_deletion_scan": "最近 5 commit 无 D 条目"
+   },
+   "defects_found": [
+    "主 blog/index.html 缺失 0912-0914 共 5 张卡片（已修复）",
+    "content.db 缺 09-14 两篇已上线文章记录 → 已出 HANDOFF-20260914-content-db-gap.md，未擅自编号写入"
+   ],
+   "result": "PASS"
   }
  ]
 }
