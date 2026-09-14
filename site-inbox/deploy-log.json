@@ -803,7 +803,7 @@
   {
    "date": "2026-09-14",
    "time": "10:40",
-   "commit": "pending",
+   "commit": "fe30896",
    "trigger": "门丞 SiteOps cron：publish_queue 检出 2 篇新稿（20260914_101800 / 20260914_101900）",
    "changes": [
     "publish_queue/20260914_101800_商标被驳回的6个原因_visual.html -> najie/blog/20260914-trademark-rejection-six-reasons.html（商标授权确权 → 纳杰）",
@@ -831,7 +831,19 @@
     "queue_files": [
      "20260914_101800_商标被驳回的6个原因_visual.html",
      "20260914_101900_专利选错白等2年_visual.html"
-    ]
+    ],
+    "live_curl": {
+     "https://najieip.com/najie/blog/20260914-trademark-rejection-six-reasons.html": 200,
+     "https://najieip.com/aipunajie/blog/20260914-patent-invention-vs-utility-model.html": 200,
+     "https://najieip.com/najie/blog/": 200,
+     "https://najieip.com/aipunajie/blog/": 200
+    },
+    "live_index_card_present": true,
+    "live_canonical_ok": true,
+    "html_tag_balance": "两页标签配对校验通过（无未闭合/错位）",
+    "body_text_identical_to_source": true,
+    "articles_json_total": 158,
+    "sitemap_url_total": 419
    }
   }
  ]
