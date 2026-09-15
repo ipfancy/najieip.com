@@ -1037,6 +1037,23 @@
     "归档侧重复：T/CIPSA 0012 标准件 9/15 12:00 已由 HICTA 归档（c19149_/73b7a8_ 等双哈希副本），20:41 再次收到同名件"
    ],
    "result": "PASS（待补 2 件证照）"
+  },
+  {
+   "date": "2026-09-15",
+   "time": "22:05",
+   "agent": "SiteOps",
+   "round": "daily-2200",
+   "action": "主 blog/index.html 补卡 15 张（2026-09-01~09-14 缺失卡片，按日期降序插回正确位置）",
+   "scope": "ART-0080~0086 属期外；本次补 09-01/09-07x2/09-09x5/09-10x3/09-11x2/09-14x2",
+   "reason": "主体归属迁移（09-10~09-15）只同步了 mili/najie 品牌索引，主 blog/index 漏卡；逐 slug 比对发现 52 张真实文章卡缺失（本次补最近 15 张，余 37 张为 09-01 前存量，列 backlog）",
+   "script": "site-inbox/gen-0915-index-cards-v3.py（幂等；v1/v2 因偏移过期/分隔符不统一失败已删除）",
+   "verification": "cards 95→110；<div>/<\\/div> 222/222 配平；15 个 href 各 1 次；malformed 0；日期降序 09-15→08-23",
+   "files": [
+    "blog/index.html",
+    "site-inbox/gen-0915-index-cards-v3.py",
+    "site-inbox/missing-cards-0915.json"
+   ],
+   "result": "PASS"
   }
  ]
 }
