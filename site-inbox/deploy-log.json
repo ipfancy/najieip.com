@@ -1054,6 +1054,21 @@
     "site-inbox/missing-cards-0915.json"
    ],
    "result": "PASS"
+  },
+  {
+   "date": "2026-09-15",
+   "time": "22:20",
+   "agent": "SiteOps",
+   "round": "daily-2200-structure-fix",
+   "action": "主 blog/index.html 两处历史结构缺陷修复（自 ddc6661 起长期存在）",
+   "defect1": "20300 一带连续两个 <div class=\"article-card\">（孤儿包裹层）+「光伏侵权=出局」卡开标签丢失（直接以 <h2> 起）→ 前者删除、后者补回，开合数不变",
+   "defect2": "同一 URL 重复卡：shierwu-ip-exports-455yi-2026 旧标题卡「知识产权十五五规划解读：未来五年IP行业五大风向」→ 删除（文章已改名 455亿 版）",
+   "script": "site-inbox/fix-0915-index-structure.py（含断言与终验）",
+   "verification": "div 深度 0/无异常；109 张卡全部为容器直接子节点(depth=2)；无嵌套卡；每卡以 h2 起；日期降序 09-15→08-23；重复 href 1 次",
+   "files": [
+    "blog/index.html"
+   ],
+   "result": "PASS"
   }
  ]
 }
