@@ -968,6 +968,39 @@
     "content.db 缺 09-14 两篇已上线文章记录 → 已出 HANDOFF-20260914-content-db-gap.md，未擅自编号写入"
    ],
    "result": "PASS"
+  },
+  {
+   "date": "2026-09-15",
+   "time": "16:0x",
+   "commit": "pending",
+   "trigger": "何律 2026-09-15 令《发布链路无等待铁律》动作1：9/14 两稿补发官网（不等王刚/知乎）— siteops 上门丞执行",
+   "changes": [
+    "市场部/知乎发布版_20260914/知乎_无人继承遗产_发布版_20260914.md (md5 7a38dc694f) -> mili/blog/20260914-inheritance-no-heir-state.html",
+    "市场部/知乎发布版_20260914/知乎_胖东来学员制_发布版_20260914.md (md5 39f00a35f4) -> mili/blog/20260914-pangdonglai-trainee-labor-contract.html",
+    "两页 md→HTML，文字零改动（未删改任何正文/落款），复用站点 /style.css（2026-09-15 已补齐，线上 200）",
+    "站点标准 head：description/og 五件套（含 og:image pexels 5669602）/Twitter Card/canonical/JSON-LD Article+BreadcrumbList/Cloudflare beacon",
+    "articles.json +2 条（site=mili，含 description 字段，按日期倒序重排去重，共 164 条）",
+    "sitemap.xml +2 条（lastmod 2026-09-14，只增不删，XML 校验通过，共 0 条 <url>）",
+    "mili/blog/index.html 顶部 +2 article-card，JSON-LD blogPost 首位插 2 条（JSON-LD 全量校验通过）",
+    "articles/ 零写入；未投 publish_queue 以外任何新管道；稿件未改内容"
+   ],
+   "deviations": [
+    "稿件日期＝2026-09-14（内容日，与同批 9/14 纳杰/爱普纳杰两篇一致），补发上线日＝2026-09-15。slug 前缀沿用 20260914。",
+    "取件用「知乎发布版」（如己 2026-09-14 复检记录指定），非长文底稿——底稿含内部线索栏与法条核验表，对外版已去。",
+    "本批不经 publish_queue（何律令：先落自有渠道）；publish_queue 内无对应 visual 件，故无三层去重归档。"
+   ],
+   "verification": {
+    "md5_source": {
+     "inheritance": "7a38dc694f6ddc4c6a61f7e6e6bcc701",
+     "pangdonglai": "39f00a35f45edfaa1ed0eda553300c9b"
+    },
+    "signature_checked": true,
+    "style_css": 200,
+    "index_cards": {
+     "20260914-inheritance-no-heir-state": 1,
+     "20260914-pangdonglai-trainee-labor-contract": 1
+    }
+   }
   }
  ]
 }
