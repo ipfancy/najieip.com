@@ -1001,6 +1001,42 @@
      "20260914-pangdonglai-trainee-labor-contract": 1
     }
    }
+  },
+  {
+   "date": "2026-09-15",
+   "time": "21:05",
+   "agent": "SiteOps",
+   "round": "credentials-page",
+   "commit": "e4c5446",
+   "action": "新增资质公示：/credentials.html（三主体证照原件+备案信息表）+ najie/aipunajie/mili 首页资质区块 + 四页页脚/llms.txt/sitemap.xml 入口",
+   "standard_basis": "T/CIPSA 0012—2026《商标代理流程服务规范》5.1 d)（经营场所悬挂营业执照/律所执业许可证）线上对应",
+   "files": [
+    "credentials.html",
+    "assets/license/najie-business-license.jpg",
+    "assets/license/najie-tm-agency-record.png",
+    "assets/license/aipunajie-business-license.jpg",
+    "assets/license/mili-law-firm-license.jpg",
+    "najie/index.html",
+    "aipunajie/index.html",
+    "mili/index.html",
+    "about.html",
+    "llms.txt",
+    "sitemap.xml"
+   ],
+   "verification": {
+    "git_remote_head": "e4c5446 == local（git ls-remote 核验）",
+    "live_page_http": "https://najieip.com/credentials.html = 200 / 12217 bytes / 含『资质公示』x3 / 图片引用 x4",
+    "html_structure": "5 页标签配对无误、无缺失本地图片、公示链接均已注入",
+    "indexnow": "credentials.html 已提交 IndexNow（HTTP 200）",
+    "sitemap": "XML 合法性校验通过，credentials.html 已入 sitemap"
+   },
+   "defects_found": [
+    "纳杰营业执照为 2019-01-29 核发副本（注册住所 东城区崇文门外大街3号7层718），是否已换发新照待何律 9/16 提供",
+    "北京爱普纳杰专利代理事务所《专利代理机构执业许可证》（国知局核发）电子件缺失——页内已如实标注『待补』，未编造编号",
+    "爱普纳杰营业执照为 2013 年核发且带内部水印『本文件为纳杰知识产权服务资质证明使用』，建议换发新照后替换",
+    "归档侧重复：T/CIPSA 0012 标准件 9/15 12:00 已由 HICTA 归档（c19149_/73b7a8_ 等双哈希副本），20:41 再次收到同名件"
+   ],
+   "result": "PASS（待补 2 件证照）"
   }
  ]
 }
