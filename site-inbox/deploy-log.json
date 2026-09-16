@@ -1104,6 +1104,40 @@
    ],
    "note": "主 blog/index.html 未加卡（该页 09-01~09-14 仍有 37 张缺失卡 backlog，由 BACKLOG-0915-main-index-cards 流程统一处理）；articles/ 目录零新增文章（仅存量改写为跳转页）",
    "result": "PASS"
+  },
+  {
+   "date": "2026-09-16",
+   "time": "17:2x",
+   "commit": "pending",
+   "trigger": "如己 2026-09-16 派单 TASK-SITE-PUBLISH-3ART-20260916（扬声执行包 20260916）—— 最高法网络法治典型案例 3 篇 → mili/blog",
+   "changes": [
+    "市场部/发布执行包_20260916/{3 篇}.html (md5 7375db55/cf133330/494b7867) → mili/blog/{slug}.html + site-inbox 留档",
+    "站点模板 head：description/keywords/og 五件套(og:image pexels 5669602)/Twitter Card/canonical/JSON-LD Article+BreadcrumbList/Cloudflare beacon",
+    "站点模板落款＝标准三行（010-65150974 / 13911268604 ＋ 何自刚 | 知识产权律师 | 爱普纳杰·觅理·纳杰 ＋ 斜体免责行）",
+    "内链落地：篇1→20260909-aucl-livestream-ads + 20260907-ai-judicial-opinion；篇3→20260907-ai-judicial-opinion + beiruqin-sancha-20260831；篇2 执行包自带内链（已在位）",
+    "mili/blog/index.html 顶部 +3 卡片 + JSON-LD blogPost 前插 3 条",
+    "articles.json +3（site=mili，按日期倒序，共 130 条）",
+    "sitemap.xml +3 loc（lastmod 2026-09-16，只增不删，共 346 条）",
+    "文章日期按派单写死错峰：2026-09-17 / 2026-09-18 / 2026-09-19；上线日 2026-09-16"
+   ],
+   "deviations": [
+    "三篇同日上线但 datePublished 错峰（派单指定，防同日多篇）；sitemap lastmod 用实际上线日 2026-09-16。",
+    "执行包为完整 HTML 片段（非 md），故不走 gen_siteops.py 的 ARTICLES 批量流程，另起 site-inbox/gen-0916-mili-netlaw-3.py。"
+   ],
+   "verification": {
+    "md5_source": {
+     "20260917-livestream-ai-voice-personality-rights": "7375db55198c5af8b20c622c7d96ea22",
+     "20260918-ai-search-rag-liability": "cf133330f8e6af96eda91d3905875322",
+     "20260918-personality-rights-injunction": "494b7867e71e0811f295df88384abccd"
+    },
+    "signature_checked": true,
+    "og_image": 200,
+    "key_strings": {
+     "12万元": true,
+     "检索增强生成": true,
+     "有效期6个月": true
+    }
+   }
   }
  ]
 }
