@@ -1138,6 +1138,43 @@
      "有效期6个月": true
     }
    }
+  },
+  {
+   "date": "2026-09-16",
+   "time": "17:3x",
+   "commit": "pending",
+   "trigger": "如己 2026-09-16 派单 TASK-SITE-COLLAB-3LANG-20260916 —— 三所联合主打页 zh/en/fr 补正文上线（何律 2026-09-16 放行，法文已校）",
+   "changes": [
+    "市场部/发布执行包_20260916/najie-apnajie-mili-collaboration.{zh,en,fr}.html (md5 3cfd46d7/2a11056a/6744e15c) → mili/blog、en/blog、fr/blog 同名页覆盖（保留原 head/CSS/Cloudflare beacon，仅补/换 body）",
+    "en/fr 品牌写法改 IPNAJIE（title/description/正文共 11 处）；zh 头部与线上逐字一致",
+    "EN/FR <title> 结尾中文后缀「— 爱普纳杰专利所」按站点模板惯例保留（存量缺陷，扬声已报何律，本次未擅改）",
+    "zh 页 footer＝机构物料版两行落款（电话行＋署名行），不含免责句；线上旧版无 footer，无第二层落款",
+    "sitemap：该页 mili/en/fr 三条 loc 已于 2026-09-16 15:40 commit 61c39a2 自动恢复（14:58 008c0e6 曾撤），lastmod 2026-09-16，本次未改动",
+    "llms.txt 第 31/37 行链接文字 Najie × AipNajie × Mili → NaJie × IPNAJIE × MiLi",
+    "blog/index.html、najie/blog/index.html 卡片标题＋JSON-LD headline 由「两所一主体…」统一为「三所联合｜纳杰 × 爱普纳杰 × 觅理：让法律服务随时可见」（仅替换旧题字符串，未删卡片）"
+   ],
+   "deviations": [
+    "本页单独脚本处理（不走 gen_siteops.py ARTICLES 批量流程），避免 extract_article() 吃掉 .entity-grid/.synergy-table 结构样式。"
+   ],
+   "verification": {
+    "md5_source": {
+     "zh": "3cfd46d762c0eaf17a6c3bf9f1df4021",
+     "en": "2a11056ae15483b819362d0fd3dd2657",
+     "fr": "6744e15c4cc01132cb762b5ef9043e0d"
+    },
+    "key_strings": {
+     "11419": true,
+     "丙12-12号": true,
+     "collection@najieip.com": true,
+     "通用电子": true,
+     "同一委托方": true
+    },
+    "sitemap_loc": {
+     "mili": 1,
+     "en": 1,
+     "fr": 1
+    }
+   }
   }
  ]
 }
