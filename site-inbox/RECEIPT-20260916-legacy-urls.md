@@ -68,6 +68,25 @@ GitHub Pages 无法真 301；站点无 `_config.yml`+`.nojekyll`，Jekyll `redir
 | 回归检查上线 | cron `6046fa3f96ec`「sitemap 回归检查（别名/重复 loc）」每日 08:30，`no_agent`；脚本 `profiles/siteops/scripts/siteops_sitemap_regression_check.py`；干净时静默，发现问题即经 `notify_hezhi.py` 推送。破坏性自检通过（注入 1 条别名 loc → 正确告警，随后 `git checkout` 还原） |
 | CF token 证据 | 复核本机：`~/.cloudflared/token`（170 字节）经 CF API `/zones`、`/user/tokens/verify` 实测返回 `6003/6111 Invalid format for Authorization header` ⇒ **是隧道 token，不是 API token**，无 Zone 写权限。301 仍需何律提供 Zone → Redirect Rules/Bulk Redirects: Edit（+Zone:Read），或按 CSV 手工配 |
 
+## 遗留项 2：跳转非 301 —— ✅ 已闭环（2026-09-16 15:2x，何律在控制台完成 CF 侧配置）
+
+CF 侧配置（何律操作，门丞复核）：
+
+| 项 | 值 |
+|------|------|
+| Bulk Redirect List | `articles_legacy_301`（**名字用下划线**——CF 列表名仅允许 `[a-z0-9_]`，连字符会报 `invalid_name`） |
+| 列表条目 | 76 条，导入自 `site-inbox/cf-redirects-articles-20260916.dashboard.csv`（无表头 7 列格式） |
+| Bulk Redirect Rule | 账户级 `http_request_redirect` 阶段，表达式 `http.request.full_uri in $articles_legacy_301` |
+| 未混用 | 账号内既有列表 `lictacomputer`（另一条 licta 工作流）保持不动 |
+
+**验收实测（配前 0/76 → 配后）**：
+
+- `cf_apply_redirects.py --verify`：**301 已生效 76/76**（每条均校验 Location == 映射目标）
+- 独立复核（原始响应头，不依赖脚本判定）：`/articles/20260807-overseas-ip-selfcheck.html` → `HTTP/2 301` + `location: https://najieip.com/najie/blog/overseas-ip-selfcheck-2026.html`；中文路径 `/articles/觅理加盟-创始合伙人亲述-20260719.html` → `301` + `location: …/mili/blog/mili-join-founding-partner.html`
+- 随机抽样 12 条（含中文）：12/12 通过
+- **无副作用**：`/`、`/articles.json`、`/sitemap.xml`、`/robots.txt`、`/llms.txt`、三子站索引与规范页抽查均仍 200，无过度匹配
+- 页面内 `meta refresh` 保留作兜底（CF 规则若被停用仍能跳）；CF 命中时旧 URL 不再落到桩页
+
 ## CF 侧 301 执行包（2026-09-16 据官方文档核对，可直接照做）
 
 | 事实（已核对官方文档，勿再凭记忆） | 值 |
