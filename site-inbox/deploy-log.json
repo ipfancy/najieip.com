@@ -1069,6 +1069,41 @@
     "blog/index.html"
    ],
    "result": "PASS"
+  },
+  {
+   "date": "2026-09-16",
+   "time": "14:20",
+   "commit": "b2ec2cf",
+   "trigger": "门丞 SiteOps cron (0916 14:02 巡检轮次)",
+   "round": "subject-attribution-fix-3rd-batch",
+   "action": "主体归属纠偏（第三批）：2 篇 2026-09-16 由 Mac 端分发脚本直推 articles/（无主体目录）的文章归位",
+   "problem": "articles/ 仅存历史跳转页，不新增文章（何律铁律 2026-08-06）；两篇线上仅存在于 /articles/ 且正文含 markdown 残留（** 加粗字面量、| 表格字面量、--- 分隔线、转义 HTML 注释）",
+   "placements": [
+    "articles/20260916-inventor-remuneration-907.html -> mili/blog/20260916-inventor-remuneration-907.html （职务发明报酬·最高法知民终907号判例 → 觅理，与 1318 号、宇树案同轨）",
+    "articles/20260916-data-asset-four-step.html -> najie/blog/20260916-data-asset-four-step.html （数据确权/登记/质押/入表非诉资产化 → 纳杰，正文自述「纳杰一直跟客户强调」；同 20260903 知产数据一本账同轨）"
+   ],
+   "changes": [
+    "markdown 残留转 HTML（** → <strong>/<h2>、四列案例表 → <table><thead>、引用 → <blockquote>、--- → <hr>、转义注释删除）",
+    "head 充实：description/keywords/OG/Twitter/canonical/Cloudflare beacon/JSON-LD(Article+BreadcrumbList)",
+    "旧路径留跳转页（articles/*.html → canonical 指向主体路径）",
+    "articles.json：2 条主体条目置顶 + 旧 articles/ 条目 site 校正（907→mili）",
+    "sitemap.xml：+2 条主体 URL（430→432 loc）",
+    "mili/blog/index.html、najie/blog/index.html：顶部 article-card + JSON-LD blogPost 首位"
+   ],
+   "verification": "curl 实测 200×6（2 主体页 + 2 跳转页 + 2 主体索引）；主体页 canonical/og:site_name 主体正确、table/strong 渲染、markdown 残留 0；索引卡片与 sitemap 命中；HTML 标签配平（parser 无未闭合/错配）",
+   "files": [
+    "mili/blog/20260916-inventor-remuneration-907.html",
+    "najie/blog/20260916-data-asset-four-step.html",
+    "articles/20260916-inventor-remuneration-907.html",
+    "articles/20260916-data-asset-four-step.html",
+    "mili/blog/index.html",
+    "najie/blog/index.html",
+    "articles.json",
+    "sitemap.xml",
+    "site-inbox/fix-0916-subject-attribution.py"
+   ],
+   "note": "主 blog/index.html 未加卡（该页 09-01~09-14 仍有 37 张缺失卡 backlog，由 BACKLOG-0915-main-index-cards 流程统一处理）；articles/ 目录零新增文章（仅存量改写为跳转页）",
+   "result": "PASS"
   }
  ]
 }
