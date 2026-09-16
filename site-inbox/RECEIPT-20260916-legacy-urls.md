@@ -68,6 +68,26 @@ GitHub Pages 无法真 301；站点无 `_config.yml`+`.nojekyll`，Jekyll `redir
 | 回归检查上线 | cron `6046fa3f96ec`「sitemap 回归检查（别名/重复 loc）」每日 08:30，`no_agent`；脚本 `profiles/siteops/scripts/siteops_sitemap_regression_check.py`；干净时静默，发现问题即经 `notify_hezhi.py` 推送。破坏性自检通过（注入 1 条别名 loc → 正确告警，随后 `git checkout` 还原） |
 | CF token 证据 | 复核本机：`~/.cloudflared/token`（170 字节）经 CF API `/zones`、`/user/tokens/verify` 实测返回 `6003/6111 Invalid format for Authorization header` ⇒ **是隧道 token，不是 API token**，无 Zone 写权限。301 仍需何律提供 Zone → Redirect Rules/Bulk Redirects: Edit（+Zone:Read），或按 CSV 手工配 |
 
+## CF 侧 301 执行包（2026-09-16 据官方文档核对，可直接照做）
+
+| 事实（已核对官方文档，勿再凭记忆） | 值 |
+|------|------|
+| 列表名合法字符 | **仅 `[a-z0-9_]`**，连字符会被 API 拒为 `invalid_name` ⇒ 列表名用 **`articles_legacy_301`** |
+| 控制台 CSV 格式 | **无表头**，7 列：`<SOURCE>,<TARGET>[,<STATUS>,<PRESERVE_QUERY_STRING>,<INCLUDE_SUBDOMAINS>,<SUBPATH_MATCHING>,<PRESERVE_PATH_SUFFIX>]`（默认 301 / 全 FALSE；URL 含逗号才需引号） |
+| Free 计划配额 | URL redirects **10,000** / Bulk Redirect Rules 15 / Lists 5（2025-02 起提额，旧的 20 条上限已废） |
+| 所需 token 权限（用户 token） | `Account → Account Filter Lists → Edit` + `Account → Account Rulesets → Edit`（`Bulk URL Redirects → Edit` 一并加亦可） |
+| 规则表达式 | `http.request.full_uri in $articles_legacy_301`（Bulk Redirects 在 WAF 之后执行） |
+| 账号内既有列表 | `lictacomputer`（0 条，描述"根据licta电脑的siteops的要求"）——**非本任务产物，勿混用** |
+
+产物三件套：
+
+1. `site-inbox/cf-redirects-articles-20260916.dashboard.csv` —— **控制台导入版**（无表头 7 列，76 行）
+2. `site-inbox/cf-redirects-articles-20260916.csv` —— API 版（字段名表头）
+3. `site-inbox/cf_apply_redirects.py` —— API 执行器（幂等：verify token → 建列表 → 写 76 条 → 建/更新 ruleset → 逐条复测 301；默认 dry-run，`--apply` 写 CF，`--verify` 只复测）
+   - token 读取顺序：`CLOUDFLARE_API_TOKEN` 环境变量 → `~/.cloudflared/api_token` → `~/.hermes/.env`；**不打印 token 内容**
+
+前置基线（配 301 之前，已复测）：**76 条旧路径全部 200、无 Location（0/76 是 301）**；配好后判据 = 76/76 返回 301 且 Location 指向对应主体规范页。
+
 ## 复现工具（均为幂等，默认 dry-run）
 
 | 脚本 | 用途 |
