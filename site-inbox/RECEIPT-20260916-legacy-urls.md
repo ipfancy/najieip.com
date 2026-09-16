@@ -59,6 +59,15 @@ GitHub Pages 无法真 301；站点无 `_config.yml`+`.nojekyll`，Jekyll `redir
 2. 处理前根级 `/blog/` 有 96 条 noindex 跳转桩 loc、机构目录内 8 条，此前已于 `c1e3676`（09-11）清理过一次，09-12 被非 cron 的外部脚本加回。本次一并剔除，建议**加一道回归检查**（见下）。
 3. 本次额外剔除的 `articles.json` 幽灵条目对应文章若确有价值，需扬声排期重新发布。
 
+## 二次处理（2026-09-16 15:0x，何律口径：目标是可被广泛传播、抵达目标客户，非特定个人）
+
+| 动作 | 结果 |
+|------|------|
+| 空壳页 de-index | 3 条空壳 loc（mili/en/fr `najie-apnajie-mili-collaboration.html`）撤出 sitemap，231 → **228**；**页面保持 200**（老链接不断，仅不再请搜索引擎收录空页）；备份 `~/.hermes/logs/backup-20260916/sitemap.xml.bak_*_deindex` |
+| 内容缺口派单 | `notifications.db` → `TASK-SITE-CONTENTGAP-COLLAB-20260916`（siteops → market-development，content_gap，pending）+ 对应 notification；正文上线后由 siteops 重新登记 3 条 loc 并 IndexNow 提交 |
+| 回归检查上线 | cron `6046fa3f96ec`「sitemap 回归检查（别名/重复 loc）」每日 08:30，`no_agent`；脚本 `profiles/siteops/scripts/siteops_sitemap_regression_check.py`；干净时静默，发现问题即经 `notify_hezhi.py` 推送。破坏性自检通过（注入 1 条别名 loc → 正确告警，随后 `git checkout` 还原） |
+| CF token 证据 | 复核本机：`~/.cloudflared/token`（170 字节）经 CF API `/zones`、`/user/tokens/verify` 实测返回 `6003/6111 Invalid format for Authorization header` ⇒ **是隧道 token，不是 API token**，无 Zone 写权限。301 仍需何律提供 Zone → Redirect Rules/Bulk Redirects: Edit（+Zone:Read），或按 CSV 手工配 |
+
 ## 复现工具（均为幂等，默认 dry-run）
 
 | 脚本 | 用途 |
