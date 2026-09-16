@@ -85,7 +85,7 @@ body = f"""# SiteOps 日报 — {today}
 ## 7. 遗留 / 下一步
 - 主索引外 9 项已逐条核清：
   - **假缺口 3 项**（主索引已用权威路径收录）：`najie-apnajie-mili-collaboration`（→/mili/blog/）、`ai-ip-compliance-redline`、`ai-ip-pitfall-guide`（→/najie/blog/）
-  - **跳转壳/孤儿壳 5 项**（非文章）：mili/enterprise-ip-compliance-system、mili/uspto-foreign-representation-rule、mili/uspto-tbmp-2026-update、najie/uspto-tbmp-2026-update、aipunajie/20260804-ic-layout-design-regulations、aipunajie/catl-patent-moat-profit
+  - **跳转壳/孤儿壳 6 项**（非文章）：mili/enterprise-ip-compliance-system、mili/uspto-foreign-representation-rule、mili/uspto-tbmp-2026-update、najie/uspto-tbmp-2026-update、aipunajie/20260804-ic-layout-design-regulations、aipunajie/catl-patent-moat-profit
   - **待定 1 项**：`/najie/blog/cnptes-three-layer-architecture-diagram.html`（图页，无 `<p>` 正文，暂不入主索引）
 - 旧 `/articles/` 链接已全部 301 到品牌权威页（抽查 2 条：301 → /najie/blog/...）✅
 - GEO 追踪：下次运行 **周六 02:00**（第38周），秘塔+元宝双平台续测
