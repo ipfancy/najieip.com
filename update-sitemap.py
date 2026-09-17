@@ -1,28 +1,68 @@
 #!/usr/bin/env python3
-"""update-sitemap.py — 增量合并 sitemap（只增不删！）
+"""update-sitemap.py — 增量合并 sitemap（只增不删，且只增「有效」URL）
 
 从 articles.json 读取文章 URL，凡是 sitemap.xml 里还没有的，增量插入到
 "文章"区块。绝不删除/替换 sitemap 中已有的任何 URL（含历史文章、多语言页、
 旧路径跳转页）。
 
+🔴 2026-09-17 加固（门丞）：本脚本此前无任何有效性校验，导致 sitemap 口径
+   （见 siteops-seo-monitoring / 2026-09-16 遗留项回执）被反复回灌：
+     · 61c39a2（09-16 15:40，Mac 端）一次加回 111 条，其中 96 条为根级
+       /blog/ noindex 跳转壳 loc（已在 c1e3676、f94c3f7 清理过两次）
+     · eb5dd3b（09-17 13:20）加回 47 条「无页面」死链 loc
+       （siteops 于 6979c0f 明确「未被导入，待 go/no-go」，9 分钟后被覆盖）
+   两条铁律：**目录里有文件才收录、是跳转壳不收录、同路径不重复登记。**
+   跳过项会打印出来，便于人工复核（如需强制收录，用 --allow-missing）。
+
 用法: python3 update-sitemap.py            # 增量合并
       python3 update-sitemap.py --check    # 只报告差异，不写文件
+      python3 update-sitemap.py --allow-missing   # 关闭「文件存在」校验（慎用）
 """
-import json, os, re, sys
+import json, os, re, sys, urllib.parse
 from datetime import datetime
 
-SITE = os.path.expanduser("~/wiki/najieip-verify")
+SITE = os.environ.get("NAJIEIP_SITE", os.path.expanduser("~/wiki/najieip-verify"))
 ARTICLES = os.path.join(SITE, "articles.json")
 SITEMAP = os.path.join(SITE, "sitemap.xml")
 
 ARTICLE_MARKER = "<!-- ========== 文章 ========== -->"
+HOST = "https://najieip.com"
+
 
 def get_existing_urls(content):
     """从 sitemap 文本提取已有全部 URL（含 <loc> 标签）"""
     return set(re.findall(r"<loc>(https://najieip\.com[^<]*)</loc>", content))
 
+
+def is_redirect_shell(path):
+    """跳转/别名页：含 meta refresh 的壳页（通常还带 noindex,follow）。"""
+    try:
+        low = open(path, encoding="utf-8", errors="ignore").read(4000).lower()
+    except Exception:
+        return False
+    return 'http-equiv="refresh"' in low
+
+
+def validate(url, existing_norm, allow_missing=False):
+    """返回 None 表示可收录，否则返回跳过原因。"""
+    rel = url[len(HOST):].lstrip("/")
+    # 1) 同一路径不得重复登记（中文原样 vs %编码）
+    if urllib.parse.unquote(url) in existing_norm:
+        return "重复登记（同路径已以原样/%编码收录）"
+    if not allow_missing:
+        path = os.path.join(SITE, rel)
+        # 2) 目录里没有这个文件 → 收录即产生 404 死链 loc
+        if not os.path.exists(path):
+            return "页面不存在（会变成非 200 loc）"
+        # 3) 跳转壳 → 页面自身 noindex，收录与 noindex 指令矛盾
+        if is_redirect_shell(path):
+            return "跳转/别名页（noindex 壳，不应收录）"
+    return None
+
+
 def main():
     check_only = "--check" in sys.argv
+    allow_missing = "--allow-missing" in sys.argv
     articles = json.load(open(ARTICLES, encoding="utf-8"))
     today = datetime.now().strftime("%Y-%m-%d")
 
@@ -38,7 +78,7 @@ def main():
         if u in seen:
             continue
         seen.add(u)
-        json_urls[f"https://najieip.com{u}"] = a.get("date", today)
+        json_urls[f"{HOST}{u}"] = a.get("date", today)
 
     # 读取现有 sitemap
     if not os.path.exists(SITEMAP):
@@ -48,14 +88,34 @@ def main():
         content = f.read()
 
     existing = get_existing_urls(content)
+    existing_norm = {urllib.parse.unquote(u) for u in existing}
 
-    # 找出需要新增的 URL
+    # 找出需要新增且「有效」的 URL
     to_add = []
-    for url, date in json_urls.items():
-        if url not in existing:
-            to_add.append((date, url))
+    skipped = []
+    for url, date in sorted(json_urls.items(), reverse=True):
+        if url in existing:
+            continue
+        why = validate(url, existing_norm, allow_missing)
+        if why:
+            skipped.append((url, why))
+            continue
+        to_add.append((date, url))
+        existing_norm.add(urllib.parse.unquote(url))
 
-    print(f"articles.json: {len(json_urls)} 条 | sitemap 现有: {len(existing)} 条 | 需新增: {len(to_add)} 条")
+    print(f"articles.json: {len(json_urls)} 条 | sitemap 现有: {len(existing)} 条 | "
+          f"有效待新增: {len(to_add)} 条 | 校验跳过: {len(skipped)} 条")
+
+    if skipped:
+        by = {}
+        for url, why in skipped:
+            by.setdefault(why, []).append(url)
+        for why, urls in sorted(by.items()):
+            print(f"  ⏭ 跳过 {len(urls)} 条 — {why}")
+            for u in urls[:5]:
+                print(f"       {u}")
+            if len(urls) > 5:
+                print(f"       …另 {len(urls) - 5} 条")
 
     if check_only:
         for date, url in sorted(to_add, reverse=True):
@@ -63,7 +123,7 @@ def main():
         return
 
     if not to_add:
-        print("✅ 无需更新，sitemap 已是最新")
+        print("✅ 无需更新，sitemap 已是最新（且口径达标）")
         return
 
     # 生成新增条目
@@ -88,7 +148,8 @@ def main():
         f.write(content)
 
     new_count = len(get_existing_urls(content))
-    print(f"✅ 已新增 {len(to_add)} 条，sitemap 现有 {new_count} 条 URL（只增不删）")
+    print(f"✅ 已新增 {len(to_add)} 条，sitemap 现有 {new_count} 条 URL（只增不删，已过滤无效项）")
+
 
 if __name__ == "__main__":
     main()
