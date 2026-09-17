@@ -1202,6 +1202,41 @@
     "site-inbox/verify-0916-index-structure.py",
     "site-inbox/audit-0916-index-coverage.py"
    ]
+  },
+  {
+   "date": "2026-09-17",
+   "time": "22:2x",
+   "agent": "SiteOps",
+   "round": "daily-2200",
+   "commit": "904d6be",
+   "action": "日常巡检 6/6 核心页 200；根治 sitemap 回灌死循环（摘除 151 条违规 loc：104 跳转壳 + 47 无页面）；修复 20260917-upc 文章可见缺陷并补 mili/主索引卡片",
+   "scope": "① sitemap.xml 391 → 240 loc（唯一 240，XML 校验通过）；② ~/.hermes/scripts/update-sitemap.py 由 112 行未加固版同步为 155 行加固版（备份 .bak-20260917）；③ mili/blog/20260917-upc-injunction-counterattack.html：清 frontmatter 泄漏（<p>---</p>/ai_smell）、去免责声明星号、补 og:image + twitter:title/description + Article/BreadcrumbList JSON-LD；④ mili/blog/index.html 81→82 卡 + Blog JSON-LD blogPost 首插 1 条；blog/index.html 157→158 卡",
+   "reason": "sitemap 回灌：cron 2ddb76c2dd9a「sitemap自动纳入守护(每6h)」调用的 ~/.hermes/scripts/update-sitemap.py 是未加固副本（112 行），门丞 09-17 的加固只落在仓库副本 （155 行，c265124）→ 15:42/21:43 两次把 siteops 刚摘除的 151 条原样加回，形成 6h 一次的乒乓。 文章缺陷：db22bd2 发布流水线产出的 HTML 带 markdown frontmatter 残留，且未生成索引卡片。",
+   "date_source": "content.db articles ART-2026-0088 publish_date=2026-09-17；文章页 canonical + sitemap self-canonical",
+   "skipped_stubs": "无（本轮未做全量补卡）",
+   "verification": {
+    "core_pages_200": [
+     "/",
+     "/mili/",
+     "/najie/",
+     "/blog/",
+     "/sitemap.xml",
+     "/llms.txt"
+    ],
+    "sitemap": "240 loc，全唯一；三条口径（跳转/别名/非200）全零",
+    "loop_closed": "实跑 bash ~/.hermes/scripts/sitemap-auto.sh → exit 0 且 loc 未变（加固版拒绝回灌）",
+    "article": "og:image=1 twitter:title=1 ld+json=2（Article/BreadcrumbList 均解析通过）'**'=0 schema.org=2",
+    "indexes": "mili 82 卡 / 主索引 158 卡；div 深度归零；JSON-LD 1/1 解析通过",
+    "live": "待 Cloudflare 刷新后 curl 复核（见日报）"
+   },
+   "seo": "najie-seocheck 例行巡检",
+   "tools": [
+    "curl",
+    "sitemap-hygiene.py",
+    "fix-0917-upc-article.py",
+    "gen-0917-upc-cards.py",
+    "update-sitemap.py(加固版同步至 cron 路径)"
+   ]
   }
  ]
 }
