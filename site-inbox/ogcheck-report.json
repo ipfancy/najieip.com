@@ -2,19 +2,19 @@
   "total": 4,
   "good": 4,
   "bad": 0,
-  "checked_at": "2026-09-16T22:03:46",
+  "checked_at": "2026-09-17T22:09:53",
   "results": [
     {
-      "url": "https://najieip.com/",
-      "og:title": "纳杰知识产权 — 专利·商标·诉讼 全链条IP服务",
-      "og:description": "北京纳杰×爱普纳杰×觅理律所。2000+案件经验，20年代理人。",
-      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      "og:url": "https://najieip.com/",
+      "url": "https://najieip.com/blog/",
+      "og:title": "博客 — 爱普纳杰专利所",
+      "og:description": "爱普纳杰专利所博客 — 专利申请指南、商标维权、AI版权解读、知产检索工具、代理行业洞察。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/blog/",
       "twitter:card": "summary_large_image",
-      "twitter:title": "纳杰知识产权 — 专利·商标·诉讼 全链条IP服务",
-      "canonical": "https://najieip.com/",
+      "twitter:title": "博客 — 爱普纳杰专利所",
+      "canonical": "https://najieip.com/blog/",
       "has_jsonld": true,
-      "title": "纳杰知识产权 — 专利·商标·诉讼 全链条IP服务",
+      "title": "博客 — 爱普纳杰专利所",
       "issues": []
     },
     {
@@ -44,16 +44,16 @@
       "issues": []
     },
     {
-      "url": "https://najieip.com/blog/",
-      "og:title": "博客 — 爱普纳杰专利所",
-      "og:description": "爱普纳杰专利所博客 — 专利申请指南、商标维权、AI版权解读、知产检索工具、代理行业洞察。",
-      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      "og:url": "https://najieip.com/blog/",
+      "url": "https://najieip.com/",
+      "og:title": "纳杰知识产权 — 专利·商标·诉讼 全链条IP服务",
+      "og:description": "北京纳杰×爱普纳杰×觅理律所。2000+案件经验，20年代理人。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/",
       "twitter:card": "summary_large_image",
-      "twitter:title": "博客 — 爱普纳杰专利所",
-      "canonical": "https://najieip.com/blog/",
+      "twitter:title": "纳杰知识产权 — 专利·商标·诉讼 全链条IP服务",
+      "canonical": "https://najieip.com/",
       "has_jsonld": true,
-      "title": "博客 — 爱普纳杰专利所",
+      "title": "纳杰知识产权 — 专利·商标·诉讼 全链条IP服务",
       "issues": []
     }
   ]
