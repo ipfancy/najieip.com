@@ -1308,6 +1308,33 @@
    "tools": [
     "guard-0918-articles-json.py"
    ]
+  },
+  {
+   "date": "2026-09-19",
+   "time": "02:5x",
+   "agent": "SiteOps",
+   "round": "weekly-geo-0200",
+   "commit": "ef7f08b",
+   "action": "多语言同步（第38周）：ART-2026-0078《开源数据别乱用！5条线帮你避坑》EN + FR 版上线",
+   "scope": "① 新增 en/blog/20260905-ai-training-data-compliance-en.html（14,319 B）与 fr/blog/20260905-ai-training-data-compliance-fr.html（15,815 B），DeepSeek(deepseek-chat) 翻译，定向术语表（数据知识产权登记证/trade secret/secret d'affaires、汇编作品/compilation work/œuvre de compilation、不正当竞争/unfair competition/concurrence déloyale 等 28 条）；house-style 模板（--primary #1F4E79 / --accent #C0A060 / .lang-bar 三语切换 / 机翻声明块）沿用 09-12 与 09-07 EN/FR 版；② BlogPosting JSON-LD 含 inLanguage / translationOfWork / isBasedOn 指向中文原文，另加 link rel=alternate hreflang zh-CN/en/fr/x-default 四值；③ en/blog/index.html 与 fr/blog/index.html 首位插卡（各 16 → 17 卡）；④ 中文权威页 mili/blog/20260905-ai-training-data-compliance.html + blog/ 与 articles/ 两个跳转壳补 hreflang 四值；⑤ sitemap.xml 补 2 条 loc，241 → 243（唯一性校验通过）",
+   "reason": "第38周 GEO 双平台 12 个检查点，三篇文章（0070/0077/0078）吸收度全部高位（秘塔 735-2205 字、元宝 1635-2339 字），但引用率仍为 0。按「模块5」选文口径（GEO 吸收度高 + 涉外相关度高）取舍：0077 已于第37周上线，本周取 0078——其数据合规主题是当前三篇中涉外属性最强（CC 协议商用条款、数据 IP 登记、AI 模型参数商业秘密），且英文长尾 (\"training data compliance China\" / \"CC BY-NC commercial use\") 是 0 引用困局中最可能的突破口。",
+   "date_source": "content.db ART-2026-0078（publish_date 2026-09-05）+ source_file 20260905-ai-training-data-compliance.md",
+   "skipped_stubs": "无（正文源为 md 4757 B，非跳转壳）",
+   "verification": {
+    "live_6_urls": "全部 HTTP 200：EN 版 / FR 版 / 中文 mili 页 / en/blog / fr/blog / sitemap.xml",
+    "live_en_article": "14,319 B；canonical + og:url + og:image + twitter:card + application/ld+json + BlogPosting + translationOfWork 齐备；schema.org=1；masked https://*** = 0；markdown ** = 0；hreflang=4",
+    "live_fr_article": "15,815 B；同上 12 项全过；hreflang=4",
+    "live_indexes": "en/blog 与 fr/blog 卡片均命中，article-card 计数 = 17",
+    "sitemap": "243 loc、唯一 243、新增 loc 2 条（EN/FR 各一）实测可访问",
+    "data_fidelity": "金额/编号逐项核对：EN 100,000 + 2,300 / FR 100 000 + 2 300（法式空格）、1 505 小时、35 万→35、160 万→160、76%、2021/2023 年份原样保留",
+    "revert_path": "git revert ef7f08b"
+   },
+   "seo": "sitemap 241 → 243 loc（唯一性通过）；en/blog 与 fr/blog 卡片数各 16 → 17；hreflang 互链在 5 个页面生效",
+   "tools": [
+    "/tmp/i18n_0919.py",
+    "/tmp/i18n_install_0919.py",
+    "/tmp/verify_live_0919.py"
+   ]
   }
  ]
 }
