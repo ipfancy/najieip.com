@@ -1,9 +1,333 @@
 {
-  "total": 4,
-  "good": 4,
-  "bad": 0,
-  "checked_at": "2026-09-18T22:13:29",
+  "total": 243,
+  "good": 102,
+  "bad": 141,
+  "checked_at": "2026-09-19T02:17:25",
   "results": [
+    {
+      "url": "https://najieip.com/mili/blog/ai-shengcheng-neirong-qinquan-2026.html",
+      "og:title": "AI生成内容侵权，开发者、提供者、使用者谁担责？",
+      "og:description": "AI生成内容侵权，开发者、提供者、使用者谁担责？最高法《意见》第12条首次明确三方责任划分：开发者训练数据举证责任倒置、提供者按服务类型与必要措施综合认定、使用",
+      "og:image": null,
+      "og:url": "https://najieip.com/mili/blog/ai-shengcheng-neirong-qinquan-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI生成内容侵权，开发者、提供者、使用者谁担责？",
+      "canonical": "https://najieip.com/mili/blog/ai-shengcheng-neirong-qinquan-2026.html",
+      "has_jsonld": true,
+      "title": "AI生成内容侵权，开发者、提供者、使用者谁担责？ — 纳杰觅理",
+      "issues": [
+        "缺少 og:image"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/ai-faming-zhuanli-keti-2026.html",
+      "og:title": "AI算法模型能不能申请专利？最高法第14条划红线",
+      "og:description": "AI算法模型能不能申请专利？最高法法发〔2026〕10号第14条首次划出客体红线：遵循自然规律、解决技术问题、实现技术效果即可授权；发明人须是作出创造性贡献的自",
+      "og:image": null,
+      "og:url": "https://najieip.com/najie/blog/ai-faming-zhuanli-keti-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI算法模型能不能申请专利？最高法第14条划红线",
+      "canonical": "https://najieip.com/najie/blog/ai-faming-zhuanli-keti-2026.html",
+      "has_jsonld": true,
+      "title": "AI算法模型能不能申请专利？最高法第14条划红线 — 纳杰觅理",
+      "issues": [
+        "缺少 og:image"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/weifa-citui-2n-peichang-2026.html",
+      "og:title": "被公司违法辞退，2N赔偿怎么拿？5个动作别做错",
+      "og:description": "公司违法辞退能拿的不是N，是2N。N、N+1、2N差多少，2N赔偿怎么算、仲裁时效多久、要收集哪些证据，本文一次讲清。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/weifa-citui-2n-peichang-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "被公司违法辞退，2N赔偿怎么拿？5个动作别做错",
+      "canonical": "https://najieip.com/mili/blog/weifa-citui-2n-peichang-2026.html",
+      "has_jsonld": true,
+      "title": "被公司违法辞退，2N赔偿怎么拿？5个动作别做错 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/dili-biaozhi-quyu-pinpai-2026.html",
+      "og:title": "地理标志公示期，产地企业用证明商标守住区域品牌",
+      "og:description": "示范区公示期9/1-9/30，产地企业用证明商标、集体商标加地理标志产品双轨保护，守住区域品牌、防地名被抢注和通用化。4步行动指南+6个高频问答。",
+      "og:image": "https://images.pexels.com/photos/48148/documents-accent-tear-48148.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/dili-biaozhi-quyu-pinpai-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "地理标志公示期，产地企业用证明商标守住区域品牌",
+      "canonical": "https://najieip.com/najie/blog/dili-biaozhi-quyu-pinpai-2026.html",
+      "has_jsonld": true,
+      "title": "地理标志公示期，产地企业用证明商标守住区域品牌 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260915-crossborder-tro-counterattack.html",
+      "og:title": "被判赔117万美元？跨境卖家3招反杀TRO",
+      "og:description": "2023年中国企业在美国被诉商标侵权757起、牵涉被告企业16793家，66.1%因未出庭被判败诉，平均判赔117.98万美元。跨境卖家被TRO不是只有和解一条路：反向TRO、确认不侵权之诉、撤销缺席判决，三件武器各自的使用场景与前提条件。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260915-crossborder-tro-counterattack.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "被判赔117万美元？跨境卖家3招反杀TRO",
+      "canonical": "https://najieip.com/mili/blog/20260915-crossborder-tro-counterattack.html",
+      "has_jsonld": true,
+      "title": "被判赔117万美元？跨境卖家3招反杀TRO — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260912-trademark-certificate-not-shield.html",
+      "og:title": "注册证不是挡箭牌！包装一句话，最高罚5倍",
+      "og:description": "同一件注册商标，印在包装上合规、写进详情页可能被责令改正。新《商标法》第56条管的是&quot;怎么用&quot;：经营额100万，最高罚500万，逾期不改直接撤销。今麦郎断臂注销 vs 壹号土猪死撑复审，判断只有一条。",
+      "og:image": "https://images.pexels.com/photos/48148/documents-accent-tear-48148.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260912-trademark-certificate-not-shield.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "注册证不是挡箭牌！包装一句话，最高罚5倍",
+      "canonical": "https://najieip.com/najie/blog/20260912-trademark-certificate-not-shield.html",
+      "has_jsonld": true,
+      "title": "注册证不是挡箭牌！包装一句话，最高罚5倍 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/fr/blog/20260904-patent-malicious-litigation-defense-fr.html",
+      "og:title": "Poursuivi pour 80 millions, Unitree n&#x27;a récupéré que 80 000 : 7 façons de contrer le troll des brevets",
+      "og:description": "Une société de biens de consommation a assigné le fabricant de robots Unitree cinq jours après avoir acquis un brevet de « chien robot », faisant varier sa demande entre 500 yuans et 80 millions de yuans. La Cour suprême de Chine a qualifié la manœuvre de « savamment calculée et sans cesse changeante ».",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/20260904-patent-malicious-litigation-defense-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Poursuivi pour 80 millions, Unitree n&#x27;a récupéré que 80 000 : 7 façons de contrer le troll des brevets",
+      "canonical": "https://najieip.com/fr/blog/20260904-patent-malicious-litigation-defense-fr.html",
+      "has_jsonld": true,
+      "title": "Poursuivi pour 80 millions, Unitree n&#x27;a récupéré que 80 000 : 7 façons de contrer le troll des brevets — Aipunajie Patent Firm",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/en/blog/20260904-patent-malicious-litigation-defense-en.html",
+      "og:title": "Sued for 80 Million, Unitree Recovered Only 80,000: 7 Ways to Counter Patent Trolling",
+      "og:description": "A daily-goods company sued robot maker Unitree five days after acquiring a &#x27;robot dog&#x27; patent, swinging its claim between 500 yuan and 80 million yuan. China&#x27;s Supreme People&#x27;s Court called it &#x27;carefully calculated and endlessly capricious&#x27;. Seven countermeasures for companies targeted by patent trolls.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/20260904-patent-malicious-litigation-defense-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Sued for 80 Million, Unitree Recovered Only 80,000: 7 Ways to Counter Patent Trolling",
+      "canonical": "https://najieip.com/en/blog/20260904-patent-malicious-litigation-defense-en.html",
+      "has_jsonld": true,
+      "title": "Sued for 80 Million, Unitree Recovered Only 80,000: 7 Ways to Counter Patent Trolling — Aipunajie Patent Firm",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260910-horizontal-monopoly-agreement.html",
+      "og:title": "",
+      "og:description": "最高法2026反垄断典型案例：四家检测公司签&quot;整合联营协议&quot;，被判构成横向垄断协议。协议无效、分成拿不到、线索移送执法部门——小企业同样会踩线。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260910-horizontal-monopoly-agreement.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "",
+      "canonical": "https://najieip.com/mili/blog/20260910-horizontal-monopoly-agreement.html",
+      "has_jsonld": true,
+      "title": "\"联营整合、共同定价\"，怎么就成了垄断协议？——四家检测公司的教训 — 纳杰觅理",
+      "issues": [
+        "og:title 过短 (<10字符)"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260910-human-ai-collaboration-ip.html",
+      "og:title": "AI 是同事，不是作者：一篇稿子的旅程，藏着人机协作的全部法律问题",
+      "og:description": "AI不会成为作者，但它让&quot;谁才是真正的作者&quot;变得更值钱：署名与权利归属是两件事，法律看的是人的实质性贡献——两个结论相反的AI著作权判决，差在&quot;拿不拿得出创作过程&quot;。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260910-human-ai-collaboration-ip.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI 是同事，不是作者：一篇稿子的旅程，藏着人机协作的全部法律问题",
+      "canonical": "https://najieip.com/mili/blog/20260910-human-ai-collaboration-ip.html",
+      "has_jsonld": true,
+      "title": "AI 是同事，不是作者：一篇稿子的旅程，藏着人机协作的全部法律问题 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260909-patent-claim-construction-1318.html",
+      "og:title": "发明目的能限缩专利保护范围吗？——从一审34万改判270万说起",
+      "og:description": "最高法1318号：同一专利同一批产品，一审赔34万、二审改判270万——差在&quot;权利要求解释&quot;。发明目的不能给权利要求&quot;加锁&quot;。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260909-patent-claim-construction-1318.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "发明目的能限缩专利保护范围吗？——从一审34万改判270万说起",
+      "canonical": "https://najieip.com/mili/blog/20260909-patent-claim-construction-1318.html",
+      "has_jsonld": true,
+      "title": "发明目的能限缩专利保护范围吗？——从一审34万改判270万说起 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260910-unfair-competition-nine-red-lines.html",
+      "og:title": "最高法连发9案：AI写点评也违法，你公司踩了几条红线？",
+      "og:description": "最高法连发9件反不正当竞争典型案例：AI批量测评文被判“截流”、技术中立不再免责，技术秘密案4458万基数叠加2倍惩罚，蹭字号、蹭剧名照样重罚。九案三条线＋企业今天能做的三件事。",
+      "og:image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260910-unfair-competition-nine-red-lines.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "最高法连发9案：AI写点评也违法，你公司踩了几条红线？",
+      "canonical": "https://najieip.com/mili/blog/20260910-unfair-competition-nine-red-lines.html",
+      "has_jsonld": true,
+      "title": "最高法连发9案：AI写点评也违法，你公司踩了几条红线？ — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260909-ai-image-copyright-four-cases.html",
+      "og:title": "AI生图算不算作品？4个法院2胜2负，输赢只差一件事",
+      "og:description": "AI生图算不算作品？四个法院两胜两负：赢的靠人的投入和留痕，输的连《作品登记证书》都救不了。著作权法只认“人的独创性智力投入”，附五条留痕动作。",
+      "og:image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260909-ai-image-copyright-four-cases.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI生图算不算作品？4个法院2胜2负，输赢只差一件事",
+      "canonical": "https://najieip.com/mili/blog/20260909-ai-image-copyright-four-cases.html",
+      "has_jsonld": true,
+      "title": "AI生图算不算作品？4个法院2胜2负，输赢只差一件事 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260909-jicheng-jiufen-li-an.html",
+      "og:title": "继承纠纷想打官司，立案先过这4关——刚替当事人立上案，把坑都踩明白了",
+      "og:description": "继承纠纷立案4关：管辖法院、4类材料、在线立案7日期限、立案后程序——附出发前自查5项清单。",
+      "og:image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260909-jicheng-jiufen-li-an.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "继承纠纷想打官司，立案先过这4关——刚替当事人立上案，把坑都踩明白了",
+      "canonical": "https://najieip.com/mili/blog/20260909-jicheng-jiufen-li-an.html",
+      "has_jsonld": true,
+      "title": "继承纠纷想打官司，立案先过这4关——刚替当事人立上案，把坑都踩明白了 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260909-opc-one-person-company-legal.html",
+      "og:title": "OPC 一人公司：AI让一个人像一支队伍，法律却问你五个问题",
+      "og:description": "286万OPC背后那个没人提的&quot;第五关&quot;：一人公司股东举证不能即连带、成果归属默认归开发方、个人IP不做商标就是别人的。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260909-opc-one-person-company-legal.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "OPC 一人公司：AI让一个人像一支队伍，法律却问你五个问题",
+      "canonical": "https://najieip.com/mili/blog/20260909-opc-one-person-company-legal.html",
+      "has_jsonld": true,
+      "title": "OPC 一人公司：AI让一个人像一支队伍，法律却问你五个问题 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260909-aucl-livestream-ads.html",
+      "og:title": "直播带货、测评视频、比较广告：市场部最容易踩的3条",
+      "og:description": "直播切片、测评视频、比较广告——市场部最容易踩的3条&quot;反法&quot;红线：篡改切片=虚假宣传、恶意剪辑=商业诋毁、遮logo不实比较照样担责。",
+      "og:image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260909-aucl-livestream-ads.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "直播带货、测评视频、比较广告：市场部最容易踩的3条",
+      "canonical": "https://najieip.com/mili/blog/20260909-aucl-livestream-ads.html",
+      "has_jsonld": true,
+      "title": "直播带货、测评视频、比较广告：市场部最容易踩的3条\"反法\"红线 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260909-civilcode1197-ai-redflag.html",
+      "og:title": "技术不是",
+      "og:description": "AI服务提供者&quot;避风港&quot;有红线：民法典第1197条红旗原则，什么时候会找上AI公司？附三件合规动作。",
+      "og:image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260909-civilcode1197-ai-redflag.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "技术不是",
+      "canonical": "https://najieip.com/mili/blog/20260909-civilcode1197-ai-redflag.html",
+      "has_jsonld": true,
+      "title": "技术不是\"免责牌\"：民法典第1197条，什么时候会找上AI公司？ — 纳杰觅理",
+      "issues": [
+        "og:title 过短 (<10字符)"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260908-ai-content-liability-24-rules.html",
+      "og:title": "AI生成内容被告，最高法24条新规：别甩锅给AI",
+      "og:description": "最高法24条涉AI裁判规则：&quot;AI生成&quot;不是免死金牌，实际控制人照赔；AI服务走一般过错责任。两条没定的事现在就要留痕，附三条今天就做的合规动作。",
+      "og:image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260908-ai-content-liability-24-rules.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI生成内容被告，最高法24条新规：别甩锅给AI",
+      "canonical": "https://najieip.com/mili/blog/20260908-ai-content-liability-24-rules.html",
+      "has_jsonld": true,
+      "title": "AI生成内容被告，最高法24条新规：别甩锅给AI — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260907-ai-model-asset-three-track-decision.html",
+      "og:title": "AI模型被抄，三条路怎么选：有人赢160万，有人输51亿",
+      "og:description": "AI模型被抄，专利、商业秘密、反不正当竞争三条路怎么选？抖音反法赢160万、小i专利51亿索赔落空、商业秘密改判赔50万——三轨决策树直接抄。",
+      "og:image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260907-ai-model-asset-three-track-decision.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI模型被抄，三条路怎么选：有人赢160万，有人输51亿",
+      "canonical": "https://najieip.com/mili/blog/20260907-ai-model-asset-three-track-decision.html",
+      "has_jsonld": true,
+      "title": "AI模型被抄，三条路怎么选：有人赢160万，有人输51亿 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260904-patent-malicious-litigation-defense.html",
+      "og:title": "被索赔8000万，宇树只拿回8万！专利碰瓷7招反制",
+      "og:description": "拿“电子狗”专利第5天起诉宇树，索赔500元跳到8000万再改回；最高法终审定性“精心算计、反复无常”。宇树三场全赢、律师费21万只拿回8万。6个信号、7条反制路径，附企业自检清单。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260904-patent-malicious-litigation-defense.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "被索赔8000万，宇树只拿回8万！专利碰瓷7招反制",
+      "canonical": "https://najieip.com/mili/blog/20260904-patent-malicious-litigation-defense.html",
+      "has_jsonld": true,
+      "title": "被索赔8000万，宇树只拿回8万！专利碰瓷7招反制 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260907-copyright-15plan-opportunities-v2-生命力润色版.html",
+      "og:title": "版权质押冲120亿：国家版权",
+      "og:description": "版权&quot;十五五&quot;规划：作品登记749万→950万、质押融资84亿→120亿。版权从证书变资产，质押融资/AI训练数据付费/登记放量4个新机会一次翻出来。",
+      "og:image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260907-copyright-15plan-opportunities-v2-生命力润色版.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "版权质押冲120亿：国家版权",
+      "canonical": "https://najieip.com/mili/blog/20260907-copyright-15plan-opportunities-v2-生命力润色版.html",
+      "has_jsonld": true,
+      "title": "版权质押冲120亿：国家版权\"十五五\"规划里的4个新机会 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260903-ip-data-five-intel-libraries.html",
+      "og:title": "知产数据",
+      "og:description": "国知发服字〔2026〕27号把全国知产数据收成",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260903-ip-data-five-intel-libraries.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "知产数据",
+      "canonical": "https://najieip.com/najie/blog/20260903-ip-data-five-intel-libraries.html",
+      "has_jsonld": true,
+      "title": "知产数据\"一本账\"上线：5个免费情报库＋一条变现新路 — 纳杰觅理",
+      "issues": [
+        "og:title 过短 (<10字符)"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260911-trademark-boundary-four-gates.html",
+      "og:title": "索赔8元面馆4天翻车！商标维权，先过这4道闸",
+      "og:description": "16.22亿营收、503家门店的上市公司，起诉8元一碗的夫妻面馆，索赔七八千，4天后道歉并白送商标；同期LV赢了1030万却挨骂。法律上赢不等于商业上赢——权利人先过4道闸，被诉的中小老板记住5步。",
+      "og:image": "https://images.pexels.com/photos/48148/documents-accent-tear-48148.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260911-trademark-boundary-four-gates.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "索赔8元面馆4天翻车！商标维权，先过这4道闸",
+      "canonical": "https://najieip.com/najie/blog/20260911-trademark-boundary-four-gates.html",
+      "has_jsonld": true,
+      "title": "索赔8元面馆4天翻车！商标维权，先过这4道闸 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260827-trademark-admission-105wan.html",
+      "og:title": "说漏嘴，赔了105万",
+      "og:description": "一家牙科诊所把他人注册在先的「齿臻」商标颠倒成「臻齿」当门头字号，反手对「齿臻」提起无效宣告、还申请撤三，结果三审三败：一审判停止侵权并赔偿100万元经济损失＋5万元合理支出，上诉被驳回，2026年8月14日高院再审申请被裁定驳回，105万",
+      "og:image": null,
+      "og:url": "https://najieip.com/mili/blog/20260827-trademark-admission-105wan.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "说漏嘴，赔了105万",
+      "canonical": "https://najieip.com/mili/blog/20260827-trademark-admission-105wan.html",
+      "has_jsonld": true,
+      "title": "说漏嘴，赔了105万 — 纳杰觅理",
+      "issues": [
+        "缺少 og:image"
+      ]
+    },
     {
       "url": "https://najieip.com/",
       "og:title": "纳杰知识产权 — 专利·商标·诉讼 全链条IP服务",
@@ -18,16 +342,44 @@
       "issues": []
     },
     {
-      "url": "https://najieip.com/blog/",
-      "og:title": "博客 — 爱普纳杰专利所",
-      "og:description": "爱普纳杰专利所博客 — 专利申请指南、商标维权、AI版权解读、知产检索工具、代理行业洞察。",
-      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      "og:url": "https://najieip.com/blog/",
+      "url": "https://najieip.com/mili/blog/20260819-good-samaritan-lawsuit.html",
+      "og:title": "见义勇为，摊上官司？",
+      "og:description": "山东聊城：父亲当街施暴，路人出手制止、把人摔成轻伤二级，一审认定构成故意伤害罪、免予刑事处罚并判赔，案件发回重审，2026年8月18日已开庭。三个最容易被带偏的点：轻伤二级是故意伤害罪的入罪门槛；「免予刑事处罚」的前提是构成犯罪（刑法第37",
+      "og:image": null,
+      "og:url": "https://najieip.com/mili/blog/20260819-good-samaritan-lawsuit.html",
       "twitter:card": "summary_large_image",
-      "twitter:title": "博客 — 爱普纳杰专利所",
-      "canonical": "https://najieip.com/blog/",
+      "twitter:title": "见义勇为，摊上官司？",
+      "canonical": "https://najieip.com/mili/blog/20260819-good-samaritan-lawsuit.html",
       "has_jsonld": true,
-      "title": "博客 — 爱普纳杰专利所",
+      "title": "见义勇为，摊上官司？ — 纳杰觅理",
+      "issues": [
+        "缺少 og:image"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/",
+      "og:title": "AipNajie Patent Firm — Professional IP Agency",
+      "og:description": "AipNajie Patent Firm — Professional IP agency. Patent prosecution, trademark registration, OA responses, annuity management & global IP strategy. 15 years of experience, 2,000+ cases under AI-driven digital management.",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AipNajie Patent Firm — Professional IP Agency",
+      "canonical": "https://najieip.com/en/",
+      "has_jsonld": true,
+      "title": "AipNajie Patent Firm — Professional IP Agency",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/fr/",
+      "og:title": "AipNajie Cabinet de Brevets — Agence PI Professionnelle",
+      "og:description": "AipNajie Cabinet de Brevets — Agence PI professionnelle. Dépôt de brevets, enregistrement de marques, réponses OA, gestion des annuités et stratégie PI internationale. 15 ans d",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AipNajie Cabinet de Brevets — Agence PI Professionnelle",
+      "canonical": "https://najieip.com/fr/",
+      "has_jsonld": true,
+      "title": "AipNajie Cabinet de Brevets — Agence PI Professionnelle",
       "issues": []
     },
     {
@@ -44,6 +396,19 @@
       "issues": []
     },
     {
+      "url": "https://najieip.com/blog/",
+      "og:title": "博客 — 爱普纳杰专利所",
+      "og:description": "爱普纳杰专利所博客 — 专利申请指南、商标维权、AI版权解读、知产检索工具、代理行业洞察。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "博客 — 爱普纳杰专利所",
+      "canonical": "https://najieip.com/blog/",
+      "has_jsonld": true,
+      "title": "博客 — 爱普纳杰专利所",
+      "issues": []
+    },
+    {
       "url": "https://najieip.com/najie/",
       "og:title": "纳杰知识产权 — 商标·项目申报·涉外IP·年费管理",
       "og:description": "国家级知识产权优势企业。商标授权确权、涉外商标(PCT/马德里)、著作权登记、专利年费管理、高企认定申报、知识产权法律顾问。纳杰为创新护航，创新因纳杰独享。",
@@ -55,6 +420,3179 @@
       "has_jsonld": true,
       "title": "纳杰知识产权 — 商标·项目申报·涉外IP·年费管理",
       "issues": []
+    },
+    {
+      "url": "https://najieip.com/aipunajie/",
+      "og:title": "爱普纳杰专利代理事务所 — 双资质精品知识产权服务机构",
+      "og:description": "北京爱普纳杰专利代理事务所(特殊普通合伙)。成立于2012，专利代理+涉外专利双资质。专利+商标+版权全链条确权维权、PCT国际申请、复审无效、高企申报辅导。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/aipunajie/",
+      "has_jsonld": true,
+      "title": "爱普纳杰专利代理事务所 — 双资质精品知识产权服务机构",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/index.html",
+      "og:title": "博客 — 觅理律师事务所",
+      "og:description": "觅理律师事务所 — 综合法律博客。覆盖知识产权、行政法、民商事诉讼、刑法与刑事诉讼法、海商法、反垄断与反不正当竞争、国际法、民法典等全法律领域。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "博客 — 觅理律师事务所",
+      "canonical": "https://najieip.com/mili/blog/",
+      "has_jsonld": true,
+      "title": "博客 — 觅理律师事务所",
+      "issues": [
+        "og:url 与页面 URL 不匹配"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/index.html",
+      "og:title": "博客 — 纳杰知识产权",
+      "og:description": "纳杰知识产权博客 — 商标授权确权、涉外商标(马德里/PCT)、版权登记、专利年费管理、企业IP合规。北京纳杰知识产权，国家知识产权优势企业。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/",
+      "has_jsonld": true,
+      "title": "博客 — 纳杰知识产权",
+      "issues": [
+        "og:url 与页面 URL 不匹配",
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/index.html",
+      "og:title": "爱普纳杰 · 博客",
+      "og:description": "爱普纳杰专利代理博客 — 专利撰写实务、OA答复策略、PCT国际申请、技术交底指南。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/aipunajie/blog/",
+      "has_jsonld": true,
+      "title": "爱普纳杰 · 博客",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "og:url 与页面 URL 不匹配",
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/patent-agency-license-redline-20260825.html",
+      "og:title": "专利代理执业资质红线：安徽11起处罚罚没3200万，无证与挂靠代理走到尽头",
+      "og:description": "2026年8月安徽省市场监督管理局集中公开11起专利代理行业行政处罚，累计罚没款逾3200万元。无证执业、挂靠资质、出租出借许可证——这些曾被默许的做法如今一一撞上法律红线。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/patent-agency-license-redline-20260825.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "专利代理执业资质红线：安徽11起处罚罚没3200万，无证与挂靠代理走到尽头",
+      "canonical": "https://najieip.com/aipunajie/blog/patent-agency-license-redline-20260825.html",
+      "has_jsonld": true,
+      "title": "专利代理执业资质红线：安徽11起处罚罚没3200万 — 爱普纳杰",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/shuiwu-shuishou-kaipiao-redline-20260825.html",
+      "og:title": "专利代理企业的发票红线：官费与代理费必须分开开，纯外到外才免税",
+      "og:description": "专利代理企业开票的两道红线：官费与代理费必须分开开票，别混、别虚。2026年增值税法施行后知识产权服务并入生产生活服务税目，开票编码须重排。拆解进出口税种、境外汇付代扣代缴、境外收汇双罚风险、以及「纯外到外」跨境免税的正确姿势。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/shuiwu-shuishou-kaipiao-redline-20260825.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "专利代理企业的发票红线：官费与代理费必须分开开，纯外到外才免税",
+      "canonical": "https://najieip.com/aipunajie/blog/shuiwu-shuishou-kaipiao-redline-20260825.html",
+      "has_jsonld": true,
+      "title": "专利代理企业的发票红线：同样一张票，为什么有的能免，有的却把老板送进去 — 爱普纳杰",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/en/blog/index.html",
+      "og:title": "Blog — Aipunajie Patent Firm",
+      "og:description": "Aipunajie Patent Firm Blog — Patent search guides, AI copyright analysis, trademark protection, and IP industry insights.",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/",
+      "has_jsonld": true,
+      "title": "Blog — Aipunajie Patent Firm",
+      "issues": [
+        "og:url 与页面 URL 不匹配",
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/index.html",
+      "og:title": "Blog — Aipunajie Patent Firm",
+      "og:description": "Blog Aipunajie Patent Firm — Guides de recherche de brevets, analyse du droit d",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/",
+      "has_jsonld": true,
+      "title": "Blog — Aipunajie Patent Firm",
+      "issues": [
+        "og:url 与页面 URL 不匹配",
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/llms.txt",
+      "og:title": null,
+      "og:description": null,
+      "og:image": null,
+      "og:url": null,
+      "twitter:card": null,
+      "twitter:title": null,
+      "canonical": null,
+      "has_jsonld": false,
+      "title": null,
+      "issues": [
+        "缺少 og:title",
+        "缺少 og:description",
+        "缺少 og:image",
+        "缺少 twitter:card",
+        "缺少 twitter:title",
+        "缺少 canonical",
+        "缺少 JSON-LD",
+        "缺少 <title>"
+      ]
+    },
+    {
+      "url": "https://najieip.com/robots.txt",
+      "og:title": null,
+      "og:description": null,
+      "og:image": null,
+      "og:url": null,
+      "twitter:card": null,
+      "twitter:title": null,
+      "canonical": null,
+      "has_jsonld": false,
+      "title": null,
+      "issues": [
+        "缺少 og:title",
+        "缺少 og:description",
+        "缺少 og:image",
+        "缺少 twitter:card",
+        "缺少 twitter:title",
+        "缺少 canonical",
+        "缺少 JSON-LD",
+        "缺少 <title>"
+      ]
+    },
+    {
+      "url": "https://najieip.com/dashboard/",
+      "og:title": null,
+      "og:description": null,
+      "og:image": null,
+      "og:url": null,
+      "twitter:card": null,
+      "twitter:title": null,
+      "canonical": null,
+      "has_jsonld": false,
+      "title": "纳杰 · 运营仪表盘 3D",
+      "issues": [
+        "缺少 og:title",
+        "缺少 og:description",
+        "缺少 og:image",
+        "缺少 twitter:card",
+        "缺少 twitter:title",
+        "缺少 canonical",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/20260825-patent-agent-qualification-redline.html",
+      "og:title": "专利代理执业资质红线",
+      "og:description": "2026年8月，安徽省市场监督管理局集中公开11起专利代理行业行政处罚，累计罚没款逾3200万元，单案最高罚没1708万元。这不仅是安徽一地的监管动作，更是专利代理行业从&quot;宽进&quot;转向&quot;严管&quot;的明确信号。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/20260825-patent-agent-qualification-redline.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/aipunajie/blog/20260825-patent-agent-qualification-redline.html",
+      "has_jsonld": false,
+      "title": "专利代理执业资质红线",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/20260824-patent-agent-3-step-rescue.html",
+      "og:title": "专利被转走？3步自救",
+      "og:description": "很多人一头雾水：我从没委托过这家机构，专利怎么",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/20260824-patent-agent-3-step-rescue.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/aipunajie/blog/20260824-patent-agent-3-step-rescue.html",
+      "has_jsonld": true,
+      "title": "专利被转走？3步自救",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/20260824-annual-fee-6month-lapse.html",
+      "og:title": "年费逾期超6月作废",
+      "og:description": "最近我们处理的一批年费核查里，一家企业名下20件外观设计专利年费逾期，最久的逾期超过600天。按法律规定，这些专利若无恢复程序，权利大概率已经终止。20件专利，申请的时候是真金白银，现在只剩一张纸——不对，连权利都没了。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/20260824-annual-fee-6month-lapse.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/aipunajie/blog/20260824-annual-fee-6month-lapse.html",
+      "has_jsonld": true,
+      "title": "年费逾期超6月作废",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/hezigang-banquan-zhuanweihui-2026.html",
+      "og:title": "纳杰知识产权何自刚入选首都知识产权服务业协会版权专业委员会",
+      "og:description": "北京纳杰知识产权代理有限公司何自刚先生正式入选首都知识产权服务业协会版权专业委员会，成为委员会中为数不多的代理机构代表之一。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/hezigang-banquan-zhuanweihui-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "纳杰知识产权何自刚入选首都知识产权服务业协会版权专业委员会",
+      "canonical": "https://najieip.com/najie/blog/hezigang-banquan-zhuanweihui-2026.html",
+      "has_jsonld": true,
+      "title": "纳杰知识产权何自刚入选首都知识产权服务业协会版权专业委员会 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/ai-shengcheng-neirong-banquan-guishu-2026.html",
+      "og:title": "AI生成内容的版权归属——谁拥有AI作品？企业如何避免",
+      "og:description": "AI生成的图片、文字、代码版权归谁？本文梳理AI生成内容版权归属的判定规则、标志性司法判例与三类企业场景，附提示词留痕、合同约定与开源合规的企业合规清单。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/ai-shengcheng-neirong-banquan-guishu-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI生成内容的版权归属——谁拥有AI作品？企业如何避免",
+      "canonical": "https://najieip.com/najie/blog/ai-shengcheng-neirong-banquan-guishu-2026.html",
+      "has_jsonld": true,
+      "title": "AI生成内容的版权归属——谁拥有AI作品？企业如何避免\"裸奔\" — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/qiye-xingshi-hegui-buqisu-2026.html",
+      "og:title": "企业刑事合规不起诉——从",
+      "og:description": "刑事合规不起诉是什么？涉案企业如何通过合规整改争取不起诉？本文梳理合规不起诉制度依据、适用条件、操作流程与事前合规建设要点，附常见误区与律师建议。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/qiye-xingshi-hegui-buqisu-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "企业刑事合规不起诉——从",
+      "canonical": "https://najieip.com/najie/blog/qiye-xingshi-hegui-buqisu-2026.html",
+      "has_jsonld": true,
+      "title": "企业刑事合规不起诉——从\"涉案企业合规改革\"到\"合规不起诉\"的操作路径 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/AI专利算法歧视红线-避坑清单-20260819.html",
+      "og:title": "AI专利踩中",
+      "og:description": "局令84号施行后，算法歧视首次成为AI专利驳回理由。指南第6.1.1节新红线+【例2】无人驾驶伦理题：招聘/信贷/推荐/调度5类高危场景自查，说明书补伦理合规3个自救动作，8月28日国知局公益讲座预约。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/AI专利算法歧视红线-避坑清单-20260819.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI专利踩中",
+      "canonical": "https://najieip.com/najie/blog/AI专利算法歧视红线-避坑清单-20260819.html",
+      "has_jsonld": true,
+      "title": "AI专利踩中\"算法歧视\"直接驳回！5类特征+3招自救 — 纳杰觅理",
+      "issues": [
+        "og:title 过短 (<10字符)"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260817-trademark-nonuse-cancellation-rescue.html",
+      "og:title": "撤三危机，15天自救",
+      "og:description": "最近我们接到一起委托：一家餐饮服务企业的注册商标，突然收到国家知识产权局的《撤销注册商标决定书》——理由是",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260817-trademark-nonuse-cancellation-rescue.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/20260817-trademark-nonuse-cancellation-rescue.html",
+      "has_jsonld": true,
+      "title": "撤三危机，15天自救",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260818-layout-design-regulation-checklist.html",
+      "og:title": "沉睡25年的权利醒了：芯片企业60天倒排清单",
+      "og:description": "修订后的《集成电路布图设计保护条例》10月15日施行——25年来首次系统性大修：客体变宽、惩罚性赔偿、独创性声明、任意人撤销。芯片企业60天倒排清单：9/3提意见、盘点老版图、算保护期、写独创性声明、存量自查、合同权属、内部留痕。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260818-layout-design-regulation-checklist.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "沉睡25年的权利醒了：芯片企业60天倒排清单",
+      "canonical": "https://najieip.com/najie/blog/20260818-layout-design-regulation-checklist.html",
+      "has_jsonld": true,
+      "title": "沉睡25年的权利醒了：芯片企业60天倒排清单 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/结构性卡位-AI时代法律人唯一的护城河-20260807.html",
+      "og:title": "结构性卡位：AI时代法律人唯一的护城河",
+      "og:description": "护城河不是把你的能力做到极致——而是让极致的能力也无法绕过你。AI能写文章、能做检索、能出方案，但永远做不到在人类社会的法律架构中占据结构性的位置：出庭资格、律师见证、律师函签名、律师调解——这些不是AI做不到的事，而是AI没有资格做的事。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/结构性卡位-AI时代法律人唯一的护城河-20260807.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "结构性卡位：AI时代法律人唯一的护城河",
+      "canonical": "https://najieip.com/mili/blog/结构性卡位-AI时代法律人唯一的护城河-20260807.html",
+      "has_jsonld": true,
+      "title": "结构性卡位：AI时代法律人唯一的护城河 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/fuyi-fanpei-yiwanjiu-20260831.html",
+      "og:title": "扶一把，反赔一万九",
+      "og:description": "湖南衡阳，一位商户看到老人突发疾病倒地，赶紧上前救助。老人最终没能救回来，家属随后向商户索赔。一番调解下来，商户被认定没有过错，却还是赔付了1.9万元。消息传开，舆论炸了锅：家属这算不算敲诈勒索？法律都说无责了，为什么还得赔钱？「和稀泥式调解」到底什么时候是个头？这篇文章，把这几件事一件一件讲清楚。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/fuyi-fanpei-yiwanjiu-20260831.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/fuyi-fanpei-yiwanjiu-20260831.html",
+      "has_jsonld": false,
+      "title": "扶一把，反赔一万九",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/beiruqin-sancha-20260831.html",
+      "og:title": "被入侵前，先查这三样",
+      "og:description": "最近，安全厂商披露了一条消息：AI工具 DeepSeek-Harness 被曝出高危远程代码执行漏洞，攻击者无需任何密钥，就能在暴露于公网的主机上执行任意命令。厂商给出的处置建议很直接——临时隔离相关服务，尽快升级到修复版本。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/beiruqin-sancha-20260831.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/beiruqin-sancha-20260831.html",
+      "has_jsonld": false,
+      "title": "被入侵前，先查这三样",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/20260907-ai-judicial-opinion-en.html",
+      "og:title": "Supreme People&#x27;s Court AI Judicial Opinion Takes Effect: Enterprise AI Assets and Liability Boundaries, All 24 Rules Explained at Once",
+      "og:description": "Supreme People&#x27;s Court AI Judicial Opinion Takes Effect: Enterprise AI Assets and Liability Boundaries, All 24 Rules Explained at Once — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/20260907-ai-judicial-opinion-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/20260907-ai-judicial-opinion-en.html",
+      "has_jsonld": false,
+      "title": "Supreme People&#x27;s Court AI Judicial Opinion Takes Effect: Enterprise AI Assets and Liability Boundaries, All 24 Rules Explained at Once — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/20260907-ai-judicial-opinion-fr.html",
+      "og:title": "Mise en œuvre de l&#x27;avis judiciaire de la Cour suprême sur l&#x27;IA : actifs et limites de responsabilité des entreprises, 24 règles expliquées en détail",
+      "og:description": "Mise en œuvre de l&#x27;avis judiciaire de la Cour suprême sur l&#x27;IA : actifs et limites de responsabilité des entreprises, 24 règles expliquées en détail — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/20260907-ai-judicial-opinion-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/20260907-ai-judicial-opinion-fr.html",
+      "has_jsonld": false,
+      "title": "Mise en œuvre de l&#x27;avis judiciaire de la Cour suprême sur l&#x27;IA : actifs et limites de responsabilité des entreprises, 24 règles expliquées en détail — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/发完文章别手贱-冷启动期教训-20260812.html",
+      "og:title": "发完文章别手贱！40分钟冷启动期，我们拿限流换来的教训",
+      "og:description": "公众号文章发布后的0-60分钟是算法冷启动观察期。频繁刷后台、发朋友圈求阅读、反复修改文章——这三件事我们全干过，用5月限流到7月底恢复的代价，换来40分钟冷启动期实操守则。",
+      "og:image": "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/发完文章别手贱-冷启动期教训-20260812.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "发完文章别手贱！40分钟冷启动期，我们拿限流换来的教训",
+      "canonical": "https://najieip.com/najie/blog/发完文章别手贱-冷启动期教训-20260812.html",
+      "has_jsonld": true,
+      "title": "发完文章别手贱！40分钟冷启动期，我们拿限流换来的教训 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/overseas-trademark-strategy.html",
+      "og:title": "企业海外商标布局策略",
+      "og:description": "随着越来越多的中国企业走向国际市场，海外商标保护不再是可选项，而是出海战略的基础设施。本文以中国黄金的全球化实践为引，系统梳理企业海外商标布局的核心策略与操作路径。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/overseas-trademark-strategy.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/overseas-trademark-strategy.html",
+      "has_jsonld": false,
+      "title": "企业海外商标布局策略 | 从中国黄金说起 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/tro-72h-self-rescue-guide-20260830.html",
+      "og:title": "8天冻结、281件围剿！跨境卖家72小时自救清单",
+      "og:description": "2026年7月美国联邦法院281件跨境电商TRO、中位8天冻结。209件（74%）落在伊利诺伊北区，GBC一家律所独占35%。72小时三步清单：确认止损→自查存证→定策略；和解30%-60% vs 应诉 vs 弃店对比，附Liu案/Price案/Milwaukee案/海牙送达四大应诉窗口判例。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/tro-72h-self-rescue-guide-20260830.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "8天冻结、281件围剿！跨境卖家72小时自救清单",
+      "canonical": "https://najieip.com/mili/blog/tro-72h-self-rescue-guide-20260830.html",
+      "has_jsonld": true,
+      "title": "8天冻结、281件围剿！跨境卖家72小时自救清单 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260825-tax-invoice-redline.html",
+      "og:title": "专利代理企业的发票红线：同样一张票，为什么有的能免，有的却把老板送进去",
+      "og:description": "钱怎么进来、怎么出去，老板往往清楚现金流，却不清楚其中藏着的税。尤其是做涉外业务、给境外客户办事、又涉及报关进出口的企业——看似&quot;境外赚的钱不用交税&quot;，实则每一步都有红线。这一篇，我把最容易踩坑的四件事一次讲清楚。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260825-tax-invoice-redline.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/20260825-tax-invoice-redline.html",
+      "has_jsonld": false,
+      "title": "专利代理企业的发票红线：同样一张票，为什么有的能免，有的却把老板送进去",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260817-priority-review-new-rule.html",
+      "og:title": "9月1日新规生效，你的专利",
+      "og:description": "85号令《专利优先审查管理办法》9月1日施行：优审从",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260817-priority-review-new-rule.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "9月1日新规生效，你的专利",
+      "canonical": "https://najieip.com/najie/blog/20260817-priority-review-new-rule.html",
+      "has_jsonld": true,
+      "title": "9月1日新规生效，你的专利\"加急\"资格可能没了 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260816-embodied-ai-ip-trifecta.html",
+      "og:title": "政策首次点名",
+      "og:description": "工信部256号文首次把",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260816-embodied-ai-ip-trifecta.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "政策首次点名",
+      "canonical": "https://najieip.com/najie/blog/20260816-embodied-ai-ip-trifecta.html",
+      "has_jsonld": true,
+      "title": "政策首次点名\"IP归属\"，具身智能企业先补三件事 — 纳杰觅理",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "og:description 过短 (<20字符)"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260817-trade-name-collision-3-remedies.html",
+      "og:title": "字号撞车，3条维权路",
+      "og:description": "最近我们代理的一起不正当竞争纠纷进入再审审查阶段，起因说来简单：两家公司字号相近——一家叫",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260817-trade-name-collision-3-remedies.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/20260817-trade-name-collision-3-remedies.html",
+      "has_jsonld": true,
+      "title": "字号撞车，3条维权路",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260902-ai-trade-secret-hidden-moat.html",
+      "og:title": "AI公司最值钱的东西不是代码！首例大模型泄密案罚35万",
+      "og:description": "杭州首例AI垂类大模型商业秘密案罚35万：提示词、审查规则、标注规范被离职专家带走。总局令126号下AI商业秘密什么能保、怎么保得住、行民刑三轨怎么走。",
+      "og:image": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260902-ai-trade-secret-hidden-moat.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI公司最值钱的东西不是代码！首例大模型泄密案罚35万",
+      "canonical": "https://najieip.com/mili/blog/20260902-ai-trade-secret-hidden-moat.html",
+      "has_jsonld": true,
+      "title": "AI公司最值钱的东西不是代码！首例大模型泄密案罚35万 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/shangye-mimi-baohu-2026.html",
+      "og:title": "商业秘密被离职员工带走？做对这5件事才能维权",
+      "og:description": "商业秘密维权能不能赢，不看对方偷走了什么，只看你事先做了什么。做对这5件事，把维权胜率拉高。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/shangye-mimi-baohu-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "商业秘密被离职员工带走？做对这5件事才能维权",
+      "canonical": "https://najieip.com/mili/blog/shangye-mimi-baohu-2026.html",
+      "has_jsonld": true,
+      "title": "商业秘密被离职员工带走？做对这5件事才能维权 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/pct-guojijieduan-feiyong-2026.html",
+      "og:title": "PCT申请费用新规：XML电子提交每件省2530元",
+      "og:description": "PCT申请费用9月1日起调整：国际申请费11220元，PDF电子提交减缴1690元、XML减缴2530元。一文算清5笔费用，看懂XML比PDF多省840元。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/pct-guojijieduan-feiyong-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "PCT申请费用新规：XML电子提交每件省2530元",
+      "canonical": "https://najieip.com/najie/blog/pct-guojijieduan-feiyong-2026.html",
+      "has_jsonld": true,
+      "title": "PCT申请费用新规：XML电子提交每件省2530元 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/trademark-law-use-or-die-countdown-20260831.html",
+      "og:title": "倒计时4个月！4987万件商标迎来“用或死”大限",
+      "og:description": "截至2025年底中国有效注册商标4987.7万件。新《商标法》2027年1月1日施行：依职权主动撤销、误导宣传撤销注册、异议期3个月缩到2个月。留给企业只剩4个月——9月盘点库存、10月清理囤积建证据台账、11月搭异议监控、12月布局新机会，附中小企业四个月行动表。",
+      "og:image": "https://images.pexels.com/photos/48148/documents-accent-tear-48148.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/trademark-law-use-or-die-countdown-20260831.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "倒计时4个月！4987万件商标迎来“用或死”大限",
+      "canonical": "https://najieip.com/najie/blog/trademark-law-use-or-die-countdown-20260831.html",
+      "has_jsonld": true,
+      "title": "倒计时4个月！4987万件商标迎来“用或死”大限 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/lawyer-law-amendment-2026.html",
+      "og:title": "律师法修改通过：9月1日施行，这5条和你直接相关",
+      "og:description": "律师法修改通过：2026年8月28日十四届全国人大常委会第二十四次会议通过修改《律师法》决定，9月1日施行。刑事辩护全覆盖、公务员离职做律师限制、港澳律师大湾区执业、涉外法律服务入法。觅理律师事务所解读。",
+      "og:image": "https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/lawyer-law-amendment-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "律师法修改通过：9月1日施行，这5条和你直接相关",
+      "canonical": "https://najieip.com/najie/blog/lawyer-law-amendment-2026.html",
+      "has_jsonld": true,
+      "title": "律师法修改通过：9月1日施行，这5条和你直接相关 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/fr/blog/lawyer-law-amendment-2026-fr.html",
+      "og:title": "Loi sur les avocats modifiée et adoptée : entrée en vigueur le 1er septembre, ces 5 dispositions vous concernent directement",
+      "og:description": "Loi sur les avocats modifiée et adoptée : entrée en vigueur le 1er septembre, ces 5 dispositions vous concernent directement — translated article by Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/lawyer-law-amendment-2026-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/lawyer-law-amendment-2026-fr.html",
+      "has_jsonld": false,
+      "title": "Loi sur les avocats modifiée et adoptée : entrée en vigueur le 1er septembre, ces 5 dispositions vous concernent directement — Mili Law Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/shangbiao-xuzhan-banli-2026.html",
+      "og:title": "商标续展办理：有效期、宽展期、续展费用与常见误区",
+      "og:description": "商标续展办理怎么做？有效期10年、期满前12个月可续展、6个月宽展期，错过即注销且1年内近似申请不核准。本文梳理商标续展全流程、费用与常见误区。纳杰出品。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/shangbiao-xuzhan-banli-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "商标续展办理：有效期、宽展期、续展费用与常见误区",
+      "canonical": "https://najieip.com/najie/blog/shangbiao-xuzhan-banli-2026.html",
+      "has_jsonld": true,
+      "title": "商标续展办理：有效期、宽展期、续展费用与常见误区 — 爱普纳杰专利所",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/en/blog/lawyer-law-amendment-2026-en.html",
+      "og:title": "The Lawyers Law Amendment Passed: Effective September 1, These 5 Provisions Are Directly Relevant to You",
+      "og:description": "The Lawyers Law Amendment Passed: Effective September 1, These 5 Provisions Are Directly Relevant to You — translated article by Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/lawyer-law-amendment-2026-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/lawyer-law-amendment-2026-en.html",
+      "has_jsonld": false,
+      "title": "The Lawyers Law Amendment Passed: Effective September 1, These 5 Provisions Are Directly Relevant to You — Mili Law Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/qiye-falv-tijian-2026.html",
+      "og:title": "企业法律体检：中小企业法律风险排查与合规体检全指南",
+      "og:description": "企业法律体检是什么？查什么、怎么查、值不值？本文拆解法律体检六大模块、四步流程与常见高风险点，帮助中小企业用低成本发现高风险、从被动应对转向事前防控。纳杰觅理出品。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/qiye-falv-tijian-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "企业法律体检：中小企业法律风险排查与合规体检全指南",
+      "canonical": "https://najieip.com/aipunajie/blog/qiye-falv-tijian-2026.html",
+      "has_jsonld": true,
+      "title": "企业法律体检：中小企业法律风险排查与合规体检全指南 — 爱普纳杰专利所",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260815-sep-administrative-ruling-tactics.html",
+      "og:title": "谈8年没谈拢的专利许可，立案9个月就签了：被90%企业低估的行政裁决",
+      "og:description": "华为小米8年僵局9个月破冰。行政裁决3个月审限+停止侵权压力=谈判桌上的时钟。68号批复落地FRAND审查规则。",
+      "og:image": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260815-sep-administrative-ruling-tactics.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "谈8年没谈拢的专利许可，立案9个月就签了：被90%企业低估的行政裁决",
+      "canonical": "https://najieip.com/najie/blog/20260815-sep-administrative-ruling-tactics.html",
+      "has_jsonld": true,
+      "title": "谈8年没谈拢的专利许可，立案9个月就签了：被90%企业低估的行政裁决 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/shuju-zhishichanquan-dengji-2026.html",
+      "og:title": "数据知识产权登记落地：从&quot;政策概念&quot;到&quot;企业资产&quot;",
+      "og:description": "数据知识产权登记是什么？企业如何用登记实现数据资产确权与入表？本文梳理地方试点、登记要件、入表融资路径与合规边界。纳杰觅理出品。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/shuju-zhishichanquan-dengji-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "数据知识产权登记落地：从&quot;政策概念&quot;到&quot;企业资产&quot;",
+      "canonical": "https://najieip.com/aipunajie/blog/shuju-zhishichanquan-dengji-2026.html",
+      "has_jsonld": true,
+      "title": "数据知识产权登记落地：从\"政策概念\"到\"企业资产\" — 爱普纳杰专利所",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/dilibiaozhi-shenbao-yunyong-2026.html",
+      "og:title": "从&quot;地方特色&quot;到&quot;品牌资产&quot;：2026地理标志申报·运用·品牌化全解析",
+      "og:description": "地理标志怎么申报？证明商标与保护产品有何区别？本文梳理2026年地理标志双轨制申报路径、材料清单与运用品牌化方法，附58个新认定产品与福建实施方案解读。纳杰觅理出品。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/dilibiaozhi-shenbao-yunyong-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "从&quot;地方特色&quot;到&quot;品牌资产&quot;：2026地理标志申报·运用·品牌化全解析",
+      "canonical": "https://najieip.com/aipunajie/blog/dilibiaozhi-shenbao-yunyong-2026.html",
+      "has_jsonld": true,
+      "title": "从\"地方特色\"到\"品牌资产\"：2026地理标志申报·运用·品牌化全解析 — 爱普纳杰专利所",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260807-avanci-uk-chinese-automakers-sep.html",
+      "og:title": "一辆车32美元，特斯拉打了三年官司——中国车企的5G专利攻守棋局",
+      "og:description": "英国最高法院裁定专利池FRAND承诺不因集体许可而消失——全球首次专利池费率进入司法审查。拆解判决两面与中国车企的三层意义，附入池/谈判/反垄断决策清单。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260807-avanci-uk-chinese-automakers-sep.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "一辆车32美元，特斯拉打了三年官司——中国车企的5G专利攻守棋局",
+      "canonical": "https://najieip.com/mili/blog/20260807-avanci-uk-chinese-automakers-sep.html",
+      "has_jsonld": true,
+      "title": "一辆车32美元，特斯拉打了三年官司——中国车企的5G专利攻守棋局 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260809-ai-vs-employee.html",
+      "og:title": "AI员工 vs 人类员工：一场算不清账的战争？——经济学/管理学/税收财务/心理学/哲学五维对比，给创业者和传统老板的最终答案",
+      "og:description": "AI员工 vs 人类员工：一场算不清账的战争？从经济学、管理学、税收财务、心理学、哲学五个维度彻底算透AI原生与人力用工的真实成本，给创业者和传统老板一套按阶段切换的组合打法——不是二选一，是分阶段切换。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260809-ai-vs-employee.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI员工 vs 人类员工：一场算不清账的战争？——经济学/管理学/税收财务/心理学/哲学五维对比，给创业者和传统老板的最终答案",
+      "canonical": "https://najieip.com/najie/blog/20260809-ai-vs-employee.html",
+      "has_jsonld": true,
+      "title": "AI员工 vs 人类员工：一场算不清账的战争？——经济学/管理学/税收财务/心理学/哲学五维对比，给创业者和传统老板的最终答案 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260810-xishuo-patent-invalid-huashan.html",
+      "og:title": "专利无效攻防：一场没有硝烟的「华山论剑」",
+      "og:description": "专利无效宣告是知识产权界最刺激的",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260810-xishuo-patent-invalid-huashan.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "专利无效攻防：一场没有硝烟的「华山论剑」",
+      "canonical": "https://najieip.com/najie/blog/20260810-xishuo-patent-invalid-huashan.html",
+      "has_jsonld": true,
+      "title": "专利无效攻防：一场没有硝烟的「华山论剑」 — 纳杰觅理",
+      "issues": [
+        "og:description 过短 (<20字符)"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260811-ai-copyright-cn-us-overseas.html",
+      "og:title": "中美AI版权",
+      "og:description": "2026年3月2日，美国最高法院拒审Thaler案——纯AI生成在美国不受版权保护；同一天，中国法院认定AI图片可构成作品。幻之翼案输20万 vs 春风案赢500元，区别只有四个字：创作留痕。拆解中美两国",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260811-ai-copyright-cn-us-overseas.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "中美AI版权",
+      "canonical": "https://najieip.com/mili/blog/20260811-ai-copyright-cn-us-overseas.html",
+      "has_jsonld": true,
+      "title": "中美AI版权\"冰火两重天\"：你的AI生成内容，出海怎么办？ — 纳杰觅理",
+      "issues": [
+        "og:title 过短 (<10字符)"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260812-trade-secret-pitfalls.html",
+      "og:title": "施行两个半月，商业秘密新规这5个坑，90%的企业正在踩",
+      "og:description": "2026年6月1日施行的《商业秘密保护规定》（总局令第126号）施行两个半月，原告胜诉率从28.6%飙到53.8%——但60%的败诉仍是权利人自己没做对基础要件。5个坑+中小企业轻量落地清单。",
+      "og:image": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260812-trade-secret-pitfalls.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "施行两个半月，商业秘密新规这5个坑，90%的企业正在踩",
+      "canonical": "https://najieip.com/mili/blog/20260812-trade-secret-pitfalls.html",
+      "has_jsonld": true,
+      "title": "施行两个半月，商业秘密新规这5个坑，90%的企业正在踩 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260811-overseas-ip-dispute-report.html",
+      "og:title": "海外知产纠纷一年2053起：2025年中国企业出海的法律成绩单，藏着三个残酷真相",
+      "og:description": "2025年中国企业在美知识产权诉讼新立案2053起，平均每个工作日超8起。商标诉讼51%缺席败诉、专利诉讼平均判赔495万美元、欧洲UPC成为第二战场——三个残酷真相+出海企业三个必须。",
+      "og:image": "https://images.pexels.com/photos/4427430/pexels-photo-4427430.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260811-overseas-ip-dispute-report.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "海外知产纠纷一年2053起：2025年中国企业出海的法律成绩单，藏着三个残酷真相",
+      "canonical": "https://najieip.com/mili/blog/20260811-overseas-ip-dispute-report.html",
+      "has_jsonld": true,
+      "title": "海外知产纠纷一年2053起：2025年中国企业出海的法律成绩单，藏着三个残酷真相 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/5-free-patent-search-tools.html",
+      "og:title": "5个免费专利检索工具，90%的发明人不知道",
+      "og:description": "5个完全免费的专利检索工具：国知局公布公告、PSS、SooPAT、Google Patents、佰腾网。不用买数据库，自己就能查中国+全球专利。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/5-free-patent-search-tools.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/5-free-patent-search-tools.html",
+      "has_jsonld": false,
+      "title": "5个免费专利检索工具，90%的发明人不知道 — 纳杰知识产权",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260813-luckin-thailand-trademark-checklist.html",
+      "og:title": "瑞幸胜诉9500万泰铢，出海商标这6件事现在就该做",
+      "og:description": "瑞幸在泰国赢了——赔偿总额逾9500万泰铢，创泰国知识产权案件史上最高赔偿纪录。但这场官司打了5年、中间还败诉过一次。瑞幸案最大的价值不是坏人被惩罚，而是把商标布局滞后的真实成本一笔一笔算给你看：6件出海企业现在就该做的事。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260813-luckin-thailand-trademark-checklist.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "瑞幸胜诉9500万泰铢，出海商标这6件事现在就该做",
+      "canonical": "https://najieip.com/najie/blog/20260813-luckin-thailand-trademark-checklist.html",
+      "has_jsonld": true,
+      "title": "瑞幸胜诉9500万泰铢，出海商标这6件事现在就该做 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/ai-agent-liability-chain-20260809.html",
+      "og:title": "AI数字员工闯祸谁赔？从",
+      "og:description": "AI数字员工闯祸谁赔？从OpenClaw",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/ai-agent-liability-chain-20260809.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI数字员工闯祸谁赔？从",
+      "canonical": "https://najieip.com/mili/blog/ai-agent-liability-chain-20260809.html",
+      "has_jsonld": true,
+      "title": "AI数字员工闯祸谁赔？从\"养龙虾\"暴雷到首案裁判，企业必看的责任链清单 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/ai-generated-content-copyright-en.html",
+      "og:title": "Who Owns AI-Generated Content? China&#x27;s 2026 Legal Framework Explained",
+      "og:description": "Who owns AI-generated content? A 2026 legal analysis of AIGC copyright in China, including key court rulings, regulatory guidance, and corporate compliance checklist. By APNaji / Mili Law.",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/ai-generated-content-copyright-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/ai-generated-content-copyright-en.html",
+      "has_jsonld": false,
+      "title": "Who Owns AI-Generated Content? China's 2026 Legal Framework Explained — Mili Law Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/ai-generated-content-copyright.html",
+      "og:title": "AI生成内容的版权归谁？2026年最新法律解读与合规建议",
+      "og:description": "AI生成内容（AIGC）的版权归谁？本文解读2026年中国最新司法实践、北京互联网法院标杆案例、企业合规建议。觅理律师事务所出品。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/ai-generated-content-copyright.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/ai-generated-content-copyright.html",
+      "has_jsonld": false,
+      "title": "AI生成内容的版权归谁？2026年最新法律解读与合规建议 — 觅理律师事务所",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/ai-ip-pitfall-guide.html",
+      "og:title": "AI工具IP合规避坑指南",
+      "og:description": "AI工具正在改变知识产权行业的每一个环节。从专利检索到商标监控，从合同审查到侵权分析——AI快、准、便宜。但坑也多。本文从实务场景出发，帮你避开最常见的五个坑。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/ai-ip-pitfall-guide.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/ai-ip-pitfall-guide.html",
+      "has_jsonld": false,
+      "title": "AI工具IP合规避坑指南 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/ai-ip-compliance-redline.html",
+      "og:title": "AI工具落地IP实务的合规红线",
+      "og:description": "2026年，AI工具已经渗透到知识产权实务的每一个环节——从专利检索、商标监控、侵权分析到合同审查。但工具越强，合规风险越大。本文梳理AI工具在IP实务中不可触碰的四条红线。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/ai-ip-compliance-redline.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/ai-ip-compliance-redline.html",
+      "has_jsonld": false,
+      "title": "AI工具落地IP实务的合规红线 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/ai-pinkong-shoumenren.html",
+      "og:title": "AI品控守门人：填补知产服务最后一关",
+      "og:description": "知识产权服务行业正在经历",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/ai-pinkong-shoumenren.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI品控守门人：填补知产服务最后一关",
+      "canonical": "https://najieip.com/aipunajie/blog/ai-pinkong-shoumenren.html",
+      "has_jsonld": true,
+      "title": "AI品控守门人：填补知产服务最后一关 — 爱普纳杰专利所",
+      "issues": [
+        "og:description 过短 (<20字符)"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/ai-zhuanli-shenqing-zhinan-2026.html",
+      "og:title": "AI发明专利申请指引发布：企业专利策略进入规则执行期",
+      "og:description": "CNIPA发布《人工智能相关发明专利申请指引（试行）》，首次系统回应AI生成物可专利性、发明人资格、权利归属等核心问题。纳杰知识产权第一时间解读三大规则变化与企业四步行动指南。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/ai-zhuanli-shenqing-zhinan-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/aipunajie/blog/ai-zhuanli-shenqing-zhinan-2026.html",
+      "has_jsonld": true,
+      "title": "AI发明专利申请指引发布：企业专利策略进入规则执行期 — 爱普纳杰专利所",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/archify-replace-drawio.html",
+      "og:title": "告别 draw.io：用 archify 让 AI 画架构图",
+      "og:description": "用 archify 取代 draw.io 画架构图——一个能让 AI 自动生成技术架构图的 Claude Skill。不用拖组件、不用对齐线，一句话出图。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/archify-replace-drawio.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/archify-replace-drawio.html",
+      "has_jsonld": false,
+      "title": "告别 draw.io：用 archify 让 AI 画架构图 — 纳杰知识产权",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/cnptes-three-layer-architecture-diagram.html",
+      "og:title": "CNPTES 管线-Agent-数据库 三层架构",
+      "og:description": "管线替代&quot;发现&quot;——不用人盯收件箱看新发票 Agent替代&quot;核对&quot;——不用人逐张发票判归属 数据库替代&quot;记忆&quot;——不用人翻文件夹找历史记录 留给人的是&quot;责任&quot;——到款未匹配，标记待跟进，你决定催款还是查银行 留给人的是&quot;创造力&quot;——从数据中发现客户增长趋势、业务洞察",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/cnptes-three-layer-architecture-diagram.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/cnptes-three-layer-architecture-diagram.html",
+      "has_jsonld": false,
+      "title": "CNPTES 管线-Agent-数据库 三层架构",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/copyright-law-feedback-guide.html",
+      "og:title": "8月12日截止：著作权法实施条例征求意见，企业还能说“不”",
+      "og:description": "著作权法实施条例修订草案征求意见期8月12日截止。对企业影响最大的条款解读，以及如何有效提交反馈意见——不是走过场，是真能改变规则。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/copyright-law-feedback-guide.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/copyright-law-feedback-guide.html",
+      "has_jsonld": false,
+      "title": "8月12日截止：著作权法实施条例征求意见，企业还能说“不” — 觅理律师事务所",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/cnptes-three-layer-architecture.html",
+      "og:title": "管线-Agent-数据库：知产代理系统的三层架构",
+      "og:description": "管线负责发现，Agent负责判断，数据库负责关联——知产代理系统的三层架构设计原则。五条规律，一套框架，技术替代工作，留下责任和创造力给人。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/cnptes-three-layer-architecture.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/cnptes-three-layer-architecture.html",
+      "has_jsonld": false,
+      "title": "管线-Agent-数据库：知产代理系统的三层架构 — 纳杰知识产权",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/enterprise-ip-compliance-system.html",
+      "og:title": "企业知识产权合规体系建设——从风险排查到管理落地",
+      "og:description": "企业知识产权合规体系建设指南：从专利商标风险排查到贯标落地，合规不是成本而是竞争力。纳杰知识产权为企业打造全流程IP管理体系。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/enterprise-ip-compliance-system.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/enterprise-ip-compliance-system.html",
+      "has_jsonld": false,
+      "title": "企业知识产权合规体系建设——从风险排查到管理落地 — 纳杰知识产权",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/gzh-design-skill.html",
+      "og:title": "3周2400星！公众号排版Skill爆了，但光排版不够",
+      "og:description": "一款面向公众号的AI排版工具在GitHub上3周狂揽2500+星。我们看了，发现他们只做了最后一步。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/gzh-design-skill.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/gzh-design-skill.html",
+      "has_jsonld": false,
+      "title": "3周2400星！公众号排版Skill爆了，但光排版不够 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/mili-changping-branch-20260731.html",
+      "og:title": "觅理律所昌平分所正式成立！",
+      "og:description": "觅理律师事务所昌平分所正式获批成立。立足北京北部科创走廊，覆盖行政法、刑法、海商法、反垄断、国际法、民法典等全领域法律服务。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/mili-changping-branch-20260731.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "觅理律所昌平分所正式成立！",
+      "canonical": "https://najieip.com/mili/blog/mili-changping-branch-20260731.html",
+      "has_jsonld": true,
+      "title": "觅理律所昌平分所正式成立！ — 觅理律师事务所",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/mili-join-founding-partner.html",
+      "og:title": "觅理加盟——创始合伙人亲述：为什么知产律师需要一个“家”",
+      "og:description": "觅理律所创始合伙人亲述加盟体验——为什么知识产权律师需要一个能打官司、有案源、拥有数字化能力的平台。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/mili-join-founding-partner.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/mili-join-founding-partner.html",
+      "has_jsonld": false,
+      "title": "觅理加盟——创始合伙人亲述：为什么知产律师需要一个“家” — 觅理律师事务所",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/jichengdianlu-butusheji-zhengqiu-yijian-2026.html",
+      "og:title": "集成电路布图设计保护条例配套规章征求意见——半导体企业合规新起点",
+      "og:description": "2026年8月3日，CNIPA发布集成电路布图设计保护条例配套规章征求意见稿——这是2001年条例施行25年来首次大规模配套规章修订。半导体企业如何提前布局？本文解读政策信号+企业合规行动指南。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/jichengdianlu-butusheji-zhengqiu-yijian-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "集成电路布图设计保护条例配套规章征求意见——半导体企业合规新起点",
+      "canonical": "https://najieip.com/najie/blog/jichengdianlu-butusheji-zhengqiu-yijian-2026.html",
+      "has_jsonld": true,
+      "title": "集成电路布图设计保护条例配套规章征求意见——半导体企业合规新起点 — 纳杰知识产权",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/overseas-trademark-protection-ruixing.html",
+      "og:title": "瑞幸泰国逆胜：中国品牌出海商标维权五步可复制路径",
+      "og:description": "瑞幸咖啡在泰国从",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/overseas-trademark-protection-ruixing.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "瑞幸泰国逆胜：中国品牌出海商标维权五步可复制路径",
+      "canonical": "https://najieip.com/najie/blog/overseas-trademark-protection-ruixing.html",
+      "has_jsonld": true,
+      "title": "瑞幸泰国逆胜：中国品牌出海商标维权五步可复制路径 — 爱普纳杰专利所",
+      "issues": [
+        "og:description 过短 (<20字符)"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/qiye-falvguwen-fuwu-quanjiexi.html",
+      "og:title": "企业常年法律顾问服务全解析：该不该请、怎么请、花多少钱",
+      "og:description": "企业常年法律顾问一年多少钱？服务包含哪些内容？中小企业该不该请法律顾问？纳杰律所全面解析法律顾问的服务范围、收费标准与选择方法，助力企业合规经营。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/qiye-falvguwen-fuwu-quanjiexi.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/qiye-falvguwen-fuwu-quanjiexi.html",
+      "has_jsonld": true,
+      "title": "企业常年法律顾问服务全解析：该不该请、怎么请、花多少钱 — 纳杰律师事务所",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/pph-santongdao-2026.html",
+      "og:title": "PPH三通道齐开——2026全球专利加速元年",
+      "og:description": "2026年8月1日，中欧PPH、中印(尼)PPH同步启动，中加PPH延长——三条全球专利加速通道同时开启。本文系统梳理三通道格局、申请条件与企业行动指南，抢占全球专利布局窗口期。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/pph-santongdao-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "PPH三通道齐开——2026全球专利加速元年",
+      "canonical": "https://najieip.com/najie/blog/pph-santongdao-2026.html",
+      "has_jsonld": true,
+      "title": "PPH三通道齐开——2026全球专利加速元年 — 纳杰知识产权",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/shierwu-ipr-checklist-2026.html",
+      "og:title": "9条行动清单：十五五规划发布，企业IP部门未来五年的预算和编制都在这里",
+      "og:description": "7月31日，国务院正式印发《知识产权保护和运用&quot;十五五&quot;规划》（国发〔2026〕30号）。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/shierwu-ipr-checklist-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/shierwu-ipr-checklist-2026.html",
+      "has_jsonld": false,
+      "title": "9条行动清单：十五五规划发布，企业IP部门未来五年的预算和编制都在这里 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/shierwu-ip-exports-455yi-2026.html",
+      "og:title": "455亿！知识产权出口暴增65%，十五五规划要你从&quot;拿证&quot;转向&quot;赚钱&quot;",
+      "og:description": "7月31日，国务院印发《知识产权保护和运用&quot;十五五&quot;规划》。同一周，国新办发布会披露了一个数字：今年前五个月，中国知识产权使用费出口额455亿元，同比增长64.9%。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/shierwu-ip-exports-455yi-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/shierwu-ip-exports-455yi-2026.html",
+      "has_jsonld": false,
+      "title": "455亿！知识产权出口暴增65%，十五五规划要你从\"拿证\"转向\"赚钱\" — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/trademark-law-2026-revision.html",
+      "og:title": "商标法2026年大修：企业必须关注的八大变化（2027年施行）",
+      "og:description": "2026年6月26日，《商标法》第五次修订通过，2027年1月1日起施行。本文解读八大核心变化：异议期缩短、恶意注册罚款、惩罚性赔偿降门槛、代理机构严监管等，附企业应对建议。觅理律师事务所出品。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/trademark-law-2026-revision.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/trademark-law-2026-revision.html",
+      "has_jsonld": false,
+      "title": "商标法2026年大修：企业必须关注的八大变化（2027年施行） — 觅理律师事务所",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/trademark-compliance-selfcheck-20260810.html",
+      "og:title": "你的商标这样做，可能被撤销——新商标法第56条自查清单",
+      "og:description": "2027年1月1日起，新《商标法》第56条正式施行——即便商标已注册，只要“以误导公众的方式使用”，最高罚款25万，逾期不改直接撤销注册商标。15条企业IPR可直接打印使用的自查清单：形态一致、表述真实、管理闭环三个维度。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/trademark-compliance-selfcheck-20260810.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "你的商标这样做，可能被撤销——新商标法第56条自查清单",
+      "canonical": "https://najieip.com/najie/blog/trademark-compliance-selfcheck-20260810.html",
+      "has_jsonld": true,
+      "title": "你的商标这样做，可能被撤销——新商标法第56条自查清单 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/pipeline-failed-queue-practice.html",
+      "og:title": "管线层实操：收件箱从报错到自愈",
+      "og:description": "收件箱入库失败从红色报错到自动自愈——管线层的异常队列设计实操。failed_queue表、重试逻辑、升级机制，一个实际的知产代理系统改进案例。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/pipeline-failed-queue-practice.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/pipeline-failed-queue-practice.html",
+      "has_jsonld": false,
+      "title": "管线层实操：收件箱从报错到自愈 — 纳杰知识产权",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/trademark-squatting-guide-en.html",
+      "og:title": "Trademark Squatting in China: A Complete Guide to Fighting Back (2026)",
+      "og:description": "What to do when your trademark has been squatted? A complete guide to trademark opposition, invalidation, non-use cancellation, and litigation in China. By APNaji / Mili Law.",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/trademark-squatting-guide-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/trademark-squatting-guide-en.html",
+      "has_jsonld": false,
+      "title": "Trademark Squatting in China: A Complete Guide to Fighting Back (2026) — Mili Law Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/trademark-squatting-guide.html",
+      "og:title": "商标被抢注怎么办？企业维权全流程指南（2026版）",
+      "og:description": "商标被抢注怎么办？本文详解商标异议申请、商标无效宣告、商标撤三、商标维权诉讼四大维权路径，附最新案例和实操建议。觅理律师事务所出品。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/trademark-squatting-guide.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/trademark-squatting-guide.html",
+      "has_jsonld": false,
+      "title": "商标被抢注怎么办？企业维权全流程指南（2026版） — 觅理律师事务所",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/wipo-ai-ip-dialogue.html",
+      "og:title": "WIPO知识产权与前沿技术对话会：AI如何重塑全球IP治理",
+      "og:description": "【编者按】 吕国良先生（BMR2004），资深知识产权专家，长期关注国际IP治理与前沿技术交叉领域。本文为WIPO十二届AI对话会深度综述，以全球视野剖析AI对专利、版权制度的根本性挑战，推荐阅读。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/wipo-ai-ip-dialogue.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/wipo-ai-ip-dialogue.html",
+      "has_jsonld": false,
+      "title": "WIPO知识产权与前沿技术对话会：AI如何重塑全球IP治理 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/wipo-free-databases.html",
+      "og:title": "WIPO平台四大免费数据库，90%的知产人没用全",
+      "og:description": "知识产权数据库动辄年费数万。但你知不知道，世界知识产权组织（WIPO）平台上有四套免费数据库，覆盖全球专利、商标、外观设计和法律文本——而且互联互通。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/wipo-free-databases.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/wipo-free-databases.html",
+      "has_jsonld": false,
+      "title": "WIPO平台四大免费数据库，90%的知产人没用全 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/weituo-chuangzuo-banquan-xieyi-bi-keng.html",
+      "og:title": "你花5万做VI，商标却被驳回？著作权法大修，“付了钱≠拥有”的坑90%企业还在踩",
+      "og:description": "委托创作合同中的著作权归属条款是90%企业忽略的法律陷阱。著作权法实施条例修订在即，付了钱≠拥有版权。企业VI设计、宣传片制作、软件开发中的版权避坑指南。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/weituo-chuangzuo-banquan-xieyi-bi-keng.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/weituo-chuangzuo-banquan-xieyi-bi-keng.html",
+      "has_jsonld": false,
+      "title": "你花5万做VI，商标却被驳回？著作权法大修，“付了钱≠拥有”的坑90%企业还在踩 — 觅理律师事务所",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/xishuo-xiuxian-003.html",
+      "og:title": "IP修仙录·第三回 天道驳文如惊雷",
+      "og:description": "渡劫台上，天道再降金色文书——「不具备创造性」！灰袍修士瘫坐当场，小何却缓缓展开驳文逐字拆解。以仙侠故事讲透专利审查意见通知书（OA）的应对之道：创造性答复、证据组合、陈述策略。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/xishuo-xiuxian-003.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "IP修仙录·第三回 天道驳文如惊雷",
+      "canonical": "https://najieip.com/najie/blog/xishuo-xiuxian-003.html",
+      "has_jsonld": true,
+      "title": "IP修仙录·第三回 天道驳文如惊雷 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/xiecheng-antitrust.html",
+      "og:title": "携程被罚51.79亿！反垄断重拳再出击",
+      "og:description": "来源：市场监管总局 2026-07-25",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/xiecheng-antitrust.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/xiecheng-antitrust.html",
+      "has_jsonld": false,
+      "title": "携程被罚51.79亿！反垄断重拳再出击 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/zhihu-hotlist-20260810.html",
+      "og:title": "知乎热榜法律视角",
+      "og:description": "2026年8月10日知乎热榜法律视角：AI造病毒、跨国刑案、医疗过失——纳杰觅理专业解读",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/zhihu-hotlist-20260810.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/zhihu-hotlist-20260810.html",
+      "has_jsonld": false,
+      "title": "知乎热榜法律视角 | 纳杰觅理",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/zte-samsung-sep-valuation.html",
+      "og:title": "3.92 vs 7.31亿美元：同一场官司，中英法院判出两倍差价",
+      "og:description": "英国伦敦高等法院判三星付中兴3.92亿美元，重庆一中院判7.31亿美元——同一批专利、同一组事实，金额差近一倍。拆解可比协议法与自上而下法的估值逻辑，以及中国企业马上能做的三件事。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/zte-samsung-sep-valuation.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "3.92 vs 7.31亿美元：同一场官司，中英法院判出两倍差价",
+      "canonical": "https://najieip.com/mili/blog/zte-samsung-sep-valuation.html",
+      "has_jsonld": true,
+      "title": "3.92 vs 7.31亿美元：同一场官司，中英法院判出两倍差价 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/zhuanli-youxian-shencha-xingui-2026.html",
+      "og:title": "专利优先审查新规：9月1日施行，企业IPR 31天应对指南",
+      "og:description": "2026年9月1日起，新版《专利优先审查管理办法》正式施行。纳杰逐条对比新旧办法15条→24条的核心变化，为企业IPR提供31天窗口期内的策略调整指南，抢占审查快车道。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/zhuanli-youxian-shencha-xingui-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "专利优先审查新规：9月1日施行，企业IPR 31天应对指南",
+      "canonical": "https://najieip.com/najie/blog/zhuanli-youxian-shencha-xingui-2026.html",
+      "has_jsonld": true,
+      "title": "专利优先审查新规：9月1日施行，企业IPR 31天应对指南 — 纳杰知识产权",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/zhuzuoquanfa-shishi-tiaoli-xiuding-2026.html",
+      "og:title": "著作权法实施条例修订：企业著作权合规五大要点",
+      "og:description": "《著作权法实施条例》修订草案征求意见稿发布，AI生成内容权属、平台责任、侵权赔偿等重大变化将影响每一家企业。纳杰梳理五大合规要点，帮助企业提前应对。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/zhuzuoquanfa-shishi-tiaoli-xiuding-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "著作权法实施条例修订：企业著作权合规五大要点",
+      "canonical": "https://najieip.com/najie/blog/zhuzuoquanfa-shishi-tiaoli-xiuding-2026.html",
+      "has_jsonld": true,
+      "title": "著作权法实施条例修订：企业著作权合规五大要点 — 纳杰知识产权",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/geely-wm-trade-secret-20260814.html",
+      "og:title": "6.4亿代价账单：威马挖角30人，输掉的远不止钱",
+      "og:description": "2018年吉利起诉威马索赔21亿，一审只判了700万。四年后的二审，最高法改判6.4亿——提高90余倍，创下我国知识产权侵权判赔历史新高。中间到底发生了什么？不是证据突然变多了，是2019年《反不正当竞争法》修法后的&quot;惩罚性赔偿&quot;，第一次在商业秘密案上打满了全场。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/geely-wm-trade-secret-20260814.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/geely-wm-trade-secret-20260814.html",
+      "has_jsonld": false,
+      "title": "6.4亿代价账单：威马挖角30人，输掉的远不止钱 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260815-punitive-damages-guide.html",
+      "og:title": "故意侵权最高赔5倍！这份刚生效的司法解释，藏着3个杀手锏",
+      "og:description": "最高法惩罚性赔偿新规16条解读：故意/情节严重的认定、非整数倍数、法定赔偿不能叠加、以侵权为业按销售利润核算。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260815-punitive-damages-guide.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "故意侵权最高赔5倍！这份刚生效的司法解释，藏着3个杀手锏",
+      "canonical": "https://najieip.com/mili/blog/20260815-punitive-damages-guide.html",
+      "has_jsonld": true,
+      "title": "故意侵权最高赔5倍！这份刚生效的司法解释，藏着3个杀手锏 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/franchise-supreme-court-7cases-20260814.html",
+      "og:title": "最高法刚刚发布：7个特许经营案例，加盟创业者必须知道的风险",
+      "og:description": "一个叫&quot;蜜桃里&quot;的奶茶品牌，贴着知名品牌招商，300多名加盟商被骗走5400多万元加盟费，主犯被判了12年。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/franchise-supreme-court-7cases-20260814.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/franchise-supreme-court-7cases-20260814.html",
+      "has_jsonld": false,
+      "title": "最高法刚刚发布：7个特许经营案例，加盟创业者必须知道的风险 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/ai-music-copyright-boundary.html",
+      "og:title": "AI音乐池为何被隔离？从程序员与音乐人的分歧看AI生成内容的著作权边界",
+      "og:description": "最近有个话题在开发者圈和音乐圈引发了完全相反的反应：程序员们几乎一边倒地拥抱AI辅助编程，而音乐行业却在给AI音乐贴上标签、限流、甚至建立隔离池。同样是面对AI工具，为什么两个行业的态度如此不同？",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/ai-music-copyright-boundary.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/ai-music-copyright-boundary.html",
+      "has_jsonld": false,
+      "title": "AI音乐池为何被隔离？从程序员与音乐人的分歧看AI生成内容的著作权边界",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/trade-secret-three-lessons-20260813.html",
+      "og:title": "商业秘密怎么守——合作研发败诉案的三点教训",
+      "og:description": "最近读到一份技术秘密纠纷判决书，案情很典型：一位创业者想研发一款新型设备，找到一家工厂合作，双方在微信里聊得热火朝天——&quot;专利下来以后给你&quot;&quot;技术这块归你&quot;——口头约定看似都齐了。结果工厂转头自己申请了专利，还对外销售产品。创业者起诉侵害技术秘密，索赔200万元，最终被法院驳回。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/trade-secret-three-lessons-20260813.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/trade-secret-three-lessons-20260813.html",
+      "has_jsonld": false,
+      "title": "商业秘密怎么守——合作研发败诉案的三点教训",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/ai-training-copyright-fair-use-2026.html",
+      "og:title": "AI公司买旧书训练模型——Anthropic赔了15亿美元，版权红线到底在哪？",
+      "og:description": "最近404 Media挖出一条新闻，业内讨论挺多的：",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/ai-training-copyright-fair-use-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/ai-training-copyright-fair-use-2026.html",
+      "has_jsonld": false,
+      "title": "AI公司买旧书训练模型——Anthropic赔了15亿美元，版权红线到底在哪？ — 觅理律师事务所",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/ai-training-copyright-boundary.html",
+      "og:title": "AI训练与版权边界：从出版社&quot;禁AI标注&quot;说起",
+      "og:description": "8月的热搜上，一条出版行业的消息引发讨论：有出版社在图书版权页标注&quot;书籍内容禁用于AI训练&quot;，并表示取证、维权难度很高，标注的意义更多在于&quot;明确版权态度&quot;。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/ai-training-copyright-boundary.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/ai-training-copyright-boundary.html",
+      "has_jsonld": false,
+      "title": "AI训练与版权边界：从出版社\"禁AI标注\"说起",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/uspto-tbmp-2026-ttab-center-estta-update.html",
+      "og:title": "USPTO更新TBMP 2026年6月版：TTAB Center全面取代ESTTA",
+      "og:description": "我们经常看到这样的场景：中国企业在美国遭遇商标异议或撤销程序，代理人习惯性地登录 ESTTA 系统准备提交答辩，却发现界面已经变了——提交入口被重定向，熟悉的操作路径不复存在。这就是USPTO 2026年6月版《商标审理和上诉委员会程序手册》（TBMP）更新带来的最直接冲击。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/uspto-tbmp-2026-ttab-center-estta-update.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/uspto-tbmp-2026-ttab-center-estta-update.html",
+      "has_jsonld": false,
+      "title": "USPTO更新TBMP 2026年6月版：TTAB Center全面取代ESTTA",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/uspto-tbmp-2026-update.html",
+      "og:title": "USPTO商标程序手册（TBMP）2026更新",
+      "og:description": "我们经常遇到这样的场景：中国企业委托代理美国商标异议程序，却因为不熟悉TTAB电子提交系统而延误期限；或者在美国商标撤销案件中引用 TTAB 先例时，发现无法确认裁决原文——因为部分历史案件缺少可查询的案件编号。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/uspto-tbmp-2026-update.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/uspto-tbmp-2026-update.html",
+      "has_jsonld": false,
+      "title": "USPTO商标程序手册（TBMP）2026更新",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/uspto-foreign-representation-rule-2026.html",
+      "og:title": "美国专利新规7月20日生效：没有美国代理人，你的美国专利可能失效",
+      "og:description": "干这行的都知道，美国专利商标局（USPTO）之前一直是个&quot;特例&quot;——外国申请人可以自己递案子，不需要当地代理人。但这个口子，在2026年7月20日正式关上了。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/uspto-foreign-representation-rule-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/uspto-foreign-representation-rule-2026.html",
+      "has_jsonld": false,
+      "title": "美国专利新规7月20日生效：没有美国代理人，你的美国专利可能失效 — 觅理律师事务所",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260820-hengda-criminal-redlines.html",
+      "og:title": "恒大案一审宣判：无期 + 罚金158亿，这6条刑事红线企业必须懂",
+      "og:description": "恒大集团罚金88.2亿、恒大地产70亿，许家印无期徒刑、没收个人全部财产，56名涉案人员获刑。判决书里藏着6条刑事红线：单位犯罪双线追责、实际控制人责任、财务造假入刑、融资合法边界、行贿代价、退赔优先于罚金。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260820-hengda-criminal-redlines.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "恒大案一审宣判：无期 + 罚金158亿，这6条刑事红线企业必须懂",
+      "canonical": "https://najieip.com/mili/blog/20260820-hengda-criminal-redlines.html",
+      "has_jsonld": true,
+      "title": "恒大案一审宣判：无期 + 罚金158亿，这6条刑事红线企业必须懂 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/yanglao-will-white-paper.html",
+      "og:title": "五分之一遗嘱无效！北京二中院这份白皮书，把老人财产规划的四个坑说透了",
+      "og:description": "北京二中院刚发布了一份《涉老财产处分案件审判白皮书》（2021—2025），覆盖整整五年。我把里面的数字挑出来看了一遍，有几个真值得每个家庭停下来想一想——尤其是家里有老人的。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/yanglao-will-white-paper.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/yanglao-will-white-paper.html",
+      "has_jsonld": false,
+      "title": "五分之一遗嘱无效！北京二中院这份白皮书，把老人财产规划的四个坑说透了",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/ip-content-selection-methodology-202608.html",
+      "og:title": "IP内容选题方法论",
+      "og:description": "很多企业知识产权负责人都遇到过这样的场景：美国专利商标局更新了TBMP、国知局修订了专利审查指南，法规原文动辄上百页，自己没时间逐条研读，委托外部机构又担心对方只会照本宣科。信息差，往往就是风险差的起点。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/ip-content-selection-methodology-202608.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/ip-content-selection-methodology-202608.html",
+      "has_jsonld": false,
+      "title": "IP内容选题方法论",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260820-copyright-judicial-interpretation.html",
+      "og:title": "9月1日起，网上转载必须付费！著作权司法解释5个重磅变化",
+      "og:description": "最高法修改《著作权民事纠纷司法解释》（法释〔2026〕18号）9月1日施行：网络转载不再适用法定许可、确认不侵权之诉入列、公共场所艺术作品复刻受限、赔偿引入权利使用费与过错程度、鉴定机构证明入列。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260820-copyright-judicial-interpretation.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "9月1日起，网上转载必须付费！著作权司法解释5个重磅变化",
+      "canonical": "https://najieip.com/mili/blog/20260820-copyright-judicial-interpretation.html",
+      "has_jsonld": true,
+      "title": "9月1日起，网上转载必须付费！著作权司法解释5个重磅变化 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/overseas-ip-selfcheck-2026.html",
+      "og:title": "7月两份文件把出海IP变成必修课：10项自查清单",
+      "og:description": "7月，两份文件前后脚落地。7月1日，《国务院关于对外投资的规定》（国务院令第837号）施行；7月31日，《知识产权保护和运用&quot;十五五&quot;规划》公布。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/overseas-ip-selfcheck-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/overseas-ip-selfcheck-2026.html",
+      "has_jsonld": false,
+      "title": "7月两份文件把出海IP变成必修课：10项自查清单 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/overseas-trademark-madrid-2026.html",
+      "og:title": "出海商标：马德里省一半钱，却埋着一个5年雷",
+      "og:description": "海外商标抢注同比增长55%（市场简报数据）。瑞幸在泰国被抢注，从败诉一路打到泰国史上最高IP赔偿，赢了，也脱了一层皮。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/overseas-trademark-madrid-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/overseas-trademark-madrid-2026.html",
+      "has_jsonld": false,
+      "title": "出海商标：马德里省一半钱，却埋着一个5年雷 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260804-ic-layout-design-regulations.html",
+      "og:title": "",
+      "og:description": "《集成电路布图设计保护条例》25年来首次全面修订：54条、2026年10月15日施行，集成光子/量子芯片布图设计正式纳入保护。新条例要点与登记权利人风险提示。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260804-ic-layout-design-regulations.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "",
+      "canonical": "https://najieip.com/najie/blog/20260804-ic-layout-design-regulations.html",
+      "has_jsonld": true,
+      "title": "\"半导体\"从法条消失，10月15日起芯片IP新规生效 — 纳杰觅理",
+      "issues": [
+        "og:title 过短 (<10字符)"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/catl-patent-moat-profit-2026.html",
+      "og:title": "中国8家整车厂赚不过1家电池厂，宁德时代凭什么？",
+      "og:description": "今天《财富》世界500强榜单出来一组数据：中国8家整车制造企业的平均销售收益率大约1.5%，宁德时代——17%。十倍。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/catl-patent-moat-profit-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/aipunajie/blog/catl-patent-moat-profit-2026.html",
+      "has_jsonld": false,
+      "title": "中国8家整车厂赚不过1家电池厂，宁德时代凭什么？ — 爱普纳杰专利所",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/trademark-law-countdown-20260808.html",
+      "og:title": "倒计时145天：新商标法生效前，企业必须完成的6件事",
+      "og:description": "新《商标法》2027年1月1日施行：闲置商标可被官方撤销、误导性宣传最高罚25万、防御商标布局可被任何人提无效。距生效仅145天，企业必须完成的6件事逐条拆解。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/trademark-law-countdown-20260808.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "倒计时145天：新商标法生效前，企业必须完成的6件事",
+      "canonical": "https://najieip.com/najie/blog/trademark-law-countdown-20260808.html",
+      "has_jsonld": true,
+      "title": "倒计时145天：新商标法生效前，企业必须完成的6件事 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260820-overseas-ip-insurance-checklist.html",
+      "og:title": "出海被诉律师费百万？这4种保险保费最高补80%",
+      "og:description": "四部门联合发文首次把「知识产权海外侵权保险」写进国家政策，浙江落地全国首个省级统保方案。海外侵权责任险/被侵权损失险/布局费用损失险四类险种拆解：保什么、不保什么、怎么买、怎么赔，附三步动作清单。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260820-overseas-ip-insurance-checklist.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "出海被诉律师费百万？这4种保险保费最高补80%",
+      "canonical": "https://najieip.com/najie/blog/20260820-overseas-ip-insurance-checklist.html",
+      "has_jsonld": true,
+      "title": "出海被诉律师费百万？这4种保险保费最高补80% — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/ip-xiuxian-003.html",
+      "og:title": "IP修仙录·第三回 天道驳文如惊雷",
+      "og:description": "话说渡劫台上，第一记&quot;检索之雷&quot;虽被小何以陈情符化解，云层深处那声冷笑却未散去。这一日，渡劫台再起波澜——天道降下一道金色文书，开篇四字，如雷贯顶：不具备创造性！灰袍修士当场瘫坐，小何却神色如常，缓缓展开文书，一字一字读了下去……",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/ip-xiuxian-003.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/aipunajie/blog/ip-xiuxian-003.html",
+      "has_jsonld": false,
+      "title": "IP修仙录·第三回 天道驳文如惊雷 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/utility-model-fast-grant-20260813.html",
+      "og:title": "实用新型快速拿证——11个月，一张专利证书到手",
+      "og:description": "上个月收到一份新的授权公告：某造纸科技公司提交的&quot;纤维及微粒观测装置&quot;实用新型专利，2025年4月8日申请，2026年3月24日授权公告——从申请到拿证，11个半月。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/utility-model-fast-grant-20260813.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/aipunajie/blog/utility-model-fast-grant-20260813.html",
+      "has_jsonld": false,
+      "title": "实用新型快速拿证——11个月，一张专利证书到手",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/20260813-luckin-thailand-trademark-checklist-en.html",
+      "og:title": "Luckin Wins 95 Million Baht in Thailand",
+      "og:description": "Luckin wins 95 million baht in Thailand — 6 things your export brand must do now on trademarks — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/20260813-luckin-thailand-trademark-checklist-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/20260813-luckin-thailand-trademark-checklist-en.html",
+      "has_jsonld": false,
+      "title": "Luckin Wins 95 Million Baht in Thailand — 6 Things Your Export Brand Must Do Now — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/patent-early-warning-system-20260802.html",
+      "og:title": "专利预警：国家在铺路，你的企业还在裸奔？",
+      "og:description": "7月28日，国家知识产权局副局长张志成在北京主持了一场特殊的年度例会——&quot;专利分析和预警工作2026年启动会&quot;。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/patent-early-warning-system-20260802.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/aipunajie/blog/patent-early-warning-system-20260802.html",
+      "has_jsonld": false,
+      "title": "专利预警：国家在铺路，你的企业还在裸奔？ — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/20260813-luckin-thailand-trademark-checklist-fr.html",
+      "og:title": "Luckin gagne 95 millions de bahts en Thaïlande",
+      "og:description": "Luckin gagne 95 millions de bahts en Thaïlande — 6 choses à faire dès maintenant pour votre marque à l",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/20260813-luckin-thailand-trademark-checklist-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/20260813-luckin-thailand-trademark-checklist-fr.html",
+      "has_jsonld": false,
+      "title": "Luckin gagne 95 millions de bahts en Thaïlande — 6 choses à faire dès maintenant pour votre marque à l'export — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/20260810-xishuo-patent-invalid-huashan-en.html",
+      "og:title": "Patent Invalidity Offense and Defense: A &quot;Battle of Mount Hua&quot; Without Gunpowder",
+      "og:description": "Patent Invalidity Offense and Defense: A &quot;Battle of Mount Hua&quot; Without Gunpowder — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/20260810-xishuo-patent-invalid-huashan-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/20260810-xishuo-patent-invalid-huashan-en.html",
+      "has_jsonld": false,
+      "title": "Patent Invalidity Offense and Defense: A &quot;Battle of Mount Hua&quot; Without Gunpowder — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/20260811-overseas-ip-dispute-report-en.html",
+      "og:title": "2053 Overseas IP Disputes in One Year: The 2025 Legal Report Card for Chinese Enterprises Going Global Reveals Three Harsh Truths",
+      "og:description": "2053 Overseas IP Disputes in One Year: The 2025 Legal Report Card for Chinese Enterprises Going Global Reveals Three Harsh Truths — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/20260811-overseas-ip-dispute-report-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/20260811-overseas-ip-dispute-report-en.html",
+      "has_jsonld": false,
+      "title": "2053 Overseas IP Disputes in One Year: The 2025 Legal Report Card for Chinese Enterprises Going Global Reveals Three Harsh Truths — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/5-free-patent-search-tools.html",
+      "og:title": "5 Free Patent Search Tools 90% of Inventors Don&#x27;t Know About",
+      "og:description": "5个完全免费的专利检索工具：国知局公布公告、PSS、SooPAT、Google Patents、佰腾网。不用买数据库，自己就能查中国+全球专利。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/5-free-patent-search-tools.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/5-free-patent-search-tools.html",
+      "has_jsonld": false,
+      "title": "5 Free Patent Search Tools 90% of Inventors Don't Know About — 爱普纳杰专利所",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/ai-generated-content-copyright-en.html",
+      "og:title": "Who Owns AI-Generated Content? 2026 Legal Guide &amp; Compliance",
+      "og:description": "Who owns AI-generated content? A 2026 guide to China",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/ai-generated-content-copyright-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/ai-generated-content-copyright-en.html",
+      "has_jsonld": false,
+      "title": "Who Owns AI-Generated Content? 2026 Legal Guide &amp; Compliance — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/mili-changping-branch-20260731-en.html",
+      "og:title": "Mili Law Firm Changping Branch Officially Established!",
+      "og:description": "Mili Law Firm Changping Branch Officially Established! — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/mili-changping-branch-20260731-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/mili-changping-branch-20260731-en.html",
+      "has_jsonld": false,
+      "title": "Mili Law Firm Changping Branch Officially Established! — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/ai-agent-liability-chain-20260809-en.html",
+      "og:title": "Who Bears Liability When an AI Digital Employee Causes Harm? From the &quot;Lobster Farming&quot; Blowup to the First Ruling",
+      "og:description": "Who Bears Liability When an AI Digital Employee Causes Harm? From the &quot;Lobster Farming&quot; Blowup to the First Ruling — A Liability Chain Checklist Every Enterprise Must Review — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/ai-agent-liability-chain-20260809-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/ai-agent-liability-chain-20260809-en.html",
+      "has_jsonld": false,
+      "title": "Who Bears Liability When an AI Digital Employee Causes Harm? From the &quot;Lobster Farming&quot; Blowup to the First Ruling — A Liability Chain Checklist Every Enterprise Must Review — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/trademark-compliance-selfcheck-20260810-en.html",
+      "og:title": "Your Trademark Could Be Revoked If You Do This",
+      "og:description": "Your Trademark Could Be Revoked If You Do This — A Self-Check Checklist Under Article 56 of the New Trademark Law — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/trademark-compliance-selfcheck-20260810-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/trademark-compliance-selfcheck-20260810-en.html",
+      "has_jsonld": false,
+      "title": "Your Trademark Could Be Revoked If You Do This — A Self-Check Checklist Under Article 56 of the New Trademark Law — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/trademark-law-countdown-20260808-en.html",
+      "og:title": "Countdown: 145 Days: 6 Things Enterprises Must Complete Before the New Trademark Law Takes Effect",
+      "og:description": "Countdown: 145 Days: 6 Things Enterprises Must Complete Before the New Trademark Law Takes Effect — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/trademark-law-countdown-20260808-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/trademark-law-countdown-20260808-en.html",
+      "has_jsonld": false,
+      "title": "Countdown: 145 Days: 6 Things Enterprises Must Complete Before the New Trademark Law Takes Effect — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/zte-samsung-sep-valuation-en.html",
+      "og:title": "$392M vs $731M: The Same SEP Case, Two Courts, Double the Damages",
+      "og:description": "London High Court: $392M. Chongqing First Intermediate Court: $731M. Same patents, same facts, nearly double the amount. How SEP valuation methods diverge — and what Chinese companies should do now.",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/zte-samsung-sep-valuation-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "$392M vs $731M: The Same SEP Case, Two Courts, Double the Damages",
+      "canonical": "https://najieip.com/en/blog/zte-samsung-sep-valuation-en.html",
+      "has_jsonld": true,
+      "title": "$392M vs $731M: The Same SEP Case, Two Courts, Double the Damages — Aipunajie Patent Firm",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/fr/blog/20260811-overseas-ip-dispute-report-fr.html",
+      "og:title": "2053 cas de litiges de propriété intellectuelle à l&#x27;étranger en un an : le bilan juridique de l&#x27;expansion internationale des entreprises chinoises en 2025 révèle trois vérités impitoyables",
+      "og:description": "2053 cas de litiges de propriété intellectuelle à l&#x27;étranger en un an : le bilan juridique de l&#x27;expansion internationale des entreprises chinoises en 2025 révèle trois vérités impitoyables — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/20260811-overseas-ip-dispute-report-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/20260811-overseas-ip-dispute-report-fr.html",
+      "has_jsonld": false,
+      "title": "2053 cas de litiges de propriété intellectuelle à l&#x27;étranger en un an : le bilan juridique de l&#x27;expansion internationale des entreprises chinoises en 2025 révèle trois vérités impitoyables — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/5-free-patent-search-tools.html",
+      "og:title": "5 Outils Gratuits de Recherche de Brevets que 90% des Inventeurs Ignorent",
+      "og:description": "5个完全免费的专利检索工具：国知局公布公告、PSS、SooPAT、Google Patents、佰腾网。不用买数据库，自己就能查中国+全球专利。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/5-free-patent-search-tools.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/5-free-patent-search-tools.html",
+      "has_jsonld": false,
+      "title": "5 Outils Gratuits de Recherche de Brevets que 90% des Inventeurs Ignorent — 爱普纳杰专利所",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/20260810-xishuo-patent-invalid-huashan-fr.html",
+      "og:title": "Attaque et défense en matière de nullité de brevet : une « joute sur le mont Hua » sans fumée de poudre",
+      "og:description": "Attaque et défense en matière de nullité de brevet : une « joute sur le mont Hua » sans fumée de poudre — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/20260810-xishuo-patent-invalid-huashan-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/20260810-xishuo-patent-invalid-huashan-fr.html",
+      "has_jsonld": false,
+      "title": "Attaque et défense en matière de nullité de brevet : une « joute sur le mont Hua » sans fumée de poudre — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/ai-agent-liability-chain-20260809-fr.html",
+      "og:title": "Qui est responsable lorsque les employés numériques IA causent des dommages ? De l&#x27;effondrement de l&#x27;« élevage de homards » au premier jugement, la liste de la chaîne de responsabilité que les entreprises doivent consulter",
+      "og:description": "Qui est responsable lorsque les employés numériques IA causent des dommages ? De l&#x27;effondrement de l&#x27;« élevage de homards » au premier jugement, la liste de la chaîne de responsabilité que les entreprises doivent consulter — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/ai-agent-liability-chain-20260809-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/ai-agent-liability-chain-20260809-fr.html",
+      "has_jsonld": false,
+      "title": "Qui est responsable lorsque les employés numériques IA causent des dommages ? De l&#x27;effondrement de l&#x27;« élevage de homards » au premier jugement, la liste de la chaîne de responsabilité que les entreprises doivent consulter — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/mili-changping-branch-20260731-fr.html",
+      "og:title": "Le cabinet d&#x27;avocats Mili a officiellement inauguré sa succursale de Changping !",
+      "og:description": "Le cabinet d&#x27;avocats Mili a officiellement inauguré sa succursale de Changping ! — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/mili-changping-branch-20260731-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/mili-changping-branch-20260731-fr.html",
+      "has_jsonld": false,
+      "title": "Le cabinet d&#x27;avocats Mili a officiellement inauguré sa succursale de Changping ! — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/trademark-compliance-selfcheck-20260810-fr.html",
+      "og:title": "Votre marque risque d&#x27;être annulée si vous agissez ainsi",
+      "og:description": "Votre marque risque d&#x27;être annulée si vous agissez ainsi — Liste d&#x27;auto-vérification relative à l&#x27;article 56 de la nouvelle loi sur les marques — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/trademark-compliance-selfcheck-20260810-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/trademark-compliance-selfcheck-20260810-fr.html",
+      "has_jsonld": false,
+      "title": "Votre marque risque d&#x27;être annulée si vous agissez ainsi — Liste d&#x27;auto-vérification relative à l&#x27;article 56 de la nouvelle loi sur les marques — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/trademark-law-countdown-20260808-fr.html",
+      "og:title": "Compte à rebours de 145 jours : avant l&#x27;entrée en vigueur de la nouvelle loi sur les marques, les entreprises doivent accomplir 6 choses",
+      "og:description": "Compte à rebours de 145 jours : avant l&#x27;entrée en vigueur de la nouvelle loi sur les marques, les entreprises doivent accomplir 6 choses — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/trademark-law-countdown-20260808-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/trademark-law-countdown-20260808-fr.html",
+      "has_jsonld": false,
+      "title": "Compte à rebours de 145 jours : avant l&#x27;entrée en vigueur de la nouvelle loi sur les marques, les entreprises doivent accomplir 6 choses — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/ai-generated-content-copyright-fr.html",
+      "og:title": "À qui appartient le contenu généré par IA ? Guide juridique 2026",
+      "og:description": "À qui appartient le contenu généré par IA ? Guide 2026 sur les dernières décisions judiciaires en Chine, l",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/ai-generated-content-copyright-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/ai-generated-content-copyright-fr.html",
+      "has_jsonld": false,
+      "title": "À qui appartient le contenu généré par IA ? Guide juridique 2026 — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/zte-samsung-sep-valuation-fr.html",
+      "og:title": "392 M$ contre 731 M$ : la même affaire SEP, deux tribunaux, le double des dommages",
+      "og:description": "Haute Cour de Londres : 392 M$. Tribunal de Chongqing : 731 M$. Mêmes brevets, mêmes faits, près du double. Comment les méthodes d",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/zte-samsung-sep-valuation-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "392 M$ contre 731 M$ : la même affaire SEP, deux tribunaux, le double des dommages",
+      "canonical": "https://najieip.com/fr/blog/zte-samsung-sep-valuation-fr.html",
+      "has_jsonld": true,
+      "title": "392 M$ contre 731 M$ : la même affaire SEP, deux tribunaux, le double des dommages — Aipunajie Patent Firm",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/20260821-pv-ip-compliance-checklist.html",
+      "og:title": "光伏侵权=出局！5步合规守住央国企招标资格",
+      "og:description": "2026年国知局与工信部将专利侵权记录与光伏制造行业规范条件名单直接挂钩——有侵权裁定的企业被动态清退。光伏企业从被诉再应诉变成合规才有投标资格。5步落地清单：合规体检、专利卡位、风险监测、纠纷工具箱、出海排雷。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/20260821-pv-ip-compliance-checklist.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "光伏侵权=出局！5步合规守住央国企招标资格",
+      "canonical": "https://najieip.com/aipunajie/blog/20260821-pv-ip-compliance-checklist.html",
+      "has_jsonld": true,
+      "title": "光伏侵权=出局！5步合规守住央国企招标资格 — 爱普纳杰",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260821-beijing-shebao-2026.html",
+      "og:title": "北京社保基数涨了：下限7270元，企业多掏多少？",
+      "og:description": "2026年7月起北京社保缴费基数调整：上限36348元/月、下限7270元/月。三档算账（单位月缴1941.09~9704.92元）、工伤保险行业差别费率（0.4% vs 1.9%差1308.6元/年）、公积金同步调、员工到手变化、企业申报五步实操清单。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260821-beijing-shebao-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "北京社保基数涨了：下限7270元，企业多掏多少？",
+      "canonical": "https://najieip.com/mili/blog/20260821-beijing-shebao-2026.html",
+      "has_jsonld": true,
+      "title": "北京社保基数涨了：下限7270元，企业多掏多少？ — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260822-us-tro-72hour-checklist.html",
+      "og:title": "货款被美国法院冻结，72小时做对这5件事",
+      "og:description": "2026年25天210件TRO案、1674家中国店铺被冻结。第七巡回法院Yinnv Liu案后管辖抗辩窗口打开，《海牙送达公约》禁止电邮送达。72小时五件事清单：停售/留证据/找律师，和解30%-60% vs 应诉 vs 弃店对比表。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260822-us-tro-72hour-checklist.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "货款被美国法院冻结，72小时做对这5件事",
+      "canonical": "https://najieip.com/mili/blog/20260822-us-tro-72hour-checklist.html",
+      "has_jsonld": true,
+      "title": "货款被美国法院冻结，72小时做对这5件事 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260821-beijing-shebao-tax.html",
+      "og:title": "社保基数涨了，企业反而能少缴税？7月补差这笔账怎么算",
+      "og:description": "社保基数上调，多缴的社保费是企业所得税与个税的税前扣除项——100人企业一年约省8600元企业所得税。7月补差明细（单位28.83元/人/月）、滞纳金年化18.25%、未申报按110%核定、金税四期三条比对线、三数对齐自查清单。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260821-beijing-shebao-tax.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "社保基数涨了，企业反而能少缴税？7月补差这笔账怎么算",
+      "canonical": "https://najieip.com/mili/blog/20260821-beijing-shebao-tax.html",
+      "has_jsonld": true,
+      "title": "社保基数涨了，企业反而能少缴税？7月补差这笔账怎么算 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260823-ai-manju-copyright-checklist.html",
+      "og:title": "花18万做的AI漫剧，版权竟不是你的",
+      "og:description": "2026年AI漫剧市场规模冲到400亿、同比暴涨138%，但完成完整版权确权的项目仅17.2%——83%的团队在裸奔做爆款。MCN花18万定制30集古风AI漫剧，上线前才发现合同只写了&#x27;非专有播放权&#x27;。四步确权闭环：合同锁权、全程留痕、存证+登记、出海先登记。附2026年4月备案新规与AI标识办法两条硬约束。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260823-ai-manju-copyright-checklist.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "花18万做的AI漫剧，版权竟不是你的",
+      "canonical": "https://najieip.com/mili/blog/20260823-ai-manju-copyright-checklist.html",
+      "has_jsonld": true,
+      "title": "花18万做的AI漫剧，版权竟不是你的 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260824-judicial-ip-plan-enterprise-checklist.html",
+      "og:title": "数据纠纷一年涨25.6%，竞业协议可能签了也白签",
+      "og:description": "最高法印发《人民法院知识产权司法保护实施方案（2026—2030年）》（法发〔2026〕4号）：2025年全国法院新收知产案件55.26万件、涉数据权属和交易纠纷908件暴涨25.6%。两张自查表——数据资产三类定性（公共/企业/个人信息，附数据堂案全国首例数据知产登记证、反法数据专款、数据资产质押融资案例）+ 竞业协议五问自评（是否接触商业秘密、范围地域期限适配、2年红线、北京约30%补偿口径、替代手段优先）。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260824-judicial-ip-plan-enterprise-checklist.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "数据纠纷一年涨25.6%，竞业协议可能签了也白签",
+      "canonical": "https://najieip.com/mili/blog/20260824-judicial-ip-plan-enterprise-checklist.html",
+      "has_jsonld": true,
+      "title": "数据纠纷一年涨25.6%，竞业协议可能签了也白签 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/en/blog/20260824-judicial-ip-plan-enterprise-checklist-en.html",
+      "og:title": "Data Disputes Surged 25.6% in a Year",
+      "og:description": "Data disputes surged 25.6% in a year — and your non-compete agreement may be unenforceable. The Supreme People",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/20260824-judicial-ip-plan-enterprise-checklist-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/20260824-judicial-ip-plan-enterprise-checklist-en.html",
+      "has_jsonld": true,
+      "title": "Data Disputes Surged 25.6% in a Year — Your Non-Compete May Be Unenforceable — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/20260824-judicial-ip-plan-enterprise-checklist-fr.html",
+      "og:title": "Les litiges sur les données ont bondi de 25,6 % en un an",
+      "og:description": "Les litiges sur les données ont bondi de 25,6 % en un an — et votre clause de non-concurrence est peut-être inopposable. La Cour populaire suprême a publié le Plan de mise en œuvre de la protection judiciaire de la propriété intellectuelle (2026–2030) (Fa Fa [2026] n° 4) : en 2025, les tribunaux chinois ont reçu 552 600 affaires de PI, dont 908 litiges portant sur la propriété et la transaction de données — +25,6 % en un an. Deux grilles d",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/20260824-judicial-ip-plan-enterprise-checklist-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/20260824-judicial-ip-plan-enterprise-checklist-fr.html",
+      "has_jsonld": true,
+      "title": "Les litiges sur les données ont bondi de 25,6 % en un an — votre clause de non-concurrence est peut-être inopposable — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/zhuanli-youxian-shencha-zuihou-qingdan-2026.html",
+      "og:title": "专利优先审查新规9月1日施行，最后6天行动清单",
+      "og:description": "距2026年9月1日《专利优先审查管理办法》施行仅剩6天，企业IPR还能做什么？本文给出9·1前后可勾选的最后行动清单：盘点在审专利、核查代理机构信用、对接省级局推荐规则，附FAQ与6天时间轴。纳杰觅理出品。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/zhuanli-youxian-shencha-zuihou-qingdan-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "专利优先审查新规9月1日施行，最后6天行动清单",
+      "canonical": "https://najieip.com/najie/blog/zhuanli-youxian-shencha-zuihou-qingdan-2026.html",
+      "has_jsonld": true,
+      "title": "专利优先审查新规9月1日施行，最后6天行动清单 — 纳杰知识产权",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260825-priority-review-countdown-checklist.html",
+      "og:title": "专利优先审查9月1日收紧！最后一周，这5件事抓紧办",
+      "og:description": "《专利优先审查管理办法》新规（局令85号）9月1日施行：优审从",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260825-priority-review-countdown-checklist.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "专利优先审查9月1日收紧！最后一周，这5件事抓紧办",
+      "canonical": "https://najieip.com/najie/blog/20260825-priority-review-countdown-checklist.html",
+      "has_jsonld": true,
+      "title": "专利优先审查9月1日收紧！最后一周，这5件事抓紧办 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/zhixing-yiyi-zhi-su-2026.html",
+      "og:title": "执行异议之诉——「执行难」破局的法律路径全解析",
+      "og:description": "执行异议之诉怎么提？执行行为异议、案外人执行异议、执行异议之诉三者有何区别？本文系统拆解执行异议之诉的提起条件、15日提起期限、执行法院管辖规则、举证要点与常见败诉原因，附三概念对比表与流程时间轴，帮助胜诉未执行的债权人与案外人破解执行难。纳杰觅理出品。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/zhixing-yiyi-zhi-su-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "执行异议之诉——「执行难」破局的法律路径全解析",
+      "canonical": "https://najieip.com/mili/blog/zhixing-yiyi-zhi-su-2026.html",
+      "has_jsonld": true,
+      "title": "执行异议之诉——「执行难」破局的法律路径全解析 — 觅理律师事务所",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/copyright-ip-assets-20260825.html",
+      "og:title": "企业为什么扎堆登记卡通形象？——8月版权登记背后的IP资产战争",
+      "og:description": "8月作品著作权登记公告：30件作品17件美术，卡通形象8个、LOGO 4个、包装设计2个。蜜雪冰城吨吨桶、小米机器人、吉利Z宝、一汽丰田长擎侠、老铺黄金九龙金碗都在登记。卡通形象是最能",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/copyright-ip-assets-20260825.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "企业为什么扎堆登记卡通形象？——8月版权登记背后的IP资产战争",
+      "canonical": "https://najieip.com/mili/blog/copyright-ip-assets-20260825.html",
+      "has_jsonld": true,
+      "title": "企业为什么扎堆登记卡通形象？——8月版权登记背后的IP资产战争 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260826-trademark-criminal-abuse-checklist.html",
+      "og:title": "商标侵权，什么时候会",
+      "og:description": "2026年6月26日商标法修订（9章87条）把保护两头同时拧紧：刑事追责更严（假冒注册商标罪、销售假冒注册商标商品罪，同种商品相同商标、明知假冒仍销售即可能从民事升级刑事），滥用维权要反噬（第81条恶意提起商标诉讼须赔损失），描述性/指示性使用划出安全区（第73条第3款，必要+合理为界）。企业三条动作清单：存量筛查、证据留痕、合规边界培训。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260826-trademark-criminal-abuse-checklist.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "商标侵权，什么时候会",
+      "canonical": "https://najieip.com/mili/blog/20260826-trademark-criminal-abuse-checklist.html",
+      "has_jsonld": true,
+      "title": "商标侵权，什么时候会\"坐牢\"？——新商标法刑事红线与反滥用边界 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/eco-accountability-20260825.html",
+      "og:title": "生态环境损害责任追究办法修订：终身追责，企业也在范围内",
+      "og:description": "2026年8月3日中办国办发布修订后的《党政领导干部生态环境损害责任追究办法》（2015年版时隔11年大修）：终身追究（第十二条，调离转岗退休都躲不掉）、党政同责失职追责、追责方式从轻到重一整套。四类主体追责情形中与企业最相关的6条：突破生态红线、包庇纵容、未责令停业关闭、不查处举报、违规批建、篡改环境数据。对企业三句话：环保合规不可商量、处罚背后干部追责线索移送、国企领导参照执行。附企业四条建议。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/eco-accountability-20260825.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "生态环境损害责任追究办法修订：终身追责，企业也在范围内",
+      "canonical": "https://najieip.com/mili/blog/eco-accountability-20260825.html",
+      "has_jsonld": true,
+      "title": "生态环境损害责任追究办法修订：终身追责，企业也在范围内 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/trademark-enforcement-3-gates-20260827.html",
+      "og:title": "503家门店告一家面馆，最后把商标白送：维权前先过3关",
+      "og:description": "上市公司503家门店起诉夫妻面馆索赔七八千，四天后公开道歉还白送商标——2026年6月“遇见小面”维权翻车案。商标维权先过三关：能不能告看权利（稳定性、使用证据、混淆可能性）、该不该告看体量（侵权分级评估表）、怎么告看舆情（先礼后兵、诉求排序、叙事锚定、留痕、舆情先于法律）。新商标法从“重注册”转向“重使用”，第81条恶意诉讼反噬风险必须留痕。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/trademark-enforcement-3-gates-20260827.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "503家门店告一家面馆，最后把商标白送：维权前先过3关",
+      "canonical": "https://najieip.com/mili/blog/trademark-enforcement-3-gates-20260827.html",
+      "has_jsonld": true,
+      "title": "503家门店告一家面馆，最后把商标白送：维权前先过3关 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260911-mili-insurance-consultation.html",
+      "og:title": "保险买对，家才安心：退税、医疗、储蓄，9月11日一次理清",
+      "og:description": "9月11日，觅理律所「理享会」联合中国人寿举办家庭保障·保险咨询会。用“律师+理财师”双视角讲透三件事：个人养老金每年12000元税前扣除怎么省；《保险法》第16条健康告知“问什么答什么”、两年不可抗辩期；《保险法》第42条指定受益人定向传承vs《民法典》第1136条打印遗嘱要件。保险的“坑”大多不在产品，而在法律。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260911-mili-insurance-consultation.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "保险买对，家才安心：退税、医疗、储蓄，9月11日一次理清",
+      "canonical": "https://najieip.com/mili/blog/20260911-mili-insurance-consultation.html",
+      "has_jsonld": true,
+      "title": "保险买对，家才安心：退税、医疗、储蓄，9月11日一次理清 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/ipms-certification-new-rules-2026.html",
+      "og:title": "IPMS认证新规9月1日实施：这些变化直接影响你的认证证书",
+      "og:description": "国家认监委《知识产权管理体系认证规则》(CNCA-IPMS-01:2026) 9月1日实施：申请门槛、现场审核、最高管理者责任、证书维持四大变化解读，附法律合规五信号分析与条款速查表。作者：何自刚（IPMS外审员、执业律师）。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/ipms-certification-new-rules-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "IPMS认证新规9月1日实施：这些变化直接影响你的认证证书",
+      "canonical": "https://najieip.com/najie/blog/ipms-certification-new-rules-2026.html",
+      "has_jsonld": true,
+      "title": "IPMS认证新规9月1日实施：这些变化直接影响你的认证证书 — 纳杰知识产权",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260901-copyright-jp18-compliance-checklist.html",
+      "og:title": "今天起，网络转载不付费=侵权！5步合规自查清单",
+      "og:description": "2026年9月1日，最高人民法院《关于修改〈最高人民法院关于审理著作权民事纠纷案件适用法律若干问题的解释〉的决定》（法释〔2026〕18号）正式施行。从今天起，&quot;网络转载&quot;这件事彻底变了——报纸、期刊和互联网平台之间互相转载已发表作品，不再适用法定许可，必须事先取得许可并支付报酬。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260901-copyright-jp18-compliance-checklist.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/20260901-copyright-jp18-compliance-checklist.html",
+      "has_jsonld": false,
+      "title": "今天起，网络转载不付费=侵权！5步合规自查清单 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/overseas-ip-insurance-toolkit-20260828.html",
+      "og:title": "出海IP“三大新武器”：2026下半年到2027年，企业维权成本要重算",
+      "og:description": "瑞幸泰国案只记赢了9500万泰铢不够——50R反诉索赔100亿泰铢才是警钟。2027年1月1日起新《商标法》第69条官方“驰名确认”通道开放；四部门科技保险通知+浙江统保+深圳联共体+国务院令837号；出海IP维权从“自己扛”升级为“国家+保险+服务体系”三层保护。附今天就能做的三件事。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/overseas-ip-insurance-toolkit-20260828.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "出海IP“三大新武器”：2026下半年到2027年，企业维权成本要重算",
+      "canonical": "https://najieip.com/najie/blog/overseas-ip-insurance-toolkit-20260828.html",
+      "has_jsonld": true,
+      "title": "出海IP“三大新武器”：2026下半年到2027年，企业维权成本要重算 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/zhongguo-zhuanli-jiang-shenbao-2026.html",
+      "og:title": "从入围到金奖：中国专利奖申报的策略与实务要点",
+      "og:description": "中国专利奖怎么申报？第二十六届授奖名单已公布：金奖40项、银奖74项、优秀奖583项，金奖由国知局与世界知识产权组织（WIPO）共同授予。本文拆解中国专利奖申报条件、推荐渠道、五维评价（文本质量/技术先进性/市场价值/社会效益/运用保护）与常见失分点，助企业从入围冲金奖。纳杰觅理出品。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/zhongguo-zhuanli-jiang-shenbao-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "从入围到金奖：中国专利奖申报的策略与实务要点",
+      "canonical": "https://najieip.com/najie/blog/zhongguo-zhuanli-jiang-shenbao-2026.html",
+      "has_jsonld": true,
+      "title": "从入围到金奖：中国专利奖申报的策略与实务要点 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/qubao-houshen-quanliucheng-2026.html",
+      "og:title": "取保候审全流程：条件、材料与律师作用——家属最该知道的几件事",
+      "og:description": "取保候审怎么申请？条件是什么、要多少钱、律师能做什么？本文拆解取保候审的四种法定情形、保证金与保证人两种方式、申请主体与材料清单、黄金37天时间轴与常见误区，帮家属第一时间正确行动。纳杰觅理出品。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/qubao-houshen-quanliucheng-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "取保候审全流程：条件、材料与律师作用——家属最该知道的几件事",
+      "canonical": "https://najieip.com/mili/blog/qubao-houshen-quanliucheng-2026.html",
+      "has_jsonld": true,
+      "title": "取保候审全流程：条件、材料与律师作用——家属最该知道的几件事 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/gufen-jiagou-sheji-2026.html",
+      "og:title": "股权架构设计踩坑：67%·51%·34% 三个比例，决定公司谁说了算",
+      "og:description": "67%绝对控制、51%相对控制、34%一票否决，三个比例决定公司谁说了算。拆解股权架构三条红线、新公司法变化与纠纷预防。",
+      "og:image": "https://najieip.com/images/gufen-jiagou-sheji-2026.jpg",
+      "og:url": "https://najieip.com/mili/blog/gufen-jiagou-sheji-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "股权架构设计踩坑：67%·51%·34% 三个比例，决定公司谁说了算",
+      "canonical": "https://najieip.com/mili/blog/gufen-jiagou-sheji-2026.html",
+      "has_jsonld": true,
+      "title": "股权架构设计踩坑：67%·51%·34% 三个比例，决定公司谁说了算 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/xingzheng-fuyi-2026.html",
+      "og:title": "收到行政处罚别慌，60天行政复议期错过就晚了",
+      "og:description": "60天内可免费申请行政复议，同时审查合法性与合理性。拆解60天期限、复议与行政诉讼的区别、复议前置情形与新法变化。",
+      "og:image": "https://najieip.com/images/xingzheng-fuyi-2026.jpg",
+      "og:url": "https://najieip.com/mili/blog/xingzheng-fuyi-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "收到行政处罚别慌，60天行政复议期错过就晚了",
+      "canonical": "https://najieip.com/mili/blog/xingzheng-fuyi-2026.html",
+      "has_jsonld": true,
+      "title": "收到行政处罚别慌，60天行政复议期错过就晚了 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260905-ai-training-data-compliance.html",
+      "og:title": "开源数据别乱用！5条线帮你避坑，有人已赔10万",
+      "og:description": "全国首例《数据知识产权登记证》司法效力案：同一中文语音数据集一审判商业秘密、二审改判不构成，被告仍赔10万＋2300元。数据集三重身份、登记证当护身符、开源≠放弃权利——五条输入合规自检线，AI企业今天就能做。",
+      "og:image": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260905-ai-training-data-compliance.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "开源数据别乱用！5条线帮你避坑，有人已赔10万",
+      "canonical": "https://najieip.com/mili/blog/20260905-ai-training-data-compliance.html",
+      "has_jsonld": true,
+      "title": "开源数据别乱用！5条线帮你避坑，有人已赔10万 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/",
+      "og:title": "爱普纳杰 · 博客",
+      "og:description": "爱普纳杰专利代理博客 — 专利撰写实务、OA答复策略、PCT国际申请、技术交底指南。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/aipunajie/blog/",
+      "has_jsonld": true,
+      "title": "爱普纳杰 · 博客",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/blog/structural-positioning/",
+      "og:title": "结构性卡位：AI时代法律人唯一的护城河",
+      "og:description": "律师出庭资格、专利代理人署名权——这些AI永远无法替代的结构性卡位，才是法律人的终极护城河。探讨AI时代法律从业者的不可替代性。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/blog/structural-positioning/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/blog/structural-positioning/",
+      "has_jsonld": false,
+      "title": "结构性卡位：AI时代法律人唯一的护城河 — 纳杰知识产权",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/aipunajie/",
+      "og:title": "Aipunajie Patent Agency — Dual-Qualified IP Service Firm",
+      "og:description": "Founded 2012 in Beijing. Patent agency + foreign-related patent dual qualification. One-stop patent/trademark/copyright services, PCT, reexamination & invalidation.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/aipunajie/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/aipunajie/",
+      "has_jsonld": true,
+      "title": "Aipunajie Patent Agency — Dual-Qualified IP Service Firm",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/services.html",
+      "og:title": "发明专利代理服务说明 — 爱普纳杰",
+      "og:description": "授权概率诚实评估 + 服务内容6大环节24项明细。交底后5个工作日初稿，资深代理人撰写。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/services.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/aipunajie/services.html",
+      "has_jsonld": true,
+      "title": "发明专利代理服务说明 — 爱普纳杰",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/aipunajie/services.html",
+      "og:title": "Invention Patent Prosecution Service — Aipunajie",
+      "og:description": "Honest grant-rate assessment + full service breakdown: 6 stages, 24 items. First draft within 5 working days. Senior attorneys, transparent process.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/aipunajie/services.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/aipunajie/services.html",
+      "has_jsonld": true,
+      "title": "Invention Patent Prosecution Service — Aipunajie",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/",
+      "og:title": "Blog — Aipunajie Patent Firm",
+      "og:description": "Aipunajie Patent Firm Blog — Patent search guides, AI copyright analysis, trademark protection, and IP industry insights.",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/",
+      "has_jsonld": true,
+      "title": "Blog — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/mili/",
+      "og:title": "Mili Law Firm",
+      "og:description": "Mili Law Firm — IP Legal Protection。提供Patent Infringement Litigation、Trademark Disputes、Unfair Competition、IP Contracts等法律服务。85% Favorable Outcome Rate，5位资深Partners，Tech + Law Dual Background团队。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/mili/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/mili/",
+      "has_jsonld": false,
+      "title": "Mili Law Firm — IP Legal Protection",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/mili/blog/",
+      "og:title": "Blog",
+      "og:description": "Mili Law Firm Blog — IP litigation insights, patent infringement case analysis, trademark dispute strategies, cutting-edge IP law developments.",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/mili/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/mili/blog/",
+      "has_jsonld": false,
+      "title": "Blog — Mili Law Firm",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/najie/",
+      "og:title": "Najie IP — Trademark · Project Filing · Foreign IP · Annuity Management",
+      "og:description": "National IP Advantage Enterprise. Trademark rights, foreign-related IP (PCT/Madrid), copyright, annuity management, high-tech certification, IP counsel. Innovation Escorted by Najie.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/najie/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/najie/",
+      "has_jsonld": true,
+      "title": "Najie IP — Trademark · Project Filing · Foreign IP · Annuity Management",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/mili/team.html",
+      "og:title": "Mili Law Firm — Professional Team",
+      "og:description": "Comprehensive legal services with intellectual property as core strength.",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/mili/team.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/mili/team.html",
+      "has_jsonld": false,
+      "title": "Our Team — Mili Law Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/najie/blog/",
+      "og:title": "Blog",
+      "og:description": "Najie IP Blog — Patent annuity management insights, IP fee strategies, smart monitoring technology.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/najie/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/najie/blog/",
+      "has_jsonld": false,
+      "title": "Blog — Najie IP",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/aipunajie/",
+      "og:title": "Agence Aipunajie — Service IP intégré double qualification",
+      "og:description": "Fondée en 2012 à Pékin. Double qualification agence de brevets + étranger. Brevets, marques, droits d",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/aipunajie/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/aipunajie/",
+      "has_jsonld": true,
+      "title": "Agence Aipunajie — Service IP intégré double qualification",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/aipunajie/services.html",
+      "og:title": "Service de procédure de brevets d",
+      "og:description": "Évaluation honnête du taux de délivrance + détail des services : 6 étapes, 24 prestations. Première ébauche sous 5 jours ouvrés.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/aipunajie/services.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/aipunajie/services.html",
+      "has_jsonld": true,
+      "title": "Service de procédure de brevets d'invention — Aipunajie",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/",
+      "og:title": "Blog — Aipunajie Patent Firm",
+      "og:description": "Blog Aipunajie Patent Firm — Guides de recherche de brevets, analyse du droit d",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/",
+      "has_jsonld": true,
+      "title": "Blog — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/mili/",
+      "og:title": "Mili Cabinet d&#x27;Avocats",
+      "og:description": "Mili Cabinet d",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/mili/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/mili/",
+      "has_jsonld": false,
+      "title": "Mili Cabinet d'Avocats — Protection Juridique PI",
+      "issues": [
+        "og:description 过短 (<20字符)",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/mili/blog/",
+      "og:title": "Blog",
+      "og:description": "Blog Mili Cabinet d",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/mili/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/mili/blog/",
+      "has_jsonld": false,
+      "title": "Blog — Mili Cabinet d'Avocats",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "og:description 过短 (<20字符)",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/najie/",
+      "og:title": "Najie IP — Marques · Dépôts · PI Internationale · Annuités",
+      "og:description": "Entreprise Nationale Avantage PI. Marques, PI étrangère (PCT/Madrid), droits d",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/najie/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/najie/",
+      "has_jsonld": true,
+      "title": "Najie IP — Marques · Dépôts · PI Internationale · Annuités",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/mili/team.html",
+      "og:title": "Notre Équipe",
+      "og:description": "Cabinet Mili — Équipe professionnelle. He Zigang, avocat en PI avec 20 ans d",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/mili/team.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/mili/team.html",
+      "has_jsonld": false,
+      "title": "Notre Équipe — Cabinet Mili",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/najie/blog/",
+      "og:title": "Blog",
+      "og:description": "Blog Najie PI — Gestion des annuités de brevets, stratégies de frais PI, technologie de surveillance intelligente.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/najie/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/najie/blog/",
+      "has_jsonld": false,
+      "title": "Blog — Najie PI",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/",
+      "og:title": "博客 — 觅理律师事务所",
+      "og:description": "觅理律师事务所 — 综合法律博客。覆盖知识产权、行政法、民商事诉讼、刑法与刑事诉讼法、海商法、反垄断与反不正当竞争、国际法、民法典等全法律领域。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "博客 — 觅理律师事务所",
+      "canonical": "https://najieip.com/mili/blog/",
+      "has_jsonld": true,
+      "title": "博客 — 觅理律师事务所",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/changping-branch.html",
+      "og:title": "觅理律所昌平分所正式成立",
+      "og:description": "昌平分所正式获批，覆盖北京北部科技创新走廊。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/changping-branch.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/changping-branch.html",
+      "has_jsonld": false,
+      "title": "觅理律所昌平分所正式成立 — 觅理律师事务所",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/jurisdiction-map.html",
+      "og:title": "北京法院管辖策略全图 | 觅理律所",
+      "og:description": "觅理律所 × 北京法院管辖策略分析。17个法院五圈层分布，快速判断管辖距离。",
+      "og:image": "https://najieip.com/mili/mili_jurisdiction_map.png",
+      "og:url": "https://najieip.com/mili/jurisdiction-map.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/jurisdiction-map.html",
+      "has_jsonld": true,
+      "title": "北京法院管辖策略全图 | 觅理律所",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/lishare/",
+      "og:title": "觅理理享会",
+      "og:description": "觅理律师事务所理享会 — 律所数智化效能升级，元典法律AI智能体Amicus全场景分享。特邀华宇元典华北区负责人胡煜峰。本周五下午5:00。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/lishare/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/lishare/",
+      "has_jsonld": false,
+      "title": "觅理理享会 — 元典Amicus · 律所数智化效能升级",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/team.html",
+      "og:title": "觅理律所专业团队",
+      "og:description": "觅理律师事务所专业团队 — 4位创始合伙人领衔，涵盖知识产权、商事争议、刑事辩护、民事争议、资本市场等领域。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/team.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/team.html",
+      "has_jsonld": false,
+      "title": "专业团队 — 觅理律师事务所",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/lishare/insurance-20260911/",
+      "og:title": "觅理理享会 · 大咖来讲｜保险买对，家才安心",
+      "og:description": "2026年9月11日 · 个税优惠 / 父母医疗 / 储蓄规划 · 觅理律所理享会",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/lishare/insurance-20260911/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/lishare/insurance-20260911/",
+      "has_jsonld": false,
+      "title": "觅理理享会 · 大咖来讲｜保险买对，家才安心（2026年9月11日）",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/",
+      "og:title": "博客 — 纳杰知识产权",
+      "og:description": "纳杰知识产权博客 — 商标授权确权、涉外商标(马德里/PCT)、版权登记、专利年费管理、企业IP合规。北京纳杰知识产权，国家知识产权优势企业。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/",
+      "has_jsonld": true,
+      "title": "博客 — 纳杰知识产权",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/team.html",
+      "og:title": "专业团队",
+      "og:description": "纳杰知识产权专业团队 — 商标·科技项目(高企)·海外IP专家·年费管理·AI原生数字员工。何自刚，20年知识产权行业经验。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/team.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/team.html",
+      "has_jsonld": false,
+      "title": "专业团队 — 纳杰知识产权",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/team.html",
+      "og:title": "专业团队",
+      "og:description": "爱普纳杰专利所专业团队 — 何自刚，专利代理人，20年经验。专利申请、OA答复、PCT国际申请、涉外专利布局。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/team.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/team.html",
+      "has_jsonld": false,
+      "title": "专业团队 — 爱普纳杰专利所",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/about.html",
+      "og:title": "纳杰知识产权 — 商标·科技项目·海外IP·年费·AI原生",
+      "og:description": "纳杰知识产权 — 商标·科技项目(高企)·海外IP专家·年费管理·AI原生数字员工。何自刚，20余年知识产权行业经验。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/about.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/about.html",
+      "has_jsonld": false,
+      "title": "关于纳杰 — 纳杰知识产权",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/credentials.html",
+      "og:title": "资质公示 — 纳杰・爱普纳杰・觅理",
+      "og:description": "三主体证照原件公示：营业执照、商标代理机构备案凭证、律师事务所执业许可证。可核验、可追溯。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200",
+      "og:url": "https://najieip.com/credentials.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/credentials.html",
+      "has_jsonld": true,
+      "title": "资质公示 — 纳杰・爱普纳杰・觅理 | 纳杰体系",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260907-ai-judicial-opinion.html",
+      "og:title": "最高法AI司法意见落地：企业AI资产与责任边界，24条规则一次讲清",
+      "og:description": "最高法《关于依法审理涉人工智能纠纷案件的意见》（法发〔2026〕10号）24条逐条拆解：过错责任为默认、责任按控制力分层；AI换脸拟声、网络开盒、大数据杀熟、辅助驾驶四大踩雷场景；训练数据合理使用、生成式AI避风港、AI生成内容侵权、开源豁免与AI发明人认定；数据权益双轨保护、证据妨碍推定与AI文书当庭核实义务。附企业现在就做的三件事。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260907-ai-judicial-opinion.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "最高法AI司法意见落地：企业AI资产与责任边界，24条规则一次讲清",
+      "canonical": "https://najieip.com/mili/blog/20260907-ai-judicial-opinion.html",
+      "has_jsonld": true,
+      "title": "最高法AI司法意见落地：企业AI资产与责任边界，24条规则一次讲清 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260907-trademark-law-2026.html",
+      "og:title": "商标不是注册完就安全：新商标法56条开始管“怎么用”",
+      "og:description": "新《商标法》2026年6月26日通过、2027年1月1日施行（9章87条），新增第56条把“以误导公众的方式使用注册商标”单列罚则：最高罚经营额5倍或25万元，逾期不改撤销注册商标。另六大变化：异议期3个月缩至2个月、“在先合法权益”取代“在先权利”、依职权撤三恢复、许可质量条款升级、代理监管扩至从业人员。附企业现在该做的五件事。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260907-trademark-law-2026.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "商标不是注册完就安全：新商标法56条开始管“怎么用”",
+      "canonical": "https://najieip.com/najie/blog/20260907-trademark-law-2026.html",
+      "has_jsonld": true,
+      "title": "商标不是注册完就安全：新商标法56条开始管“怎么用” — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260912-ai-digital-employee-deployment.html",
+      "og:title": "AI 接管执行后，专业服务只剩 3 件事",
+      "og:description": "凌晨 1:30 余额归零，10 个定时任务同时欠费失败，2 小时后系统自己爬起来补齐当天主文——全程无人碰键盘。把当天所有需要人的节点摊开，只剩五类：出钱、担责、在场、裁量、定义，收敛成 3 件事：当主体、当出资人、当提问者。附「流程按能不能担责分三类」的落地三步法，与三条今天就能做的判断：先分类再上工具、第一批只交高频低裁量环节、买可审计可停手而非全自动。",
+      "og:image": "https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260912-ai-digital-employee-deployment.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI 接管执行后，专业服务只剩 3 件事",
+      "canonical": "https://najieip.com/najie/blog/20260912-ai-digital-employee-deployment.html",
+      "has_jsonld": true,
+      "title": "AI 接管执行后，专业服务只剩 3 件事 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260913-trademark-report-defense-rights.html",
+      "og:title": "商标被举报别慌：这4条程序权利，能救回你的商标",
+      "og:description": "国知局「心机商标」治理专栏累计公示 1782 件依职权宣告无效的商标，注册近 20 年、8 月 13 日单批新增 54 件也在名单里——注册年限救不了你。新《商标法》第 70 条 2027 年 1 月 1 日才施行，但「举报商标」这条路现在就能走通。被举报后你手里有四条程序权利：申辩、听证、不得因申辩加重处罚、未告知未听取申辩不得下处罚决定。监管时钟：15 个工作日核查、立案后 90 日内决定，真正致命的是「限期改正」逾期不改→撤销注册商标。另附合规举报竞品的三条红线。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260913-trademark-report-defense-rights.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "商标被举报别慌：这4条程序权利，能救回你的商标",
+      "canonical": "https://najieip.com/najie/blog/20260913-trademark-report-defense-rights.html",
+      "has_jsonld": true,
+      "title": "商标被举报别慌：这4条程序权利，能救回你的商标 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260914-trademark-rejection-six-reasons.html",
+      "og:title": "商标被驳回的6个原因：六类驳回情形与收到驳回通知后的三步",
+      "og:description": "商标驳回绝大多数不是运气不好，申请之前就能看出来。六类常见驳回情形逐个拆解：缺显著特征（商标法11条）、与在先商标近似（30条）、碰禁用条款（10条）、损害在先权利或抢注（32条）、图样与商品项目选错、主体材料瑕疵。附收到驳回通知书后先做的三件事——算清15天复审期限（34条）、分清全部驳回与部分驳回并考虑分割申请、按使用证据/逐条论证不近似/清除障碍三条路定策略，以及复审不成向北京知识产权法院起诉的30日司法救济。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260914-trademark-rejection-six-reasons.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "商标被驳回的6个原因：六类驳回情形与收到驳回通知后的三步",
+      "canonical": "https://najieip.com/najie/blog/20260914-trademark-rejection-six-reasons.html",
+      "has_jsonld": true,
+      "title": "商标被驳回的6个原因 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/about.html",
+      "og:title": "技术驱动的一体化知识产权服务 — 纳杰体系",
+      "og:description": "三家机构一个体系：商标・专利・诉讼一体化。AI 负责效率，人负责判断与责任；自研知产有效期管理/年费提醒/案卷号系统 3 项软著，66 国年费规则库，中/英/法/德四语直接作业。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200",
+      "og:url": "https://najieip.com/about.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/about.html",
+      "has_jsonld": true,
+      "title": "技术驱动的一体化知识产权服务 — 纳杰体系机构介绍",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/aipunajie/blog/20260914-patent-invention-vs-utility-model.html",
+      "og:title": "专利选错，白等2年：发明与实用新型怎么选，一条被低估的同日双申请路",
+      "og:description": "发明与实用新型选错，是中小企业专利布局里最贵的一个决定：结构改良只报发明，两年后产品迭代两轮、手里一件授权专利都没有。六项差别（保护对象/保护期限/审查方式/创造性标准/授权速度/官费与稳定性）一次讲清，三条选型依据（技术生命周期、是不是命门、要这件专利干什么），以及同日双申请（专利法9条1款）换时间又换稳定性的打法与三个最常见的坑——先卖货再申请、把交底书当作业、授权后不管年费与外围布局。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/aipunajie/blog/20260914-patent-invention-vs-utility-model.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "专利选错，白等2年：发明与实用新型怎么选，一条被低估的同日双申请路",
+      "canonical": "https://najieip.com/aipunajie/blog/20260914-patent-invention-vs-utility-model.html",
+      "has_jsonld": true,
+      "title": "专利选错，白等2年 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260914-inheritance-no-heir-state.html",
+      "og:title": "9位叔姑舅姨争遗产，房子为什么归了国家？",
+      "og:description": "人民法院案例库参考案例：赵女士无配偶、无子女、无兄弟姐妹，父母已故，2022年6月于北京昌平去世。9名叔姑舅姨主张分遗产，法院判房产收归国家，存款与保险权益按扶养情况酌分。两条规则讲清：叔姑舅姨不在《民法典》第1127条法定继承顺序内（继承权本不存在），无人继承遗产依第1160条归国家，而扶养较多者可依第1131条酌分适当遗产。附立遗嘱、签遗赠扶养协议、日常留痕三条实务建议。觅理律师事务所出品。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260914-inheritance-no-heir-state.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "9位叔姑舅姨争遗产，房子为什么归了国家？",
+      "canonical": "https://najieip.com/mili/blog/20260914-inheritance-no-heir-state.html",
+      "has_jsonld": true,
+      "title": "9位叔姑舅姨争遗产，房子为什么归了国家？ — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260914-pangdonglai-trainee-labor-contract.html",
+      "og:title": "“四年学员制、到期不续签”：胖东来的新规，法律上站得住吗？",
+      "og:description": "据于东来2026年9月13日社交媒体发文，胖东来新招员工将全部为“学员”、劳动合同四年一签到期不再续签（企业方面回应称尚未收到相关通知）——这是创始人的公开表态，不是已经落地的制度。假如真落地，四个法律要点：《劳动合同法》第44条（到期终止不当然违法）、第46条第5项与第47条（到期不续签要给经济补偿，四年约四个月工资）、第7条（“学员”称谓不改变“用工即劳动关系”的认定）、第14条第二款第三项（连续两次固定期限后的无固定期限问题）。附企业与打工人双向建议。觅理律师事务所出品。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260914-pangdonglai-trainee-labor-contract.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "“四年学员制、到期不续签”：胖东来的新规，法律上站得住吗？",
+      "canonical": "https://najieip.com/mili/blog/20260914-pangdonglai-trainee-labor-contract.html",
+      "has_jsonld": true,
+      "title": "“四年学员制、到期不续签”：胖东来的新规，法律上站得住吗？ — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260916-inventor-remuneration-907.html",
+      "og:title": "产品整体还在亏损，公司仍被判付 80 万：离职发明人的报酬怎么算",
+      "og:description": "产品和公司都还在亏损，为什么法院仍判付发明人80万？最高法知民终907号把“以年为单位算营业利润”和举证责任两条规则说清楚了。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260916-inventor-remuneration-907.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "产品整体还在亏损，公司仍被判付 80 万：离职发明人的报酬怎么算",
+      "canonical": "https://najieip.com/mili/blog/20260916-inventor-remuneration-907.html",
+      "has_jsonld": true,
+      "title": "产品整体还在亏损，公司仍被判付 80 万：离职发明人的报酬怎么算 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260916-data-asset-four-step.html",
+      "og:title": "你的数据能换5000万吗？4步闭环",
+      "og:description": "数据已经从服务器里的文件，变成能抵押、能入表、能打官司的资产。顺序错了，前面全白干——登记、质押、入表、维权四步拆解。",
+      "og:image": "https://images.pexels.com/photos/48148/documents-accent-tear-48148.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260916-data-asset-four-step.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "你的数据能换5000万吗？4步闭环",
+      "canonical": "https://najieip.com/najie/blog/20260916-data-asset-four-step.html",
+      "has_jsonld": true,
+      "title": "你的数据能换5000万吗？4步闭环 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260829-micromovie-regulation-ip-checklist.html",
+      "og:title": "9月1日微短剧新规施行：做微短剧的公司，这 4 件 IP 事必须做 — 纳杰觅理",
+      "og:description": "一部微短剧突然爆了，全网都在追——这时候最慌的不是编剧，是法务：剧本授权齐不齐？音乐版权有没有？演员肖像同意书签了没？AI生成的画面标了没？",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260829-micromovie-regulation-ip-checklist.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/20260829-micromovie-regulation-ip-checklist.html",
+      "has_jsonld": false,
+      "title": "9月1日微短剧新规施行：做微短剧的公司，这 4 件 IP 事必须做 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260829-patent-award-quota-tightening.html",
+      "og:title": "中国专利奖优秀奖名额收紧，想拿奖的企业抓紧这 3 件事 — 纳杰觅理",
+      "og:description": "在专利圈里听到这个消息时，很多企业第一反应是&quot;跟我没关系&quot;——但恰恰相反，名额收紧，正是申报策略要变的信号。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260829-patent-award-quota-tightening.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/najie/blog/20260829-patent-award-quota-tightening.html",
+      "has_jsonld": false,
+      "title": "中国专利奖优秀奖名额收紧，想拿奖的企业抓紧这 3 件事 — 纳杰觅理",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/najie-apnajie-mili-collaboration.html",
+      "og:title": null,
+      "og:description": null,
+      "og:image": null,
+      "og:url": null,
+      "twitter:card": null,
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/blog/najie-apnajie-mili-collaboration.html",
+      "has_jsonld": false,
+      "title": "三所联合｜纳杰 × 爱普纳杰 × 觅理：让法律服务随时可见 — 觅理律师事务所",
+      "issues": [
+        "缺少 og:title",
+        "缺少 og:description",
+        "缺少 og:image",
+        "缺少 twitter:card",
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/najie-apnajie-mili-collaboration.html",
+      "og:title": null,
+      "og:description": null,
+      "og:image": null,
+      "og:url": null,
+      "twitter:card": null,
+      "twitter:title": null,
+      "canonical": null,
+      "has_jsonld": false,
+      "title": "Alliance Tri-Cabinet | NaJie × IPNAJIE × MiLi : Un Soutien Juridique Toujours à Portée de Main — 爱普纳杰专利所",
+      "issues": [
+        "缺少 og:title",
+        "缺少 og:description",
+        "缺少 og:image",
+        "缺少 twitter:card",
+        "缺少 twitter:title",
+        "缺少 canonical",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/najie-apnajie-mili-collaboration.html",
+      "og:title": null,
+      "og:description": null,
+      "og:image": null,
+      "og:url": null,
+      "twitter:card": null,
+      "twitter:title": null,
+      "canonical": null,
+      "has_jsonld": false,
+      "title": "Tri-Firm Alliance | NaJie × IPNAJIE × MiLi: Legal Support, Always Within Reach — 爱普纳杰专利所",
+      "issues": [
+        "缺少 og:title",
+        "缺少 og:description",
+        "缺少 og:image",
+        "缺少 twitter:card",
+        "缺少 twitter:title",
+        "缺少 canonical",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/20260811-AI版权中美路径企业出海实操-fr.html",
+      "og:title": "Aux États-Unis et en Chine, le droit d&#x27;auteur sur l&#x27;IA connaît un contraste saisissant : que faire pour vos contenus générés par IA à l&#x27;étranger ?",
+      "og:description": "Aux États-Unis et en Chine, le droit d&#x27;auteur sur l&#x27;IA connaît un contraste saisissant : que faire pour vos contenus générés par IA à l&#x27;étranger ? — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/20260811-AI版权中美路径企业出海实操-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/20260811-AI版权中美路径企业出海实操-fr.html",
+      "has_jsonld": false,
+      "title": "Aux États-Unis et en Chine, le droit d&#x27;auteur sur l&#x27;IA connaît un contraste saisissant : que faire pour vos contenus générés par IA à l&#x27;étranger ? — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/20260811-AI版权中美路径企业出海实操-en.html",
+      "og:title": "The &quot;Fire and Ice&quot; Divide in AI Copyright Between China and the U.S.: What Should You Do with Your AI-Generated Content When Going Global?",
+      "og:description": "The &quot;Fire and Ice&quot; Divide in AI Copyright Between China and the U.S.: What Should You Do with Your AI-Generated Content When Going Global? — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/20260811-AI版权中美路径企业出海实操-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/20260811-AI版权中美路径企业出海实操-en.html",
+      "has_jsonld": false,
+      "title": "The &quot;Fire and Ice&quot; Divide in AI Copyright Between China and the U.S.: What Should You Do with Your AI-Generated Content When Going Global? — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/20260809-ai-vs-employee-综合对比-fr.html",
+      "og:title": "Employé IA vs Employé humain : une guerre dont on ne peut pas faire les comptes ?",
+      "og:description": "Employé IA vs Employé humain : une guerre dont on ne peut pas faire les comptes ? — Comparaison à cinq dimensions : économie/management/fiscalité et finance/psychologie/philosophie, la réponse définitive pour les entrepreneurs et les patrons traditionnels — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/20260809-ai-vs-employee-综合对比-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/fr/blog/20260809-ai-vs-employee-综合对比-fr.html",
+      "has_jsonld": false,
+      "title": "Employé IA vs Employé humain : une guerre dont on ne peut pas faire les comptes ? — Comparaison à cinq dimensions : économie/management/fiscalité et finance/psychologie/philosophie, la réponse définitive pour les entrepreneurs et les patrons traditionnels — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/en/blog/20260809-ai-vs-employee-综合对比-en.html",
+      "og:title": "AI Employees vs. Human Employees: A War That Cannot Be Settled?",
+      "og:description": "AI Employees vs. Human Employees: A War That Cannot Be Settled? — A Five-Dimensional Comparison Across Economics/Management/Taxation and Finance/Psychology/Philosophy, Providing the Ultimate Answer for Entrepreneurs and Traditional Business Owners — translated article by Aipunajie Patent Firm &amp; Mili Law Firm.",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/20260809-ai-vs-employee-综合对比-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/en/blog/20260809-ai-vs-employee-综合对比-en.html",
+      "has_jsonld": false,
+      "title": "AI Employees vs. Human Employees: A War That Cannot Be Settled? — A Five-Dimensional Comparison Across Economics/Management/Taxation and Finance/Psychology/Philosophy, Providing the Ultimate Answer for Entrepreneurs and Traditional Business Owners — Aipunajie Patent Firm",
+      "issues": [
+        "缺少 twitter:title",
+        "缺少 JSON-LD"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260917-livestream-ai-voice-personality-rights.html",
+      "og:title": "主播用了别人的脸和AI合成的声音，赔钱的为什么还有商家？",
+      "og:description": "最高法2026网络法治典型案例解读：带货主播擅用他人肖像、配上与本人高度近似的AI合成声音做推广，委托的图书公司未审核素材来源与授权，与主播构成共同侵权并承担连带责任，判赔12万元。附推广素材四项审查与合同四条清单。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260917-livestream-ai-voice-personality-rights.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "主播用了别人的脸和AI合成的声音，赔钱的为什么还有商家？",
+      "canonical": "https://najieip.com/mili/blog/20260917-livestream-ai-voice-personality-rights.html",
+      "has_jsonld": true,
+      "title": "主播用了别人的脸和AI合成的声音，赔钱的为什么还有商家？ — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260918-ai-search-rag-liability.html",
+      "og:title": "AI搜索引擎搜出盗版链接，平台为什么不用赔？",
+      "og:description": "最高法2026网络法治典型案例解读：AI搜索引擎使用检索增强生成（RAG）技术展示第三方网盘盗版链接，因未主动上传与编辑推荐、现阶段技术无法自动识别、已履行算法备案、知悉后当日删除，不构成侵权；“与算法、数据优势程度相匹配的注意义务”与更重的举证责任成为关键。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260918-ai-search-rag-liability.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AI搜索引擎搜出盗版链接，平台为什么不用赔？",
+      "canonical": "https://najieip.com/mili/blog/20260918-ai-search-rag-liability.html",
+      "has_jsonld": true,
+      "title": "AI搜索引擎搜出盗版链接，平台为什么不用赔？ — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/twin-offices.html",
+      "og:title": "觅理律师事务所 · 双子星办公地址",
+      "og:description": "北京觅理律师事务所双子星布局：主所（朝阳区建国门外大街丙12-12号宝钢大厦1502）+ 昌平分所（昌平区城南街道凉水河社区）。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/twin-offices.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": null,
+      "canonical": "https://najieip.com/mili/twin-offices.html",
+      "has_jsonld": true,
+      "title": "觅理律师事务所 · 双子星办公地址 | 主所与昌平分所",
+      "issues": [
+        "缺少 twitter:title"
+      ]
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260918-personality-rights-injunction.html",
+      "og:title": "被网暴了，不用等到判决：一份6个月的“停止侵害”禁令怎么申请下来",
+      "og:description": "最高法2026网络法治典型案例解读：两名合计粉丝量超2000万的博主持续发布侮辱诽谤内容、煽动粉丝实施网络暴力，法院依民法典第997条发出人格权侵害禁令，责令立即停止侵权、有效期6个月，违反可罚款、拘留。含适用审查的三组考量因素与申请前证据清单。",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260918-personality-rights-injunction.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "被网暴了，不用等到判决：一份6个月的“停止侵害”禁令怎么申请下来",
+      "canonical": "https://najieip.com/mili/blog/20260918-personality-rights-injunction.html",
+      "has_jsonld": true,
+      "title": "被网暴了，不用等到判决：一份6个月的“停止侵害”禁令怎么申请下来 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/najie/blog/20260918-eu-digital-design-three-tables.html",
+      "og:title": "游戏界面中国不给专利，欧盟7月1日起能注册",
+      "og:description": "国内明确排除的游戏界面、纯数字皮肤和转场动画，从2026年7月1日起可在欧盟单独注册。本文用三张表说清：哪些数字设计现在能在欧盟拿到权利、一套设计稿能否中国/海牙/欧盟三地复用、以及防抢注的三样反制工具与12个月新颖性宽限窗的换算时点。",
+      "og:image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/najie/blog/20260918-eu-digital-design-three-tables.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "游戏界面中国不给专利，欧盟7月1日起能注册",
+      "canonical": "https://najieip.com/najie/blog/20260918-eu-digital-design-three-tables.html",
+      "has_jsonld": true,
+      "title": "游戏界面中国不给专利，欧盟7月1日起能注册 — 纳杰觅理",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/mili/blog/20260917-upc-injunction-counterattack.html",
+      "og:title": "禁令突袭反被撤销：出海企业3招反打",
+      "og:description": "禁令突袭反被撤销：出海企业3招反打",
+      "og:image": "https://images.pexels.com/photos/5669602/pexels-photo-5669602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/mili/blog/20260917-upc-injunction-counterattack.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "禁令突袭反被撤销：出海企业3招反打",
+      "canonical": "https://najieip.com/mili/blog/20260917-upc-injunction-counterattack.html",
+      "has_jsonld": true,
+      "title": "禁令突袭反被撤销：出海企业3招反打 — 纳杰觅理",
+      "issues": [
+        "og:description 过短 (<20字符)"
+      ]
+    },
+    {
+      "url": "https://najieip.com/fr/blog/20260905-ai-training-data-compliance-fr.html",
+      "og:title": "Certificat d",
+      "og:description": "Analyse du premier cas chinois sur la force probante du certificat d",
+      "og:image": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/fr/blog/20260905-ai-training-data-compliance-fr.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Certificat d",
+      "canonical": "https://najieip.com/fr/blog/20260905-ai-training-data-compliance-fr.html",
+      "has_jsonld": true,
+      "title": "Certificat d'enregistrement de la propriété intellectuelle des données : première décision judiciaire en Chine et triple protection des données pour l'IA — Aipunajie Patent Firm",
+      "issues": []
+    },
+    {
+      "url": "https://najieip.com/en/blog/20260905-ai-training-data-compliance-en.html",
+      "og:title": "China",
+      "og:description": "Analysis of China",
+      "og:image": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "og:url": "https://najieip.com/en/blog/20260905-ai-training-data-compliance-en.html",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "China",
+      "canonical": "https://najieip.com/en/blog/20260905-ai-training-data-compliance-en.html",
+      "has_jsonld": true,
+      "title": "China's First Data IP Registration Certificate Case: Trade Secret Ruling Overturned, Yet RMB 100,000 Still Payable — Aipunajie Patent Firm",
+      "issues": [
+        "og:title 过短 (<10字符)",
+        "og:description 过短 (<20字符)"
+      ]
     }
   ]
 }
