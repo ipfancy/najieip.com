@@ -1335,6 +1335,27 @@
     "/tmp/i18n_install_0919.py",
     "/tmp/verify_live_0919.py"
    ]
+  },
+  {
+   "date": "2026-09-19",
+   "time": "07:03",
+   "agent": "SiteOps",
+   "round": "daily-morning-0700",
+   "commit": "4a37439（发布）",
+   "action": "晨检补齐 09-19 新文《没卖一件也赔3万！许诺销售这4个坑，企业别踩》的发布闭环缺口：mili/blog/index.html 顶部插卡 + JSON-LD blogPost 前插 1 条（75 条）、页面补 og:image、twitter:card 由 summary 升级 summary_large_image",
+   "scope": "① 该文 05:02 经 4a37439 落位 mili/blog/20260919-offer-to-sell-three-rules.html（88 行重写）并写入 articles.json，fb6c719 已补 sitemap loc（243→244），但品牌索引（卡片 + JSON-LD）与 og:image 两个闭环点漏做；② 本轮补齐后 mili/blog/index.html 静态卡 38→39、blogPost 74→75；③ 文章页 og:image 采用与同族 mili 文章一致的 pexels 5669602 图（house-style）",
+   "reason": "「文章上线四件套」（文章页 + articles.json + sitemap loc + 品牌索引卡/JSON-LD）缺一则机构博客索引掉队；og:image 缺则社交/搜索富摘要无图。二者皆属机械补录，不涉内容判断",
+   "verification": {
+    "index_card": "grep -c 'offer-to-sell-three-rules' mili/blog/index.html = 2（卡片 + JSON-LD 各 1）",
+    "jsonld_parse": "JSON-LD 块 json.loads 通过；blogPost 首条 url = https://najieip.com/mili/blog/20260919-offer-to-sell-three-rules.html",
+    "article_head": "og:image=True / twitter:card=summary_large_image / canonical / og:url / ld+json 齐备",
+    "sitemap": "sitemap_loc_audit.py：线上 244 loc、唯一 244、跳转别名 0、重复登记 0、非 200 loc 0、本地/线上 diff 0",
+    "revert_path": "git revert（本轮 commit）"
+   },
+   "seo": "sitemap 244 loc 全绿；三机构博客索引 306 卡口径 → 307；结构体检 237 页 0 结构损坏 / 0 空壳",
+   "tools": [
+    "/tmp/fix_mili_index_0919.py"
+   ]
   }
  ]
 }
