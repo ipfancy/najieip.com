@@ -18,7 +18,7 @@ import os
 import sys
 from datetime import date
 
-ROOT = os.path.expanduser("~/wiki/najieip-verify")
+ROOT = os.environ.get("NAJIEIP_SITE") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 APPLY = "--apply" in sys.argv
 TODAY = date.today().isoformat()
