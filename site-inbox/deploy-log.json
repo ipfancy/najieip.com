@@ -1356,6 +1356,30 @@
    "tools": [
     "/tmp/fix_mili_index_0919.py"
    ]
+  },
+  {
+   "date": "2026-09-19",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "daily-evening-2200",
+   "commit": "9c03dfd（主索引补卡）",
+   "action": "晚间运营检查：核心 6 页全 200；主索引补 3 张 09-19 缺卡（159→162）；新页 og:image 补全 3 处；SEO/OG 巡检通过；articles.json 守卫 135/135 零违例",
+   "scope": "① 主索引缺口：mili/wangluo-jishu-zhichi-kaishe-duchangzui-2026、mili/20260919-offer-to-sell-three-rules、najie/nongye-pinpai-ip-buju-2026 三张卡已在品牌索引但未进 blog/index.html（gather-0919-v5.py 按 href 归一扫出，stub 2 张剔除：cnptes-three-layer-architecture-diagram 图页 14165B、uspto-tbmp-2026-update 跳转壳 529B）；② 插位按「第一张日期 < 新卡日期 之前」规则落在 09-18 卡前，终验 9 项全 PASS（卡数/div 深度归零/直子节点 162/malformed 0/无重复 href/前缀降序/无 ** 泄漏/schema.org 完整）；③ 线上 blog/ 字节一致（102617B，162 卡）——13a8aa0 的 gaoqi-selfcheck 工具页 + 当日 3 篇新文均 200；④ 新页质检（qa-0919-evening.py）发现 2 篇文章 + 1 工具页缺 og:image，按 house-style 补齐（mili 用 5669602 / najie 用 3183150），工具页另补 twitter:card+title+description+og:site_name；⑤ articles.json 守卫 135/135 零违例，首页 slice(0,6) 6 条全部有页面",
+   "verify": {
+    "core_pages": "6/6 200（首页/mili/najie/blog/sitemap/llms.txt）",
+    "live_blog_index": "字节一致 102617B · 162 卡 · 新卡 grep 各 1 次",
+    "new_pages_200": 5,
+    "seocheck": "通过（sitemap 246 loc · lastmod 246/246 · JSON-LD 6/6）",
+    "ogcheck": "核心 4 页 0 issue",
+    "articles_json_guard": "135/135 零违例"
+   },
+   "files": [
+    "blog/index.html",
+    "site-inbox/missing-cards-20260919.json",
+    "mili/blog/wangluo-jishu-zhichi-kaishe-duchangzui-2026.html",
+    "najie/blog/nongye-pinpai-ip-buju-2026.html",
+    "najie/gaoqi-selfcheck.html"
+   ]
   }
  ]
 }

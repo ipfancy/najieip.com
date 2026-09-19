@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-19T02:16:03",
+  "checked_at": "2026-09-19T22:02:31",
   "pages": [
     {
       "url": "https://najieip.com/",
@@ -61,11 +61,11 @@
     }
   ],
   "sitemap": {
-    "url_count": 243,
-    "with_lastmod": 241,
-    "without_lastmod": 2,
-    "sitemap_last_modified": "Fri, 18 Sep 2026 18:11:50 GMT",
-    "blog_count": 212
+    "url_count": 246,
+    "with_lastmod": 246,
+    "without_lastmod": 0,
+    "sitemap_last_modified": "Sat, 19 Sep 2026 10:03:13 GMT",
+    "blog_count": 215
   },
   "jsonld": {
     "https://najieip.com/": true,
