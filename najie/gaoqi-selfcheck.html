@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>高新技术企业认定 · 资格自评（免费）｜纳杰知识产权</title>
+<meta name="description" content="3分钟自测：你是否满足高新技术企业认定条件？8条硬门槛自动核对 + 创新能力100分测算，输出差距清单。依据《高新技术企业认定管理办法》国科发火〔2016〕32号及《工作指引》195号。">
+<style>
+  :root{--ink:#161616;--sub:#525252;--line:#e0e0e0;--blue:#0f62fe;--ok:#198038;--bad:#da1e28;--warn:#b28600;--bg:#f4f4f4}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"IBM Plex Sans","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+       color:var(--ink);background:#fff;line-height:1.65;font-size:15px}
+  header{background:#161616;color:#fff;padding:28px 20px}
+  .wrap{max-width:820px;margin:0 auto}
+  h1{font-size:22px;margin:0 0 8px;font-weight:600;letter-spacing:.3px}
+  header p{margin:0;color:#c6c6c6;font-size:13.5px}
+  main{padding:28px 20px 60px}
+  h2{font-size:16px;margin:32px 0 12px;padding-left:10px;border-left:4px solid var(--blue);font-weight:600}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  label{display:block;font-size:13px;color:var(--sub);margin-bottom:5px}
+  label b{color:var(--ink);font-weight:600}
+  input[type=number],input[type=text],select{width:100%;padding:9px 10px;border:1px solid var(--line);
+       border-radius:0;font-size:14px;background:#fff;font-family:inherit;color:var(--ink)}
+  input:focus,select:focus{outline:2px solid var(--blue);outline-offset:-1px}
+  .chk{display:flex;align-items:flex-start;gap:9px;font-size:14px;color:var(--ink);margin:9px 0}
+  .chk input{margin-top:3px;flex:0 0 auto}
+  .hint{font-size:12.5px;color:var(--sub);margin-top:4px}
+  button{background:var(--blue);color:#fff;border:0;padding:13px 26px;font-size:15px;font-weight:600;
+       font-family:inherit;cursor:pointer;border-radius:0}
+  button:hover{background:#0353e9}
+  button.ghost{background:#fff;color:var(--blue);border:1px solid var(--blue)}
+  #result{margin-top:34px;display:none}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:10px 0}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:var(--bg);font-weight:600;font-size:13px}
+  .ok{color:var(--ok);font-weight:600}
+  .bad{color:var(--bad);font-weight:600}
+  .warn{color:var(--warn);font-weight:600}
+  .verdict{padding:16px 18px;border:1px solid var(--line);border-left:5px solid var(--blue);background:var(--bg);margin:16px 0}
+  .verdict .big{font-size:17px;font-weight:600;display:block;margin-bottom:4px}
+  .bar{height:14px;background:var(--line);position:relative;margin:14px 0 6px}
+  .bar i{position:absolute;top:0;bottom:0;background:var(--blue);opacity:.85}
+  .bar u{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--bad);left:71%}
+  .scale{font-size:12px;color:var(--sub);display:flex;justify-content:space-between}
+  .cta{border:1px solid var(--line);padding:18px;margin-top:26px;background:#fff}
+  .cta h3{margin:0 0 8px;font-size:15px}
+  .cta p{margin:6px 0;font-size:14px}
+  footer{border-top:1px solid var(--line);margin-top:34px;padding-top:16px;font-size:12.5px;color:var(--sub)}
+  .disc{font-size:12.5px;color:var(--sub);background:var(--bg);padding:12px 14px;margin-top:18px}
+</style>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c80241f3caa4e708a12ed93baec1bde"}'></script>
+<link rel="canonical" href="https://najieip.com/najie/gaoqi-selfcheck.html">
+<meta property="og:title" content="高新技术企业认定 · 资格自评（免费）">
+<meta property="og:description" content="3分钟自测：8条硬门槛自动核对 + 创新能力100分测算，输出差距清单。依据国科发火〔2016〕32号、195号。">
+<meta property="og:url" content="https://najieip.com/najie/gaoqi-selfcheck.html">
+<meta property="og:type" content="website">
+</head>
+<body>
+<header><div class="wrap">
+  <h1>高新技术企业认定 · 资格自评</h1>
+  <p>依据《高新技术企业认定管理办法》国科发火〔2016〕32号 及《高新技术企业认定管理工作指引》国科发火〔2016〕195号 · 免费 · 不上传任何数据</p>
+</div></header>
+
+<main><div class="wrap">
+
+<h2>一、基本门槛（8 条，须同时满足）</h2>
+<div class="grid">
+  <div><label>① 注册成立年限（年）</label><input type="number" id="years" value="5" min="0"></div>
+  <div><label>② Ⅰ类知识产权件数 <span class="hint">发明 / 植物新品种 / 国家新药 / 一级中药保护品种 / 集成电路布图设计专有权</span></label><input type="number" id="ip1" value="1" min="0"></div>
+  <div><label>③ Ⅱ类知识产权件数 <span class="hint">实用新型 / 外观设计 / 软件著作权</span></label><input type="number" id="ip2" value="6" min="0"></div>
+  <div><label>④ 科技人员数 / 当年职工总数</label>
+    <div style="display:flex;gap:8px"><input type="number" id="techStaff" value="30" min="0" placeholder="科技人员"><input type="number" id="totalStaff" value="200" min="0" placeholder="职工总数"></div>
+  </div>
+  <div><label>⑤ 近三年销售收入合计（万元）</label><input type="number" id="rev3sum" value="9000" min="0"></div>
+  <div><label>⑥ 最近一年销售收入（万元）<span class="hint">决定研发费比例档：≤5000万需≥5%；5000万–2亿需≥4%；>2亿需≥3%</span></label><input type="number" id="lastRev" value="3500" min="0"></div>
+  <div><label>⑦ 近三年研发费用合计（万元）</label><input type="number" id="rd3sum" value="500" min="0"></div>
+  <div><label>⑧ 其中：境内研发费用（万元）<span class="hint">占比须 ≥60%</span></label><input type="number" id="rdDom" value="480" min="0"></div>
+  <div><label>⑨ 近一年高新技术产品(服务)收入（万元）</label><input type="number" id="hiRev" value="2400" min="0"></div>
+  <div><label>⑩ 同期总收入（万元）<span class="hint">占比须 ≥60%</span></label><input type="number" id="totalRev" value="3500" min="0"></div>
+</div>
+<div style="margin-top:14px">
+  <div class="chk"><input type="checkbox" id="ipOwned" checked><label for="ipOwned" style="margin:0">知识产权归<span style="font-weight:600">申报主体</span>所有（多个权属人时只能由一个使用）</label></div>
+  <div class="chk"><input type="checkbox" id="inField" checked><label for="inField" style="margin:0">核心技术属于《国家重点支持的高新技术领域》八大领域</label></div>
+  <div class="chk"><input type="checkbox" id="noViol" checked><label for="noViol" style="margin:0">申请前一年内未发生重大安全、重大质量事故或严重环境违法</label></div>
+</div>
+
+<h2>二、创新能力自评（100 分，达 70 分以上（不含 70）符合要求）</h2>
+<div class="grid">
+  <div><label>技术的先进程度</label><select id="adv"><option>高</option><option selected>较高</option><option>一般</option><option>较低</option><option>无</option></select></div>
+  <div><label>对主要产品(服务)的核心支持作用</label><select id="core"><option>强</option><option>较强</option><option>一般</option><option>较弱</option><option>无</option></select></div>
+  <div><label>知识产权获得方式</label><select id="obtain"><option value="1">自主研发</option><option value="0">仅受让/受赠/并购等</option></select></div>
+  <div><label>近三年科技成果转化年平均数（项）<span class="hint">≥5项 25-30分；≥4项 19-24；≥3项 13-18；≥2项 7-12；≥1项 1-6</span></label><input type="number" id="transfer" value="5" min="0"></div>
+</div>
+
+<div style="margin-top:16px"><label>研究开发组织管理水平（勾选已具备项，各计满档）</label>
+  <div class="chk"><input type="checkbox" id="org0" checked><label for="org0" style="margin:0">① 研发组织管理制度 + 研发投入核算体系 + 研发费用辅助账（≤6分）</label></div>
+  <div class="chk"><input type="checkbox" id="org1" checked><label for="org1" style="margin:0">② 内部研发机构 + 科研条件 + 产学研合作（≤6分）</label></div>
+  <div class="chk"><input type="checkbox" id="org2"><label for="org2" style="margin:0">③ 成果转化组织实施与激励奖励制度 + 开放式创新创业平台（≤4分）</label></div>
+  <div class="chk"><input type="checkbox" id="org3" checked><label for="org3" style="margin:0">④ 科技人员培养进修/技能培训/人才引进 + 绩效评价奖励制度（≤4分）</label></div>
+</div>
+
+<div class="grid" style="margin-top:16px">
+  <div><label>近三年净资产（万元）<span class="hint">年末数：第一年 / 第二年 / 第三年</span></label>
+    <div style="display:flex;gap:8px"><input type="number" id="na1" value="800"><input type="number" id="na2" value="950"><input type="number" id="na3" value="1200"></div></div>
+  <div><label>近三年销售收入（万元）<span class="hint">同上三年口径</span></label>
+    <div style="display:flex;gap:8px"><input type="number" id="rev1" value="2600"><input type="number" id="rev2" value="3000"><input type="number" id="rev3" value="3500"></div></div>
+</div>
+
+<div style="margin-top:24px"><button onclick="run()">开始自评</button>
+  <span class="hint" style="margin-left:12px">数据只在本机浏览器计算，不上传</span></div>
+
+<div id="result"></div>
+
+<footer>
+  本工具依据公开政策文件编制，结果为<b>区间估算</b>，最终以专业评估及专家评审结论为准。<br>
+  认定依据：《高新技术企业认定管理办法》国科发火〔2016〕32号；《高新技术企业认定管理工作指引》国科发火〔2016〕195号。
+</footer>
+</div></main>
+
+<script>
+/*ENGINE-START*/
+var B={先进性:{"高":[7,8],"较高":[5,6],"一般":[3,4],"较低":[1,2],"无":[0,0]},
+       核心作用:{"强":[7,8],"较强":[5,6],"一般":[3,4],"较弱":[1,2],"无":[0,0]}};
+var QTY1=[7,8], QTY2={"ge5":[5,6],"3_4":[3,4],"1_2":[1,2],"0":[0,0]};
+var TRANSFER=[[5,[25,30]],[4,[19,24]],[3,[13,18]],[2,[7,12]],[1,[1,6]],[0,[0,0]]];
+var GROWTH=[[0.35,[9,10]],[0.25,[7,8]],[0.15,[5,6]],[0.05,[3,4]]];
+
+function growthBand(r){
+  if(r===null||r===undefined) return null;
+  if(r<=0) return [0,0];
+  for(var i=0;i<GROWTH.length;i++){ if(r>=GROWTH[i][0]) return GROWTH[i][1]; }
+  return [1,2];
+}
+function growthRate(y1,y2,y3){
+  if(y1===0){ if(y2===0) return 0; return (y3/y2)-1; }
+  if(y2===0) return -1;
+  return 0.5*(y2/y1 + y3/y2) - 1;
+}
+function checkGates(d){
+  var g=[], out=[];
+  out.push([1,"注册成立满一年", d.years>=1, "注册 "+d.years+" 年"]);
+  var hasIP=(d.ip1+d.ip2)>0;
+  out.push([2,"拥有核心支持作用知识产权所有权", hasIP&&d.ipOwned, "Ⅰ类 "+d.ip1+" 件 / Ⅱ类 "+d.ip2+" 件"]);
+  out.push([3,"技术属《国家重点支持的高新技术领域》", d.inField, ""]);
+  var rs=d.totalStaff>0 ? d.techStaff/d.totalStaff : 0;
+  out.push([4,"科技人员占比 ≥10%", rs>=0.10, (rs*100).toFixed(1)+"%  （"+d.techStaff+"/"+d.totalStaff+"）"]);
+  var need = d.lastRev<=5000 ? 0.05 : (d.lastRev<=20000 ? 0.04 : 0.03);
+  var rr = d.rev3sum>0 ? d.rd3sum/d.rev3sum : 0;
+  out.push([5,"研发费占销售收入 ≥"+(need*100).toFixed(0)+"%", rr>=need, (rr*100).toFixed(2)+"%（最近一年收入 "+d.lastRev+" 万）"]);
+  var ri = d.rd3sum>0 ? d.rdDom/d.rd3sum : 0;
+  out.push([6,"境内研发费占比 ≥60%", ri>=0.60, (ri*100).toFixed(1)+"%"]);
+  var hi = d.totalRev>0 ? d.hiRev/d.totalRev : 0;
+  out.push([7,"高新收入占比 ≥60%", hi>=0.60, (hi*100).toFixed(1)+"%"]);
+  out.push([8,"前一年无重大安全/质量事故、严重环境违法", d.noViol, ""]);
+  return out;
+}
+function scoreAll(d){
+  var items=[], ipL=0, ipH=0, b;
+  b=B.先进性[d.adv]||[0,0]; ipL+=b[0]; ipH+=b[1]; items.push(["知识产权","技术的先进程度",b[0],b[1]]);
+  b=B.核心作用[d.core]||[0,0]; ipL+=b[0]; ipH+=b[1]; items.push(["知识产权","核心支持作用",b[0],b[1]]);
+  if(d.ip1>=1){ b=QTY1; }
+  else { var t2=d.ip2, k = t2>=5?"ge5":(t2>=3?"3_4":(t2>=1?"1_2":"0")); b=QTY2[k]; }
+  ipL+=b[0]; ipH+=b[1]; items.push(["知识产权","知识产权数量",b[0],b[1]]);
+  b = d.obtainSelf? [1,6] : [1,3]; ipL+=b[0]; ipH+=b[1]; items.push(["知识产权","获得方式",b[0],b[1]]);
+  if(d.joinStd){ ipL+=1; ipH+=2; items.push(["知识产权","参与制定标准（加分）",1,2]); }
+  ipL=Math.min(ipL,30); ipH=Math.min(ipH,30);
+  var n=d.transfer, tb=[0,0];
+  for(var i=0;i<TRANSFER.length;i++){ if(n>=TRANSFER[i][0]){ tb=TRANSFER[i][1]; break; } }
+  items.push(["科技成果转化","近三年年均 "+n+" 项",tb[0],tb[1]]);
+  var caps=[6,6,4,4], orgH=0;
+  for(var j=0;j<4;j++){ if(d["org"+j]) orgH+=caps[j]; }
+  var orgL=Math.ceil(orgH*0.6);
+  items.push(["研发组织管理","按已具备项估算",orgL,orgH]);
+  var naR=growthRate(d.na1,d.na2,d.na3), srR=growthRate(d.rev1,d.rev2,d.rev3y);
+  var bna=growthBand(naR), bsr=growthBand(srR);
+  var grL=bna[0]+bsr[0], grH=bna[1]+bsr[1];
+  items.push(["企业成长性","净资产增长率 "+(naR*100).toFixed(1)+"%",bna[0],bna[1]]);
+  items.push(["企业成长性","销售收入增长率 "+(srR*100).toFixed(1)+"%",bsr[0],bsr[1]]);
+  return {items:items, ip:[ipL,ipH], transfer:tb, org:[orgL,orgH], growth:[grL,grH],
+          low:ipL+tb[0]+orgL+grL, high:ipH+tb[1]+orgH+grH, naRate:naR, srRate:srR};
+}
+function verdictOf(gates, s){
+  var failed=gates.filter(function(x){return !x[2];});
+  if(failed.length) return {level:"bad", text:"硬门槛未过 —— 先补门槛，谈分数没有意义", failed:failed};
+  if(s.low>=71) return {level:"ok", text:"大概率通过（保守估算已 ≥71 分）"};
+  if(s.high<=70) return {level:"bad", text:"目前分数不足 —— 即使各项都取最高档也只有 "+s.high+" 分，需补 "+(71-s.high)+" 分以上"};
+  return {level:"warn", text:"临界（保守 "+s.low+" 分 / 乐观 "+s.high+" 分，通过线 71 分）—— 关键是收窄区间：把下面的短板补上"};
+}
+/*ENGINE-END*/
+
+function num(id){ var v=parseFloat(document.getElementById(id).value); return isNaN(v)?0:v; }
+function ck(id){ return document.getElementById(id).checked; }
+
+function run(){
+  var d={years:num("years"), ip1:num("ip1"), ip2:num("ip2"),
+         ipOwned:ck("ipOwned"), inField:ck("inField"), noViol:ck("noViol"),
+         techStaff:num("techStaff"), totalStaff:num("totalStaff"),
+         rev3sum:num("rev3sum"), lastRev:num("lastRev"), rd3sum:num("rd3sum"), rdDom:num("rdDom"),
+         hiRev:num("hiRev"), totalRev:num("totalRev"),
+         adv:document.getElementById("adv").value, core:document.getElementById("core").value,
+         obtainSelf:document.getElementById("obtain").value==="1", joinStd:false,
+         transfer:num("transfer"),
+         org0:ck("org0"), org1:ck("org1"), org2:ck("org2"), org3:ck("org3"),
+         na1:num("na1"), na2:num("na2"), na3:num("na3"),
+         rev1:num("rev1"), rev2:num("rev2"), rev3y:num("rev3")};
+  var gates=checkGates(d), s=scoreAll(d), v=verdictOf(gates,s);
+
+  var h='<h2>三、自评结果</h2>';
+  h+='<div class="verdict"><span class="big '+(v.level==="ok"?"ok":v.level==="bad"?"bad":"warn")+'">'+v.text+'</span>'+
+     '<span class="hint">自评区间：<b>'+s.low+' – '+s.high+' 分</b>（线 71 分）</span></div>';
+  var lo=Math.max(0,Math.min(100,s.low)), hi=Math.max(0,Math.min(100,s.high));
+  h+='<div class="bar"><i style="left:'+lo+'%;width:'+(hi-lo)+'%"></i><u></u></div>';
+  h+='<div class="scale"><span>0</span><span>通过线 71</span><span>100</span></div>';
+
+  h+='<h2>四、8 条硬门槛</h2><table><tr><th>#</th><th>门槛</th><th>结果</th><th>你填的数</th></tr>';
+  gates.forEach(function(g){
+    h+='<tr><td>'+g[0]+'</td><td>'+g[1]+'</td><td class="'+(g[2]?"ok":"bad")+'">'+(g[2]?"✅ 通过":"❌ 未过")+'</td><td>'+(g[3]||"—")+'</td></tr>';
+  });
+  h+='</table>';
+
+  h+='<h2>五、100 分测算明细</h2><table><tr><th>模块</th><th>评分项</th><th>区间</th></tr>';
+  s.items.forEach(function(it){ h+='<tr><td>'+it[0]+'</td><td>'+it[1]+'</td><td>'+it[2]+' – '+it[3]+'</td></tr>'; });
+  h+='<tr><th>合计</th><th>知识产权 '+s.ip[0]+'-'+s.ip[1]+' / 成果转化 '+s.transfer[0]+'-'+s.transfer[1]+
+     ' / 组织管理 '+s.org[0]+'-'+s.org[1]+' / 成长性 '+s.growth[0]+'-'+s.growth[1]+
+     '</th><th>'+s.low+' – '+s.high+'</th></tr></table>';
+
+  h+='<h2>六、差距与补法</h2><table><tr><th>短板</th><th>怎么补</th></tr>';
+  var fixes=[];
+  gates.forEach(function(g){ if(!g[2]) fixes.push([g[1], ({
+    4:"科技人员占比不足：核定口径为「累计实际工作 183 天以上」，含在职/兼职/临时聘用 —— 先把人员台账按口径重算，很多人是「没算进去」。",
+    5:"研发费占比不足：按研发费归集八大项重新归集（委托外部研发按实际发生额 80% 计入）；其他费用一般不超过研发总费用 10%。",
+    6:"境内研发费占比不足 60%：调整境内外研发投入结构。",
+    7:"高新收入占比不足 60%：梳理产品/服务清单，把符合《技术领域》的收入单独归集。",
+    2:"知识产权不足：优先补 1 件发明专利（Ⅰ类 1 项即可拿数量项最高档）；Ⅱ类需 5 项以上才到第二档。"
+  }[g[0]]||"按官方口径核实后补足")]); });
+  if(s.ip[1]<30) fixes.push(["知识产权未拿满（最高档 "+s.ip[1]+"/30）",
+     "数量项：Ⅰ类 1 件即最高档，Ⅱ类需 5 项以上；另有「参与制定国家/行业标准」加 1-2 分。先进性/支持作用由专家打分，靠技术材料质量争取。"]);
+  if(s.transfer[1]<30) fixes.push(["科技成果转化未拿满（最高 "+s.transfer[1]+"/30）",
+     "按近三年年平均数计：年均 ≥5 项才到 25-30 分档。一个知识产权对应一个成果，需配产品检测报告或合同发票作转化证明。"]);
+  if(s.org[0]<20) fixes.push(["研发组织管理未拿满（"+s.org[0]+"/20 起步）",
+     "四项制度文件是「有就给分」项：研发管理制度+辅助账 / 内部研发机构+产学研 / 成果转化激励+开放平台 / 科技人员培养+绩效奖励。补齐制度文件即可提分。"]);
+  if(s.growth[1]<20) fixes.push(["企业成长性（最高 "+s.growth[1]+"/20）",
+     "净资产增长率与销售收入增长率各 10 分，≥35% 才到最高档；增长率按三年口径计算，属经营结果，短期难改 —— 但销售收入口径可核实是否漏计。"]);
+  if(!fixes.length) fixes.push(["未发现明显短板","各项均已接近上限，重点转为把证明材料做扎实。"]);
+  fixes.forEach(function(f){ h+='<tr><td>'+f[0]+'</td><td>'+f[1]+'</td></tr>'; });
+  h+='</table>';
+
+  h+='<div class="cta"><h3>下一步</h3>'+
+     '<p>把这份结果发给我们，可免费出具一份<b>《差距补强清单》</b>，逐条告诉你每项差多少分、怎么补。</p>'+
+     '<p>电话：010-65150974　手机：15321374076 / 13911268604</p>'+
+     '<p><button class="ghost" onclick="copyOut()">复制自评结果（可直接发给我们）</button></p></div>';
+  h+='<div class="disc">本结果为区间估算，评分项中「技术先进程度」「核心支持作用」等由专家评审确定，不同专家可能落在区间内不同位置；研发组织管理按已具备项估算，专家按质量综合打分。最终以专业评估及认定机构结论为准。</div>';
+
+  var r=document.getElementById("result");
+  r.innerHTML=h; r.style.display="block";
+  r.scrollIntoView({behavior:"smooth"});
+  window.__summary = {gates:gates, s:s, v:v};
+}
+
+function copyOut(){
+  var o=window.__summary; if(!o) return;
+  var t="【高新技术企业认定 · 自评结果】\n";
+  t+="结论："+o.v.text+"\n自评区间："+o.s.low+" – "+o.s.high+" 分（通过线 71）\n\n";
+  t+="8 条硬门槛：\n";
+  o.gates.forEach(function(g){ t+=(g[2]?"  通过 ":"  未过 ")+g[0]+". "+g[1]+"  "+(g[3]||"")+"\n"; });
+  t+="\n100 分明细：\n";
+  o.s.items.forEach(function(it){ t+="  ["+it[0]+"] "+it[1]+"："+it[2]+"-"+it[3]+"\n"; });
+  t+="  合计："+o.s.low+" – "+o.s.high+"\n";
+  try{ navigator.clipboard.writeText(t).then(function(){alert("已复制，可直接粘贴发给我们");},
+       function(){prompt("手动复制：",t);}); }catch(e){ prompt("手动复制：",t); }
+}
+</script>
+</body>
+</html>
