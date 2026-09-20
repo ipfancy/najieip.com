@@ -1380,6 +1380,43 @@
     "najie/blog/nongye-pinpai-ip-buju-2026.html",
     "najie/gaoqi-selfcheck.html"
    ]
+  },
+  {
+   "date": "2026-09-20",
+   "run": "22:00 每日运营",
+   "commit": "e11b023",
+   "checks": {
+    "core_pages_http": {
+     "najieip.com": 200,
+     "/mili/": 200,
+     "/najie/": 200,
+     "/blog/": 200,
+     "sitemap.xml": 200,
+     "llms.txt": 200
+    },
+    "content_db_recent": [
+     "ART-2026-0091",
+     "ART-2026-0090",
+     "ART-2026-0089",
+     "ART-2026-0088"
+    ],
+    "brand_index_coverage": "4/4 全部在对应品牌索引",
+    "main_index_gap": "1 处（0920 新文）→ 已补卡 162→163",
+    "structure_verify": "11 项全 PASS（depth=0 / depth=2 卡片 163 / malformed=0 / dup=0 / md_leak=0 / 日期降序）",
+    "live_bytes": [
+     "/blog/ 103207B IDENTICAL",
+     "/mili/blog/ 104999B IDENTICAL",
+     "/najie/blog/ 66025B IDENTICAL"
+    ],
+    "sitemap": "247 loc · lastmod 100% · 含 0920 新文",
+    "articles_json_guard": "136/136 零违例 · 首页 top6 全部落地",
+    "seocheck": "全部通过（4 段）"
+   },
+   "fixes": [
+    "主索引补卡《家族信托被存款扣走4143万》(mili/20260920-family-wealth-isolation-three-firewalls)",
+    "补卡脚本首版漏 </div>，被结构终验（div 深度归零 + depth=2 卡片计数）拦下后修正"
+   ],
+   "verdict": "healthy"
   }
  ]
 }
