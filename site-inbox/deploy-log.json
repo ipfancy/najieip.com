@@ -1457,6 +1457,39 @@
    },
    "marker": "_published/last_site_deploy 推进至 2026-09-21 10:36；复扫为空（幂等）",
    "seo": "sitemap 250 loc · 三机构索引卡 307→309"
+  },
+  {
+   "date": "2026-09-21",
+   "time": "17:10 (r4 收口)",
+   "agent": "siteops（门丞）",
+   "round": "r4 派单（如己）",
+   "commit": "086e48c（发布）",
+   "action": "官网落款统一标准三行 + 《宁夏劳务碰瓷》补落自有渠道",
+   "classification": "口径整改 / 渠道后手 / 无群发",
+   "scope": [
+    "① 落款统一（只改落款块，正文一字未动）：mili/blog ai-training-copyright-fair-use-2026、uspto-foreign-representation-rule-2026、yanglao-will-white-paper（保留该页行内样式，仅换文字）＋aipunajie/blog catl-patent-moat-profit-2026（该篇实际在 aipunajie/blog，非 mili）；旧『何自刚 · 北京觅理律师事务所创始合伙人 · 知识产权20余年、律师执业自2015年起 · najieip.com』→ 标准三行：010-65150974 / 13911268604｜何自刚 | 知识产权律师 | 爱普纳杰·觅理·纳杰｜免责行",
+    "② 时效稿补落自有渠道：《宁夏劳务碰瓷》（2026-09-10 首发）微博版 110133 不可见第 5 天、本机无微博登录通道 → 落官网 mili/blog/20260910-ningxia-labor-extortion.html，稿源＝市场部/知乎发布版_20260910/知乎_劳务碰瓷_发布版_20260910.md（知乎发布版正体）",
+    "③ 四件套齐备：文章页 + 品牌索引卡(86→87)/JSON-LD blogPost(78→79) + 主索引卡(165→166) + articles.json(191→192) + sitemap loc(252→253) + 建站指引 llms.txt 未改（无需）",
+    "④ 公众号关键词『用工体检』：平台无设置接口（POST /cgi-bin/add_autoreply_info → HTTP 404，官方文档自动回复接口清单仅『获取』一条）→ 按派单②停在『需主管理员后台扫码操作』，原 18 条规则/关注语/消息默认回复零改动（回读实测自证）",
+    "⑤ 清理接线前 .bak 备份 4 份（articles.json / blog/index.html / mili/blog/index.html / sitemap.xml），diff 确认仅含本次新增，无未合并改动"
+   ],
+   "verification": {
+    "commit_push": "086e48c；push 55a7c28..086e48c → origin/main 成功",
+    "http_200": {
+     "mili/blog/ai-training-copyright-fair-use-2026.html": 200,
+     "mili/blog/uspto-foreign-representation-rule-2026.html": 200,
+     "aipunajie/blog/catl-patent-moat-profit-2026.html": 200,
+     "mili/blog/yanglao-will-white-paper.html": 200,
+     "mili/blog/20260910-ningxia-labor-extortion.html": 200
+    },
+    "footer_grep": "5 页逐页 grep：『010-65150974 / 13911268604』1/1、『何自刚 | 知识产权律师 | 爱普纳杰·觅理·纳杰』1/1、免责行 1/1；旧口径『创始合伙人』残留 0",
+    "live_bytes": "5 页线上较本地均 +367B，diff 后确认唯一差异＝Cloudflare 自动注入 beacon 脚本一行（beacon.min.js/v31edd6df…），正文与落款逐字节一致",
+    "structure": "新文 JSON-LD 2 段（Article+BreadcrumbList）可解析；品牌索引 87 卡 / div 198-198；主索引 166 卡 / div 334-334；articles.json 192/192 唯一；sitemap XML 解析通过 253 loc 唯一",
+    "wechat_autoreply": "get_current_autoreply_info 回读 18 条内容逐条一致、关注语与消息默认回复字节未变、开关仍 1/1；add_autoreply_info 404（平台未开放写接口，非权限问题）",
+    "revert_path": "git revert 086e48c"
+   },
+   "marker": "本轮无群发（freepublish 未调用）、无新建稿件（③为既有稿源补落）；未回滚已推送 commit",
+   "seo": "sitemap 253 loc（+1 mili）· 三机构索引卡 +1（mili）；补落稿 lastmod 2026-09-21"
   }
  ]
 }
