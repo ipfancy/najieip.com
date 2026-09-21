@@ -1417,6 +1417,46 @@
     "补卡脚本首版漏 </div>，被结构终验（div 深度归零 + depth=2 卡片计数）拦下后修正"
    ],
    "verdict": "healthy"
+  },
+  {
+   "date": "2026-09-21",
+   "time": "10:36",
+   "agent": "门丞",
+   "round": "publish-queue-scan",
+   "commit": "7b0ad7e（发布）",
+   "action": "发布队列扫描得 2 篇新稿，按主体归属铁律全部发往 najie/blog/（商标线）：《商标忘续展 十年作废》→ 20260921-trademark-renewal-lapse-ten-years.html；《地址没改 商标被撤》→ 20260921-trademark-address-change-cancellation.html",
+   "classification": {
+    "rule": "标题/正文关键词：商标续展·宽展期·商标法40/50条（纳杰商标线）；商标变更·公告送达·撤三答辩（纳杰商标线）",
+    "result": {
+     "najie": 2,
+     "aipunajie": 0,
+     "mili": 0
+    },
+    "articles_dir": "not touched（articles/ 仅存历史跳转页，本轮 0 新增）"
+   },
+   "scope": [
+    "① 源稿 2 枚 _visual.html 由邮件式行内样式转换为站内单文件页 house-style（najie 族配色 #1a5276 / 去行内 style / 编号小节转 h2 / 尾部统一 CTA，源稿自带署名块剔除）",
+    "② 四件套齐备：文章页 + articles.json（187→189）+ sitemap loc（248→250）+ 品牌索引卡/JSON-LD blogPost（66→68）",
+    "③ 主索引 blog/index.html 补卡 2 张（163→165），置顶按日期降序",
+    "④ 无图片资源：两篇源稿无 <img>，队列内唯一图片 mili_jurisdiction_map.png 属觅理稿，未复制、未跨主体",
+    "⑤ 未向无主体目录 articles/ 新增任何文件"
+   ],
+   "verification": {
+    "push": "git fetch 后 0/0 无分叉；push 首试成功 383b1ab..7b0ad7e；ls-remote refs/heads/main = 7b0ad7e 与本地 HEAD 一致",
+    "http_200": {
+     "najie/blog/20260921-trademark-renewal-lapse-ten-years.html": 200,
+     "najie/blog/20260921-trademark-address-change-cancellation.html": 200,
+     "najie/blog/": 200,
+     "blog/": 200
+    },
+    "byte_identical": "curl 取回 4 份线上文件与本地 repo 逐字节 diff 一致（2 篇文章页 + 2 个索引页）",
+    "jsonld_parse": "两篇文章页各 2 段 JSON-LD（Article + BreadcrumbList）、两索引各 1 段（Blog）——全部 json.loads 通过",
+    "structure": "品牌索引直子 article-card 68→70；主索引 163→165；div 结构 balance 通过；md 泄漏('**') 0；卡内残留 style 0",
+    "articles_json": "189 条 / unique 189；sitemap 250 loc / unique 250（XML 解析通过）",
+    "revert_path": "git revert 7b0ad7e"
+   },
+   "marker": "_published/last_site_deploy 推进至 2026-09-21 10:36；复扫为空（幂等）",
+   "seo": "sitemap 250 loc · 三机构索引卡 307→309"
   }
  ]
 }
