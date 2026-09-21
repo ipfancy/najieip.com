@@ -1513,6 +1513,24 @@
     "articles-quarantine-20260921.json"
    ],
    "note": "cards: blog/index.html 169 / najie 72 / mili 87 / aipunajie 24；sitemap 253 loc"
+  },
+  {
+   "date": "2026-09-22",
+   "time": "07:50",
+   "commit": "pending",
+   "trigger": "门丞发布卡 t_5a3609ad · 刑民交叉新规系列 P0《不立案，也能索赔》→ mili/blog（如己放行基线 md5 d5086a0d347102c2bfbffdd11cf6cebd）",
+   "changes": [
+    "稿件 20260922_普法文_不立案也能索赔.md（md5 d5086a0d347102c2bfbffdd11cf6cebd，5097 字节／正文 1482 汉字）→ mili/blog/20260922-criminal-non-filing-civil-claim.html + site-inbox 留档",
+    "站点模板：description/keywords/og 五件套/Twitter Card/canonical/JSON-LD Article+BreadcrumbList/Cloudflare beacon",
+    "落款＝标准三行（010-65150974 / 13911268604 ＋ 何自刚 | 知识产权律师 | 爱普纳杰·觅理·纳杰 ＋ 斜体免责行），与公众号「不署机构名」口径分开",
+    "mili/blog/index.html 顶部卡片 + blogPost；根 blog/index.html 卡片；articles.json +1；sitemap.xml +1 loc（只增不删）"
+   ],
+   "verification": {
+    "md5_source": "d5086a0d347102c2bfbffdd11cf6cebd",
+    "cjk": 1482,
+    "body_text_identical": true,
+    "signature_three_lines": true
+   }
   }
  ]
 }
