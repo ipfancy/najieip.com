@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-09-22T22:07:48",
+  "checked_at": "2026-09-23T22:05:39",
   "pages": [
     {
       "url": "https://najieip.com/",
-      "status": 0,
+      "status": 200,
       "size_kb": "?",
-      "ok": false
+      "ok": true
     },
     {
       "url": "https://najieip.com/blog/",
@@ -15,9 +15,9 @@
     },
     {
       "url": "https://najieip.com/mili/",
-      "status": 0,
+      "status": 200,
       "size_kb": "?",
-      "ok": false
+      "ok": true
     },
     {
       "url": "https://najieip.com/najie/",
@@ -33,9 +33,9 @@
     },
     {
       "url": "https://najieip.com/fr/",
-      "status": 0,
+      "status": 200,
       "size_kb": "?",
-      "ok": false
+      "ok": true
     }
   ],
   "files": [
@@ -61,11 +61,11 @@
     }
   ],
   "sitemap": {
-    "url_count": 255,
-    "with_lastmod": 255,
+    "url_count": 265,
+    "with_lastmod": 265,
     "without_lastmod": 0,
-    "sitemap_last_modified": "Tue, 22 Sep 2026 14:03:22 GMT",
-    "blog_count": 224
+    "sitemap_last_modified": "Wed, 23 Sep 2026 14:04:06 GMT",
+    "blog_count": 234
   },
   "jsonld": {
     "https://najieip.com/": true,
