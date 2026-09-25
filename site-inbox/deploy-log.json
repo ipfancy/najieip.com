@@ -1661,6 +1661,28 @@
     "generator_fix": "wechat-distribute：read_article_body() 统一剥离 frontmatter + 微博链接改按主体目录；6 渠道导出件重跑实测 ALL PASS，单测 5/5，残留未修读取点 0",
     "root_cause_sitemap": "守护窗口（01/04/10/16/22 时）与发布窗（05:0x）错位 + articles.json 46 条无页面条目 → 守护静默；loc 增量实证：09-21~09-25 均由晨报人工补录，窗口内守护仅成功 1 次（09-23 22:02 +7）"
    }
+  },
+  {
+   "date": "2026-09-25",
+   "time": "22:0x CST",
+   "type": "nightly-ops (cron)",
+   "commit": "293b085",
+   "summary": "22:00 夜检：核心 6 页终态 200（sitemap.xml 首轮 000、robots.txt/najie//fr/ 首轮 0，全部重试 3/3 通 = 瞬断非故障）；articles.json 隔离定稿提交（206→156，守卫 156/156 零违例，首页 slice(0,6) 六条页面四件齐备）；缺口扫描 1 处候选经核为假缺口（najie/uspto-tbmp-2026-update.html 是跳转壳指向 mili 精修页，主索引已收 /mili/blog/ 路径）；近 6 天 21 个新增文章页房屋四件全 PASS（第 5 例裸发布未出现）；sitemap 267 loc 线上字节一致 + 看门测试 rc=0 静默。无新增修复项。",
+   "changes": [
+    "articles.json：隔离条目定稿提交（删 50 条无页面条目，206→156）",
+    "articles-quarantine-20260925.json：隔离档留档（可逆）",
+    "site-inbox/seocheck-report.json：常规刷新",
+    "site-inbox/daily-0925-check.py：巡检脚本留档（卡片计数/缺口扫描/房屋四联判据）",
+    "未改动：sitemap.xml（267 loc 不变）/ blog index / CNAME / DNS"
+   ],
+   "verify": {
+    "core_pages": "6/6 终态 200（首轮 5/6 含 sitemap 000，重试 3/3 全 200；seocheck 另报 home/robots/najie//fr/ 4 处 0 亦全部重试 200）",
+    "byte_compare": "article 2/2 IDENTICAL（11,574B / 10,420B）、blog/index 115,393B IDENTICAL、sitemap.xml cmp IDENTICAL（267 loc）",
+    "index_cards": "main 183 / mili 97 / najie 76；09-25、09-24 两篇近 2 日 published 文章主索引与品牌索引卡片均在",
+    "malformed_scan": "articles.json top6 + 近 6 天 21 个新增页：house(style||/style.css)、h1=1、ld>=1、og:image ✓ 全 PASS，bad=0",
+    "articles_json_guard": "156 总 / 156 合格 / 0 违例（--check）",
+    "sitemap_watchdog": "bash ~/.hermes/scripts/sitemap-auto.sh → exit 0、loc 267 不变（无回灌）"
+   }
   }
  ]
 }
