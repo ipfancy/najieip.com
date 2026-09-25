@@ -1,5 +1,13 @@
 User-agent: *
 Allow: /
+
+# ── Content Signals（GEO / AI 引用）──
+# 来源：contentsignals.org 规范（Cloudflare 等推动）
+# search=yes   ：允许进搜索索引
+# ai-input=yes ：允许作为 AI 回答/引用的输入（我们要被引用，所以要 yes）
+# ai-train=no  ：不允许用于模型训练
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
 Sitemap: https://najieip.com/sitemap.xml
 
 # ── AI / LLM 爬虫 ──
