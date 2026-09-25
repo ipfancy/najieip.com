@@ -1638,6 +1638,29 @@
     "ecs": "端口 22/80/443/9003 LISTENING（80/443=HTTP.sys PID 4，9003=uvicorn PID 6012 未重启）；C 盘可用 13.7GB/39.9GB=34%；web.config LastWriteTime=2026-09-03 今日零改动；3389 RDP 对公网可达（观察，建议安全组限源）",
     "baidu_push_today": "06:01 批次 10/10 成功（remain=0, success=10），队列不含 09-25 新文"
    }
+  },
+  {
+   "date": "2026-09-25",
+   "time": "13:30 CST",
+   "type": "repair-4th-bare-publish + index-cards + guard-hardening",
+   "commit": "8c6e692 / 5c7caa3（SiteOps 交互式会话修复）",
+   "summary": "闭环晨报移交的 3 项 P1：（1）第 4 例「裸发布畸形页」——今日新文 mili/blog/20260925-… 原 8,294B、h1=0/h2=0/JSON-LD=0/无 og:image/keywords、description 复读标题 → 按同日同品牌精修页（09-24）房屋模板重建，正文与 md 源逐段 0 差异，补 h1 + 8 条描述性 h2 路标 + Article/BreadcrumbList JSON-LD + og/twitter/keywords/canonical，上线 11,941B（本地 11,574 + CF beacon 367）。（2）索引补卡：mili 栏目索引 96→97（BlogPosting JSON-LD 88→89）、主索引 182→183。（3）sitemap 守护根因加固：update-sitemap.py 原只从 articles.json 取数，46 条「页面不存在」条目致静默无产出（09-21~09-25 的 loc 全靠 08:0x 晨报人工补录）→ 双副本同改，新增品牌博客目录扫描数据源。另修复生成器层 frontmatter 泄漏（wechat-distribute 全 6 渠道导出件）。",
+   "changes": [
+    "mili/blog/20260925-policy-cash-value-execution-2024-instance.html：重建（8,294 → 11,574 B 本地；线上 11,941 B），正文 0 字改动",
+    "mili/blog/index.html：+1 卡（97）+ blogPost JSON-LD 88→89",
+    "blog/index.html：+1 卡（182→183）",
+    "update-sitemap.py（仓库 + ~/.hermes/scripts 双副本）：新增目录扫描数据源",
+    "site-inbox/：diag-0925-coverage.py / fix-0925-page.py / gen-0925-index-cards.py / verify-0925-live.py 留档",
+    "未改动：sitemap.xml（267 loc 不变，看门测试静默 exit 0）/ articles.json / CNAME / DNS"
+   ],
+   "verify": {
+    "article_live": "h1=1 / h2=8 / ld+json=2 / og:image ✓ / keywords ✓（curl ?cb= 实抓，2 次轮询收敛）",
+    "byte_compare": "本地 11,574B vs 线上 11,941B，Δ=367B 全部为 Cloudflare beacon（既有判据）",
+    "index_cards": "mili 索引卡计数 97、主索引 183，新卡均位于 body 首卡；每卡以 <h2><a href= 起、malformed=0、div 深度归零、markdown 星号 0",
+    "sitemap": "267 loc，线上含该文；加固后 --check 有效待新增 0 条（51 条目录候选全为已收录或 noindex 壳，未误加）；看门测试 rc=0 静默",
+    "generator_fix": "wechat-distribute：read_article_body() 统一剥离 frontmatter + 微博链接改按主体目录；6 渠道导出件重跑实测 ALL PASS，单测 5/5，残留未修读取点 0",
+    "root_cause_sitemap": "守护窗口（01/04/10/16/22 时）与发布窗（05:0x）错位 + articles.json 46 条无页面条目 → 守护静默；loc 增量实证：09-21~09-25 均由晨报人工补录，窗口内守护仅成功 1 次（09-23 22:02 +7）"
+   }
   }
  ]
 }
