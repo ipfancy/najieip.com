@@ -80,6 +80,32 @@ def main():
         seen.add(u)
         json_urls[f"{HOST}{u}"] = a.get("date", today)
 
+    # 2026-09-25 加固（SiteOps）：除 articles.json 外，**同时扫描品牌博客目录**收录已落地文章页。
+    # 根因：本守护原只从 articles.json 取数 → 上游写盘延迟 / 实体前缀错位（46 条「页面不存在」条目）
+    # 时静默无产出；09-21~09-25 的 loc 全靠 08:0x 晨报人工补录，守护在窗口内仅成功一次（09-23 22:02）。
+    # 判据（保守，仍走下方同一 validate()）：文件名 ^YYYYMMDD- 且非 index、页面存在、非跳转壳。
+    SCAN_DIRS = ("blog", "mili/blog", "najie/blog", "aipunajie/blog", "en/blog", "fr/blog")
+    scan_added = 0
+    for _d in SCAN_DIRS:
+        _full = os.path.join(SITE, _d)
+        if not os.path.isdir(_full):
+            continue
+        for _fn in sorted(os.listdir(_full)):
+            if _fn == "index.html" or not re.match(r"^\d{8}-.+\.html$", _fn):
+                continue
+            _u = f"{HOST}/{_d}/{_fn}"
+            if _u in json_urls:
+                continue
+            try:
+                _mtime = datetime.fromtimestamp(
+                    os.path.getmtime(os.path.join(_full, _fn))).strftime("%Y-%m-%d")
+            except Exception:
+                _mtime = today
+            json_urls[_u] = _mtime
+            scan_added += 1
+    if scan_added:
+        print(f"目录扫描补充候选: {scan_added} 条（articles.json 之外，仍需通过存在性/跳转壳校验）")
+
     # 读取现有 sitemap
     if not os.path.exists(SITEMAP):
         print(f"❌ sitemap 不存在: {SITEMAP}")
