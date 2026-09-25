@@ -1612,6 +1612,32 @@
     "ogcheck_core4": "4/4 通过 0 issues",
     "recent2days_coverage": "近 2 日 3 篇已发布：主索引/品牌索引/articles.json/sitemap/线上 全 True"
    }
+  },
+  {
+   "date": "2026-09-25",
+   "time": "08:0x CST",
+   "type": "morning-healthcheck",
+   "commit": "7fd8a9d（siteops 0925 晨报）",
+   "summary": "每日站点健康巡检：najieip.com 核心 9 页全 200（首屏 0.56–0.97s）、SSL 85 天、Pages built=HEAD；bjnajie.com HTTP/HTTPS 双 301 正常、SSL 31 天；licta :443 → /web/login 200、SSL 67 天；百度今日 10/10（配额用尽）。修复 1 项 P1：09-25 新文漏进 sitemap → update-sitemap.py 增量补录 1 条（只增不删），线上 266→267 loc。新发现 1 项 P1（移交）：09-25 新文无 h1、无 JSON-LD，且 mili 栏目索引 + 主索引 2 处静态卡缺失（首页卡片由 JS 依 articles.json 动态渲染，非缺陷——更正早前提交信息中「三索引」口径）。新增 1 项自愈机制：百度推送前实时合规门禁。",
+   "changes": [
+    "sitemap.xml：+1 条（mili/blog/20260925-policy-cash-value-execution-2024-instance.html，lastmod 2026-09-25），266→267 loc；XML 良构、0 重复、本地↔线上双向一致",
+    "site-inbox/deploy-log.json：追加本条目（0925 晨检）",
+    "口径修正：ECS C:\\web\\new.bjnajie.com 实测不含站点页面（16 文件：web.config+校验文件+脚本）→ 纯跳转站，GitHub→ECS 内容同步对本套站点为空操作",
+    "口径修正：bjnajie.com 「HTTPS 超时待修复」已不成立（实测 80/443 双 301，实现为 IIS URL Rewrite 而非阿里云 URL 转发）",
+    "口径修正：najieip.com 百度浏览器 SSL 警告已由 Cloudflare 闭环（GTS 边缘证书 + Always Use HTTPS）",
+    "未改动：文章 HTML（内容产出边界）/ CNAME / DNS / IIS 配置 / articles.json / 各索引页"
+   ],
+   "verify": {
+    "core_pages": "9/9 HTTP 200（/ /en/ /blog/ /najie/ /mili/ /aipunajie/ /sitemap.xml /robots.txt /llms.txt）",
+    "sitemap": "267 loc，含该文；XML 良构；dupes=0；线上 grep 命中 1；Pages 构建 built @7fd8a9d3",
+    "pages_build": "status=built，最新构建 commit=7fd8a9d3（08:04 CST），= origin/main HEAD",
+    "ssl": "najieip GTS/WE1 → 12-19（85 天）verify=0；bjnajie DigiCert DV（SAN 含 www）→ 10-26（31 天）verify=0；licta → 12-01（67 天）",
+    "article_lint": "site_article_lint.py 前 14 篇：checked=14 failed=1（唯一 FAIL = 09-25 新文 h1=0 / ld=0）；09-24 文已 PASS（昨日修复生效）",
+    "new_article_registration": "articles.json ✓（1 条）| sitemap ✓（本次补录）| mili 栏目索引 ✗ | 主索引 /blog/ ✗ | 首页 = JS 动态渲染 ✓（非静态卡）| 线上 200 ✓",
+    "baidu_gate": "baidu_push.py 门禁 5 用例实测通过（T1 全拦/T2 混合/T3 栏目页正确跳过/T4 合规放行/T5 404 死链拦下），均未消耗配额（当日已用尽）",
+    "ecs": "端口 22/80/443/9003 LISTENING（80/443=HTTP.sys PID 4，9003=uvicorn PID 6012 未重启）；C 盘可用 13.7GB/39.9GB=34%；web.config LastWriteTime=2026-09-03 今日零改动；3389 RDP 对公网可达（观察，建议安全组限源）",
+    "baidu_push_today": "06:01 批次 10/10 成功（remain=0, success=10），队列不含 09-25 新文"
+   }
   }
  ]
 }
