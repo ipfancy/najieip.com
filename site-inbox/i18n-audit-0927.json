@@ -1,0 +1,58 @@
+[
+ {
+  "file": "en/index.html",
+  "desc_len": 218,
+  "desc_cjk": 0,
+  "title_cjk": 0,
+  "old_ip_only": false
+ },
+ {
+  "file": "fr/index.html",
+  "desc_len": 217,
+  "desc_cjk": 0,
+  "title_cjk": 0,
+  "old_ip_only": false
+ },
+ {
+  "file": "en/mili/index.html",
+  "desc_len": 194,
+  "desc_cjk": 12,
+  "title_cjk": 0,
+  "old_ip_only": true
+ },
+ {
+  "file": "fr/mili/index.html",
+  "desc_len": 209,
+  "desc_cjk": 12,
+  "title_cjk": 0,
+  "old_ip_only": true
+ },
+ {
+  "file": "en/najie/index.html",
+  "desc_len": 290,
+  "desc_cjk": 0,
+  "title_cjk": 0,
+  "old_ip_only": false
+ },
+ {
+  "file": "fr/najie/index.html",
+  "desc_len": 321,
+  "desc_cjk": 0,
+  "title_cjk": 0,
+  "old_ip_only": false
+ },
+ {
+  "file": "en/aipunajie/index.html",
+  "desc_len": 354,
+  "desc_cjk": 0,
+  "title_cjk": 0,
+  "old_ip_only": false
+ },
+ {
+  "file": "fr/aipunajie/index.html",
+  "desc_len": 320,
+  "desc_cjk": 0,
+  "title_cjk": 0,
+  "old_ip_only": false
+ }
+]

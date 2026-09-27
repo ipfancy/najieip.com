@@ -1,0 +1,503 @@
+{
+ "real_gaps": [
+  {
+   "file": "najie/blog/cnptes-three-layer-architecture-diagram.html",
+   "in_main": false,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 14165,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  }
+ ],
+ "legacy": [
+  {
+   "file": "mili/blog/fuyi-fanpei-yiwanjiu-20260831.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 14047,
+   "first_commit": "2026-08-31",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/beiruqin-sancha-20260831.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 12322,
+   "first_commit": "2026-08-31",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/20260825-tax-invoice-redline.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 22018,
+   "first_commit": "2026-08-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/geely-wm-trade-secret-20260814.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 9595,
+   "first_commit": "2026-08-14",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/franchise-supreme-court-7cases-20260814.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 6795,
+   "first_commit": "2026-08-14",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/trade-secret-three-lessons-20260813.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 10584,
+   "first_commit": "2026-08-13",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/yanglao-will-white-paper.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 13423,
+   "first_commit": "2026-08-10",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/ai-music-copyright-boundary.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 10713,
+   "first_commit": "2026-08-10",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/ai-training-copyright-boundary.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 11335,
+   "first_commit": "2026-08-06",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/uspto-tbmp-2026-update.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 19922,
+   "first_commit": "2026-07-31",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/uspto-tbmp-2026-ttab-center-estta-update.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 14899,
+   "first_commit": "2026-07-31",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/ai-training-copyright-fair-use-2026.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 0,
+   "size": 5966,
+   "first_commit": "2026-07-31",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/uspto-foreign-representation-rule-2026.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 0,
+   "size": 5355,
+   "first_commit": "2026-07-31",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/ai-ip-pitfall-guide.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 5591,
+   "first_commit": "2026-07-26",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/ai-ip-compliance-redline.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 4886,
+   "first_commit": "2026-07-26",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/ai-generated-content-copyright.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 10252,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/enterprise-ip-compliance-system.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 9470,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/trademark-law-2026-revision.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 10139,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/trademark-squatting-guide.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 9735,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/trademark-squatting-guide-en.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 8382,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/ai-generated-content-copyright-en.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 8547,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/najie-apnajie-mili-collaboration.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": false,
+   "h1": 1,
+   "size": 14017,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/20260829-patent-award-quota-tightening.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 5523,
+   "first_commit": "2026-09-16",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/20260829-micromovie-regulation-ip-checklist.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 6478,
+   "first_commit": "2026-09-16",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/zhihu-hotlist-20260810.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 9294,
+   "first_commit": "2026-09-11",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/20260901-copyright-jp18-compliance-checklist.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 9821,
+   "first_commit": "2026-09-01",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/overseas-trademark-madrid-2026.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 6422,
+   "first_commit": "2026-08-08",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/overseas-ip-selfcheck-2026.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 6641,
+   "first_commit": "2026-08-07",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/ip-content-selection-methodology-202608.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 11145,
+   "first_commit": "2026-08-06",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/shierwu-ipr-checklist-2026.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 10491,
+   "first_commit": "2026-08-05",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/shierwu-ip-exports-455yi-2026.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 7401,
+   "first_commit": "2026-08-05",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/wipo-ai-ip-dialogue.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 17270,
+   "first_commit": "2026-07-31",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/overseas-trademark-strategy.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 10579,
+   "first_commit": "2026-07-31",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/wipo-free-databases.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 5967,
+   "first_commit": "2026-07-26",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/ai-ip-pitfall-guide.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 5591,
+   "first_commit": "2026-07-26",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/ai-ip-compliance-redline.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 4886,
+   "first_commit": "2026-07-26",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/gzh-design-skill.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 5526,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/enterprise-ip-compliance-system.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 9470,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/pipeline-failed-queue-practice.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 9197,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/cnptes-three-layer-architecture.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 10870,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/archify-replace-drawio.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 7367,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "mili/blog/najie-apnajie-mili-collaboration.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": false,
+   "h1": 1,
+   "size": 14017,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  },
+  {
+   "file": "najie/blog/5-free-patent-search-tools.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": true,
+   "h1": 1,
+   "size": 7795,
+   "first_commit": "2026-07-25",
+   "reason": "non_article_page"
+  }
+ ],
+ "stub": [
+  {
+   "file": "najie/blog/uspto-tbmp-2026-update.html",
+   "in_main": true,
+   "in_sitemap": true,
+   "ld": 0,
+   "og_image": false,
+   "h1": 0,
+   "size": 529,
+   "first_commit": "2026-08-20",
+   "reason": "stub"
+  }
+ ]
+}
