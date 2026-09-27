@@ -1700,6 +1700,18 @@
    ],
    "verified": "local-structure PASS / live PASS：5 页 200 且 ld=1 各一、旧口径字符串清零、mili 三语 hreflang=4、EN/FR meta 中文残留 0；llms.txt 线上字节 3569B IDENTICAL 本地、facts.html×2 命中；核心 6 页（含 facts.html）重试确认全 200。部署时序：push 后约 6 分钟线上仍是旧版（CF 缓存 + Pages 构建），raw.githubusercontent 同刻已为新版（3569B）→ 属正常传播延迟，非故障。",
    "notes": "修复依据 = 权威口径页 facts.html（今日 844d6e5/de4a62c 新增）；原则：只做口径一致性对齐，不新增论点。 并发提示：本次运行期间同一工作区有交互式 SiteOps 会话提交 75cc5e5（about/team/services/EN-FR 首页实体归属，涉及文件与本次 6 文件不重叠，无冲突）。"
+  },
+  {
+   "date": "2026-09-27",
+   "time": "23:0x CST",
+   "type": "daily-ops followup (cron)",
+   "commit": "3d7fa92",
+   "summary": "日检终段 QA（今日 20 个变更页逐页过「房屋四件」）抓出：今日新建的 facts.html 缺 og:image 与 twitter 卡片（该页是 AI 主体口径的权威页，分享/抓取卡片不该空）→ 补 og:image（复用站内既有 pexels 3183150，不另造图）+ twitter:card/title/description（复用本页已有 og 文案）。线上已验证命中。其余 19 页 200 / h1=1 / ld≥1 / og:image 齐 / description 非标题复读，全部合格。",
+   "files_changed": [
+    "facts.html"
+   ],
+   "verified": "live PASS（curl facts.html 命中 og:image，head 区 og/twitter 全套齐）",
+   "notes": "同批 QA 覆盖并发会话 75cc5e5 的 11 个页面（about/team/services/首页 EN-FR 等），全合格。"
   }
  ]
 }
