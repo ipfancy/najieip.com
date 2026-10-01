@@ -1726,6 +1726,36 @@
       ],
       "verified": "live PASS：curl mili/blog/ 与 blog/ 均 200 且含两篇新卡（各 2/1 处）；mili/blog/ 线上 JSON-LD 解析通过、blogPost=93、前三篇为新文；aipunajie/blog/ 200 且含光伏卡；两篇文章页 200。四文件 div 开闭平衡、ld+json 全部 json.loads 通过。",
       "notes": "待何律裁决（未擅自改）：主站聚合页 /blog/ 的 title/og/JSON-LD 仍署「爱普纳杰专利所」，但页面同时聚合纳杰商标文与觅理诉讼文——属规则9「三主体对外不得混同」的潜在风险点（历史既存，非本轮引入）。建议改为中性聚合标题（如「纳杰·爱普纳杰·觅理 知识产权与法律博客」）或拆分入口。"
+    },
+    {
+      "date": "2026-10-01",
+      "time": "08:05",
+      "agent": "SiteOps",
+      "round": "daily-0800 (site-maintenance 健康巡检)",
+      "commit": "dc9a936",
+      "action": "sitemap.xml 增量补位 — 收录 2026-10-01 新文（AI声音克隆·上海首例举证差异）",
+      "files_changed": [
+        "sitemap.xml"
+      ],
+      "cards_added": [
+        "/mili/blog/20261001-ai-voice-clone-shanghai-first-case-evidence-shift.html"
+      ],
+      "verification": {
+        "sitemap_before": 273,
+        "sitemap_after": 274,
+        "duplicates": 0,
+        "xml_wellformed": true,
+        "target_url_present": true,
+        "lastmod_2026-10-01": 1,
+        "diff": "1 file changed, 6 insertions(+) — 只增不删"
+      },
+      "defects_found": [
+        "今日新文收尾全漏（第 8 次复发）：commit 068459d 只改了文章文件，sitemap.xml / articles.json / mili/blog/index.html / blog/index.html 均未同步",
+        "该文页面自身仍不合规：<h1>=0、JSON-LD=0、Markdown 表格 8 行未渲染（原样 <p>| … |</p>）→ 百度推送门禁已自动 hold，待 brand 修复后自动放行",
+        "articles.json（259 条）与两个栏目索引列表仍未含该文 — 属 brand 边界，未擅自改动"
+      ],
+      "notes": "本轮仅执行 skill §7 规定的标准处置（仓库自带 update-sitemap.py，只增不删）。正文模板缺陷（h1/JSON-LD/表格渲染）归 brand 修复；articles.json 与栏目卡由 brand 流水线补。",
+      "result": "PASS（sitemap 侧）／PENDING（页面模板侧）"
     }
   ]
 }
