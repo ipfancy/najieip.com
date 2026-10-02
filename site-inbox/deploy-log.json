@@ -1756,6 +1756,48 @@
       ],
       "notes": "本轮仅执行 skill §7 规定的标准处置（仓库自带 update-sitemap.py，只增不删）。正文模板缺陷（h1/JSON-LD/表格渲染）归 brand 修复；articles.json 与栏目卡由 brand 流水线补。",
       "result": "PASS（sitemap 侧）／PENDING（页面模板侧）"
+    },
+    {
+      "date": "2026-10-02",
+      "time": "08:07",
+      "agent": "SiteOps",
+      "round": "daily-0800 (site-maintenance 健康巡检)",
+      "commit": "b5d3d41 + 23f7d8e",
+      "action": "sitemap.xml 增量补位 + 索引补位（najie/blog、mili/blog 栏目列表与主站聚合卡）",
+      "files_changed": [
+        "sitemap.xml",
+        "najie/blog/index.html",
+        "mili/blog/index.html",
+        "blog/index.html"
+      ],
+      "cards_added": [
+        "/najie/blog/20261002-ai-patent-reply-evidence.html",
+        "/mili/blog/20261001-ai-voice-clone-shanghai-first-case-evidence-shift.html"
+      ],
+      "verification": {
+        "sitemap_before": 274,
+        "sitemap_after": 275,
+        "duplicates": 0,
+        "xml_wellformed": true,
+        "target_url_present": true,
+        "lastmod_2026-10-02": 1,
+        "diff_sitemap": "1 file changed, 6 insertions(+) — 只增不删",
+        "diff_indexes": "3 files changed, 22 insertions(+), 2 deletions(-)",
+        "jsonld_parse": "najie/blog 75->76、mili/blog 93->94，三处均可 json.loads；blog/index.html 为 CollectionPage",
+        "div_balance": "228-228 / 157-157 / 382-382（配平）",
+        "cards": "102 / 78 / 190，重复 href = 0",
+        "pages_build": "23f7d8e built, error=null；线上实测 /najie/blog/ 命中新文(2)、/mili/blog/ 命中 ai-voice(2)、/blog/ 两篇各 1、sitemap 275 条 0 重复",
+        "baidu_push_today": "06:02 档 10/10 成功，remain=0，本批 0 拦截；待推队列 149（冷却 48）"
+      },
+      "defects_found": [
+        "今日新文收尾全漏（第 9 次复发）：commit 1e4fbf4 文件清单仅 2 项（文章 HTML + articles.json），sitemap.xml / najie/blog/index.html / blog/index.html 均未同步",
+        "该文页面自身不合规：<h1>=0、JSON-LD=0、front-matter 泄漏（正文出现 <p>---</p>）、Markdown 残留未渲染（**粗体**、&gt; 引用、&lt;!-- 注释 --&gt;）→ 百度推送门禁自动 hold",
+        "20261001-ai-voice-clone 连续第 2 天不合规（h1=0 / JSON-LD=0 / 表格 7 行未渲染）；20260928-german-utility-model-offense 无 JSON-LD 第 5 天",
+        "bjnajie.com DigiCert 证书剩 24 天（2026-10-26 到期）→ 建议 10-12 前续期核查",
+        "前瞻：下一轮选单「新文位」将首选两篇缺陷新文，预计 10 条空转 2 条（20%）"
+      ],
+      "notes": "本轮按 skill §7 标准处置 + 09-29/09-30 siteops 索引补位惯例执行；10-01 当班 commit 名为「索引补位」但实际只改了 articles.json，栏目列表遗漏，本轮一并补齐。文章 HTML 与 articles.json 未改动（属 brand 边界）。",
+      "result": "PASS（sitemap + 索引侧已上线验证）／PENDING（页面模板侧归 brand）"
     }
   ]
 }
