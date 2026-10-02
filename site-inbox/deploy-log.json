@@ -1803,7 +1803,7 @@
       "date": "2026-10-03",
       "time": "02:40",
       "agent": "SiteOps",
-      "round": "weekly-0200 第39周（GEO 双平台追踪 + 多语言同步）",
+      "round": "weekly-0200 第40周（ISO W40；GEO 双平台追踪 + 多语言同步）",
       "commit": "7a46dfc + a14e6e7",
       "action": "多语言同步：20260928 德国实用新型文 → EN/FR 双页 + 双索引卡 + sitemap 275→277；3 篇新页 QA 补件（JSON-LD×2 / og:image / description 去标题复读）与 Markdown 残留修复",
       "files_changed": [
@@ -1830,7 +1830,7 @@
         "jsonld_parse": "5 页 8 个 ld+json 块全部 json.loads 通过（修复 20261002 中文直引号导致的 JSON 破损）",
         "live_check": "en 页 200 / fr 页 200（首轮 404 = Pages 构建延迟 ~2min，重试 3 次全 200）；EN 索引线上命中新卡",
         "raw_repo": "首轮 raw 000 = 网络瞬断，非故障（线上终态 200 为准）",
-        "geo_week39": "18 检查点（秘塔 9/9 全通、元宝 9/9），命中 0；累计 142 检查点 / 0 命中"
+        "geo_week40": "18 检查点（秘塔 9/9 全通、元宝 9/9），命中 0；累计 142 检查点 / 0 命中"
       },
       "defects_found": [
         "三篇新文页面模板侧缺陷未修（10-02 当班已记录，本轮由 SiteOps 补齐）：20260928 缺 JSON-LD 且 2 张表格以 <p>|...|</p> 裸文本发布；20261001 缺 <h1>+JSON-LD+og:image 且 1 张表格未渲染；20261002 缺 <h1>+JSON-LD 且正文 4 处 ** 未转 <strong>",
