@@ -1840,6 +1840,37 @@
       ],
       "notes": "GEO 侧选文口径：citation_rate 全 0 时按“内容吸收度 + 涉外相关度”选（本轮 = AI写专利答复 / AI声音案 / 最高检恶意诉讼 5 案，均属案例复盘型赛道）。两篇 1-2 日内新文属基线建立，非“未被引用”结论。秘塔连续第 3 周全通（9/9），元宝 9/9。",
       "result": "PASS（i18n 与页面修复均已线上验证；GEO 0 命中为实测结论）"
+    },
+    {
+      "date": "2026-10-03",
+      "time": "08:20",
+      "agent": "SiteOps",
+      "round": "daily-0800 (site-maintenance 健康巡检)",
+      "commit": "52de101",
+      "action": "sitemap 增量补位 + 索引补位：20261003 新文（商标被判无效·顶格判赔500万）入 sitemap（277→278）+ najie/blog 栏目卡与 Blog JSON-LD（76→77）+ 主站 /blog/ 聚合卡（190→191）；文章 HTML 未触碰（brand 边界）",
+      "files_changed": [
+        "sitemap.xml",
+        "najie/blog/index.html",
+        "blog/index.html"
+      ],
+      "cards_added": [
+        "/najie/blog/20261003-trademark-invalidated-500w.html"
+      ],
+      "verification": {
+        "sitemap_before": 277,
+        "sitemap_after": 278,
+        "duplicates": 0,
+        "well_formed": "OK(278 loc / 278 unique)",
+        "index_validate": "najie/blog div 159/159 cards 79 dup 0 ld 1/1 blogPost 77；blog div 384/384 cards 191 dup 0 ld 1/1",
+        "live_check": "sitemap 278 条含目标 URL；najie/blog 与 /blog/ 线上命中新卡"
+      },
+      "defects_found": [
+        "20261003 新文页面模板缺陷（h1=0 / JSON-LD=0 / <h2>=0 / 正文 Markdown *斜体* 残留）—— 归 brand（运维只读不改文章 HTML）",
+        "20261002-ai-patent-reply-evidence 仍 front-matter 泄漏（连续第 2 天，未修）",
+        "EN/FR 20260928 双语文 JSON-LD 仅 1 块（门禁判据 <2）"
+      ],
+      "notes": "同源缺陷复发台账：08-29 / 08-31 / 09-08 / 09-23 / 09-24 / 09-25 / 09-28 / 10-01 / 10-02 / 10-03，累计 10 次；根因=brand 发布流水线缺「发布后断言」。",
+      "result": "PASS（索引侧已闭环，模板侧转 brand）"
     }
   ]
 }
