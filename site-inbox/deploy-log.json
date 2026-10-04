@@ -1877,7 +1877,7 @@
       "time": "08:20",
       "agent": "SiteOps",
       "round": "daily-0800 (site-maintenance 健康巡检)",
-      "commit": "PENDING",
+      "commit": "801c114",
       "action": "sitemap 增量补位 + 索引补位：20261004 新文（同一专利族·美国判赔2760万美元欧洲驳回禁令）入 sitemap（281→282）+ mili/blog 栏目卡与 Blog JSON-LD（95→96）+ 主站 /blog/ 聚合卡（191→192）；文章 HTML 未触碰（brand 边界）",
       "files_changed": [
         "sitemap.xml",
