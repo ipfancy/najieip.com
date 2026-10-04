@@ -1871,6 +1871,38 @@
       ],
       "notes": "同源缺陷复发台账：08-29 / 08-31 / 09-08 / 09-23 / 09-24 / 09-25 / 09-28 / 10-01 / 10-02 / 10-03，累计 10 次；根因=brand 发布流水线缺「发布后断言」。",
       "result": "PASS（索引侧已闭环，模板侧转 brand）"
+    },
+    {
+      "date": "2026-10-04",
+      "time": "08:20",
+      "agent": "SiteOps",
+      "round": "daily-0800 (site-maintenance 健康巡检)",
+      "commit": "PENDING",
+      "action": "sitemap 增量补位 + 索引补位：20261004 新文（同一专利族·美国判赔2760万美元欧洲驳回禁令）入 sitemap（281→282）+ mili/blog 栏目卡与 Blog JSON-LD（95→96）+ 主站 /blog/ 聚合卡（191→192）；文章 HTML 未触碰（brand 边界）",
+      "files_changed": [
+        "sitemap.xml",
+        "mili/blog/index.html",
+        "blog/index.html"
+      ],
+      "cards_added": [
+        "/mili/blog/bambu-stratasys-fto-decision-tree-20261004.html"
+      ],
+      "verification": {
+        "sitemap_before": 281,
+        "sitemap_after": 282,
+        "duplicates": 0,
+        "well_formed": "OK(282 loc / 282 unique)",
+        "index_validate": "mili/blog div 232/232 cards 104 dup 0 ld 1/1 blogPost 96；blog div 386/386 cards 192 dup 0 ld 1/1",
+        "live_check": "sitemap 282 条含目标 URL；mili/blog 与 /blog/ 线上命中新卡"
+      },
+      "defects_found": [
+        "20261004 新文页面模板缺陷（h1=0 / JSON-LD=0）—— 归 brand（运维只读不改文章 HTML）",
+        "20261003-trademark-invalidated-500w 仍 h1=0 / JSON-LD=0（连续第 2 天，未修）",
+        "20261002-ai-patent-reply-evidence 仍 front-matter 泄漏（连续第 3 天，未修）",
+        "EN/FR 20260928-german-utility-model-offense 双语文 JSON-LD 仅 1 块（门禁判据 <2，连续第 2 天）"
+      ],
+      "notes": "同源缺陷复发台账：08-29 / 08-31 / 09-08 / 09-23 / 09-24 / 09-25 / 09-28 / 10-01 / 10-02 / 10-03 / 10-04，累计 11 次；根因=brand 发布流水线缺「发布后断言」。",
+      "result": "PASS（索引侧已闭环，模板侧转 brand）"
     }
   ]
 }
