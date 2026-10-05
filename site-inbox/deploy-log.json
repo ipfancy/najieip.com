@@ -1937,6 +1937,38 @@
       ],
       "notes": "同源缺陷复发台账：08-29 / 08-31 / 09-08 / 09-23 / 09-24 / 09-25 / 09-28 / 10-01 / 10-02 / 10-03 / 10-04 / 10-05，累计 12 次；根因=brand 发布流水线缺「发布后断言」。本轮新发现：mili 10-04 文带 Markdown 残留 + 转义 HTML 注释，建议一并进 brand 发布前断言。",
       "result": "PASS（索引侧已闭环，模板侧转 brand）"
+    },
+    {
+      "date": "2026-10-05",
+      "time": "10:35",
+      "agent": "门丞(SiteOps)",
+      "round": "publish-queue 站点发布轮（10-05 队列 2 枚·主体归属按何律 2026-08-06 铁律）",
+      "commit": "bc99a66",
+      "action": "扫描 /mnt/j/hermes-data/publish_queue 根目录 -newer last_site_deploy 命中 2 枚新 _visual.html，按主体归属落成站点模板页（非裸复制；md→语义化 HTML，非编号加粗句保留 <p><strong>）+ 三索引卡位 + 两处 Blog JSON-LD + articles.json（221→223）+ sitemap 288→290（只增不删）+ 指纹去重表。① 觅理 → mili/blog/20261005-trade-secret-confidentiality-measures.html《保密没做，官司难赢》（商业秘密：保密措施三要件/举证责任转移/竞业限制/刑事路径）；② 纳杰 → najie/blog/20261005-trademark-squatting-3-remedies.html《商标被抢注，3招应对》（商标确权：异议 33 条/无效 44·45 条/撤三 49 条）。均发布到对应主体 blog/，未写入 articles/ 无主体目录。",
+      "files_changed": [
+        "mili/blog/20261005-trade-secret-confidentiality-measures.html (new, 13386B)",
+        "najie/blog/20261005-trademark-squatting-3-remedies.html (new, 11358B)",
+        "mili/blog/index.html",
+        "najie/blog/index.html",
+        "blog/index.html",
+        "articles.json",
+        "sitemap.xml"
+      ],
+      "cards_added": [
+        "/mili/blog/20261005-trade-secret-confidentiality-measures.html",
+        "/najie/blog/20261005-trademark-squatting-3-remedies.html"
+      ],
+      "verification": {
+        "mili_blog_index": "div 236/236 cards 106 ld 1/1 blogPost 98",
+        "najie_blog_index": "div 167/167 cards 83 ld 1/1 blogPost 80",
+        "blog_index": "div 394/394 cards 196 ld 1/1",
+        "sitemap": "290 loc（+2 新 URL：mili 商业秘密 / najie 商标抢注）",
+        "live_check": "curl 200：mili/blog/20261005-trade-secret-confidentiality-measures.html（13386B）、najie/blog/20261005-trademark-squatting-3-remedies.html（11358B，与本地字节全等）；三索引页与 sitemap 均命中 2 条新 URL",
+        "git": "push origin main c20750b..bc99a66（ahead/behind 1/0，一次推送成功）"
+      },
+      "defects_found": [],
+      "notes": "新页自检：h1=1 / JSON-LD=2（Article+Breadcrumb）/ 无 front-matter 泄漏 / 无 Markdown 残留 / 无转义 HTML 注释；已规避 09-14~10-05 同源缺陷台账所列问题。合规提示：页脚沿用既有站点三主体并列模板（『三主体一站式知识产权服务』+ 纳杰|爱普纳杰|觅理），与规则 9（2026-09-20 主体隔离）存在潜在张力——同 10-05 10:32 fabu-pipeline 门禁已提请何律确认，本轮按既有站点模板一致处理（站内 200+ 页同款），待何律裁定后统一整改。渠道边界：本轮仅官网最 najeip.com 发布；公众号渠道 6 枚存量（0914-2/0921-2/0928-2）及本 2 枚仍按『何律回发布才发布』铁律挂起，未调用 wechat_publish_batch.py / notify_hezhi.py。",
+      "result": "PASS"
     }
   ]
 }
