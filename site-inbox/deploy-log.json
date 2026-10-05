@@ -1903,6 +1903,40 @@
       ],
       "notes": "同源缺陷复发台账：08-29 / 08-31 / 09-08 / 09-23 / 09-24 / 09-25 / 09-28 / 10-01 / 10-02 / 10-03 / 10-04，累计 11 次；根因=brand 发布流水线缺「发布后断言」。",
       "result": "PASS（索引侧已闭环，模板侧转 brand）"
+    },
+    {
+      "date": "2026-10-05",
+      "time": "08:20",
+      "agent": "SiteOps",
+      "round": "daily-0800 (site-maintenance 健康巡检)",
+      "commit": "755d127",
+      "action": "索引补位（文章 HTML 未触碰，brand 边界）：① 20261005 najie 新文《前8年年费足缴，第9年专利作废！这5个信号最该自查》入 najie/blog 栏目卡 + Blog JSON-LD（78→79）+ 主站 /blog/ 聚合卡（192→193）；② 20261004 mili 文《差39万还是1.3万？这起反垄断案就输在取哪段账》入 mili/blog 栏目卡 + Blog JSON-LD（96→97）+ 主站 /blog/ 聚合卡（193→194）。sitemap 无需补位（两条均已由自动 sitemap 任务登记，283→284）。",
+      "files_changed": [
+        "najie/blog/index.html",
+        "mili/blog/index.html",
+        "blog/index.html"
+      ],
+      "cards_added": [
+        "/najie/blog/20261005-patent-annual-fee-ledger-5-signals.html",
+        "/mili/blog/20261004-mili-gas-deviation-settlement-account.html"
+      ],
+      "verification": {
+        "najie_blog_index": "div 163/163 cards 81 dup 0 ld 1/1 blogPost 79",
+        "mili_blog_index": "div 234/234 cards 105 dup 0 ld 1/1 blogPost 97",
+        "blog_index": "div 390/390 cards 194 dup 0 ld 1/1",
+        "sitemap": "284 loc（含两条新 URL），由自动 sitemap 任务写入，本轮未改",
+        "live_check": "见同日健康巡检报告 §五"
+      },
+      "defects_found": [
+        "20261005 najie 新文《前8年年费足缴…》：front-matter 泄漏（正文出现 <p>---</p>）+ 无 JSON-LD（h1=1 正常）—— 归 brand（运维只读不改文章 HTML）",
+        "20261004 mili 文《差39万还是1.3万…》：无 JSON-LD + Markdown 残留（**导语**、**【核心观点】**、*本文由 AI 辅助生成*）+ 转义 HTML 注释（&lt;!-- 合集: 综合法律服务 --&gt;）—— 归 brand",
+        "20261004 mili/bambu-stratasys-fto-decision-tree-20261004：h1=0 / JSON-LD=0（连续第 2 天，未修）",
+        "20261003 najie/20261003-trademark-invalidated-500w：h1=0 / JSON-LD=0（连续第 3 天，未修）",
+        "20261002 najie/20261002-ai-patent-reply-evidence：front-matter 泄漏（连续第 4 天，未修）",
+        "EN/FR 20260928-german-utility-model-offense：JSON-LD 仅 1 块（判据 ≥2，连续第 3 天）"
+      ],
+      "notes": "同源缺陷复发台账：08-29 / 08-31 / 09-08 / 09-23 / 09-24 / 09-25 / 09-28 / 10-01 / 10-02 / 10-03 / 10-04 / 10-05，累计 12 次；根因=brand 发布流水线缺「发布后断言」。本轮新发现：mili 10-04 文带 Markdown 残留 + 转义 HTML 注释，建议一并进 brand 发布前断言。",
+      "result": "PASS（索引侧已闭环，模板侧转 brand）"
     }
   ]
 }
