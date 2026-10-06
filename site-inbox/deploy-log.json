@@ -2001,10 +2001,10 @@
   {
    "date": "2026-10-06",
    "time": "2026-10-06",
-   "agent": "Hermes Agent(SiteOps)·每日 08:00 站点健康巡检轮",
-   "round": "巡检发现索引位缺口 → 本轮补位（只改索引页，文章 HTML 零改动）",
+   "agent": "Hermes Agent(SiteOps)·每日运营",
+   "round": "每日运营（10-06）：上游裸发布页精修 + 索引补卡 + articles.json 守卫",
    "commit": "7a1ea96",
-   "action": "巡检以「10-05 七篇新文 × 四索引位矩阵」比对线上实抓，发现两处缺口并补位：① najie/blog/20261005-trademark-law-2027-implementing-rules.html 在 najie/blog 已有卡片但 Blog JSON-LD blogPost 数组缺条目（/blog/ 主站聚合亦缺卡）；② mili/blog/20261005-mili-gas-supply-cutoff-justification.html 在 mili/blog 栏目与 /blog/ 聚合两处均无卡片、JSON-LD 亦缺条目（该文 10-05 05:21 由 2ac2a44 提交，未被同批 siteops 卡位覆盖）。补位内容均为站内既有模板口径（EN/FR 双语版按基线不参与 /blog/ 聚合与 articles.json，本次未改，非缺陷）。",
+   "action": "7 篇上游裸发布页精修（补 JSON-LD Article/BreadcrumbList、og:image/og:site_name、description 去标题复读、裸 markdown 表格转 table、** 转 strong、缺 h1 回填）；索引补卡：mili/blog/index 1 张 + 主索引 3 张（20261006 新文、shuju-chanquan-dengji-2026、jishu-hetong-zhuanli-guishu-2026）；articles.json 守卫第 10 次隔离 224→174；结构终验 11/11 PASS，push 2540072..67c89d6",
    "files_changed": [
     "najie/blog/index.html (+1 Blog JSON-LD blogPost 条目)",
     "mili/blog/index.html (+1 卡片 +1 Blog JSON-LD blogPost 条目)",
