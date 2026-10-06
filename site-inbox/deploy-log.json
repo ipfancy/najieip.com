@@ -2025,6 +2025,33 @@
    "defects_found": [],
    "notes": "每日运营：7篇裸发布页精修（JSON-LD/og:image/描述）+ 索引补卡4张 + articles.json 隔离50条",
    "result": "success"
+  },
+  {
+   "date": "2026-10-06",
+   "time": "22:0x",
+   "agent": "SiteOps",
+   "round": "每日运营（夜间）",
+   "commit": "c26c146",
+   "action": "核心 8 页 200；精修诺奖×专利文（上游部分裸发布：缺 JSON-LD/og:image、og:title 属性内直引号致截断、** 未转 strong、description 复读标题、HTML 注释被转义为可见文本）7315→10861B，正文 32 段零改动；mili 索引补卡 108→109、主索引 201→202（日期降序插位）；articles.json 守卫第 11 次隔离 225→175；sitemap 看门 exit 0（292 loc 不变）",
+   "files_changed": [
+    "mili/blog/20261006-nobel-icecube-patent-four-rules.html",
+    "mili/blog/index.html",
+    "blog/index.html",
+    "articles.json",
+    "articles-quarantine-20261006.json"
+   ],
+   "cards_added": {
+    "mili/blog/index.html": "108→109",
+    "blog/index.html": "201→202"
+   },
+   "verification": "核心页 8/8 200；线上 11/11 PASS（直连+cache-buster）；结构终验 cards/depth1/dup/date-desc 全 PASS；首页 top6 全部有页面；sitemap 看门 exit 0",
+   "defects_found": [
+    "诺奖×专利文部分裸发布（缺 JSON-LD/og:image/og:title 截断/** 未转/描述复读标题），且处首页 slice(0,6) 第 2 曝光位",
+    "content.db articles 表无诺奖文记录（上游发布未登记）",
+    "articles.json 上游第 11 次复活 50 条无页面条目"
+   ],
+   "notes": "首次线上校验读到 CF 旧缓存（3860 字符=旧版），等 150s 后 11/11 全通 → push 后 CF 传播需等待，勿提前判故障；20261006-工程结算-最终结算条款-二审改判 仅有 md 源、无 HTML 页，未上线",
+   "result": "PASS"
   }
  ]
 }
