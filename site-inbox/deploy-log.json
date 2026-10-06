@@ -1969,6 +1969,34 @@
       "defects_found": [],
       "notes": "新页自检：h1=1 / JSON-LD=2（Article+Breadcrumb）/ 无 front-matter 泄漏 / 无 Markdown 残留 / 无转义 HTML 注释；已规避 09-14~10-05 同源缺陷台账所列问题。合规提示：页脚沿用既有站点三主体并列模板（『三主体一站式知识产权服务』+ 纳杰|爱普纳杰|觅理），与规则 9（2026-09-20 主体隔离）存在潜在张力——同 10-05 10:32 fabu-pipeline 门禁已提请何律确认，本轮按既有站点模板一致处理（站内 200+ 页同款），待何律裁定后统一整改。渠道边界：本轮仅官网最 najeip.com 发布；公众号渠道 6 枚存量（0914-2/0921-2/0928-2）及本 2 枚仍按『何律回发布才发布』铁律挂起，未调用 wechat_publish_batch.py / notify_hezhi.py。",
       "result": "PASS"
+    },
+    {
+      "date": "2026-10-06",
+      "time": "08:0x",
+      "agent": "Hermes Agent(SiteOps)·每日 08:00 站点健康巡检轮",
+      "round": "巡检发现索引位缺口 → 本轮补位（只改索引页，文章 HTML 零改动）",
+      "commit": "1ac83dd",
+      "action": "巡检以「10-05 七篇新文 × 四索引位矩阵」比对线上实抓，发现两处缺口并补位：① najie/blog/20261005-trademark-law-2027-implementing-rules.html 在 najie/blog 已有卡片但 Blog JSON-LD blogPost 数组缺条目（/blog/ 主站聚合亦缺卡）；② mili/blog/20261005-mili-gas-supply-cutoff-justification.html 在 mili/blog 栏目与 /blog/ 聚合两处均无卡片、JSON-LD 亦缺条目（该文 10-05 05:21 由 2ac2a44 提交，未被同批 siteops 卡位覆盖）。补位内容均为站内既有模板口径（EN/FR 双语版按基线不参与 /blog/ 聚合与 articles.json，本次未改，非缺陷）。",
+      "files_changed": [
+        "najie/blog/index.html (+1 Blog JSON-LD blogPost 条目)",
+        "mili/blog/index.html (+1 卡片 +1 Blog JSON-LD blogPost 条目)",
+        "blog/index.html (+2 聚合卡片)"
+      ],
+      "cards_added": [
+        "/najie/blog/20261005-trademark-law-2027-implementing-rules.html",
+        "/mili/blog/20261005-mili-gas-supply-cutoff-justification.html"
+      ],
+      "verification": {
+        "najie_blog_index": "div 167/167 cards 83 ld 1/1 解析OK blogPost 80→81",
+        "mili_blog_index": "div 238/238 cards 106→107 ld 1/1 解析OK blogPost 98→99",
+        "blog_index": "div 398/398 cards 196→198 ld 1/1 解析OK",
+        "dup_href": "三页重复 href 均为 0",
+        "live_check": "Pages build 1ac83dd status=built error=null；线上矩阵复核：najie/blog 命中3次、mili/blog 命中3次、/blog/ 各命中1次，与同级 10-05 文章口径齐平；sitemap 290 loc / unique 290 / 重复 0",
+        "git": "push origin main 4c2a08d..1ac83dd 一次成功"
+      },
+      "defects_found": [],
+      "notes": "索引补位属站点运维边界（索引页非文章 HTML，符合 skill §5.7「只读取不修改文章 HTML」）。同批模板缺陷（见 08:00 健康巡检报告 §四/§六）仍在 brand 侧，推送前门禁已自动 hold。",
+      "result": "PASS"
     }
   ]
 }
