@@ -2052,6 +2052,29 @@
    ],
    "notes": "首次线上校验读到 CF 旧缓存（3860 字符=旧版），等 150s 后 11/11 全通 → push 后 CF 传播需等待，勿提前判故障；20261006-工程结算-最终结算条款-二审改判 仅有 md 源、无 HTML 页，未上线",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-07",
+   "time": "08:06",
+   "agent": "Hermes SiteOps (site-maintenance cron)",
+   "round": "1007 每日站点健康巡检（08:00）索引补位",
+   "commit": "47b4c59",
+   "action": "index backfill：20261007 mili《商标新规征求意见只剩21天》新文补卡——mili/blog 栏目卡 + mili/blog 页 Blog JSON-LD blogPost 条目、/blog/ 主聚合卡（文章 HTML 零改动，brand 边界）",
+   "files_changed": [
+    "mili/blog/index.html",
+    "blog/index.html"
+   ],
+   "cards_added": {
+    "mili/blog/index.html": "109→110",
+    "blog/index.html": "202→203"
+   },
+   "verification": "自检脚本 PASS：ld+json 良构（mili/blog Blog blogPost 100 条，首条=新文）、卡片 0 重复 href、新卡位于首位（日期降序）；已确认 sitemap 293 loc 含该文、articles.json 顶部含该文；Pages 重建后线上 grep 复核",
+   "defects_found": [
+    "20261007 新文裸发布：缺 JSON-LD 结构化数据（h1=1、h2=4、canonical/og:url 正常），百度推送前门禁已自动 hold；处置归 brand/精修轮次",
+    "同批 14 篇抽检 5 篇带模板缺陷：20261005 najie 年费台账文 front-matter 泄漏 `<p>---</p>`、20261005 EN/FR 商标法文缺 JSON-LD+canonical+og:url、20260928 EN 文 JSON-LD 仅 1 块"
+   ],
+   "notes": "10-05 与 10-04 多篇昨日缺陷已被上游修复（najie 商标法2027、mili 断供正当性、mili 偏差结算、bambu FTO 均转为 OK）；bjnajie.com 证书 2026-10-26 到期，剩 19 天，§6 节点「10-12 前完成续期核查」窗口剩 5 天",
+   "result": "PASS"
   }
  ]
 }
