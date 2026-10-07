@@ -2103,6 +2103,30 @@
    "defects_found": [],
    "notes": "两信息图均 800×1200 PNG（218,009B / 194,151B）；najie Blog JSON-LD 沿用邻近条目 publisher 写法（纳杰觅理）。",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-07",
+   "time": "22:03",
+   "agent": "SiteOps",
+   "round": "每日运营（cron 22:00 前置）",
+   "commit": "4c8ebf8",
+   "action": "核心 10 页 HTTP 200；精修 3 篇页面缺陷（mili 20261007 商标司法解释意见稿：补 JSON-LD Article+BreadcrumbList / og:image / twitter 卡 / description 去标题复读；mili geely-wm 08-14 与 najie jp18 09-01：markdown ** 40+38 处转 <strong>、裸 markdown 表 1 块转 <table>、泄漏 blockquote/hr 标记清理、文本节点 ASCII 引号转中文引号、补 JSON-LD）；articles.json 守卫第 12 次隔离 228→178；全站 254 页缺陷普查（105 页遗留）归档待排期",
+   "files_changed": [
+    "mili/blog/20261007-trademark-judicial-interpretation-opinion.html",
+    "mili/blog/geely-wm-trade-secret-20260814.html",
+    "najie/blog/20260901-copyright-jp18-compliance-checklist.html",
+    "articles.json"
+   ],
+   "cards_added": 0,
+   "verification": "本地：三页 h1=1 / ld=2 / og:image=1 / desc≠标题 / **=0 / 裸表=0 / div 配平 / 全部 ld+json json.loads 通过 / 正文文本节点归一后逐字相等；articles.json 178 条、首页 slice(0,6) 全部有页面；线上：核心 10 URL 200 + 修复后三页 200 且 ld=2（重试取终态）",
+   "defects_found": [
+    "上游裸发布/半裸发布：mili 20261007 缺 JSON-LD 与 og:image、description 复读标题（该文在 articles.json 首页第 3 曝光位）",
+    "遗留 markdown 泄漏：mili geely-wm-trade-secret-20260814（**×40 + 裸表）与 najie 20260901 jp18（**×38）访客可见",
+    "articles.json 又复活 50 条无页面条目（第 12 次）",
+    "全站遗留缺陷 105/254 页（多为老页无 JSON-LD / h1=2），未纳入本次修复"
+   ],
+   "notes": "本次不新建索引卡（缺口扫描仅 cnptes-three-layer-architecture-diagram.html 一项，按 09-23 口径属架构图页，不入主索引）。site-inbox/ 出现未跟踪的 20261007 商标文交接副本（raw 版，description 复读），已在仓库留档但未以其为源（以 mili/blog 精修版为准）。",
+   "result": "PASS"
   }
  ]
 }
