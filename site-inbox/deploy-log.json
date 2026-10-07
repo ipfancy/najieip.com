@@ -2075,6 +2075,34 @@
    ],
    "notes": "10-05 与 10-04 多篇昨日缺陷已被上游修复（najie 商标法2027、mili 断供正当性、mili 偏差结算、bambu FTO 均转为 OK）；bjnajie.com 证书 2026-10-26 到期，剩 19 天，§6 节点「10-12 前完成续期核查」窗口剩 5 天",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-07",
+   "time": "10:18",
+   "agent": "Hermes (brand 自主生产 W41 批次部署)",
+   "round": "20261007 自主生产批次 · 两篇新文入库：技术秘密推定侵权 1590号（觅理）+ 民刑交叉19号三条线（纳杰）",
+   "commit": "c72cf61",
+   "action": "新建 2 篇文章页（mili/blog/technical-secret-presumed-infringement-1590-2026.html、najie/blog/civil-criminal-cross-19-2026.html，各含 Article/BreadcrumbList/FAQPage 三块 JSON-LD）+ 2 张信息图（img/）；mili/blog 与 najie/blog 栏目首位补卡并各追加 1 条 Blog JSON-LD blogPost；/blog/ 主聚合补 2 张卡；articles.json 226→228；sitemap.xml 293→295",
+   "files_changed": [
+    "mili/blog/technical-secret-presumed-infringement-1590-2026.html",
+    "najie/blog/civil-criminal-cross-19-2026.html",
+    "img/technical-secret-presumed-infringement-1590-2026.png",
+    "img/civil-criminal-cross-19-2026.png",
+    "mili/blog/index.html",
+    "najie/blog/index.html",
+    "blog/index.html",
+    "articles.json",
+    "sitemap.xml"
+   ],
+   "cards_added": {
+    "mili/blog/index.html": "首位 +1",
+    "najie/blog/index.html": "首位 +1",
+    "blog/index.html": "首位 +2"
+   },
+   "verification": "本地自检脚本 PASS：两页各 3 块 JSON-LD 均 json.loads 通过、@context=schema.org；无 ##/**/[ ]( ) markdown 残留、无 *** 损坏；含 <h1>/<img>/CTA 电话 13911268604；articles.json json.load 通过且长度=228 含两 url；sitemap.xml ElementTree 合法含 2 条新 loc；三栏目页 ld+json 良构（mili blogPost 100→101、najie 81→82，首条=新文）",
+   "defects_found": [],
+   "notes": "两信息图均 800×1200 PNG（218,009B / 194,151B）；najie Blog JSON-LD 沿用邻近条目 publisher 写法（纳杰觅理）。",
+   "result": "PASS"
   }
  ]
 }
