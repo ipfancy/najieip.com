@@ -2127,6 +2127,20 @@
    ],
    "notes": "本次不新建索引卡（缺口扫描仅 cnptes-three-layer-architecture-diagram.html 一项，按 09-23 口径属架构图页，不入主索引）。site-inbox/ 出现未跟踪的 20261007 商标文交接副本（raw 版，description 复读），已在仓库留档但未以其为源（以 mili/blog 精修版为准）。",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-08",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "每日运营（cron 22:00）",
+   "commit": "7024235",
+   "action": "核心 10 页巡检 + 精修 1 篇「部分裸发布」页 + articles.json 守卫隔离 + sitemap 看门测试",
+   "files_changed": "mili/blog/20261008-mili-labor-contract-four-clauses.html（6414→11677B）、articles.json（232→182）、articles-quarantine-20261008.json（+50 条）、site-inbox/fix-1008-mili-labor.py 等脚本",
+   "cards_added": "0（10-08 四篇新文索引卡已由日间并发任务补齐，href 归一扫描确认无缺口）",
+   "verification": "线上 4 篇 10-08 新文 + 双索引卡 HIT 全 PASS（live bytes 与本地一致 11677B）；核心 8 页 HTTP 200；sitemap 看门 exit 0 / 299 loc 不变；每页 ld+json json.loads 通过；正文 25 段零改动",
+   "defects_found": "1 篇「部分裸发布」（mili 劳动用工文：ld=0 / 无 og:image / description 复读标题；有 h1 与外链样式，故四联判据会漏判）；articles.json 上游复活 50 条无页面条目",
+   "notes": "「部分裸发布」第 5 例；本页原处 articles.json 首页 slice(0,6) 第 4 曝光位。修复补 JSON-LD Article+BreadcrumbList、og:image、twitter 卡、keywords、真摘要，并按段落前缀插 4 条 h2 路标（不改一字正文）。全站 254 页普查口径维持：只报近 3 日窗口实修项。",
+   "result": "PASS — 0 线上失败项"
   }
  ]
 }
