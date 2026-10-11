@@ -2164,6 +2164,21 @@
    "defects_found": "1 篇上游部分裸发布（ld=0/no-og:image/desc=title，位于 articles.json 首页第1曝光位）；articles.json 50 条无页面条目复活（第14次）",
    "notes": "sitemap 看门测试 exit 0 无回灌；najie 品牌博客无新文需同步",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-11",
+   "round": "A-2 承接修复（人工触发）",
+   "action": "补上高企资格自评工具的「入口」缺口：工具此前已在线上但零入口（导航0条/文章0条/sitemap0条）。本次加 ①主站导航「高企自评」②/najie/ 业务范围「项目申报」卡加免费自评入口 ③sitemap 收录工具页 ④工具页结果区加邮件留资落点(mailOut→collection@najieip.com，带《差距补强清单》话术)",
+   "files_changed": [
+    "index.html",
+    "najie/index.html",
+    "najie/gaoqi-selfcheck.html",
+    "sitemap.xml"
+   ],
+   "verification": "本地 http.server 实测：/、/najie/、/najie/gaoqi-selfcheck.html、/sitemap.xml 全 200；导航命中「高企自评」；najie 业务卡命中「免费资格自评→」；工具页 mailOut 命中×2；sitemap XML 合法 loc=302 且含工具页",
+   "defects_found": "工具页此前虽有 CTA（复制结果+电话）但无邮件落点，线索只能靠电话；且全站零入口=零流量",
+   "notes": "正文零改动；未触碰 article 内容与 quarantine 清单",
+   "result": "PASS"
   }
  ]
 }

@@ -269,7 +269,9 @@ function run(){
   h+='<div class="cta"><h3>下一步</h3>'+
      '<p>把这份结果发给我们，可免费出具一份<b>《差距补强清单》</b>，逐条告诉你每项差多少分、怎么补。</p>'+
      '<p>电话：010-65150974　手机：15321374076 / 13911268604</p>'+
-     '<p><button class="ghost" onclick="copyOut()">复制自评结果（可直接发给我们）</button></p></div>';
+     '<p><button class="ghost" onclick="copyOut()">复制自评结果（可直接发给我们）</button> '+
+     '<button class="ghost" onclick="mailOut()">把结果邮件发我们，领取《差距补强清单》</button></p>'+
+     '<p class="hint">也可直接致电 010-65150974（工作日）或发邮件至 collection@najieip.com</p></div>';
   h+='<div class="disc">本结果为区间估算，评分项中「技术先进程度」「核心支持作用」等由专家评审确定，不同专家可能落在区间内不同位置；研发组织管理按已具备项估算，专家按质量综合打分。最终以专业评估及认定机构结论为准。</div>';
 
   var r=document.getElementById("result");
@@ -289,7 +291,14 @@ function copyOut(){
   t+="  合计："+o.s.low+" – "+o.s.high+"\n";
   try{ navigator.clipboard.writeText(t).then(function(){alert("已复制，可直接粘贴发给我们");},
        function(){prompt("手动复制：",t);}); }catch(e){ prompt("手动复制：",t); }
-}
-</script>
+ }
+ function mailOut(){
+ var subj="高企资格自评结果 — 想领取《差距补强清单》";
+ var body="贵所好：\n\n我用官网的高企资格自评工具测了，想领取一份《差距补强清单》。\n"
+         +"企业名称：\n所属行业：\n联系人/电话：\n\n（请把复制的自评结果粘贴在下面）\n\n";
+ window.location.href='mailto:collection@najieip.com?subject='+encodeURIComponent(subj)
+                     +'&body='+encodeURIComponent(body);
+ }
+ </script>
 </body>
 </html>
