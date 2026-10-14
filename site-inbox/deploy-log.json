@@ -2241,6 +2241,30 @@
    "defects_found": "① mili 页标题与 meta 含 ASCII 双引号，属性值需转义为 &quot;（照站内既有页面写法），否则 og:title/description 属性会被提前闭合；② A 文登记号脱敏串 BS.1250****.2 直写会在 HTML 里留下 '**' 残留，改用数字实体 &#42;&#42;&#42;&#42; 保持渲染文本一致且 '**'=0；③ 无。",
    "notes": "articles.json 保持既有格式（缩进 2 格、文件末尾无换行——原文件即无，未新增）；deploy-log 以 indent=1 往返保真后追加，其余条目逐字节不变；两页 JSON-LD 的 @context 均为 https://schema.org；图片 800x1200 PNG。",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-14",
+   "time": "22:0x",
+   "agent": "SiteOps",
+   "round": "daily-1014-night",
+   "commit": "pending",
+   "action": "每日巡检：核心 6 页 200 + 近 3 日 6 页六联判据（0 真缺陷）+ 主索引缺 2 卡补齐 + najie 20261014 页补 BreadcrumbList + articles.json 守卫 187/187",
+   "files_changed": [
+    "blog/index.html",
+    "najie/blog/20261014-trademark-pattern-packaging-confusion.html"
+   ],
+   "cards_added": {
+    "blog/index.html": 2,
+    "brand": 0
+   },
+   "verification": "主索引 212→214 卡（div 深度 0 / depth1 卡 214 / 无重复 href / 无 **）；3 新页线上 200；sitemap 307 loc 已含 3 新页；articles.json 187/187 零违例、首页 top6 全部有页面",
+   "defects_found": [
+    "主索引缺 mili/lajie 2 张 10-14 新卡（上游 13:40 提交只补了 1 张）",
+    "najie 20261014 页只有 Article JSON-LD，缺 BreadcrumbList（同批其他新页为 2-3 块）",
+    "site-inbox/20261010-mili-aigc-trade-secret-two-leaks.html 保留上游原始副本（ld=0/16 处 **），线上可访问但未被索引/未进 sitemap"
+   ],
+   "notes": "index 页 ld=1（CollectionPage/WebSite）与 i18n 页 ld=1（单 BlogPosting）经 origin 基线核对为站点规范，非缺陷；行规更新：六联判据的 ld>=2 只对文章页生效，index 与 i18n 页按各自基线判定",
+   "result": "success"
   }
  ]
 }
