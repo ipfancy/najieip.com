@@ -2216,6 +2216,31 @@
    "defects_found": "mili/blog/20261010-mili-aigc-trade-secret-two-leaks.html 属「部分裸发布」档：有 h1 与外链 style.css，但缺 JSON-LD / og:image / og:site_name / keywords / twitter:title，description 复读标题；且正处 articles.json 首页 slice(0,6) 第 1 位（曝光最高位）",
    "notes": "brand index 页 h1=0 属站点规范（blog/mili/najie/en/fr 五个索引一致），勿按缺陷处理；近 6 日窗口其他页面六联全过；无新文章需补卡（content.db 最新 ART-2026-0105 / 10-09）",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-14",
+   "time": "10:20",
+   "agent": "品牌传播部·deploy",
+   "batch": "2026-10-14",
+   "topic": "najie 布图设计独创性主张（最高法知行终322号） / mili 29号文专利＋商业秘密分层",
+   "round": "2026-10-14 批：najie 布图设计独创性主张 + mili 专利商业秘密分层",
+   "commit": "(本次提交)",
+   "action": "发布 2 篇内容页（najie A 布图设计独创性主张·最高法知行终322号；mili B 29号文专利＋商业秘密分层）＋ 2 张信息图；同步 najie/mili 两博客索引首条卡与 blogPost 首位、articles.json 首 2 条、sitemap 2 loc、本日志。先推 7718ecf（页面＋图片），线上实测后再推索引与元数据。",
+   "files_changed": [
+    "najie/blog/layout-design-originality-claim-322-2026.html",
+    "mili/blog/patent-vs-trade-secret-layering-2026.html",
+    "img/layout-design-originality-claim-322-2026.png",
+    "img/patent-vs-trade-secret-layering-2026.png",
+    "najie/blog/index.html",
+    "mili/blog/index.html",
+    "articles.json",
+    "sitemap.xml",
+    "site-inbox/deploy-log.json"
+   ],
+   "verification": "线上实测（推送 7718ecf 后 60s+，curl）：两页 curl -sI=200，字节 11,976 / 11,488 与本地逐字节一致；两图裸 URL 与 ?cb=1 四种组合均 200（460,206B / 392,744B，content-type image/png），灰度期无 404；回读线上页面 grep：<h1> 与定稿标题逐字一致 True、ld+json=3（Article+BreadcrumbList+FAQPage 且 json.loads 通过）、'##'=0、'**'=0、'***'=0、CTA 电话 13911268604 命中 1、内嵌图 ?v=20261014 命中；本地结构终验 72 项断言 FAILURES=0。",
+   "defects_found": "① mili 页标题与 meta 含 ASCII 双引号，属性值需转义为 &quot;（照站内既有页面写法），否则 og:title/description 属性会被提前闭合；② A 文登记号脱敏串 BS.1250****.2 直写会在 HTML 里留下 '**' 残留，改用数字实体 &#42;&#42;&#42;&#42; 保持渲染文本一致且 '**'=0；③ 无。",
+   "notes": "articles.json 保持既有格式（缩进 2 格、文件末尾无换行——原文件即无，未新增）；deploy-log 以 indent=1 往返保真后追加，其余条目逐字节不变；两页 JSON-LD 的 @context 均为 https://schema.org；图片 800x1200 PNG。",
+   "result": "PASS"
   }
  ]
 }
