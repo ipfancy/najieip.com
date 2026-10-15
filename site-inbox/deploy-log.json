@@ -2265,6 +2265,49 @@
    ],
    "notes": "index 页 ld=1（CollectionPage/WebSite）与 i18n 页 ld=1（单 BlogPosting）经 origin 基线核对为站点规范，非缺陷；行规更新：六联判据的 ld>=2 只对文章页生效，index 与 i18n 页按各自基线判定",
    "result": "success"
+  },
+  {
+   "date": "2026-10-15",
+   "time": "22:0x",
+   "agent": "siteops",
+   "round": "每日运营（1015）",
+   "commit": "19d64d4",
+   "action": "核心页 HTTP 巡检 + 精修 mili 新页（部分裸发布：补 Article/BreadcrumbList JSON-LD、og:image、og:site_name、twitter 卡、keywords、真摘要去标题复读）+ 双索引补卡 + articles.json 守卫隔离 + sitemap 看门",
+   "files_changed": [
+    "mili/blog/20261015-ip-4-hard-deadlines-buju-revision.html",
+    "mili/blog/index.html",
+    "blog/index.html",
+    "img/20261015-ip-4-hard-deadlines-buju-revision.png",
+    "articles.json",
+    "articles-quarantine-20261015.json"
+   ],
+   "cards_added": {
+    "mili/blog/index.html": [
+     117,
+     118
+    ],
+    "blog/index.html": [
+     214,
+     215
+    ]
+   },
+   "verification": {
+    "http_core": "6/6 200",
+    "new_page_online_bytes": 11759,
+    "live_checks": "8 项 PASS（h1/ld>=2/og:image/twitter:image/keywords/desc>120/**==0/schema.org>=2）",
+    "index_live_cards": "mili 118 / main 215（均与新页 HIT）",
+    "cover_image": "200",
+    "articles_json_live": 189,
+    "sitemap_loc": 308,
+    "watchdog": "sitemap-auto.sh exit 0 且 loc 不变"
+   },
+   "defects_found": [
+    "mili 新页部分裸发布（无 JSON-LD / 无 og:image / description 复读标题）",
+    "新页未进任何索引（主索引与 mili 索引均零卡）",
+    "articles.json 50 条无页面条目（第 16 次复活）"
+   ],
+   "notes": "上游 431d8a5 已修 markdown 渲染（**→strong、竖线表→table 8 行、斜体→em），本轮只补 head 与索引面；正文 body 归一后逐字不变。行规沉淀：head 重建后必须用「原始 </head> 偏移」切 body，用 len(改后 head) 会吞掉正文开头（本轮实测 h1 计数掉落）。",
+   "result": "PASS"
   }
  ]
 }
