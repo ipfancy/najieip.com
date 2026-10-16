@@ -2308,6 +2308,28 @@
    ],
    "notes": "上游 431d8a5 已修 markdown 渲染（**→strong、竖线表→table 8 行、斜体→em），本轮只补 head 与索引面；正文 body 归一后逐字不变。行规沉淀：head 重建后必须用「原始 </head> 偏移」切 body，用 len(改后 head) 会吞掉正文开头（本轮实测 h1 计数掉落）。",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-16",
+   "time": "22:0x CST",
+   "agent": "SiteOps",
+   "round": "daily-2200",
+   "commit": "c79dcfb",
+   "action": "精修 najie 今日新页「部分裸发布」（补 h1 + 3 个 h2 路标 + BreadcrumbList JSON-LD + og:image/og:site_name/twitter/keywords/真摘要，描述去标题复读）+ 封面图入库 + articles.json 第17次隔离 + 接管 site-inbox 冗余副本",
+   "files_changed": [
+    "najie/blog/customs-ip-filing-3-things-20261016.html",
+    "img/customs-ip-filing-3-things-20261016.png",
+    "articles.json",
+    "articles-quarantine-20261016.json"
+   ],
+   "cards_added": 0,
+   "verification": "线上 8/8 核心页 200；精修页 11 项判据全 PASS（h1=1/h2=3/ld=2/og:image/og:site_name/keywords/twitter:title/**=0/desc!=title/schema.org/无脱敏）；封面图 200；live articles.json=190；sitemap 309 loc；双索引卡 HIT",
+   "defects_found": [
+    "najie/blog/customs-ip-filing-3-things-20261016.html: h1=0, 无 og:image, 无 og:site_name, 无 keywords, 无 twitter:title/description, description 复读标题, 缺 BreadcrumbList, 3 个小标题仍为 <p>（处 articles.json 首页 slice(0,6) 第 1 曝光位）",
+    "articles.json: 上游复活 50 条无页面条目（190→240）"
+   ],
+   "notes": "本页由上游 publish 提交 e1f745f/58bf10f 直落 najie/blog/，site-inbox 同步副本与已发布页字节相同 → 无待同步内容，按已接管删除（零信息损失）。封面图命名用日期前缀变体 cover-20261016-customs-...（与文章 slug 顺序相反），修复脚本已加候选回退。正文剥离标签后逐字相等（h1 位除外）。sitemap 看门测试 exit 0、309 loc 不变（无回灌）。",
+   "result": "success"
   }
  ]
 }
