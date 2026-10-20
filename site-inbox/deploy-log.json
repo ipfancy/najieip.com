@@ -2396,6 +2396,51 @@
    ],
    "notes": "7,095->10,423B；body_text_identical=True；2 块 ld+json json.loads 全通；mili 索引 118->119（含 BlogPosting+1）、主索引 216->217；articles.json 241->191",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-20",
+   "time": "10:05",
+   "agent": "SiteOps",
+   "round": "每日运营（10-20 白天）",
+   "commit": "c7489a3",
+   "action": "核心6页200；精修 10-18 海关扣留时限页（第8例「部分裸发布」，处 articles.json 首页第1曝光位）：补 h1 + Article/BreadcrumbList JSON-LD（deepcopy 模板覆写）+ og:image/og:site_name/keywords/twitter 三件 + 真摘要184字 + 文本节点直引号转中文引号，5,830→9,756B（正文逐字不变）；封面图入库 img/；双索引已有卡（主索引+觅理索引），sitemap 已含 1 条；articles.json 第19次隔离 242→192",
+   "files_changed": [
+    "mili/blog/customs-ip-detention-30-day-timeline-20261018.html",
+    "img/customs-ip-detention-30-day-timeline-20261018.png",
+    "articles.json",
+    "articles-quarantine-20261020.json",
+    "site-inbox/diag-1020.py",
+    "site-inbox/fix-1020-page.py",
+    "site-inbox/live-1020.py",
+    "site-inbox/log-1020.py"
+   ],
+   "cards_added": {
+    "blog/index.html": 0,
+    "mili/blog/index.html": 0,
+    "note": "双索引上游已补卡（004cf8b），本轮核验 HIT，无需补卡"
+   },
+   "verification": {
+    "core_pages_200": "6/6",
+    "page_live_bytes": 9756,
+    "h1": 1,
+    "ld_json": 2,
+    "og_image": 1,
+    "desc_len": 184,
+    "stars": 0,
+    "ld_json_parse": "2/2 OK",
+    "body_text_unchanged": true,
+    "cover_http": 200,
+    "live_articles_json": 192,
+    "sitemap_loc": 313,
+    "sitemap_watchdog": "exit 0（静默，无回灌）",
+    "live_assertions": "15/15 PASS"
+   },
+   "defects_found": [
+    "上游 10-18 发布页缺 h1 / JSON-LD / og:image / og:site_name / keywords / twitter 标题图像，description 复读标题（第8例「部分裸发布」）",
+    "上游 6cd0888 提交把 articles.json 隔离条目整体复活 300 行（第19次）"
+   ],
+   "notes": "10-19 与 10-20 上游无新文章（最新 ART-2026-0110 / 10-18）；10-17 页卡片核验 HIT；今日非周六，GEO 追踪按计划不执行",
+   "result": "PASS"
   }
  ]
 }
