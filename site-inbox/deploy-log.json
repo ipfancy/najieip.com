@@ -2467,6 +2467,25 @@
    "defects_found": "上游发布仅写 .published.json 与 md，未落站点页面（10-20 10:04、10-19 10:06 两次发布均无 HTML）；另 10-19 文未登记 content.db articles 表",
    "notes": "生成器 site-inbox/gen-1020-missing-pages.py；正文与 md 源逐段比对（表格行按 <table> 渲染，非文本差异）；articles.json 守卫 194/194 零违例",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-21",
+   "time": "06:20",
+   "agent": "siteops",
+   "round": "早检（每日运营）",
+   "commit": null,
+   "action": "核心6页HTTP验证 + 近3日3篇文章页六联判据 + 三品牌索引缺口扫描 + articles.json守卫 + sitemap看门",
+   "files_changed": [
+    "site-inbox/ops-1021-morning.py",
+    "site-inbox/ops-1021-aipu-gap.py",
+    "site-inbox/deploy-log.json",
+    "site-inbox/siteops-daily-20261021.md"
+   ],
+   "cards_added": "mili 122 / najie 87 / aipunajie 18 / 主索引 220（均无新增，零缺口）",
+   "verification": "核心6页 200；近3日页面六联 3/3 OK；真缺口 0（cnptes 架构图页按 09-23 口径排除）；articles.json 193/193 零违例；sitemap-auto.sh exit 0 且 315 loc 不变",
+   "defects_found": "0 页面缺陷；无「已发布但站点无页」缺档",
+   "notes": "content.db 最新 published=10-20（ART-2026-0111），对应页 mili/blog/20261020-mili-overtime-leave-evidence.html 已在双索引+主索引+articles.json 三处收录；.published.json 10-20 两条均已落地。",
+   "result": "PASS"
   }
  ]
 }
