@@ -2441,6 +2441,32 @@
    ],
    "notes": "10-19 与 10-20 上游无新文章（最新 ART-2026-0110 / 10-18）；10-17 页卡片核验 HIT；今日非周六，GEO 追踪按计划不执行",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-20",
+   "time": "10:17",
+   "agent": "SiteOps",
+   "round": "夜间补齐已发布缺页文章（content.db 已发布 vs 站点无页面）",
+   "commit": "7a2c974",
+   "action": "为 10-20《加班费年假争议…法释26号第42条》与 10-19《11月1日起保外就医门槛变了》两篇生成房屋样式页面（h1 + Article/BreadcrumbList JSON-LD + og/twitter + 真摘要 + 封面入库）+ mili/主索引补卡 + articles.json 条目 + sitemap 纳入",
+   "files_changed": [
+    "mili/blog/20261020-mili-overtime-leave-evidence.html",
+    "mili/blog/20261019-mili-community-correction-medical-standard.html",
+    "img/20261020-mili-overtime-leave-evidence.png",
+    "img/20261019-mili-community-correction-medical-standard.png",
+    "mili/blog/index.html",
+    "blog/index.html",
+    "articles.json",
+    "sitemap.xml"
+   ],
+   "cards_added": {
+    "mili/blog/index.html": "120->122",
+    "blog/index.html": "218->220"
+   },
+   "verification": "核心6页200；两页 live 200（含封面图）；live h1=1/ld=2/og:image/**=0/JSON-LD 全部 json.loads 通过；双索引 live HIT；sitemap live 315 loc（313->315）",
+   "defects_found": "上游发布仅写 .published.json 与 md，未落站点页面（10-20 10:04、10-19 10:06 两次发布均无 HTML）；另 10-19 文未登记 content.db articles 表",
+   "notes": "生成器 site-inbox/gen-1020-missing-pages.py；正文与 md 源逐段比对（表格行按 <table> 渲染，非文本差异）；articles.json 守卫 194/194 零违例",
+   "result": "PASS"
   }
  ]
 }
