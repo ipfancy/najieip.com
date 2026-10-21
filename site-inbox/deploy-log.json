@@ -2509,6 +2509,24 @@
       "defects_found": "0；两图裸 URL 首检即 200，未复现 CDN 负缓存",
       "notes": "生成器 /root/.hermes/cache/scratch/build_1021.py（md->HTML + 卡片 + BlogPosting + articles.json + sitemap 一次成型）；视觉为 chromium headless 渲染（本机无 rsvg-convert）",
       "result": "PASS"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "22:40",
+      "agent": "siteops",
+      "round": "SiteOps 每日运营 22:00",
+      "commit": "6ec2a24",
+      "action": "主索引补 3 卡（10-22 judge / 10-21 3gpp / 10-21 goods）220->223；judge 页补 og:image + twitter:image（card 升 summary_large_image）；articles.json 补 judge 条目 195->196",
+      "files_changed": [
+        "blog/index.html",
+        "mili/blog/20261022-judge-liability-verdict-reversed.html",
+        "articles.json"
+      ],
+      "cards_added": "主索引 +3（mili 品牌索引已有卡，未重复新增）",
+      "verification": "核心 6 页 200；三新页 live 200 且 h1=1 / ld=3 / og:image+twitter:image 齐备 / 无 markdown 泄漏；主索引 live 223 卡且 3 条新卡全 HIT；live articles.json=196 且 top1=2026-10-22；sitemap 看门 exit 0（318 loc 不变，lastmod 0 缺）；articles.json 守卫 196/196 零违例，首页 slice(0,6) 六条全部有落地页",
+      "defects_found": "3 项：①主索引滞后（3 篇新页品牌索引有卡、主索引无卡）②judge 页缺 og:image/twitter:image ③articles.json 缺 judge(10-22) 条目（该文为首页第 1 曝光位）",
+      "notes": "3gpp 页 `**` 仅 1 处为专利号掩码 20088000****.4，非 markdown 泄漏，未改（星号判据须排除数字紧邻情形）；judge 页无自托管封面资产，暂用觅理品牌页同款 Pexels 法律图（实测 200），backlog=需 Agent-visual 出 cover 并入库 img/；脚本 site-inbox/{ops,fix,verify,commit,log,live2}-1021-eve.py",
+      "result": "PASS"
     }
   ]
 }
