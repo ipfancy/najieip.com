@@ -2527,6 +2527,34 @@
       "defects_found": "3 项：①主索引滞后（3 篇新页品牌索引有卡、主索引无卡）②judge 页缺 og:image/twitter:image ③articles.json 缺 judge(10-22) 条目（该文为首页第 1 曝光位）",
       "notes": "3gpp 页 `**` 仅 1 处为专利号掩码 20088000****.4，非 markdown 泄漏，未改（星号判据须排除数字紧邻情形）；judge 页无自托管封面资产，暂用觅理品牌页同款 Pexels 法律图（实测 200），backlog=需 Agent-visual 出 cover 并入库 img/；脚本 site-inbox/{ops,fix,verify,commit,log,live2}-1021-eve.py",
       "result": "PASS"
+    },
+    {
+      "date": "2026-10-22",
+      "time": "22:20",
+      "agent": "SiteOps",
+      "round": "每日运营（22:00 cron）",
+      "commit": "68d09ba",
+      "action": "精修纳杰高企30分裸发布页 + 主索引补2卡/纳杰索引补1卡 + articles.json守卫第18次隔离",
+      "files_changed": [
+        "najie/blog/20261022-najie-gaoqi-ip-30points.html",
+        "najie/blog/index.html",
+        "blog/index.html",
+        "articles.json",
+        "articles-quarantine-20261022.json",
+        "img/20261022-najie-gaoqi-ip-30points.png"
+      ],
+      "cards_added": {
+        "blog/index.html": 2,
+        "najie/blog/index.html": 1
+      },
+      "verification": "core 6/6 200; gaoqi h1=1 ld=2 og:image 1 desc=158字 无裸表 无** 9,943B(线上字节一致); cover img 200; 主索引2卡+纳杰索引1卡 HIT; articles.json 线上198条; sitemap 看门 exit 0 (321 loc 不变)",
+      "defects_found": [
+        "najie 20261022 高企30分文：裸发布（h1=0/ld=0/无og:image/description=标题复读/裸markdown表7行/ASCII直引号），且处 articles.json 首页第2曝光位、两索引零卡",
+        "mili 20261022 安全生产刑责文：品牌索引有卡、主索引缺卡",
+        "articles.json 50 条无页面条目（第18次复活）"
+      ],
+      "notes": "正文以 md 源重建，逐字比对 1,494 字符 EQUAL；模板取自同日同品牌 20261021-goods-names 房屋，FAQPage 块已剔除避免张冠李戴；封面 297,910B 入库",
+      "result": "PASS"
     }
   ]
 }
