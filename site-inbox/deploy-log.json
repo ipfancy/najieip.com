@@ -2555,6 +2555,41 @@
       ],
       "notes": "正文以 md 源重建，逐字比对 1,494 字符 EQUAL；模板取自同日同品牌 20261021-goods-names 房屋，FAQPage 块已剔除避免张冠李戴；封面 297,910B 入库",
       "result": "PASS"
+    },
+    {
+      "date": "2026-10-23",
+      "time": "13:12",
+      "agent": "门丞",
+      "round": "补发（publish_queue 断点）",
+      "commit": "4b87f33",
+      "action": "补发队列积压2篇：publish_queue 中 20261020 两篇仅有 .md、缺 _visual.html（管道断点），按 .md 直接成页并发布；主体隔离+双JSON-LD+封面+三索引+articles.json+sitemap",
+      "files_changed": [
+        "najie/blog/20261023-najie-trademark-law-70-days.html",
+        "aipunajie/blog/20261023-aipunajie-overseas-patent-fto.html",
+        "najie/blog/index.html",
+        "aipunajie/blog/index.html",
+        "blog/index.html",
+        "articles.json",
+        "sitemap.xml",
+        "img/20261023-najie-trademark-law-70-days.png",
+        "img/20261023-aipunajie-overseas-patent-fto.png"
+      ],
+      "cards_added": {
+        "najie/blog/index.html": 1,
+        "aipunajie/blog/index.html": 1,
+        "blog/index.html": 2
+      },
+      "attribution": {
+        "najie": "商标法修订/使用证据 → 北京纳杰知识产权代理有限公司",
+        "aipunajie": "出海FTO/海外布局/337 → 北京爱普纳杰专利代理事务所"
+      },
+      "verification": "两页 + 两封面在线 curl=200；h1=1、JSON-LD=2、div 平衡；najie 页「70天」19处、无「72天」；正文去 ASCII 直引号；正文与 CTA 仅署发文主体（剔除三主体合并署名行）；articles.json 248→250 无重无缺字段；sitemap 322→324 无重；三索引卡片已挂并线上 HIT",
+      "defects_found": [
+        "publish_queue 10-20 批次仅产出 .md，_visual.html 生成环节断点，导致两篇积压3天未发布",
+        "站点全站 footer「© 2026 纳杰觅理 · 愛普納傑专利所 & 觅理律所」为三主体混署+繁体，与规则9 主体隔离不一致（模板级，待统一处理）"
+      ],
+      "notes": "倒计时按今日实算校正 72→70 天（2027-01-01 距今）；封面为原创文字排版（PIL+微软雅黑），未使用任何图库/AI 图像素材；微信专属话术（阅读原文/公众号菜单）已替换为站点 CTA；两页均保留 AI 辅助生成明示",
+      "result": "PASS"
     }
   ]
 }
