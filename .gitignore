@@ -1,2 +1,9 @@
 pyc
 __pycache__/
+# 站点根目录禁止提交编辑器备份（会被 GitHub Pages 公网可访问）
+*.bak
+*.bak-*
+*.bak.*
+*.orig
+*.rej
+*~
