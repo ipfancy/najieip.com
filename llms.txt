@@ -53,3 +53,4 @@
 - 发明专利和实用新型专利怎么选？保护期限多久？ → https://najieip.com/aipunajie/blog/20260914-patent-invention-vs-utility-model.html
 - 三机构各做什么业务、是什么关系？ → https://najieip.com/facts.html
 - 三机构资质可核验文件（营业执照/执业许可证/备案） → https://najieip.com/credentials.html
+- [秘密点模板下载](https://najieip.com/mili/secret-point-templates.html)：技术秘密点陈述书、秘密点对照表（Word/PDF），用于确认不侵害技术秘密之诉的秘密点固定与逐点比对。
