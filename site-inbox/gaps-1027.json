@@ -1,0 +1,23 @@
+[
+ {
+  "type": "NO_MAIN_CARD",
+  "brand": "najie",
+  "path": "/najie/blog/cnptes-three-layer-architecture-diagram.html",
+  "rel_href": "/najie/blog/cnptes-three-layer-architecture-diagram.html",
+  "block": "<div class=\"article-card\">\n  <h2><a href=\"/najie/blog/cnptes-three-layer-architecture-diagram.html\">CNPTES 管线</a></h2>\n  <div class=\"meta\">推荐</div>\n  <p>CNPTES 管线-Agent-数据库 三层架构 :root { --bg: #f8fafc; --text: #1a1a2e; --text-secondar…</p>\n</div>"
+ },
+ {
+  "type": "NO_MAIN_CARD",
+  "brand": "aipunajie",
+  "path": "/aipunajie/blog/20261027-aipunajie-oa-phone-amendment-decision.html",
+  "rel_href": "./20261027-aipunajie-oa-phone-amendment-decision.html",
+  "block": "<div class=\"article-card\">\n   <div class=\"date\">2026-10-27</div>\n   <h3><a href=\"./20261027-aipunajie-oa-phone-amendment-decision.html\">审查员打电话让你改，当场答应对不对</a></h3>\n   <div class=\"excerpt\">电话里那三分钟，决定的不是这一件案子能不能授权，而是保护范围还剩多少。三分支判断法（是否触及独权核心区别特征）、从权下放怎么用、为什么不能口头答应，以及电话挂断后必须做的三件事。</div>\n   <span class=\"tag\">审查意见答复</span><span class=\"tag\">权利要求修改</span><span class=\"tag\">保护范围</span>\n </div>"
+ },
+ {
+  "type": "NO_MAIN_CARD",
+  "brand": "aipunajie",
+  "path": "/aipunajie/blog/20261026-aipunajie-patent-before-launch.html",
+  "rel_href": "./20261026-aipunajie-patent-before-launch.html",
+  "block": "<div class=\"article-card\">\n   <div class=\"date\">2026-10-26</div>\n   <h3><a href=\"./20261026-aipunajie-patent-before-launch.html\">先申请专利再开发布会</a></h3>\n   <div class=\"excerpt\">发布会、短视频、电商详情页都属于「为公众所知」，产品一亮相技术方案就成了现有技术，专利申请被自己废掉。《专利法》第24条的6个月宽限期不覆盖普通商业发布会，海外多数国家没有宽限期。附可落地顺序：外观设计先占位、技术点逐个对照、用优先权处理迭代（发明12个月／外观6个月），以及三个高频误区。</div>\n   <span class=\"tag\">新颖性</span><span class=\"tag\">专利布局</span><span class=\"tag\">优先权</span>\n </div>"
+ }
+]
