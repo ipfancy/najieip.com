@@ -268,10 +268,11 @@
     "site": "mili"
   },
   {
-    "url": "/najie/blog/20261010-mili-aigc-trade-secret-two-leaks.html",
+    "url": "/mili/blog/20261010-mili-aigc-trade-secret-two-leaks.html",
     "title": "AI团队最容易漏的2个泄密口子：不传文件，防泄露系统也抓不到",
     "date": "2026-10-10",
-    "site": "najie"
+    "site": "mili",
+    "description": "北京市市场监管局 9 月 22 日《AIGC 企业商业秘密保护指引》征求意见稿点出两个最容易被漏掉的泄密口子：一是研发人员用 AI 编程助手、代码补全插件时，工具索引整个代码仓库、每次交互把代码上下文发到云端，这种外发不体现为文件传输，常规数据防泄露措施难以识别；二是员工图方便把代码和 prompt 粘进公共模型，很多团队还不觉得这是泄密。本文拆解两个口子的技术路径、指引给出的具体做法，以及今天就能做的三个动作。"
   },
   {
     "url": "/mili/blog/20261009-mili-ai-short-drama-token-evidence.html",
@@ -648,7 +649,8 @@
     "url": "/mili/blog/20260917-upc-injunction-counterattack.html",
     "title": "禁令突袭反被撤销：出海企业3招反打",
     "date": "2026-09-17",
-    "site": "mili"
+    "site": "mili",
+    "description": "2025年9月IFA展会现场，科沃斯以单方命令让石头科技展品被扣；UPC杜塞尔多夫地方分庭于同年12月19日认定该命令违法作出、溯及既往全额撤销，2026年3月16日上诉法院维持原判并定性为程序滥用。败因只有一条：申请时未披露己方代理人已在亚马逊买到涉案产品。对照追觅诉前行为保全被最高法撤销，附保护函、限缩检查、复审三步反打要点。"
   },
   {
     "url": "/mili/blog/ai-shengcheng-neirong-qinquan-2026.html",
