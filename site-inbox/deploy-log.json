@@ -2718,6 +2718,21 @@
    "defects_found": ["10-27 aipunajie 新文与 10-26 aipunajie 发布会文均只进品牌索引，主索引零卡", "今日新文未写入 articles.json（首页 slice(0,6) 曝光数据源缺该文）", "Pages 构建排队约 7 分钟（queued→in_progress→success），期间线上仍为旧版"],
    "notes": "品牌索引 aipunajie 卡模板为 h3+href ./x.html，缺口扫描正则须 <h[23][^>]*><a href=，只写 <h2> 会把 aipunajie 全量漏判；主索引卡按主索引房屋样式重建（h2 绝对路径 + meta 带 tag/日期/主体署名 + p 摘要）。插入用逐轮重扫位置法，硬断言 t2.replace(card+'\\n  ','',1)==t 通过。cnptes-three-layer-architecture-diagram.html 属架构图页，按既有口径不入主索引。线上首轮读旧缓存（238 卡/211 条），Pages 构建 success 后 45s 内全部收敛。",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-28",
+   "time": "22:20",
+   "agent": "SiteOps",
+   "round": "daily-20261028",
+   "commit": "6ad3fd3",
+   "action": "每日运营：核心 6 页 200（/mili/ /najie/ 首轮 000 瞬断，重试 3 次全 200）；主索引补 4 张当日卡（mili 变换主体598号 / 孕期辞退 / mili 软著60页 + najie 地理标志异议）240→244；mili 品牌索引补 1 张（孕期辞退文）135→136；近 3 日 9 篇品牌页六联判据 0 缺陷；articles.json 守卫 --check 264 条 0 缺页、首页 slice(0,6) 全部有页面",
+   "files_changed": ["blog/index.html", "mili/blog/index.html", "site-inbox/ops-1028-scan.py", "site-inbox/gen-1028-index-cards.py"],
+   "cards_added": 5,
+   "attribution": "上游发布只写品牌索引：mili 孕期辞退文双索引均无卡、另 3 篇（mili 变换主体 / mili 软著 / najie 地理标志）只写品牌索引 → 主索引零卡，需 SiteOps 补齐",
+   "verification": "本地：主索引 cards 240→244、div 深度归零无栈空闭合、malformed=0、`**`=0；mili 索引 135→136 同法定验；四 slug 在主索引各出现 1 次、mili 孕期卡用 ./ 相对 href；sitemap 4/4 已含（343 loc）",
+   "defects_found": ["mili 孕期辞退文品牌索引与主索引双缺卡 1 处", "主索引漏收当日 4 篇（品牌索引已收录）"],
+   "notes": "site-inbox/20261028-mili-pregnancy-disguised-dismissal-evidence.html 为上游 raw 副本（9,927B），已发布版为精修版（13,239B / ld=2 / og:image=1），md 源保留在 digital-employees/articles，raw 副本按“已接管”口径不纳入提交。",
+   "result": "PASS"
   }
  ]
 }
