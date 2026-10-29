@@ -194,10 +194,10 @@ footer a:hover{color:var(--accent)}
 <details><summary>是否接受远程或兼职？</summary><p>目前岗位均为北京全职，需到岗办公（朝阳国贸 / 东城）。特殊情况可在面试时沟通。</p></details>
 </div></div></section>
 
-<section><div class="wrap"><div class="cta"><div><h2>把简历发过来</h2><p>邮件标题：岗位｜姓名｜应聘。附件用 PDF，注明可到岗时间与期望方向；我们会在 5 个工作日内回复是否进入笔试。</p></div><a class="btn" href="mailto:hr@najieip.com?subject=%E5%BA%94%E8%81%98%EF%BD%9C%E5%B2%97%E4%BD%8D%EF%BD%9C%E5%A7%93%E5%90%8D">投递简历</a></div></div></section>
+<section><div class="wrap"><div class="cta"><div><h2>把简历发过来</h2><p>邮件标题：岗位｜姓名｜应聘。附件用 PDF，注明可到岗时间与期望方向；我们会在 5 个工作日内回复是否进入笔试。</p></div><a class="btn" href="#" data-u="hr" data-d="najieip.com" data-s="应聘｜岗位｜姓名">投递简历</a></div></div></section>
 
 <footer><div class="wrap"><div class="links"><a href="/facts.html">机构事实</a><a href="/credentials.html">资质公示</a><a href="/careers.html">招聘</a><a href="/najie/">纳杰</a><a href="/aipunajie/">爱普纳杰</a><a href="/mili/">觅理</a></div>
-<p>业务联系地址：北京市朝阳区建国门外大街丙12-12号宝钢大厦1502室　投递邮箱：hr@najieip.com</p>
+<p>业务联系地址：北京市朝阳区建国门外大街丙12-12号宝钢大厦1502室　投递邮箱：<span data-u="hr" data-d="najieip.com">hr@najieip.com</span></p>
 <p style="margin-top:8px">平等就业：本招聘不因性别、年龄、婚育状况、户籍、民族、宗教信仰、残疾等设置限制；岗位要求以专业能力与经验为唯一标准。</p>
 <p style="margin-top:6px">本页岗位长期有效，招满即止；简历仅用于招聘，不作其他用途。</p></div></footer>
 
@@ -212,6 +212,16 @@ document.querySelectorAll('.filter button').forEach(function(b){
     });
   });
 });
+</script>
+<script>
+(function(){
+  function build(u,d,s){return 'mailto:'+u+'@'+d+(s?('?subject='+encodeURIComponent(s)):'');}
+  document.querySelectorAll('[data-u][data-d]').forEach(function(el){
+    var mail=build(el.dataset.u,el.dataset.d,el.dataset.s||'');
+    if(el.tagName==='A'){el.setAttribute('href',mail);}
+    else{el.textContent=el.dataset.u+'@'+el.dataset.d;}
+  });
+})();
 </script>
 </body>
 </html>
