@@ -5,15 +5,29 @@
 <link>https://najieip.com/</link>
 <description>纳杰、爱普纳杰、觅理三机构联合发布的知识产权实务文章：专利撰写与答审、商标与著作权、诉讼与商业秘密。</description>
 <language>zh-CN</language>
-<lastBuildDate>Fri, 30 Oct 2026 14:43:39 +0800</lastBuildDate>
+<lastBuildDate>Sat, 31 Oct 2026 01:53:10 +0800</lastBuildDate>
 <atom:link href="https://najieip.com/feed.xml" rel="self" type="application/rss+xml"/>
 <ttl>60</ttl>
+<item>
+<title>AI 造害快于立法：一份现成的工具箱</title>
+<link>https://najieip.com/mili/blog/20261030-mili-ai-harm-outpaces-law.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261030-mili-ai-harm-outpaces-law.html</guid>
+<pubDate>Fri, 30 Oct 2026 09:00:00 +0800</pubDate>
+<description>世界银行《2026 世界发展报告：人工智能的潜力》第 30 页给了法律人一句要紧的话：既有法律中，数据保护、消费者保护、人权、知识产权与网络安全，已经为治理 AI 风险提供了重要工具。同页另一句是：AI 造害快于政府立法。本文拆解这五件工具在中国法下的具体落点（著作权、商业秘密、个保法自动化决策、消保与广告、数据出境），并用荷兰税务算法、哥伦比亚宪法法院裁定、中国配音案三个事件说明它们已经在动，附企业四步自查。</description>
+</item>
 <item>
 <title>专利法第19条：等4个月没通知就出海，这条旧路没了</title>
 <link>https://najieip.com/najie/blog/20261030-najie-foreign-filing-confidentiality-review.html</link>
 <guid isPermaLink="true">https://najieip.com/najie/blog/20261030-najie-foreign-filing-confidentiality-review.html</guid>
 <pubDate>Fri, 30 Oct 2026 09:00:00 +0800</pubDate>
 <description>专利法第19条：等4个月没通知就出海，这条旧路没了</description>
+</item>
+<item>
+<title>你的训练数据，敢不敢公开来源和权属</title>
+<link>https://najieip.com/najie/blog/20261030-najie-training-data-provenance.html</link>
+<guid isPermaLink="true">https://najieip.com/najie/blog/20261030-najie-training-data-provenance.html</guid>
+<pubDate>Fri, 30 Oct 2026 09:00:00 +0800</pubDate>
+<description>加州 AI 透明法要求生成式 AI 开发者公布训练数据的来源、权属与知识产权状态；世界银行《2026 世界发展报告》第 318 页把这一要求单独点了出来，第 320 页则指出先进模型多训练于「未顾及既有许可条款或著作权利益」的数据。本文把三项披露拆成三条风险线，列出发开源码与开放数据的三类陷阱（许可条款不清、copyleft 传染、开源不等于放弃权利），给出中国法下的对应条文与 12 项自查清单，并提示欧盟 AI 法案透明度义务的时间表。</description>
 </item>
 <item>
 <title>AI 写种草笔记被判不正当竞争：输的不是技术，是“专门为某个平台定制”</title>
@@ -272,20 +286,6 @@
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261009-mili-ai-short-drama-token-evidence.html</guid>
 <pubDate>Fri, 09 Oct 2026 09:00:00 +0800</pubDate>
 <description>武汉江岸区法院在一起AI短剧侵权案中，首次把创作时烧掉的词元（Token）算力成本、以及购买商用AI工具的费用计入赔偿。47集AI短剧被改名后整部搬运到自家视频号，判赔2万元。本文拆解法院认定「视听作品」的三个创作环节，把法官点名的留痕要求翻译成创作人今天就能做的三层证据清单——权属与构思、生成过程、发布与成本凭证；并以北京两起AI文生图案对比「当时存」与「事后补」的天差地别，附广州盗录1700余部AI短剧已入刑的警示。</description>
-</item>
-<item>
-<title>AI解题成果归谁 — 觅理律师事务所</title>
-<link>https://najieip.com/mili/blog/20261008-mili-ai-math-solution-copyright.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/20261008-mili-ai-math-solution-copyright.html</guid>
-<pubDate>Thu, 08 Oct 2026 09:00:00 +0800</pubDate>
-<description>OpenAI公开722份数学手稿，宣称其模型解决了含“准黎曼猜想”在内的数百个数学问题——当AI的产出被冠以“成果”，它在法律上归谁？本文按《著作权法》第三条的“独创性＋智力成果”拆解AI生成内容能否构成作品的判断标准（人的个性化选择与实质介入），讲清归属取决于三个事实：谁做出创造性投入、投入发生在何种关系里（职务作品、职务发明、委托开发的默认归属）、AI服务方条款如何约定；分学术与商业两条线说明披露与标识义务（《生成式人工智能服务管理暂行办法》），并给出企业三条实务建议——把“AI参与”写进流程留痕、三类合同先约定权属、不要直接把AI生成内容当自有知识产权去登记维权。</description>
-</item>
-<item>
-<title>一份能经得起仲裁的劳动合同，这4个条款别写错</title>
-<link>https://najieip.com/mili/blog/20261008-mili-labor-contract-four-clauses.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/20261008-mili-labor-contract-four-clauses.html</guid>
-<pubDate>Thu, 08 Oct 2026 09:00:00 +0800</pubDate>
-<description>人社部2025年统计公报显示，全国劳动人事争议全年办理454.3万件、结案金额994.7亿元，平均一案2.25万元。本文拆解劳动合同最容易写错的四个条款：工作内容与地点（写“全国”“服从公司安排”属约定不明，依《劳动争议调解仲裁法》第六条举证不利后果归单位）、劳动报酬（“工资面议”按《劳动合同法》第十八条同工同酬处理）、试用期（第十九条的期限上限，以及“录用条件”必须书面化才能据以解除）、社保与竞业限制（《劳动争议解释（二）》第十九条约定自愿放弃社保一律无效、第十三条竞业限制范围与涉密事项脱节部分无效），每条给出一个真实反例和一句可直接抄进合同的写法。</description>
 </item>
 </channel>
 </rss>
