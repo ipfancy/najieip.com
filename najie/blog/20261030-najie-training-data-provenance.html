@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>你的训练数据，敢不敢公开来源和权属 — 纳杰觅理</title>
+<meta name="description" content="加州 AI 透明法要求生成式 AI 开发者公布训练数据的来源、权属与知识产权状态；世界银行《2026 世界发展报告》第 318 页把这一要求单独点了出来，第 320 页则指出先进模型多训练于「未顾及既有许可条款或著作权利益」的数据。本文把三项披露拆成三条风险线，列出发开源码与开放数据的三类陷阱（许可条款不清、copyleft 传染、开源不等于放弃权利），给出中国法下的对应条文与 12 项自查清单，并提示欧盟 AI 法案透明度义务的时间表。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="你的训练数据，敢不敢公开来源和权属">
+<meta property="og:description" content="来源、权属、知识产权状态——三项披露就是三条风险线。附 12 项自查清单与中国法对应条文。">
+<meta property="og:site_name" content="北京纳杰知识产权代理有限公司">
+<meta property="og:locale" content="zh_CN">
+<meta name="keywords" content="训练数据,数据来源,开源许可证,copyleft,AI合规,著作权">
+<meta property="og:url" content="https://najieip.com/najie/blog/20261030-najie-training-data-provenance.html">
+<meta property="og:image" content="https://najieip.com/img/20261030-najie-training-data-provenance.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="你的训练数据，敢不敢公开来源和权属">
+<meta name="twitter:description" content="三项披露＝三条风险线。12 项自查清单，中国法对应条文，开源三类陷阱。">
+<meta name="twitter:image" content="https://najieip.com/img/20261030-najie-training-data-provenance.png">
+<link rel="canonical" href="https://najieip.com/najie/blog/20261030-najie-training-data-provenance.html">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "你的训练数据，敢不敢公开来源和权属", "description": "加州 AI 透明法要求披露训练数据的来源、权属与知识产权状态。本文拆解三项披露对应的三条风险线、开源的三类陷阱、中国法下的对应条文与 12 项自查清单。", "author": {"@type": "Person", "name": "何自刚", "jobTitle": "知识产权律师", "worksFor": {"@type": "LegalService", "name": "北京纳杰知识产权代理有限公司", "url": "https://najieip.com/najie/"}}, "publisher": {"@type": "Organization", "name": "北京纳杰知识产权代理有限公司"}, "image": "https://najieip.com/img/20261030-najie-training-data-provenance.png", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://najieip.com/najie/blog/20261030-najie-training-data-provenance.html"}, "url": "https://najieip.com/najie/blog/20261030-najie-training-data-provenance.html", "keywords": "训练数据,数据来源,开源许可证,AI合规,著作权"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://najieip.com/"}, {"@type": "ListItem", "position": 2, "name": "纳杰博客", "item": "https://najieip.com/najie/blog/"}, {"@type": "ListItem", "position": 3, "name": "你的训练数据，敢不敢公开来源和权属", "item": "https://najieip.com/najie/blog/20261030-najie-training-data-provenance.html"}]}</script>
+</head>
+<body>
+<nav><a href="/">← 首页</a> · <a href="https://najieip.com/najie/blog/">纳杰博客</a></nav>
+<article>
+<h1>你的训练数据，敢不敢公开来源和权属？</h1>
+<p>先问一个不太好回答的问题：如果把公司用于训练模型的数据摊在桌面上，你能不能逐条说出——<strong>它从哪来、归谁、许可允许我做什么</strong>？</p>
+<p>这不是假设。世界银行《2026 世界发展报告》第 318 页记录了美国加州《AI 透明法》的要求：生成式 AI 开发者须公布训练数据的<strong>来源（sources）、权属（ownership）与知识产权状态（intellectual property status）</strong>。同页还写了另一句：缺乏披露，便利了大规模数据收集，而这种收集可能违反数据保护与知识产权。</p>
+<p>第 320 页说得更直白：先进模型大多「训练于从互联网提取、未顾及既有许可条款或著作权利益的数据」。</p>
+<p>三项披露，看着是文书工作，实质是三条风险线。</p>
+
+<h2>一、三项披露，三个问题</h2>
+<p><strong>来源</strong>——问的是取得方式。爬取、采购、用户上传、合作方提供、公开数据集，五种来源对应五种举证方式。说不清来源，后面两项都没有意义。</p>
+<p><strong>权属</strong>——问的是权利归属。这里最容易出错：买了数据库不等于买了著作权；用户上传不等于获得授权；公开可见不等于进入公有领域；员工在工作里整理的数据集，权属可能不在公司。</p>
+<p><strong>知识产权状态</strong>——问的是许可边界。允许不允许商用、允许不允许再分发、允许不允许用于训练、要不要署名、衍生作品怎么处理。这一项决定你能不能把模型或数据产品卖出去。</p>
+
+<h2>二、开源的三类陷阱</h2>
+<p>报告第 320 页专门提到：开源许可在权力不对称的条件下，可能便利掠夺性使用。翻成我们日常遇到的三类情形：</p>
+<p><strong>陷阱一：只看「开源」两个字，不看许可证。</strong> 开源不等于公共领域。有的许可只允许非商业使用，有的要求署名，有的对使用场景设限。数据集和代码的许可常常是两套，混着用来路不清。</p>
+<p><strong>陷阱二：copyleft 传染。</strong> 如果训练数据或依赖组件带 agpl、gpl 这类传染性条款，而你的产品又构成衍生作品，可能被要求开放自有代码。这个风险在闭源商业产品上尤其致命。</p>
+<p><strong>陷阱三：把「开源」当成「放弃权利」。</strong> 开源只是授权，不是转让。原作者仍然可以主张权利，只是承诺不起诉你按许可使用。你用超了范围，他随时可以主张。</p>
+
+<h2>三、中国法下对应哪几条</h2>
+<p><strong>著作权法</strong>：复制、改编、汇编是训练流程里最常见的三个行为；把生成内容对外发布还涉及信息网络传播。合理使用要落到具体条款，不能只讲「为了研发」。</p>
+<p><strong>反不正当竞争法</strong>：数据集、清洗规则、标注规范这类不构成作品但具有商业价值的信息，可走商业秘密路径——前提是你有保密措施。</p>
+<p><strong>个人信息保护法</strong>：语料里含个人信息时，要有合法性基础；用于自动化决策的，还要满足第 24 条的透明与拒绝要求。</p>
+<p><strong>数据知识产权登记</strong>：登记证书在司法实践中被作为初步证据使用，能显著降低举证成本。它不创设权利，但能证明「你什么时候、以什么内容、做了这套数据集」。</p>
+
+<h2>四、12 项自查清单</h2>
+<p><strong>来源与授权（4 项）</strong></p>
+<p>1. 每批数据是否有来源记录（URL、采购合同、上传日志）？</p>
+<p>2. 爬取的数据是否核过目标站点的 robots 与用户协议？</p>
+<p>3. 采购数据集的合同里，是否写明可用于训练与商用？</p>
+<p>4. 用户上传或合作方提供的数据，是否有单独的授权条款？</p>
+<p><strong>权属与许可（4 项）</strong></p>
+<p>5. 数据集的权利人是公司、员工还是第三方？有没有书面归属约定？</p>
+<p>6. 开源组件与开放数据集，是否逐项登记了许可证名称与版本？</p>
+<p>7. 是否存在 agpl、gpl 等传染性许可？若存在，产品是否构成衍生作品？</p>
+<p>8. 模型输出是否会包含原作品的实质性表达（长段文本、图片主体）？</p>
+<p><strong>个人信息（2 项）</strong></p>
+<p>9. 语料是否含个人信息？是否做过清洗与去标识化？</p>
+<p>10. 用于自动化决策的场景，是否提供告知与拒绝渠道？</p>
+<p><strong>留痕与举证（2 项）</strong></p>
+<p>11. 清洗规则、标注规范、版本变更是否留档？</p>
+<p>12. 是否做过数据知识产权登记或可替代的存证？</p>
+
+<h2>五、出海要看的两个时间点</h2>
+<p>报告第 311–312 页给了一个容易踩空的时间表：欧盟《AI 法案》的高风险义务因 Digital Omnibus 推迟至 <strong>2027 年 12 月</strong>（嵌入产品者 2028 年 8 月）。这意味着两件事：一，短期内不会有统一的全球标准落地；二，出口欧洲的企业仍要按透明度与数据治理的既有要求准备材料。</p>
+<p>报告同时提到，欧盟之外已有 6 个经济体立了横向法（日本、哈萨克、韩国、中国台湾、越南 2025，乌兹别克 2026），日本走的是无罚则的「轻触式」。做多国业务的企业，别指望一套模板通吃。</p>
+
+<h2>结语：能不能"公开"，取决于你今天有没有记录</h2>
+<p>三项披露的难点不在披露，在<strong>披露时你需要能拿出东西</strong>。来源没有记录，就只能写「不明」；权属没有约定，就只能写「待核」；许可没有登记，就只能写「不确定」。而在一份对外声明里写下这三个词，等于自己承认风险。</p>
+<p>数据合规的成本，从来不是「写一份文件」的成本，而是「从今天开始记录」的成本。越早开始，越便宜。</p>
+
+<p><em>资料来源：World Bank, World Development Report 2026: The Promise of Artificial Intelligence（DOI 10.1596/978-1-4648-2331-2），页码为原书印刷页；加州《AI 透明法》与欧盟《AI 法案》时间表均按报告所载转述，具体条文以官方文本为准。</em></p>
+
+<p><strong>如果公司要把模型或数据产品卖给客户、或者准备出海，我们可以按这份 12 项清单做一次体检，出一份可交付的《训练数据来源与权属说明》——这份东西，客户尽调和平台审核都要看。</strong></p>
+<p><strong>咨询电话：13911268604</strong></p>
+
+<h2>相关阅读</h2>
+<p><a href="https://najieip.com/najie/blog/enterprise-ip-compliance-system.html">企业知识产权合规体系建设——从风险排查到管理落地</a></p>
+<p><a href="https://najieip.com/mili/blog/20261030-mili-ai-harm-outpaces-law.html">AI 造害快于立法：一份现成的工具箱</a></p>
+<hr>
+<div style="background:#8B1A1A;border-radius:10px;padding:26px 22px;margin:30px 0 8px;text-align:center;"><p style="color:#ffffff;font-size:17px;font-weight:bold;margin:0 0 12px;line-height:1.6;">训练数据先体检，再上线</p><p style="color:rgba(255,255,255,0.92);font-size:14px;margin:0 0 14px;line-height:1.8;">12 项清单逐条核：来源记录、权属约定、开源许可、个人信息、留痕与登记</p><p style="color:#ffffff;font-size:15px;margin:0;line-height:1.8;">咨询电话：<span style="color:#f2c94c;font-weight:bold;letter-spacing:1px;">13911268604</span></p></div>
+<p style="text-align:center;color:#8B1A1A;font-size:15px;font-weight:bold;letter-spacing:1px;margin:22px 0 6px;">北京纳杰知识产权代理有限公司 · 商标 · 著作权 · 数据合规</p>
+<p>何自刚 | 知识产权律师 | 北京纳杰知识产权代理有限公司</p>
+<p>*本文由 AI 辅助检索与整理，观点与判断经律师审定。*</p>
+<p>*本文为实务解读，不构成对具体案件的法律意见。*</p>
+</article>
+<footer>
+<p>© 2026 纳杰觅理 · 北京纳杰知识产权代理有限公司</p>
+<p><a href="https://github.com/ipfancy/najieip.com">Open Source</a></p>
+</footer>
+</body>
+</html>
