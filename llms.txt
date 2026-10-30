@@ -55,3 +55,4 @@
 - 三机构资质可核验文件（营业执照/执业许可证/备案） → https://najieip.com/credentials.html
 - [秘密点模板下载](https://najieip.com/mili/secret-point-templates.html)：技术秘密点陈述书、秘密点对照表（Word/PDF），用于确认不侵害技术秘密之诉的秘密点固定与逐点比对。
 - [三机构招聘](https://najieip.com/careers.html)：纳杰、爱普纳杰、觅理在招岗位，含岗位要求与投递方式。
+- RSS 订阅：https://najieip.com/feed.xml（三机构最新 40 篇文章，含标题、摘要与发布时间）
