@@ -2763,6 +2763,21 @@
    "defects_found": ["已发布无页3篇(mili社保补贴/AI算力成本/商标续展)", "裸发布畸形页1篇(najie第19条,无h1/无ld/无og/desc复读/canonical指向mili)", "主索引缺卡2篇(ai-harm/training-data)", "articles.json违例98条"],
    "notes": "新增行规：品牌索引循环必须显式按品牌过滤(否则najie文章被补进mili索引)；articles.json 隔离后首页top6仍须全有页面",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-31",
+   "time": "07:35",
+   "agent": "SiteOps-GEO",
+   "round": "weekly-geo-i18n",
+   "commit": "0d8c555",
+   "action": "第44周GEO双平台18检查点(秘塔9+元宝9) + ART-0114 人身安全保护令 EN/FR 多语言同步",
+   "files_changed": 12,
+   "cards_added": 2,
+   "attribution": {"en/blog": 1, "fr/blog": 1},
+   "verification": "线上7 URL 200; EN/FR h1=1/h2=4/ld=2/og:image/零中文残留/字节一致(16352B/17226B); 双索引卡HIT(23/23); sitemap 357 loc; 封面图200; 中文页 hreflang 4值",
+   "defects_found": ["FR 首次翻译回吐中文(单次双语请求失效, 逐语言重跑后修正)", "源文无 h2 小标题, 需注入 4 个描述性路标(剥h2后逐字相等已断言)", "sitemap 缺 EN/FR 2 条 loc"],
+   "notes": "新增行规: 一次调用同时译 EN+FR 会漏语言(FR 原样回吐中文) → 按语言单独请求并断言正文 CJK==0; h2 注入接受判据 = 剥掉 h2 后与原文严格逐字相等",
+   "result": "PASS"
   }
  ]
 }
