@@ -2778,6 +2778,21 @@
    "defects_found": ["FR 首次翻译回吐中文(单次双语请求失效, 逐语言重跑后修正)", "源文无 h2 小标题, 需注入 4 个描述性路标(剥h2后逐字相等已断言)", "sitemap 缺 EN/FR 2 条 loc"],
    "notes": "新增行规: 一次调用同时译 EN+FR 会漏语言(FR 原样回吐中文) → 按语言单独请求并断言正文 CJK==0; h2 注入接受判据 = 剥掉 h2 后与原文严格逐字相等",
    "result": "PASS"
+  },
+  {
+   "date": "2026-10-31",
+   "time": "22:15",
+   "agent": "siteops",
+   "round": "每日运营",
+   "commit": "139d354",
+   "action": "精修「部分裸发布」页（工具中立／反不正当竞争法13条，正文被截断3段+2段声明）按 md 源重建并套同日 najie 房屋；三索引补卡（najie 96→98、mili 141→142、主索引 251→254）；articles.json 守卫第18次隔离 277→226；aipunajie 索引清理 5 张死链卡",
+   "files_changed": 9,
+   "cards_added": 6,
+   "attribution": {"najie/blog/20261031-najie-specialized-sme-patent-screen.html": "najie", "najie/blog/20261031-mili-ai-product-image-review-tool-neutrality.html": "najie", "mili/blog/20261031-mili-mofcom-trade-secret-sanctions.html": "mili"},
+   "verification": "线上 3 文章页 200 + h1=1/ld=2/og:image/desc>80/stars=0 全 OK；封面 img 200；三索引 6 处卡全 HIT；aipunajie 死链卡线上 GONE；live articles.json=226；sitemap 看门 exit 0（369 loc 已含三文，上游 5262e35 已补 /topics/）",
+   "defects_found": "①「部分裸发布」1 篇：h1 有、外链样式有，但 ld+json=0、无 og:image、description 复读标题、正文截断（缺「一句话收口」+欢迎评论+两条免责声明）、ASCII 直引号未转；②三篇当日文全部未进品牌索引与主索引（上游 commit 只发布页面）；③articles.json 51 条无页面条目（首页 slice(0,6) 前 3 位是新文，隔离后仍全命中）；④aipunajie 索引 5 张卡指向已不存在的文件（线上 404/000）",
+   "notes": "SITEMAP 无需改动（三文已在 357→359 那次纳入）；aipunajie 五张死链卡均无同名文件落在 mili/najie 目录，故直接移除卡片而非改指向；裸发布页 canonical/og:url 已正确指向 najie 目录，无需纠正",
+   "result": "PASS"
   }
  ]
 }
