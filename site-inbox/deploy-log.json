@@ -2793,6 +2793,21 @@
    "defects_found": "①「部分裸发布」1 篇：h1 有、外链样式有，但 ld+json=0、无 og:image、description 复读标题、正文截断（缺「一句话收口」+欢迎评论+两条免责声明）、ASCII 直引号未转；②三篇当日文全部未进品牌索引与主索引（上游 commit 只发布页面）；③articles.json 51 条无页面条目（首页 slice(0,6) 前 3 位是新文，隔离后仍全命中）；④aipunajie 索引 5 张卡指向已不存在的文件（线上 404/000）",
    "notes": "SITEMAP 无需改动（三文已在 357→359 那次纳入）；aipunajie 五张死链卡均无同名文件落在 mili/najie 目录，故直接移除卡片而非改指向；裸发布页 canonical/og:url 已正确指向 najie 目录，无需纠正",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "每日运营（夜间 22:00 — 非高峰）",
+   "commit": "bdfe3fd",
+   "action": "精修当日新文「专利出海还有第二道闸」（部分裸发布档：无JSON-LD/无og:image/description复读标题）+ 封面图入库 + articles.json 守卫第19次隔离",
+   "files_changed": ["najie/blog/20261101-najie-ip-foreign-transfer-review.html", "img/20261101-najie-ip-foreign-transfer-review.png", "articles.json", "articles-quarantine-20261101.json", "feed.xml"],
+   "cards_added": 0,
+   "attribution": "najie（按上游落地目录 najie/blog/）",
+   "verification": "线上页面 12,170B / h1=1 / ld=2 / og:image=1 / **=0 / desc 190 字 / canonical 正确；封面图 200；主索引卡 HIT=1、najie 索引卡 HIT=1；live articles.json=227；sitemap 看门 exit 0（370 loc 不变）",
+   "defects_found": ["页面缺 Article+BreadcrumbList JSON-LD", "缺 og:image / og:site_name / keywords / twitter 标题与图像", "meta description 复读标题（25 字）", "正文 ASCII 直引号未转中文引号", "articles.json 上游复活 51 条无页面条目（278→227）"],
+   "notes": "今日新文品牌卡与主卡上游已同步（无需补卡）；10-31 三篇经复核六项达标；mili 前缀文件名落地 najie/blog 属上游归属，canonical 与双索引一致，不改路径。deploy-log 文本手术追加。",
+   "result": "PASS"
   }
  ]
 }
