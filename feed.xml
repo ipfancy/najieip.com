@@ -5,29 +5,15 @@
 <link>https://najieip.com/</link>
 <description>纳杰、爱普纳杰、觅理三机构联合发布的知识产权实务文章：专利撰写与答审、商标与著作权、诉讼与商业秘密。</description>
 <language>zh-CN</language>
-<lastBuildDate>Tue, 03 Nov 2026 03:30:19 +0800</lastBuildDate>
+<lastBuildDate>Sun, 01 Nov 2026 20:32:13 +0800</lastBuildDate>
 <atom:link href="https://najieip.com/feed.xml" rel="self" type="application/rss+xml"/>
 <ttl>60</ttl>
-<item>
-<title>AI 搜索按千次卖，被摘要的网页按什么收钱</title>
-<link>https://najieip.com/najie/blog/20261102-najie-ai-search-summary-pay.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/20261102-najie-ai-search-summary-pay.html</guid>
-<pubDate>Mon, 02 Nov 2026 09:00:00 +0800</pubDate>
-<description>AI 搜索把网页内容摘成几百字直接回答用户，平台按千次调用收费，被摘要的内容方一分未得。本文拆四层：摘要在著作权法第10条信息网络传播权上的落点（替代标准）、第24条适当引用的三个要件为何难过、避风港第4条的「仅提供」分水岭与第11条直接获利，以及内容方今天能做的三件事——可举证的禁止声明、真做的技术措施、靠许可而非单打收钱。</description>
-</item>
-<item>
-<title>48号公告：40项技术出口先登记，判断错了没人替你兜底</title>
-<link>https://najieip.com/najie/blog/20261102-najie-tech-export-catalog-48.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/20261102-najie-tech-export-catalog-48.html</guid>
-<pubDate>Mon, 02 Nov 2026 09:00:00 +0800</pubDate>
-<description>商务部、科技部第48号公告拟增列40项技术（人工智能23项、生物医药5项、光伏12项），拟禁止14项、拟限制26项，11月15日是征求意见截止日；但临时出口前登记自2026年10月16日公告发布当天就已生效。登记义务由出口经营者自行判断，判断错了没有官方替你兜底。本文拆四类登记情形、六种出海形态对号入座、最易漏的控制权变更，以及条例第39条前置材料与第43、44条真正罚则的口径差别。</description>
-</item>
 <item>
 <title>专利出海还有第二道闸：试行8年，多数企业不知道要报</title>
 <link>https://najieip.com/najie/blog/20261101-najie-ip-foreign-transfer-review.html</link>
 <guid isPermaLink="true">https://najieip.com/najie/blog/20261101-najie-ip-foreign-transfer-review.html</guid>
 <pubDate>Sun, 01 Nov 2026 09:00:00 +0800</pubDate>
-<description>《知识产权对外转让有关工作办法（试行）》2018年3月18日印发，试行至今已第八年，覆盖专利、集成电路布图设计专有权、计算机软件著作权、植物新品种权四类（商标不在其中）；三种动作需审：权利人变更、实际控制人变更、独占实施许可，且是「先证后约」——未取得《技术出口许可意向书》不得实质性谈判或签约。本文拆四个常见误判，给出签约前五问自检表，并附2026年第48号公告的先行登记要求。</description>
+<description>专利出海还有第二道闸：试行8年，多数企业不知道要报</description>
 </item>
 <item>
 <title>知乎热榜法律视角</title>
@@ -287,6 +273,20 @@
 <guid isPermaLink="true">https://najieip.com/mili/blog/ai-generated-content-copyright.html</guid>
 <pubDate>Sat, 31 Oct 2026 14:42:28 +0800</pubDate>
 <description>AI生成内容（AIGC）的版权归谁？本文解读2026年中国最新司法实践、北京互联网法院标杆案例、企业合规建议。觅理律师事务所出品。</description>
+</item>
+<item>
+<title>Who Owns AI-Generated Content? China&#x27;s 2026 Legal Framework Explained — Mili Law Firm</title>
+<link>https://najieip.com/mili/blog/ai-generated-content-copyright-en.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/ai-generated-content-copyright-en.html</guid>
+<pubDate>Sat, 31 Oct 2026 14:42:28 +0800</pubDate>
+<description>Who owns AI-generated content? A 2026 legal analysis of AIGC copyright in China, including key court rulings, regulatory guidance, and corporate compliance checklist. By APNaji / Mili Law.</description>
+</item>
+<item>
+<title>实用新型快速拿证——11个月，一张专利证书到手</title>
+<link>https://najieip.com/aipunajie/blog/utility-model-fast-grant-20260813.html</link>
+<guid isPermaLink="true">https://najieip.com/aipunajie/blog/utility-model-fast-grant-20260813.html</guid>
+<pubDate>Sat, 31 Oct 2026 14:42:27 +0800</pubDate>
+<description>上个月收到一份新的授权公告：某造纸科技公司提交的&quot;纤维及微粒观测装置&quot;实用新型专利，2025年4月8日申请，2026年3月24日授权公告——从申请到拿证，11个半月。</description>
 </item>
 </channel>
 </rss>
