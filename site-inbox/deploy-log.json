@@ -2808,6 +2808,21 @@
    "defects_found": ["页面缺 Article+BreadcrumbList JSON-LD", "缺 og:image / og:site_name / keywords / twitter 标题与图像", "meta description 复读标题（25 字）", "正文 ASCII 直引号未转中文引号", "articles.json 上游复活 51 条无页面条目（278→227）"],
    "notes": "今日新文品牌卡与主卡上游已同步（无需补卡）；10-31 三篇经复核六项达标；mili 前缀文件名落地 najie/blog 属上游归属，canonical 与双索引一致，不改路径。deploy-log 文本手术追加。",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-02",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "daily-1102",
+   "commit": "b36e101",
+   "action": "精修上游裸发布页20261102技术出口48号公告（7948B→12087B：补6个h2路标/Article+BreadcrumbList JSON-LD/og:image自托管/twitter+keywords/真摘要193字/正文补全至md全文/**转strong/直引号转中文）+ 封面302KB入库 + 双索引补卡3张（主255→257、najie100→101）+ articles.json守卫第20次隔离51条（280→229）",
+   "files_changed": ["najie/blog/20261102-najie-tech-export-catalog-48.html", "img/20261102-najie-tech-export-catalog-48.png", "najie/blog/index.html", "blog/index.html", "articles.json", "articles-quarantine-20261102.json"],
+   "cards_added": 3,
+   "attribution": {"mili": 0, "najie": 3, "main_index": 3},
+   "verification": {"core_pages": "6/6 200", "pages": "2/2 ld=2 h1=1 og:image=1 stars=0 desc非标题复读", "bytes": "2/2 线上与本地严格一致（12087B / 10239B）", "cards_live": "4/4 HIT", "cover": "200", "articles_json_live": 229, "sitemap_watchdog": "exit 0 静默（372 loc）", "structure": "双索引 div 配平归零/深度分布差==新增数/无重复href/星号0 全 PASS"},
+   "defects_found": ["上游裸发布页：ld=0 无 og:image/twitter/keywords/h2、** 11 处未转、description 27 字复读标题、正文截断（md 未完整包含）", "当日两篇文主索引均零卡（najie 索引仅 B 有卡，A 双索引全无）", "articles.json 上游复活 51 条无页面条目"],
+   "notes": "48号公告文为10-16新政解读，属涉外/技术出口线；A 页按 md 源整页重建套 B 页房屋（同日同品牌，deepcopy JSON-LD 覆写，正文归一后 md 完整包含断言通过）；articles.json 隔离第20次，首页 top6 六条全有页面",
+   "result": "PASS"
   }
  ]
 }
