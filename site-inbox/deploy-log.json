@@ -2823,6 +2823,21 @@
    "defects_found": ["上游裸发布页：ld=0 无 og:image/twitter/keywords/h2、** 11 处未转、description 27 字复读标题、正文截断（md 未完整包含）", "当日两篇文主索引均零卡（najie 索引仅 B 有卡，A 双索引全无）", "articles.json 上游复活 51 条无页面条目"],
    "notes": "48号公告文为10-16新政解读，属涉外/技术出口线；A 页按 md 源整页重建套 B 页房屋（同日同品牌，deepcopy JSON-LD 覆写，正文归一后 md 完整包含断言通过）；articles.json 隔离第20次，首页 top6 六条全有页面",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-03",
+   "time": "22:20",
+   "agent": "SiteOps",
+   "round": "每日运营（22:00）",
+   "commit": "b706a68",
+   "action": "精修当日新文「抓一次数据：罚53万，再赔500万」(mili) head 面 + 主/品牌索引补卡 + articles.json 守卫隔离",
+   "files_changed": ["mili/blog/20261103-mili-unfair-competition-data-scraping.html", "img/20261103-mili-unfair-competition-data-scraping.png", "blog/index.html", "mili/blog/index.html", "articles.json", "articles-quarantine-20261103.json"],
+   "cards_added": 3,
+   "attribution": "mili（上游 2516361 落地 mili/blog，canonical/og:url 一致，不改路径）",
+   "verification": "核心 6 页 6/6=200；两页 ld=2 / og:image 自托管 / h1=1 / **=0 / desc 198+170 字；封面 303KB curl 200；主索引 257→259 卡、mili 索引 143→144；live articles.json=231；线上 24/24 PASS",
+   "defects_found": "① 爬虫文「部分裸发布」：ld=0、无 og:image/twitter/keywords/og:site_name、description 仅 17 字复读标题（正文完整无截断）→ 按同日同品牌房屋重建 head，6,675→10,899B，正文逐字不变；② 两篇 11-03 文主索引均零卡、mili 索引漏爬虫文 → 补 3 卡；③ articles.json 51 条无页面条目（第 21 次隔离，282→231），首页 top6 全有页面；④ 上游 site-inbox 冗余副本（与精修前同源）已删",
+   "notes": "sitemap 看门 exit 0 静默（374 loc，无回灌）；推送遇远端并发提交 69ede7e(feed.xml) → rebase 后正常；Pages run completed/success 后线上收敛。新行规：depth 直方图统计全部 div，单卡贡献 depth0+1/depth1+1，断言不能写成「delta 之和==新增卡数」。",
+   "result": "PASS"
   }
  ]
 }
