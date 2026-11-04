@@ -2838,6 +2838,21 @@
    "defects_found": "① 爬虫文「部分裸发布」：ld=0、无 og:image/twitter/keywords/og:site_name、description 仅 17 字复读标题（正文完整无截断）→ 按同日同品牌房屋重建 head，6,675→10,899B，正文逐字不变；② 两篇 11-03 文主索引均零卡、mili 索引漏爬虫文 → 补 3 卡；③ articles.json 51 条无页面条目（第 21 次隔离，282→231），首页 top6 全有页面；④ 上游 site-inbox 冗余副本（与精修前同源）已删",
    "notes": "sitemap 看门 exit 0 静默（374 loc，无回灌）；推送遇远端并发提交 69ede7e(feed.xml) → rebase 后正常；Pages run completed/success 后线上收敛。新行规：depth 直方图统计全部 div，单卡贡献 depth0+1/depth1+1，断言不能写成「delta 之和==新增卡数」。",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-04",
+   "time": "22:20",
+   "agent": "SiteOps",
+   "round": "daily-2026-11-04",
+   "commit": "(this)",
+   "action": "每日运营：核心8页HTTP巡检 + 精修1篇部分裸发布页(反法14条) + 封面入库 + 三篇双索引补卡 + articles.json守卫第21次隔离",
+   "files_changed": ["mili/blog/20261104-mili-anti-involution-low-price.html", "img/20261104-mili-anti-involution-low-price.png", "blog/index.html", "mili/blog/index.html", "najie/blog/index.html", "articles.json", "articles-quarantine-20261104.json"],
+   "cards_added": 6,
+   "attribution": "三篇均为上游 wechat-distribute 当日发布（mili×2 + najie×1），归属按落地目录判定，未改路径",
+   "verification": "核心8页200(3次重试取终态) / 精修页11878B: h1=1 h2=4 ld=2(Article+BreadcrumbList, json.loads全通) og:image=1 stars=0 rawtbl=0 desc149字非复读 / md全文完整包含=True / 三索引卡 delta +3+2+1 = 6 sum=2N 无负delta / malformed=0 / 首卡日期降序 / 封面321967B",
+   "defects_found": "1篇部分裸发布(ld=0 og:image=0 desc复读标题 裸markdown表2张共10行) / 三篇当日文品牌索引与主索引全零卡(共6张) / articles.json 51条违例(文件不存在+路径不在白名单)",
+   "notes": "articles.json 285→234 隔离档 articles-quarantine-20261104.json; 首页slice(0,6)六条全有页面; 新增行规: 表格分隔行在md包含断言里需剥 -{3,} 归一化",
+   "result": "PASS"
   }
  ]
 }
