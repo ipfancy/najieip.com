@@ -5,15 +5,22 @@
 <link>https://najieip.com/</link>
 <description>纳杰、爱普纳杰、觅理三机构联合发布的知识产权实务文章：专利撰写与答审、商标与著作权、诉讼与商业秘密。</description>
 <language>zh-CN</language>
-<lastBuildDate>Fri, 06 Nov 2026 20:17:31 +0800</lastBuildDate>
+<lastBuildDate>Fri, 06 Nov 2026 22:25:06 +0800</lastBuildDate>
 <atom:link href="https://najieip.com/feed.xml" rel="self" type="application/rss+xml"/>
 <ttl>60</ttl>
+<item>
+<title>鉴定意见怎么写才算合格：五项审查 — 觅理律师事务所</title>
+<link>https://najieip.com/mili/blog/20261106-mili-appraisal-opinion-review.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261106-mili-appraisal-opinion-review.html</guid>
+<pubDate>Fri, 06 Nov 2026 09:00:00 +0800</pubDate>
+<description>交通事故人身损害案件的金额几乎全部由鉴定意见决定。本文按北京市律协《道路交通事故民事赔偿案件证据操作指引（2.0 版）》第 45 条，把鉴定意见拆成五项审查：形式合规、程序正当、伤残等级合理性、三期认定合法性、护理依赖明确性，并给出当庭质证的话术顺序与三个最常见的瑕疵。</description>
+</item>
 <item>
 <title>劳动合同法第23条和第25条：保密协议和竞业限制，签错两头空</title>
 <link>https://najieip.com/mili/blog/20261106-mili-nda-vs-noncompete.html</link>
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261106-mili-nda-vs-noncompete.html</guid>
 <pubDate>Fri, 06 Nov 2026 09:00:00 +0800</pubDate>
-<description>劳动合同法第23条和第25条：保密协议和竞业限制，签错两头空</description>
+<description>保密协议和竞业限制不是一回事，差的那部分全是钱：月薪两万的研发签错一份，公司要么白付 14.4 万补偿，要么连起诉的门都进不去。第 23 条管补偿与违约金，第 25 条把可约定违约金的情形锁死，一张表看清保密、竞业、脱密期三件事该怎么签。</description>
 </item>
 <item>
 <title>全员签竞业限制：条款可能不生效，补偿金照付</title>
@@ -41,7 +48,7 @@
 <link>https://najieip.com/mili/blog/20261104-mili-inventor-reward-5-percent.html</link>
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261104-mili-inventor-reward-5-percent.html</guid>
 <pubDate>Wed, 04 Nov 2026 09:00:00 +0800</pubDate>
-<description>专利产品挣4.8亿，发明人只拿80万：5%是底线</description>
+<description>（2024）最高法知民终907号：生物制剂五个年度营业利润 48018 万元，离职发明人只拿 80 万元一次性了断。职务发明报酬是法定之债，没有约定或规章就按投产后连续 3-5 年、每年营业利润 5% 计提；产品整体亏损不是拒付理由；2024 年 1 月 20 日后标准提高。</description>
 </item>
 <item>
 <title>专利还没授权就被用了：这笔使用费能要，但不能要赔偿</title>
@@ -62,7 +69,7 @@
 <link>https://najieip.com/mili/blog/20261103-mili-guarantee-period-six-months.html</link>
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261103-mili-guarantee-period-six-months.html</guid>
 <pubDate>Tue, 03 Nov 2026 09:00:00 +0800</pubDate>
-<description>只写“担保人”三个字，债主得先去告欠钱的人</description>
+<description>保证合同只写「担保人」没写「连带」，法律推定为一般保证：债权人得先把债务人告到判决、强制执行还拿不到钱，才轮到你。真正卡人的是 6 个月保证期间而不是 3 年诉讼时效，「直到本息还清为止」也还是 6 个月，过了再让你签字也不算。</description>
 </item>
 <item>
 <title>巡逻机器人上岗前，物业要先答的四个问题</title>
@@ -280,13 +287,6 @@
 <guid isPermaLink="true">https://najieip.com/mili/blog/trademark-squatting-guide-en.html</guid>
 <pubDate>Sat, 31 Oct 2026 14:42:28 +0800</pubDate>
 <description>What to do when your trademark has been squatted? A complete guide to trademark opposition, invalidation, non-use cancellation, and litigation in China. By APNaji / Mili Law.</description>
-</item>
-<item>
-<title>商标法2026年大修：企业必须关注的八大变化（2027年施行） — 觅理律师事务所</title>
-<link>https://najieip.com/mili/blog/trademark-law-2026-revision.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/trademark-law-2026-revision.html</guid>
-<pubDate>Sat, 31 Oct 2026 14:42:28 +0800</pubDate>
-<description>2026年6月26日，《商标法》第五次修订通过，2027年1月1日起施行。本文解读八大核心变化：异议期缩短、恶意注册罚款、惩罚性赔偿降门槛、代理机构严监管等，附企业应对建议。觅理律师事务所出品。</description>
 </item>
 </channel>
 </rss>
