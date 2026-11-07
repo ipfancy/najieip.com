@@ -1,93 +1,52 @@
-#!/usr/bin/env python3
-"""线上终验（11-07 i18n）：逐 URL 重试取终态"""
-import subprocess, time, re, json
-
-SLUG = "20261101-najie-ip-foreign-transfer-review"
+import os, re, json, subprocess, time
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120 Safari/537.36"
-BASE = "https://najieip.com"
-fails = []
-
-
-def get(url, binary=False):
-    for i in range(3):
-        cmd = ["curl", "-s", "-4", "-A", UA, "--max-time", "25", "-w", "\n__CODE__%{http_code}", url]
-        r = subprocess.run(cmd, capture_output=True)
-        if binary:
-            out = r.stdout
-            body, _, code = out.rpartition(b"\n__CODE__")
-            c = code.decode().strip()
-            if c == "200":
-                return c, body
-        else:
-            out = r.stdout.decode("utf-8", "replace")
-            body, _, code = out.rpartition("\n__CODE__")
-            if code.strip() == "200":
-                return c if False else code.strip(), body
+def get(url, tries=3):
+    for i in range(tries):
+        r = subprocess.run(["curl","-4","-s","-A",UA,"--max-time","30",url], capture_output=True, text=True)
+        if r.returncode == 0 and len(r.stdout) > 200: return r.stdout
+        time.sleep(6)
+    return r.stdout or ""
+def code(url, tries=3):
+    for i in range(tries):
+        r = subprocess.run(["curl","-4","-sI","-A",UA,"-o","/dev/null","-w","%{http_code}","--max-time","30",url], capture_output=True, text=True)
+        if r.stdout.strip() == "200": return "200"
         time.sleep(5)
-    return code.strip() if not binary else c, (b"" if binary else "")
+    return r.stdout.strip()
 
+PAGES = ["mili/blog/20261107-mili-unpaid-trial-shigang.html",
+         "mili/blog/20261107-mili-trademark-transition-rules-4-lines.html",
+         "najie/blog/20261107-najie-patent-license-contract-6-clauses.html",
+         "mili/blog/20261107-mili-unjust-enrichment-default-judgment.html"]
+FAIL = []
+for p in PAGES:
+    url = "https://najieip.com/" + p + "?cb=%d" % int(time.time())
+    c = code(url); t = get(url) if c == "200" else ""
+    h1 = len(re.findall(r"<h1[ >]", t)); ld = t.count("application/ld+json")
+    ok = (c == "200" and h1 == 1 and ld >= 2 and "og:image" in t and t.count("**") == 0)
+    print(f"{'PASS' if ok else 'FAIL'} {p.split('/')[-1][:46]:48s} http={c} bytes={len(t.encode())} h1={h1} ld={ld} ogimg={'og:image' in t} **={t.count('**')}")
+    if not ok: FAIL.append(p)
 
-cb = str(int(time.time()))
-targets = [
-    (f"{BASE}/en/blog/{SLUG}-en.html?cb={cb}", "en page"),
-    (f"{BASE}/fr/blog/{SLUG}-fr.html?cb={cb}", "fr page"),
-    (f"{BASE}/najie/blog/{SLUG}.html?cb={cb}", "zh page"),
-    (f"{BASE}/en/blog/?cb={cb}", "en index"),
-    (f"{BASE}/fr/blog/?cb={cb}", "fr index"),
-    (f"{BASE}/sitemap.xml?cb={cb}", "sitemap"),
-]
-for url, label in targets:
-    code, body = get(url)
-    print(f"{label}: HTTP {code} bytes={len(body)}")
-    if code != "200":
-        fails.append(f"{label} HTTP {code}")
-        continue
-    if label == "en page":
-        for cond, msg in [
-            (body.count("application/ld+json") == 2, "en ld=2"),
-            ("og:image" in body, "en og:image"),
-            (re.search(r'hreflang="(zh-CN|en|fr|x-default)"', body) is not None, "en hreflang"),
-            (body.count("<h2>") == 4, "en h2=4"),
-            (body.count("**") == 0, "en no **"),
-        ]:
-            print("   ", ("PASS " if cond else "FAIL ") + msg)
-            if not cond:
-                fails.append(msg)
-    if label == "fr page":
-        for cond, msg in [
-            (body.count("application/ld+json") == 2, "fr ld=2"),
-            ("og:image" in body, "fr og:image"),
-            (body.count("<h2>") == 4, "fr h2=4"),
-            (len(re.findall(r"[\u4e00-\u9fff]", re.sub(r'<div class="lang-bar">.*?</div>', "", body, flags=re.S))) == 0, "fr no CJK"),
-        ]:
-            print("   ", ("PASS " if cond else "FAIL ") + msg)
-            if not cond:
-                fails.append(msg)
-    if label == "zh page":
-        for cond, msg in [
-            (body.count('hreflang="') == 4, "zh hreflang=4"),
-            ("application/ld+json" in body, "zh ld"),
-        ]:
-            print("   ", ("PASS " if cond else "FAIL ") + msg)
-            if not cond:
-                fails.append(msg)
-    if label in ("en index", "fr index"):
-        cond = SLUG in body
-        print("   ", ("PASS " if cond else "FAIL ") + f"{label} card HIT")
-        if not cond:
-            fails.append(label + " card missing")
-    if label == "sitemap":
-        for lang in ("en", "fr"):
-            cond = f"{BASE}/{lang}/blog/{SLUG}-{lang}.html" in body
-            print("   ", ("PASS " if cond else "FAIL ") + f"sitemap {lang} loc")
-            if not cond:
-                fails.append("sitemap " + lang)
+# cover
+c = code("https://najieip.com/img/20261107-mili-unpaid-trial-shigang.png")
+print("cover:", c);  FAIL += [] if c == "200" else ["cover"]
 
-code, img = get(f"{BASE}/img/{SLUG}.png", binary=True)
-print("cover img: HTTP", code, "bytes", len(img))
-if code != "200":
-    fails.append("cover 404")
+# index cards live
+IDX = {"mili": ("mili/blog/", ["20261107-mili-trademark-transition-rules-4-lines","20261107-mili-unpaid-trial-shigang"]),
+       "najie": ("najie/blog/", ["20261107-najie-patent-license-contract-6-clauses"]),
+       "main": ("blog/", ["20261107-mili-unjust-enrichment-default-judgment","20261107-najie-patent-license-contract-6-clauses","20261107-mili-trademark-transition-rules-4-lines"])}
+for k, (base, slugs) in IDX.items():
+    t = get("https://najieip.com/%s?cb=%d" % (base, int(time.time())))
+    for s in slugs:
+        hit = len(re.findall(r'<h[23][^>]*><a href="[^"]*' + re.escape(s), t))
+        print(f"card {k:6s} {s[-40:]:42s} hit={hit}")
+        if hit != 1: FAIL.append(k + ":" + s)
 
-print("\nFAILURES =", len(fails))
-for f in fails:
-    print(" -", f)
+# live articles.json
+aj = get("https://najieip.com/articles.json?cb=%d" % int(time.time()))
+try:
+    n = len(json.loads(aj)); print("live articles.json:", n)
+    if n != 242: FAIL.append("articles.json live %d" % n)
+except Exception as e:
+    print("articles.json parse fail", e); FAIL.append("articles.json")
+
+print("\nFAILURES:", FAIL if FAIL else "NONE")
