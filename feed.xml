@@ -5,9 +5,30 @@
 <link>https://najieip.com/</link>
 <description>纳杰、爱普纳杰、觅理三机构联合发布的知识产权实务文章：专利撰写与答审、商标与著作权、诉讼与商业秘密。</description>
 <language>zh-CN</language>
-<lastBuildDate>Fri, 06 Nov 2026 22:25:06 +0800</lastBuildDate>
+<lastBuildDate>Sat, 07 Nov 2026 17:34:01 +0800</lastBuildDate>
 <atom:link href="https://najieip.com/feed.xml" rel="self" type="application/rss+xml"/>
 <ttl>60</ttl>
+<item>
+<title>2027年前申请的商标，按新法还是旧法审？过渡办法划了4条线</title>
+<link>https://najieip.com/mili/blog/20261107-mili-trademark-transition-rules-4-lines.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261107-mili-trademark-transition-rules-4-lines.html</guid>
+<pubDate>Sat, 07 Nov 2026 09:00:00 +0800</pubDate>
+<description>2027年前提交的商标申请，只要2027年1月1日后才作决定，就按修订后的商标法审——「老申请老办法」不成立。本文按《施行修订后的商标法相关业务处理办法（征求意见稿）》划出4条线：申请看决定日、无效看注册时法、撤销看修订前、异议看公告日，附5步台账与3个FAQ。</description>
+</item>
+<item>
+<title>白干7天被辞，能要回的不是0，是7379元</title>
+<link>https://najieip.com/mili/blog/20261107-mili-unpaid-trial-shigang.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261107-mili-unpaid-trial-shigang.html</guid>
+<pubDate>Sat, 07 Nov 2026 09:00:00 +0800</pubDate>
+<description>白干7天被辞，能要回的不是0，是7379元</description>
+</item>
+<item>
+<title>49.6万次专利转让许可备案：合同这6条不写死，许可费收不回</title>
+<link>https://najieip.com/najie/blog/20261107-najie-patent-license-contract-6-clauses.html</link>
+<guid isPermaLink="true">https://najieip.com/najie/blog/20261107-najie-patent-license-contract-6-clauses.html</guid>
+<pubDate>Sat, 07 Nov 2026 09:00:00 +0800</pubDate>
+<description>许可费能不能收回来，不看备案回执，看合同里这6条写死没有。2026年前三季度专利转让许可备案49.6万次、同比增7.1%。本文给6条条款清单：许可类型与诉权、范围四至、后续改进归属、提成费与审计权、风险分配、备案与退出，附专利法第12条、实施细则第14条、民法典第875条依据。</description>
+</item>
 <item>
 <title>鉴定意见怎么写才算合格：五项审查 — 觅理律师事务所</title>
 <link>https://najieip.com/mili/blog/20261106-mili-appraisal-opinion-review.html</link>
@@ -266,27 +287,6 @@
 <guid isPermaLink="true">https://najieip.com/mili/blog/uspto-tbmp-2026-ttab-center-estta-update.html</guid>
 <pubDate>Sat, 31 Oct 2026 14:42:28 +0800</pubDate>
 <description>我们经常看到这样的场景：中国企业在美国遭遇商标异议或撤销程序，代理人习惯性地登录 ESTTA 系统准备提交答辩，却发现界面已经变了——提交入口被重定向，熟悉的操作路径不复存在。这就是USPTO 2026年6月版《商标审理和上诉委员会程序手册》（TBMP）更新带来的最直接冲击。</description>
-</item>
-<item>
-<title>美国专利新规7月20日生效：没有美国代理人，你的美国专利可能失效 — 觅理律师事务所</title>
-<link>https://najieip.com/mili/blog/uspto-foreign-representation-rule-2026.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/uspto-foreign-representation-rule-2026.html</guid>
-<pubDate>Sat, 31 Oct 2026 14:42:28 +0800</pubDate>
-<description>干这行的都知道，美国专利商标局（USPTO）之前一直是个&quot;特例&quot;——外国申请人可以自己递案子，不需要当地代理人。但这个口子，在2026年7月20日正式关上了。</description>
-</item>
-<item>
-<title>商标被抢注怎么办？企业维权全流程指南（2026版） — 觅理律师事务所</title>
-<link>https://najieip.com/mili/blog/trademark-squatting-guide.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/trademark-squatting-guide.html</guid>
-<pubDate>Sat, 31 Oct 2026 14:42:28 +0800</pubDate>
-<description>商标被抢注怎么办？本文详解商标异议申请、商标无效宣告、商标撤三、商标维权诉讼四大维权路径，附最新案例和实操建议。觅理律师事务所出品。</description>
-</item>
-<item>
-<title>Trademark Squatting in China: A Complete Guide to Fighting Back (2026) — Mili Law Firm</title>
-<link>https://najieip.com/mili/blog/trademark-squatting-guide-en.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/trademark-squatting-guide-en.html</guid>
-<pubDate>Sat, 31 Oct 2026 14:42:28 +0800</pubDate>
-<description>What to do when your trademark has been squatted? A complete guide to trademark opposition, invalidation, non-use cancellation, and litigation in China. By APNaji / Mili Law.</description>
 </item>
 </channel>
 </rss>
