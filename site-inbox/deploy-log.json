@@ -2898,6 +2898,21 @@
    "defects_found": ["上游当日 3 篇文品牌索引与主索引漏卡（mili 过渡办法 / najie 专利许可双索引零卡，不当得利仅缺主索引）", "上游「试岗期」文部分裸发布：ld=0、无 og:image/og:site_name/keywords/twitter、description 复读标题、正文 ASCII 直引号、裸 --- 分隔行", "articles.json 仍含 51 条无页面条目（守卫第 23 次隔离）", "mili/blog/index.html 存在历史遗留 unclosed div（改动前后同为 332/331，非本次引入）"],
    "notes": "试岗文正文本身完整（md 全文包含=True），只修 head 面，正文一字未改仅做引号归一与 <p>---</p>→<hr>；品牌索引卡 href 用相对 ./slug.html、主索引用绝对路径；索引补卡走 div 深度配对模板 + 按日期降序插位；sitemap 看门 exit 0 无 diff（392 loc）",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-08",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "每日运营",
+   "commit": "4e295cf",
+   "action": "精修 mili 家事盗窃文「部分裸发布」页为房屋版 + 补主索引 11-01 AI 文书卡 + articles.json 守卫第24次隔离",
+   "files_changed": ["mili/blog/20261108-mili-family-theft-leniency.html", "blog/index.html", "articles.json", "img/20261108-mili-family-theft-leniency.png"],
+   "cards_added": 1,
+   "attribution": {"brand": "mili", "landing_dir": "mili/blog/", "canonical_ok": true, "main_index": "+1", "brand_index": "already present"},
+   "verification": "live 13 项全 PASS：ld=2 / h1=1 / og:image / **=0 / table.data=4 / desc 147 字 / schema.org 完整 / canonical / 封面 200 / 三处索引卡 HIT / articles.json 244；Pages run 42487809293 completed success",
+   "defects_found": ["ld=0 无 JSON-LD", "无 og:image/og:site_name/keywords", "description 复读标题 23 字", "** ×2 未转 strong", "裸 markdown 表 4 张共 20 行", "主索引缺 11-01 补发文卡", "articles.json 复活 51 条违例"],
+   "notes": "按 md 源整页重建套同日 mili 房屋（20261107 试岗文），正文 md 全文包含断言=True；新增行规：md 包含归一须剥 `>`（blockquote 标记）与 `#{1,2} ` 标题行",
+   "result": "PASS"
   }
  ]
 }
