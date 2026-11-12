@@ -2958,6 +2958,21 @@
    "defects_found": "①「已发布但站点无页」：earnest-money-cap 在 .published.json 有记录、articles.json/sitemap/索引全无；②「部分裸发布」：year-end-bonus h1=0/h2=0/ld=0/无 og:image/描述复读标题/**×12；③两篇 11-11 文品牌与主索引全零卡",
    "notes": "新建页以同日 mili「假冒专利」精修页做房屋（外链 style.css + nav/footer/CTA），ld 只留 Article+BreadcrumbList（剔除模板 FAQPage）；year-end 页 md 小标题为独立 **加粗行** 而非 ## → 转换按「≤30字且不以句号结尾」判 h2（5 个）；两页正文 md 全文包含=True（1541/1653、1689/1801）一字未改；封面自托管入库后线上 200",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-12",
+   "time": "22:00",
+   "agent": "siteops",
+   "round": "daily-20261112-night",
+   "commit": "cada900",
+   "action": "精修当日 najie 马尔代夫商标法裸发布页（ld=0→2 含 @context / 补 og:image+og:site_name+twitter 卡+keywords / description 26字复读→127字真摘要 / 10处 ** 转 strong / 按 md 源整页重建套同日 najie 房屋）；封面 295KB 入库 img/",
+   "files_changed": 2,
+   "cards_added": 0,
+   "attribution": "najie",
+   "verification": "核心 6 页 6/6=200；页面 h1=1/h2=2/ld=2(json.loads 全通)/og:image/schema.org=2/leak=0/stars=0/md_contained=True(1246=1246)；双索引卡各 1 张已在（零补卡）；articles.json 250/250 零违例 + 首页 top6 全有页面；sitemap 看门 exit 0（402 loc 无 diff）",
+   "defects_found": "1 篇部分裸发布（najie 20261112 马尔代夫商标法：ld=0/无 og:image/desc 复读标题 26 字/10 处 ** 未转）；najie 房屋模板 JSON-LD 普遍缺 @context（生成器遗留，本次新页已补）",
+   "notes": "上游 aa285b8 已清 articles.json 死链（49 条 301 重映射 + 2 条隔离，302→250）；昨夜的年终奖/定金两页复核 ld=2+og:image+真摘要 达标；md_contained 假失败的归一化坑：md 侧必须整行丢弃小标题行（不是只去星号）",
+   "result": "PASS"
   }
  ]
 }
