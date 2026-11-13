@@ -2973,6 +2973,21 @@
    "defects_found": "1 篇部分裸发布（najie 20261112 马尔代夫商标法：ld=0/无 og:image/desc 复读标题 26 字/10 处 ** 未转）；najie 房屋模板 JSON-LD 普遍缺 @context（生成器遗留，本次新页已补）",
    "notes": "上游 aa285b8 已清 articles.json 死链（49 条 301 重映射 + 2 条隔离，302→250）；昨夜的年终奖/定金两页复核 ld=2+og:image+真摘要 达标；md_contained 假失败的归一化坑：md 侧必须整行丢弃小标题行（不是只去星号）",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "每日运营（cron 4c121698279a）",
+   "commit": "1552ef7",
+   "action": "精修当日 mili「荷兰突击搜查撤销」部分裸发布页；六项判据体检 + 双索引卡复核 + articles.json 守卫 + sitemap 看门 + 线上终验",
+   "files_changed": "mili/blog/20261113-byd-netherlands-evidence-seizure.html（5,862→10,037B）、img/20261113-byd-netherlands-evidence-seizure.png（313KB 入库）",
+   "cards_added": 0,
+   "attribution": "上游 05:02 自动发布已写双索引卡（mili + 主各 1 张），本轮零补卡；品牌归属按落地目录 /mili/blog/",
+   "verification": "核心 6 页 6/6=200（零瞬断）；文章页 h1=1 / ld=2（Article+BreadcrumbList，含 @context）/ og:image 200 / description 138 字非标题复读 / **=0 / 裸表=0；正文 md 全文归一包含=True（1328 字一字未改，新增 5 个 h2 路标）；封面 curl 200；双索引卡 HIT 各 1；线上 articles.json=251 含当日文；sitemap 403 loc 已含本文，看门 exit 0 无新增提交",
+   "defects_found": "① 部分裸发布：ld=0 / 无 og:image / 无 twitter:title / 无 keywords / description 25 字复读标题 / **×10 / 裸 markdown 表 6 行（正处 articles.json 首页 slice(0,6) 第 1 曝光位）② 管线产出未确认发布：20261113-mili-registered-capital-deadline publish_id 为空、站点无页——未自动建页（避免草稿上线），转人工确认",
+   "notes": "行规复用：房屋取同品牌近期精修页（20261112-mili-year-end-bonus-cancel）；ld 两块 deepcopy 后显式加 @context（najie/mili 房屋普遍缺 @context）；md 无 ## 时按段落前缀注入 5 个描述性 h2 路标、正文不改一字；单次 run 工具调用 20 次（成本纪律 ≤25）。",
+   "result": "PASS"
   }
  ]
 }
