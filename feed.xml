@@ -5,71 +5,36 @@
 <link>https://najieip.com/</link>
 <description>纳杰、爱普纳杰、觅理三机构联合发布的知识产权实务文章：专利撰写与答审、商标与著作权、诉讼与商业秘密。</description>
 <language>zh-CN</language>
-<lastBuildDate>Thu, 12 Nov 2026 15:16:31 +0800</lastBuildDate>
+<lastBuildDate>Sat, 14 Nov 2026 15:58:00 +0800</lastBuildDate>
 <atom:link href="https://najieip.com/feed.xml" rel="self" type="application/rss+xml"/>
 <ttl>60</ttl>
+<item>
+<title>40家潮玩企业授信11亿：版权贷款，银行只认这3样</title>
+<link>https://najieip.com/mili/blog/20261114-mili-copyright-financing-16-cases.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261114-mili-copyright-financing-16-cases.html</guid>
+<pubDate>Sat, 14 Nov 2026 09:00:00 +0800</pubDate>
+<description>版权能贷款，但银行只看三件事：权属查不查得清、收入核不核得到、质押物处置不处置得掉。三部门2026-11-13联合发布16个知识产权金融生态试点案例：东莞潮玩版权贷授信超11亿元，成都为非遗IP估值立标准。附审贷三口径、申请前3件事与质押后的许可暗礁。</description>
+</item>
 <item>
 <title>刷脸考勤：10万人只是备案线，2026年盯的是第10条</title>
 <link>https://najieip.com/mili/blog/20261114-mili-face-recognition-compliance.html</link>
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261114-mili-face-recognition-compliance.html</guid>
-<pubDate>2026-11-14 09:00:00 +0800</pubDate>
+<pubDate>Sat, 14 Nov 2026 09:00:00 +0800</pubDate>
 <description>刷脸考勤：10万人只是备案线，2026年盯的是第10条</description>
 </item>
 <item>
-<title>商标到期忘了续展，2027 年起连“一年缓冲”都没有了</title>
-<link>https://najieip.com/mili/blog/20261030-mili-trademark-renewal.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/20261030-mili-trademark-renewal.html</guid>
-<pubDate>2026-10-30 09:00:00 +0800</pubDate>
-<description>商标十年一续：现行《商标法》第四十条的窗口是十八个月，期满前十二个月续展、宽展期六个月，宽展期满未办理即注销。2026年6月26日修订通过的新法把规则挪到第四十四条，内容基本一致，变的是“注销之后会发生什么”——2027年1月1日起，那层兜底的一年缓冲被收窄。本文讲清窗口怎么算、断在哪一步、现在该做哪些自检。</description>
-</item>
-<item>
-<title>你的训练数据，敢不敢公开来源和权属</title>
-<link>https://najieip.com/najie/blog/20261030-najie-training-data-provenance.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/20261030-najie-training-data-provenance.html</guid>
-<pubDate>2026-10-30 09:00:00 +0800</pubDate>
-<description>加州 AI 透明法要求生成式 AI 开发者公布训练数据的来源、权属与知识产权状态；世界银行《2026 世界发展报告》第 318 页把这一要求单独点了出来，第 320 页则指出先进模型多训练于「未顾及既有许可条款或著作权利益」的数据。本文把三项披露拆成三条风险线，列出发开源码与开放数据的三类陷阱（许可条款不清、copyleft 传染、开源不等于放弃权利），给出中国法下的对应条文与 12 项自查清单，并提示欧盟 AI 法案透明度义务的时间表。</description>
-</item>
-<item>
-<title>AI 造害快于立法：一份现成的工具箱</title>
-<link>https://najieip.com/mili/blog/20261030-mili-ai-harm-outpaces-law.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/20261030-mili-ai-harm-outpaces-law.html</guid>
-<pubDate>2026-10-30 09:00:00 +0800</pubDate>
-<description>世界银行《2026 世界发展报告：人工智能的潜力》第 30 页给了法律人一句要紧的话：既有法律中，数据保护、消费者保护、人权、知识产权与网络安全，已经为治理 AI 风险提供了重要工具。同页另一句是：AI 造害快于政府立法。本文拆解这五件工具在中国法下的具体落点（著作权、商业秘密、个保法自动化决策、消保与广告、数据出境），并用荷兰税务算法、哥伦比亚宪法法院裁定、中国配音案三个事件说明它们已经在动，附企业四步自查。</description>
-</item>
-<item>
-<title>专利法第19条：等4个月没通知就出海，这条旧路没了</title>
-<link>https://najieip.com/najie/blog/20261030-najie-foreign-filing-confidentiality-review.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/20261030-najie-foreign-filing-confidentiality-review.html</guid>
-<pubDate>2026-10-30 09:00:00 +0800</pubDate>
-<description>向外国申请专利前的保密审查不收一分钱、通常两到四周出意见，但只要顺序错了，在中国的专利申请能被一句“不授予专利权”直接作废，且没有补救程序。2024年1月20日新细则施行后，旧版“等4个月没通知就出海”的默示许可已被删除；国知局办事指南页至今仍挂2020年旧口径。本文讲三种请求方式、四类结论、三层代价，以及（2022）最高法知行终255号刚给的三层判断标准。</description>
-</item>
-<item>
-<title>「工具中立」还能用多久？反不正当竞争法第13条堵死了AI刷好评</title>
-<link>https://najieip.com/najie/blog/20261031-mili-ai-product-image-review-tool-neutrality.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/20261031-mili-ai-product-image-review-tool-neutrality.html</guid>
-<pubDate>2026-10-31 09:00:00 +0800</pubDate>
-<description>2025年10月15日施行的新《反不正当竞争法》把「帮别人刷」单列为违法行为（第9条第2款，罚则上限200万元），并把「数据和算法」写进第13条的手段清单（攻击同行罚则最高500万元）。本文拆解两条法条的分界、AI生成商品图「打了标也不免责」的边界、杭州AI换脸虚假宣传案（2025浙0110民初10694号），并给电商卖家与工具/代运营服务商各5条可当天执行的自查线。</description>
-</item>
-<item>
-<title>外国公司偷你的技术，现在可以请商务部出手了</title>
-<link>https://najieip.com/mili/blog/20261031-mili-mofcom-trade-secret-sanctions.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/20261031-mili-mofcom-trade-secret-sanctions.html</guid>
-<pubDate>2026-10-31 09:00:00 +0800</pubDate>
-<description>商务部2026年10月26日发布《保护中国商业秘密特别规定（征求意见稿）》，意见截止2026年11月24日。外国实体在国际经贸活动中侵害中国商业秘密并危害或现实威胁国家主权、安全、发展利益的，商务部可限制其进出口、限制在华新增投资、限制人员入境、取消工作许可或居留资格并处罚款；企业与个人可举报。本文逐条拆解十条条文，说清能做什么、哪三条不能指望、以及五处未界定也就是可提意见的空间。</description>
-</item>
-<item>
-<title>专利凑数，专精特新认定真会被查出来</title>
-<link>https://najieip.com/najie/blog/20261031-najie-specialized-sme-patent-screen.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/20261031-najie-specialized-sme-patent-screen.html</guid>
-<pubDate>2026-10-31 09:00:00 +0800</pubDate>
-<description>工信厅联企业〔2026〕40号（成文2026-10-13、发布10-23）在专精特新中小企业与「小巨人」认定中引入「专利前端排查机制」：依托各地知识产权部门专业力量排查专利异常、评价专利质量，对指标异常、数据矛盾、突增突减重点核查，造假企业取消认定且三年内不得再次申报。本文给出3条可当天执行的自查线、4个高频问题的回答，以及2027批次的时间预判。</description>
+<title>外观设计被驳回，问题常在你的六视图：最高法划了两步</title>
+<link>https://najieip.com/najie/blog/20261114-najie-design-view-projection-rejection.html</link>
+<guid isPermaLink="true">https://najieip.com/najie/blog/20261114-najie-design-view-projection-rejection.html</guid>
+<pubDate>Sat, 14 Nov 2026 09:00:00 +0800</pubDate>
+<description>外观设计被驳回，多数不是设计不新，而是六视图投影关系对不上。最高法（2024）知行终520号确立两步判断法：先看视图错误是否产生无法消除的多种解释，再看不同解释能否产生基本相同的整体视觉效果。附申请前六视图自检4条、复审与无效程序的攻防分层，以及3个FAQ。</description>
 </item>
 <item>
 <title>荷兰突击搜查3个月后撤销：出海企业必须懂的3步应对</title>
 <link>https://najieip.com/mili/blog/20261113-byd-netherlands-evidence-seizure.html</link>
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261113-byd-netherlands-evidence-seizure.html</guid>
-<pubDate>2026-11-13 09:00:00 +0800</pubDate>
-<description>荷兰突击搜查3个月后撤销：出海企业必须懂的3步应对</description>
+<pubDate>Fri, 13 Nov 2026 09:00:00 +0800</pubDate>
+<description>荷兰海牙法院11月11日撤销了8月对比亚迪欧洲办公室的突击搜查令。真正决定成败的不是现场那一下，而是事后异议程序。本文拆荷兰《民事诉讼法》第1019条取证专章的三项特征、中国民诉法第84条与《知产证据规定》第11/12/17条的对应关系，以及出海企业现场、异议、成本三步应对。</description>
 </item>
 <item>
 <title>两年的年终奖说取消就取消，能不能要回来（劳动合同法第4条）</title>
@@ -83,7 +48,7 @@
 <link>https://najieip.com/najie/blog/20261112-maldives-trademark-law.html</link>
 <guid isPermaLink="true">https://najieip.com/najie/blog/20261112-maldives-trademark-law.html</guid>
 <pubDate>Thu, 12 Nov 2026 09:00:00 +0800</pubDate>
-<description>马尔代夫商标法生效，12个月过渡期，公告不再等于权利</description>
+<description>马尔代夫第19号商标法（2025年）2026年11月11日生效：在报纸登警示性公告不再产生权利，旧权利须在2027年11月11日前搬进新注册簿。本文给盘点、重新注册、留证三步动作，并讲清先申请原则下为什么不能等实施细则，以及10万到200万拉菲亚的罚则。</description>
 </item>
 <item>
 <title>合同标的 500 万，定金写 150 万：多写的 50 万，双倍不了</title>
@@ -322,34 +287,6 @@
 <guid isPermaLink="true">https://najieip.com/najie/blog/overseas-ip-selfcheck-2026.html</guid>
 <pubDate>Sat, 31 Oct 2026 14:42:29 +0800</pubDate>
 <description>7月，两份文件前后脚落地。7月1日，《国务院关于对外投资的规定》（国务院令第837号）施行；7月31日，《知识产权保护和运用&quot;十五五&quot;规划》公布。</description>
-</item>
-<item>
-<title>IP内容选题方法论</title>
-<link>https://najieip.com/najie/blog/ip-content-selection-methodology-202608.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/ip-content-selection-methodology-202608.html</guid>
-<pubDate>Sat, 31 Oct 2026 14:42:29 +0800</pubDate>
-<description>很多企业知识产权负责人都遇到过这样的场景：美国专利商标局更新了TBMP、国知局修订了专利审查指南，法规原文动辄上百页，自己没时间逐条研读，委托外部机构又担心对方只会照本宣科。信息差，往往就是风险差的起点。</description>
-</item>
-<item>
-<title>3周2400星！公众号排版Skill爆了，但光排版不够</title>
-<link>https://najieip.com/najie/blog/gzh-design-skill.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/gzh-design-skill.html</guid>
-<pubDate>Sat, 31 Oct 2026 14:42:29 +0800</pubDate>
-<description>一款面向公众号的AI排版工具在GitHub上3周狂揽2500+星。我们看了，发现他们只做了最后一步。</description>
-</item>
-<item>
-<title>企业知识产权合规体系建设——从风险排查到管理落地 — 纳杰知识产权</title>
-<link>https://najieip.com/najie/blog/enterprise-ip-compliance-system.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/enterprise-ip-compliance-system.html</guid>
-<pubDate>Sat, 31 Oct 2026 14:42:29 +0800</pubDate>
-<description>企业知识产权合规体系建设指南：从专利商标风险排查到贯标落地，合规不是成本而是竞争力。纳杰知识产权为企业打造全流程IP管理体系。</description>
-</item>
-<item>
-<title>管线-Agent-数据库：知产代理系统的三层架构 — 纳杰知识产权</title>
-<link>https://najieip.com/najie/blog/cnptes-three-layer-architecture.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/cnptes-three-layer-architecture.html</guid>
-<pubDate>Sat, 31 Oct 2026 14:42:29 +0800</pubDate>
-<description>管线负责发现，Agent负责判断，数据库负责关联——知产代理系统的三层架构设计原则。五条规律，一套框架，技术替代工作，留下责任和创造力给人。</description>
 </item>
 </channel>
 </rss>
