@@ -35,6 +35,7 @@ nav {
 
 .map-section { background: #0e1a2b; padding: 32px; }
 .map-wrap { max-width: 1000px; margin: 0 auto; }
+.map-wrap picture { display: block; }
 .map-wrap img { width: 100%; display: block; border-radius: var(--radius); }
 
 .content-section { max-width: 800px; margin: 0 auto; padding: 48px 24px; }
@@ -85,7 +86,10 @@ footer a { color: var(--accent); text-decoration: none; }
 
 <div class="map-section">
   <div class="map-wrap">
-    <img src="mili_jurisdiction_map.png" alt="觅理律所北京法院管辖策略全图" width="2059" height="2055" loading="eager" fetchpriority="high">
+    <picture>
+      <source srcset="mili_jurisdiction_map.webp" type="image/webp">
+      <img src="mili_jurisdiction_map.png" alt="觅理律所北京法院管辖策略全图" width="2059" height="2055" loading="eager" fetchpriority="high">
+    </picture>
   </div>
 </div>
 
