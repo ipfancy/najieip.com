@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+# 发布管的暂存副本目录（与正式页同内容、已带 canonical），不进索引以免重复内容与抓取浪费
+Disallow: /site-inbox/
 
 # ── Content Signals（GEO / AI 引用）──
 # 来源：contentsignals.org 规范（Cloudflare 等推动）
