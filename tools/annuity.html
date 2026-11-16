@@ -101,6 +101,7 @@ function fillYears(){
   $("year").innerHTML = years.map(y=>`<option value="${y}">第 ${y} 年</option>`).join("");
 }
 function money(n){ return n.toLocaleString("zh-CN"); }
+function fmt(d){const p=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());}
 function render(){
   const t=$("type").value, y=$("year").value, red=$("reduction").value;
   const row = (DATA[t]||{})[y];
@@ -114,7 +115,7 @@ function render(){
     if(!isNaN(d)){
       const due = new Date(d.getFullYear()+Number(y), d.getMonth(), d.getDate());
       const grace = new Date(due.getTime()); grace.setMonth(grace.getMonth()+6);
-      $("dueNote").innerHTML = `按申请日推算：第 ${y} 年年费应在 <strong>${due.toISOString().slice(0,10)}</strong> 前缴纳；<span class="warn">宽限期至 ${grace.toISOString().slice(0,10)}</span>（逾期将产生滞纳金）。`;
+      $("dueNote").innerHTML = `按申请日推算：第 ${y} 年年费应在 <strong>${fmt(due)}</strong> 前缴纳；<span class="warn">宽限期至 ${fmt(grace)}</span>（逾期将产生滞纳金）。`;
     }
   } else { $("dueNote").textContent = ""; }
   const tb=$("tbody");
