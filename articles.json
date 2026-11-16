@@ -6,6 +6,12 @@
     "site": "mili"
   },
   {
+    "url": "/najie/blog/20261116-najie-ai-image-copyright-three-layers.html",
+    "title": "图是我花钱做的，著作权为什么可能不在我名下——AI生成图片的权属要拆三层看",
+    "date": "2026-11-16",
+    "site": "najie"
+  },
+  {
     "url": "/mili/blog/20261115-mili-payment-60days-b2b.html",
     "title": "「收到上家款再付」无效：国务院令第802号，逾期按日万分之五",
     "date": "2026-11-15",
@@ -544,12 +550,6 @@
     "date": "2026-10-10",
     "site": "mili",
     "description": "北京市市场监管局 9 月 22 日《AIGC 企业商业秘密保护指引》征求意见稿点出两个最容易被漏掉的泄密口子：一是研发人员用 AI 编程助手、代码补全插件时，工具索引整个代码仓库、每次交互把代码上下文发到云端，这种外发不体现为文件传输，常规数据防泄露措施难以识别；二是员工图方便把代码和 prompt 粘进公共模型，很多团队还不觉得这是泄密。本文拆解两个口子的技术路径、指引给出的具体做法，以及今天就能做的三个动作。"
-  },
-  {
-    "url": "/najie/blog/20261010-mili-aigc-trade-secret-two-leaks.html",
-    "title": "AI团队最容易漏的2个泄密口子：不传文件，防泄露系统也抓不到",
-    "date": "2026-10-10",
-    "site": "najie"
   },
   {
     "url": "/mili/blog/20261009-mili-ai-short-drama-token-evidence.html",
@@ -1853,12 +1853,6 @@
     "title": "一辆车32美元，特斯拉打了三年官司——中国车企的5G专利攻守棋局",
     "date": "2026-08-08",
     "site": "mili"
-  },
-  {
-    "url": "/aipunajie/blog/20260804-ic-layout-design-regulations.html",
-    "title": "“半导体”从法条消失，10月15日起芯片IP新规生效",
-    "date": "2026-08-08",
-    "site": "aipunajie"
   },
   {
     "url": "/najie/blog/20260804-ic-layout-design-regulations.html",
