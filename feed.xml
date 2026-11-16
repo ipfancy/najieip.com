@@ -5,7 +5,7 @@
 <link>https://najieip.com/</link>
 <description>纳杰、爱普纳杰、觅理三机构联合发布的知识产权实务文章：专利撰写与答审、商标与著作权、诉讼与商业秘密。</description>
 <language>zh-CN</language>
-<lastBuildDate>Mon, 16 Nov 2026 07:04:37 +0800</lastBuildDate>
+<lastBuildDate>Mon, 16 Nov 2026 16:41:01 +0800</lastBuildDate>
 <atom:link href="https://najieip.com/feed.xml" rel="self" type="application/rss+xml"/>
 <ttl>60</ttl>
 <item>
@@ -14,6 +14,13 @@
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261116-mili-protection-order-72hours.html</guid>
 <pubDate>Mon, 16 Nov 2026 09:00:00 +0800</pubDate>
 <description>一年6000份保护令：没结婚分手也能申请，第29条、72小时</description>
+</item>
+<item>
+<title>图是我花钱做的，著作权为什么可能不在我名下——AI生成图片的权属要拆三层看</title>
+<link>https://najieip.com/najie/blog/20261116-najie-ai-image-copyright-three-layers.html</link>
+<guid isPermaLink="true">https://najieip.com/najie/blog/20261116-najie-ai-image-copyright-three-layers.html</guid>
+<pubDate>Mon, 16 Nov 2026 09:00:00 +0800</pubDate>
+<description>AI生成图片的权属要拆三层看：付款不产生作者身份，委托合同未约定归属时著作权默认在受托人；AI把「受托人」拆成模型方、操作方与出资方三个人；法院数的不是「像不像画」，而是人在生成过程中做了多少选择。本文用《著作权法》第十一、十八、十九、二十七条与北京互联网法院、磐石、开福、张家港四组裁判，给出采购四个条款与自己做图的三样留痕。</description>
 </item>
 <item>
 <title>「收到上家款再付」无效：国务院令第802号，逾期按日万分之五</title>
@@ -280,13 +287,6 @@
 <guid isPermaLink="true">https://najieip.com/najie/blog/pipeline-failed-queue-practice.html</guid>
 <pubDate>Sat, 31 Oct 2026 14:42:29 +0800</pubDate>
 <description>收件箱入库失败从红色报错到自动自愈——管线层的异常队列设计实操。failed_queue表、重试逻辑、升级机制，一个实际的知产代理系统改进案例。</description>
-</item>
-<item>
-<title>企业海外商标布局策略 | 从中国黄金说起</title>
-<link>https://najieip.com/najie/blog/overseas-trademark-strategy.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/overseas-trademark-strategy.html</guid>
-<pubDate>Sat, 31 Oct 2026 14:42:29 +0800</pubDate>
-<description>随着越来越多的中国企业走向国际市场，海外商标保护不再是可选项，而是出海战略的基础设施。本文以中国黄金的全球化实践为引，系统梳理企业海外商标布局的核心策略与操作路径。</description>
 </item>
 </channel>
 </rss>
