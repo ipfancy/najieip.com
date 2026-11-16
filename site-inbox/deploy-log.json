@@ -3033,6 +3033,22 @@
    "defects_found": 1,
    "notes": "上游 2526f1b 裸发布只落页面+索引卡；本班按 11-14 同日 mili 房屋（Article/BreadcrumbList deepcopy + 覆写）重建，md 源逐字包含断言 1851=1851；落款两侧同剥（md 用「何自刚｜知识产权律师｜…」与页面 house 落款不同）后 contained=True",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "每日运营（周一夜班）",
+   "commit": "a1ff6c9",
+   "action": "11-16 每日巡检：核心6页 6/6=200（零瞬断）；精修 mili「一年6000份保护令」部分裸发布页（h1=0/无og:image/twitter仅summary/无keywords）10,068→10,719B，补 h1+og:image+twitter:title/image+keywords+Article image 字段，封面 337KB 入库 img/，正文剥 h1 后逐字不变；najie「AI生成图权属三层」补主索引卡（309→310，depth0 delta+1）+ articles.json 条目（307→308）；articles.json 守卫隔离 2 条 stub（无落地页/跳转壳）→306，0 违例、首页 top6 全有页面；sitemap 看门 exit 0（414 loc 不变）；线上 23 项判据 FAILURES=NONE",
+   "files_changed": ["mili/blog/20261116-mili-protection-order-72hours.html", "blog/index.html", "articles.json", "articles-quarantine-20261116.json", "img/20261116-mili-protection-order-72hours.png", "site-inbox/diag-1116.py", "site-inbox/diag2-1116.py", "site-inbox/fix-1116-page.py", "site-inbox/gen-1116-index-card.py", "site-inbox/live-1116.py", "site-inbox/probe-log-1116.py"],
+   "cards_added": 1,
+   "attribution": {"main": 1, "mili": 0, "najie": 0, "aipunajie": 0},
+   "verification": {"core_http": "6/6=200", "page_six": "保护令页 h1=1 / ld=2 / og:image=1 / desc 115字 / **=0 / 裸表=0", "md_contained": "保护令页正文完整（md 1835 归一，唯一 diff 为有序列表序号）", "index_structure": "主索引 310 卡 div 622/622 配平 malformed=0 hist{0:+1}", "articles_json": "306 条 0 违例 top6 全有页面", "sitemap": "414 loc 看门 exit 0 无 diff", "live": "23 项 PASS FAILURES=NONE"},
+   "defects_found": ["mili 保护令页缺 h1/og:image/twitter 标题图像（部分裸发布）", "najie AI图权属文缺主索引卡 + articles.json 条目", "articles.json 2 条 stub 条目（无落地页/跳转壳）"],
+   "notes": "两篇 11-15/11-14 mili 文经六项复核全达标（md 包含断言唯一 diff 为 md 有序列表序号，属归一化预期）；sitemap 无缺口。新行规：主索引卡块含 meta div，div delta 应为 +2/+2（不是 +1/+1）；避免对品牌索引整行 grep（Blog JSON-LD 单行 40KB，一次烧掉大量 token），改 python 定位。",
+   "result": "PASS"
+
   }
  ]
 }
