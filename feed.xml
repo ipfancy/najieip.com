@@ -5,9 +5,23 @@
 <link>https://najieip.com/</link>
 <description>纳杰、爱普纳杰、觅理三机构联合发布的知识产权实务文章：专利撰写与答审、商标与著作权、诉讼与商业秘密。</description>
 <language>zh-CN</language>
-<lastBuildDate>Wed, 18 Nov 2026 17:20:01 +0800</lastBuildDate>
+<lastBuildDate>Thu, 19 Nov 2026 06:22:06 +0800</lastBuildDate>
 <atom:link href="https://najieip.com/feed.xml" rel="self" type="application/rss+xml"/>
 <ttl>60</ttl>
+<item>
+<title>130万台机顶盒出厂就带后门，卖的人今年起最高罚5倍</title>
+<link>https://najieip.com/mili/blog/20261119-mili-tv-box-backdoor-four-layers.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261119-mili-tv-box-backdoor-four-layers.html</guid>
+<pubDate>Thu, 19 Nov 2026 09:00:00 +0800</pubDate>
+<description>130万台机顶盒出厂就带后门，卖的人今年起最高罚5倍</description>
+</item>
+<item>
+<title>芬兰没最低工资，中国工地却月扣1600欧</title>
+<link>https://najieip.com/mili/blog/20261118-mili-finland-labor-four-gates.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261118-mili-finland-labor-four-gates.html</guid>
+<pubDate>Wed, 18 Nov 2026 09:00:00 +0800</pubDate>
+<description>芬兰科特卡8亿欧元电池材料厂工地，300多名中国工人；赫尔辛基警方9月10日立案、10月30日通报劳动人口贩运与严重非法入境安排嫌疑，尚无定罪。芬兰没有全国最低工资，但行业集体协议有普遍约束力。四道关：主体、合同、钱、关系，另附出海用工三条清单。</description>
+</item>
 <item>
 <title>员工把配方贴进AI那一刻，商业秘密就已经出去了</title>
 <link>https://najieip.com/mili/blog/20261118-mili-ai-tool-trade-secret.html</link>
@@ -35,13 +49,6 @@
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261118-mili-drug-linkage-9-cases.html</guid>
 <pubDate>Wed, 18 Nov 2026 09:00:00 +0800</pubDate>
 <description>药品专利链接制度运行五年，北京知产法院受理382件、审结369件、超九成涉外。九件典型案例划清九条标尺：剂型与登记不对应即不成立、专利已被宣告无效可直接裁定驳回起诉、拒不提交申报资料推定落入保护范围。附仿制药立项前3项核查、创新药登记与撰写3处修改、1条举证红线。</description>
-</item>
-<item>
-<title>芬兰没最低工资，中国工地却月扣1600欧</title>
-<link>https://najieip.com/mili/blog/20261118-mili-finland-labor-four-gates.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/20261118-mili-finland-labor-four-gates.html</guid>
-<pubDate>Wed, 18 Nov 2026 09:00:00 +0800</pubDate>
-<description>芬兰没最低工资，中国工地却月扣1600欧</description>
 </item>
 <item>
 <title>德芙被罚80万，罚单上却不是德芙：广告法罚的是角色，不是商标</title>
@@ -280,13 +287,6 @@
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261101-mili-ai-writing-judgment.html</guid>
 <pubDate>Sun, 01 Nov 2026 09:00:00 +0800</pubDate>
 <description>AI 能写检索报告、能写权利要求、能拟合同，律师凭什么还收费？答案是：客户买的从来不是「写」，是判断。能被标准化的部分确实在贬值——检索、格式、引用关系都已被压缩到几分钟；但品味（写三条硬的还是八条凑数）、判断力（信息不全时拍板并承担后果）、连接力（回复时效、坏消息先说、结案报告）三件事不会。附立案时写三条假设、结案回填的做法，用留痕看出自己在哪类判断上系统性偏乐观。分水岭不在用不用 AI，而在你处在链条的哪个位置。</description>
-</item>
-<item>
-<title>专利出海还有第二道闸：试行8年，多数企业不知道要报</title>
-<link>https://najieip.com/najie/blog/20261101-najie-ip-foreign-transfer-review.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/20261101-najie-ip-foreign-transfer-review.html</guid>
-<pubDate>Sun, 01 Nov 2026 09:00:00 +0800</pubDate>
-<description>《知识产权对外转让有关工作办法（试行）》2018年3月18日印发，试行至今已第八年，覆盖专利、集成电路布图设计专有权、计算机软件著作权、植物新品种权四类（商标不在其中）；三种动作需审：权利人变更、实际控制人变更、独占实施许可，且是「先证后约」——未取得《技术出口许可意向书》不得实质性谈判或签约。本文拆四个常见误判，给出签约前五问自检表，并附2026年第48号公告的先行登记要求。</description>
 </item>
 </channel>
 </rss>
