@@ -5,9 +5,16 @@
 <link>https://najieip.com/</link>
 <description>纳杰、爱普纳杰、觅理三机构联合发布的知识产权实务文章：专利撰写与答审、商标与著作权、诉讼与商业秘密。</description>
 <language>zh-CN</language>
-<lastBuildDate>Wed, 18 Nov 2026 11:58:07 +0800</lastBuildDate>
+<lastBuildDate>Wed, 18 Nov 2026 15:33:38 +0800</lastBuildDate>
 <atom:link href="https://najieip.com/feed.xml" rel="self" type="application/rss+xml"/>
 <ttl>60</ttl>
+<item>
+<title>员工把配方贴进AI那一刻，商业秘密就已经出去了</title>
+<link>https://najieip.com/mili/blog/20261118-mili-ai-tool-trade-secret.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261118-mili-ai-tool-trade-secret.html</guid>
+<pubDate>Wed, 18 Nov 2026 09:00:00 +0800</pubDate>
+<description>深圳市场监管局2026年10月发布《人工智能工具应用中的商业秘密保护指引》，围绕AI工具采购、部署、使用、退出四环节给出保密要求，并附涉密信息上传负面清单与保密承诺参考文本。本文拆出企业最该照着做的四件事，附一页负面清单与承诺书模板。</description>
+</item>
 <item>
 <title>382件药链案：9条标尺，原研和仿制都得重算</title>
 <link>https://najieip.com/mili/blog/20261118-mili-drug-linkage-9-cases.html</link>
@@ -21,6 +28,13 @@
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261118-mili-finland-labor-four-gates.html</guid>
 <pubDate>Wed, 18 Nov 2026 09:00:00 +0800</pubDate>
 <description>芬兰没最低工资，中国工地却月扣1600欧</description>
+</item>
+<item>
+<title>终本了，人还是进去了</title>
+<link>https://najieip.com/mili/blog/20261118-mili-refusal-execute-five-cases.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261118-mili-refusal-execute-five-cases.html</guid>
+<pubDate>Wed, 18 Nov 2026 09:00:00 +0800</pubDate>
+<description>两高一部2026年11月18日发布五件拒执罪典型案例：终本期间违规乘机、关联公司代收、协议离婚转移、欠付抚养费、虚假购房套取房票，五种做法全部入刑。附债权人、企业主各三件今天能做的事。</description>
 </item>
 <item>
 <title>地理标志“十五五”规划：2030年1.1万亿，产区3件事</title>
@@ -273,20 +287,6 @@
 <guid isPermaLink="true">https://najieip.com/najie/blog/20261101-najie-ip-foreign-transfer-review.html</guid>
 <pubDate>Sun, 01 Nov 2026 09:00:00 +0800</pubDate>
 <description>《知识产权对外转让有关工作办法（试行）》2018年3月18日印发，试行至今已第八年，覆盖专利、集成电路布图设计专有权、计算机软件著作权、植物新品种权四类（商标不在其中）；三种动作需审：权利人变更、实际控制人变更、独占实施许可，且是「先证后约」——未取得《技术出口许可意向书》不得实质性谈判或签约。本文拆四个常见误判，给出签约前五问自检表，并附2026年第48号公告的先行登记要求。</description>
-</item>
-<item>
-<title>知乎热榜法律视角</title>
-<link>https://najieip.com/najie/blog/zhihu-hotlist-20260810.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/zhihu-hotlist-20260810.html</guid>
-<pubDate>Sat, 31 Oct 2026 14:42:29 +0800</pubDate>
-<description>2026年8月10日知乎热榜法律视角：AI造病毒、跨国刑案、医疗过失——纳杰觅理专业解读</description>
-</item>
-<item>
-<title>WIPO平台四大免费数据库，90%的知产人没用全</title>
-<link>https://najieip.com/najie/blog/wipo-free-databases.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/wipo-free-databases.html</guid>
-<pubDate>Sat, 31 Oct 2026 14:42:29 +0800</pubDate>
-<description>知识产权数据库动辄年费数万。但你知不知道，世界知识产权组织（WIPO）平台上有四套免费数据库，覆盖全球专利、商标、外观设计和法律文本——而且互联互通。</description>
 </item>
 </channel>
 </rss>
