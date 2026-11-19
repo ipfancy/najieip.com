@@ -5,9 +5,30 @@
 <link>https://najieip.com/</link>
 <description>纳杰、爱普纳杰、觅理三机构联合发布的知识产权实务文章：专利撰写与答审、商标与著作权、诉讼与商业秘密。</description>
 <language>zh-CN</language>
-<lastBuildDate>Thu, 19 Nov 2026 07:49:33 +0800</lastBuildDate>
+<lastBuildDate>Thu, 19 Nov 2026 12:30:21 +0800</lastBuildDate>
 <atom:link href="https://najieip.com/feed.xml" rel="self" type="application/rss+xml"/>
 <ttl>60</ttl>
+<item>
+<title>PCT 进中国：30 个月的线，和那 2 个月的宽限</title>
+<link>https://najieip.com/aipunajie/blog/20261119-aipu-pct-30-months.html</link>
+<guid isPermaLink="true">https://najieip.com/aipunajie/blog/20261119-aipu-pct-30-months.html</guid>
+<pubDate>Thu, 19 Nov 2026 09:00:00 +0800</pubDate>
+<description>PCT 国际申请进入中国国家阶段，期限是优先权日起 30 个月；未办完的，缴宽限费可延到 32 个月。32 个月之后只剩恢复程序。附期限算法、要交的钱、五个常见坑与进入前 30 天清单。</description>
+</item>
+<item>
+<title>AI 能替律师做的，和永远不能替的</title>
+<link>https://najieip.com/mili/blog/20261119-mili-ai-law-firm-boundary.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261119-mili-ai-law-firm-boundary.html</guid>
+<pubDate>Thu, 19 Nov 2026 09:00:00 +0800</pubDate>
+<description>伦敦 AI 原生律所 Alecto 八个月做到 800 万美元：它不碰诉讼，只做最标准化的房产过户，并把计时收费换成结果收费。法律服务能被拆成流程的部分正在被吃掉，但判断与责任不能。附四条可拆性标准。</description>
+</item>
+<item>
+<title>“开门杀”致人死亡：责任为什么全在开门的人</title>
+<link>https://najieip.com/mili/blog/20261119-mili-dooring-case.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261119-mili-dooring-case.html</guid>
+<pubDate>Thu, 19 Nov 2026 09:00:00 +0800</pubDate>
+<description>人民法院案例库 2026-11-17 入库案例：违规停车开门撞倒骑车人，被害人随即遭正常行驶货车碾压身亡。法院认定不属异常介入因素，开门人对死亡结果负全责，构成交通肇事罪。含刑事定罪逻辑与民事赔偿顺序。</description>
+</item>
 <item>
 <title>130万台机顶盒出厂就带后门，卖的人今年起最高罚5倍</title>
 <link>https://najieip.com/mili/blog/20261119-mili-tv-box-backdoor-four-layers.html</link>
@@ -266,27 +287,6 @@
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261103-mili-unfair-competition-data-scraping.html</guid>
 <pubDate>Tue, 03 Nov 2026 09:00:00 +0800</pubDate>
 <description>江苏镇江一家公司卖「一键搬家」软件抓取平台商品数据，被市场监管罚 53 万元，随后被淘宝、天猫起诉，江苏高院二审判赔 500 万元；江西九江同类案件只罚 12 万元——同一套手法差 4.4 倍。本文拆解 2025 年修订的反不正当竞争法第 13 条第 3 款与第 29 条罚则、最高法第 47 批指导性案例第 262 号的「实质性替代」标准，并给出企业四步自检：看来源、看方式、看结果、留痕止损。</description>
-</item>
-<item>
-<title>巡逻机器人上岗前，物业要先答的四个问题</title>
-<link>https://najieip.com/mili/blog/20261103-mili-patrol-robot-four-questions.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/20261103-mili-patrol-robot-four-questions.html</guid>
-<pubDate>Tue, 03 Nov 2026 09:00:00 +0800</pubDate>
-<description>巡逻机器人拍到的不是「画面」，是个人信息：人脸属于敏感个人信息，行踪轨迹同样受严格约束。本文按个人信息保护法第 13、17、19、26、28、29、38—40、55、66 条与民法典第 942、1198、1202、1203 条，逐条回答物业最容易被问倒的四个问题——提示标识、保存期限、人脸比对、数据存哪，并给出与厂商合同里应写死的四句话。</description>
-</item>
-<item>
-<title>48号公告：40项技术出口先登记，判断错了没人替你兜底</title>
-<link>https://najieip.com/najie/blog/20261102-najie-tech-export-catalog-48.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/20261102-najie-tech-export-catalog-48.html</guid>
-<pubDate>Mon, 02 Nov 2026 09:00:00 +0800</pubDate>
-<description>商务部、科技部第48号公告拟增列40项技术（人工智能23项、生物医药5项、光伏12项），拟禁止14项、拟限制26项，11月15日是征求意见截止日；但临时出口前登记自2026年10月16日公告发布当天就已生效。登记义务由出口经营者自行判断，判断错了没有官方替你兜底。本文拆四类登记情形、六种出海形态对号入座、最易漏的控制权变更，以及条例第39条前置材料与第43、44条真正罚则的口径差别。</description>
-</item>
-<item>
-<title>AI 搜索按千次卖，被摘要的网页按什么收钱</title>
-<link>https://najieip.com/najie/blog/20261102-najie-ai-search-summary-pay.html</link>
-<guid isPermaLink="true">https://najieip.com/najie/blog/20261102-najie-ai-search-summary-pay.html</guid>
-<pubDate>Mon, 02 Nov 2026 09:00:00 +0800</pubDate>
-<description>AI 搜索把网页内容摘成几百字直接回答用户，平台按千次调用收费，被摘要的内容方一分未得。本文拆四层：摘要在著作权法第10条信息网络传播权上的落点（替代标准）、第24条适当引用的三个要件为何难过、避风港第4条的「仅提供」分水岭与第11条直接获利，以及内容方今天能做的三件事——可举证的禁止声明、真做的技术措施、靠许可而非单打收钱。</description>
 </item>
 </channel>
 </rss>
