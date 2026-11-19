@@ -4,21 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>强制认证只管4类设备，你买的摄像头一台都不在内 — 纳杰觅理</title>
-<meta name="description" content="强制认证只管4类设备，你买的摄像头一台都不在内">
+<meta name="description" content="网安法要求网络关键设备认证销售，但强制认证目录只覆盖路由器、交换机、机架式服务器、PLC 四类，摄像头、门禁、机顶盒都不在内。企业采购的安全关只能靠合同：安全保密协议、10 年以上知识产权授权、固件可回刷与漏洞修补时限。">
+<meta name="keywords" content="网络关键设备安全认证,强制认证目录,设备采购合同,安全保密协议,GB/T 39204-2022,固件后门">
 <meta property="og:type" content="article">
 <meta property="og:title" content="强制认证只管4类设备，你买的摄像头一台都不在内">
-<meta property="og:description" content="强制认证只管4类设备，你买的摄像头一台都不在内">
+<meta property="og:description" content="网安法要求网络关键设备认证销售，但强制认证目录只覆盖路由器、交换机、机架式服务器、PLC 四类，摄像头、门禁、机顶盒都不在内。企业采购的安全关只能靠合同：安全保密协议、10 年以上知识产权授权、固件可回刷与漏洞修补时限。">
+<meta property="og:site_name" content="北京觅理律师事务所">
 <meta property="og:url" content="https://najieip.com/mili/blog/20261120-mili-device-procurement-firmware-checklist.html">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://najieip.com/mili/blog/20261120-mili-device-procurement-firmware-checklist.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "强制认证只管4类设备，你买的摄像头一台都不在内", "description": "强制认证目录只覆盖路由器、交换机、机架式服务器、PLC 四类，摄像头、门禁、机顶盒都不在内。企业采购的安全关只能靠合同。", "author": {"@type": "Person", "name": "何自刚", "jobTitle": "知识产权律师"}, "publisher": {"@type": "Organization", "name": "北京觅理律师事务所"}, "datePublished": "2026-11-20", "dateModified": "2026-11-20", "mainEntityOfPage": "https://najieip.com/mili/blog/20261120-mili-device-procurement-firmware-checklist.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://najieip.com/"}, {"@type": "ListItem", "position": 2, "name": "觅理博客", "item": "https://najieip.com/mili/blog/"}, {"@type": "ListItem", "position": 3, "name": "强制认证只管4类设备，你买的摄像头一台都不在内"}]}</script>
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c80241f3caa4e708a12ed93baec1bde"}'></script>
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <nav><a href="/">← 首页</a></nav>
 <article>
-<p>&lt;!-- style: B-问答 --&gt;</p>
-<br>
+<h1>强制认证只管4类设备，你买的摄像头一台都不在内</h1>
 <p>「公司新装的那台摄像头，谁给它做过安全认证？」</p>
 <br>
 <p>这个问题问十个老板，九个答不上来，剩下那个会说：厂商有合格证啊。合格证不是安全认证。网安法写得很清楚，网络关键设备未经认证不得销售。听着是道铁闸，你真去翻那张目录就明白了：要认证的设备一共四类，门槛高得离谱。</p>
@@ -29,12 +32,15 @@
 <br>
 <h2>一问：目录到底卡在哪</h2>
 <br>
-<p>| 设备类别 | 门槛 |</p>
-<p>|:--|:--|</p>
-<p>| 路由器 | 吞吐量≥12 Tbps，路由表≥55 万条 |</p>
-<p>| 交换机 | 吞吐量≥30 Tbps，包转发≥10 Gpps |</p>
-<p>| 机架式服务器 | CPU≥8 个，单核≥14 个，内存≥256GB |</p>
-<p>| PLC | 指令执行≤0.08 微秒 |</p>
+<table>
+<thead><tr><th>设备类别</th><th>门槛</th></tr></thead>
+<tbody>
+<tr><td>路由器</td><td>吞吐量≥12 Tbps，路由表≥55 万条</td></tr>
+<tr><td>交换机</td><td>吞吐量≥30 Tbps，包转发≥10 Gpps</td></tr>
+<tr><td>机架式服务器</td><td>CPU≥8 个，单核≥14 个，内存≥256GB</td></tr>
+<tr><td>PLC</td><td>指令执行≤0.08 微秒</td></tr>
+</tbody>
+</table>
 <br>
 <p>门槛是按超大规模写的，不是按写字楼写的。这也解释了前几天那 130 万台机顶盒为什么能合规出厂，目录根本罩不住它。真正能管到这类设备的，是网安法第 24 条「不得设置恶意程序」，罚则轻得多。</p>
 <br>
@@ -62,13 +68,13 @@
 <br>
 <p>供应商故意留后门那种事会踩到刑法，这里不展开。采购方先把合同这道关把住，就够用一阵了。</p>
 <br>
-<p>&gt; **「目录只能管住超大规模设备，普通企业的采购安全，靠的是合同里那几行字。」** —— 何自刚｜知识产权律师｜纳杰（执业 20 年，AI 原生混合组织实践者）</p>
+<blockquote><p>「目录只能管住超大规模设备，普通企业的采购安全，靠的是合同里那几行字。」—— 何自刚｜知识产权律师｜纳杰（执业 20 年，AI 原生混合组织实践者）</p></blockquote>
 <br>
 <p>你们上个月签的那份设备采购合同，第九条写的是什么？</p>
 <br>
-<p>*本文由 AI 辅助生成与整理，观点与判断由作者审定。*</p>
+<p><em>本文由 AI 辅助生成与整理，观点与判断由作者审定。</em></p>
 <br>
-<p>*本文仅代表作者个人观点，不构成法律意见。设备合规问题可直接咨询：010-65150974。*</p>
+<p><em>本文仅代表作者个人观点，不构成法律意见。设备合规问题可直接咨询：010-65150974。</em></p>
 <br>
 <p>何自刚｜知识产权律师｜010-65150974</p>
 <br>
