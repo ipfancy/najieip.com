@@ -5,7 +5,7 @@
 <link>https://najieip.com/</link>
 <description>纳杰、爱普纳杰、觅理三机构联合发布的知识产权实务文章：专利撰写与答审、商标与著作权、诉讼与商业秘密。</description>
 <language>zh-CN</language>
-<lastBuildDate>Thu, 19 Nov 2026 06:22:06 +0800</lastBuildDate>
+<lastBuildDate>Thu, 19 Nov 2026 07:49:33 +0800</lastBuildDate>
 <atom:link href="https://najieip.com/feed.xml" rel="self" type="application/rss+xml"/>
 <ttl>60</ttl>
 <item>
@@ -14,6 +14,13 @@
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261119-mili-tv-box-backdoor-four-layers.html</guid>
 <pubDate>Thu, 19 Nov 2026 09:00:00 +0800</pubDate>
 <description>130万台机顶盒出厂就带后门，卖的人今年起最高罚5倍</description>
+</item>
+<item>
+<title>你写了适用英国法，谁来证明它</title>
+<link>https://najieip.com/mili/blog/20261118-mili-foreign-law-proof.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261118-mili-foreign-law-proof.html</guid>
+<pubDate>Wed, 18 Nov 2026 09:00:00 +0800</pubDate>
+<description>合同约定适用外国法，涉诉时却没人能证明那部法律是什么。浦东法院《域外法查明18问》划清规则：AI 查的不能单独提交、网页截图一般不作证据、查明报告要过三道形式关。附四类渠道与四类风险。</description>
 </item>
 <item>
 <title>芬兰没最低工资，中国工地却月扣1600欧</title>
@@ -280,13 +287,6 @@
 <guid isPermaLink="true">https://najieip.com/najie/blog/20261102-najie-ai-search-summary-pay.html</guid>
 <pubDate>Mon, 02 Nov 2026 09:00:00 +0800</pubDate>
 <description>AI 搜索把网页内容摘成几百字直接回答用户，平台按千次调用收费，被摘要的内容方一分未得。本文拆四层：摘要在著作权法第10条信息网络传播权上的落点（替代标准）、第24条适当引用的三个要件为何难过、避风港第4条的「仅提供」分水岭与第11条直接获利，以及内容方今天能做的三件事——可举证的禁止声明、真做的技术措施、靠许可而非单打收钱。</description>
-</item>
-<item>
-<title>AI 会写文书了，凭什么还请律师</title>
-<link>https://najieip.com/mili/blog/20261101-mili-ai-writing-judgment.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/20261101-mili-ai-writing-judgment.html</guid>
-<pubDate>Sun, 01 Nov 2026 09:00:00 +0800</pubDate>
-<description>AI 能写检索报告、能写权利要求、能拟合同，律师凭什么还收费？答案是：客户买的从来不是「写」，是判断。能被标准化的部分确实在贬值——检索、格式、引用关系都已被压缩到几分钟；但品味（写三条硬的还是八条凑数）、判断力（信息不全时拍板并承担后果）、连接力（回复时效、坏消息先说、结案报告）三件事不会。附立案时写三条假设、结案回填的做法，用留痕看出自己在哪类判断上系统性偏乐观。分水岭不在用不用 AI，而在你处在链条的哪个位置。</description>
 </item>
 </channel>
 </rss>
