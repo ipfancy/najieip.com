@@ -3079,6 +3079,21 @@
    "defects_found": ["芬兰用工文为裸发布档（无 h1/h2/JSON-LD/og:image，描述复读标题）", "当日 5 篇文中 4 篇缺主索引卡、2 篇缺品牌索引卡（上游只写页面/sitemap/feed）", "articles.json 复活 26 条无页面条目（第 25 次隔离）"],
    "notes": "新增行规：上游当日 5 篇的 md 源可能改名/改日期落盘（拒执五案 md 实为 20261120-*），md_contained 仅对同期文件可判，其余走六项 head 判据；索引卡摘要应取页面 meta description 而非标题（芬兰卡原为标题复读，已修 2 处）",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "每日运营（夜班）",
+   "commit": "pending",
+   "action": "每日巡检：核心6页200（llms.txt首轮000瞬断,重试3/3=200）；精修畸形页 20261119-mili-tv-box-backdoor-four-layers（h1=0/ld=0/无og:image/description复读标题）→ 补 h1 + Article+BreadcrumbList JSON-LD + og:image/twitter/keywords/og:site_name + 真摘要142字，6449→9819B（正文逐字不变1694=1694，md全文包含True 1604=1604）；4 页补 og:image（aipunajie PCT / mili foreign-law-proof / ai-law-firm-boundary / dooring-case）+ twitter:card 升级 + og:site_name；封面 296KB 入库 img/",
+   "files_changed": 6,
+   "cards_added": 0,
+   "attribution": "零补卡（6 篇新文品牌卡与主卡上游均已同步，逐 slug grep 各命中 1 次）",
+   "verification": "本地 5 页结构终验 PASS（h1=1/ld>=2/JSON-LD全部json.loads/div配平/**=0/og:image本地存在/ctx==ld）；articles.json 321→269 隔离52条（0违例，首页top6全有页面）；sitemap 看门 exit 0（425 loc 不变）",
+   "defects_found": "1 篇畸形页(ld=0,h1=0,desc复读,处articles.json首页第1曝光位) + 4 篇缺og:image + articles.json 52条无页面条目(上游第N次复活)",
+   "notes": "新增行规：md包含断言页面侧须剥<h1-6>标题文字（md侧整行丢弃后残留标题文字会造成永久假失败，本次为唯一假失败点）",
+   "result": "PASS"
   }
  ]
 }
