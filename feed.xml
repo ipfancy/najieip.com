@@ -5,29 +5,29 @@
 <link>https://najieip.com/</link>
 <description>纳杰、爱普纳杰、觅理三机构联合发布的知识产权实务文章：专利撰写与答审、商标与著作权、诉讼与商业秘密。</description>
 <language>zh-CN</language>
-<lastBuildDate>Thu, 19 Nov 2026 12:30:21 +0800</lastBuildDate>
+<lastBuildDate>Fri, 20 Nov 2026 14:21:57 +0800</lastBuildDate>
 <atom:link href="https://najieip.com/feed.xml" rel="self" type="application/rss+xml"/>
 <ttl>60</ttl>
+<item>
+<title>觅理在东城开了个分所，只管两件事</title>
+<link>https://najieip.com/mili/blog/20261120-mili-dongcheng-branch.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261120-mili-dongcheng-branch.html</guid>
+<pubDate>Fri, 20 Nov 2026 09:00:00 +0800</pubDate>
+<description>北京觅理（东城区）律师事务所 2026 年 11 月设立。它不办知产案件，只管跨境企业出海与国际税务、尽职调查、国际教育与就业；专利商标著作权仍在总所。共同点是跨境，分工在权利与事务。</description>
+</item>
 <item>
 <title>强制认证只管4类设备，你买的摄像头一台都不在内</title>
 <link>https://najieip.com/mili/blog/20261120-mili-device-procurement-firmware-checklist.html</link>
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261120-mili-device-procurement-firmware-checklist.html</guid>
-<pubDate>2026-11-20 09:00:00 +0800</pubDate>
-<description>强制认证只管4类设备，你买的摄像头一台都不在内</description>
+<pubDate>Fri, 20 Nov 2026 09:00:00 +0800</pubDate>
+<description>网安法要求网络关键设备认证销售，但强制认证目录只覆盖路由器、交换机、机架式服务器、PLC 四类，摄像头、门禁、机顶盒都不在内。企业采购的安全关只能靠合同：安全保密协议、10 年以上知识产权授权、固件可回刷与漏洞修补时限。</description>
 </item>
 <item>
-<title>PCT 进中国：30 个月的线，和那 2 个月的宽限</title>
-<link>https://najieip.com/aipunajie/blog/20261119-aipu-pct-30-months.html</link>
-<guid isPermaLink="true">https://najieip.com/aipunajie/blog/20261119-aipu-pct-30-months.html</guid>
+<title>130万台机顶盒出厂就带后门，卖的人今年起最高罚5倍</title>
+<link>https://najieip.com/mili/blog/20261119-mili-tv-box-backdoor-four-layers.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261119-mili-tv-box-backdoor-four-layers.html</guid>
 <pubDate>Thu, 19 Nov 2026 09:00:00 +0800</pubDate>
-<description>PCT 国际申请进入中国国家阶段，期限是优先权日起 30 个月；未办完的，缴宽限费可延到 32 个月。32 个月之后只剩恢复程序。附期限算法、要交的钱、五个常见坑与进入前 30 天清单。</description>
-</item>
-<item>
-<title>AI 能替律师做的，和永远不能替的</title>
-<link>https://najieip.com/mili/blog/20261119-mili-ai-law-firm-boundary.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/20261119-mili-ai-law-firm-boundary.html</guid>
-<pubDate>Thu, 19 Nov 2026 09:00:00 +0800</pubDate>
-<description>伦敦 AI 原生律所 Alecto 八个月做到 800 万美元：它不碰诉讼，只做最标准化的房产过户，并把计时收费换成结果收费。法律服务能被拆成流程的部分正在被吃掉，但判断与责任不能。附四条可拆性标准。</description>
+<description>前阵子 Google 发了一份通报，说切断了代号 XCPE 的僵尸网络，里面跑着 130 万台以上的 Android 机顶盒，散在 200 多个国家。数字已经够吓人，真正让人后颈发凉的是那句定性：后门写在固件里，盒子送到你家之前就装好了，不是后来被黑客攻破，也不是哪个工程师手滑写错。</description>
 </item>
 <item>
 <title>“开门杀”致人死亡：责任为什么全在开门的人</title>
@@ -37,11 +37,18 @@
 <description>人民法院案例库 2026-11-17 入库案例：违规停车开门撞倒骑车人，被害人随即遭正常行驶货车碾压身亡。法院认定不属异常介入因素，开门人对死亡结果负全责，构成交通肇事罪。含刑事定罪逻辑与民事赔偿顺序。</description>
 </item>
 <item>
-<title>130万台机顶盒出厂就带后门，卖的人今年起最高罚5倍</title>
-<link>https://najieip.com/mili/blog/20261119-mili-tv-box-backdoor-four-layers.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/20261119-mili-tv-box-backdoor-four-layers.html</guid>
+<title>AI 能替律师做的，和永远不能替的</title>
+<link>https://najieip.com/mili/blog/20261119-mili-ai-law-firm-boundary.html</link>
+<guid isPermaLink="true">https://najieip.com/mili/blog/20261119-mili-ai-law-firm-boundary.html</guid>
 <pubDate>Thu, 19 Nov 2026 09:00:00 +0800</pubDate>
-<description>130万台机顶盒出厂就带后门，卖的人今年起最高罚5倍</description>
+<description>伦敦 AI 原生律所 Alecto 八个月做到 800 万美元：它不碰诉讼，只做最标准化的房产过户，并把计时收费换成结果收费。法律服务能被拆成流程的部分正在被吃掉，但判断与责任不能。附四条可拆性标准。</description>
+</item>
+<item>
+<title>PCT 进中国：30 个月的线，和那 2 个月的宽限</title>
+<link>https://najieip.com/aipunajie/blog/20261119-aipu-pct-30-months.html</link>
+<guid isPermaLink="true">https://najieip.com/aipunajie/blog/20261119-aipu-pct-30-months.html</guid>
+<pubDate>Thu, 19 Nov 2026 09:00:00 +0800</pubDate>
+<description>PCT 国际申请进入中国国家阶段，期限是优先权日起 30 个月；未办完的，缴宽限费可延到 32 个月。32 个月之后只剩恢复程序。附期限算法、要交的钱、五个常见坑与进入前 30 天清单。</description>
 </item>
 <item>
 <title>你写了适用英国法，谁来证明它</title>
@@ -280,20 +287,6 @@
 <guid isPermaLink="true">https://najieip.com/mili/blog/20261104-mili-provisional-protection-fee.html</guid>
 <pubDate>Wed, 04 Nov 2026 09:00:00 +0800</pubDate>
 <description>发明专利申请公布后、授权公告前被别人实施，不构成侵权：能主张的只有临时保护期使用费，赔偿要不到。本文用人民法院案例库入库案例讲清申请公布日、授权公告日、知道之日这三个日期，三年诉讼时效怎么算，四个最容易搞错的坑，并分别给权利人和实施者一张取证与抗辩清单，照着核对就不会把补偿谈成赔偿。</description>
-</item>
-<item>
-<title>只写“担保人”三个字，债主得先去告欠钱的人</title>
-<link>https://najieip.com/mili/blog/20261103-mili-guarantee-period-six-months.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/20261103-mili-guarantee-period-six-months.html</guid>
-<pubDate>Tue, 03 Nov 2026 09:00:00 +0800</pubDate>
-<description>保证合同只写「担保人」没写「连带」，法律推定为一般保证：债权人得先把债务人告到判决、强制执行还拿不到钱，才轮到你。真正卡人的是 6 个月保证期间而不是 3 年诉讼时效，「直到本息还清为止」也还是 6 个月，过了再让你签字也不算。</description>
-</item>
-<item>
-<title>抓一次数据：罚53万，再赔500万</title>
-<link>https://najieip.com/mili/blog/20261103-mili-unfair-competition-data-scraping.html</link>
-<guid isPermaLink="true">https://najieip.com/mili/blog/20261103-mili-unfair-competition-data-scraping.html</guid>
-<pubDate>Tue, 03 Nov 2026 09:00:00 +0800</pubDate>
-<description>江苏镇江一家公司卖「一键搬家」软件抓取平台商品数据，被市场监管罚 53 万元，随后被淘宝、天猫起诉，江苏高院二审判赔 500 万元；江西九江同类案件只罚 12 万元——同一套手法差 4.4 倍。本文拆解 2025 年修订的反不正当竞争法第 13 条第 3 款与第 29 条罚则、最高法第 47 批指导性案例第 262 号的「实质性替代」标准，并给出企业四步自检：看来源、看方式、看结果、留痕止损。</description>
 </item>
 </channel>
 </rss>
