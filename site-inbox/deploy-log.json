@@ -3124,6 +3124,21 @@
    "defects_found": "中文页此前 hreflang 为 0 条（本次补四值）；GEO 侧本周 0 命中：上周唯一命中（元宝相关视频卡）同题材未复现；秘塔把 802 号令逾期利息答成 728 号令第 15 条（旧条号），元宝条号对但施行日错写 2020-09-01",
    "notes": "本周新增行规：① 视频卡是「可触发的概率曝光」而非「词命中即出」——上周命中绑定的是一条特定短视频，未做同题视频即不复现，需文章+短视频成对投放；② 「权威源真空」是新选题判据（查人脸信息存设备还是上云，秘塔 15 条来源全是设备厂商软文，无对手占位）；③ 元宝侧出现「条号对、施行日错」的新错法，说明「新法条号+施行日」是最可争夺的组合锚点；④ i18n 描述须按句边界裁到 140-250 字符（首版 EN 485 / FR 293 字符过长）；⑤ 秒级 curl 探活串行会拖过 300s，改后台跑 + 轮询",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "每日运营（周六夜班）",
+   "commit": "7032a87",
+   "action": "每日运营：核心页 6/6=200；精修 mili 离婚游戏账号文（补 og:image/og:site_name/twitter:card+title+image/真摘要94字，Article image+description；正文未改一字）；封面318KB入库；三索引补卡3张（34家代理机构吊销→mili+主，SEP行政裁决37条→najie+主）；articles.json 守卫隔离52条 326→274",
+   "files_changed": ["mili/blog/20261121-mili-divorce-game-account-88w.html", "img/20261121-mili-divorce-game-account-88w.png", "mili/blog/index.html", "najie/blog/index.html", "blog/index.html", "articles.json", "articles-quarantine-20261121.json", "site-inbox/diag-1121.py", "site-inbox/fix-1121-head.py", "site-inbox/gen-1121-cards.py", "site-inbox/gen-1121-main.py", "site-inbox/check-1121-sm.py"],
+   "cards_added": 3,
+   "attribution": {"mili": 1, "najie": 1, "main": 2},
+   "verification": "6/6 核心页 200；三篇当日文 h1=1 / ld>=2 / og:image 齐；主索引 370->372 div 746/746 配平 malformed=0；mili 215（历史 unclosed 1，delta 对称）；najie 165 配平；articles.json 274 全合格 top6 有页；sitemap 431 loc lastmod 100%；feed 三篇齐",
+   "defects_found": "① 离婚游戏账号文缺 og:image/og:site_name/twitter 卡片、description 复读标题 ② 两篇当日文（34家代理吊销 / SEP37条）品牌索引与主索引全零卡",
+   "notes": "上游 59029f9 已修 frontmatter/管道表格/星号/h1，本轮只补 head 缺失项；articles.json 违例为上游自动发布长期缺陷，守卫幂等可复跑",
+   "result": "PASS"
   }
  ]
 }
