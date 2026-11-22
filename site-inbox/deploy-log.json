@@ -3139,6 +3139,21 @@
    "defects_found": "① 离婚游戏账号文缺 og:image/og:site_name/twitter 卡片、description 复读标题 ② 两篇当日文（34家代理吊销 / SEP37条）品牌索引与主索引全零卡",
    "notes": "上游 59029f9 已修 frontmatter/管道表格/星号/h1，本轮只补 head 缺失项；articles.json 违例为上游自动发布长期缺陷，守卫幂等可复跑",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "05:33",
+   "agent": "SiteOps",
+   "round": "每日运营",
+   "commit": "c88faeb",
+   "action": "巡检+精修：高企文补 h1/JSON-LD/og/摘要并清 frontmatter 泄漏；食品贴牌文补 JSON-LD/og；articles.json 隔离 52 条死链；najie 索引+主索引补卡",
+   "files_changed": 7,
+   "cards_added": 2,
+   "attribution": "高企文→najie/blog（纳杰·高新认定线）；食品委托生产文→najie/blog；两篇均入 najie 品牌索引 + 主索引",
+   "verification": "核心 6 页 200；线上 7 URL 200 + 双页 h1=1/ld=2/og:image 齐备 + 4 处索引卡 HIT + live articles.json=276；sitemap 看门 exit 0（433 loc）",
+   "defects_found": "① 高企文（当日）零卡 + frontmatter 泄漏为可见文本 + h1=0/ld=0/无 og:image/摘要复读标题 ② 食品贴牌文 ld=0/无 og:image/摘要复读（部分裸发布）③ articles.json 上游复活至 328 条含 52 条死链",
+   "notes": "首页 slice(0,6) 六条全部有页面；两处 MISMATCH 归因为归一化噪声（frontmatter 头 + h2 标题文字）非正文截断，机顶盒文（11-19）六项全达标零缺陷",
+   "result": "PASS"
   }
  ]
 }
