@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>何自刚｜知识产权律师 · 纳杰</title>
+<meta name="description" content="何自刚，知识产权律师，20 年 IP 从业。纳杰知识产权｜爱普纳杰专利代理事务所。专利、商标、涉外布局、高企认定。">
+<meta property="og:title" content="何自刚｜知识产权律师 · 纳杰">
+<meta property="og:description" content="专利 · 商标 · 涉外知识产权 · 高企认定">
+<meta name="theme-color" content="#0d1b26">
+<style>
+  :root{
+    --navy:#0d1b26;
+    --navy-2:#132b3c;
+    --blue:#1a5276;
+    --gold:#c0a060;
+    --gold-deep:#a8843c;
+    --ink:#12222e;
+    --ink-2:#4a5a66;
+    --ink-3:#5f7180;
+    --card:rgba(255,255,255,.94);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    min-height:100vh;
+    background:var(--navy);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue","Microsoft YaHei",sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:56px 20px 132px;
+    position:relative;
+    overflow-x:hidden;
+  }
+  /* 背景：建筑立面细线（抽象柱廊），不是渐变糊 */
+  .bg{position:fixed;inset:0;z-index:0;pointer-events:none}
+  .bg svg{width:100%;height:100%;display:block}
+  .bg::after{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(120% 80% at 50% 0%,rgba(26,82,118,.55) 0%,rgba(13,27,38,.96) 62%);
+  }
+  .brand{
+    position:fixed;top:22px;left:22px;z-index:2;
+    display:flex;align-items:baseline;gap:9px;
+    color:#fff;opacity:.92;letter-spacing:.22em;
+  }
+  .brand .en{font-size:15px;font-weight:600}
+  .brand .cn{font-size:11px;letter-spacing:.16em;color:rgba(255,255,255,.66)}
+  .brand .cn b{color:var(--gold);font-weight:600}
+
+  .wrap{position:relative;z-index:1;width:100%;max-width:404px}
+
+  .card{
+    position:relative;
+    background:var(--card);
+    border:1px solid rgba(192,160,96,.58);
+    border-radius:20px;
+    padding:24px 22px 22px;
+    box-shadow:0 24px 60px -18px rgba(0,0,0,.62),0 2px 0 rgba(255,255,255,.5) inset;
+    -webkit-backdrop-filter:blur(18px) saturate(1.05);
+    backdrop-filter:blur(18px) saturate(1.05);
+    margin-top:48px;
+  }
+  .avatar{
+    position:absolute;top:-48px;right:20px;
+    width:96px;height:96px;border-radius:50%;
+    border:2px solid var(--gold);
+    background:linear-gradient(160deg,#16394f,#0d1b26);
+    box-shadow:0 12px 26px -10px rgba(0,0,0,.55);
+    display:flex;align-items:center;justify-content:center;
+    overflow:hidden;
+  }
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+  .avatar .mono{
+    font-size:42px;font-weight:600;color:var(--gold);
+    font-family:"Songti SC","STSong",serif;letter-spacing:2px;
+  }
+
+  .name{font-size:27px;font-weight:700;letter-spacing:.01em;margin:2px 0 6px;color:var(--ink)}
+  .name .title{
+    font-size:15px;font-weight:600;color:var(--gold-deep);
+    margin-left:10px;letter-spacing:.02em;
+  }
+  .org{font-size:13.5px;color:var(--ink-2);margin:0 0 20px;line-height:1.55;max-width:78%}
+
+  .rows{display:flex;flex-direction:column;gap:15px}
+  .row{display:flex;align-items:flex-start;gap:12px;text-decoration:none;color:inherit}
+  .row svg{flex:0 0 19px;width:19px;height:19px;margin-top:2px;color:var(--gold-deep)}
+  .row .val{font-size:14.5px;line-height:1.5;color:var(--ink);word-break:break-all}
+  .row .val small{display:block;font-size:12.5px;color:var(--ink-3);margin-top:3px;line-height:1.45}
+  .row .call{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:26px;height:26px;border-radius:50%;
+    background:rgba(192,160,96,.14);color:var(--gold-deep);
+    margin-left:8px;vertical-align:-6px;
+  }
+  .row .call svg{width:13px;height:13px;flex:0 0 13px;margin:0}
+
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .pill{
+    font-size:12px;color:var(--ink-2);
+    border:1px solid rgba(26,82,118,.22);
+    background:rgba(26,82,118,.045);
+    border-radius:999px;padding:5px 11px;line-height:1.35;
+  }
+
+  .nav{
+    position:fixed;left:0;right:0;bottom:0;z-index:3;
+    display:flex;justify-content:space-around;align-items:flex-start;
+    padding:14px 8px calc(14px + env(safe-area-inset-bottom));
+    background:linear-gradient(to top,rgba(13,27,38,.96),rgba(13,27,38,0));
+  }
+  .nav a,.nav button{
+    appearance:none;border:0;background:none;padding:0;margin:0;
+    display:flex;flex-direction:column;align-items:center;gap:7px;
+    color:#fff;text-decoration:none;cursor:pointer;
+    font-size:12px;letter-spacing:.04em;opacity:.96;
+    font-family:inherit;
+  }
+  .nav .ring{
+    width:44px;height:44px;border-radius:50%;
+    border:1px solid rgba(255,255,255,.72);
+    display:flex;align-items:center;justify-content:center;
+    transition:background .18s,border-color .18s;
+  }
+  .nav svg{width:19px;height:19px;color:#fff}
+  .nav a:active .ring,.nav button:active .ring{background:rgba(192,160,96,.28);border-color:var(--gold)}
+
+  .bio{
+    margin-top:16px;font-size:13px;line-height:1.75;color:var(--ink-2);
+    border-top:1px solid rgba(26,82,118,.12);padding-top:14px;display:none;
+  }
+  .bio.open{display:block}
+
+  @media (min-width:560px){
+    body{padding-bottom:120px}
+    .card{padding:26px 24px 24px}
+  }
+
+  .org em{display:block;font-style:normal;font-size:12.5px;color:var(--ink-3);margin-top:5px;letter-spacing:.02em}
+  .row .mini{display:inline-flex;align-items:center;gap:4px;color:var(--ink-3);text-decoration:none;border-bottom:1px dashed rgba(95,113,128,.45);padding-bottom:1px}
+  .row .mini svg{width:11px;height:11px;flex:0 0 11px;margin:0}
+</style>
+</head>
+<body>
+
+<div class="bg" aria-hidden="true">
+  <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <pattern id="cols" width="88" height="600" patternUnits="userSpaceOnUse">
+        <rect x="0" y="0" width="1.1" height="600" fill="#ffffff" opacity=".10"/>
+        <rect x="26" y="40" width="34" height="520" fill="none" stroke="#ffffff" stroke-width="1" opacity=".07"/>
+        <rect x="34" y="60" width="18" height="480" fill="#ffffff" opacity=".025"/>
+      </pattern>
+    </defs>
+    <rect width="800" height="600" fill="url(#cols)"/>
+    <g stroke="#c0a060" stroke-width="1" opacity=".14">
+      <line x1="0" y1="86" x2="800" y2="86"/>
+      <line x1="0" y1="520" x2="800" y2="520"/>
+    </g>
+  </svg>
+</div>
+
+<div class="brand">
+  <span class="en">NAJIE</span>
+  <span class="cn">纳杰知识产权 · <b>从业 20 年</b></span>
+</div>
+
+<div class="wrap">
+  <section class="card">
+    <div class="avatar" id="avatar">
+      <img src="/assets/hezigang-portrait.jpg" alt="何自刚" onerror="this.remove();document.getElementById('avatar').insertAdjacentHTML('beforeend','<span class=\'mono\'>何</span>')">
+    </div>
+
+    <h1 class="name">何自刚<span class="title">知识产权律师</span></h1>
+    <p class="org">纳杰知识产权<br>北京爱普纳杰专利代理事务所<em>专利 · 商标 · 涉外知识产权 · 高企认定</em></p>
+
+    <div class="rows">
+      <a class="row" href="tel:+8615321374076">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.6h3"/></svg>
+        <span class="val">153 2137 4076</span>
+        <span class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+      </a>
+
+      <a class="row" href="tel:+8613911268604">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.6h3"/></svg>
+        <span class="val">139 1126 8604</span>
+        <span class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+      </a>
+
+      <a class="row" href="tel:+861065150974">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2.2 2A17 17 0 0 1 3 6.2 2 2 0 0 1 5 4Z"/></svg>
+        <span class="val">010-6515 0974<small>所内座机</small></span>
+        <span class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+      </a>
+
+      <a class="row" href="mailto:collection@najieip.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+        <span class="val">collection@najieip.com</span>
+      </a>
+
+      <a class="row" href="https://uri.amap.com/marker?position=116.4611,39.9089&name=%E7%BA%B3%E6%9D%B0%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83&src=najieip" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span class="val">北京市朝阳区建外大街丙12-12<br>宝钢大厦 1502<small>点此打开地图导航</small></span>
+      </a>
+
+      <a class="row" href="https://najieip.com" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.6 2.6 3.9 5.8 3.9 9.2S14.6 18.6 12 21.2c-2.6-2.6-3.9-5.8-3.9-9.2S9.4 5.4 12 2.8Z"/></svg>
+        <span class="val">najieip.com</span>
+      </a>
+    </div>
+
+    <div class="pills">
+      <span class="pill">知识产权</span>
+      <span class="pill">专利代理</span>
+      <span class="pill">商标注册</span>
+      <span class="pill">涉外商标布局</span>
+      <span class="pill">高企认定</span>
+    </div>
+
+    <div class="bio" id="bio">
+      20 年知识产权从业。发明专利与实用新型撰写、OA 答复（进攻型策略）、PCT 国际申请与涉外专利布局；
+      主导 61 国合作代理网络；商标国内注册与马德里 / 单一国组合布局；高新技术企业认定项目。
+      现任纳杰知识产权负责人、北京爱普纳杰专利代理事务所合伙人。
+    </div>
+  </section>
+</div>
+
+<nav class="nav">
+  <button type="button" id="btnBio">
+    <span class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12v17l-6-4-6 4v-17Z"/><path d="M9 8h6M9 11.5h6"/></svg></span>
+    律师简介
+  </button>
+  <a href="https://najieip.com/about.html">
+    <span class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V6.5A2.5 2.5 0 0 1 6.5 4H19v16H6.5A2.5 2.5 0 0 0 4 22"/><path d="M8 8.5h7M8 12h7M8 15.5h4"/></svg></span>
+    纳杰介绍
+  </a>
+  <a href="https://uri.amap.com/marker?position=116.4611,39.9089&name=%E7%BA%B3%E6%9D%B0%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83&src=najieip" target="_blank" rel="noopener">
+    <span class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+    到所导航
+  </a>
+  <button type="button" id="btnShare">
+    <span class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5.5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="18.5" r="2.6"/><path d="m8.4 10.7 7.2-3.9M8.4 13.3l7.2 3.9"/></svg></span>
+    分享名片
+  </button>
+  <button type="button" id="btnVcf">
+    <span class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.6" y="5" width="18.8" height="14" rx="2.4"/><circle cx="8.6" cy="11" r="2"/><path d="M5.4 16.4c.5-1.6 1.7-2.4 3.2-2.4s2.7.8 3.2 2.4"/><path d="M15.2 10.4h3.4M15.2 13.4h3.4"/></svg></span>
+    保存名片
+  </button>
+</nav>
+
+<script>
+  // 律师简介：就地展开，不跳页（名片场景里跳页会丢上下文）
+  var bio = document.getElementById('bio');
+  document.getElementById('btnBio').addEventListener('click', function(){
+    bio.classList.toggle('open');
+    if (bio.classList.contains('open')) bio.scrollIntoView({behavior:'smooth', block:'nearest'});
+  });
+
+  // 分享名片
+  document.getElementById('btnShare').addEventListener('click', async function(){
+    var data = {
+      title: '何自刚｜知识产权律师 · 纳杰',
+      text: '专利 · 商标 · 涉外知识产权 · 高企认定　010-6515 0974',
+      url: location.href
+    };
+    if (navigator.share) {
+      try { await navigator.share(data); return; } catch(e){}
+    }
+    try {
+      await navigator.clipboard.writeText(data.title + '\n' + data.text + '\n' + data.url);
+      toast('已复制名片信息');
+    } catch(e) {
+      prompt('复制这段发给对方：', data.title + ' ' + data.url);
+    }
+  });
+
+  // 存名片：生成 vCard 直接下载，导入通讯录
+  document.getElementById('btnVcf').addEventListener('click', function(){
+    var v = [
+      'BEGIN:VCARD','VERSION:3.0',
+      'N:何;自刚;;;',
+      'FN:何自刚',
+      'ORG:纳杰知识产权;北京爱普纳杰专利代理事务所',
+      'TITLE:知识产权律师',
+      'TEL;type=CELL:+8615321374076',
+      'TEL;type=CELL:+8613911268604',
+      'TEL;type=WORK:+861065150974',
+      'EMAIL;type=WORK:collection@najieip.com',
+      'URL:https://najieip.com',
+      'ADR;type=WORK:;;建外大街丙12-12 宝钢大厦1502;北京市朝阳区;;;中国',
+      'NOTE:专利 商标 涉外知识产权 高企认定',
+      'END:VCARD'
+    ].join('\r\n');
+    var blob = new Blob([v], {type:'text/vcard;charset=utf-8'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = '何自刚-纳杰知识产权.vcf';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); }, 3000);
+    toast('名片已保存，导入通讯录即可');
+  });
+
+  function toast(msg){
+    var t = document.createElement('div');
+    t.textContent = msg;
+    t.style.cssText = 'position:fixed;left:50%;bottom:112px;transform:translateX(-50%);background:rgba(19,43,60,.96);color:#fff;font-size:13px;padding:10px 18px;border-radius:999px;z-index:9;border:1px solid rgba(192,160,96,.5)';
+    document.body.appendChild(t);
+    setTimeout(function(){ t.style.opacity='0'; t.style.transition='opacity .4s'; }, 1600);
+    setTimeout(function(){ t.remove(); }, 2100);
+  }
+</script>
+</body>
+</html>
