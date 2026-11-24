@@ -3169,6 +3169,21 @@
    "defects_found": "① 11-23 早班宣称已清 frontmatter 泄漏，实际残留 <p>---</p><p>brand: mili</p><p>---</p> 三段仍在正文顶部（可见文本）② 高企页另有两处泄漏：裸 <p>---</p> 分隔行、段落内 &gt; blockquote 前缀 ③ md 尾部两句重复 AI 声明，页面仅保留一句（等价声明，非内容缺失）",
    "notes": "md 全量包含比对通过（食品贴牌 1575/1575、游戏账号 1599/1599 严格相等；高企页仅缺 md 侧重复 AI 声明句，正文零缺失）。frontmatter 泄漏判据需按『keys 逐行』而非『整块』——上游把 brand 混排在 title/date/slug 之后，早班只删了前三行。push 首次被拒（远端已有 429a3e2），sitemap-auto.sh 的 pull --rebase 已自动变基后推送成功。",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "每日运营（夜班）",
+   "commit": "see-HEAD",
+   "action": "精修当日 mili 裸发布页（漏写请求·惩罚性赔偿五倍）按 md 源整页重建；六核心页 HTTP 验证；articles.json 守卫；sitemap 看门；索引/feed 对账",
+   "files_changed": ["mili/blog/20261124-mili-punitive-damages-one-shot.html", "img/20261124-mili-punitive-damages-one-shot.png", "site-inbox/diag-1124.py", "site-inbox/fix-1124-page.py", "site-inbox/log-1124.py", "site-inbox/deploy-log.json"],
+   "cards_added": 0,
+   "attribution": "mili（落地目录 /mili/blog/，canonical/og:url 与落地一致）",
+   "verification": "6/6 核心页 200；修复页 h1=1 h2=3 ld=2 og:image=1 stars=0 裸表=0 frontmatter=0，正文 md 全文包含=True（1643=1643）；封面 288,626B 入库；索引品牌卡/主卡各 1（上游已同步，零补卡）；articles.json 276/276 零违例、首页 top6 全有页面；feed 40 条含当日文；sitemap 看门 exit 0 无 diff；线上 6 页 200 + 修复页六项达标 + img 200",
+   "defects_found": "上游 05:04 裸发布：h1=0 / ld+json=0 / 无 og:image / description 11 字复读标题（且处 articles.json 首页第 1 曝光位）；页面 6,634B→10,159B",
+   "notes": "本次零补卡（品牌索引 + 主索引上游均已写卡，逐 slug 判定各命中 1 次）；feed 已于 12a3df8 由并发会话修正 pubDate 并收敛至 40 条；articles.json 已于 a2a55c2 收敛至 276 条全 200",
+   "result": "PASS"
   }
  ]
 }
