@@ -3184,6 +3184,21 @@
    "defects_found": "上游 05:04 裸发布：h1=0 / ld+json=0 / 无 og:image / description 11 字复读标题（且处 articles.json 首页第 1 曝光位）；页面 6,634B→10,159B",
    "notes": "本次零补卡（品牌索引 + 主索引上游均已写卡，逐 slug 判定各命中 1 次）；feed 已于 12a3df8 由并发会话修正 pubDate 并收敛至 40 条；articles.json 已于 a2a55c2 收敛至 276 条全 200",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "每日运营（夜班）",
+   "commit": "de0cda5",
+   "action": "每日巡检：核心页 200；11-25 mili AI融脸页补 og:image/og:site_name/keywords/twitter 四卡 + 真摘要（去标题复读）；主索引补 2 张 najie 11-25 卡（植物新品种赔偿基数、专利密集型产品备案）；sitemap 看门 exit 0",
+   "files_changed": ["mili/blog/20261125-mili-ai-face-blend-portrait-1019.html", "img/20261125-mili-ai-face-blend-portrait-1019.png", "blog/index.html"],
+   "cards_added": 2,
+   "attribution": {"najie": 2, "mili": 0, "aipunajie": 0},
+   "verification": {"core_pages": "7/7 200（含封面 PNG）", "structure": "主索引 310 卡 +4/+4 div、depth delta {0:2}、malformed 0、dups 0、stars 0", "page_six": "h1=1 ld=2 og:image=True twitter=summary_large_image desc_len=108 正文未改一字", "live": "主索引 206,077B / 页面 9,603B 与本地字节一致", "feed": "40 条，3 篇新文 RFC822 格式正确", "sitemap": "438 loc，看门 exit 0 无回灌"},
+   "defects_found": ["mili 11-25 页缺 og:image 且 description 复读标题（上游 morning 修复只补了 h1/JSON-LD）", "两篇 najie 11-25 文有品牌卡但主索引零卡"],
+   "notes": "articles.json 守卫 279/279 零违例，首页 top6 六条均有页面；feed 已在 18d3b83 重建，无需补",
+   "result": "PASS"
   }
  ]
 }
