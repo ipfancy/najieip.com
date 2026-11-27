@@ -3214,6 +3214,21 @@
    "defects_found": "打赏文=裸发布畸形页（h1=0/ld=0/无og:image/desc复读标题/**×4）且处 articles.json 首页第 3 曝光位；招贤帖 h1×2 且缺 BreadcrumbList/og:image；主索引缺 3 张当日卡 + feed 缺 1 条",
    "notes": "招贤帖与 aipunajie 308 号文均无上游封面图（cover-<slug>.png 不存在）→ og:image 仍缺，记 backlog 待补封面；taiwan 商标文六项全合格，零改动",
    "result": "PASS"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "22:00",
+   "agent": "SiteOps",
+   "round": "每日运营（夜班）",
+   "commit": "7d10ab6",
+   "action": "11-27 两篇新文质检修复（孕妇血走私：补 h1/og:image/twitter/去重复 BreadcrumbList；欧盟商标：补 BreadcrumbList/og:image/twitter/清 ** 残留）+ 主索引补 1 张卡 + feed 补 1 条",
+   "files_changed": 8,
+   "cards_added": 1,
+   "attribution": {"mili": 1, "main": 1},
+   "verification": "核心 6 页 6/6=200；线上两页 h1=1/ld=2/og:image/twitter/`**`=0；封面 200；主索引 348 卡（两张新卡各 1）；mili 索引 213 卡；feed 两条目 HIT；Pages run success",
+   "defects_found": "孕妇血文 h1=0 缺 og:image/twitter 且 BreadcrumbList 重复 2 次；欧盟商标文 ld=1 缺 BreadcrumbList、缺 og:image/twitter、`**` 2 处未转；欧盟商标文主索引零卡、feed 缺条；articles.json 2 条 description 键与标题重复（indent 误用 2 已回退为 1）",
+   "notes": "articles.json 守卫余 2 条「/blog/ 路径不在白名单」系主博客有效老文（文件均存在、非首页 top6），不隔离；两篇新文分列首页曝光位 1、2 位",
+   "result": "PASS"
   }
  ]
 }
